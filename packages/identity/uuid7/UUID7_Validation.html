@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UUID Version 7 Validation (Uuid7.IsUuid7 &amp; Uuid7.IsValid) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UUID Version 7 Validation (Uuid7.IsUuid7 &amp; Uuid7.IsValid) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Validation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="uuid-version-7-validation-uuid7isuuid7--uuid7isvalid">UUID Version 7 Validation (<code>Uuid7.IsUuid7</code> &amp; <code>Uuid7.IsValid</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Validation</strong></p>
+</blockquote>
+<hr>
+<p>Many developers assume that all <code>.NET</code> <code>Guid</code> structures are interchangeable. However, legacy <code>Guid.NewGuid()</code> generates random <strong>Version 4</strong> values, which lack timestamps and cause severe index page splits. Furthermore, advanced <code>Dixor.Identity</code> operations—such as <a href="UUID7_TimestampExtraction.html">Timestamp Extraction</a>—strictly require genuine <strong>RFC 9562 UUID Version 7</strong> identifiers.</p>
+<p><code>Dixor.Identity</code> exposes two ultra-fast, zero-allocation methods to verify identifier compliance:</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+// 1. Verify an already instantiated Guid struct
+bool isGenuineV7 = Uuid7.IsUuid7(myGuid);
+
+// 2. Validate incoming text strings (e.g., HTTP headers, query parameters)
+bool isValidString = Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10&quot;);
+
+</code></pre>
+<hr>
+<h2 id="bitwise-validation-anatomy">Bitwise Validation Anatomy</h2>
+<p>To verify compliance in constant <strong>O(1) time</strong> without heap allocation, <code>Uuid7.IsUuid7(Guid)</code> inspects the <strong>High Nibble (most significant 4 bits) of Byte 6</strong> inside the 16-byte UUID layout:</p>
+<pre><code class="lang-text">Byte 6 Layout:
++---+---+---+---+---+---+---+---+
+| V | V | V | V | x | x | x | x |
++---+---+---+---+---+---+---+---+
+└───────┬───────┘
+        ▼
+ Version Bits (Must equal 0111 / 0x7)
+
+</code></pre>
+<p>By allocating a 16-byte buffer on the execution stack (<code>stackalloc byte[16]</code>) and right-shifting Byte 6 by four positions (<code>bytes[6] &gt;&gt; 4</code>), the validator verifies RFC 9562 Version 7 adherence in sub-nanosecond execution time.</p>
+<hr>
+<h2 id="api-overloads--input-handling">API Overloads &amp; Input Handling</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Accepts</th>
+<th>Behavior</th>
+<th>Typical Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>Uuid7.IsUuid7(Guid)</code></strong></td>
+<td><code>Guid</code> struct</td>
+<td>Verifies if the in-memory GUID has Version 7 bits (<code>0x7</code>).</td>
+<td>Validating internal domain models and database records.</td>
+</tr>
+<tr>
+<td><strong><code>Uuid7.IsValid(string)</code></strong></td>
+<td><code>string</code> text</td>
+<td>Parses raw text via <code>Uuid7Parser.TryParse</code> and verifies Version 7 bits.</td>
+<td>Protecting REST API endpoints, webhooks, and CSV imports.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="securing-api-boundaries">Securing API Boundaries</h3>
+<p>Always validate external identifiers at your REST controllers or Minimal API endpoints before passing them to domain logic:</p>
+<pre><code class="lang-csharp">app.MapGet(&quot;/api/orders/{id}&quot;, (string id) =&gt;
+{
+    // Rejects non-GUID strings AND legacy UUIDv4 identifiers instantly
+    if (!Uuid7.IsValid(id))
+    {
+        return Results.BadRequest(&quot;Identifier must be a valid RFC 9562 UUID Version 7.&quot;);
+    }
+
+    // Proceed safely with valid V7 processing...
+    return Results.Ok();
+});
+
+</code></pre>
+<hr>
+<h2 id="performance-characteristics">Performance Characteristics</h2>
+<ul>
+<li><strong>Time Complexity:</strong> <code>O(1)</code> Constant Time.</li>
+<li><strong>Space Complexity:</strong> <code>O(1)</code> Zero Heap Allocation (<code>stackalloc byte[16]</code>).</li>
+</ul>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; String Conversion</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Formatting.md">Formatting</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Validation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

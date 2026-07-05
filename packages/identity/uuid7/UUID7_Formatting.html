@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Business Identifier Formatting (Uuid7.NewString) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Business Identifier Formatting (Uuid7.NewString) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Formatting.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="business-identifier-formatting-uuid7newstring">Business Identifier Formatting (<code>Uuid7.NewString</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Formatting</strong></p>
+</blockquote>
+<hr>
+<p>While a raw 128-bit UUID Version 7 string (<code>0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10</code>) guarantees uniqueness and time-ordering, it lacks visual context in enterprise logs, customer invoices, and microservice APIs.</p>
+<p><code>Dixor.Identity</code> provides built-in, allocation-conscious string decoration to wrap raw UUIDs in clean domain context without sacrificing uniqueness:</p>
+<pre><code class="lang-csharp">string orderReference = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;US&quot;);
+// Output: ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US
+
+</code></pre>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<p>Transforming raw GUIDs into readable business references significantly simplifies system telemetry, support ticketing, and multi-tenant routing:</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Example API Call</th>
+<th>Generated Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Order Management</strong></td>
+<td><code>Uuid7.NewString(&quot;ORD&quot;)</code></td>
+<td><code>ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10</code></td>
+</tr>
+<tr>
+<td><strong>Invoice Tracking</strong></td>
+<td><code>Uuid7.NewString(&quot;INV&quot;, &quot;EU&quot;)</code></td>
+<td><code>INV-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-EU</code></td>
+</tr>
+<tr>
+<td><strong>Multi-Tenancy</strong></td>
+<td><code>Uuid7.NewString(&quot;TENANT1&quot;, separator: &quot;_&quot;)</code></td>
+<td><code>TENANT1_0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="guardrails--validation-rules">Guardrails &amp; Validation Rules</h2>
+<p>To prevent database truncation errors, malformed URLs, and unreadable strings, the internal <code>Uuid7Formatter</code> enforces strict boundary rules:</p>
+<ol>
+<li><strong>Length Limits:</strong> Prefixes and suffixes cannot exceed <strong>50 characters</strong> each (<code>MaxPrefixLength</code> / <code>MaxSuffixLength</code>). Passing larger strings throws an <code>ArgumentOutOfRangeException</code>.</li>
+<li><strong>Safe Separators:</strong> To protect file systems, URLs, and shell scripts from unescaped wildcards or control characters, the separator must consist of <strong>exactly one character</strong> from our safe allowlist:</li>
+</ol>
+<pre><code class="lang-text">-   _   :   ~   |   /   \   {   }   [   ]   &lt;   &gt;
+
+</code></pre>
+<ol start="3">
+<li><strong>Null/Whitespace Tolerance:</strong> Passing <code>null</code>, <code>&quot;&quot;</code>, or <code>&quot;   &quot;</code> as a prefix/suffix is gracefully ignored without appending hanging separators.</li>
+</ol>
+<hr>
+<h2 id="compile-time-safety-roslyn-analyzers">Compile-Time Safety: Roslyn Analyzers</h2>
+<p>When formatting inputs are known at compile time, <code>Dixor.Identity</code> validates your parameters inside the Visual Studio/Rider IDE before you even compile the project:</p>
+<table>
+<thead>
+<tr>
+<th>Diagnostic</th>
+<th>Rule Description</th>
+<th>Trigger Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>DIXOR002</code></strong></td>
+<td>Prefix exceeds limit</td>
+<td>Passing a constant string &gt; 50 characters as <code>prefix</code>.</td>
+</tr>
+<tr>
+<td><strong><code>DIXOR003</code></strong></td>
+<td>Suffix exceeds limit</td>
+<td>Passing a constant string &gt; 50 characters as <code>suffix</code>.</td>
+</tr>
+<tr>
+<td><strong><code>DIXOR004</code></strong></td>
+<td>Invalid separator</td>
+<td>Passing an unsupported character (e.g., <code>*</code>, <code>?</code>) or multi-char string.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-csharp">// ❌ COMPILE ERROR (DIXOR004): Separator '*' is not allowed
+var badId = Uuid7.NewString(&quot;ORD&quot;, separator: &quot;*&quot;);
+
+// ✅ COMPILE SUCCESS: Valid safe separator
+var goodId = Uuid7.NewString(&quot;ORD&quot;, separator: &quot;_&quot;);
+
+</code></pre>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules &amp; Verification</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Formatting.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

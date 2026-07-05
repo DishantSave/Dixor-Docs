@@ -1,0 +1,575 @@
+{
+  "source_base_path": "/home/runner/work/Dixor/Dixor/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "Changelog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.UUID7.Uuid7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.UUID7.Uuid7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.UUID7.Uuid7",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.UUID7.Uuid7.yml\" sourcestartlinenumber=\"1\">Provides the primary public facade for generating, formatting, parsing, validating,\nand inspecting RFC 9562 UUID Version 7 identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.UUID7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.UUID7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.UUID7",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.EmailInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.EmailInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.EmailInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Email.EmailInfo.yml\" sourcestartlinenumber=\"1\">Represents a parsed email address.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.EmailValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.EmailValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.EmailValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Email.EmailValidationError.yml\" sourcestartlinenumber=\"1\">Represents the reason why email validation succeeded or failed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.EmailValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.EmailValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.EmailValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Email.EmailValidationOptions.yml\" sourcestartlinenumber=\"1\">Represents the configuration options used during email validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.EmailValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.EmailValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.EmailValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Email.EmailValidator.yml\" sourcestartlinenumber=\"1\">Provides methods for validating, parsing and inspecting email addresses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.Interfaces.IEmailInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.Interfaces.IEmailInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.Interfaces.IEmailInfo",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Email.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Email.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Email",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.ValidationResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.ValidationResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.ValidationResult<TError>",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.ValidationResult-1.yml\" sourcestartlinenumber=\"1\">Represents the result of a validation operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon-64x64.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon-64x64.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon-96x96.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon-96x96.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon-192.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon-192.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "packages/identity/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/toc.html"
+        },
+        ".json": {
+          "relative_path": "packages/identity/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_BatchGeneration.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_BatchGeneration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_BestPractices.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_BestPractices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_Formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_Formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_Generation.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_Generation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_MonotonicGeneration.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_MonotonicGeneration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_Overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_Parsing.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_Parsing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_TimestampExtraction.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_TimestampExtraction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/UUID7_Validation.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/UUID7_Validation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/uuid7/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/uuid7/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/ValidationResult.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/ValidationResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/DomainValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/DomainValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailNormalizer.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailNormalizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailParser.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/EmailValidatorService.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/EmailValidatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/LocalPartValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/LocalPartValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/ValidationConstants.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/ValidationConstants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/email/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/email/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "packages/validation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/toc.html"
+        },
+        ".json": {
+          "relative_path": "packages/validation/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

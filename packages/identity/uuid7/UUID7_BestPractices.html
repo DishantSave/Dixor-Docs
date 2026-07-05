@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UUIDv7 Production Best Practices | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UUIDv7 Production Best Practices | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_BestPractices.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="uuidv7-production-best-practices">UUIDv7 Production Best Practices</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Best Practices</strong></p>
+</blockquote>
+<hr>
+<p>Adopting <strong>UUID Version 7</strong> immediately supercharges database indexing and chronological observability compared to random GUIDs. However, getting the most out of <code>Dixor.Identity</code> in high-throughput production environments requires following established architectural patterns.</p>
+<p>This guide outlines essential best practices for database storage, API boundary validation, and high-concurrency generation.</p>
+<hr>
+<h2 id="1-database-storage--schema-design">1. Database Storage &amp; Schema Design</h2>
+<h3 id="always-store-as-native-128-bit-binary-types">Always Store as Native 128-Bit Binary Types</h3>
+<p>Never store UUIDs as text strings (<code>VARCHAR(36)</code> or <code>NVARCHAR(36)</code>) in relational databases. String storage doubles disk space consumption, ruins CPU cache locality, and slows down index traversals.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Database Engine</th>
+<th style="text-align: left;">Recommended Column Type</th>
+<th style="text-align: left;">Why?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SQL Server</strong></td>
+<td style="text-align: left;"><code>UNIQUEIDENTIFIER</code></td>
+<td style="text-align: left;">16-byte native storage; optimized for B-Tree sequential leaf insertion.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PostgreSQL</strong></td>
+<td style="text-align: left;"><code>UUID</code></td>
+<td style="text-align: left;">First-class binary UUID handling with native operator support.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MySQL / MariaDB</strong></td>
+<td style="text-align: left;"><code>BINARY(16)</code></td>
+<td style="text-align: left;">Fixed-length raw binary layout ensuring tight index page packing.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-sql">-- Optimal SQL Server Schema Example
+CREATE TABLE Orders
+(
+    Id UNIQUEIDENTIFIER PRIMARY KEY NOT NULL,
+    CustomerId UNIQUEIDENTIFIER NOT NULL,
+    OrderTotal DECIMAL(18, 2) NOT NULL
+);
+
+</code></pre>
+<hr>
+<h2 id="2-choosing-the-right-generation-strategy">2. Choosing the Right Generation Strategy</h2>
+<p>Match your generation method to the exact concurrency profile of your workload:</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+// 1. STANDARD WORKLOADS (REST APIs, Entity Creation)
+// Ultra-fast, zero-allocation time-ordered ID.
+Guid entityId = Uuid7.New();
+
+// 2. ULTRA-HIGH THROUGHPUT (Event Sourcing, High-Speed CQRS)
+// Guarantees strict mathematical sorting even when 10,000+ IDs are minted in the exact same millisecond.
+Guid eventId = Uuid7.NewMonotonic();
+
+// 3. BULK OPERATIONS (Data Seeding, ETL Pipelines, Batch Inserts)
+// Lazy enumeration eliminates loop overhead and memory pressure.
+IEnumerable&lt;Guid&gt; seedIds = Uuid7.NewGuids(count: 5000);
+
+</code></pre>
+<hr>
+<h2 id="3-api-boundary-safety--input-validation">3. API Boundary Safety &amp; Input Validation</h2>
+<h3 id="never-rely-on-exception-driven-parsing">Never Rely on Exception-Driven Parsing</h3>
+<p>When receiving identifiers from external REST payloads, query parameters, or file uploads, never treat input as trusted data. Using <code>Uuid7.Parse()</code> directly on user input risks throwing unhandled exceptions under malformed payloads.</p>
+<pre><code class="lang-csharp">// ❌ BAD: Exception-driven flow incurs severe CPU overhead on bad requests
+try 
+{
+    Guid id = Uuid7.Parse(rawInput);
+} 
+catch (FormatException) { /* Handle error */ }
+
+// ✅ GOOD: Fast, allocation-free validation pattern
+if (!Uuid7.TryParse(rawInput, out Guid validId) || !Uuid7.IsValid(validId))
+{
+    return Results.BadRequest(&quot;Invalid RFC 9562 UUIDv7 identifier provided.&quot;);
+}
+
+</code></pre>
+<hr>
+<h2 id="4-architectural-patterns--domain-formatting">4. Architectural Patterns &amp; Domain Formatting</h2>
+<h3 id="decouple-generation-via-dependency-injection">Decouple Generation via Dependency Injection</h3>
+<p>To keep domain logic clean and unit tests deterministic, wrap static generation calls behind a lightweight provider interface:</p>
+<pre><code class="lang-csharp">public interface IIdGenerator
+{
+    Guid CreateId();
+}
+
+public sealed class DixorIdGenerator : IIdGenerator
+{
+    public Guid CreateId() =&gt; Uuid7.New();
+}
+
+// Register in ASP.NET Core Program.cs:
+builder.Services.AddSingleton&lt;IIdGenerator, DixorIdGenerator&gt;();
+
+</code></pre>
+<h3 id="use-built-in-domain-formatting-apis">Use Built-in Domain Formatting APIs</h3>
+<p>Avoid manual string concatenation when generating business-facing reference codes. Let the allocation-conscious formatter handle prefixing and separators:</p>
+<pre><code class="lang-csharp">// ❌ BAD: Allocates multiple temporary strings
+string badRef = &quot;ORD-&quot; + Uuid7.New().ToString() + &quot;-US&quot;;
+
+// ✅ GOOD: Optimized internal string formatting
+string cleanRef = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;US&quot;);
+// Output: ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US
+
+</code></pre>
+<hr>
+<h2 id="5-security--temporal-considerations">5. Security &amp; Temporal Considerations</h2>
+<ul>
+<li><strong>Do Not Rely on UUIDs for Authorization:</strong> Because UUIDv7 embeds a public creation timestamp, observers can deduce roughly when a record was created. Never use UUIDs as secret bearer tokens or security nonces.</li>
+<li><strong>Preserve UTC Strictly:</strong> Extracted timestamps (<code>Uuid7.GetTimestamp(id)</code>) return <code>DateTimeOffset</code> anchored in UTC. Always preserve UTC across distributed service boundaries and convert to local time strictly at the UI layer.</li>
+<li><strong>Not a Sequential Counter Across Nodes:</strong> While UUIDv7 sorts chronologically, two independent distributed microservices minting IDs during the exact same millisecond rely on random lower bits. Never assume <code>Node_A_ID + 1 == Node_B_ID</code>.</li>
+</ul>
+<hr>
+<h2 id="production-quick-check-matrix">Production Quick-Check Matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Common Anti-Pattern</th>
+<th>Production Best Practice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Storing UUIDs as <code>VARCHAR(36)</code></td>
+<td>Use native 16-byte binary columns (<code>UNIQUEIDENTIFIER</code> / <code>UUID</code>).</td>
+</tr>
+<tr>
+<td>Looping <code>Uuid7.New()</code> 10,000 times</td>
+<td>Use <code>Uuid7.NewGuids(10000)</code> for memory-efficient lazy streaming.</td>
+</tr>
+<tr>
+<td>Using <code>Parse()</code> on HTTP payloads</td>
+<td>Use <code>TryParse()</code> + <code>IsValid()</code> to prevent exception overhead.</td>
+</tr>
+<tr>
+<td>Replacing hyphens (<code>id.ToString().Replace(&quot;-&quot;, &quot;&quot;)</code>)</td>
+<td>Keep standard canonical formatting or use <code>Uuid7.NewString()</code>.</td>
+</tr>
+<tr>
+<td>Assuming sub-millisecond sorting across threads</td>
+<td>Switch to <code>Uuid7.NewMonotonic()</code> for strict sequence locking.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation Guide</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation Guide</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction Guide</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=../examples/BasicUsageExamples.md">Examples &amp; Recipes</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_BestPractices.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

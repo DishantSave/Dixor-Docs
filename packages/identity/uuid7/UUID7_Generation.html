@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Standard UUIDv7 Generation (Uuid7.New) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Standard UUIDv7 Generation (Uuid7.New) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Generation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="standard-uuidv7-generation-uuid7new">Standard UUIDv7 Generation (<code>Uuid7.New</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Standard Generation</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides an ultra-fast, zero-allocation implementation for generating <strong>RFC 9562 compliant UUID Version 7</strong> identifiers.</p>
+<p>By embedding a 48-bit millisecond Unix timestamp directly into the most significant bits of the identifier alongside cryptographically secure random data, <code>Uuid7.New()</code> creates primary keys that naturally sort in chronological order while guaranteeing global collision resistance.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+// Generate a standard time-ordered primary key using current UTC time
+Guid primaryKey = Uuid7.New();
+// Example Output: 0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10
+
+</code></pre>
+<hr>
+<h2 id="128-bit-bitwise-anatomy">128-Bit Bitwise Anatomy</h2>
+<p>Every identifier minted by <code>Uuid7.New()</code> follows strict network byte order (Big-Endian) layout:</p>
+<pre><code class="lang-text"> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           unix_ts_ms                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          unix_ts_ms           |  ver  |       rand_a          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|var|                        rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+</code></pre>
+<ol>
+<li><strong><code>Bytes 0..5</code> (Timestamp):</strong> 48-bit Unix timestamp (<code>milliseconds since 1970-01-01T00:00:00Z</code>). Dictates natural B-Tree sequential insertion.</li>
+<li><strong><code>Byte 6</code> (Version &amp; Random):</strong> High nibble is masked strictly to <code>0111</code> (<code>Version 7</code>). Low nibble contains random bits.</li>
+<li><strong><code>Byte 8</code> (Variant &amp; Random):</strong> Two highest bits are masked strictly to <code>10</code> conforming to IETF standard variants.</li>
+<li><strong><code>Remaining Bits</code> (Entropy):</strong> 74 bits filled via high-performance <code>RandomNumberGenerator.Fill()</code>.</li>
+</ol>
+<hr>
+<h2 id="zero-allocation-architectural-performance">Zero-Allocation Architectural Performance</h2>
+<p>To achieve optimal execution throughput under heavy API loads, the internal generation pipeline strictly bypasses heap allocations:</p>
+<pre><code class="lang-csharp">// Internally allocates directly on the call stack
+Span&lt;byte&gt; bytes = stackalloc byte[16];
+
+</code></pre>
+<ul>
+<li><strong>No Garbage Collection Pressure:</strong> Because a UUID is fixed at exactly 16 bytes, using <code>stackalloc</code> eliminates intermediate heap allocations entirely during key generation.</li>
+<li><strong>Network Byte Order:</strong> Direct bit-shifting (<code>&gt;&gt; 40</code>, <code>&gt;&gt; 32</code>, etc.) writes timestamps directly into stack memory without temporary buffer copying.</li>
+</ul>
+<hr>
+<h2 id="custom-timestamp-generation">Custom Timestamp Generation</h2>
+<p>For historical data migrations, event sourcing replays, or deterministic integration testing, you can explicitly anchor a UUIDv7 to any valid past or future timestamp:</p>
+<pre><code class="lang-csharp">DateTimeOffset historicalEvent = new DateTimeOffset(2025, 1, 1, 12, 0, 0, TimeSpan.Zero);
+
+// Mint a valid UUIDv7 embedding the custom timestamp
+Guid historicalId = Uuid7.New(historicalEvent);
+
+</code></pre>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p><strong>Epoch Boundaries:</strong> Passing a timestamp occurring before the Unix Epoch (<code>1970-01-01T00:00:00Z</code>) throws an <code>ArgumentOutOfRangeException</code>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Overview.md">UUIDv7 Overview &amp; Architecture</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Sub-Millisecond Sequencing</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Overview.md">UUIDv7 Overview</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Generation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

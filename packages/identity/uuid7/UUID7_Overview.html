@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UUID Version 7 Overview | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UUID Version 7 Overview | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="uuid-version-7-overview">UUID Version 7 Overview</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>UUIDv7 Overview</strong></p>
+</blockquote>
+<hr>
+<p><strong>UUID Version 7 (UUIDv7)</strong> represents the next generation of universally unique identifiers standardized by <strong>RFC 9562</strong>.</p>
+<p>While standard .NET developers frequently rely on <code>Guid.NewGuid()</code>, that legacy API outputs <strong>UUID Version 4</strong> values. Because Version 4 identifiers are entirely random, inserting them as primary keys into relational databases forces B-Tree index page splits, random disk I/O, cache misses, and massive fragmentation under heavy write loads.</p>
+<p><strong>UUIDv7 solves this engineering flaw</strong> by combining a millisecond-precision Unix timestamp with 74 bits of cryptographically secure randomness. The result is an identifier that is <strong>naturally sortable by creation time</strong>, hyper-optimized for database indexing, and globally unique across distributed systems.</p>
+<hr>
+<h2 id="anatomy-of-a-uuidv7">Anatomy of a UUIDv7</h2>
+<p>A UUIDv7 is a 128-bit value divided into distinct functional segments:</p>
+<pre><code class="lang-text"> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           unix_ts_ms                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          unix_ts_ms           |  ver  |       rand_a          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|var|                        rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Bit Length</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>unix_ts_ms</code></strong></td>
+<td>48 bits</td>
+<td>Milliseconds elapsed since the Unix Epoch (<code>1970-01-01T00:00:00Z</code>). Dictates chronological sort order.</td>
+</tr>
+<tr>
+<td><strong><code>ver</code></strong></td>
+<td>4 bits</td>
+<td>Version identifier fixed strictly to <code>0111</code> (<code>Version 7</code>).</td>
+</tr>
+<tr>
+<td><strong><code>rand_a</code></strong></td>
+<td>12 bits</td>
+<td>First block of cryptographically secure random bits.</td>
+</tr>
+<tr>
+<td><strong><code>var</code></strong></td>
+<td>2 bits</td>
+<td>Variant bits fixed to <code>10</code> conforming to standard IETF framing.</td>
+</tr>
+<tr>
+<td><strong><code>rand_b</code></strong></td>
+<td>62 bits</td>
+<td>Second block of cryptographically secure random bits ensuring global collision resistance.</td>
+</tr>
+</tbody>
+</table>
+<p>Example generated identifier:</p>
+<pre><code class="lang-text">0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10
+
+</code></pre>
+<hr>
+<h2 id="legacy-uuidv4-vs-modern-uuidv7">Legacy UUIDv4 vs. Modern UUIDv7</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Legacy UUIDv4 (<code>Guid.NewGuid()</code>)</th>
+<th>Modern UUIDv7 (<code>Uuid7.New()</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Base</strong></td>
+<td>Pure Cryptographic Randomness</td>
+<td>Unix Timestamp + Cryptographic Randomness</td>
+</tr>
+<tr>
+<td><strong>Chronologically Sortable</strong></td>
+<td>❌ No</td>
+<td>✅ Yes (Natural Sort Order)</td>
+</tr>
+<tr>
+<td><strong>Database B-Tree Optimized</strong></td>
+<td>❌ No (Causes Page Splits)</td>
+<td>✅ Yes (Sequential Insertion)</td>
+</tr>
+<tr>
+<td><strong>Embedded Creation Time</strong></td>
+<td>❌ No</td>
+<td>✅ Yes (Millisecond Precision)</td>
+</tr>
+<tr>
+<td><strong>Distributed System Ready</strong></td>
+<td>✅ Yes</td>
+<td>✅ Yes (Zero Coordination Required)</td>
+</tr>
+<tr>
+<td><strong>RFC 9562 Recommended</strong></td>
+<td>❌ Deprecated Standard</td>
+<td>✅ Yes (Preferred Enterprise Standard)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="why-adopt-uuidv7">Why Adopt UUIDv7?</h2>
+<ol>
+<li><strong>Eliminate Database Fragmentation:</strong> Because incoming IDs naturally sort sequentially at the top of clustered B-Trees, relational databases (SQL Server, PostgreSQL, MySQL) perform inserts significantly faster with minimal index maintenance overhead.</li>
+<li><strong>Zero-Storage Timestamp Auditing:</strong> Extract exact creation timestamps directly from the primary key payload without storing redundant <code>CreatedAt</code> database columns.</li>
+<li><strong>Decentralized Scale:</strong> Generate globally unique primary keys across thousands of disconnected microservice instances or mobile clients without central ID generators or database locking.</li>
+</ol>
+<hr>
+<h2 id="dixoridentity-capabilities-at-a-glance">Dixor.Identity Capabilities at a Glance</h2>
+<p><code>Dixor.Identity</code> exposes a complete, zero-allocation API suite tailored for high-performance .NET applications:</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+// 1. Standard time-ordered generation
+Guid id = Uuid7.New();
+
+// 2. Monotonic lock-free generation for sub-millisecond batch sequencing
+Guid monotonicId = Uuid7.NewMonotonic();
+
+// 3. High-efficiency lazy enumeration for ETL pipelines
+IEnumerable&lt;Guid&gt; batchIds = Uuid7.NewGuids(count: 1000);
+
+// 4. Extract generation timestamps without database lookups
+DateTimeOffset createdAt = Uuid7.GetTimestamp(id);
+
+// 5. Wrap identifiers in business domain context
+string orderRef = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;EU&quot;);
+// Output: ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-EU
+
+</code></pre>
+<hr>
+<h2 id="related-guides--deep-dives">Related Guides &amp; Deep Dives</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation Guide</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation &amp; Sequencing</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; String Conversion</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules &amp; Verification</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=../../getting-started/MigrationGuide.md">Migration Guide</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Generation.md">UUIDv7 Generation</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_Overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

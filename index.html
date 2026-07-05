@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dixor | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dixor | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="images/icon-192.png">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dixor">Dixor</h1>
+
+<p><img src="https://img.shields.io/github/license/DishantSave/Dixor" alt="GitHub License">
+<img src="https://img.shields.io/badge/.NET-10+-blue" alt=".NET">
+<img src="https://img.shields.io/badge/Status-Active%20Development-success" alt="Status"></p>
+<hr>
+<h1 id="dixor-1">DIXOR</h1>
+<p><strong>DIXOR</strong> stands for <strong>Dishant's Infrastructure eXtensible Open Runtime</strong>.</p>
+<p>Dixor is a modern ecosystem of high-performance, production-ready .NET libraries built to simplify application development through well-designed APIs, excellent documentation, and developer-friendly tooling.</p>
+<p>Rather than being a single monolithic dependency, Dixor is a curated collection of focused infrastructure libraries. Every package solves one specific engineering challenge exceptionally well while maintaining a unified philosophy across the entire ecosystem:</p>
+<ul>
+<li><strong>Modern API Design:</strong> Intuitive, strongly typed, and predictable interfaces built natively for modern C#.</li>
+<li><strong>High Performance:</strong> Optimized execution paths built to handle massive enterprise throughput.</li>
+<li><strong>Allocation-Conscious Implementations:</strong> Minimal heap allocations and efficient internal layouts to reduce Garbage Collection (GC) pressure.</li>
+<li><strong>Correctness &amp; Standards:</strong> Strict compliance with authoritative internet specifications (RFC 9562 for UUIDs, RFC email syntax rules).</li>
+<li><strong>Rich Developer Experience:</strong> Actionable diagnostics, structured results, and built-in Roslyn compile-time analyzers.</li>
+<li><strong>Modular Architecture:</strong> Install strictly what your application requires without pulling in unnecessary overhead.</li>
+</ul>
+<hr>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#ecosystem-overview">Ecosystem Overview</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#dixoridentity">Dixor.Identity</a>
+<ul>
+<li><a href="#dixoridentity---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></li>
+<li><a href="#what-is-rfc-9562--uuid-version-7">What is RFC 9562 &amp; UUID Version 7?</a></li>
+<li><a href="#uuid-version-comparison">UUID Version Comparison</a></li>
+<li><a href="#dixoridentity---features--api-reference">Features &amp; API Reference</a></li>
+<li><a href="#built-in-roslyn-analyzers">Built-in Roslyn Analyzers</a></li>
+<li><a href="#dixoridentity---quick-start">Quick Start</a></li>
+</ul>
+</li>
+<li><a href="#dixorvalidation">Dixor.Validation</a>
+<ul>
+<li><a href="#dixorvalidation---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></li>
+<li><a href="#why-not-regular-expressions">Why Not Regular Expressions?</a></li>
+<li><a href="#validation-strategy--layers">Validation Strategy &amp; Layers</a></li>
+<li><a href="#dixorvalidation---features--api-reference">Features &amp; API Reference</a></li>
+<li><a href="#intelligent-suggestion-engine">Intelligent Suggestion Engine</a></li>
+<li><a href="#dixorvalidation---quick-start">Quick Start</a></li>
+</ul>
+</li>
+<li><a href="#documentation-structure">Documentation Structure</a></li>
+<li><a href="#supported-frameworks">Supported Frameworks</a></li>
+<li><a href="#ecosystem-roadmap">Ecosystem Roadmap</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr>
+<h1 id="ecosystem-overview">Ecosystem Overview</h1>
+<p>The Dixor ecosystem currently consists of two production-grade, independently distributed libraries designed for high-throughput enterprise systems, cloud-native microservices, and modern ASP.NET Core applications.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Package</th>
+<th style="text-align: center;">Current Version</th>
+<th style="text-align: center;">NuGet Downloads</th>
+<th style="text-align: left;">Primary Purpose</th>
+<th style="text-align: left;">Key Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>Dixor.Identity</code></strong></td>
+<td style="text-align: center;"><code>v0.1.3</code> <em>(Runtime <code>v0.1.4</code>)</em></td>
+<td style="text-align: center;"><img src="https://img.shields.io/nuget/dt/Dixor.Identity" alt="NuGet Downloads"></td>
+<td style="text-align: left;">RFC 9562 UUID Version 7 generation, monotonic sequencing, and parsing.</td>
+<td style="text-align: left;">Time-ordered database primary keys, embedded timestamp extraction, zero-allocation APIs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>Dixor.Validation</code></strong></td>
+<td style="text-align: center;"><code>v0.1.0</code></td>
+<td style="text-align: center;"><img src="https://img.shields.io/nuget/dt/Dixor.Validation" alt="NuGet Downloads"></td>
+<td style="text-align: left;">High-performance validation engine starting with structured email validation.</td>
+<td style="text-align: left;">RFC-aware syntax parsing, strongly typed error diagnostics, domain typo suggestion engine.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="installation">Installation</h1>
+<p>Every library in the Dixor ecosystem is published independently on NuGet. You can adopt individual libraries incrementally without modifying existing infrastructure.</p>
+<h3 id="net-cli">.NET CLI</h3>
+<pre><code class="lang-bash">dotnet add package Dixor.Identity
+dotnet add package Dixor.Validation
+
+</code></pre>
+<h3 id="visual-studio-package-manager-console">Visual Studio Package Manager Console</h3>
+<pre><code class="lang-powershell">Install-Package Dixor.Identity
+Install-Package Dixor.Validation
+
+</code></pre>
+<h3 id="packagereference-msbuild"><code>&lt;PackageReference&gt;</code> (MSBuild)</h3>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+  &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.1.4&quot; /&gt;
+  &lt;PackageReference Include=&quot;Dixor.Validation&quot; Version=&quot;0.1.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+
+</code></pre>
+<hr>
+<h1 id="dixoridentity">Dixor.Identity</h1>
+<h2 id="dixoridentity---introduction--core-philosophy">Dixor.Identity - Introduction &amp; Core Philosophy</h2>
+<p><strong>Dixor.Identity</strong> delivers modern, allocation-conscious identifier generation for .NET. While standard .NET developers frequently rely on <code>Guid.NewGuid()</code>, that API outputs <strong>UUID Version 4</strong> identifiers. Because Version 4 UUIDs are completely random, using them as clustered primary keys in relational databases forces index page splits, random disk I/O, cache misses, and massive database fragmentation under heavy write loads.</p>
+<p><code>Dixor.Identity</code> solves this problem by providing a complete, highly optimized implementation of <strong>RFC 9562 UUID Version 7</strong>. Version 7 identifiers embed a millisecond-precision Unix timestamp in their most significant bits, making them naturally sortable in chronological order while utilizing 74 bits of cryptographic randomness to guarantee global uniqueness.</p>
+<hr>
+<h2 id="what-is-rfc-9562--uuid-version-7">What is RFC 9562 &amp; UUID Version 7?</h2>
+<p><strong>RFC 9562</strong> is the authoritative IETF specification that supersedes the legacy RFC 4122 standard. It introduces new identifier formats specifically architected for modern distributed databases and cloud environments.</p>
+<p>A UUID Version 7 is a 128-bit structure composed of four distinct internal segments:</p>
+<pre><code class="lang-text"> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           unix_ts_ms                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          unix_ts_ms           |  ver  |       rand_a          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|var|                        rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Bit Length</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>unix_ts_ms</code></strong></td>
+<td>48 bits</td>
+<td>Milliseconds elapsed since the Unix Epoch (<code>1970-01-01T00:00:00Z</code>).</td>
+</tr>
+<tr>
+<td><strong><code>ver</code></strong></td>
+<td>4 bits</td>
+<td>Version identifier (set strictly to <code>0111</code> / <code>7</code>).</td>
+</tr>
+<tr>
+<td><strong><code>rand_a</code></strong></td>
+<td>12 bits</td>
+<td>First block of cryptographically secure random data.</td>
+</tr>
+<tr>
+<td><strong><code>var</code></strong></td>
+<td>2 bits</td>
+<td>Variant bits identifying the IETF variant (<code>10</code>).</td>
+</tr>
+<tr>
+<td><strong><code>rand_b</code></strong></td>
+<td>62 bits</td>
+<td>Second block of cryptographically secure random data.</td>
+</tr>
+</tbody>
+</table>
+<p>Example generated string:</p>
+<pre><code class="lang-text">019853a6-35c4-7e58-bf91-cb7d0b1b11d2
+
+</code></pre>
+<hr>
+<h2 id="uuid-version-comparison">UUID Version Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Specification Feature</th>
+<th>Legacy UUIDv1</th>
+<th>Standard UUIDv4 (<code>Guid.NewGuid()</code>)</th>
+<th>Dixor UUIDv7 (<code>Uuid7.New()</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Base</strong></td>
+<td>Timestamp + MAC Address</td>
+<td>Pure Cryptographic Randomness</td>
+<td>Unix Timestamp + Cryptographic Randomness</td>
+</tr>
+<tr>
+<td><strong>Chronologically Sortable</strong></td>
+<td>Partial (Requires Reordering)</td>
+<td>❌ No</td>
+<td>✅ Yes (Natural Sort Order)</td>
+</tr>
+<tr>
+<td><strong>Database B-Tree Optimized</strong></td>
+<td>Partial</td>
+<td>❌ No (Causes Page Splits)</td>
+<td>✅ Yes (Sequential Insertion)</td>
+</tr>
+<tr>
+<td><strong>Embedded Creation Time</strong></td>
+<td>✅ Yes</td>
+<td>❌ No</td>
+<td>✅ Yes (Millisecond Precision)</td>
+</tr>
+<tr>
+<td><strong>Privacy Safe</strong></td>
+<td>❌ No (Exposes Host MAC)</td>
+<td>✅ Yes</td>
+<td>✅ Yes (No Hardware Fingerprint)</td>
+</tr>
+<tr>
+<td><strong>Distributed System Ready</strong></td>
+<td>Partial (Collision Risks)</td>
+<td>✅ Yes</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>RFC 9562 Recommended</strong></td>
+<td>❌ Deprecated</td>
+<td>❌ No</td>
+<td>✅ Yes (Preferred Standard)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="dixoridentity---features--api-reference">Dixor.Identity - Features &amp; API Reference</h2>
+<h3 id="-standard-uuidv7-generation">🚀 Standard UUIDv7 Generation</h3>
+<p>Generates a standard time-ordered UUIDv7. Optimized for ultra-low latency and zero heap allocations.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+Guid identifier = Uuid7.New();
+
+</code></pre>
+<h3 id="-monotonic-uuid-generation">⚡ Monotonic UUID Generation</h3>
+<p>In ultra-high-throughput systems generating multiple records within the exact same millisecond, standard UUIDv7 values sort chronologically by timestamp but rely on random bits within that millisecond. <code>Uuid7.NewMonotonic()</code> guarantees strict mathematical sequential order across identical timestamps by safely incrementing the random sequence.</p>
+<pre><code class="lang-csharp">Guid monotonicId1 = Uuid7.NewMonotonic();
+Guid monotonicId2 = Uuid7.NewMonotonic(); // Guaranteed &gt; monotonicId1
+
+</code></pre>
+<h3 id="-high-efficiency-batch-generation">📦 High-Efficiency Batch Generation</h3>
+<p>Reduces loop overhead and streamlines mass insertions during ETL pipelines, batch migrations, or data seeding.</p>
+<pre><code class="lang-csharp">IEnumerable&lt;Guid&gt; batchIds = Uuid7.NewGuids(count: 500);
+
+</code></pre>
+<h3 id="-validation--parsing">🔍 Validation &amp; Parsing</h3>
+<p>Instantly verify whether any arbitrary <code>Guid</code> adheres to the RFC 9562 UUIDv7 specification, or safely parse incoming strings from HTTP headers or payload strings.</p>
+<pre><code class="lang-csharp">Guid sampleId = Guid.NewGuid(); // Creates a UUIDv4
+bool isValidV7 = Uuid7.IsValid(sampleId); // Returns false
+
+Guid parsedId = Uuid7.Parse(&quot;Order-019853a6-35c4-7e58-bf91-cb7d0b1b11d2&quot;);
+
+</code></pre>
+<h3 id="-zero-overhead-timestamp-extraction">⏱ Zero-Overhead Timestamp Extraction</h3>
+<p>Extract exact generation timestamps directly from the identifier without needing database lookups or storing secondary <code>CreatedAt</code> date columns.</p>
+<pre><code class="lang-csharp">DateTimeOffset creationTime = Uuid7.GetTimestamp(identifier);
+// Output: 2026-07-04T18:42:17.125+00:00
+
+</code></pre>
+<h3 id="-business-friendly-formatting">🎨 Business-Friendly Formatting</h3>
+<p>Wrap identifiers in descriptive domain metadata while keeping the core UUID intact.</p>
+<pre><code class="lang-csharp">string orderReference = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;US&quot;);
+// Output: ORD-019853a6-35c4-7e58-bf91-cb7d0b1b11d2-US
+
+</code></pre>
+<hr>
+<h2 id="built-in-roslyn-analyzers">Built-in Roslyn Analyzers</h2>
+<p><code>Dixor.Identity</code> includes intelligent, built-in Roslyn compile-time analyzers that enforce correct API usage directly inside the Visual Studio IDE or <code>.dotnet</code> build pipeline. Starting with runtime release <strong>v0.1.4</strong>, analyzer packages are structured cleanly to optimize restore speeds.</p>
+<table>
+<thead>
+<tr>
+<th>Diagnostic Code</th>
+<th>Description</th>
+<th>Example Trigger Code</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>DIXOR001</code></strong></td>
+<td>Invalid UUID batch size.</td>
+<td><code>Uuid7.NewGuids(0);</code> or negative integers.</td>
+<td>Pass a positive integer <code>&gt; 0</code>.</td>
+</tr>
+<tr>
+<td><strong><code>DIXOR002</code></strong></td>
+<td>Redundant parsing calls detected.</td>
+<td>Passing unparsed raw text to invalid targets.</td>
+<td>Use direct typed overload APIs.</td>
+</tr>
+<tr>
+<td><strong><code>DIXOR003</code></strong></td>
+<td>Improper formatting arguments.</td>
+<td>Passing empty/whitespace prefix strings.</td>
+<td>Provide valid domain markers.</td>
+</tr>
+<tr>
+<td><strong><code>DIXOR010</code></strong></td>
+<td>Deprecated identifier generation detected.</td>
+<td>Flagging legacy <code>Guid.NewGuid()</code> calls.</td>
+<td>Refactor to <code>Uuid7.New()</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="dixoridentity---quick-start">Dixor.Identity - Quick Start</h2>
+<pre><code class="lang-csharp">using System;
+using Dixor.Identity.UUID7;
+
+// 1. Create a modern time-ordered primary key
+Guid primaryKey = Uuid7.New();
+Console.WriteLine($&quot;Generated ID : {primaryKey}&quot;);
+
+// 2. Extract when this ID was created without metadata storage
+DateTimeOffset createdAt = Uuid7.GetTimestamp(primaryKey);
+Console.WriteLine($&quot;Created At   : {createdAt:O}&quot;);
+
+// 3. Create a clean business reference string for external APIs
+string trackingNumber = Uuid7.NewString(prefix: &quot;SHP&quot;, suffix: &quot;GLOBAL&quot;);
+Console.WriteLine($&quot;Tracking Ref : {trackingNumber}&quot;);
+
+// 4. Batch generate monotonic IDs for bulk transactional processing
+foreach (Guid batchId in Uuid7.NewGuids(3))
+{
+    Console.WriteLine($&quot;Batch Entity : {batchId}&quot;);
+}
+
+</code></pre>
+<hr>
+<h1 id="dixorvalidation">Dixor.Validation</h1>
+<h2 id="dixorvalidation---introduction--core-philosophy">Dixor.Validation - Introduction &amp; Core Philosophy</h2>
+<p><strong>Dixor.Validation</strong> is an enterprise-grade validation engine built to replace fragile, error-prone checking strategies with structured, highly informative validation pipelines. The initial <strong><code>v0.1.0</code></strong> release delivers a comprehensive <strong>Email Validation Engine</strong> architected to overcome the severe limitations of standard Regex-based email validators.</p>
+<p>While conventional validators simply output a boolean <code>true</code>/<code>false</code>, <code>Dixor.Validation</code> treats validation as a deeply analytical process. It returns strongly typed validation results containing exact diagnostic error codes, parsed architectural components, Unicode/IDN analysis, and actionable user suggestions.</p>
+<hr>
+<h2 id="why-not-regular-expressions">Why Not Regular Expressions?</h2>
+<p>Using Regular Expressions (<code>Regex</code>) for email validation is widely considered an anti-pattern in enterprise software due to several critical engineering flaws:</p>
+<ol>
+<li><strong>Catastrophic Backtracking (ReDoS):</strong> Complex email regexes are notoriously vulnerable to Denial of Service attacks when parsing maliciously crafted input strings.</li>
+<li><strong>Standards Non-Compliance:</strong> Even massive regex patterns regularly fail to handle legitimate RFC syntax rules, quoted strings, comments, or Internationalized Domain Names (IDNs).</li>
+<li><strong>Zero Actionable Feedback:</strong> A failing regex only tells you the input rejected the pattern—it cannot tell you <em>why</em> (e.g., consecutive dots vs. missing TLD).</li>
+<li><strong>Excessive Heap Allocations:</strong> Regex evaluation frequently allocates significant temporary memory strings during complex pattern matching.</li>
+</ol>
+<p><code>Dixor.Validation</code> eliminates regex dependency by utilizing a structured, state-based tokenizer that parses inputs cleanly against RFC internet specifications.</p>
+<hr>
+<h2 id="validation-strategy--layers">Validation Strategy &amp; Layers</h2>
+<p>The <code>Dixor.Validation.Email</code> pipeline evaluates email addresses in structured architectural layers:</p>
+<pre><code class="lang-text">               ┌──────────────────────────────┐
+               │        Input String          │
+               └──────────────┬───────────────┘
+                              ▼
+               ┌──────────────────────────────┐
+               │   Basic Structural Check     │  (At-Symbol separation, string bounds)
+               └──────────────┬───────────────┘
+                              ▼
+               ┌──────────────────────────────┐
+               │    Local-Part Evaluation     │  (Quotes, character rules, length limits)
+               └──────────────┬───────────────┘
+                              ▼
+               ┌──────────────────────────────┐
+               │      Domain Evaluation       │  (TLD rules, IDN support, label structure)
+               └──────────────┬───────────────┘
+                              ▼
+               ┌──────────────────────────────┐
+               │  Structured ValidationResult │  (Diagnostics, errors, typo suggestions)
+               └──────────────────────────────┘
+
+</code></pre>
+<hr>
+<h2 id="dixorvalidation---features--api-reference">Dixor.Validation - Features &amp; API Reference</h2>
+<h3 id="rich-diagnostics--structured-results">Rich Diagnostics &amp; Structured Results</h3>
+<p>Validation operations return a generic <code>ValidationResult&lt;EmailValidationError&gt;</code> payload containing complete diagnostic state data.</p>
+<pre><code class="lang-csharp">using Dixor.Validation.Email;
+
+ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Default.Validate(&quot;john..doe@example.com&quot;);
+
+if (!result.IsValid)
+{
+    Console.WriteLine($&quot;Validation Failed: {result.Error}&quot;);
+}
+
+</code></pre>
+<h3 id="strongly-typed-error-enums-emailvalidationerror">Strongly Typed Error Enums (<code>EmailValidationError</code>)</h3>
+<p>Instead of parsing arbitrary strings, applications can programmatically branch logic using precise failure codes:</p>
+<ul>
+<li><strong><code>InvalidLocalPart</code></strong> — The local account prefix contains illegal characters or improper structure.</li>
+<li><strong><code>InvalidDomain</code></strong> — The domain structure violates internet naming standards.</li>
+<li><strong><code>ConsecutiveDots</code></strong> — Illegal syntax containing consecutive periods (<code>..</code>) in unquoted spaces.</li>
+<li><strong><code>MissingAtSymbol</code></strong> — Structural failure due to a missing <code>@</code> delimiter.</li>
+<li><strong><code>EmptyLocalPart</code></strong> — Address starts directly with <code>@domain.com</code>.</li>
+<li><strong><code>EmptyDomain</code></strong> — Address lacks a target domain (<code>user@</code>).</li>
+<li><strong><code>InvalidCharacter</code></strong> — Presence of control characters, spaces, or restricted ASCII symbols.</li>
+</ul>
+<h3 id="parsing--inspection-apis">Parsing &amp; Inspection APIs</h3>
+<p>In addition to validation, the library provides dedicated parsing and inspection utilities that safely dissect addresses into structured models.</p>
+<pre><code class="lang-csharp">using Dixor.Validation.Email;
+
+// Parse directly into a domain object
+EmailAddress address = EmailParser.Parse(&quot;john.doe@example.co.uk&quot;);
+
+Console.WriteLine($&quot;Local Part : {address.LocalPart}&quot;); // john.doe
+Console.WriteLine($&quot;Domain     : {address.Domain}&quot;);    // example.co.uk
+
+</code></pre>
+<hr>
+<h2 id="intelligent-suggestion-engine">Intelligent Suggestion Engine</h2>
+<p>User registration flows frequently suffer from high drop-off rates due to common domain typos on mobile devices. <code>Dixor.Validation</code> incorporates an algorithmic domain suggestion engine that detects common spelling errors and calculates immediate corrections.</p>
+<pre><code class="lang-csharp">ValidationResult&lt;EmailValidationError&gt; typoResult = EmailValidator.Default.Validate(&quot;alice@gmai.com&quot;);
+
+if (!typoResult.IsValid &amp;&amp; typoResult.HasSuggestions)
+{
+    foreach (string suggestion in typoResult.Suggestions)
+    {
+        Console.WriteLine($&quot;Did you mean: {suggestion}?&quot;); // Output: gmail.com
+    }
+}
+
+</code></pre>
+<hr>
+<h2 id="dixorvalidation---quick-start">Dixor.Validation - Quick Start</h2>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation.Email;
+
+public class RegistrationService
+{
+    public void ProcessRegistration(string userEmailInput)
+    {
+        // 1. Execute customized validation pipeline
+        ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Default.Validate(
+            userEmailInput, 
+            EmailValidationOptions.Default
+        );
+
+        // 2. Handle failures cleanly
+        if (!result.IsValid)
+        {
+            Console.WriteLine($&quot;[Error] Rejected email: {result.Error}&quot;);
+
+            // 3. Proactively assist users with domain typo corrections
+            if (result.HasSuggestions)
+            {
+                Console.WriteLine($&quot;Suggestion: Try '{string.Join(&quot;, &quot;, result.Suggestions)}'&quot;);
+            }
+            return;
+        }
+
+        // 4. Parse verified data safely
+        EmailAddress verifiedAddress = EmailParser.Parse(userEmailInput);
+        Console.WriteLine($&quot;[Success] Routing welcome packet to domain: {verifiedAddress.Domain}&quot;);
+    }
+}
+
+</code></pre>
+<hr>
+<h1 id="documentation-structure">Documentation Structure</h1>
+<p>When viewed on our dedicated DocFX web portal, the ecosystem documentation is organized into clear, intuitive domains:</p>
+<pre><code class="lang-text">docs/
+├── index.md                        &lt;-- Ecosystem Landing Portal
+├── getting-started/
+│   ├── Installation.md
+│   └── MigrationGuide.md
+├── identity/
+│   ├── uuid7/
+│   │   ├── Overview.md
+│   │   ├── Generation.md
+│   │   ├── MonotonicGeneration.md
+│   │   └── Formatting.md
+│   ├── analyzers/
+│   └── internals/
+└── validation/
+    ├── email/
+    │   ├── Overview.md
+    │   ├── Validation.md
+    │   ├── Parsing.md
+    │   └── Suggestions.md
+    └── roadmap/
+
+</code></pre>
+<hr>
+<h1 id="supported-frameworks">Supported Frameworks</h1>
+<p>Every library in the Dixor ecosystem targets modern .NET runtimes to leverage advanced memory primitives (<code>Span&lt;T&gt;</code>, <code>ReadOnlySpan&lt;T&gt;</code>) and aggressive compiler optimizations.</p>
+<table>
+<thead>
+<tr>
+<th>Target Framework</th>
+<th>Status</th>
+<th>Minimum Target Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>.NET 10</code></strong></td>
+<td>✅ Fully Supported</td>
+<td><code>.NET 10.0+</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="ecosystem-roadmap">Ecosystem Roadmap</h1>
+<p>Dixor is actively evolving to cover mission-critical enterprise infrastructure requirements.</p>
+<h3 id="-dixoridentity-roadmap">🔐 Dixor.Identity Roadmap</h3>
+<ul>
+<li><strong>ULID Support:</strong> High-performance Lexicographically Sortable Identifier generation.</li>
+<li><strong>Snowflake Identifiers:</strong> Distributed 64-bit integer generation for extreme-scale microservices.</li>
+<li><strong>Sequential GUIDs:</strong> Native SQL Server optimized identifier algorithms (<code>AtEnd</code> ordering).</li>
+<li><strong>Source Generators:</strong> Compile-time identity binding for high-throughput messaging contracts.</li>
+</ul>
+<h3 id="-dixorvalidation-roadmap">✔️ Dixor.Validation Roadmap</h3>
+<ul>
+<li><strong>Email Module Enhancements:</strong> Active DNS resolution, MX record verification, disposable email detection, and domain reputation checks.</li>
+<li><strong>URL Validation Engine:</strong> RFC 3986 structured URI syntax checking and scheme authorization.</li>
+<li><strong>Enterprise Financial Modules:</strong> International Bank Account Number (<code>IBAN</code>), Value Added Tax (<code>VAT</code>), and ISO credit card validation.</li>
+<li><strong>Structured Data Pipelines:</strong> High-speed JSON schema validation and XML structure checking.</li>
+</ul>
+<hr>
+<h1 id="contributing">Contributing</h1>
+<p>Contributions, feature proposals, and bug reports are warmly welcomed!</p>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a feature branch (<code>git checkout -b feature/amazing-feature</code>).</li>
+<li>Commit your changes following standard formatting rules (<code>git commit -m 'Add amazing feature'</code>).</li>
+<li>Ensure all analyzer diagnostics and unit tests pass cleanly.</li>
+<li>Push to the branch and open a Pull Request.</li>
+</ol>
+<hr>
+<h1 id="license">License</h1>
+<p>Every package in the Dixor ecosystem is published under the terms of the <strong>MIT License</strong>. See the root <a href="https://www.google.com/search?q=LICENSE">LICENSE</a> file for legal specifics.</p>
+<hr>
+<hr>
+<h1 id="welcome-to-the-dixor-ecosystem">Welcome to the Dixor Ecosystem</h1>
+<p><strong>Dixor</strong> is a modern, modular .NET package ecosystem architected to simplify identity management, validation workflows, and enterprise application building blocks.</p>
+<hr>
+<h2 id="core-packages">Core Packages</h2>
+<p>Explore the dedicated documentation and guides for each library in the ecosystem:</p>
+<h3 id="-dixoridentity">🔐 <a href="packages/identity/overview.md">Dixor.Identity</a></h3>
+<p>Streamlined authentication, session handling, and security flows built for modern .NET applications.</p>
+<ul>
+<li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Identity</code></li>
+<li><a href="packages/identity/overview.md">View Identity Guides →</a></li>
+</ul>
+<h3 id="-dixorvalidation">✔️ <a href="packages/validation/overview.md">Dixor.Validation</a></h3>
+<p>Clean, extensible validation rules and structured error handling for high-performance APIs.</p>
+<ul>
+<li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Validation</code></li>
+<li><a href="packages/validation/overview.md">View Validation Guides →</a></li>
+</ul>
+<hr>
+<h2 id="architecture--philosophy">Architecture &amp; Philosophy</h2>
+<p>Dixor is built around three core principles:</p>
+<ol>
+<li><strong>Modular Design:</strong> Consume only the packages you need without pulling in monolithic dependencies.</li>
+<li><strong>Clean Integration:</strong> Designed to integrate seamlessly with standard <code>.NET</code> Dependency Injection.</li>
+<li><strong>High Performance:</strong> Lightweight operations optimized for low allocations and speed.</li>
+</ol>
+<hr>
+<h2 id="explore-the-api-reference">Explore the API Reference</h2>
+<p>Looking for exact class definitions, method parameters, or return types? Dive directly into the auto-generated C# documentation:</p>
+<p>👉 <strong><a href="api/">Browse Full .NET API Reference</a></strong></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

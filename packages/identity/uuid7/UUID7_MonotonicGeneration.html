@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Monotonic UUIDv7 Generation (Uuid7.NewMonotonic) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Monotonic UUIDv7 Generation (Uuid7.NewMonotonic) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_MonotonicGeneration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="monotonic-uuidv7-generation-uuid7newmonotonic">Monotonic UUIDv7 Generation (<code>Uuid7.NewMonotonic</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Monotonic Generation</strong></p>
+</blockquote>
+<hr>
+<p>While standard <code>Uuid7.New()</code> embeds a 48-bit millisecond Unix timestamp to achieve chronological sorting, high-throughput applications (such as event sourcing engines or bulk data pipelines) frequently generate <strong>thousands of identifiers within the exact same millisecond</strong>.</p>
+<p>Because standard UUIDv7 relies on random bits for the remainder of the identifier, keys minted during the same millisecond lose strict sequential ordering. <code>Dixor.Identity</code> solves this via <strong>Monotonic Generation</strong>:</p>
+<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
+
+// Guarantees strict sequential ordering across same-millisecond invocations
+Guid eventId1 = Uuid7.NewMonotonic();
+Guid eventId2 = Uuid7.NewMonotonic(); // Guaranteed &gt; eventId1
+
+</code></pre>
+<hr>
+<h2 id="the-same-millisecond-collision-problem">The Same-Millisecond Collision Problem</h2>
+<p>Consider an application inserting records inside a tight loop:</p>
+<pre><code class="lang-csharp">// Standard Uuid7.New() inside the same millisecond (e.g., 1751132765000 ms)
+0197d8ef-f4c6-7a35-... (Random lower bits)
+0197d8ef-f4c6-7f91-... (Random lower bits)
+0197d8ef-f4c6-7210-... (Random lower bits)
+
+</code></pre>
+<p>Because the lower bits are filled with cryptographic entropy, database index sorting may arrange them out of insertion order (<code>...7210</code>, then <code>...7a35</code>, then <code>...7f91</code>).</p>
+<hr>
+<h2 id="how-monotonic-sequencing-works">How Monotonic Sequencing Works</h2>
+<p>To preserve mathematical ordering across identical timestamps, <code>Uuid7.NewMonotonic()</code> utilizes thread-safe synchronization to manage an internal 16-bit sequence counter (<code>ushort _counter</code>):</p>
+<pre><code class="lang-text">Same Millisecond (1751132765000 ms):
+[Call #1] ──► Timestamp: 1751132765000 | Counter: 0
+[Call #2] ──► Timestamp: 1751132765000 | Counter: 1
+[Call #3] ──► Timestamp: 1751132765000 | Counter: 2
+
+Clock Advances to New Millisecond (1751132765001 ms):
+[Call #4] ──► Timestamp: 1751132765001 | Counter: 0 (Reset)
+
+</code></pre>
+<h3 id="bitwise-layout--counter-embedding">Bitwise Layout &amp; Counter Embedding</h3>
+<p>The 16-bit counter is embedded directly into <strong>Bytes 14 and 15</strong> (the least significant bytes of the 128-bit structure) in Network Byte Order (Big-Endian):</p>
+<pre><code class="lang-text"> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           unix_ts_ms                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          unix_ts_ms           |  ver  |       rand_a          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|var|                        rand_b                             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|               rand_b          |            counter            |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+</code></pre>
+<ul>
+<li><strong>Throughput Capacity:</strong> A 16-bit counter accommodates up to <strong>65,536 strictly ordered identifiers per millisecond</strong> (over 65 million IDs per second per process).</li>
+<li><strong>Cryptographic Uniqueness:</strong> Bytes 6 through 13 continue to receive high-entropy randomness via <code>RandomNumberGenerator.Fill()</code>, preserving global collision resistance across distributed nodes.</li>
+</ul>
+<hr>
+<h2 id="standard-vs-monotonic-generation">Standard vs. Monotonic Generation</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard (<code>Uuid7.New()</code>)</th>
+<th>Monotonic (<code>Uuid7.NewMonotonic()</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Same-Millisecond Ordering</strong></td>
+<td>Random</td>
+<td>Strictly Sequential</td>
+</tr>
+<tr>
+<td><strong>Execution Overhead</strong></td>
+<td>Zero Lock / Sub-Nanosecond</td>
+<td>Minimal Lock Contention</td>
+</tr>
+<tr>
+<td><strong>Best Used For</strong></td>
+<td>REST APIs, User Creation</td>
+<td>Event Sourcing, High-Speed CQRS</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="scope--limitations">Scope &amp; Limitations</h2>
+<ul>
+<li><strong>Single-Process Guarantee:</strong> Monotonic sequence locking is bounded to the current executing application process (<code>_lock</code>). Two independent microservice instances generating IDs during the exact same millisecond will still produce interleaved sequences relative to each other.</li>
+</ul>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+</ul>
+<hr>
+<h2 id="navigation">Navigation</h2>
+<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation</a></p>
+<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></p>
+<pre><code></code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/uuid7/UUID7_MonotonicGeneration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

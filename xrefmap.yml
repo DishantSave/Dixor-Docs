@@ -1,0 +1,1133 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Dixor.Identity.UUID7
+  name: Dixor.Identity.UUID7
+  href: api/Dixor.Identity.UUID7.html
+  commentId: N:Dixor.Identity.UUID7
+  fullName: Dixor.Identity.UUID7
+  nameWithType: Dixor.Identity.UUID7
+- uid: Dixor.Identity.UUID7.Uuid7
+  name: Uuid7
+  href: api/Dixor.Identity.UUID7.Uuid7.html
+  commentId: T:Dixor.Identity.UUID7.Uuid7
+  fullName: Dixor.Identity.UUID7.Uuid7
+  nameWithType: Uuid7
+- uid: Dixor.Identity.UUID7.Uuid7.Format(System.Guid,System.String,System.String,System.String)
+  name: Format(Guid, string?, string?, string)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_Format_System_Guid_System_String_System_String_System_String_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.Format(System.Guid,System.String,System.String,System.String)
+  name.vb: Format(Guid, String, String, String)
+  fullName: Dixor.Identity.UUID7.Uuid7.Format(System.Guid, string?, string?, string)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.Format(System.Guid, String, String, String)
+  nameWithType: Uuid7.Format(Guid, string?, string?, string)
+  nameWithType.vb: Uuid7.Format(Guid, String, String, String)
+- uid: Dixor.Identity.UUID7.Uuid7.Format*
+  name: Format
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_Format_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.Format
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.Format
+  nameWithType: Uuid7.Format
+- uid: Dixor.Identity.UUID7.Uuid7.GetTimestamp(System.Guid)
+  name: GetTimestamp(Guid)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_GetTimestamp_System_Guid_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.GetTimestamp(System.Guid)
+  fullName: Dixor.Identity.UUID7.Uuid7.GetTimestamp(System.Guid)
+  nameWithType: Uuid7.GetTimestamp(Guid)
+- uid: Dixor.Identity.UUID7.Uuid7.GetTimestamp*
+  name: GetTimestamp
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_GetTimestamp_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.GetTimestamp
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.GetTimestamp
+  nameWithType: Uuid7.GetTimestamp
+- uid: Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds(System.Guid)
+  name: GetUnixTimeMilliseconds(Guid)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_GetUnixTimeMilliseconds_System_Guid_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds(System.Guid)
+  fullName: Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds(System.Guid)
+  nameWithType: Uuid7.GetUnixTimeMilliseconds(Guid)
+- uid: Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds*
+  name: GetUnixTimeMilliseconds
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_GetUnixTimeMilliseconds_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds
+  nameWithType: Uuid7.GetUnixTimeMilliseconds
+- uid: Dixor.Identity.UUID7.Uuid7.IsUuid7(System.Guid)
+  name: IsUuid7(Guid)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_IsUuid7_System_Guid_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.IsUuid7(System.Guid)
+  fullName: Dixor.Identity.UUID7.Uuid7.IsUuid7(System.Guid)
+  nameWithType: Uuid7.IsUuid7(Guid)
+- uid: Dixor.Identity.UUID7.Uuid7.IsUuid7*
+  name: IsUuid7
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_IsUuid7_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.IsUuid7
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.IsUuid7
+  nameWithType: Uuid7.IsUuid7
+- uid: Dixor.Identity.UUID7.Uuid7.IsValid(System.String)
+  name: IsValid(string)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_IsValid_System_String_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.IsValid(System.String)
+  name.vb: IsValid(String)
+  fullName: Dixor.Identity.UUID7.Uuid7.IsValid(string)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.IsValid(String)
+  nameWithType: Uuid7.IsValid(string)
+  nameWithType.vb: Uuid7.IsValid(String)
+- uid: Dixor.Identity.UUID7.Uuid7.IsValid*
+  name: IsValid
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_IsValid_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.IsValid
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.IsValid
+  nameWithType: Uuid7.IsValid
+- uid: Dixor.Identity.UUID7.Uuid7.NewGuid
+  name: NewGuid()
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuid
+  commentId: M:Dixor.Identity.UUID7.Uuid7.NewGuid
+  fullName: Dixor.Identity.UUID7.Uuid7.NewGuid()
+  nameWithType: Uuid7.NewGuid()
+- uid: Dixor.Identity.UUID7.Uuid7.NewGuid(System.DateTimeOffset)
+  name: NewGuid(DateTimeOffset)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuid_System_DateTimeOffset_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.NewGuid(System.DateTimeOffset)
+  fullName: Dixor.Identity.UUID7.Uuid7.NewGuid(System.DateTimeOffset)
+  nameWithType: Uuid7.NewGuid(DateTimeOffset)
+- uid: Dixor.Identity.UUID7.Uuid7.NewGuid*
+  name: NewGuid
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuid_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.NewGuid
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.NewGuid
+  nameWithType: Uuid7.NewGuid
+- uid: Dixor.Identity.UUID7.Uuid7.NewGuids(System.Int32)
+  name: NewGuids(int)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuids_System_Int32_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.NewGuids(System.Int32)
+  name.vb: NewGuids(Integer)
+  fullName: Dixor.Identity.UUID7.Uuid7.NewGuids(int)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.NewGuids(Integer)
+  nameWithType: Uuid7.NewGuids(int)
+  nameWithType.vb: Uuid7.NewGuids(Integer)
+- uid: Dixor.Identity.UUID7.Uuid7.NewGuids*
+  name: NewGuids
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuids_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.NewGuids
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.NewGuids
+  nameWithType: Uuid7.NewGuids
+- uid: Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid
+  name: NewMonotonicGuid()
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewMonotonicGuid
+  commentId: M:Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid
+  fullName: Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid()
+  nameWithType: Uuid7.NewMonotonicGuid()
+- uid: Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid*
+  name: NewMonotonicGuid
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewMonotonicGuid_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid
+  nameWithType: Uuid7.NewMonotonicGuid
+- uid: Dixor.Identity.UUID7.Uuid7.NewString(System.String,System.String,System.String)
+  name: NewString(string?, string?, string)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewString_System_String_System_String_System_String_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.NewString(System.String,System.String,System.String)
+  name.vb: NewString(String, String, String)
+  fullName: Dixor.Identity.UUID7.Uuid7.NewString(string?, string?, string)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.NewString(String, String, String)
+  nameWithType: Uuid7.NewString(string?, string?, string)
+  nameWithType.vb: Uuid7.NewString(String, String, String)
+- uid: Dixor.Identity.UUID7.Uuid7.NewString*
+  name: NewString
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewString_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.NewString
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.NewString
+  nameWithType: Uuid7.NewString
+- uid: Dixor.Identity.UUID7.Uuid7.Parse(System.String)
+  name: Parse(string)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_Parse_System_String_
+  commentId: M:Dixor.Identity.UUID7.Uuid7.Parse(System.String)
+  name.vb: Parse(String)
+  fullName: Dixor.Identity.UUID7.Uuid7.Parse(string)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.Parse(String)
+  nameWithType: Uuid7.Parse(string)
+  nameWithType.vb: Uuid7.Parse(String)
+- uid: Dixor.Identity.UUID7.Uuid7.Parse*
+  name: Parse
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_Parse_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.Parse
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.Parse
+  nameWithType: Uuid7.Parse
+- uid: Dixor.Identity.UUID7.Uuid7.TryGetTimestamp(System.Guid,System.DateTimeOffset@)
+  name: TryGetTimestamp(Guid, out DateTimeOffset)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_TryGetTimestamp_System_Guid_System_DateTimeOffset__
+  commentId: M:Dixor.Identity.UUID7.Uuid7.TryGetTimestamp(System.Guid,System.DateTimeOffset@)
+  name.vb: TryGetTimestamp(Guid, DateTimeOffset)
+  fullName: Dixor.Identity.UUID7.Uuid7.TryGetTimestamp(System.Guid, out System.DateTimeOffset)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.TryGetTimestamp(System.Guid, System.DateTimeOffset)
+  nameWithType: Uuid7.TryGetTimestamp(Guid, out DateTimeOffset)
+  nameWithType.vb: Uuid7.TryGetTimestamp(Guid, DateTimeOffset)
+- uid: Dixor.Identity.UUID7.Uuid7.TryGetTimestamp*
+  name: TryGetTimestamp
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_TryGetTimestamp_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.TryGetTimestamp
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.TryGetTimestamp
+  nameWithType: Uuid7.TryGetTimestamp
+- uid: Dixor.Identity.UUID7.Uuid7.TryParse(System.String,System.Guid@)
+  name: TryParse(string, out Guid)
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_TryParse_System_String_System_Guid__
+  commentId: M:Dixor.Identity.UUID7.Uuid7.TryParse(System.String,System.Guid@)
+  name.vb: TryParse(String, Guid)
+  fullName: Dixor.Identity.UUID7.Uuid7.TryParse(string, out System.Guid)
+  fullName.vb: Dixor.Identity.UUID7.Uuid7.TryParse(String, System.Guid)
+  nameWithType: Uuid7.TryParse(string, out Guid)
+  nameWithType.vb: Uuid7.TryParse(String, Guid)
+- uid: Dixor.Identity.UUID7.Uuid7.TryParse*
+  name: TryParse
+  href: api/Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_TryParse_
+  commentId: Overload:Dixor.Identity.UUID7.Uuid7.TryParse
+  isSpec: "True"
+  fullName: Dixor.Identity.UUID7.Uuid7.TryParse
+  nameWithType: Uuid7.TryParse
+- uid: Dixor.Validation
+  name: Dixor.Validation
+  href: api/Dixor.Validation.html
+  commentId: N:Dixor.Validation
+  fullName: Dixor.Validation
+  nameWithType: Dixor.Validation
+- uid: Dixor.Validation.Email
+  name: Dixor.Validation.Email
+  href: api/Dixor.Validation.Email.html
+  commentId: N:Dixor.Validation.Email
+  fullName: Dixor.Validation.Email
+  nameWithType: Dixor.Validation.Email
+- uid: Dixor.Validation.Email.EmailInfo
+  name: EmailInfo
+  href: api/Dixor.Validation.Email.EmailInfo.html
+  commentId: T:Dixor.Validation.Email.EmailInfo
+  fullName: Dixor.Validation.Email.EmailInfo
+  nameWithType: EmailInfo
+- uid: Dixor.Validation.Email.EmailInfo.Domain
+  name: Domain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Domain
+  commentId: P:Dixor.Validation.Email.EmailInfo.Domain
+  fullName: Dixor.Validation.Email.EmailInfo.Domain
+  nameWithType: EmailInfo.Domain
+- uid: Dixor.Validation.Email.EmailInfo.Domain*
+  name: Domain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Domain_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.Domain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.Domain
+  nameWithType: EmailInfo.Domain
+- uid: Dixor.Validation.Email.EmailInfo.HasPlusAddressing
+  name: HasPlusAddressing
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_HasPlusAddressing
+  commentId: P:Dixor.Validation.Email.EmailInfo.HasPlusAddressing
+  fullName: Dixor.Validation.Email.EmailInfo.HasPlusAddressing
+  nameWithType: EmailInfo.HasPlusAddressing
+- uid: Dixor.Validation.Email.EmailInfo.HasPlusAddressing*
+  name: HasPlusAddressing
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_HasPlusAddressing_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.HasPlusAddressing
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.HasPlusAddressing
+  nameWithType: EmailInfo.HasPlusAddressing
+- uid: Dixor.Validation.Email.EmailInfo.IsIpDomain
+  name: IsIpDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_IsIpDomain
+  commentId: P:Dixor.Validation.Email.EmailInfo.IsIpDomain
+  fullName: Dixor.Validation.Email.EmailInfo.IsIpDomain
+  nameWithType: EmailInfo.IsIpDomain
+- uid: Dixor.Validation.Email.EmailInfo.IsIpDomain*
+  name: IsIpDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_IsIpDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.IsIpDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.IsIpDomain
+  nameWithType: EmailInfo.IsIpDomain
+- uid: Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart
+  name: IsQuotedLocalPart
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_IsQuotedLocalPart
+  commentId: P:Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart
+  fullName: Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart
+  nameWithType: EmailInfo.IsQuotedLocalPart
+- uid: Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart*
+  name: IsQuotedLocalPart
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_IsQuotedLocalPart_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.IsQuotedLocalPart
+  nameWithType: EmailInfo.IsQuotedLocalPart
+- uid: Dixor.Validation.Email.EmailInfo.LocalPart
+  name: LocalPart
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_LocalPart
+  commentId: P:Dixor.Validation.Email.EmailInfo.LocalPart
+  fullName: Dixor.Validation.Email.EmailInfo.LocalPart
+  nameWithType: EmailInfo.LocalPart
+- uid: Dixor.Validation.Email.EmailInfo.LocalPart*
+  name: LocalPart
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_LocalPart_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.LocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.LocalPart
+  nameWithType: EmailInfo.LocalPart
+- uid: Dixor.Validation.Email.EmailInfo.SecondLevelDomain
+  name: SecondLevelDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_SecondLevelDomain
+  commentId: P:Dixor.Validation.Email.EmailInfo.SecondLevelDomain
+  fullName: Dixor.Validation.Email.EmailInfo.SecondLevelDomain
+  nameWithType: EmailInfo.SecondLevelDomain
+- uid: Dixor.Validation.Email.EmailInfo.SecondLevelDomain*
+  name: SecondLevelDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_SecondLevelDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.SecondLevelDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.SecondLevelDomain
+  nameWithType: EmailInfo.SecondLevelDomain
+- uid: Dixor.Validation.Email.EmailInfo.Subdomain
+  name: Subdomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Subdomain
+  commentId: P:Dixor.Validation.Email.EmailInfo.Subdomain
+  fullName: Dixor.Validation.Email.EmailInfo.Subdomain
+  nameWithType: EmailInfo.Subdomain
+- uid: Dixor.Validation.Email.EmailInfo.Subdomain*
+  name: Subdomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Subdomain_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.Subdomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.Subdomain
+  nameWithType: EmailInfo.Subdomain
+- uid: Dixor.Validation.Email.EmailInfo.TopLevelDomain
+  name: TopLevelDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_TopLevelDomain
+  commentId: P:Dixor.Validation.Email.EmailInfo.TopLevelDomain
+  fullName: Dixor.Validation.Email.EmailInfo.TopLevelDomain
+  nameWithType: EmailInfo.TopLevelDomain
+- uid: Dixor.Validation.Email.EmailInfo.TopLevelDomain*
+  name: TopLevelDomain
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_TopLevelDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.TopLevelDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.TopLevelDomain
+  nameWithType: EmailInfo.TopLevelDomain
+- uid: Dixor.Validation.Email.EmailInfo.Value
+  name: Value
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Value
+  commentId: P:Dixor.Validation.Email.EmailInfo.Value
+  fullName: Dixor.Validation.Email.EmailInfo.Value
+  nameWithType: EmailInfo.Value
+- uid: Dixor.Validation.Email.EmailInfo.Value*
+  name: Value
+  href: api/Dixor.Validation.Email.EmailInfo.html#Dixor_Validation_Email_EmailInfo_Value_
+  commentId: Overload:Dixor.Validation.Email.EmailInfo.Value
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailInfo.Value
+  nameWithType: EmailInfo.Value
+- uid: Dixor.Validation.Email.EmailValidationError
+  name: EmailValidationError
+  href: api/Dixor.Validation.Email.EmailValidationError.html
+  commentId: T:Dixor.Validation.Email.EmailValidationError
+  fullName: Dixor.Validation.Email.EmailValidationError
+  nameWithType: EmailValidationError
+- uid: Dixor.Validation.Email.EmailValidationError.ConsecutiveDots
+  name: ConsecutiveDots
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_ConsecutiveDots
+  commentId: F:Dixor.Validation.Email.EmailValidationError.ConsecutiveDots
+  fullName: Dixor.Validation.Email.EmailValidationError.ConsecutiveDots
+  nameWithType: EmailValidationError.ConsecutiveDots
+- uid: Dixor.Validation.Email.EmailValidationError.DomainEndsWithDot
+  name: DomainEndsWithDot
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainEndsWithDot
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainEndsWithDot
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainEndsWithDot
+  nameWithType: EmailValidationError.DomainEndsWithDot
+- uid: Dixor.Validation.Email.EmailValidationError.DomainLabelEndsWithHyphen
+  name: DomainLabelEndsWithHyphen
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainLabelEndsWithHyphen
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainLabelEndsWithHyphen
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainLabelEndsWithHyphen
+  nameWithType: EmailValidationError.DomainLabelEndsWithHyphen
+- uid: Dixor.Validation.Email.EmailValidationError.DomainLabelStartsWithHyphen
+  name: DomainLabelStartsWithHyphen
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainLabelStartsWithHyphen
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainLabelStartsWithHyphen
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainLabelStartsWithHyphen
+  nameWithType: EmailValidationError.DomainLabelStartsWithHyphen
+- uid: Dixor.Validation.Email.EmailValidationError.DomainLabelTooLong
+  name: DomainLabelTooLong
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainLabelTooLong
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainLabelTooLong
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainLabelTooLong
+  nameWithType: EmailValidationError.DomainLabelTooLong
+- uid: Dixor.Validation.Email.EmailValidationError.DomainStartsWithDot
+  name: DomainStartsWithDot
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainStartsWithDot
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainStartsWithDot
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainStartsWithDot
+  nameWithType: EmailValidationError.DomainStartsWithDot
+- uid: Dixor.Validation.Email.EmailValidationError.DomainTooLong
+  name: DomainTooLong
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_DomainTooLong
+  commentId: F:Dixor.Validation.Email.EmailValidationError.DomainTooLong
+  fullName: Dixor.Validation.Email.EmailValidationError.DomainTooLong
+  nameWithType: EmailValidationError.DomainTooLong
+- uid: Dixor.Validation.Email.EmailValidationError.Empty
+  name: Empty
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_Empty
+  commentId: F:Dixor.Validation.Email.EmailValidationError.Empty
+  fullName: Dixor.Validation.Email.EmailValidationError.Empty
+  nameWithType: EmailValidationError.Empty
+- uid: Dixor.Validation.Email.EmailValidationError.EmptyDomain
+  name: EmptyDomain
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_EmptyDomain
+  commentId: F:Dixor.Validation.Email.EmailValidationError.EmptyDomain
+  fullName: Dixor.Validation.Email.EmailValidationError.EmptyDomain
+  nameWithType: EmailValidationError.EmptyDomain
+- uid: Dixor.Validation.Email.EmailValidationError.EmptyLocalPart
+  name: EmptyLocalPart
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_EmptyLocalPart
+  commentId: F:Dixor.Validation.Email.EmailValidationError.EmptyLocalPart
+  fullName: Dixor.Validation.Email.EmailValidationError.EmptyLocalPart
+  nameWithType: EmailValidationError.EmptyLocalPart
+- uid: Dixor.Validation.Email.EmailValidationError.InternationalCharactersNotAllowed
+  name: InternationalCharactersNotAllowed
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InternationalCharactersNotAllowed
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InternationalCharactersNotAllowed
+  fullName: Dixor.Validation.Email.EmailValidationError.InternationalCharactersNotAllowed
+  nameWithType: EmailValidationError.InternationalCharactersNotAllowed
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidDomain
+  name: InvalidDomain
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidDomain
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidDomain
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidDomain
+  nameWithType: EmailValidationError.InvalidDomain
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidDomainCharacter
+  name: InvalidDomainCharacter
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidDomainCharacter
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidDomainCharacter
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidDomainCharacter
+  nameWithType: EmailValidationError.InvalidDomainCharacter
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidIpDomain
+  name: InvalidIpDomain
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidIpDomain
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidIpDomain
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidIpDomain
+  nameWithType: EmailValidationError.InvalidIpDomain
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidLocalPartCharacter
+  name: InvalidLocalPartCharacter
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidLocalPartCharacter
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidLocalPartCharacter
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidLocalPartCharacter
+  nameWithType: EmailValidationError.InvalidLocalPartCharacter
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidQuotedLocalPart
+  name: InvalidQuotedLocalPart
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidQuotedLocalPart
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidQuotedLocalPart
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidQuotedLocalPart
+  nameWithType: EmailValidationError.InvalidQuotedLocalPart
+- uid: Dixor.Validation.Email.EmailValidationError.InvalidTopLevelDomain
+  name: InvalidTopLevelDomain
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_InvalidTopLevelDomain
+  commentId: F:Dixor.Validation.Email.EmailValidationError.InvalidTopLevelDomain
+  fullName: Dixor.Validation.Email.EmailValidationError.InvalidTopLevelDomain
+  nameWithType: EmailValidationError.InvalidTopLevelDomain
+- uid: Dixor.Validation.Email.EmailValidationError.LocalPartEndsWithDot
+  name: LocalPartEndsWithDot
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_LocalPartEndsWithDot
+  commentId: F:Dixor.Validation.Email.EmailValidationError.LocalPartEndsWithDot
+  fullName: Dixor.Validation.Email.EmailValidationError.LocalPartEndsWithDot
+  nameWithType: EmailValidationError.LocalPartEndsWithDot
+- uid: Dixor.Validation.Email.EmailValidationError.LocalPartStartsWithDot
+  name: LocalPartStartsWithDot
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_LocalPartStartsWithDot
+  commentId: F:Dixor.Validation.Email.EmailValidationError.LocalPartStartsWithDot
+  fullName: Dixor.Validation.Email.EmailValidationError.LocalPartStartsWithDot
+  nameWithType: EmailValidationError.LocalPartStartsWithDot
+- uid: Dixor.Validation.Email.EmailValidationError.LocalPartTooLong
+  name: LocalPartTooLong
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_LocalPartTooLong
+  commentId: F:Dixor.Validation.Email.EmailValidationError.LocalPartTooLong
+  fullName: Dixor.Validation.Email.EmailValidationError.LocalPartTooLong
+  nameWithType: EmailValidationError.LocalPartTooLong
+- uid: Dixor.Validation.Email.EmailValidationError.MissingAtSymbol
+  name: MissingAtSymbol
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_MissingAtSymbol
+  commentId: F:Dixor.Validation.Email.EmailValidationError.MissingAtSymbol
+  fullName: Dixor.Validation.Email.EmailValidationError.MissingAtSymbol
+  nameWithType: EmailValidationError.MissingAtSymbol
+- uid: Dixor.Validation.Email.EmailValidationError.MultipleAtSymbols
+  name: MultipleAtSymbols
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_MultipleAtSymbols
+  commentId: F:Dixor.Validation.Email.EmailValidationError.MultipleAtSymbols
+  fullName: Dixor.Validation.Email.EmailValidationError.MultipleAtSymbols
+  nameWithType: EmailValidationError.MultipleAtSymbols
+- uid: Dixor.Validation.Email.EmailValidationError.None
+  name: None
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_None
+  commentId: F:Dixor.Validation.Email.EmailValidationError.None
+  fullName: Dixor.Validation.Email.EmailValidationError.None
+  nameWithType: EmailValidationError.None
+- uid: Dixor.Validation.Email.EmailValidationError.NotAllowed
+  name: NotAllowed
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_NotAllowed
+  commentId: F:Dixor.Validation.Email.EmailValidationError.NotAllowed
+  fullName: Dixor.Validation.Email.EmailValidationError.NotAllowed
+  nameWithType: EmailValidationError.NotAllowed
+- uid: Dixor.Validation.Email.EmailValidationError.Null
+  name: "Null"
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_Null
+  commentId: F:Dixor.Validation.Email.EmailValidationError.Null
+  fullName: Dixor.Validation.Email.EmailValidationError.Null
+  nameWithType: EmailValidationError.Null
+- uid: Dixor.Validation.Email.EmailValidationError.PlusAddressingNotAllowed
+  name: PlusAddressingNotAllowed
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_PlusAddressingNotAllowed
+  commentId: F:Dixor.Validation.Email.EmailValidationError.PlusAddressingNotAllowed
+  fullName: Dixor.Validation.Email.EmailValidationError.PlusAddressingNotAllowed
+  nameWithType: EmailValidationError.PlusAddressingNotAllowed
+- uid: Dixor.Validation.Email.EmailValidationError.QuotedLocalPartNotAllowed
+  name: QuotedLocalPartNotAllowed
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_QuotedLocalPartNotAllowed
+  commentId: F:Dixor.Validation.Email.EmailValidationError.QuotedLocalPartNotAllowed
+  fullName: Dixor.Validation.Email.EmailValidationError.QuotedLocalPartNotAllowed
+  nameWithType: EmailValidationError.QuotedLocalPartNotAllowed
+- uid: Dixor.Validation.Email.EmailValidationError.TooLong
+  name: TooLong
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_TooLong
+  commentId: F:Dixor.Validation.Email.EmailValidationError.TooLong
+  fullName: Dixor.Validation.Email.EmailValidationError.TooLong
+  nameWithType: EmailValidationError.TooLong
+- uid: Dixor.Validation.Email.EmailValidationError.WhiteSpace
+  name: WhiteSpace
+  href: api/Dixor.Validation.Email.EmailValidationError.html#Dixor_Validation_Email_EmailValidationError_WhiteSpace
+  commentId: F:Dixor.Validation.Email.EmailValidationError.WhiteSpace
+  fullName: Dixor.Validation.Email.EmailValidationError.WhiteSpace
+  nameWithType: EmailValidationError.WhiteSpace
+- uid: Dixor.Validation.Email.EmailValidationOptions
+  name: EmailValidationOptions
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html
+  commentId: T:Dixor.Validation.Email.EmailValidationOptions
+  fullName: Dixor.Validation.Email.EmailValidationOptions
+  nameWithType: EmailValidationOptions
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains
+  name: AllowDisposableDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowDisposableDomains
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains
+  nameWithType: EmailValidationOptions.AllowDisposableDomains
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains*
+  name: AllowDisposableDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowDisposableDomains_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains
+  nameWithType: EmailValidationOptions.AllowDisposableDomains
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowInternational
+  name: AllowInternational
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowInternational
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowInternational
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowInternational
+  nameWithType: EmailValidationOptions.AllowInternational
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowInternational*
+  name: AllowInternational
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowInternational_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowInternational
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowInternational
+  nameWithType: EmailValidationOptions.AllowInternational
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
+  name: AllowIpDomain
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowIpDomain
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
+  nameWithType: EmailValidationOptions.AllowIpDomain
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain*
+  name: AllowIpDomain
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowIpDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
+  nameWithType: EmailValidationOptions.AllowIpDomain
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
+  name: AllowLocalhost
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowLocalhost
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
+  nameWithType: EmailValidationOptions.AllowLocalhost
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost*
+  name: AllowLocalhost
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowLocalhost_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
+  nameWithType: EmailValidationOptions.AllowLocalhost
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing
+  name: AllowPlusAddressing
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowPlusAddressing
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing
+  nameWithType: EmailValidationOptions.AllowPlusAddressing
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing*
+  name: AllowPlusAddressing
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowPlusAddressing_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing
+  nameWithType: EmailValidationOptions.AllowPlusAddressing
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains
+  name: AllowPublicDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowPublicDomains
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains
+  nameWithType: EmailValidationOptions.AllowPublicDomains
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains*
+  name: AllowPublicDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowPublicDomains_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains
+  nameWithType: EmailValidationOptions.AllowPublicDomains
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart
+  name: AllowQuotedLocalPart
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowQuotedLocalPart
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart
+  nameWithType: EmailValidationOptions.AllowQuotedLocalPart
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart*
+  name: AllowQuotedLocalPart
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowQuotedLocalPart_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart
+  nameWithType: EmailValidationOptions.AllowQuotedLocalPart
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses
+  name: AllowRoleBasedAddresses
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowRoleBasedAddresses
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses
+  nameWithType: EmailValidationOptions.AllowRoleBasedAddresses
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses*
+  name: AllowRoleBasedAddresses
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowRoleBasedAddresses_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses
+  nameWithType: EmailValidationOptions.AllowRoleBasedAddresses
+- uid: Dixor.Validation.Email.EmailValidationOptions.Default
+  name: Default
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_Default
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.Default
+  fullName: Dixor.Validation.Email.EmailValidationOptions.Default
+  nameWithType: EmailValidationOptions.Default
+- uid: Dixor.Validation.Email.EmailValidationOptions.Default*
+  name: Default
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_Default_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.Default
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.Default
+  nameWithType: EmailValidationOptions.Default
+- uid: Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase
+  name: IgnoreDomainCase
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_IgnoreDomainCase
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase
+  fullName: Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase
+  nameWithType: EmailValidationOptions.IgnoreDomainCase
+- uid: Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase*
+  name: IgnoreDomainCase
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_IgnoreDomainCase_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase
+  nameWithType: EmailValidationOptions.IgnoreDomainCase
+- uid: Dixor.Validation.Email.EmailValidationOptions.TrimInput
+  name: TrimInput
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_TrimInput
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.TrimInput
+  fullName: Dixor.Validation.Email.EmailValidationOptions.TrimInput
+  nameWithType: EmailValidationOptions.TrimInput
+- uid: Dixor.Validation.Email.EmailValidationOptions.TrimInput*
+  name: TrimInput
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_TrimInput_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.TrimInput
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.TrimInput
+  nameWithType: EmailValidationOptions.TrimInput
+- uid: Dixor.Validation.Email.EmailValidator
+  name: EmailValidator
+  href: api/Dixor.Validation.Email.EmailValidator.html
+  commentId: T:Dixor.Validation.Email.EmailValidator
+  fullName: Dixor.Validation.Email.EmailValidator
+  nameWithType: EmailValidator
+- uid: Dixor.Validation.Email.EmailValidator.AreEqual(System.String,System.String)
+  name: AreEqual(string, string)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.Email.EmailValidator.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.Email.EmailValidator.AreEqual(string, string)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.AreEqual(String, String)
+  nameWithType: EmailValidator.AreEqual(string, string)
+  nameWithType.vb: EmailValidator.AreEqual(String, String)
+- uid: Dixor.Validation.Email.EmailValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.AreEqual
+  nameWithType: EmailValidator.AreEqual
+- uid: Dixor.Validation.Email.EmailValidator.GetDomain(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: GetDomain(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetDomain_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.GetDomain(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: GetDomain(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.GetDomain(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.GetDomain(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.GetDomain(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.GetDomain(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.GetDomain*
+  name: GetDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.GetDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.GetDomain
+  nameWithType: EmailValidator.GetDomain
+- uid: Dixor.Validation.Email.EmailValidator.GetInfo(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: GetInfo(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetInfo_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.GetInfo(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: GetInfo(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.GetInfo(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.GetInfo(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.GetInfo(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.GetInfo(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.GetInfo
+  nameWithType: EmailValidator.GetInfo
+- uid: Dixor.Validation.Email.EmailValidator.GetLocalPart(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: GetLocalPart(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetLocalPart_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.GetLocalPart(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: GetLocalPart(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.GetLocalPart(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.GetLocalPart(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.GetLocalPart(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.GetLocalPart(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.GetLocalPart*
+  name: GetLocalPart
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetLocalPart_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.GetLocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.GetLocalPart
+  nameWithType: EmailValidator.GetLocalPart
+- uid: Dixor.Validation.Email.EmailValidator.GetSubDomain(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: GetSubDomain(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetSubDomain_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.GetSubDomain(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: GetSubDomain(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.GetSubDomain(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.GetSubDomain(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.GetSubDomain(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.GetSubDomain(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.GetSubDomain*
+  name: GetSubDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_GetSubDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.GetSubDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.GetSubDomain
+  nameWithType: EmailValidator.GetSubDomain
+- uid: Dixor.Validation.Email.EmailValidator.HasAnyDomain(System.String,System.Collections.Generic.IEnumerable{System.String},Dixor.Validation.Email.EmailValidationOptions)
+  name: HasAnyDomain(string, IEnumerable<string>, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasAnyDomain_System_String_System_Collections_Generic_IEnumerable_System_String__Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.HasAnyDomain(System.String,System.Collections.Generic.IEnumerable{System.String},Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: HasAnyDomain(String, IEnumerable(Of String), EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.HasAnyDomain(string, System.Collections.Generic.IEnumerable<string>, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.HasAnyDomain(String, System.Collections.Generic.IEnumerable(Of String), Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.HasAnyDomain(string, IEnumerable<string>, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.HasAnyDomain(String, IEnumerable(Of String), EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.HasAnyDomain*
+  name: HasAnyDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasAnyDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.HasAnyDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.HasAnyDomain
+  nameWithType: EmailValidator.HasAnyDomain
+- uid: Dixor.Validation.Email.EmailValidator.HasDomain(System.String,System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: HasDomain(string, string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasDomain_System_String_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.HasDomain(System.String,System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: HasDomain(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.HasDomain(string, string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.HasDomain(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.HasDomain(string, string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.HasDomain(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.HasDomain*
+  name: HasDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.HasDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.HasDomain
+  nameWithType: EmailValidator.HasDomain
+- uid: Dixor.Validation.Email.EmailValidator.HasTopLevelDomain(System.String,System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: HasTopLevelDomain(string, string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasTopLevelDomain_System_String_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.HasTopLevelDomain(System.String,System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: HasTopLevelDomain(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.HasTopLevelDomain(string, string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.HasTopLevelDomain(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.HasTopLevelDomain(string, string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.HasTopLevelDomain(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.HasTopLevelDomain*
+  name: HasTopLevelDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_HasTopLevelDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.HasTopLevelDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.HasTopLevelDomain
+  nameWithType: EmailValidator.HasTopLevelDomain
+- uid: Dixor.Validation.Email.EmailValidator.IsValid(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: IsValid(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_IsValid_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.IsValid(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: IsValid(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.IsValid(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.IsValid(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.IsValid(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.IsValid(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_IsValid_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.IsValid
+  nameWithType: EmailValidator.IsValid
+- uid: Dixor.Validation.Email.EmailValidator.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_Normalize_System_String_
+  commentId: M:Dixor.Validation.Email.EmailValidator.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Email.EmailValidator.Normalize(string)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.Normalize(String)
+  nameWithType: EmailValidator.Normalize(string)
+  nameWithType.vb: EmailValidator.Normalize(String)
+- uid: Dixor.Validation.Email.EmailValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_Normalize_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.Normalize
+  nameWithType: EmailValidator.Normalize
+- uid: Dixor.Validation.Email.EmailValidator.TryGetDomain(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name: TryGetDomain(string, out string?, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetDomain_System_String_System_String__Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.TryGetDomain(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: TryGetDomain(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetDomain(string, out string?, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.TryGetDomain(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.TryGetDomain(string, out string?, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.TryGetDomain(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.TryGetDomain*
+  name: TryGetDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.TryGetDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetDomain
+  nameWithType: EmailValidator.TryGetDomain
+- uid: Dixor.Validation.Email.EmailValidator.TryGetLocalPart(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name: TryGetLocalPart(string, out string?, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetLocalPart_System_String_System_String__Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.TryGetLocalPart(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: TryGetLocalPart(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetLocalPart(string, out string?, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.TryGetLocalPart(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.TryGetLocalPart(string, out string?, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.TryGetLocalPart(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.TryGetLocalPart*
+  name: TryGetLocalPart
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetLocalPart_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.TryGetLocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetLocalPart
+  nameWithType: EmailValidator.TryGetLocalPart
+- uid: Dixor.Validation.Email.EmailValidator.TryGetSubDomain(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name: TryGetSubDomain(string, out string?, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetSubDomain_System_String_System_String__Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.TryGetSubDomain(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: TryGetSubDomain(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetSubDomain(string, out string?, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.TryGetSubDomain(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.TryGetSubDomain(string, out string?, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.TryGetSubDomain(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.TryGetSubDomain*
+  name: TryGetSubDomain
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryGetSubDomain_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.TryGetSubDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.TryGetSubDomain
+  nameWithType: EmailValidator.TryGetSubDomain
+- uid: Dixor.Validation.Email.EmailValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name: TryNormalize(string, out string?, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryNormalize_System_String_System_String__Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: TryNormalize(String, String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.TryNormalize(string, out string?, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.TryNormalize(String, String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.TryNormalize(string, out string?, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.TryNormalize(String, String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.TryNormalize
+  nameWithType: EmailValidator.TryNormalize
+- uid: Dixor.Validation.Email.EmailValidator.Validate(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name: Validate(string, EmailValidationOptions?)
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_Validate_System_String_Dixor_Validation_Email_EmailValidationOptions_
+  commentId: M:Dixor.Validation.Email.EmailValidator.Validate(System.String,Dixor.Validation.Email.EmailValidationOptions)
+  name.vb: Validate(String, EmailValidationOptions)
+  fullName: Dixor.Validation.Email.EmailValidator.Validate(string, Dixor.Validation.Email.EmailValidationOptions?)
+  fullName.vb: Dixor.Validation.Email.EmailValidator.Validate(String, Dixor.Validation.Email.EmailValidationOptions)
+  nameWithType: EmailValidator.Validate(string, EmailValidationOptions?)
+  nameWithType.vb: EmailValidator.Validate(String, EmailValidationOptions)
+- uid: Dixor.Validation.Email.EmailValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Email.EmailValidator.html#Dixor_Validation_Email_EmailValidator_Validate_
+  commentId: Overload:Dixor.Validation.Email.EmailValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidator.Validate
+  nameWithType: EmailValidator.Validate
+- uid: Dixor.Validation.Email.Interfaces
+  name: Dixor.Validation.Email.Interfaces
+  href: api/Dixor.Validation.Email.Interfaces.html
+  commentId: N:Dixor.Validation.Email.Interfaces
+  fullName: Dixor.Validation.Email.Interfaces
+  nameWithType: Dixor.Validation.Email.Interfaces
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo
+  name: IEmailInfo
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html
+  commentId: T:Dixor.Validation.Email.Interfaces.IEmailInfo
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo
+  nameWithType: IEmailInfo
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Domain
+  name: Domain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Domain
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.Domain
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Domain
+  nameWithType: IEmailInfo.Domain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Domain*
+  name: Domain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Domain_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.Domain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Domain
+  nameWithType: IEmailInfo.Domain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing
+  name: HasPlusAddressing
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_HasPlusAddressing
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing
+  nameWithType: IEmailInfo.HasPlusAddressing
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing*
+  name: HasPlusAddressing
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_HasPlusAddressing_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.HasPlusAddressing
+  nameWithType: IEmailInfo.HasPlusAddressing
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain
+  name: IsIpDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_IsIpDomain
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain
+  nameWithType: IEmailInfo.IsIpDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain*
+  name: IsIpDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_IsIpDomain_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.IsIpDomain
+  nameWithType: IEmailInfo.IsIpDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart
+  name: IsQuotedLocalPart
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_IsQuotedLocalPart
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart
+  nameWithType: IEmailInfo.IsQuotedLocalPart
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart*
+  name: IsQuotedLocalPart
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_IsQuotedLocalPart_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.IsQuotedLocalPart
+  nameWithType: IEmailInfo.IsQuotedLocalPart
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart
+  name: LocalPart
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_LocalPart
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart
+  nameWithType: IEmailInfo.LocalPart
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart*
+  name: LocalPart
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_LocalPart_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.LocalPart
+  nameWithType: IEmailInfo.LocalPart
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain
+  name: SecondLevelDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_SecondLevelDomain
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain
+  nameWithType: IEmailInfo.SecondLevelDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain*
+  name: SecondLevelDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_SecondLevelDomain_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.SecondLevelDomain
+  nameWithType: IEmailInfo.SecondLevelDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain
+  name: Subdomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Subdomain
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain
+  nameWithType: IEmailInfo.Subdomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain*
+  name: Subdomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Subdomain_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Subdomain
+  nameWithType: IEmailInfo.Subdomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain
+  name: TopLevelDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_TopLevelDomain
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain
+  nameWithType: IEmailInfo.TopLevelDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain*
+  name: TopLevelDomain
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_TopLevelDomain_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.TopLevelDomain
+  nameWithType: IEmailInfo.TopLevelDomain
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Value
+  name: Value
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Value
+  commentId: P:Dixor.Validation.Email.Interfaces.IEmailInfo.Value
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Value
+  nameWithType: IEmailInfo.Value
+- uid: Dixor.Validation.Email.Interfaces.IEmailInfo.Value*
+  name: Value
+  href: api/Dixor.Validation.Email.Interfaces.IEmailInfo.html#Dixor_Validation_Email_Interfaces_IEmailInfo_Value_
+  commentId: Overload:Dixor.Validation.Email.Interfaces.IEmailInfo.Value
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Value
+  nameWithType: IEmailInfo.Value
+- uid: Dixor.Validation.ValidationResult`1
+  name: ValidationResult<TError>
+  href: api/Dixor.Validation.ValidationResult-1.html
+  commentId: T:Dixor.Validation.ValidationResult`1
+  name.vb: ValidationResult(Of TError)
+  fullName: Dixor.Validation.ValidationResult<TError>
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError)
+  nameWithType: ValidationResult<TError>
+  nameWithType.vb: ValidationResult(Of TError)
+- uid: Dixor.Validation.ValidationResult`1.#ctor(System.Boolean,`0)
+  name: ValidationResult(bool, TError)
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1__ctor_System_Boolean__0_
+  commentId: M:Dixor.Validation.ValidationResult`1.#ctor(System.Boolean,`0)
+  name.vb: New(Boolean, TError)
+  fullName: Dixor.Validation.ValidationResult<TError>.ValidationResult(bool, TError)
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).New(Boolean, TError)
+  nameWithType: ValidationResult<TError>.ValidationResult(bool, TError)
+  nameWithType.vb: ValidationResult(Of TError).New(Boolean, TError)
+- uid: Dixor.Validation.ValidationResult`1.#ctor*
+  name: ValidationResult
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1__ctor_
+  commentId: Overload:Dixor.Validation.ValidationResult`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.ValidationResult<TError>.ValidationResult
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).New
+  nameWithType: ValidationResult<TError>.ValidationResult
+  nameWithType.vb: ValidationResult(Of TError).New
+- uid: Dixor.Validation.ValidationResult`1.Error
+  name: Error
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Error
+  commentId: P:Dixor.Validation.ValidationResult`1.Error
+  fullName: Dixor.Validation.ValidationResult<TError>.Error
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Error
+  nameWithType: ValidationResult<TError>.Error
+  nameWithType.vb: ValidationResult(Of TError).Error
+- uid: Dixor.Validation.ValidationResult`1.Error*
+  name: Error
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Error_
+  commentId: Overload:Dixor.Validation.ValidationResult`1.Error
+  isSpec: "True"
+  fullName: Dixor.Validation.ValidationResult<TError>.Error
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Error
+  nameWithType: ValidationResult<TError>.Error
+  nameWithType.vb: ValidationResult(Of TError).Error
+- uid: Dixor.Validation.ValidationResult`1.Failure(`0)
+  name: Failure(TError)
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Failure__0_
+  commentId: M:Dixor.Validation.ValidationResult`1.Failure(`0)
+  fullName: Dixor.Validation.ValidationResult<TError>.Failure(TError)
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Failure(TError)
+  nameWithType: ValidationResult<TError>.Failure(TError)
+  nameWithType.vb: ValidationResult(Of TError).Failure(TError)
+- uid: Dixor.Validation.ValidationResult`1.Failure*
+  name: Failure
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Failure_
+  commentId: Overload:Dixor.Validation.ValidationResult`1.Failure
+  isSpec: "True"
+  fullName: Dixor.Validation.ValidationResult<TError>.Failure
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Failure
+  nameWithType: ValidationResult<TError>.Failure
+  nameWithType.vb: ValidationResult(Of TError).Failure
+- uid: Dixor.Validation.ValidationResult`1.IsValid
+  name: IsValid
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_IsValid
+  commentId: P:Dixor.Validation.ValidationResult`1.IsValid
+  fullName: Dixor.Validation.ValidationResult<TError>.IsValid
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).IsValid
+  nameWithType: ValidationResult<TError>.IsValid
+  nameWithType.vb: ValidationResult(Of TError).IsValid
+- uid: Dixor.Validation.ValidationResult`1.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_IsValid_
+  commentId: Overload:Dixor.Validation.ValidationResult`1.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.ValidationResult<TError>.IsValid
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).IsValid
+  nameWithType: ValidationResult<TError>.IsValid
+  nameWithType.vb: ValidationResult(Of TError).IsValid
+- uid: Dixor.Validation.ValidationResult`1.Success
+  name: Success()
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Success
+  commentId: M:Dixor.Validation.ValidationResult`1.Success
+  fullName: Dixor.Validation.ValidationResult<TError>.Success()
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Success()
+  nameWithType: ValidationResult<TError>.Success()
+  nameWithType.vb: ValidationResult(Of TError).Success()
+- uid: Dixor.Validation.ValidationResult`1.Success*
+  name: Success
+  href: api/Dixor.Validation.ValidationResult-1.html#Dixor_Validation_ValidationResult_1_Success_
+  commentId: Overload:Dixor.Validation.ValidationResult`1.Success
+  isSpec: "True"
+  fullName: Dixor.Validation.ValidationResult<TError>.Success
+  fullName.vb: Dixor.Validation.ValidationResult(Of TError).Success
+  nameWithType: ValidationResult<TError>.Success
+  nameWithType.vb: ValidationResult(Of TError).Success
