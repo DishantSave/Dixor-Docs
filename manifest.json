@@ -32,6 +32,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Base36.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Base36.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Base36",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.Base36.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure Base36 identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Base62.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Base62.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Base62",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.Base62.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure Base62 identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Hexadecimal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Hexadecimal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Hexadecimal",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.Hexadecimal.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure hexadecimal identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Interfaces.ISequenceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Interfaces.ISequenceService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Interfaces.ISequenceService",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.Interfaces.ISequenceService.yml\" sourcestartlinenumber=\"1\">Defines a contract for a thread-safe integer sequence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.NanoId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.NanoId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.NanoId",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.NanoId.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure NanoIds.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.NumericCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.NumericCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.NumericCode",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.NumericCode.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure numeric codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.Sequence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.Sequence",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.Sequence.yml\" sourcestartlinenumber=\"1\">Provides methods for creating thread-safe integer sequences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.ShortId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.ShortId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.ShortId",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.ShortId.yml\" sourcestartlinenumber=\"1\">Provides methods for generating cryptographically secure short identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Identity.UUID7.Uuid7.yml",
       "output": {
         ".html": {
@@ -56,6 +182,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Dixor.Identity.UUID7",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity",
       "Summary": null
     },
     {

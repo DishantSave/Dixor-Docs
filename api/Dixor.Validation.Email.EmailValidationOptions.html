@@ -75,7 +75,7 @@
 
 
   <h1 id="Dixor_Validation_Email_EmailValidationOptions" data-uid="Dixor.Validation.Email.EmailValidationOptions" class="text-break">
-Class EmailValidationOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L29"><i class="bi bi-code-slash"></i></a>
+Class EmailValidationOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,7 +153,7 @@ Unless explicitly changed, all properties use their documented default values.
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowDisposableDomains" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowDisposableDomains">
   AllowDisposableDomains
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether disposable email providers are permitted.</p>
@@ -190,7 +190,7 @@ Unless explicitly changed, all properties use their documented default values.
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowInternational" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowInternational">
   AllowInternational
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether international email addresses
@@ -226,7 +226,7 @@ Unless explicitly changed, all properties use their documented default values.
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowIpDomain" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain">
   AllowIpDomain
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether IP address domain literals are permitted.</p>
@@ -259,11 +259,64 @@ Unless explicitly changed, all properties use their documented default values.
 
 
 
+  <a id="Dixor_Validation_Email_EmailValidationOptions_AllowLocalDomains_" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains*"></a>
+
+  <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowLocalDomains" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains">
+  AllowLocalDomains
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether local-only domains
+(domains without a fully qualified domain name) are permitted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowLocalDomains { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Dixor_Validation_Email_EmailValidationOptions_AllowLocalDomains_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+Local domains are commonly used in internal networks,
+development environments and private infrastructures.
+</p>
+<p>
+Examples of local domains:
+<pre><code class="lang-csharp">admin@localhost
+user@internal
+user@dev-machine</code></pre>
+
+<p>
+When disabled, domains that do not contain a dot separator
+are rejected unless they represent a valid fully qualified
+domain name.
+</p>
+<p>
+Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+</p>
+</div>
+
+
+
+
   <a id="Dixor_Validation_Email_EmailValidationOptions_AllowLocalhost_" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost*"></a>
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowLocalhost" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost">
   AllowLocalhost
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether localhost domains are permitted.</p>
@@ -300,7 +353,7 @@ Unless explicitly changed, all properties use their documented default values.
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowPlusAddressing" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowPlusAddressing">
   AllowPlusAddressing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether plus addressing is permitted.</p>
@@ -337,7 +390,7 @@ Unless explicitly changed, all properties use their documented default values.
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowPublicDomains" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowPublicDomains">
   AllowPublicDomains
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether public email providers are permitted.</p>
@@ -373,7 +426,7 @@ Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-ref
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowQuotedLocalPart" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowQuotedLocalPart">
   AllowQuotedLocalPart
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether quoted local parts are permitted.</p>
@@ -410,7 +463,7 @@ Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-ref
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_AllowRoleBasedAddresses" data-uid="Dixor.Validation.Email.EmailValidationOptions.AllowRoleBasedAddresses">
   AllowRoleBasedAddresses
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether role-based email addresses are permitted.</p>
@@ -447,7 +500,7 @@ Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-ref
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_Default" data-uid="Dixor.Validation.Email.EmailValidationOptions.Default">
   Default
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the default email validation options.</p>
@@ -482,7 +535,7 @@ Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-ref
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_IgnoreDomainCase" data-uid="Dixor.Validation.Email.EmailValidationOptions.IgnoreDomainCase">
   IgnoreDomainCase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether domain names should be treated
@@ -519,7 +572,7 @@ Default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-ref
 
   <h3 id="Dixor_Validation_Email_EmailValidationOptions_TrimInput" data-uid="Dixor.Validation.Email.EmailValidationOptions.TrimInput">
   TrimInput
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether leading and trailing whitespace
@@ -555,7 +608,7 @@ should automatically be removed before validation.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L29" class="edit-link">Edit this page</a>
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Email/EmailValidationOptions.cs/#L35" class="edit-link">Edit this page</a>
         </div>
 
 

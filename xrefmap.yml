@@ -1,6 +1,204 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Dixor.Identity
+  name: Dixor.Identity
+  href: api/Dixor.Identity.html
+  commentId: N:Dixor.Identity
+  fullName: Dixor.Identity
+  nameWithType: Dixor.Identity
+- uid: Dixor.Identity.Base36
+  name: Base36
+  href: api/Dixor.Identity.Base36.html
+  commentId: T:Dixor.Identity.Base36
+  fullName: Dixor.Identity.Base36
+  nameWithType: Base36
+- uid: Dixor.Identity.Base36.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.Base36.html#Dixor_Identity_Base36_Generate_System_Int32_
+  commentId: M:Dixor.Identity.Base36.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.Base36.Generate(int)
+  fullName.vb: Dixor.Identity.Base36.Generate(Integer)
+  nameWithType: Base36.Generate(int)
+  nameWithType.vb: Base36.Generate(Integer)
+- uid: Dixor.Identity.Base36.Generate*
+  name: Generate
+  href: api/Dixor.Identity.Base36.html#Dixor_Identity_Base36_Generate_
+  commentId: Overload:Dixor.Identity.Base36.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.Base36.Generate
+  nameWithType: Base36.Generate
+- uid: Dixor.Identity.Base62
+  name: Base62
+  href: api/Dixor.Identity.Base62.html
+  commentId: T:Dixor.Identity.Base62
+  fullName: Dixor.Identity.Base62
+  nameWithType: Base62
+- uid: Dixor.Identity.Base62.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.Base62.html#Dixor_Identity_Base62_Generate_System_Int32_
+  commentId: M:Dixor.Identity.Base62.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.Base62.Generate(int)
+  fullName.vb: Dixor.Identity.Base62.Generate(Integer)
+  nameWithType: Base62.Generate(int)
+  nameWithType.vb: Base62.Generate(Integer)
+- uid: Dixor.Identity.Base62.Generate*
+  name: Generate
+  href: api/Dixor.Identity.Base62.html#Dixor_Identity_Base62_Generate_
+  commentId: Overload:Dixor.Identity.Base62.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.Base62.Generate
+  nameWithType: Base62.Generate
+- uid: Dixor.Identity.Hexadecimal
+  name: Hexadecimal
+  href: api/Dixor.Identity.Hexadecimal.html
+  commentId: T:Dixor.Identity.Hexadecimal
+  fullName: Dixor.Identity.Hexadecimal
+  nameWithType: Hexadecimal
+- uid: Dixor.Identity.Hexadecimal.Generate(System.Int32,System.Boolean)
+  name: Generate(int, bool)
+  href: api/Dixor.Identity.Hexadecimal.html#Dixor_Identity_Hexadecimal_Generate_System_Int32_System_Boolean_
+  commentId: M:Dixor.Identity.Hexadecimal.Generate(System.Int32,System.Boolean)
+  name.vb: Generate(Integer, Boolean)
+  fullName: Dixor.Identity.Hexadecimal.Generate(int, bool)
+  fullName.vb: Dixor.Identity.Hexadecimal.Generate(Integer, Boolean)
+  nameWithType: Hexadecimal.Generate(int, bool)
+  nameWithType.vb: Hexadecimal.Generate(Integer, Boolean)
+- uid: Dixor.Identity.Hexadecimal.Generate*
+  name: Generate
+  href: api/Dixor.Identity.Hexadecimal.html#Dixor_Identity_Hexadecimal_Generate_
+  commentId: Overload:Dixor.Identity.Hexadecimal.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.Hexadecimal.Generate
+  nameWithType: Hexadecimal.Generate
+- uid: Dixor.Identity.Interfaces
+  name: Dixor.Identity.Interfaces
+  href: api/Dixor.Identity.Interfaces.html
+  commentId: N:Dixor.Identity.Interfaces
+  fullName: Dixor.Identity.Interfaces
+  nameWithType: Dixor.Identity.Interfaces
+- uid: Dixor.Identity.Interfaces.ISequenceService
+  name: ISequenceService
+  href: api/Dixor.Identity.Interfaces.ISequenceService.html
+  commentId: T:Dixor.Identity.Interfaces.ISequenceService
+  fullName: Dixor.Identity.Interfaces.ISequenceService
+  nameWithType: ISequenceService
+- uid: Dixor.Identity.Interfaces.ISequenceService.Current
+  name: Current
+  href: api/Dixor.Identity.Interfaces.ISequenceService.html#Dixor_Identity_Interfaces_ISequenceService_Current
+  commentId: P:Dixor.Identity.Interfaces.ISequenceService.Current
+  fullName: Dixor.Identity.Interfaces.ISequenceService.Current
+  nameWithType: ISequenceService.Current
+- uid: Dixor.Identity.Interfaces.ISequenceService.Current*
+  name: Current
+  href: api/Dixor.Identity.Interfaces.ISequenceService.html#Dixor_Identity_Interfaces_ISequenceService_Current_
+  commentId: Overload:Dixor.Identity.Interfaces.ISequenceService.Current
+  isSpec: "True"
+  fullName: Dixor.Identity.Interfaces.ISequenceService.Current
+  nameWithType: ISequenceService.Current
+- uid: Dixor.Identity.Interfaces.ISequenceService.Next
+  name: Next()
+  href: api/Dixor.Identity.Interfaces.ISequenceService.html#Dixor_Identity_Interfaces_ISequenceService_Next
+  commentId: M:Dixor.Identity.Interfaces.ISequenceService.Next
+  fullName: Dixor.Identity.Interfaces.ISequenceService.Next()
+  nameWithType: ISequenceService.Next()
+- uid: Dixor.Identity.Interfaces.ISequenceService.Next*
+  name: Next
+  href: api/Dixor.Identity.Interfaces.ISequenceService.html#Dixor_Identity_Interfaces_ISequenceService_Next_
+  commentId: Overload:Dixor.Identity.Interfaces.ISequenceService.Next
+  isSpec: "True"
+  fullName: Dixor.Identity.Interfaces.ISequenceService.Next
+  nameWithType: ISequenceService.Next
+- uid: Dixor.Identity.NanoId
+  name: NanoId
+  href: api/Dixor.Identity.NanoId.html
+  commentId: T:Dixor.Identity.NanoId
+  fullName: Dixor.Identity.NanoId
+  nameWithType: NanoId
+- uid: Dixor.Identity.NanoId.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.NanoId.html#Dixor_Identity_NanoId_Generate_System_Int32_
+  commentId: M:Dixor.Identity.NanoId.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.NanoId.Generate(int)
+  fullName.vb: Dixor.Identity.NanoId.Generate(Integer)
+  nameWithType: NanoId.Generate(int)
+  nameWithType.vb: NanoId.Generate(Integer)
+- uid: Dixor.Identity.NanoId.Generate*
+  name: Generate
+  href: api/Dixor.Identity.NanoId.html#Dixor_Identity_NanoId_Generate_
+  commentId: Overload:Dixor.Identity.NanoId.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.NanoId.Generate
+  nameWithType: NanoId.Generate
+- uid: Dixor.Identity.NumericCode
+  name: NumericCode
+  href: api/Dixor.Identity.NumericCode.html
+  commentId: T:Dixor.Identity.NumericCode
+  fullName: Dixor.Identity.NumericCode
+  nameWithType: NumericCode
+- uid: Dixor.Identity.NumericCode.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.NumericCode.html#Dixor_Identity_NumericCode_Generate_System_Int32_
+  commentId: M:Dixor.Identity.NumericCode.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.NumericCode.Generate(int)
+  fullName.vb: Dixor.Identity.NumericCode.Generate(Integer)
+  nameWithType: NumericCode.Generate(int)
+  nameWithType.vb: NumericCode.Generate(Integer)
+- uid: Dixor.Identity.NumericCode.Generate*
+  name: Generate
+  href: api/Dixor.Identity.NumericCode.html#Dixor_Identity_NumericCode_Generate_
+  commentId: Overload:Dixor.Identity.NumericCode.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.NumericCode.Generate
+  nameWithType: NumericCode.Generate
+- uid: Dixor.Identity.Sequence
+  name: Sequence
+  href: api/Dixor.Identity.Sequence.html
+  commentId: T:Dixor.Identity.Sequence
+  fullName: Dixor.Identity.Sequence
+  nameWithType: Sequence
+- uid: Dixor.Identity.Sequence.Create(System.Int32,System.Int32)
+  name: Create(int, int)
+  href: api/Dixor.Identity.Sequence.html#Dixor_Identity_Sequence_Create_System_Int32_System_Int32_
+  commentId: M:Dixor.Identity.Sequence.Create(System.Int32,System.Int32)
+  name.vb: Create(Integer, Integer)
+  fullName: Dixor.Identity.Sequence.Create(int, int)
+  fullName.vb: Dixor.Identity.Sequence.Create(Integer, Integer)
+  nameWithType: Sequence.Create(int, int)
+  nameWithType.vb: Sequence.Create(Integer, Integer)
+- uid: Dixor.Identity.Sequence.Create*
+  name: Create
+  href: api/Dixor.Identity.Sequence.html#Dixor_Identity_Sequence_Create_
+  commentId: Overload:Dixor.Identity.Sequence.Create
+  isSpec: "True"
+  fullName: Dixor.Identity.Sequence.Create
+  nameWithType: Sequence.Create
+- uid: Dixor.Identity.ShortId
+  name: ShortId
+  href: api/Dixor.Identity.ShortId.html
+  commentId: T:Dixor.Identity.ShortId
+  fullName: Dixor.Identity.ShortId
+  nameWithType: ShortId
+- uid: Dixor.Identity.ShortId.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.ShortId.html#Dixor_Identity_ShortId_Generate_System_Int32_
+  commentId: M:Dixor.Identity.ShortId.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.ShortId.Generate(int)
+  fullName.vb: Dixor.Identity.ShortId.Generate(Integer)
+  nameWithType: ShortId.Generate(int)
+  nameWithType.vb: ShortId.Generate(Integer)
+- uid: Dixor.Identity.ShortId.Generate*
+  name: Generate
+  href: api/Dixor.Identity.ShortId.html#Dixor_Identity_ShortId_Generate_
+  commentId: Overload:Dixor.Identity.ShortId.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.ShortId.Generate
+  nameWithType: ShortId.Generate
 - uid: Dixor.Identity.UUID7
   name: Dixor.Identity.UUID7
   href: api/Dixor.Identity.UUID7.html
@@ -556,6 +754,19 @@ references:
   isSpec: "True"
   fullName: Dixor.Validation.Email.EmailValidationOptions.AllowIpDomain
   nameWithType: EmailValidationOptions.AllowIpDomain
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains
+  name: AllowLocalDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowLocalDomains
+  commentId: P:Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains
+  nameWithType: EmailValidationOptions.AllowLocalDomains
+- uid: Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains*
+  name: AllowLocalDomains
+  href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowLocalDomains_
+  commentId: Overload:Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains
+  isSpec: "True"
+  fullName: Dixor.Validation.Email.EmailValidationOptions.AllowLocalDomains
+  nameWithType: EmailValidationOptions.AllowLocalDomains
 - uid: Dixor.Validation.Email.EmailValidationOptions.AllowLocalhost
   name: AllowLocalhost
   href: api/Dixor.Validation.Email.EmailValidationOptions.html#Dixor_Validation_Email_EmailValidationOptions_AllowLocalhost
