@@ -158,6 +158,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.ULID.Ulid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.ULID.Ulid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.ULID.Ulid",
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.ULID.Ulid.yml\" sourcestartlinenumber=\"1\">Provides the primary public facade for generating, parsing, validating,\nformatting, and inspecting ULID identifiers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Identity.ULID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Identity.ULID.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Identity.ULID",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Identity.UUID7.Uuid7.yml",
       "output": {
         ".html": {
@@ -168,7 +196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Dixor.Identity.UUID7.Uuid7",
-      "Summary": "<p sourcefile=\"api/Dixor.Identity.UUID7.Uuid7.yml\" sourcestartlinenumber=\"1\">Provides the primary public facade for generating, formatting, parsing, validating,\nand inspecting RFC 9562 UUID Version 7 identifiers.</p>\n"
+      "Summary": "<p sourcefile=\"api/Dixor.Identity.UUID7.Uuid7.yml\" sourcestartlinenumber=\"1\">Provides the primary public facade for generating, formatting, validating, parsing, and inspecting\nRFC 9562 UUID Version 7 identifiers.</p>\n"
     },
     {
       "type": "ManagedReference",

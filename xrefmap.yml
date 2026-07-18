@@ -199,6 +199,149 @@ references:
   isSpec: "True"
   fullName: Dixor.Identity.ShortId.Generate
   nameWithType: ShortId.Generate
+- uid: Dixor.Identity.ULID
+  name: Dixor.Identity.ULID
+  href: api/Dixor.Identity.ULID.html
+  commentId: N:Dixor.Identity.ULID
+  fullName: Dixor.Identity.ULID
+  nameWithType: Dixor.Identity.ULID
+- uid: Dixor.Identity.ULID.Ulid
+  name: Ulid
+  href: api/Dixor.Identity.ULID.Ulid.html
+  commentId: T:Dixor.Identity.ULID.Ulid
+  fullName: Dixor.Identity.ULID.Ulid
+  nameWithType: Ulid
+- uid: Dixor.Identity.ULID.Ulid.Format(System.ReadOnlySpan{System.Byte})
+  name: Format(ReadOnlySpan<byte>)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Format_System_ReadOnlySpan_System_Byte__
+  commentId: M:Dixor.Identity.ULID.Ulid.Format(System.ReadOnlySpan{System.Byte})
+  name.vb: Format(ReadOnlySpan(Of Byte))
+  fullName: Dixor.Identity.ULID.Ulid.Format(System.ReadOnlySpan<byte>)
+  fullName.vb: Dixor.Identity.ULID.Ulid.Format(System.ReadOnlySpan(Of Byte))
+  nameWithType: Ulid.Format(ReadOnlySpan<byte>)
+  nameWithType.vb: Ulid.Format(ReadOnlySpan(Of Byte))
+- uid: Dixor.Identity.ULID.Ulid.Format*
+  name: Format
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Format_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.Format
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.Format
+  nameWithType: Ulid.Format
+- uid: Dixor.Identity.ULID.Ulid.Generate
+  name: Generate()
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Generate
+  commentId: M:Dixor.Identity.ULID.Ulid.Generate
+  fullName: Dixor.Identity.ULID.Ulid.Generate()
+  nameWithType: Ulid.Generate()
+- uid: Dixor.Identity.ULID.Ulid.Generate(System.Int32)
+  name: Generate(int)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Generate_System_Int32_
+  commentId: M:Dixor.Identity.ULID.Ulid.Generate(System.Int32)
+  name.vb: Generate(Integer)
+  fullName: Dixor.Identity.ULID.Ulid.Generate(int)
+  fullName.vb: Dixor.Identity.ULID.Ulid.Generate(Integer)
+  nameWithType: Ulid.Generate(int)
+  nameWithType.vb: Ulid.Generate(Integer)
+- uid: Dixor.Identity.ULID.Ulid.Generate*
+  name: Generate
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Generate_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.Generate
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.Generate
+  nameWithType: Ulid.Generate
+- uid: Dixor.Identity.ULID.Ulid.GenerateMonotonic
+  name: GenerateMonotonic()
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_GenerateMonotonic
+  commentId: M:Dixor.Identity.ULID.Ulid.GenerateMonotonic
+  fullName: Dixor.Identity.ULID.Ulid.GenerateMonotonic()
+  nameWithType: Ulid.GenerateMonotonic()
+- uid: Dixor.Identity.ULID.Ulid.GenerateMonotonic*
+  name: GenerateMonotonic
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_GenerateMonotonic_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.GenerateMonotonic
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.GenerateMonotonic
+  nameWithType: Ulid.GenerateMonotonic
+- uid: Dixor.Identity.ULID.Ulid.GetTimestamp(System.String)
+  name: GetTimestamp(string)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_GetTimestamp_System_String_
+  commentId: M:Dixor.Identity.ULID.Ulid.GetTimestamp(System.String)
+  name.vb: GetTimestamp(String)
+  fullName: Dixor.Identity.ULID.Ulid.GetTimestamp(string)
+  fullName.vb: Dixor.Identity.ULID.Ulid.GetTimestamp(String)
+  nameWithType: Ulid.GetTimestamp(string)
+  nameWithType.vb: Ulid.GetTimestamp(String)
+- uid: Dixor.Identity.ULID.Ulid.GetTimestamp*
+  name: GetTimestamp
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_GetTimestamp_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.GetTimestamp
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.GetTimestamp
+  nameWithType: Ulid.GetTimestamp
+- uid: Dixor.Identity.ULID.Ulid.IsValid(System.String)
+  name: IsValid(string)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_IsValid_System_String_
+  commentId: M:Dixor.Identity.ULID.Ulid.IsValid(System.String)
+  name.vb: IsValid(String)
+  fullName: Dixor.Identity.ULID.Ulid.IsValid(string)
+  fullName.vb: Dixor.Identity.ULID.Ulid.IsValid(String)
+  nameWithType: Ulid.IsValid(string)
+  nameWithType.vb: Ulid.IsValid(String)
+- uid: Dixor.Identity.ULID.Ulid.IsValid*
+  name: IsValid
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_IsValid_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.IsValid
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.IsValid
+  nameWithType: Ulid.IsValid
+- uid: Dixor.Identity.ULID.Ulid.Parse(System.String)
+  name: Parse(string)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Parse_System_String_
+  commentId: M:Dixor.Identity.ULID.Ulid.Parse(System.String)
+  name.vb: Parse(String)
+  fullName: Dixor.Identity.ULID.Ulid.Parse(string)
+  fullName.vb: Dixor.Identity.ULID.Ulid.Parse(String)
+  nameWithType: Ulid.Parse(string)
+  nameWithType.vb: Ulid.Parse(String)
+- uid: Dixor.Identity.ULID.Ulid.Parse*
+  name: Parse
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_Parse_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.Parse
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.Parse
+  nameWithType: Ulid.Parse
+- uid: Dixor.Identity.ULID.Ulid.TryGetTimestamp(System.String,System.DateTime@)
+  name: TryGetTimestamp(string, out DateTime)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_TryGetTimestamp_System_String_System_DateTime__
+  commentId: M:Dixor.Identity.ULID.Ulid.TryGetTimestamp(System.String,System.DateTime@)
+  name.vb: TryGetTimestamp(String, Date)
+  fullName: Dixor.Identity.ULID.Ulid.TryGetTimestamp(string, out System.DateTime)
+  fullName.vb: Dixor.Identity.ULID.Ulid.TryGetTimestamp(String, Date)
+  nameWithType: Ulid.TryGetTimestamp(string, out DateTime)
+  nameWithType.vb: Ulid.TryGetTimestamp(String, Date)
+- uid: Dixor.Identity.ULID.Ulid.TryGetTimestamp*
+  name: TryGetTimestamp
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_TryGetTimestamp_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.TryGetTimestamp
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.TryGetTimestamp
+  nameWithType: Ulid.TryGetTimestamp
+- uid: Dixor.Identity.ULID.Ulid.TryParse(System.String,System.Byte[]@)
+  name: TryParse(string, out byte[]?)
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_TryParse_System_String_System_Byte____
+  commentId: M:Dixor.Identity.ULID.Ulid.TryParse(System.String,System.Byte[]@)
+  name.vb: TryParse(String, Byte())
+  fullName: Dixor.Identity.ULID.Ulid.TryParse(string, out byte[]?)
+  fullName.vb: Dixor.Identity.ULID.Ulid.TryParse(String, Byte())
+  nameWithType: Ulid.TryParse(string, out byte[]?)
+  nameWithType.vb: Ulid.TryParse(String, Byte())
+- uid: Dixor.Identity.ULID.Ulid.TryParse*
+  name: TryParse
+  href: api/Dixor.Identity.ULID.Ulid.html#Dixor_Identity_ULID_Ulid_TryParse_
+  commentId: Overload:Dixor.Identity.ULID.Ulid.TryParse
+  isSpec: "True"
+  fullName: Dixor.Identity.ULID.Ulid.TryParse
+  nameWithType: Ulid.TryParse
 - uid: Dixor.Identity.UUID7
   name: Dixor.Identity.UUID7
   href: api/Dixor.Identity.UUID7.html

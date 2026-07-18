@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Uuid7 | Dixor Documentation ">
       
-      <meta name="description" content="Provides the primary public facade for generating, formatting, parsing, validating, and inspecting RFC 9562 UUID Version 7 identifiers.">
+      <meta name="description" content="Provides the primary public facade for generating, formatting, validating, parsing, and inspecting RFC 9562 UUID Version 7 identifiers.">
       <link rel="icon" href="../images/icon-192.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -75,7 +75,7 @@
 
 
   <h1 id="Dixor_Identity_UUID7_Uuid7" data-uid="Dixor.Identity.UUID7.Uuid7" class="text-break">
-Class Uuid7  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L33"><i class="bi bi-code-slash"></i></a>
+Class Uuid7  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -83,8 +83,8 @@ Class Uuid7  <a class="header-action link-secondary" title="View source" href="h
   <dl><dt>Assembly</dt><dd>Dixor.Identity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides the primary public facade for generating, formatting, parsing, validating,
-and inspecting RFC 9562 UUID Version 7 identifiers.</p>
+  <div class="markdown summary"><p>Provides the primary public facade for generating, formatting, validating, parsing, and inspecting
+RFC 9562 UUID Version 7 identifiers.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -136,19 +136,33 @@ and inspecting RFC 9562 UUID Version 7 identifiers.</p>
 
   <h2 id="Dixor_Identity_UUID7_Uuid7_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html">Uuid7</a> serves as the central entry point for all 128-bit time-ordered 
-identifier operations within the <code>Dixor.Identity</code> ecosystem.
+<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html">Uuid7</a> serves as the single entry point for all UUID Version 7 functionality within the
+<code>Dixor.Identity</code> library. It exposes a simple, discoverable, and allocation-efficient API while
+internally delegating every operation to specialized infrastructure services resolved through the library's
+dependency injection architecture.
 </p>
 <p>
-Core capabilities exposed by this facade include:
-<ul><li><strong>Standard Generation:</strong> Zero-allocation creation of time-ordered primary keys (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuid">NewGuid()</a>).</li><li><strong>Monotonic Sequencing:</strong> Lock-free sequential ordering across same-millisecond bursts (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewMonotonicGuid">NewMonotonicGuid()</a>).</li><li><strong>High-Efficiency Batching:</strong> Lazy iterator streaming for bulk database seeding and ETL pipelines (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewGuids_System_Int32_">NewGuids(int)</a>).</li><li><strong>Inspection &amp; Auditing:</strong> Zero-overhead extraction of embedded creation timestamps (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_GetTimestamp_System_Guid_">GetTimestamp(Guid)</a>).</li><li><strong>Domain Formatting:</strong> Decorating identifiers with business prefixes and safe separators (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_NewString_System_String_System_String_System_String_">NewString(string?, string?, string)</a>).</li><li><strong>Boundary Verification:</strong> Fast-path version validation and substring pattern parsing (<a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_IsValid_System_String_">IsValid(string)</a>, <a class="xref" href="Dixor.Identity.UUID7.Uuid7.html#Dixor_Identity_UUID7_Uuid7_Parse_System_String_">Parse(string)</a>).</li></ul>
-
-<p>
-Unlike legacy <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.newguid">NewGuid()</a> (which emits random Version 4 values), identifiers produced by 
-this class append sequentially at the end of database B-Tree indexes, eliminating page splits and fragmentation.
+Unlike legacy <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.newguid">NewGuid()</a>, which produces randomly distributed Version 4 UUIDs,
+UUID Version 7 embeds a 48-bit Unix timestamp into the identifier, allowing generated values to remain
+chronologically sortable while preserving a high degree of randomness.
 </p>
 <p>
-All generated identifiers strictly conform to <a href="https://www.rfc-editor.org/rfc/rfc9562">RFC 9562</a>.
+This chronological ordering significantly improves insertion performance for clustered database indexes,
+reduces page fragmentation, minimizes B-Tree page splits, and improves cache locality in high-throughput
+persistence scenarios.
+</p>
+<p>
+The facade provides comprehensive support for:
+</p>
+<ul><li>Generating RFC 9562 compliant UUID Version 7 identifiers using either the current UTC time or a custom timestamp.</li><li>Generating thread-safe monotonic UUID Version 7 identifiers for maintaining ordering during same-millisecond bursts.</li><li>Streaming lazily evaluated batches of UUID Version 7 identifiers for bulk-processing workloads.</li><li>Extracting embedded UTC creation timestamps and Unix epoch timestamps directly from UUIDs.</li><li>Validating binary and textual UUID Version 7 representations.</li><li>Parsing UUID values from arbitrary textual content such as log files, API payloads, and correlation identifiers.</li><li>Formatting identifiers using optional business-specific prefixes, suffixes, and configurable separators.</li></ul>
+<p>
+All identifiers generated by this facade strictly conform to
+<a href="https://www.rfc-editor.org/rfc/rfc9562">RFC 9562</a>
+and are fully interoperable with any standards-compliant UUID Version 7 implementation.
+</p>
+<p>
+This type is entirely thread-safe. All generation operations may be invoked concurrently across multiple threads
+without additional synchronization by the caller.
 </p>
 </div>
 
@@ -161,7 +175,7 @@ All generated identifiers strictly conform to <a href="https://www.rfc-editor.or
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_Format_System_Guid_System_String_System_String_System_String_" data-uid="Dixor.Identity.UUID7.Uuid7.Format(System.Guid,System.String,System.String,System.String)">
   Format(Guid, string?, string?, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decorates an existing UUID Version 7 identifier using domain prefixes, suffixes, and custom separators.</p>
@@ -223,7 +237,7 @@ string refCode = Uuid7.Format(id, prefix: "ORD", suffix: "EU");
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_GetTimestamp_System_Guid_" data-uid="Dixor.Identity.UUID7.Uuid7.GetTimestamp(System.Guid)">
   GetTimestamp(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Extracts the embedded UTC inception timestamp directly from an RFC 9562 UUID Version 7 identifier.</p>
@@ -274,7 +288,7 @@ without requiring secondary database timestamp columns.
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_GetUnixTimeMilliseconds_System_Guid_" data-uid="Dixor.Identity.UUID7.Uuid7.GetUnixTimeMilliseconds(System.Guid)">
   GetUnixTimeMilliseconds(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the embedded creation timestamp expressed as milliseconds elapsed since the Unix Epoch.</p>
@@ -319,7 +333,7 @@ without requiring secondary database timestamp columns.
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_IsUuid7_System_Guid_" data-uid="Dixor.Identity.UUID7.Uuid7.IsUuid7(System.Guid)">
   IsUuid7(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Verifies whether a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> struct represents a genuine RFC 9562 UUID Version 7 value.</p>
@@ -358,7 +372,7 @@ without requiring secondary database timestamp columns.
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_IsValid_System_String_" data-uid="Dixor.Identity.UUID7.Uuid7.IsValid(System.String)">
   IsValid(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Parses and verifies whether a textual string represents a valid RFC 9562 UUID Version 7 identifier.</p>
@@ -397,7 +411,7 @@ without requiring secondary database timestamp columns.
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_NewGuid" data-uid="Dixor.Identity.UUID7.Uuid7.NewGuid">
   NewGuid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a new RFC 9562 compliant UUID Version 7 identifier anchored to the current UTC timestamp.</p>
@@ -440,7 +454,7 @@ secure randomness. Hot execution paths utilize stack allocation to guarantee zer
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_NewGuid_System_DateTimeOffset_" data-uid="Dixor.Identity.UUID7.Uuid7.NewGuid(System.DateTimeOffset)">
   NewGuid(DateTimeOffset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a new RFC 9562 compliant UUID Version 7 identifier embedding a specific custom timestamp.</p>
@@ -494,7 +508,7 @@ Ideal for historical data migrations, event sourcing replay pipelines, and deter
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_NewGuids_System_Int32_" data-uid="Dixor.Identity.UUID7.Uuid7.NewGuids(System.Int32)">
   NewGuids(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a lazily evaluated sequence of multiple RFC 9562 UUID Version 7 identifiers.</p>
@@ -552,7 +566,7 @@ This provides memory-efficient streaming for bulk inserts and database seeding w
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_NewMonotonicGuid" data-uid="Dixor.Identity.UUID7.Uuid7.NewMonotonicGuid">
   NewMonotonicGuid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a new RFC 9562 UUID Version 7 identifier guaranteed to sort monotonically across same-millisecond bursts.</p>
@@ -597,7 +611,7 @@ synchronized 16-bit sequence counter in the least significant bytes.
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_NewString_System_String_System_String_System_String_" data-uid="Dixor.Identity.UUID7.Uuid7.NewString(System.String,System.String,System.String)">
   NewString(string?, string?, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a newly minted RFC 9562 UUID Version 7 identifier and immediately formats it as a decorated string.</p>
@@ -655,7 +669,7 @@ Console.WriteLine(trackingRef); // SHP-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US</
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_Parse_System_String_" data-uid="Dixor.Identity.UUID7.Uuid7.Parse(System.String)">
   Parse(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Extracts and parses the first canonical UUID pattern embedded within an arbitrary string.</p>
@@ -703,7 +717,7 @@ Console.WriteLine(trackingRef); // SHP-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US</
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_TryGetTimestamp_System_Guid_System_DateTimeOffset__" data-uid="Dixor.Identity.UUID7.Uuid7.TryGetTimestamp(System.Guid,System.DateTimeOffset@)">
   TryGetTimestamp(Guid, out DateTimeOffset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Attempts to extract the embedded creation timestamp from an arbitrary identifier without throwing exceptions.</p>
@@ -748,7 +762,7 @@ Console.WriteLine(trackingRef); // SHP-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US</
 
   <h3 id="Dixor_Identity_UUID7_Uuid7_TryParse_System_String_System_Guid__" data-uid="Dixor.Identity.UUID7.Uuid7.TryParse(System.String,System.Guid@)">
   TryParse(string, out Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Attempts to extract and parse the first canonical UUID pattern from arbitrary text without throwing format exceptions.</p>
@@ -799,7 +813,7 @@ Console.WriteLine(trackingRef); // SHP-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US</
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L33" class="edit-link">Edit this page</a>
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Identity/UUID7/Uuid7.cs/#L80" class="edit-link">Edit this page</a>
         </div>
 
 
