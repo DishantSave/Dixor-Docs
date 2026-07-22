@@ -88,21 +88,19 @@
 <h1 id="standard-uuidv7-generation-uuid7new">Standard UUIDv7 Generation (<code>Uuid7.New</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Standard Generation</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Standard Generation</strong></p>
 </blockquote>
 <hr>
-<p><code>Dixor.Identity</code> provides an ultra-fast, zero-allocation implementation for generating <strong>RFC 9562 compliant UUID Version 7</strong> identifiers.</p>
-<p>By embedding a 48-bit millisecond Unix timestamp directly into the most significant bits of the identifier alongside cryptographically secure random data, <code>Uuid7.New()</code> creates primary keys that naturally sort in chronological order while guaranteeing global collision resistance.</p>
+<p><code>Dixor.Identity</code> provides a zero-allocation implementation for generating <strong>RFC 9562 compliant UUID Version 7</strong> identifiers via the <code>Uuid7.NewGuid()</code> facade.</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
 // Generate a standard time-ordered primary key using current UTC time
 Guid primaryKey = Uuid7.New();
-// Example Output: 0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10
 
 </code></pre>
 <hr>
-<h2 id="128-bit-bitwise-anatomy">128-Bit Bitwise Anatomy</h2>
-<p>Every identifier minted by <code>Uuid7.New()</code> follows strict network byte order (Big-Endian) layout:</p>
+<h2 id="bitwise-layout--anatomy">Bitwise Layout &amp; Anatomy</h2>
+<p>The underlying engine constructs 128-bit identifiers using a stack-allocated buffer (<code>stackalloc byte[16]</code>):</p>
 <pre><code class="lang-text"> 0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -117,10 +115,10 @@ Guid primaryKey = Uuid7.New();
 
 </code></pre>
 <ol>
-<li><strong><code>Bytes 0..5</code> (Timestamp):</strong> 48-bit Unix timestamp (<code>milliseconds since 1970-01-01T00:00:00Z</code>). Dictates natural B-Tree sequential insertion.</li>
-<li><strong><code>Byte 6</code> (Version &amp; Random):</strong> High nibble is masked strictly to <code>0111</code> (<code>Version 7</code>). Low nibble contains random bits.</li>
-<li><strong><code>Byte 8</code> (Variant &amp; Random):</strong> Two highest bits are masked strictly to <code>10</code> conforming to IETF standard variants.</li>
-<li><strong><code>Remaining Bits</code> (Entropy):</strong> 74 bits filled via high-performance <code>RandomNumberGenerator.Fill()</code>.</li>
+<li><strong><code>Bytes 0–5</code> (Timestamp):</strong> A 48-bit Unix timestamp in milliseconds written in network byte order (Big-Endian).</li>
+<li><strong><code>Byte 6</code> (Version):</strong> High nibble is masked strictly to <code>0111</code> (<code>Version 7</code>).</li>
+<li><strong><code>Byte 8</code> (Variant):</strong> Two highest bits are masked to <code>10</code> conforming to IETF standards.</li>
+<li><strong><code>Remaining Bytes</code> (Entropy):</strong> Filled with 74 bits of cryptographically secure random data via <code>RandomNumberGenerator.Fill()</code>.</li>
 </ol>
 <hr>
 <h2 id="zero-allocation-architectural-performance">Zero-Allocation Architectural Performance</h2>
@@ -131,34 +129,29 @@ Span&lt;byte&gt; bytes = stackalloc byte[16];
 </code></pre>
 <ul>
 <li><strong>No Garbage Collection Pressure:</strong> Because a UUID is fixed at exactly 16 bytes, using <code>stackalloc</code> eliminates intermediate heap allocations entirely during key generation.</li>
-<li><strong>Network Byte Order:</strong> Direct bit-shifting (<code>&gt;&gt; 40</code>, <code>&gt;&gt; 32</code>, etc.) writes timestamps directly into stack memory without temporary buffer copying.</li>
 </ul>
 <hr>
 <h2 id="custom-timestamp-generation">Custom Timestamp Generation</h2>
-<p>For historical data migrations, event sourcing replays, or deterministic integration testing, you can explicitly anchor a UUIDv7 to any valid past or future timestamp:</p>
+<p>For data migrations or historical event replays, you can anchor an identifier to a specific temporal point:</p>
 <pre><code class="lang-csharp">DateTimeOffset historicalEvent = new DateTimeOffset(2025, 1, 1, 12, 0, 0, TimeSpan.Zero);
-
-// Mint a valid UUIDv7 embedding the custom timestamp
 Guid historicalId = Uuid7.New(historicalEvent);
 
 </code></pre>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p><strong>Epoch Boundaries:</strong> Passing a timestamp occurring before the Unix Epoch (<code>1970-01-01T00:00:00Z</code>) throws an <code>ArgumentOutOfRangeException</code>.</p>
+<p>Timestamps occurring strictly before the Unix Epoch (<code>1970-01-01T00:00:00Z</code>) trigger an <code>ArgumentOutOfRangeException</code>.</p>
 </div>
+<hr>
+<blockquote>
+<p>💡 <strong>Try it Live:</strong> Test standard UUIDv7 generation and inspect bit layouts interactively in the <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</blockquote>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Overview.md">UUIDv7 Overview &amp; Architecture</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Sub-Millisecond Sequencing</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_MonotonicGeneration.html">Monotonic Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_TimestampExtraction.html">Timestamp Extraction</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Overview.md">UUIDv7 Overview</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></p>
-<pre><code></code></pre>
 
 </article>
 

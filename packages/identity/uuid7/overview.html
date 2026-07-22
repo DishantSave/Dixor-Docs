@@ -96,8 +96,7 @@
 </blockquote>
 <hr>
 <p><strong>Dixor.Identity</strong> delivers modern, allocation-conscious identifier generation for .NET.</p>
-<p>While standard .NET applications heavily rely on <code>Guid.NewGuid()</code>, that API generates <strong>UUID Version 4</strong> values. Because Version 4 identifiers are completely random, inserting them as primary keys into clustered database tables forces B-Tree index page splits, random disk I/O, cache misses, and severe database fragmentation under high-throughput workloads.</p>
-<p><code>Dixor.Identity</code> solves this problem by providing a complete, zero-allocation implementation of <strong>RFC 9562 UUID Version 7</strong>. By embedding a 48-bit millisecond Unix timestamp in the most significant bits alongside 74 bits of cryptographically secure randomness, Version 7 identifiers naturally sort in chronological order while guaranteeing global collision resistance.</p>
+<p>While standard .NET applications rely on <code>Guid.NewGuid()</code> (UUID Version 4), random keys cause database fragmentation, index page splits, and cache misses in high-throughput workloads. <code>Dixor.Identity</code> solves this by implementing <strong>RFC 9562 UUID Version 7</strong>, embedding a 48-bit millisecond Unix timestamp with cryptographically secure randomness for natural chronological sorting and global uniqueness.</p>
 <hr>
 <h2 id="why-choose-dixoridentity">Why Choose Dixor.Identity?</h2>
 <table>
@@ -143,7 +142,6 @@
 </table>
 <hr>
 <h2 id="core-capabilities-at-a-glance">Core Capabilities at a Glance</h2>
-<p>All operations are centralized cleanly under the static <strong><code>Uuid7</code></strong> facade:</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
 // 1. Standard Generation: Mint a zero-allocation, time-ordered primary key
@@ -160,7 +158,6 @@ DateTimeOffset createdAt = Uuid7.GetTimestamp(primaryKey);
 
 // 5. Domain Formatting: Decorate keys with business prefixes and safe separators
 string invoiceRef = Uuid7.NewString(prefix: &quot;INV&quot;, suffix: &quot;EU&quot;);
-// Output: INV-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-EU
 
 // 6. Safe Parsing &amp; Validation: Verify untrusted HTTP headers or log strings
 if (Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10&quot;))
@@ -169,34 +166,30 @@ if (Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10&quot;))
 }
 
 </code></pre>
+<blockquote>
+<p>💡 <strong>Try it Live:</strong> Experiment with all UUIDv7 generation parameters, custom prefixes, and performance metrics interactively in the <a href="https://dishantsave.github.io/Dixor.Studio/">Dixor Studio</a>.</p>
+</blockquote>
 <hr>
 <h2 id="deep-dive-documentation-guides">Deep-Dive Documentation Guides</h2>
-<p>Explore the architecture, performance characteristics, and advanced recipes for every feature module:</p>
-<h3 id="-concepts--architecture">📖 Concepts &amp; Architecture</h3>
 <ul>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_Overview.md">UUID Version 7 Overview</a></strong> — Understanding RFC 9562, bitwise anatomy, and UUID comparisons.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_BestPractices.md">Production Best Practices</a></strong> — Optimal database schema design, storage types, and DI integration.</li>
-</ul>
-<h3 id="-generation-engines">🚀 Generation Engines</h3>
-<ul>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_Generation.md">Standard Generation (<code>Uuid7.New</code>)</a></strong> — Zero-allocation stack mechanics and custom timestamp injection.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_MonotonicGeneration.md">Monotonic Generation (<code>Uuid7.NewMonotonic</code>)</a></strong> — Sub-millisecond sequence counters and thread locking.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_BatchGeneration.md">High-Efficiency Batch Generation (<code>Uuid7.NewGuids</code>)</a></strong> — Iterator state machines and lazy memory streaming.</li>
-</ul>
-<h3 id="-parsing-formatting--telemetry">🔍 Parsing, Formatting &amp; Telemetry</h3>
-<ul>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_Formatting.md">Business Identifier Formatting (<code>Uuid7.NewString</code>)</a></strong> — Prefix/suffix rules, safe separators, and Roslyn checks.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_Validation.md">Validation Rules &amp; Verification (<code>Uuid7.IsValid</code>)</a></strong> — Fast-path nibble inspection for Version 7 adherence.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_Parsing.md">Text Extraction &amp; Parsing (<code>Uuid7.Parse</code>)</a></strong> — Compiled regex extraction of UUIDs embedded in messy logs.</li>
-<li><strong><a href="https://www.google.com/search?q=uuid7/UUID7_TimestampExtraction.md">Timestamp Extraction (<code>Uuid7.GetTimestamp</code>)</a></strong> — Reconstructing creation chronology via bitwise shifting.</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_Overview.md">UUID Version 7 Overview</a></strong> — RFC 9562 anatomy and bitwise specifications.</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></strong> — Optimal database schema design and EF Core integration.</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation</a></strong> — Zero-allocation stack mechanics (<code>Uuid7.New</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></strong> — Sub-millisecond ordering (<code>Uuid7.NewMonotonic</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></strong> — Lazy memory streaming (<code>Uuid7.NewGuids</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Formatting</a></strong> — Custom prefixes and separators (<code>Uuid7.NewString</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules</a></strong> — Fast-path nibble inspection (<code>Uuid7.IsValid</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; Extraction</a></strong> — Regex pattern matching (<code>Uuid7.Parse</code>).</li>
+<li><strong><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></strong> — Decoding time chronology (<code>Uuid7.GetTimestamp</code>).</li>
 </ul>
 <hr>
-<h2 id="tooling--architecture-notes">Tooling &amp; Architecture Notes</h2>
+<h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Decoupled Analyzers:</strong> Starting with runtime release <code>v0.1.4</code>, all compile-time Roslyn diagnostics (<code>DIXOR001</code>–<code>DIXOR010</code>) ship inside an independent analyzer package (<code>Dixor.Identity.Analyzers</code>) to ensure your runtime binaries remain ultra-lightweight.</li>
-<li><strong>Target Framework:</strong> Built natively for modern <strong>.NET 10+</strong> workloads utilizing advanced <code>Span&lt;T&gt;</code> and memory primitives.</li>
+<li><strong>Specification:</strong> Built strictly around the <a href="https://www.rfc-editor.org/rfc/rfc9562.html">IETF RFC 9562 Standard</a> for Universally Unique Identifiers (UUIDs).</li>
+<li><strong>Inspiration:</strong> Special acknowledgment to foundational .NET UUIDv7 ecosystem standards and community specifications for high-performance allocation strategies.</li>
 </ul>
-<pre><code></code></pre>
+<pre><code>
+</code></pre>
 
 </article>
 

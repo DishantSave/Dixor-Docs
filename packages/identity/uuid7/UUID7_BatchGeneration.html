@@ -88,98 +88,57 @@
 <h1 id="high-efficiency-batch-uuidv7-generation">High-Efficiency Batch UUIDv7 Generation</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Batch Generation</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://www.google.com/search?q=../../README.md">Home</a> &gt; <a href="https://www.google.com/search?q=../overview.md">Dixor.Identity</a> &gt; <strong>Batch Generation</strong></p>
 </blockquote>
 <hr>
-<p>When inserting thousands of database records, seeding test environments, or running high-throughput ETL pipelines, generating primary keys one by one inside a standard <code>for</code> loop introduces unnecessary boilerplate and memory allocation overhead.</p>
-<p><code>Dixor.Identity</code> streamlines bulk identifier creation via <strong>memory-efficient, lazily evaluated batch generation</strong>:</p>
+<p><code>Dixor.Identity</code> provides high-performance, deferred generation of multiple UUIDv7 identifiers through the <code>Uuid7.NewGuids(int count)</code> facade.</p>
 <pre><code class="lang-csharp">IEnumerable&lt;Guid&gt; batchIds = Uuid7.NewGuids(count: 10000);
 
 </code></pre>
 <hr>
-<h2 id="why-lazy-evaluation-matters">Why Lazy Evaluation Matters</h2>
-<p>Rather than instantly allocating a massive array in heap memory (Eager Generation), <code>Uuid7.NewGuids()</code> utilizes C# iterator state machines (<code>yield return</code>) to stream identifiers <strong>on demand</strong>.</p>
-<pre><code class="lang-text">EAGER GENERATION (Memory Heavy):
-[Call API] ──► Allocates 1,000,000 GUIDs in RAM instantly ──► [Process Array]
+<h2 id="architectural-performance--lazy-evaluation">Architectural Performance &amp; Lazy Evaluation</h2>
+<p>The underlying <code>Uuid7BatchGenerator</code> utilizes C# iterator state machines (<code>yield return</code>) to stream items lazily upon enumeration. This maintains <span class="math">\(O(1)\)</span> initial memory overhead regardless of the requested batch size, eliminating heap exhaustion and Garbage Collector spikes during ETL migrations or mass data seeding.</p>
+<pre><code class="lang-csharp">// Internally delegates generation per item upon enumeration
+public IEnumerable&lt;Guid&gt; Generate(int count)
+{
+    ArgumentOutOfRangeException.ThrowIfLessThanOrEqual(count, 0);
 
-LAZY STREAMING (Memory Efficient - Dixor Approach):
-[Call API] ──► Yields GUID #1 ──► [Process #1] ──► Discards #1 ──► Yields GUID #2 ...
+    for (int i = 0; i &lt; count; i++)
+    {
+        yield return _generator.Generate();
+    }
+}
 
 </code></pre>
-<h3 id="key-architectural-advantages">Key Architectural Advantages</h3>
-<ol>
-<li><strong>Zero Heap Bloat:</strong> Requesting <code>10_000_000</code> identifiers consumes virtually zero memory up front. Identifiers materialize strictly as your consumer (<code>foreach</code>, LINQ, or database bulk writer) requests them.</li>
-<li><strong>Reduced GC Pressure:</strong> Eliminating large temporary arrays prevents Garbage Collector spikes and memory fragmentation during intense data migrations.</li>
-<li><strong>Pipeline Composable:</strong> Works seamlessly with standard LINQ streaming queries (<code>Where</code>, <code>Take</code>, <code>Chunk</code>).</li>
-</ol>
 <hr>
 <h2 id="api-usage--examples">API Usage &amp; Examples</h2>
 <h3 id="basic-streaming">Basic Streaming</h3>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
-// Stream 5,000 time-ordered keys directly into a database bulk inserter
+// Stream time-ordered keys directly into a database bulk inserter
 foreach (Guid primaryKey in Uuid7.NewGuids(5000))
 {
     await dbContext.Orders.AddAsync(new Order { Id = primaryKey });
 }
 
 </code></pre>
-<h3 id="materializing-when-necessary">Materializing When Necessary</h3>
-<p>If your downstream API explicitly demands an in-memory collection (such as serialization payloads), materialize the stream explicitly:</p>
+<h3 id="materialization">Materialization</h3>
+<p>Materialize explicitly only if your downstream code or serialization layer demands an in-memory collection:</p>
 <pre><code class="lang-csharp">List&lt;Guid&gt; orderIds = Uuid7.NewGuids(count: 500).ToList();
 Guid[] idArray      = Uuid7.NewGuids(count: 100).ToArray();
 
 </code></pre>
 <hr>
-<h2 id="compile-time-safety-roslyn-analyzer-dixor001">Compile-Time Safety: Roslyn Analyzer (<code>DIXOR001</code>)</h2>
-<p>To prevent runtime application crashes during bulk operations, <code>Dixor.Identity</code> includes a dedicated compile-time Roslyn analyzer rule (<strong><code>DIXOR001</code></strong>) that inspects batch sizes directly inside your IDE.</p>
-<table>
-<thead>
-<tr>
-<th>Diagnostic</th>
-<th>Rule Description</th>
-<th>Trigger Condition</th>
-<th>Resolution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><code>DIXOR001</code></strong></td>
-<td>Invalid batch generation count</td>
-<td>Passing <code>count &lt;= 0</code> as a compile-time constant</td>
-<td>Supply a positive integer (<code>&gt; 0</code>)</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="lang-csharp">// ❌ COMPILE ERROR (DIXOR001): Batch size must be greater than zero
-var badBatch = Uuid7.NewGuids(0);
-
-// ✅ COMPILE SUCCESS: Valid positive batch count
-var goodBatch = Uuid7.NewGuids(500);
-
-</code></pre>
-<hr>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li><strong>Prefer Streaming Over Materialization:</strong> Avoid calling <code>.ToList()</code> or <code>.ToArray()</code> on large batches unless your destination API strictly demands a materialized collection.</li>
-<li><strong>Validate Dynamic Inputs:</strong> While Roslyn catches invalid compile-time constants, always validate batch sizes originating from HTTP payloads or external user input before invoking generation:</li>
-</ul>
-<pre><code class="lang-csharp">if (requestCount &lt;= 0)
-    return Results.BadRequest(&quot;Batch count must be a positive integer.&quot;);
-
-</code></pre>
+<blockquote>
+<p>💡 <strong>Try it Live:</strong> Experiment with batch generation parameters and stream streaming performance interactively in the <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</blockquote>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Sub-Millisecond Sequencing</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></li>
+<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Formatting</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Formatting.md">Formatting &amp; String Conversion</a></p>
-<pre><code></code></pre>
 
 </article>
 
