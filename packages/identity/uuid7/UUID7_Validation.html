@@ -88,14 +88,13 @@
 <h1 id="uuid-version-7-validation-uuid7isuuid7--uuid7isvalid">UUID Version 7 Validation (<code>Uuid7.IsUuid7</code> &amp; <code>Uuid7.IsValid</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Validation</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Validation</strong></p>
 </blockquote>
 <hr>
-<p>Many developers assume that all <code>.NET</code> <code>Guid</code> structures are interchangeable. However, legacy <code>Guid.NewGuid()</code> generates random <strong>Version 4</strong> values, which lack timestamps and cause severe index page splits. Furthermore, advanced <code>Dixor.Identity</code> operations—such as <a href="UUID7_TimestampExtraction.html">Timestamp Extraction</a>—strictly require genuine <strong>RFC 9562 UUID Version 7</strong> identifiers.</p>
-<p><code>Dixor.Identity</code> exposes two ultra-fast, zero-allocation methods to verify identifier compliance:</p>
+<p><code>Dixor.Identity</code> provides zero-allocation verification methods via <code>Uuid7.IsUuid7</code> and <code>Uuid7.IsValid</code> to ensure identifiers conform strictly to RFC 9562 UUID Version 7 specifications.</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
-// 1. Verify an already instantiated Guid struct
+// 1. Verify an in-memory Guid struct
 bool isGenuineV7 = Uuid7.IsUuid7(myGuid);
 
 // 2. Validate incoming text strings (e.g., HTTP headers, query parameters)
@@ -116,64 +115,47 @@ bool isValidString = Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e1
 </code></pre>
 <p>By allocating a 16-byte buffer on the execution stack (<code>stackalloc byte[16]</code>) and right-shifting Byte 6 by four positions (<code>bytes[6] &gt;&gt; 4</code>), the validator verifies RFC 9562 Version 7 adherence in sub-nanosecond execution time.</p>
 <hr>
-<h2 id="api-overloads--input-handling">API Overloads &amp; Input Handling</h2>
+<h2 id="api-overloads--boundary-safety">API Overloads &amp; Boundary Safety</h2>
 <table>
 <thead>
 <tr>
 <th>Method</th>
 <th>Accepts</th>
 <th>Behavior</th>
-<th>Typical Use Case</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><code>Uuid7.IsUuid7(Guid)</code></strong></td>
 <td><code>Guid</code> struct</td>
-<td>Verifies if the in-memory GUID has Version 7 bits (<code>0x7</code>).</td>
-<td>Validating internal domain models and database records.</td>
+<td>Verifies if version bits equal <code>0x7</code>.</td>
 </tr>
 <tr>
 <td><strong><code>Uuid7.IsValid(string)</code></strong></td>
 <td><code>string</code> text</td>
-<td>Parses raw text via <code>Uuid7Parser.TryParse</code> and verifies Version 7 bits.</td>
-<td>Protecting REST API endpoints, webhooks, and CSV imports.</td>
+<td>Parses text via <code>Uuid7Parser.TryParse</code> and verifies version bits.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="securing-api-boundaries">Securing API Boundaries</h3>
-<p>Always validate external identifiers at your REST controllers or Minimal API endpoints before passing them to domain logic:</p>
-<pre><code class="lang-csharp">app.MapGet(&quot;/api/orders/{id}&quot;, (string id) =&gt;
+<pre><code class="lang-csharp">// Securing API endpoints against legacy UUIDv4 or malformed strings
+if (!Uuid7.IsValid(id))
 {
-    // Rejects non-GUID strings AND legacy UUIDv4 identifiers instantly
-    if (!Uuid7.IsValid(id))
-    {
-        return Results.BadRequest(&quot;Identifier must be a valid RFC 9562 UUID Version 7.&quot;);
-    }
-
-    // Proceed safely with valid V7 processing...
-    return Results.Ok();
-});
+    return Results.BadRequest(&quot;Identifier must be a valid RFC 9562 UUID Version 7.&quot;);
+}
 
 </code></pre>
 <hr>
-<h2 id="performance-characteristics">Performance Characteristics</h2>
-<ul>
-<li><strong>Time Complexity:</strong> <code>O(1)</code> Constant Time.</li>
-<li><strong>Space Complexity:</strong> <code>O(1)</code> Zero Heap Allocation (<code>stackalloc byte[16]</code>).</li>
-</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test identifier validation rules and bit checks directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; String Conversion</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Formatting.html">Business Formatting</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Parsing.html">Parsing &amp; Extraction</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_TimestampExtraction.html">Timestamp Extraction</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Formatting.md">Formatting</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing</a></p>
-<pre><code></code></pre>
 
 </article>
 

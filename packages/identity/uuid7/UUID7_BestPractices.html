@@ -88,72 +88,49 @@
 <h1 id="uuidv7-production-best-practices">UUIDv7 Production Best Practices</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Best Practices</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Best Practices</strong></p>
 </blockquote>
 <hr>
-<p>Adopting <strong>UUID Version 7</strong> immediately supercharges database indexing and chronological observability compared to random GUIDs. However, getting the most out of <code>Dixor.Identity</code> in high-throughput production environments requires following established architectural patterns.</p>
-<p>This guide outlines essential best practices for database storage, API boundary validation, and high-concurrency generation.</p>
+<p>Adopting <strong>UUID Version 7</strong> optimizes database indexing and chronological tracking. This guide outlines essential best practices for database storage, API boundary safety, and high-concurrency generation.</p>
 <hr>
 <h2 id="1-database-storage--schema-design">1. Database Storage &amp; Schema Design</h2>
-<h3 id="always-store-as-native-128-bit-binary-types">Always Store as Native 128-Bit Binary Types</h3>
-<p>Never store UUIDs as text strings (<code>VARCHAR(36)</code> or <code>NVARCHAR(36)</code>) in relational databases. String storage doubles disk space consumption, ruins CPU cache locality, and slows down index traversals.</p>
+<p>Always store UUIDs as native 16-byte binary types rather than text strings (<code>VARCHAR(36)</code>), which double disk storage consumption and fragment database B-Tree index pages.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Database Engine</th>
-<th style="text-align: left;">Recommended Column Type</th>
-<th style="text-align: left;">Why?</th>
+<th>Database Engine</th>
+<th>Recommended Column Type</th>
+<th>Why?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>SQL Server</strong></td>
-<td style="text-align: left;"><code>UNIQUEIDENTIFIER</code></td>
-<td style="text-align: left;">16-byte native storage; optimized for B-Tree sequential leaf insertion.</td>
+<td><strong>SQL Server</strong></td>
+<td><code>UNIQUEIDENTIFIER</code></td>
+<td>Optimized for sequential leaf appends.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>PostgreSQL</strong></td>
-<td style="text-align: left;"><code>UUID</code></td>
-<td style="text-align: left;">First-class binary UUID handling with native operator support.</td>
+<td><strong>PostgreSQL</strong></td>
+<td><code>UUID</code></td>
+<td>First-class binary handling.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>MySQL / MariaDB</strong></td>
-<td style="text-align: left;"><code>BINARY(16)</code></td>
-<td style="text-align: left;">Fixed-length raw binary layout ensuring tight index page packing.</td>
+<td><strong>MySQL / MariaDB</strong></td>
+<td><code>BINARY(16)</code></td>
+<td>Fixed-length raw binary layout.</td>
 </tr>
 </tbody>
 </table>
-<pre><code class="lang-sql">-- Optimal SQL Server Schema Example
-CREATE TABLE Orders
-(
-    Id UNIQUEIDENTIFIER PRIMARY KEY NOT NULL,
-    CustomerId UNIQUEIDENTIFIER NOT NULL,
-    OrderTotal DECIMAL(18, 2) NOT NULL
-);
-
-</code></pre>
 <hr>
-<h2 id="2-choosing-the-right-generation-strategy">2. Choosing the Right Generation Strategy</h2>
-<p>Match your generation method to the exact concurrency profile of your workload:</p>
-<pre><code class="lang-csharp">using Dixor.Identity.UUID7;
-
-// 1. STANDARD WORKLOADS (REST APIs, Entity Creation)
-// Ultra-fast, zero-allocation time-ordered ID.
-Guid entityId = Uuid7.New();
-
-// 2. ULTRA-HIGH THROUGHPUT (Event Sourcing, High-Speed CQRS)
-// Guarantees strict mathematical sorting even when 10,000+ IDs are minted in the exact same millisecond.
-Guid eventId = Uuid7.NewMonotonic();
-
-// 3. BULK OPERATIONS (Data Seeding, ETL Pipelines, Batch Inserts)
-// Lazy enumeration eliminates loop overhead and memory pressure.
-IEnumerable&lt;Guid&gt; seedIds = Uuid7.NewGuids(count: 5000);
-
-</code></pre>
+<h2 id="2-choosing-the-generation-strategy">2. Choosing the Generation Strategy</h2>
+<ul>
+<li><strong>Standard Workloads (<code>Uuid7.NewGuid()</code>):</strong> Zero-allocation time-ordered IDs for REST APIs and entity creation.</li>
+<li><strong>High-Throughput Concurrency (<code>Uuid7.NewMonotonicGuid()</code>):</strong> Strict mathematical sorting across same-millisecond bursts for event sourcing and CQRS.</li>
+<li><strong>Bulk Operations (<code>Uuid7.NewGuids()</code>):</strong> Memory-efficient lazy streaming for data seeding and ETL migrations.</li>
+</ul>
 <hr>
 <h2 id="3-api-boundary-safety--input-validation">3. API Boundary Safety &amp; Input Validation</h2>
-<h3 id="never-rely-on-exception-driven-parsing">Never Rely on Exception-Driven Parsing</h3>
-<p>When receiving identifiers from external REST payloads, query parameters, or file uploads, never treat input as trusted data. Using <code>Uuid7.Parse()</code> directly on user input risks throwing unhandled exceptions under malformed payloads.</p>
+<p>Avoid exception-driven parsing on untrusted user input. Use safe validation patterns at API controllers:</p>
 <pre><code class="lang-csharp">// ❌ BAD: Exception-driven flow incurs severe CPU overhead on bad requests
 try 
 {
@@ -170,85 +147,58 @@ if (!Uuid7.TryParse(rawInput, out Guid validId) || !Uuid7.IsValid(validId))
 </code></pre>
 <hr>
 <h2 id="4-architectural-patterns--domain-formatting">4. Architectural Patterns &amp; Domain Formatting</h2>
-<h3 id="decouple-generation-via-dependency-injection">Decouple Generation via Dependency Injection</h3>
-<p>To keep domain logic clean and unit tests deterministic, wrap static generation calls behind a lightweight provider interface:</p>
-<pre><code class="lang-csharp">public interface IIdGenerator
-{
-    Guid CreateId();
-}
-
-public sealed class DixorIdGenerator : IIdGenerator
-{
-    public Guid CreateId() =&gt; Uuid7.New();
-}
-
-// Register in ASP.NET Core Program.cs:
-builder.Services.AddSingleton&lt;IIdGenerator, DixorIdGenerator&gt;();
-
-</code></pre>
-<h3 id="use-built-in-domain-formatting-apis">Use Built-in Domain Formatting APIs</h3>
-<p>Avoid manual string concatenation when generating business-facing reference codes. Let the allocation-conscious formatter handle prefixing and separators:</p>
-<pre><code class="lang-csharp">// ❌ BAD: Allocates multiple temporary strings
-string badRef = &quot;ORD-&quot; + Uuid7.New().ToString() + &quot;-US&quot;;
-
-// ✅ GOOD: Optimized internal string formatting
-string cleanRef = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;US&quot;);
-// Output: ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US
-
-</code></pre>
+<ul>
+<li><strong>Decouple Generation:</strong> Wrap static generation calls behind an <code>IIdGenerator</code> interface to keep unit tests deterministic.</li>
+<li><strong>Use Built-In Formatting:</strong> Use <code>Uuid7.NewString(prefix, suffix)</code> to wrap identifiers in domain context cleanly without manual string allocation overhead.</li>
+</ul>
 <hr>
 <h2 id="5-security--temporal-considerations">5. Security &amp; Temporal Considerations</h2>
 <ul>
-<li><strong>Do Not Rely on UUIDs for Authorization:</strong> Because UUIDv7 embeds a public creation timestamp, observers can deduce roughly when a record was created. Never use UUIDs as secret bearer tokens or security nonces.</li>
-<li><strong>Preserve UTC Strictly:</strong> Extracted timestamps (<code>Uuid7.GetTimestamp(id)</code>) return <code>DateTimeOffset</code> anchored in UTC. Always preserve UTC across distributed service boundaries and convert to local time strictly at the UI layer.</li>
-<li><strong>Not a Sequential Counter Across Nodes:</strong> While UUIDv7 sorts chronologically, two independent distributed microservices minting IDs during the exact same millisecond rely on random lower bits. Never assume <code>Node_A_ID + 1 == Node_B_ID</code>.</li>
+<li><strong>Not for Authorization:</strong> Embedded timestamps mean observers can deduce creation times; never use UUIDs as secret tokens.</li>
+<li><strong>Preserve UTC:</strong> Extracted timestamps (<code>Uuid7.GetTimestamp</code>) return UTC <code>DateTimeOffset</code>. Keep UTC across services and convert locally only at the UI layer.</li>
 </ul>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test production patterns and configuration parameters directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
 <hr>
 <h2 id="production-quick-check-matrix">Production Quick-Check Matrix</h2>
 <table>
 <thead>
 <tr>
-<th>Common Anti-Pattern</th>
+<th>Anti-Pattern</th>
 <th>Production Best Practice</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Storing UUIDs as <code>VARCHAR(36)</code></td>
-<td>Use native 16-byte binary columns (<code>UNIQUEIDENTIFIER</code> / <code>UUID</code>).</td>
+<td>Use native 16-byte binary columns.</td>
 </tr>
 <tr>
-<td>Looping <code>Uuid7.New()</code> 10,000 times</td>
-<td>Use <code>Uuid7.NewGuids(10000)</code> for memory-efficient lazy streaming.</td>
+<td>Looping <code>Uuid7.NewGuid()</code> for mass inserts</td>
+<td>Use <code>Uuid7.NewGuids(count)</code> for lazy streaming.</td>
 </tr>
 <tr>
-<td>Using <code>Parse()</code> on HTTP payloads</td>
-<td>Use <code>TryParse()</code> + <code>IsValid()</code> to prevent exception overhead.</td>
+<td>Using <code>Parse()</code> on HTTP inputs</td>
+<td>Use <code>TryParse()</code> and <code>IsValid()</code>.</td>
 </tr>
 <tr>
-<td>Replacing hyphens (<code>id.ToString().Replace(&quot;-&quot;, &quot;&quot;)</code>)</td>
-<td>Keep standard canonical formatting or use <code>Uuid7.NewString()</code>.</td>
-</tr>
-<tr>
-<td>Assuming sub-millisecond sorting across threads</td>
-<td>Switch to <code>Uuid7.NewMonotonic()</code> for strict sequence locking.</td>
+<td>Assuming global node sequence ordering</td>
+<td>Use <code>Uuid7.NewMonotonicGuid()</code> for intra-process thread safety.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation Guide</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation Guide</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction Guide</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_MonotonicGeneration.html">Monotonic Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Formatting.html">Formatting</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_TimestampExtraction.html">Timestamp Extraction</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=../examples/BasicUsageExamples.md">Examples &amp; Recipes</a></p>
-<pre><code></code></pre>
 
 </article>
 

@@ -88,21 +88,14 @@
 <h1 id="uuid-parsing--text-extraction-uuid7parse--uuid7tryparse">UUID Parsing &amp; Text Extraction (<code>Uuid7.Parse</code> &amp; <code>Uuid7.TryParse</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Parsing</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Parsing</strong></p>
 </blockquote>
 <hr>
-<p>In enterprise telemetry, application logs, and external messaging pipelines, identifiers rarely arrive as clean, isolated 36-character strings. They are frequently wrapped inside log headers, domain prefixes, or JSON payloads:</p>
-<pre><code class="lang-text">[INFO] Order processed successfully. CorrelationId=ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10
-
-</code></pre>
-<p>While the standard .NET <code>Guid.Parse()</code> fails immediately on strings containing surrounding characters, <code>Dixor.Identity</code> incorporates a compiled regex extraction engine capable of <strong>locating and parsing UUIDs embedded inside arbitrary text</strong>:</p>
+<p><code>Dixor.Identity</code> incorporates a compiled regex extraction engine via <code>Uuid7.Parse</code> and <code>Uuid7.TryParse</code> to locate and parse UUIDs embedded within arbitrary text or prefixed domain strings.</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
 string logLine = &quot;[INFO] CorrelationId=ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-EU&quot;;
-
-// Automatically extracts the embedded canonical UUID pattern
 Guid correlationId = Uuid7.Parse(logLine);
-Console.WriteLine(correlationId); // Output: 0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10
 
 </code></pre>
 <hr>
@@ -124,6 +117,7 @@ Returns:     Guid Struct
 <ul>
 <li><strong>Compiled Performance:</strong> The internal engine compiles the pattern strictly once (<code>RegexOptions.Compiled</code>), guaranteeing high-speed execution across millions of log rows or stream events.</li>
 <li><strong>First Match Wins:</strong> If an input string contains multiple embedded UUIDs, the parser extracts strictly the <strong>first occurrence</strong>.</li>
+<li><strong>Null Protection:</strong> Both overloads enforce early null checking (<code>ArgumentNullException.ThrowIfNull</code>).</li>
 </ul>
 <hr>
 <h2 id="api-overloads--exception-handling">API Overloads &amp; Exception Handling</h2>
@@ -141,44 +135,35 @@ Returns:     Guid Struct
 <td><strong><code>Uuid7.Parse(string)</code></strong></td>
 <td>✅ Yes (<code>FormatException</code>)</td>
 <td><code>Guid</code></td>
-<td>Trusted internal strings, configuration values, guaranteed schemas.</td>
+<td>Trusted internal strings, guaranteed schemas.</td>
 </tr>
 <tr>
 <td><strong><code>Uuid7.TryParse(string, out Guid)</code></strong></td>
 <td>❌ No</td>
 <td><code>bool</code></td>
-<td>Untrusted user input, external webhooks, parsing messy log files.</td>
+<td>Untrusted webhooks, high-volume log streams.</td>
 </tr>
 </tbody>
 </table>
-<div class="WARNING">
-<h5>Warning</h5>
-<p><strong>Null Protection:</strong> Both overloads enforce early null checking (<code>ArgumentNullException.ThrowIfNull</code>). Passing a null reference will throw immediately rather than failing silently.</p>
-</div>
-<h3 id="high-throughput-log-processing-example">High-Throughput Log Processing Example</h3>
-<p>When ingesting unstructured application logs or external CSV files, use <code>TryParse</code> inside loop iterations to prevent exception overhead:</p>
-<pre><code class="lang-csharp">foreach (string rawLogRow in batchLogRows)
+<pre><code class="lang-csharp">// Safe extraction pattern for incoming log streams
+if (Uuid7.TryParse(rawLogRow, out Guid extractedId))
 {
-    // Skip unparseable log rows silently with zero exception cost
-    if (Uuid7.TryParse(rawLogRow, out Guid extractedId))
-    {
-        await telemetryIndexer.IndexRecordAsync(extractedId);
-    }
+    await telemetryIndexer.IndexRecordAsync(extractedId);
 }
 
 </code></pre>
 <hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test text extraction and string parsing rules directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
+<hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Identifier Formatting</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules &amp; Verification</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Formatting.html">Business Formatting</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Validation.html">Validation Rules</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_TimestampExtraction.html">Timestamp Extraction</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Validation.md">Validation</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></p>
-<pre><code></code></pre>
 
 </article>
 
