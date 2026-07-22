@@ -457,10 +457,80 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "packages/identity/base36/Base36.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/base36/Base36.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/base62/Base62.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/base62/Base62.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/hexadecimal/Hexadecimal.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/hexadecimal/Hexadecimal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "packages/identity/index.md",
       "output": {
         ".html": {
           "relative_path": "packages/identity/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/nanoid/NanoId.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/nanoid/NanoId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/numericcode/NumericCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/numericcode/NumericCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/sequence/Sequence.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/sequence/Sequence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/shortid/ShortId.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/shortid/ShortId.html"
         }
       },
       "version": ""
@@ -474,6 +544,16 @@
         },
         ".json": {
           "relative_path": "packages/identity/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/ulid/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/ulid/Overview.html"
         }
       },
       "version": ""

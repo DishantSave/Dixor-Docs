@@ -144,10 +144,50 @@
     "title": "Introduction | Dixor Documentation",
     "summary": "Introduction"
   },
+  "packages/identity/base36/Base36.html": {
+    "href": "packages/identity/base36/Base36.html",
+    "title": "Base36 Identifier Generation (Base36.Generate) | Dixor Documentation",
+    "summary": "Base36 Identifier Generation (Base36.Generate) \uD83D\uDCDA Navigation: Home > Dixor.Identity > Base36 Dixor.Identity provides cryptographically secure, compact, URL-safe, and case-insensitive Base36 identifiers consisting of numeric characters (0–9) and uppercase alphabetic characters (A–Z) via the Base36.Generate() facade. using Dixor.Identity; // Generate a secure Base36 identifier of default length string identifier = Base36.Generate(); Algorithm & Execution Mechanics The underlying generation engine relies on high-entropy cryptographic random providers and efficient buffer allocation: Character Set Mapping: Selects characters uniformly from the Base36 alphabet (0–9, A–Z). Optimized Buffer Allocation: For high-throughput performance, strings up to 256 characters are allocated directly on the execution stack (stackalloc char[length]), completely bypassing heap memory allocations and eliminating Garbage Collector pressure. Cryptographic Entropy: Random character selection utilizes shared secure entropy sources (RandomProvider), guaranteeing collision resistance and unpredictability. // Example custom length invocation with parameter validation string customId = Base36.Generate(length: 16); Guardrails & Validation Rules To protect system integrity and prevent resource exhaustion, the underlying Base36Service enforces strict bounds: Length Constraints: Passing a length less than or equal to zero, or greater than Constants.MaxBase36Length, triggers an ArgumentOutOfRangeException. Note \uD83D\uDE80 Interactive Demonstration: Test Base36 generation lengths and explore secure string outputs directly via Dixor Studio. Related Documentation Dixor.Identity Overview Base62 Identifier Generation References & Credits Specification: Built around standard Base36 alphanumeric character encoding principles for URL-safe identifiers. Architecture: Implements optimized stack-allocation patterns for secure string generation."
+  },
+  "packages/identity/base62/Base62.html": {
+    "href": "packages/identity/base62/Base62.html",
+    "title": "Base62 Identifier Generation (Base62.Generate) | Dixor Documentation",
+    "summary": "Base62 Identifier Generation (Base62.Generate) \uD83D\uDCDA Navigation: Home > Dixor.Identity > Base62 Dixor.Identity provides cryptographically secure, compact, and URL-safe Base62 identifiers consisting of numeric characters (0–9), uppercase alphabetic characters (A–Z), and lowercase alphabetic characters (a–z) via the Base62.Generate() facade. using Dixor.Identity; // Generate a secure Base62 identifier of default length string identifier = Base62.Generate(); Algorithm & Execution Mechanics The underlying generation engine relies on high-entropy cryptographic random providers and efficient buffer allocation: Character Set Mapping: Selects characters uniformly from the Base62 alphabet (0–9, A–Z, a–z), providing a higher encoding density than Base36. Optimized Buffer Allocation: For high-throughput performance, strings up to 256 characters are allocated directly on the execution stack (stackalloc char[length]), completely bypassing heap memory allocations and eliminating Garbage Collector pressure. Cryptographic Entropy: Random character selection utilizes shared secure entropy sources (RandomProvider), guaranteeing collision resistance and unpredictability. // Example custom length invocation with parameter validation string customId = Base62.Generate(length: 16); Guardrails & Validation Rules To protect system integrity and prevent resource exhaustion, the underlying Base62Service enforces strict bounds: Length Constraints: Passing a length less than or equal to zero, or greater than Constants.MaxBase62Length, triggers an ArgumentOutOfRangeException. Note \uD83D\uDE80 Interactive Demonstration: Test Base62 generation lengths and explore secure string outputs directly via Dixor Studio. Related Documentation Dixor.Identity Overview Base36 Identifier Generation References & Credits Specification: Built around standard Base62 alphanumeric character encoding principles for URL-safe, case-sensitive identifiers. Architecture: Implements optimized stack-allocation patterns for secure string generation."
+  },
+  "packages/identity/hexadecimal/Hexadecimal.html": {
+    "href": "packages/identity/hexadecimal/Hexadecimal.html",
+    "title": "Hexadecimal Identifier Generation (Hexadecimal.Generate) | Dixor Documentation",
+    "summary": "Hexadecimal Identifier Generation (Hexadecimal.Generate) \uD83D\uDCDA Navigation: Home > Dixor.Identity > Hexadecimal Dixor.Identity provides cryptographically secure hexadecimal identifiers consisting of numeric characters (0–9) and alphabetic characters (A–F or a–f) with configurable uppercase or lowercase output via the Hexadecimal.Generate() facade. Each generated byte is represented by two hexadecimal characters. using Dixor.Identity; // Generate a secure uppercase hexadecimal identifier using default byte count string identifier = Hexadecimal.Generate(upperCase: true); Algorithm & Execution Mechanics The underlying generation engine leverages secure random byte sourcing and efficient hex formatting: Cryptographic Random Sourcing: Generates secure random bytes using the shared entropy provider (RandomProvider.GetBytes(byteCount)). Hexadecimal Encoding: Converts the raw byte array into standard hex representation via .NET optimized routines (Convert.ToHexString). Case Formatting: Dynamically normalizes output to uppercase (A–F) or lowercase (a–f) based on the requested upperCase parameter. // Example custom invocation specifying byte count and lowercase output string customHex = Hexadecimal.Generate(byteCount: 32, upperCase: false); Guardrails & Validation Rules To protect system integrity and prevent resource exhaustion, the underlying HexadecimalService enforces strict bounds: Byte Count Constraints: Passing a byteCount less than or equal to zero, or greater than Constants.MaxHexByteCount, triggers an ArgumentOutOfRangeException. Note \uD83D\uDE80 Interactive Demonstration: Test hexadecimal byte counts and casing options directly via Dixor Studio. Related Documentation Dixor.Identity Overview Base36 Identifier Generation Base62 Identifier Generation References & Credits Specification: Built around standard Base16/Hexadecimal encoding principles for binary-to-text representations. Architecture: Leverages secure cryptographic random byte generation and case-normalized formatting."
+  },
   "packages/identity/index.html": {
     "href": "packages/identity/index.html",
     "title": "Dixor.Identity Package | Dixor Documentation",
     "summary": "Dixor.Identity Package Welcome to Dixor.Identity, the core library for allocation-conscious, RFC 9562-compliant UUID generation within the Dixor ecosystem. Package Modules UUIDv7: High-performance, time-sortable identifier generation. Sessions: Coming Soon - Robust session state management. Identity Flows: Coming Soon - Claims and identity propagation. Getting Started To install the package, add it to your project via NuGet: dotnet add package Dixor.Identity --- ### 2. `docs/packages/identity/uuid7/index.md` This acts as the landing page for the UUIDv7 sub-module. ```markdown # UUIDv7 Implementation The **UUIDv7** module provides a zero-allocation, thread-safe implementation of RFC 9562 Version 7 identifiers. These are designed to replace legacy random GUIDs, providing sequential, time-based ordering for optimized database indexing. ## Key Features * **Sequential Sorting:** Naturally ordered B-Tree friendly IDs. * **Zero Allocation:** Built for high-throughput .NET 10+ workloads. * **Metadata Embedded:** Easily extract creation timestamps from the ID payload. ## Core Guides * [Overview](UUID7_Overview.md) - Understanding the anatomy of a v7 ID. * [Generation](UUID7_Generation.md) - Standard and monotonic generation patterns. * [Best Practices](UUID7_BestPractices.md) - Integrating with SQL Server, PostgreSQL, and EF Core. --- *If you are looking for configuration settings, see [Production Patterns](UUID7_BestPractices.md).*"
+  },
+  "packages/identity/nanoid/NanoId.html": {
+    "href": "packages/identity/nanoid/NanoId.html",
+    "title": "| Dixor Documentation",
+    "summary": ""
+  },
+  "packages/identity/numericcode/NumericCode.html": {
+    "href": "packages/identity/numericcode/NumericCode.html",
+    "title": "| Dixor Documentation",
+    "summary": ""
+  },
+  "packages/identity/sequence/Sequence.html": {
+    "href": "packages/identity/sequence/Sequence.html",
+    "title": "| Dixor Documentation",
+    "summary": ""
+  },
+  "packages/identity/shortid/ShortId.html": {
+    "href": "packages/identity/shortid/ShortId.html",
+    "title": "| Dixor Documentation",
+    "summary": ""
+  },
+  "packages/identity/ulid/Overview.html": {
+    "href": "packages/identity/ulid/Overview.html",
+    "title": "| Dixor Documentation",
+    "summary": ""
   },
   "packages/identity/uuid7/UUID7_BatchGeneration.html": {
     "href": "packages/identity/uuid7/UUID7_BatchGeneration.html",
