@@ -99,6 +99,22 @@ string identifier = NanoId.Generate();
 
 </code></pre>
 <hr>
+<h2 id="what-is-nanoid--why-use-it">What is NanoId &amp; Why Use It?</h2>
+<p><strong>NanoId</strong> is a tiny, secure, URL-friendly unique string identifier generator.</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Compact &amp; URL-Friendly:</strong> NanoId packs high entropy into a shorter footprint than standard 36-character UUIDs while completely omitting special symbols, making identifiers safe for URLs, cookies, headers, and UI display.</li>
+<li><strong>Uniform Distribution:</strong> Standard implementations that use naive modulo operations (<code>random % alphabet</code>) suffer from bias where certain characters appear less frequently. NanoId avoids this flaw via rigorous mathematical uniformity.</li>
+<li><strong>Cryptographic Security:</strong> Built using high-entropy random entropy providers, NanoId delivers unpredictable tokens suitable for secure distributed systems and session keys.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Public Web Slugs &amp; URLs:</strong> Clean, human-scannable resource paths for web applications (e.g., sharing links or public profile IDs).</li>
+<li><strong>Distributed Session Tokens:</strong> Unique transaction keys or user identifiers that pass seamlessly across microservices and API gateways.</li>
+<li><strong>Database Primary Keys:</strong> Compact string-based IDs optimized where shorter visual signatures are preferred over native 128-bit binaries.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying <code>NanoIdGenerator</code> adapts the reference Nano ID algorithm for high-performance .NET execution, utilizing advanced bitmasking and rejection sampling:</p>
 <ol>
@@ -131,7 +147,7 @@ string customId = NanoId.Generate(length: 21);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification &amp; Design:</strong> Based on the official <a href="https://www.google.com/search?q=https://github.com/ai/nanoid">Nano ID Algorithm</a> and <a href="https://www.google.com/search?q=https://github.com/ai/nanoid%23readme">Nano ID Documentation</a> designed by Andrey Sitnik and contributors.</li>
+<li><strong>Specification &amp; Design:</strong> Based on the official <a href="https://github.com/ai/nanoid">Nano ID Algorithm Repository</a> and <a href="https://github.com/ai/nanoid#readme">Nano ID Documentation</a> designed by Andrey Sitnik and contributors.</li>
 <li><strong>Architecture:</strong> Implements optimized bitmasking, rejection sampling, and stack-allocation patterns for high-entropy string generation.</li>
 </ul>
 

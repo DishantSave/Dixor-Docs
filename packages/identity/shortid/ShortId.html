@@ -99,6 +99,22 @@ string shortId = ShortId.Generate();
 
 </code></pre>
 <hr>
+<h2 id="what-are-short-identifiers--why-use-them">What are Short Identifiers &amp; Why Use Them?</h2>
+<p><strong>Short Identifiers</strong> are concise, randomized tokens engineered specifically for high human legibility and ease of manual transcription.</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Ambiguity Reduction:</strong> Traditional alphabets often include easily confused characters (such as uppercase <code>I</code>, lowercase <code>l</code>, number <code>1</code>, uppercase <code>O</code>, and number <code>0</code>). ShortId removes these visual pitfalls to prevent user entry mistakes.</li>
+<li><strong>Readable &amp; Compact:</strong> Strikes an ideal balance between brevity and collision resistance, making tokens clean for URLs, printed materials, or verbal communication.</li>
+<li><strong>Cryptographic Security:</strong> Unlike simple auto-incrementing counters or weak random generators, <code>Dixor.Identity</code> ensures that every short identifier is backed by cryptographically secure entropy sources (<code>RandomProvider</code>).</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Physical-to-Digital Codes:</strong> Printed voucher codes, warranty activation strings, or ticket verification tokens read manually off physical media.</li>
+<li><strong>Customer Support Reference Tokens:</strong> Brief support tracking numbers communicated over the phone or via chat interfaces.</li>
+<li><strong>Clean Sharing Links:</strong> Shortened URL slugs or document access tokens designed for clean display and sharing.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying generation engine delegates to shared string generation infrastructure using human-friendly character sets and optimized memory management:</p>
 <ol>
@@ -130,7 +146,7 @@ string customShortId = ShortId.Generate(length: 10);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around custom human-friendly character encoding principles to maximize readability and minimize transcription errors.</li>
+<li><strong>Specification:</strong> Built around custom human-friendly character encoding principles to maximize readability and minimize transcription errors, referencing standard human-readable identifier design patterns.</li>
 <li><strong>Architecture:</strong> Implements optimized stack-allocation patterns and shared string generation infrastructure for secure entropy distribution.</li>
 </ul>
 

@@ -99,6 +99,22 @@ string identifier = Base36.Generate();
 
 </code></pre>
 <hr>
+<h2 id="what-is-base36--why-use-it">What is Base36 &amp; Why Use It?</h2>
+<p><strong>Base36</strong> is a binary-to-text encoding scheme that represents binary data using 36 unique characters: numeric digits <code>0–9</code> and uppercase English letters <code>A–Z</code> (case-insensitive).</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>URL-Safe &amp; Case-Insensitive:</strong> Because Base36 avoids lowercase letters, symbols, and special characters, it eliminates ambiguity in URLs, routing parameters, and user-facing links. Case-insensitivity ensures that user typing errors or URL normalizers do not break resource routing.</li>
+<li><strong>Compact Representation:</strong> It packs data more densely than pure decimal formats, making short codes significantly shorter while remaining human-readable and scannable.</li>
+<li><strong>Cryptographic Security:</strong> Unlike standard pseudo-random number generators, <code>Dixor.Identity</code> builds Base36 identifiers using cryptographically secure entropy sources, guaranteeing unpredictability and high collision resistance.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Public Resource Identifiers:</strong> Clean, user-friendly IDs for public-facing URLs (e.g., short-links, shareable document tokens).</li>
+<li><strong>Voucher &amp; Coupon Codes:</strong> Case-insensitive redemption codes that customers can easily type or read over the phone without confusing <code>O</code> with <code>0</code> or lowercase/uppercase variations.</li>
+<li><strong>File &amp; Asset Naming:</strong> Safe string handles for temporary storage keys, cache tags, or media filenames.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying generation engine relies on high-entropy cryptographic random providers and efficient buffer allocation:</p>
 <ol>
@@ -130,7 +146,7 @@ string customId = Base36.Generate(length: 16);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around standard Base36 alphanumeric character encoding principles for URL-safe identifiers.</li>
+<li><strong>Specification:</strong> Built around standard Base36 alphanumeric character encoding principles for URL-safe identifiers, referencing standard <a href="https://en.wikipedia.org/wiki/Base36">Base36 Encoding Definitions</a>.</li>
 <li><strong>Architecture:</strong> Implements optimized stack-allocation patterns for secure string generation.</li>
 </ul>
 

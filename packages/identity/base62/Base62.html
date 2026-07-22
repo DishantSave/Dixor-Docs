@@ -99,6 +99,22 @@ string identifier = Base62.Generate();
 
 </code></pre>
 <hr>
+<h2 id="what-is-base62--why-use-it">What is Base62 &amp; Why Use It?</h2>
+<p><strong>Base62</strong> is a binary-to-text encoding format that uses 62 alphanumeric characters: numeric digits <code>0–9</code>, uppercase letters <code>A–Z</code>, and lowercase letters <code>a–z</code>.</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Higher Encoding Density:</strong> By incorporating lowercase characters alongside numbers and uppercase letters, Base62 packs more information into fewer characters than Base36, resulting in shorter identifiers for the same payload size.</li>
+<li><strong>URL-Safe &amp; Case-Sensitive:</strong> Base62 omits special symbols, punctuation marks, and whitespace, making it entirely safe for inclusion in URLs, URI query parameters, and REST routing paths. Because it is case-sensitive, it preserves high information capacity.</li>
+<li><strong>Cryptographic Security:</strong> Built on top of secure entropy providers (<code>RandomProvider</code>), <code>Dixor.Identity</code> ensures that Base62 identifiers are unpredictable and globally collision-resistant.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Database &amp; Entity Slugs:</strong> Clean, concise resource handles for web application routes (e.g., <code>/users/3GZ9k2X</code>).</li>
+<li><strong>Short-Link Generators:</strong> High-density short codes for URL shortening services where brevity and link readability are critical.</li>
+<li><strong>Distributed Tracking IDs:</strong> Compact correlation or transaction tokens that pass seamlessly through strict API gateways and log parsers.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying generation engine relies on high-entropy cryptographic random providers and efficient buffer allocation:</p>
 <ol>
@@ -130,7 +146,7 @@ string customId = Base62.Generate(length: 16);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around standard Base62 alphanumeric character encoding principles for URL-safe, case-sensitive identifiers.</li>
+<li><strong>Specification:</strong> Built around standard Base62 alphanumeric character encoding principles for URL-safe, case-sensitive identifiers, referencing standard <a href="https://en.wikipedia.org/wiki/Base62">Base62 Encoding Specifications</a>.</li>
 <li><strong>Architecture:</strong> Implements optimized stack-allocation patterns for secure string generation.</li>
 </ul>
 

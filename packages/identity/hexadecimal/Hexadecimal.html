@@ -99,6 +99,22 @@ string identifier = Hexadecimal.Generate(upperCase: true);
 
 </code></pre>
 <hr>
+<h2 id="what-is-hexadecimal-encoding--why-use-it">What is Hexadecimal Encoding &amp; Why Use It?</h2>
+<p><strong>Hexadecimal (Base16)</strong> is a numeral system that represents binary data using 16 distinct symbols: numeric digits <code>0–9</code> and letters <code>A–F</code> (case-insensitive in standard usage, though explicitly normalized here).</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Direct Binary Representation:</strong> Since each byte maps cleanly to exactly two hexadecimal characters (<span class="math">\(16^2 = 256\)</span>), hex encoding is the native standard for representing raw cryptographic keys, hashes, memory blocks, and binary checksums without translation loss.</li>
+<li><strong>Compact &amp; Precise:</strong> Provides an unambiguous textual representation of raw bytes while maintaining fixed character-to-byte ratios (e.g., <span class="math">\(N\)</span> bytes always equal exactly <span class="math">\(2N\)</span> hex characters).</li>
+<li><strong>Cryptographic Security:</strong> Built on top of secure entropy providers (<code>RandomProvider</code>), <code>Dixor.Identity</code> ensures that generated hex strings are cryptographically random and unpredictable.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Cryptographic Keys &amp; Nonces:</strong> Secure session tokens, API secrets, or initialization vectors requiring precise byte-length configurations.</li>
+<li><strong>Content Hashes &amp; Checksums:</strong> Unique cryptographic identifiers (such as SHA or MD5 string representations) where strict byte structures are expected.</li>
+<li><strong>Low-Level Protocol Identifiers:</strong> System tokens or hardware markers that communicate directly with binary data stores or network protocols.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying generation engine leverages secure random byte sourcing and efficient hex formatting:</p>
 <ol>
@@ -131,7 +147,7 @@ string customHex = Hexadecimal.Generate(byteCount: 32, upperCase: false);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around standard Base16/Hexadecimal encoding principles for binary-to-text representations.</li>
+<li><strong>Specification:</strong> Built around standard Base16/Hexadecimal encoding principles for binary-to-text representations, referencing standard <a href="https://en.wikipedia.org/wiki/Hexadecimal">Hexadecimal Encoding Specifications</a>.</li>
 <li><strong>Architecture:</strong> Leverages secure cryptographic random byte generation and case-normalized formatting.</li>
 </ul>
 

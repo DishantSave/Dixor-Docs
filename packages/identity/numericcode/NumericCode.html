@@ -99,6 +99,22 @@ string code = NumericCode.Generate();
 
 </code></pre>
 <hr>
+<h2 id="what-are-numeric-codes--why-use-them">What are Numeric Codes &amp; Why Use Them?</h2>
+<p><strong>Numeric Codes</strong> are secure, purely numerical character sequences restricted to digits <code>0–9</code>.</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Optimized for Human Input:</strong> Digits-only codes are ideal for communication channels where letters can be easily misread or mistyped (such as SMS verification, voice prompts, and hardware tokens).</li>
+<li><strong>Predictable Formatting:</strong> Fixed-length numeric strings integrate seamlessly with standard multi-factor authentication (MFA) UIs and PIN entry boxes.</li>
+<li><strong>Cryptographic Security:</strong> Built using high-entropy random entropy providers (<code>RandomProvider</code>), <code>Dixor.Identity</code> ensures that generated tokens are unpredictable and secure against brute-force guessing attacks.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>One-Time Passwords (OTPs):</strong> Temporary authentication tokens delivered via SMS, email, or authenticator apps.</li>
+<li><strong>Account Verification Pins:</strong> Short numeric codes used during user registration, phone confirmation, or password reset workflows.</li>
+<li><strong>Transaction Authorization Tokens:</strong> Secure PIN codes required to confirm financial transfers or sensitive user actions.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying generation engine delegates to shared string generation infrastructure using numerical character sets and optimized memory management:</p>
 <ol>
@@ -119,7 +135,7 @@ string customCode = NumericCode.Generate(length: 6);
 <hr>
 <div class="NOTE">
 <h5>Note</h5>
-<p>🚀 <strong>Interactive Demonstration:</strong> Test numeric code lengths and explore token outputs directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/numeric-code">Dixor Studio</a>.</p>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test numeric code lengths and explore token outputs directly via <a href="https://www.google.com/search?q=https://dishantsave.github.io/Dixor.Studio/identity/numeric-code">Dixor Studio</a>.</p>
 </div>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
@@ -131,7 +147,7 @@ string customCode = NumericCode.Generate(length: 6);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around standard secure numeric-only encoding principles for OTPs and verification tokens.</li>
+<li><strong>Specification:</strong> Built around standard secure numeric-only encoding principles for OTPs and verification tokens, referencing standard digital authentication and verification code guidelines.</li>
 <li><strong>Architecture:</strong> Implements optimized stack-allocation patterns and shared string generation infrastructure for secure entropy distribution.</li>
 </ul>
 

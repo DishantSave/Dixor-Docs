@@ -104,6 +104,22 @@ int currentVal = sequence.Current;
 
 </code></pre>
 <hr>
+<h2 id="what-are-sequential-generators--why-use-them">What are Sequential Generators &amp; Why Use Them?</h2>
+<p><strong>Sequential Integer Generators</strong> provide ordered numerical values that increment predictably over time.</p>
+<h3 id="key-advantages">Key Advantages</h3>
+<ul>
+<li><strong>Strict Monotonic Order:</strong> Unlike random identifiers, sequences guarantee that every generated value is strictly greater than the last, which is essential for business objects that require chronological auditing (e.g., invoices, sequential order logs).</li>
+<li><strong>Concurrency-Safe:</strong> Built with thread-safe synchronization primitives, instances can be shared safely across multi-threaded web servers and background workers without race conditions or duplicate values.</li>
+<li><strong>Configurable Baselines:</strong> Allows custom starting offsets and step increments, enabling integration with legacy numbering systems or partitioned enterprise ID ranges.</li>
+</ul>
+<hr>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Invoice &amp; Order Tracking Numbers:</strong> Human-readable sequential reference numbers required for accounting, billing, and regulatory compliance.</li>
+<li><strong>Support Ticket &amp; Case IDs:</strong> Predictable incremental identifiers that support easy verbal communication and customer service routing.</li>
+<li><strong>Batch Processing Counters:</strong> Local counters or pagination trackers used within asynchronous data pipelines.</li>
+</ul>
+<hr>
 <h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
 <p>The underlying <code>SequenceService</code> and <code>SequenceFactory</code> manage independent, concurrent state using thread-safe synchronization:</p>
 <ol>
@@ -136,7 +152,7 @@ ISequenceService customSeq = Sequence.Create(start: 1000, increment: 5);
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
 <ul>
-<li><strong>Specification:</strong> Built around standard thread-safe atomic memory manipulation principles (<code>Interlocked</code> and <code>Volatile</code>) for monotonic integer generation.</li>
+<li><strong>Specification:</strong> Built around standard thread-safe atomic memory manipulation principles (<code>Interlocked</code> and <code>Volatile</code>) for monotonic integer generation, referencing standard <a href="https://www.google.com/search?q=https://learn.microsoft.com/en-us/dotnet/standard/threading/">.NET Concurrency and Thread Safety Guidelines</a>.</li>
 <li><strong>Architecture:</strong> Implements factory-based creation and independent state management for concurrent application contexts.</li>
 </ul>
 
