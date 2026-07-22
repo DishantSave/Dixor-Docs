@@ -92,7 +92,7 @@
 <img src="https://img.shields.io/github/license/DishantSave/Dixor" alt="License">
 <img src="https://img.shields.io/badge/.NET-10+-blue" alt="Framework"></p>
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../README.md">Home</a> &gt; <strong>Dixor.Identity Overview</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Dixor.Identity Overview</strong></p>
 </blockquote>
 <hr>
 <p><strong>Dixor.Identity</strong> delivers modern, allocation-conscious identifier generation for .NET.</p>
@@ -104,7 +104,7 @@
 <tr>
 <th style="text-align: left;">Feature</th>
 <th style="text-align: center;">Legacy <code>Guid.NewGuid()</code> (UUIDv4)</th>
-<th style="text-align: center;"><code>Dixor.Identity</code> (<code>Uuid7.New()</code>)</th>
+<th style="text-align: center;"><code>Dixor.Identity</code> (<code>Uuid7.NewGuid()</code>)</th>
 </tr>
 </thead>
 <tbody>
@@ -145,10 +145,10 @@
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
 // 1. Standard Generation: Mint a zero-allocation, time-ordered primary key
-Guid primaryKey = Uuid7.New();
+Guid primaryKey = Uuid7.NewGuid();
 
 // 2. Monotonic Sequencing: Guarantee strict mathematical order across same-millisecond bursts
-Guid eventId = Uuid7.NewMonotonic();
+Guid eventId = Uuid7.NewMonotonicGuid();
 
 // 3. Batch Streaming: Lazily yield 5,000 keys for ETL pipelines without heap bloat
 IEnumerable&lt;Guid&gt; batch = Uuid7.NewGuids(count: 5000);
@@ -166,21 +166,22 @@ if (Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10&quot;))
 }
 
 </code></pre>
-<blockquote>
-<p>💡 <strong>Try it Live:</strong> Experiment with all UUIDv7 generation parameters, custom prefixes, and performance metrics interactively in the <a href="https://dishantsave.github.io/Dixor.Studio/">Dixor Studio</a>.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>💡 <strong>Interactive Demonstration:</strong> Try out generation parameters and inspect performance metrics directly via <a href="https://dishantsave.github.io/Dixor.Studio/">Dixor Studio</a>.</p>
+</div>
 <hr>
 <h2 id="deep-dive-documentation-guides">Deep-Dive Documentation Guides</h2>
 <ul>
-<li><strong><a href="https://www.google.com/search?q=UUID7_Overview.md">UUID Version 7 Overview</a></strong> — RFC 9562 anatomy and bitwise specifications.</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></strong> — Optimal database schema design and EF Core integration.</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation</a></strong> — Zero-allocation stack mechanics (<code>Uuid7.New</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_MonotonicGeneration.md">Monotonic Generation</a></strong> — Sub-millisecond ordering (<code>Uuid7.NewMonotonic</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></strong> — Lazy memory streaming (<code>Uuid7.NewGuids</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_Formatting.md">Business Formatting</a></strong> — Custom prefixes and separators (<code>Uuid7.NewString</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules</a></strong> — Fast-path nibble inspection (<code>Uuid7.IsValid</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; Extraction</a></strong> — Regex pattern matching (<code>Uuid7.Parse</code>).</li>
-<li><strong><a href="https://www.google.com/search?q=UUID7_TimestampExtraction.md">Timestamp Extraction</a></strong> — Decoding time chronology (<code>Uuid7.GetTimestamp</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/overview.html">UUID Version 7 Overview</a></strong> — RFC 9562 anatomy and bitwise specifications.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BestPractices.html">Production Best Practices</a></strong> — Optimal database schema design and EF Core integration.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Generation.html">Standard Generation</a></strong> — Zero-allocation stack mechanics (<code>Uuid7.NewGuid</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_MonotonicGeneration.html">Monotonic Generation</a></strong> — Sub-millisecond ordering (<code>Uuid7.NewMonotonicGuid</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BatchGeneration.html">Batch Generation</a></strong> — Lazy memory streaming (<code>Uuid7.NewGuids</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Formatting.html">Business Formatting</a></strong> — Custom prefixes and separators (<code>Uuid7.NewString</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Validation.html">Validation Rules</a></strong> — Fast-path nibble inspection (<code>Uuid7.IsValid</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Parsing.html">Parsing &amp; Extraction</a></strong> — Regex pattern matching (<code>Uuid7.Parse</code>).</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_TimestampExtraction.html">Timestamp Extraction</a></strong> — Decoding time chronology (<code>Uuid7.GetTimestamp</code>).</li>
 </ul>
 <hr>
 <h2 id="references--credits">References &amp; Credits</h2>
@@ -188,8 +189,6 @@ if (Uuid7.IsValid(&quot;ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10&quot;))
 <li><strong>Specification:</strong> Built strictly around the <a href="https://www.rfc-editor.org/rfc/rfc9562.html">IETF RFC 9562 Standard</a> for Universally Unique Identifiers (UUIDs).</li>
 <li><strong>Inspiration:</strong> Special acknowledgment to foundational .NET UUIDv7 ecosystem standards and community specifications for high-performance allocation strategies.</li>
 </ul>
-<pre><code>
-</code></pre>
 
 </article>
 
