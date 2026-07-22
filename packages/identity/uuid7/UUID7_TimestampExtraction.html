@@ -88,18 +88,16 @@
 <h1 id="timestamp-extraction-uuid7gettimestamp">Timestamp Extraction (<code>Uuid7.GetTimestamp</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Timestamp Extraction</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Timestamp Extraction</strong></p>
 </blockquote>
 <hr>
 <p>One of the most powerful architectural advantages of <strong>RFC 9562 UUID Version 7</strong> over traditional random GUIDs is the embedded 48-bit millisecond Unix timestamp.</p>
 <p>Instead of forcing your database schemas to store explicit, redundant creation date columns (<code>CreatedAt DATETIME2</code>), <code>Dixor.Identity</code> lets you extract exact creation timestamps directly from the identifier itself with zero memory allocation:</p>
+<p><code>Dixor.Identity</code> enables zero-allocation extraction of embedded 48-bit millisecond Unix timestamps directly from RFC 9562 UUID Version 7 identifiers via <code>Uuid7.GetTimestamp</code> and <code>Uuid7.TryGetTimestamp</code>.</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
-Guid orderId = Uuid7.New();
-
-// Decode the exact creation timestamp directly from the 128-bit payload
+Guid orderId = Uuid7.NewGuid();
 DateTimeOffset createdAt = Uuid7.GetTimestamp(orderId);
-Console.WriteLine(createdAt); // e.g., 2026-07-05 00:32:00 +00:00
 
 </code></pre>
 <hr>
@@ -122,7 +120,6 @@ Console.WriteLine(createdAt); // e.g., 2026-07-05 00:32:00 +00:00
 <p>Direct bitwise left-shifting reconstructs the millisecond Unix timestamp (<code>ToUnixTimeMilliseconds</code>), which is immediately parsed into a standard UTC <code>DateTimeOffset</code>.</p>
 <hr>
 <h2 id="api-overloads--boundary-safety">API Overloads &amp; Boundary Safety</h2>
-<p><code>Dixor.Identity</code> exposes two distinct extraction methods tailored for different trust boundaries:</p>
 <table>
 <thead>
 <tr>
@@ -135,41 +132,34 @@ Console.WriteLine(createdAt); // e.g., 2026-07-05 00:32:00 +00:00
 <tr>
 <td><strong><code>Uuid7.GetTimestamp(Guid)</code></strong></td>
 <td>✅ Yes (<code>ArgumentException</code>)</td>
-<td>Trusted domain entities, database records, internal pipelines.</td>
+<td>Trusted domain entities, database records.</td>
 </tr>
 <tr>
 <td><strong><code>Uuid7.TryGetTimestamp(Guid, out DateTimeOffset)</code></strong></td>
 <td>❌ No (Returns <code>bool</code>)</td>
-<td>Untrusted REST payloads, query strings, user inputs.</td>
+<td>Untrusted REST payloads, query strings, webhooks.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="handling-untrusted-input">Handling Untrusted Input</h3>
-<p>Because legacy UUIDv4 values contain random bits in the timestamp segment, passing a non-UUIDv7 value to <code>GetTimestamp()</code> throws an <code>ArgumentException</code>. Always use <code>TryGetTimestamp</code> at API controllers:</p>
-<pre><code class="lang-csharp">// Safe extraction pattern for incoming HTTP request IDs
+<pre><code class="lang-csharp">// Safe extraction pattern for incoming HTTP requests
 if (Uuid7.TryGetTimestamp(request.CorrelationId, out DateTimeOffset requestTime))
 {
     Console.WriteLine($&quot;Request initiated at: {requestTime:O}&quot;);
 }
-else
-{
-    return Results.BadRequest(&quot;CorrelationId must be a valid RFC 9562 UUIDv7.&quot;);
-}
 
 </code></pre>
 <hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test timestamp extraction and inspect bitwise chronology directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
+<hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing &amp; String Conversion</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules &amp; Verification</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Parsing.html">Parsing &amp; String Conversion</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Validation.html">Validation Rules</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Parsing.md">Parsing</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_BestPractices.md">Best Practices</a></p>
-<pre><code></code></pre>
 
 </article>
 

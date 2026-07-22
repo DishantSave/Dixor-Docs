@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Monotonic UUIDv7 Generation (Uuid7.NewMonotonic) | Dixor Documentation </title>
+      <title>Monotonic UUIDv7 Generation (Uuid7.NewMonotonicGuid) | Dixor Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Monotonic UUIDv7 Generation (Uuid7.NewMonotonic) | Dixor Documentation ">
+      <meta name="title" content="Monotonic UUIDv7 Generation (Uuid7.NewMonotonicGuid) | Dixor Documentation ">
       
       
       <link rel="icon" href="../../../images/icon-192.png">
@@ -85,21 +85,23 @@
         </div>
 
         <article data-uid="">
-<h1 id="monotonic-uuidv7-generation-uuid7newmonotonic">Monotonic UUIDv7 Generation (<code>Uuid7.NewMonotonic</code>)</h1>
+<h1 id="monotonic-uuidv7-generation-uuid7newmonotonicguid">Monotonic UUIDv7 Generation (<code>Uuid7.NewMonotonicGuid</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Monotonic Generation</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Monotonic Generation</strong></p>
 </blockquote>
 <hr>
-<p>While standard <code>Uuid7.New()</code> embeds a 48-bit millisecond Unix timestamp to achieve chronological sorting, high-throughput applications (such as event sourcing engines or bulk data pipelines) frequently generate <strong>thousands of identifiers within the exact same millisecond</strong>.</p>
-<p>Because standard UUIDv7 relies on random bits for the remainder of the identifier, keys minted during the same millisecond lose strict sequential ordering. <code>Dixor.Identity</code> solves this via <strong>Monotonic Generation</strong>:</p>
+<p>While standard <code>Uuid7.New()</code> utilizes random bits for lower payloads, high-throughput applications generating thousands of identifiers within the same millisecond can experience out-of-order sorting. <code>Dixor.Identity</code> solves this via <strong>Monotonic Generation</strong>:</p>
 <pre><code class="lang-csharp">using Dixor.Identity.UUID7;
 
 // Guarantees strict sequential ordering across same-millisecond invocations
-Guid eventId1 = Uuid7.NewMonotonic();
-Guid eventId2 = Uuid7.NewMonotonic(); // Guaranteed &gt; eventId1
+Guid eventId1 = Uuid7.NewMonotonicGuid();
+Guid eventId2 = Uuid7.NewMonotonicGuid(); // Guaranteed &gt; eventId1
 
 </code></pre>
+<hr>
+<h2 id="how-monotonic-sequencing-works">How Monotonic Sequencing Works</h2>
+<p>The underlying <code>Uuid7MonotonicGenerator</code> uses an exclusive lock (<code>_lock</code>) and an internal 16-bit sequence counter (<code>_counter</code>) to manage same-millisecond bursts.</p>
 <hr>
 <h2 id="the-same-millisecond-collision-problem">The Same-Millisecond Collision Problem</h2>
 <p>Consider an application inserting records inside a tight loop:</p>
@@ -111,8 +113,8 @@ Guid eventId2 = Uuid7.NewMonotonic(); // Guaranteed &gt; eventId1
 </code></pre>
 <p>Because the lower bits are filled with cryptographic entropy, database index sorting may arrange them out of insertion order (<code>...7210</code>, then <code>...7a35</code>, then <code>...7f91</code>).</p>
 <hr>
-<h2 id="how-monotonic-sequencing-works">How Monotonic Sequencing Works</h2>
-<p>To preserve mathematical ordering across identical timestamps, <code>Uuid7.NewMonotonic()</code> utilizes thread-safe synchronization to manage an internal 16-bit sequence counter (<code>ushort _counter</code>):</p>
+<h2 id="how-monotonic-sequencing-works-1">How Monotonic Sequencing Works</h2>
+<p>To preserve mathematical ordering across identical timestamps, <code>Uuid7.NewMonotonicGuid()</code> utilizes thread-safe synchronization to manage an internal 16-bit sequence counter (<code>ushort _counter</code>):</p>
 <pre><code class="lang-text">Same Millisecond (1751132765000 ms):
 [Call #1] ──► Timestamp: 1751132765000 | Counter: 0
 [Call #2] ──► Timestamp: 1751132765000 | Counter: 1
@@ -123,7 +125,10 @@ Clock Advances to New Millisecond (1751132765001 ms):
 
 </code></pre>
 <h3 id="bitwise-layout--counter-embedding">Bitwise Layout &amp; Counter Embedding</h3>
-<p>The 16-bit counter is embedded directly into <strong>Bytes 14 and 15</strong> (the least significant bytes of the 128-bit structure) in Network Byte Order (Big-Endian):</p>
+<ul>
+<li><strong>Bytes 14 &amp; 15:</strong> Dedicated to the 16-bit sequence counter in Network Byte Order, accommodating up to <strong>65,536 strictly ordered identifiers per millisecond</strong>.</li>
+<li><strong>Global Uniqueness:</strong> Bytes 6 through 13 continue to receive high-entropy randomness via <code>RandomNumberGenerator.Fill()</code>.</li>
+</ul>
 <pre><code class="lang-text"> 0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -147,8 +152,8 @@ Clock Advances to New Millisecond (1751132765001 ms):
 <thead>
 <tr>
 <th>Feature</th>
-<th>Standard (<code>Uuid7.New()</code>)</th>
-<th>Monotonic (<code>Uuid7.NewMonotonic()</code>)</th>
+<th>Standard (<code>Uuid7.NewGuid()</code>)</th>
+<th>Monotonic (<code>Uuid7.NewMonotonicGuid()</code>)</th>
 </tr>
 </thead>
 <tbody>
@@ -170,22 +175,17 @@ Clock Advances to New Millisecond (1751132765001 ms):
 </tbody>
 </table>
 <hr>
-<h2 id="scope--limitations">Scope &amp; Limitations</h2>
-<ul>
-<li><strong>Single-Process Guarantee:</strong> Monotonic sequence locking is bounded to the current executing application process (<code>_lock</code>). Two independent microservice instances generating IDs during the exact same millisecond will still produce interleaved sequences relative to each other.</li>
-</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test monotonic sequencing and counter behavior directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BestPractices.html">Production Best Practices</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_Generation.md">Standard Generation</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></p>
-<pre><code></code></pre>
 
 </article>
 

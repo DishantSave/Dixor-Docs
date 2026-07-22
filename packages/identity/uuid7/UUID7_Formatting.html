@@ -88,11 +88,10 @@
 <h1 id="business-identifier-formatting-uuid7newstring">Business Identifier Formatting (<code>Uuid7.NewString</code>)</h1>
 
 <blockquote>
-<p>📚 <strong>Navigation:</strong> <a href="../../README.md">Home</a> &gt; <a href="../overview.md">Dixor.Identity</a> &gt; <strong>Formatting</strong></p>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Formatting</strong></p>
 </blockquote>
 <hr>
-<p>While a raw 128-bit UUID Version 7 string (<code>0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10</code>) guarantees uniqueness and time-ordering, it lacks visual context in enterprise logs, customer invoices, and microservice APIs.</p>
-<p><code>Dixor.Identity</code> provides built-in, allocation-conscious string decoration to wrap raw UUIDs in clean domain context without sacrificing uniqueness:</p>
+<p><code>Dixor.Identity</code> provides allocation-conscious string decoration to wrap raw UUIDs in clean domain context via the <code>Uuid7.NewString</code> facade without sacrificing uniqueness.</p>
 <pre><code class="lang-csharp">string orderReference = Uuid7.NewString(prefix: &quot;ORD&quot;, suffix: &quot;US&quot;);
 // Output: ORD-0197d8ef-f4c6-7a35-99e3-1d4a7e3c8e10-US
 
@@ -127,66 +126,30 @@
 </tbody>
 </table>
 <hr>
-<h2 id="guardrails--validation-rules">Guardrails &amp; Validation Rules</h2>
-<p>To prevent database truncation errors, malformed URLs, and unreadable strings, the internal <code>Uuid7Formatter</code> enforces strict boundary rules:</p>
+<h2 id="formatting-guardrails--validation">Formatting Guardrails &amp; Validation</h2>
+<p>The underlying <code>Uuid7Formatter</code> enforces strict boundary rules to protect URLs, file paths, and database columns:</p>
 <ol>
-<li><strong>Length Limits:</strong> Prefixes and suffixes cannot exceed <strong>50 characters</strong> each (<code>MaxPrefixLength</code> / <code>MaxSuffixLength</code>). Passing larger strings throws an <code>ArgumentOutOfRangeException</code>.</li>
-<li><strong>Safe Separators:</strong> To protect file systems, URLs, and shell scripts from unescaped wildcards or control characters, the separator must consist of <strong>exactly one character</strong> from our safe allowlist:</li>
+<li><strong>Length Limits:</strong> Prefixes and suffixes cannot exceed <strong>50 characters</strong> (<code>MaxPrefixLength</code> / <code>MaxSuffixLength</code>), throwing an <code>ArgumentOutOfRangeException</code> if exceeded.</li>
+<li><strong>Safe Separators:</strong> Separators must consist of <strong>exactly one character</strong> from a strict allowlist:</li>
 </ol>
 <pre><code class="lang-text">-   _   :   ~   |   /   \   {   }   [   ]   &lt;   &gt;
 
 </code></pre>
 <ol start="3">
-<li><strong>Null/Whitespace Tolerance:</strong> Passing <code>null</code>, <code>&quot;&quot;</code>, or <code>&quot;   &quot;</code> as a prefix/suffix is gracefully ignored without appending hanging separators.</li>
+<li><strong>Null/Whitespace Tolerance:</strong> Passing <code>null</code>, <code>&quot;&quot;</code>, or whitespace as a prefix or suffix is gracefully ignored without adding hanging delimiters.</li>
 </ol>
 <hr>
-<h2 id="compile-time-safety-roslyn-analyzers">Compile-Time Safety: Roslyn Analyzers</h2>
-<p>When formatting inputs are known at compile time, <code>Dixor.Identity</code> validates your parameters inside the Visual Studio/Rider IDE before you even compile the project:</p>
-<table>
-<thead>
-<tr>
-<th>Diagnostic</th>
-<th>Rule Description</th>
-<th>Trigger Condition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><code>DIXOR002</code></strong></td>
-<td>Prefix exceeds limit</td>
-<td>Passing a constant string &gt; 50 characters as <code>prefix</code>.</td>
-</tr>
-<tr>
-<td><strong><code>DIXOR003</code></strong></td>
-<td>Suffix exceeds limit</td>
-<td>Passing a constant string &gt; 50 characters as <code>suffix</code>.</td>
-</tr>
-<tr>
-<td><strong><code>DIXOR004</code></strong></td>
-<td>Invalid separator</td>
-<td>Passing an unsupported character (e.g., <code>*</code>, <code>?</code>) or multi-char string.</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="lang-csharp">// ❌ COMPILE ERROR (DIXOR004): Separator '*' is not allowed
-var badId = Uuid7.NewString(&quot;ORD&quot;, separator: &quot;*&quot;);
-
-// ✅ COMPILE SUCCESS: Valid safe separator
-var goodId = Uuid7.NewString(&quot;ORD&quot;, separator: &quot;_&quot;);
-
-</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Experiment with custom prefixes, suffixes, and safe separators directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">Dixor Studio</a>.</p>
+</div>
 <hr>
 <h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li><a href="https://www.google.com/search?q=UUID7_Generation.md">Standard UUIDv7 Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">High-Efficiency Batch Generation</a></li>
-<li><a href="https://www.google.com/search?q=UUID7_BestPractices.md">Production Best Practices</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/UUID7_Validation.html">Validation Rules</a></li>
 </ul>
-<hr>
-<h2 id="navigation">Navigation</h2>
-<p>⬅ <strong>Previous:</strong> <a href="https://www.google.com/search?q=UUID7_BatchGeneration.md">Batch Generation</a></p>
-<p>➡ <strong>Next:</strong> <a href="https://www.google.com/search?q=UUID7_Validation.md">Validation Rules &amp; Verification</a></p>
-<pre><code></code></pre>
 
 </article>
 
