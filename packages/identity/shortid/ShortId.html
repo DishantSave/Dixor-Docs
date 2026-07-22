@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Dixor Documentation </title>
+      <title>Short Identifier Generation (ShortId.Generate) | Dixor Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Dixor Documentation ">
+      <meta name="title" content="Short Identifier Generation (ShortId.Generate) | Dixor Documentation ">
       
       
       <link rel="icon" href="../../../images/icon-192.png">
@@ -85,7 +85,54 @@
         </div>
 
         <article data-uid="">
+<h1 id="short-identifier-generation-shortidgenerate">Short Identifier Generation (<code>ShortId.Generate</code>)</h1>
 
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>ShortId</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides cryptographically secure, human-friendly short identifiers via the <code>ShortId.Generate()</code> facade, utilizing a carefully selected character set that excludes visually ambiguous characters to improve readability and reduce transcription errors.</p>
+<pre><code class="lang-csharp">using Dixor.Identity;
+
+// Generate a secure short identifier of default length
+string shortId = ShortId.Generate();
+
+</code></pre>
+<hr>
+<h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
+<p>The underlying generation engine delegates to shared string generation infrastructure using human-friendly character sets and optimized memory management:</p>
+<ol>
+<li><strong>Human-Friendly Character Set Mapping:</strong> Selects characters uniformly from an alphabet engineered to exclude visually ambiguous elements, minimizing manual entry mistakes.</li>
+<li><strong>Optimized Buffer Allocation:</strong> For high-throughput performance, strings up to 256 characters are allocated directly on the execution stack (<code>stackalloc char[length]</code>), completely bypassing heap memory allocations and eliminating Garbage Collector pressure.</li>
+<li><strong>Cryptographic Entropy:</strong> Random character selection utilizes shared secure entropy sources (<code>RandomProvider</code>), guaranteeing high entropy, uniqueness, and unpredictability.</li>
+</ol>
+<pre><code class="lang-csharp">// Example custom length invocation with parameter validation
+string customShortId = ShortId.Generate(length: 10);
+
+</code></pre>
+<hr>
+<h2 id="guardrails--validation-rules">Guardrails &amp; Validation Rules</h2>
+<p>To protect system integrity and prevent resource exhaustion, the underlying <code>ShortIdService</code> enforces strict bounds:</p>
+<ul>
+<li><strong>Length Constraints:</strong> Passing a length less than or equal to zero, or greater than <code>Constants.MaxIdentifierLength</code>, triggers an <code>ArgumentOutOfRangeException</code>.</li>
+</ul>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test short identifier lengths and explore human-friendly outputs directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/shortid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity Overview</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/nanoid/NanoId.html">NanoId Generation</a></li>
+</ul>
+<hr>
+<h2 id="references--credits">References &amp; Credits</h2>
+<ul>
+<li><strong>Specification:</strong> Built around custom human-friendly character encoding principles to maximize readability and minimize transcription errors.</li>
+<li><strong>Architecture:</strong> Implements optimized stack-allocation patterns and shared string generation infrastructure for secure entropy distribution.</li>
+</ul>
 
 </article>
 

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Dixor Documentation </title>
+      <title>Numeric Code Generation (NumericCode.Generate) | Dixor Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Dixor Documentation ">
+      <meta name="title" content="Numeric Code Generation (NumericCode.Generate) | Dixor Documentation ">
       
       
       <link rel="icon" href="../../../images/icon-192.png">
@@ -85,7 +85,55 @@
         </div>
 
         <article data-uid="">
+<h1 id="numeric-code-generation-numericcodegenerate">Numeric Code Generation (<code>NumericCode.Generate</code>)</h1>
 
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>NumericCode</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides cryptographically secure numeric codes consisting exclusively of numeric characters (<code>0–9</code>) via the <code>NumericCode.Generate()</code> facade, suitable for verification codes, one-time passwords (OTPs), and authentication tokens.</p>
+<pre><code class="lang-csharp">using Dixor.Identity;
+
+// Generate a secure numeric code of default length
+string code = NumericCode.Generate();
+
+</code></pre>
+<hr>
+<h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
+<p>The underlying generation engine delegates to shared string generation infrastructure using numerical character sets and optimized memory management:</p>
+<ol>
+<li><strong>Character Set Mapping:</strong> Selects characters uniformly from the numeric alphabet (<code>0–9</code>).</li>
+<li><strong>Optimized Buffer Allocation:</strong> For high-throughput performance, strings up to 256 characters are allocated directly on the execution stack (<code>stackalloc char[length]</code>), completely bypassing heap memory allocations and eliminating Garbage Collector pressure.</li>
+<li><strong>Cryptographic Entropy:</strong> Random character selection utilizes shared secure entropy sources (<code>RandomProvider</code>), guaranteeing high entropy and unpredictability.</li>
+</ol>
+<pre><code class="lang-csharp">// Example custom length invocation with parameter validation
+string customCode = NumericCode.Generate(length: 6);
+
+</code></pre>
+<hr>
+<h2 id="guardrails--validation-rules">Guardrails &amp; Validation Rules</h2>
+<p>To protect system integrity and prevent resource exhaustion, the underlying <code>NumericCodeService</code> enforces strict bounds:</p>
+<ul>
+<li><strong>Length Constraints:</strong> Passing a length less than or equal to zero, or greater than <code>Constants.MaxNumericCodeLength</code>, triggers an <code>ArgumentOutOfRangeException</code>.</li>
+</ul>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test numeric code lengths and explore token outputs directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/numeric-code">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity Overview</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/hexadecimal/Hexadecimal.html">Hexadecimal Identifier Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/sequence/Sequence.html">Sequence Generation</a></li>
+</ul>
+<hr>
+<h2 id="references--credits">References &amp; Credits</h2>
+<ul>
+<li><strong>Specification:</strong> Built around standard secure numeric-only encoding principles for OTPs and verification tokens.</li>
+<li><strong>Architecture:</strong> Implements optimized stack-allocation patterns and shared string generation infrastructure for secure entropy distribution.</li>
+</ul>
 
 </article>
 

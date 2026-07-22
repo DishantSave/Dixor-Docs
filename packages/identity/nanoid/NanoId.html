@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Dixor Documentation </title>
+      <title>NanoId Generation (NanoId.Generate) | Dixor Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Dixor Documentation ">
+      <meta name="title" content="NanoId Generation (NanoId.Generate) | Dixor Documentation ">
       
       
       <link rel="icon" href="../../../images/icon-192.png">
@@ -85,7 +85,55 @@
         </div>
 
         <article data-uid="">
+<h1 id="nanoid-generation-nanoidgenerate">NanoId Generation (<code>NanoId.Generate</code>)</h1>
 
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>NanoId</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides compact, URL-friendly, and cryptographically secure identifiers generated via the Nano ID algorithm through the <code>NanoId.Generate()</code> facade.</p>
+<pre><code class="lang-csharp">using Dixor.Identity;
+
+// Generate a secure NanoId of default length
+string identifier = NanoId.Generate();
+
+</code></pre>
+<hr>
+<h2 id="algorithm--execution-mechanics">Algorithm &amp; Execution Mechanics</h2>
+<p>The underlying <code>NanoIdGenerator</code> adapts the reference Nano ID algorithm for high-performance .NET execution, utilizing advanced bitmasking and rejection sampling:</p>
+<ol>
+<li><strong>Optimized Bitmask Calculation:</strong> Evaluates the alphabet length using bit operations (<code>BitOperations.Log2</code>) to derive the smallest operational bitmask (<code>mask</code>), minimizing random byte waste.</li>
+<li><strong>Rejection Sampling:</strong> Generates secure random bytes using <code>RandomProvider.Fill(bytes)</code> and applies bitwise masking (<code>bytes[i] &amp; mask</code>). If the resulting index falls within the bounds of the alphabet (<code>index &lt; alphabet.Length</code>), it selects the character; otherwise, it rejects the sample to ensure a strictly uniform distribution.</li>
+<li><strong>Allocation Efficiency:</strong> Employs stack allocation (<code>stackalloc</code>) for character buffers and byte arrays up to 256 and 512 elements respectively, completely bypassing heap allocation overhead during generation.</li>
+</ol>
+<pre><code class="lang-csharp">// Example custom length invocation with parameter validation
+string customId = NanoId.Generate(length: 21);
+
+</code></pre>
+<hr>
+<h2 id="guardrails--validation-rules">Guardrails &amp; Validation Rules</h2>
+<p>To protect system integrity and prevent resource exhaustion, the underlying services enforce strict bounds:</p>
+<ul>
+<li><strong>Length Constraints:</strong> Passing a length less than or equal to zero, or greater than <code>Constants.MaxIdentifierLength</code>, triggers an <code>ArgumentOutOfRangeException</code>.</li>
+<li><strong>Alphabet Constraints:</strong> Alphabets must not be empty and cannot exceed 255 characters, throwing an <code>ArgumentException</code> otherwise.</li>
+</ul>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test NanoId lengths and explore URL-friendly token outputs directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/nanoid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity Overview</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/shortid/ShortId.html">ShortId Generation</a></li>
+</ul>
+<hr>
+<h2 id="references--credits">References &amp; Credits</h2>
+<ul>
+<li><strong>Specification &amp; Design:</strong> Based on the official <a href="https://www.google.com/search?q=https://github.com/ai/nanoid">Nano ID Algorithm</a> and <a href="https://www.google.com/search?q=https://github.com/ai/nanoid%23readme">Nano ID Documentation</a> designed by Andrey Sitnik and contributors.</li>
+<li><strong>Architecture:</strong> Implements optimized bitmasking, rejection sampling, and stack-allocation patterns for high-entropy string generation.</li>
+</ul>
 
 </article>
 
