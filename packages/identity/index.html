@@ -87,40 +87,33 @@
         <article data-uid="">
 <h1 id="dixoridentity-package">Dixor.Identity Package</h1>
 
-<p>Welcome to <strong>Dixor.Identity</strong>, the core library for allocation-conscious, RFC 9562-compliant UUID generation within the Dixor ecosystem.</p>
-<h2 id="package-modules">Package Modules</h2>
+<p>Welcome to <strong>Dixor.Identity</strong>, the core library for allocation-conscious, high-performance identifier generation and encoding within the Dixor ecosystem.</p>
+<hr>
+<h2 id="package-modules--identifiers">Package Modules &amp; Identifiers</h2>
 <ul>
-<li><strong><a href="uuid7/index.md">UUIDv7</a>:</strong> High-performance, time-sortable identifier generation.</li>
-<li><strong><a href="">Sessions</a>:</strong> <em>Coming Soon</em> - Robust session state management.</li>
-<li><strong><a href="">Identity Flows</a>:</strong> <em>Coming Soon</em> - Claims and identity propagation.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/uuid7/overview.html">UUIDv7</a>:</strong> High-performance, time-sortable 128-bit identifier generation built for optimized database indexing.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/Overview.html">ULID</a>:</strong> Specification-compliant 128-bit Universally Unique Lexicographically Sortable Identifiers combining millisecond timestamps with Crockford Base32 encoding.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/base36/Base36.html">Base36</a>:</strong> Compact alphanumeric encoding utilities for case-insensitive identifier representations.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/base62/Base62.html">Base62</a>:</strong> URL-safe Base62 encoding components optimized for dense, short string representations.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/hexadecimal/Hexadecimal.html">Hexadecimal</a>:</strong> Direct hex formatting and parsing tools for low-level binary inspection and interoperability.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/nanoid/NanoId.html">NanoId</a>:</strong> Compact, URL-friendly, secure string identifier generation designed as a compact alternative to UUIDs.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/numericcode/NumericCode.html">Numeric Code</a>:</strong> Specialized numeric-only code generation tools for pin codes, verification tokens, and sequential identifiers.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/sequence/Sequence.html">Sequence</a>:</strong> High-throughput, thread-safe sequential ID generation for ordered data streams.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/shortid/ShortId.html">Short Identifier</a>:</strong> Optimized short identifier generators for readable, compact application references.</li>
 </ul>
+<hr>
 <h2 id="getting-started">Getting Started</h2>
 <p>To install the package, add it to your project via NuGet:</p>
 <pre><code class="lang-bash">dotnet add package Dixor.Identity
 
----
-
-### 2. `docs/packages/identity/uuid7/index.md`
-This acts as the landing page for the UUIDv7 sub-module.
-
-```markdown
-# UUIDv7 Implementation
-
-The **UUIDv7** module provides a zero-allocation, thread-safe implementation of RFC 9562 Version 7 identifiers. These are designed to replace legacy random GUIDs, providing sequential, time-based ordering for optimized database indexing.
-
-## Key Features
-* **Sequential Sorting:** Naturally ordered B-Tree friendly IDs.
-* **Zero Allocation:** Built for high-throughput .NET 10+ workloads.
-* **Metadata Embedded:** Easily extract creation timestamps from the ID payload.
-
-## Core Guides
-* [Overview](UUID7_Overview.md) - Understanding the anatomy of a v7 ID.
-* [Generation](UUID7_Generation.md) - Standard and monotonic generation patterns.
-* [Best Practices](UUID7_BestPractices.md) - Integrating with SQL Server, PostgreSQL, and EF Core.
-
----
-*If you are looking for configuration settings, see [Production Patterns](UUID7_BestPractices.md).*
 </code></pre>
+<hr>
+<h2 id="interactive-studio--exploration">Interactive Studio &amp; Exploration</h2>
+<p>You can visually inspect, test generation patterns, and explore real-time bit layouts and encodings interactively via <strong><a href="https://dishantsave.github.io/Dixor.Studio/">Dixor Studio</a></strong>:</p>
+<ul>
+<li><strong><a href="https://dishantsave.github.io/Dixor.Studio/identity/uuidv7">UUIDv7 Studio</a>:</strong> Test standard/monotonic generation and inspect UUIDv7 anatomical structures.</li>
+<li><strong><a href="https://dishantsave.github.io/Dixor.Studio/identity/ulid">ULID Studio</a>:</strong> Explore Crockford Base32 encoding, timestamp extraction, and sorting mechanics.</li>
+</ul>
 
 </article>
 

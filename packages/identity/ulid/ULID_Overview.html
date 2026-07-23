@@ -89,7 +89,8 @@
 
 <h2 id="core-design-principles">Core Design Principles</h2>
 <p>The ULID architecture within <code>Dixor.Identity</code> isolates public-facing facades from low-level bit manipulation services.</p>
-<p>┌────────────────────────────────────────────────────────┐
+<pre><code class="lang-text">
+┌────────────────────────────────────────────────────────┐
 │                        Ulid                            │ (Public Static Facade)
 └──────────────────────────┬─────────────────────────────┘
 │ delegates to
@@ -101,7 +102,9 @@
 ▼              ▼              ▼              ▼
 ┌──────────────┐┌──────────────┐┌──────────────┐┌──────────────┐
 │ UlidGenerator││UlidMonotonic ││ UlidParser   ││UlidFormatter │
-└──────────────┘└──────────────┘└──────────────┘└──────────────┘</p>
+└──────────────┘└──────────────┘└──────────────┘└──────────────┘
+
+</code></pre>
 <hr>
 <h2 id="fixed-index-bit-mapping-strategy">Fixed-Index Bit Mapping Strategy</h2>
 <p>To eliminate offset drift and ensure exact alignment with the formal ULID specification, components avoid dynamic accumulator loops during serialization and instead rely on <strong>Fixed-Index Bit Mapping</strong>.</p>
