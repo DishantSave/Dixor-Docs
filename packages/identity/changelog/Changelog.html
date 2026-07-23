@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dixor.Identity Changelog | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dixor.Identity Changelog | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/changelog/Changelog.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dixoridentity-changelog">Dixor.Identity Changelog</h1>
+
+<p>All notable changes to the <strong>Dixor.Identity</strong> package are documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>, and this project adheres strictly to <a href="https://semver.org/">Semantic Versioning</a>.</p>
+<hr>
+<h2 id="020--2026-07-23"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.4...v0.2.0%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.4...v0.2.0%29">0.2.0</a> — 2026-07-23</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li><strong>Base36 Identifier Generation (<code>Base36</code>):</strong> Introduced a cryptographically secure Base36 string generation API (<code>Base36.Generate()</code>) utilizing numeric characters (<code>0–9</code>) and uppercase alphabetic characters (<code>A–Z</code>). Features optimized stack allocation (<code>stackalloc</code>) for paths up to 256 characters to eliminate heap garbage collection pressure.</li>
+<li><strong>Base62 Identifier Generation (<code>Base62</code>):</strong> Added high-density, URL-safe, and case-sensitive identifier generation (<code>Base62.Generate()</code>) incorporating lowercase alphabetic characters (<code>a–z</code>) alongside numeric digits and uppercase letters for superior information packing density.</li>
+<li><strong>Hexadecimal Identifier Generation (<code>Hexadecimal</code>):</strong> Implemented secure binary-to-hexadecimal encoding (<code>Hexadecimal.Generate()</code>) supporting custom byte counts and configurable uppercase or lowercase case-normalization via optimized .NET routines (<code>Convert.ToHexString</code>).</li>
+<li><strong>NanoId Generation (<code>NanoId</code>):</strong> Added compact, URL-friendly identifier generation (<code>NanoId.Generate()</code>) adapted from the reference Nano ID algorithm. Implements bitmask optimization (<code>BitOperations.Log2</code>) and secure rejection sampling to guarantee strict statistical uniformity without byte bias.</li>
+<li><strong>Numeric Code Generation (<code>NumericCode</code>):</strong> Introduced digits-only code generation (<code>NumericCode.Generate()</code>) restricted to numbers (<code>0–9</code>), specifically optimized for verification codes, multi-factor authentication (MFA), and one-time passwords (OTPs).</li>
+<li><strong>Thread-Safe Integer Sequences (<code>Sequence</code>):</strong> Added a thread-safe, monotonically increasing sequence generator (<code>Sequence.Create()</code>) utilizing atomic interlocked instructions (<code>Interlocked.Add</code>) and volatile state memory management (<code>Volatile.Read</code>) for concurrent identifier numbering.</li>
+<li><strong>Human-Friendly Short Identifiers (<code>ShortId</code>):</strong> Implemented human-readable short token generation (<code>ShortId.Generate()</code>) built with an alphabet engineered specifically to omit visually ambiguous characters (such as <code>I</code>, <code>l</code>, <code>1</code>, <code>O</code>, <code>0</code>) to reduce transcription and manual entry errors.</li>
+<li><strong>ULID Generation (<code>Ulid</code>):</strong> Added foundational Universally Unique Lexicographically Sortable Identifier (<code>ULID</code>) generation support combining 48-bit millisecond timestamps with 80 bits of cryptographically secure randomness.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><strong>Internal Dependency Injection:</strong> Integrated all new string and sequence generation services with the internal dependency injection container (<code>InternalContainer</code>), standardizing instantiation across facades.</li>
+</ul>
+<hr>
+<h2 id="014--2026-07-04"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.3...v0.1.4%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.3...v0.1.4%29">0.1.4</a> — 2026-07-04</h2>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li><strong>Architecture:</strong> Decoupled embedded Roslyn compile-time analyzers from the main <code>Dixor.Identity</code> runtime package. Analyzers are now distributed as an independent package to eliminate compiler tooling dependencies from the core runtime library.</li>
+<li><strong>Packaging:</strong> Reduced overall NuGet payload size by excluding analyzer binaries and updated package dependency metadata.</li>
+</ul>
+<hr>
+<h2 id="013--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.3%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.3%29">0.1.3</a> — 2026-06-28</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>Packaging:</strong> Resolved package installation failures by embedding Roslyn analyzers directly into the package structure rather than referencing an external analyzer dependency.</li>
+<li><strong>Build:</strong> Improved analyzer integration and package reliability across Visual Studio and CLI builds.</li>
+</ul>
+<hr>
+<h2 id="012--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.1...v0.1.2%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.1...v0.1.2%29">0.1.2</a> — 2026-06-28</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li><strong>Multi-Targeting:</strong> Extended framework support beyond .NET 10 to fully support <strong>.NET 8.0</strong> and <strong>.NET 9.0</strong>.</li>
+<li><strong>Documentation:</strong> Introduced modular DocFX navigation, cross-referenced conceptual guides, and complete API references for the <code>Uuid7</code> facade.</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li><strong>Compatibility:</strong> Resolved runtime assembly resolution issues when consuming the library from .NET 8/9 applications.</li>
+<li><strong>Documentation:</strong> Fixed broken navigation hierarchies and NuGet package Readme link rendering.</li>
+</ul>
+<hr>
+<h2 id="011--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.1%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.1%29">0.1.1</a> — 2026-06-28</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li><strong>UUIDv7 Engine:</strong> Implemented RFC 9562 compliant UUID Version 7 generation (<code>Uuid7.New()</code>).</li>
+<li><strong>Monotonic Generation:</strong> Added lock-free sequential generation (<code>Uuid7.NewMonotonic()</code>) for high-throughput sub-millisecond workloads.</li>
+<li><strong>Batch APIs:</strong> Added high-efficiency lazy batch generation (<code>Uuid7.NewGuids(count)</code>).</li>
+<li><strong>Inspection &amp; Formatting:</strong> Added timestamp extraction (<code>Uuid7.GetTimestamp()</code>), parsing, validation, and domain prefix/suffix formatting (<code>Uuid7.NewString()</code>).</li>
+<li><strong>Roslyn Analyzers:</strong> Introduced diagnostic rule <code>DIXOR001</code> to catch non-positive batch size parameters during compilation.</li>
+</ul>
+<hr>
+<h2 id="010--2026-06-03"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Freleases%2Ftag%2Fv0.1.0%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Freleases%2Ftag%2Fv0.1.0%29">0.1.0</a> — 2026-06-03</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li><strong>Project Foundation:</strong> Created initial repository structure, core <code>Dixor.Identity</code> project architecture, automated unit test suites, and initial repository metadata.</li>
+</ul>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/changelog/Changelog.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

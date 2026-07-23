@@ -457,16 +457,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "packages/identity/Changelog.md",
-      "output": {
-        ".html": {
-          "relative_path": "packages/identity/Changelog.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "packages/identity/base36/Base36.md",
       "output": {
         ".html": {
@@ -481,6 +471,16 @@
       "output": {
         ".html": {
           "relative_path": "packages/identity/base62/Base62.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/identity/changelog/Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/identity/changelog/Changelog.html"
         }
       },
       "version": ""
