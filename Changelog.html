@@ -76,14 +76,24 @@
 <p>All notable changes to the <strong>Dixor Ecosystem</strong> are documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>, and this project adheres strictly to <a href="https://semver.org/">Semantic Versioning</a>.</p>
 <hr>
-<h2 id="unreleased">[Unreleased]</h2>
-<h3 id="planned">Planned</h3>
+<h2 id="2026-07-23--dixoridentity-v020">[2026-07-23] — Dixor.Identity [v0.2.0]</h2>
+<h3 id="added">Added</h3>
 <ul>
-<li><strong>Dixor.Identity:</strong> ULID generation, Snowflake ID algorithms, and native SQL Server sequential GUIDs (<code>AtEnd</code>).</li>
-<li><strong>Dixor.Validation:</strong> DNS/MX record verification, disposable email detection, and RFC 3986 URL validation.</li>
+<li><strong>Base36 Identifier Generation (<code>Base36</code>):</strong> Introduced a cryptographically secure Base36 string generation API (<code>Base36.Generate()</code>) utilizing numeric characters (<code>0–9</code>) and uppercase alphabetic characters (<code>A–Z</code>). Features optimized stack allocation (<code>stackalloc</code>) for paths up to 256 characters to eliminate heap garbage collection pressure.</li>
+<li><strong>Base62 Identifier Generation (<code>Base62</code>):</strong> Added high-density, URL-safe, and case-sensitive identifier generation (<code>Base62.Generate()</code>) incorporating lowercase alphabetic characters (<code>a–z</code>) alongside numeric digits and uppercase letters for superior information packing density.</li>
+<li><strong>Hexadecimal Identifier Generation (<code>Hexadecimal</code>):</strong> Implemented secure binary-to-hexadecimal encoding (<code>Hexadecimal.Generate()</code>) supporting custom byte counts and configurable uppercase or lowercase case-normalization via optimized .NET routines (<code>Convert.ToHexString</code>).</li>
+<li><strong>NanoId Generation (<code>NanoId</code>):</strong> Added compact, URL-friendly identifier generation (<code>NanoId.Generate()</code>) adapted from the reference Nano ID algorithm. Implements bitmask optimization (<code>BitOperations.Log2</code>) and secure rejection sampling to guarantee strict statistical uniformity without byte bias.</li>
+<li><strong>Numeric Code Generation (<code>NumericCode</code>):</strong> Introduced digits-only code generation (<code>NumericCode.Generate()</code>) restricted to numbers (<code>0–9</code>), specifically optimized for verification codes, multi-factor authentication (MFA), and one-time passwords (OTPs).</li>
+<li><strong>Thread-Safe Integer Sequences (<code>Sequence</code>):</strong> Added a thread-safe, monotonically increasing sequence generator (<code>Sequence.Create()</code>) utilizing atomic interlocked instructions (<code>Interlocked.Add</code>) and volatile state memory management (<code>Volatile.Read</code>) for concurrent identifier numbering.</li>
+<li><strong>Human-Friendly Short Identifiers (<code>ShortId</code>):</strong> Implemented human-readable short token generation (<code>ShortId.Generate()</code>) built with an alphabet engineered specifically to omit visually ambiguous characters (such as <code>I</code>, <code>l</code>, <code>1</code>, <code>O</code>, <code>0</code>) to reduce transcription and manual entry errors.</li>
+<li><strong>ULID Generation (<code>Ulid</code>):</strong> Added foundational Universally Unique Lexicographically Sortable Identifier (<code>ULID</code>) generation support combining 48-bit millisecond timestamps with 80 bits of cryptographically secure randomness.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><strong>Internal Dependency Injection:</strong> Integrated all new string and sequence generation services with the internal dependency injection container (<code>InternalContainer</code>), standardizing instantiation across facades.</li>
 </ul>
 <hr>
-<h2 id="2026-07-04"><a href="https://github.com/DishantSave/Dixor/compare/v0.1.3...v0.1.4">2026-07-04</a></h2>
+<h2 id="2026-07-04">[2026-07-04]</h2>
 <h3 id="added--dixorvalidation-v010-initial-release">Added — Dixor.Validation [v0.1.0] (Initial Release)</h3>
 <ul>
 <li><strong>Email Validation Engine:</strong> Initial release of the state-machine email validation engine built without regular expressions to eliminate ReDoS vulnerabilities and reduce heap allocations.</li>
@@ -97,15 +107,15 @@
 <li><strong>Packaging:</strong> Reduced overall NuGet payload size by excluding analyzer binaries and updated package dependency metadata.</li>
 </ul>
 <hr>
-<h2 id="2026-06-28--dixoridentity-v013"><a href="https://github.com/DishantSave/Dixor/compare/v0.1.0...v0.1.3">2026-06-28</a> — Dixor.Identity [v0.1.3]</h2>
+<h2 id="2026-06-28--dixoridentity-v013">[2026-06-28] — Dixor.Identity [v0.1.3]</h2>
 <h3 id="fixed">Fixed</h3>
 <ul>
 <li><strong>Packaging:</strong> Resolved package installation failures by embedding Roslyn analyzers directly into the package structure rather than referencing an external analyzer dependency.</li>
 <li><strong>Build:</strong> Improved analyzer integration and package reliability across Visual Studio, Rider, and CLI builds.</li>
 </ul>
 <hr>
-<h2 id="2026-06-28--dixoridentity-v012"><a href="https://github.com/DishantSave/Dixor/compare/v0.1.0...v0.1.3">2026-06-28</a> — Dixor.Identity [v0.1.2]</h2>
-<h3 id="added">Added</h3>
+<h2 id="2026-06-28--dixoridentity-v012">[2026-06-28] — Dixor.Identity [v0.1.2]</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li><strong>Multi-Targeting:</strong> Extended framework support beyond .NET 10 to fully support <strong>.NET 8.0</strong> and <strong>.NET 9.0</strong>.</li>
 <li><strong>Documentation:</strong> Introduced modular DocFX navigation, cross-referenced conceptual guides, and complete API references for the <code>Uuid7</code> facade.</li>
@@ -116,8 +126,8 @@
 <li><strong>Documentation:</strong> Fixed broken navigation hierarchies and NuGet package Readme link rendering.</li>
 </ul>
 <hr>
-<h2 id="2026-06-28--dixoridentity-v011"><a href="https://github.com/DishantSave/Dixor/compare/v0.1.0...v0.1.3">2026-06-28</a> — Dixor.Identity [v0.1.1]</h2>
-<h3 id="added-1">Added</h3>
+<h2 id="2026-06-28--dixoridentity-v011">[2026-06-28] — Dixor.Identity [v0.1.1]</h2>
+<h3 id="added-2">Added</h3>
 <ul>
 <li><strong>UUIDv7 Engine:</strong> Implemented RFC 9562 compliant UUID Version 7 generation (<code>Uuid7.New()</code>).</li>
 <li><strong>Monotonic Generation:</strong> Added lock-free sequential generation (<code>Uuid7.NewMonotonic()</code>) for high-throughput sub-millisecond workloads.</li>
@@ -126,8 +136,8 @@
 <li><strong>Roslyn Analyzers:</strong> Introduced diagnostic rule <code>DIXOR001</code> to catch non-positive batch size parameters during compilation.</li>
 </ul>
 <hr>
-<h2 id="2026-06-03--dixoridentity-v010"><a href="https://github.com/DishantSave/Dixor/releases/tag/v0.1.0">2026-06-03</a> — Dixor.Identity [v0.1.0]</h2>
-<h3 id="added-2">Added</h3>
+<h2 id="2026-06-03--dixoridentity-v010">[2026-06-03] — Dixor.Identity [v0.1.0]</h2>
+<h3 id="added-3">Added</h3>
 <ul>
 <li><strong>Project Foundation:</strong> Created initial repository structure, core <code>Dixor.Identity</code> project architecture, automated unit test suites, and initial repository metadata.</li>
 </ul>
