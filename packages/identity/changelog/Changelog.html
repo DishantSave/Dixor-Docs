@@ -90,7 +90,7 @@
 <p>All notable changes to the <strong>Dixor.Identity</strong> package are documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>, and this project adheres strictly to <a href="https://semver.org/">Semantic Versioning</a>.</p>
 <hr>
-<h2 id="020--2026-07-23"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.4...v0.2.0%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.4...v0.2.0%29">0.2.0</a> — 2026-07-23</h2>
+<h2 id="020--2026-07-23">[0.2.0] — 2026-07-23</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li><strong>Base36 Identifier Generation (<code>Base36</code>):</strong> Introduced a cryptographically secure Base36 string generation API (<code>Base36.Generate()</code>) utilizing numeric characters (<code>0–9</code>) and uppercase alphabetic characters (<code>A–Z</code>). Features optimized stack allocation (<code>stackalloc</code>) for paths up to 256 characters to eliminate heap garbage collection pressure.</li>
@@ -107,21 +107,21 @@
 <li><strong>Internal Dependency Injection:</strong> Integrated all new string and sequence generation services with the internal dependency injection container (<code>InternalContainer</code>), standardizing instantiation across facades.</li>
 </ul>
 <hr>
-<h2 id="014--2026-07-04"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.3...v0.1.4%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.3...v0.1.4%29">0.1.4</a> — 2026-07-04</h2>
+<h2 id="014--2026-07-04">[0.1.4] — 2026-07-04</h2>
 <h3 id="changed-1">Changed</h3>
 <ul>
 <li><strong>Architecture:</strong> Decoupled embedded Roslyn compile-time analyzers from the main <code>Dixor.Identity</code> runtime package. Analyzers are now distributed as an independent package to eliminate compiler tooling dependencies from the core runtime library.</li>
 <li><strong>Packaging:</strong> Reduced overall NuGet payload size by excluding analyzer binaries and updated package dependency metadata.</li>
 </ul>
 <hr>
-<h2 id="013--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.3%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.3%29">0.1.3</a> — 2026-06-28</h2>
+<h2 id="013--2026-06-28">[0.1.3] — 2026-06-28</h2>
 <h3 id="fixed">Fixed</h3>
 <ul>
 <li><strong>Packaging:</strong> Resolved package installation failures by embedding Roslyn analyzers directly into the package structure rather than referencing an external analyzer dependency.</li>
 <li><strong>Build:</strong> Improved analyzer integration and package reliability across Visual Studio and CLI builds.</li>
 </ul>
 <hr>
-<h2 id="012--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.1...v0.1.2%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.1...v0.1.2%29">0.1.2</a> — 2026-06-28</h2>
+<h2 id="012--2026-06-28">[0.1.2] — 2026-06-28</h2>
 <h3 id="added-1">Added</h3>
 <ul>
 <li><strong>Multi-Targeting:</strong> Extended framework support beyond .NET 10 to fully support <strong>.NET 8.0</strong> and <strong>.NET 9.0</strong>.</li>
@@ -133,7 +133,7 @@
 <li><strong>Documentation:</strong> Fixed broken navigation hierarchies and NuGet package Readme link rendering.</li>
 </ul>
 <hr>
-<h2 id="011--2026-06-28"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.1%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Fcompare%2Fv0.1.0...v0.1.1%29">0.1.1</a> — 2026-06-28</h2>
+<h2 id="011--2026-06-28">[0.1.1] — 2026-06-28</h2>
 <h3 id="added-2">Added</h3>
 <ul>
 <li><strong>UUIDv7 Engine:</strong> Implemented RFC 9562 compliant UUID Version 7 generation (<code>Uuid7.New()</code>).</li>
@@ -143,7 +143,7 @@
 <li><strong>Roslyn Analyzers:</strong> Introduced diagnostic rule <code>DIXOR001</code> to catch non-positive batch size parameters during compilation.</li>
 </ul>
 <hr>
-<h2 id="010--2026-06-03"><a href="https://www.google.com/search?q=%5Bhttps%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Freleases%2Ftag%2Fv0.1.0%5D%28https%3A%2F%2Fgithub.com%2FDishantSave%2FDixor%2Freleases%2Ftag%2Fv0.1.0%29">0.1.0</a> — 2026-06-03</h2>
+<h2 id="010--2026-06-03">[0.1.0] — 2026-06-03</h2>
 <h3 id="added-3">Added</h3>
 <ul>
 <li><strong>Project Foundation:</strong> Created initial repository structure, core <code>Dixor.Identity</code> project architecture, automated unit test suites, and initial repository metadata.</li>

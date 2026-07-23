@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Dixor Documentation </title>
+      <title>ULID (Universally Unique Lexicographically Sortable Identifier) | Dixor Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Dixor Documentation ">
+      <meta name="title" content="ULID (Universally Unique Lexicographically Sortable Identifier) | Dixor Documentation ">
       
       
       <link rel="icon" href="../../../images/icon-192.png">
@@ -85,7 +85,33 @@
         </div>
 
         <article data-uid="">
+<h1 id="ulid-universally-unique-lexicographically-sortable-identifier">ULID (Universally Unique Lexicographically Sortable Identifier)</h1>
 
+<h2 id="introduction">Introduction</h2>
+<p>The <code>Dixor.Identity.ULID</code> namespace provides high-performance, specification-compliant generation, parsing, validation, formatting, and timestamp extraction for 128-bit <strong>Universally Unique Lexicographically Sortable Identifiers (ULIDs)</strong>.</p>
+<p>ULIDs combine the global uniqueness of UUIDs with the chronological sorting capabilities required by modern distributed databases, event logs, and high-throughput microservices.</p>
+<hr>
+<h2 id="architecture--layout">Architecture &amp; Layout</h2>
+<p>A ULID consists of exactly <strong>128 bits (16 bytes)</strong> divided into two core components:</p>
+<p>+------------------------------------+------------------------------------+
+| Timestamp Component                | Randomness Component               |
+| 48 bits (6 bytes)                  | 80 bits (10 bytes)                 |
+| Big-endian Unix time in millis     | Cryptographically secure random    |
++------------------------------------+------------------------------------+</p>
+<ol>
+<li><strong>48-Bit Timestamp (Bytes 0–5):</strong> Encodes the Unix epoch timestamp in milliseconds. Because the timestamp occupies the most significant bytes, IDs generated sequentially are naturally sortable in chronological order.</li>
+<li><strong>80-Bit Randomness (Bytes 6–15):</strong> Generated via cryptographic random number generators (<code>RandomNumberGenerator</code>), ensuring collision resistance within and across millisecond bounds.</li>
+<li><strong>Crockford Base32 Encoding:</strong> The complete 128-bit structure is encoded into a concise <strong>26-character canonical string</strong> using the Crockford Base32 alphabet.</li>
+</ol>
+<hr>
+<h2 id="core-capabilities">Core Capabilities</h2>
+<ul>
+<li><strong>Standard Generation:</strong> Create timestamp-backed identifiers instantly using system UTC time or explicit timestamp overrides.</li>
+<li><strong>Monotonic Sequencing:</strong> Guarantee strictly increasing order even when multiple identifiers are generated within the exact same millisecond window.</li>
+<li><strong>High-Efficiency Batching:</strong> Lazily evaluate and yield multiple identifiers for high-throughput bulk operations.</li>
+<li><strong>Deterministic Bit Mapping:</strong> Utilize fixed-index bit mapping to ensure complete compatibility with external specification-compliant libraries without offset drift.</li>
+<li><strong>Allocation-Free Parsing &amp; Formatting:</strong> Leverage <code>Span&lt;T&gt;</code> and stack allocation (<code>stackalloc</code>) to reduce heap pressure.</li>
+</ul>
 
 </article>
 
