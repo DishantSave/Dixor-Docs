@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Standard ULID Generation (Ulid.Generate) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Standard ULID Generation (Ulid.Generate) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_Generation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="standard-ulid-generation-ulidgenerate">Standard ULID Generation (<code>Ulid.Generate</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Standard Generation</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides a zero-allocation, specification-compliant implementation for generating <strong>Universally Unique Lexicographically Sortable Identifiers (ULIDs)</strong> via the <code>Ulid.Generate()</code> facade.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.ULID;
+
+// Generate a standard chronologically sortable ULID using current UTC time
+string id = Ulid.Generate();
+// Example: 01J5J8Y9Q6A8K5J8X3Z5N9Y2KP
+
+</code></pre>
+<hr>
+<h2 id="bitwise-layout--anatomy">Bitwise Layout &amp; Anatomy</h2>
+<p>The underlying engine constructs 128-bit identifiers using a stack-allocated buffer (<code>stackalloc byte[16]</code>):</p>
+<pre><code class="lang-text"> 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                         Timestamp (48-bit)                    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   Timestamp   |             Randomness (80-bit)               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            Randomness                         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                            Randomness                         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+</code></pre>
+<ol>
+<li><strong><code>Bytes 0–5</code> (Timestamp):</strong> A 48-bit Unix timestamp stored in milliseconds since the Unix epoch, written in network byte order (Big-Endian). This guarantees natural chronological sorting when compared lexicographically.</li>
+<li><strong><code>Bytes 6–15</code> (Randomness):</strong> An 80-bit cryptographically secure random component generated via <code>RandomNumberGenerator.Fill()</code> to ensure high uniqueness and statistical distribution.</li>
+<li><strong><code>Crockford Base32 Encoding</code>:</strong> The complete 128-bit structure is mapped into a concise <strong>26-character canonical string</strong> using the Crockford Base32 alphabet, which intentionally excludes visually ambiguous characters like <code>I</code>, <code>L</code>, <code>O</code>, and <code>U</code>.</li>
+</ol>
+<hr>
+<h2 id="zero-allocation-architectural-performance">Zero-Allocation Architectural Performance</h2>
+<p>To achieve optimal execution throughput under heavy API loads, the internal generation pipeline strictly bypasses heap allocations:</p>
+<pre><code class="lang-csharp">// Internally allocates directly on the call stack
+Span&lt;byte&gt; bytes = stackalloc byte[16];
+
+</code></pre>
+<ul>
+<li><strong>No Garbage Collection Pressure:</strong> Because a raw binary ULID is fixed at exactly 16 bytes, using <code>stackalloc</code> combined with fixed-index bit mapping eliminates intermediate heap allocations entirely during generation.</li>
+</ul>
+<hr>
+<h2 id="custom-timestamp-generation">Custom Timestamp Generation</h2>
+<p>For data migrations or historical event replays, you can anchor an identifier to a specific temporal point using explicit timestamp overrides:</p>
+<pre><code class="lang-csharp">DateTimeOffset historicalEvent = new DateTimeOffset(2026, 7, 18, 12, 30, 15, TimeSpan.Zero);
+// Handled internally via generator timestamp binding
+
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test standard generation and inspect bit layouts directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/ulid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_MonotonicGeneration.html">Monotonic Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_TimestampExtraction.html">Timestamp Extraction</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_Generation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

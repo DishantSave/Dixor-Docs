@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ULID Batch Generation (Ulid.Generate(int count)) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ULID Batch Generation (Ulid.Generate(int count)) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_BatchGeneration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ulid-batch-generation-ulidgenerateint-count">ULID Batch Generation (<code>Ulid.Generate(int count)</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Batch Generation</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides high-efficiency batch generation for creating multiple <strong>Universally Unique Lexicographically Sortable Identifiers (ULIDs)</strong> in a single operation via the <code>Ulid.Generate(int count)</code> facade.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.ULID;
+
+// Generate a lazily evaluated sequence of 500 ULIDs for bulk processing
+foreach (var id in Ulid.Generate(500))
+{
+    Console.WriteLine(id);
+}
+
+</code></pre>
+<hr>
+<h2 id="architectural-mechanics--lazy-evaluation">Architectural Mechanics &amp; Lazy Evaluation</h2>
+<p>The batch generation mechanism is designed to handle bulk inserts, seed data generation, and high-throughput data streams efficiently:</p>
+<ol>
+<li><strong>Deferred Execution:</strong> The batch generator returns an <code>IEnumerable&lt;string&gt;</code>, leveraging lazy evaluation so that identifiers are generated on-demand as the consumer iterates through the collection.</li>
+<li><strong>Delegated Generation:</strong> The underlying batch processor (<code>UlidBatchGenerator</code>) iterates through the requested count and repeatedly invokes the single-value generation engine to ensure every identifier receives a fresh timestamp and cryptographically secure random component.</li>
+</ol>
+<hr>
+<h2 id="input-validation--error-handling">Input Validation &amp; Error Handling</h2>
+<p>To safeguard against invalid allocations or infinite loop vectors, the batch generator enforces strict input boundary checks:</p>
+<ul>
+<li><strong>Argument Guards:</strong> Uses high-performance guard clauses (<code>ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count)</code>) to immediately reject any batch requests where the count is zero or negative.</li>
+</ul>
+<pre><code class="lang-csharp">// Throws an ArgumentOutOfRangeException if count &lt;= 0
+var invalidBatch = Ulid.Generate(0); 
+
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test batch generation workflows and performance metrics directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/ulid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_MonotonicGeneration.html">Monotonic Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_Formatting.html">Formatting</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_BatchGeneration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

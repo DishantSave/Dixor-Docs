@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ULID Monotonic Generation (Ulid.GenerateMonotonic) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ULID Monotonic Generation (Ulid.GenerateMonotonic) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_MonotonicGeneration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ulid-monotonic-generation-ulidgeneratemonotonic">ULID Monotonic Generation (<code>Ulid.GenerateMonotonic</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Monotonic Generation</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides a high-throughput, thread-safe implementation for generating monotonically increasing <strong>Universally Unique Lexicographically Sortable Identifiers (ULIDs)</strong> via the <code>Ulid.GenerateMonotonic()</code> facade.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.ULID;
+
+// Generate strictly increasing ULIDs during high-frequency same-millisecond bursts
+string firstId = Ulid.GenerateMonotonic();
+string secondId = Ulid.GenerateMonotonic();
+
+</code></pre>
+<hr>
+<h2 id="the-same-millisecond-ordering-challenge">The Same-Millisecond Ordering Challenge</h2>
+<p>Standard timestamp-based generation relies on the system clock. When high-throughput applications generate thousands of identifiers within the exact same millisecond tick, standard random generation can suffer from ordering ambiguity or out-of-sequence collisions.</p>
+<p><strong>Monotonic Generation</strong> resolves this by tracking generation state and incrementing the randomness component sequentially if subsequent generation requests occur within the same millisecond timestamp boundary.</p>
+<hr>
+<h2 id="architectural-mechanics--state-synchronization">Architectural Mechanics &amp; State Synchronization</h2>
+<p>To preserve strict lexicographical sorting order across concurrent threads, the internal monotonic generator manages state synchronization and carry-over logic:</p>
+<ol>
+<li><strong>Thread Synchronization:</strong> Utilizes a static synchronization lock (<code>lock (SyncRoot)</code>) to coordinate concurrent generation requests safely.</li>
+<li><strong>Timestamp Observation:</strong></li>
+</ol>
+<ul>
+<li>If a <em>new</em> millisecond timestamp is observed (<span class="math">\(timestamp &gt; \_lastTimestamp\)</span>), the timestamp is updated and a fresh block of cryptographically secure randomness is seeded via <code>RandomNumberGenerator.Fill(_random)</code>.</li>
+<li>If multiple generation calls occur within the <em>same</em> millisecond (<span class="math">\(timestamp \le \_lastTimestamp\)</span>), the timestamp is held/incremented and the internal 10-byte randomness component is sequentially incremented.</li>
+</ul>
+<ol start="3">
+<li><strong>Randomness Increment Strategy:</strong> The 80-bit random block is treated as an 80-bit big-endian integer, incrementing from the least significant byte (<code>i = 9</code> down to <code>0</code>) and automatically propagating carry values to higher-order bytes when required.</li>
+</ol>
+<hr>
+<h2 id="zero-allocation-performance">Zero-Allocation Performance</h2>
+<p>Like the standard generator, the monotonic engine constructs identifiers efficiently:</p>
+<pre><code class="lang-csharp">// Stack-allocated memory layout
+Span&lt;byte&gt; bytes = stackalloc byte[16];
+
+</code></pre>
+<ul>
+<li><strong>No Heap Pressure:</strong> Utilizing stack allocations (<code>stackalloc</code>) combined with fixed-index bit mapping ensures zero intermediate garbage collection overhead during tight generation loops.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test monotonic generation sequences and inspect ordering mechanics directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/ulid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_Generation.html">Standard Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_BatchGeneration.html">Batch Generation</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_TimestampExtraction.html">Timestamp Extraction</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_MonotonicGeneration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

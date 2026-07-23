@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ULID Parsing &amp; Binary Conversion (Ulid.Parse / Ulid.TryParse) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ULID Parsing &amp; Binary Conversion (Ulid.Parse / Ulid.TryParse) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_Parsing.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ulid-parsing--binary-conversion-ulidparse--ulidtryparse">ULID Parsing &amp; Binary Conversion (<code>Ulid.Parse</code> / <code>Ulid.TryParse</code>)</h1>
+
+<blockquote>
+<p>📚 <strong>Navigation:</strong> <a href="https://dishantsave.github.io/Dixor-Docs/index.html">Home</a> &gt; <a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/index.html">Dixor.Identity</a> &gt; <strong>Parsing</strong></p>
+</blockquote>
+<hr>
+<p><code>Dixor.Identity</code> provides high-performance, allocation-free mechanisms for parsing canonical 26-character <strong>Universally Unique Lexicographically Sortable Identifier (ULID)</strong> strings back into their original 16-byte binary representations via <code>Ulid.Parse</code> and <code>Ulid.TryParse</code>.</p>
+<pre><code class="lang-csharp">using Dixor.Identity.ULID;
+
+// Strict parsing (throws FormatException on malformed input)
+byte[] bytes = Ulid.Parse(&quot;01J5J8Y9Q6A8K5J8X3Z5N9Y2KP&quot;);
+
+// Safe parsing without exceptions
+if (Ulid.TryParse(&quot;01J5J8Y9Q6A8K5J8X3Z5N9Y2KP&quot;, out byte[]? parsedBytes))
+{
+    // Successfully decoded into 16 bytes
+}
+
+</code></pre>
+<hr>
+<h2 id="architectural-mechanics--fixed-index-bit-unmapping">Architectural Mechanics &amp; Fixed-Index Bit Unmapping</h2>
+<p>The parsing engine acts as the inverse of the formatting pipeline, transforming Crockford Base32 strings back into a 128-bit structure:</p>
+<pre><code class="lang-text">26 Crockford Base32 Characters
+    ↓
+Fixed-Index Bit Unmapping
+    ↓
+128-bit Binary Representation (16 bytes)
+
+</code></pre>
+<ol>
+<li><strong>Fixed-Index Unmapping:</strong> Uses exact inverse bit-shifting corresponding to the encoder layout to reconstruct the 16 bytes precisely without offset drift.</li>
+<li><strong>Human-Error Tolerance (Crockford Aliases):</strong> In addition to standard Base32 characters, the parser natively accepts visually ambiguous characters (<code>I</code>, <code>L</code>, and <code>O</code>) as aliases for <code>1</code> and <code>0</code>, improving readability and transcription tolerance.</li>
+</ol>
+<hr>
+<h2 id="validation-rules-enforced-during-parsing">Validation Rules Enforced During Parsing</h2>
+<p>Before converting the string, the parser executes strict validation checks:</p>
+<ul>
+<li><strong>Length Constraints:</strong> The input string must contain exactly 26 characters.</li>
+<li><strong>Overflow Limits:</strong> The first character is checked to ensure its decoded numeric value does not exceed <code>7</code>, preventing high-bit range overflows beyond the 128-bit boundary.</li>
+<li><strong>Alphabet Membership:</strong> Every character is verified against the Crockford Base32 alphabet. Any unsupported characters trigger a <code>FormatException</code>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>🚀 <strong>Interactive Demonstration:</strong> Test string parsing and binary conversion workflows directly via <a href="https://dishantsave.github.io/Dixor.Studio/identity/ulid">Dixor Studio</a>.</p>
+</div>
+<hr>
+<h2 id="related-documentation">Related Documentation</h2>
+<ul>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_Formatting.html">Formatting</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_Validation.html">Validation Rules</a></li>
+<li><a href="https://dishantsave.github.io/Dixor-Docs/packages/identity/ulid/ULID_TimestampExtraction.html">Timestamp Extraction</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/identity/ulid/ULID_Parsing.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
