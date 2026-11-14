@@ -74,8 +74,11 @@
 <h1 id="dixor">Dixor</h1>
 
 <hr>
+<h2 id="-documentation">📚 Documentation</h2>
+<p>Official Documentation</p>
+<p><a href="https://dishantsave.github.io/Dixor-Docs/index.html">https://dishantsave.github.io/Dixor-Docs/index.html</a></p>
+<hr>
 <h1 id="dixor-1">DIXOR</h1>
-<p><strong>DIXOR</strong> stands for <strong>Dishant's Infrastructure eXtensible Open Runtime</strong>.</p>
 <p>Dixor is a modern ecosystem of high-performance, production-ready .NET libraries built to simplify application development through well-designed APIs, excellent documentation, and developer-friendly tooling.</p>
 <p>Rather than being a single monolithic dependency, Dixor is a curated collection of focused infrastructure libraries. Every package solves one specific engineering challenge exceptionally well while maintaining a unified philosophy across the entire ecosystem:</p>
 <ul>
@@ -89,52 +92,34 @@
 <hr>
 <h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><p><a href="https://www.google.com/search?q=%23ecosystem-overview">Ecosystem Overview</a></p>
+<li><a href="#ecosystem-overview">Ecosystem Overview</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#dixoridentity">Dixor.Identity</a>
+<ul>
+<li><a href="#dixoridentity---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></li>
+<li><a href="#what-is-rfc-9562--uuid-version-7">What is RFC 9562 &amp; UUID Version 7?</a></li>
+<li><a href="#uuid-version-comparison">UUID Version Comparison</a></li>
+<li><a href="#features--api-reference-uuidv7">Features &amp; API Reference: UUIDv7</a></li>
+<li><a href="#features--api-reference-ulid-v020-addition">Features &amp; API Reference: ULID</a></li>
+<li><a href="#additional-identity-encodings--modules">Additional Identity Encodings &amp; Modules</a></li>
+<li><a href="#built-in-roslyn-analyzers">Built-in Roslyn Analyzers</a></li>
+<li><a href="#dixoridentity---quick-start">Quick Start</a></li>
+</ul>
 </li>
-<li><p><a href="https://www.google.com/search?q=%23installation">Installation</a></p>
+<li><a href="#dixorvalidation">Dixor.Validation</a>
+<ul>
+<li><a href="#dixorvalidation---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></li>
+<li><a href="#why-not-regular-expressions">Why Not Regular Expressions?</a></li>
+<li><a href="#validation-strategy--layers">Validation Strategy &amp; Layers</a></li>
+<li><a href="#dixorvalidation---features--api-reference">Features &amp; API Reference</a></li>
+<li><a href="#dixorvalidation---quick-start">Quick Start</a></li>
+</ul>
 </li>
-<li><p><a href="https://www.google.com/search?q=%23dixoridentity">Dixor.Identity</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixoridentity---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23what-is-rfc-9562--uuid-version-7">What is RFC 9562 &amp; UUID Version 7?</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23uuid-version-comparison">UUID Version Comparison</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23features--api-reference-uuidv7">Features &amp; API Reference: UUIDv7</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23features--api-reference-ulid">Features &amp; API Reference: ULID</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23additional-identity-encodings--modules">Additional Identity Encodings &amp; Modules</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23built-in-roslyn-analyzers">Built-in Roslyn Analyzers</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixoridentity---quick-start">Quick Start</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixorvalidation">Dixor.Validation</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixorvalidation---introduction--core-philosophy">Introduction &amp; Core Philosophy</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23why-not-regular-expressions">Why Not Regular Expressions?</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23validation-strategy--layers">Validation Strategy &amp; Layers</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixorvalidation---features--api-reference">Features &amp; API Reference</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23intelligent-suggestion-engine">Intelligent Suggestion Engine</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23dixorvalidation---quick-start">Quick Start</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23documentation-structure">Documentation Structure</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23supported-frameworks">Supported Frameworks</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23ecosystem-roadmap">Ecosystem Roadmap</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23contributing">Contributing</a></p>
-</li>
-<li><p><a href="https://www.google.com/search?q=%23license">License</a></p>
-</li>
+<li><a href="#documentation-structure">Documentation Structure</a></li>
+<li><a href="#supported-frameworks">Supported Frameworks</a></li>
+<li><a href="#ecosystem-roadmap">Ecosystem Roadmap</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
 </ul>
 <hr>
 <h1 id="ecosystem-overview">Ecosystem Overview</h1>
@@ -475,48 +460,47 @@ Console.WriteLine($&quot;Created At       : {createdAt:O}&quot;);
 <h3 id="rich-diagnostics--structured-results">Rich Diagnostics &amp; Structured Results</h3>
 <p>Validation operations return a generic <code>ValidationResult&lt;EmailValidationError&gt;</code> payload containing complete diagnostic state data.</p>
 <pre><code class="lang-csharp">using Dixor.Validation.Email;
-ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Default.Validate(&quot;john..doe@example.com&quot;);
-if (!result.IsValid) { Console.WriteLine($&quot;Validation Failed: {result.Error}&quot;); }
 
+ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Validate(&quot;john..doe@example.com&quot;);
+if (!result.IsValid)
+{
+    Console.WriteLine($&quot;Validation Failed: {result.Error}&quot;);
+}
 </code></pre>
 <h3 id="strongly-typed-error-enums-emailvalidationerror">Strongly Typed Error Enums (<code>EmailValidationError</code>)</h3>
 <ul>
-<li><strong><code>InvalidLocalPart</code></strong> — Prefix contains illegal structure.</li>
-<li><strong><code>InvalidDomain</code></strong> — Domain structure violates naming standards.</li>
-<li><strong><code>ConsecutiveDots</code></strong> — Illegal sequence (<code>..</code>).</li>
-<li><strong><code>MissingAtSymbol</code></strong> — Missing <code>@</code> delimiter.</li>
-<li><strong><code>EmptyLocalPart</code></strong> / <strong><code>EmptyDomain</code></strong> — Missing components.</li>
-<li><strong><code>InvalidCharacter</code></strong> — Prohibited control characters or spaces.</li>
+<li><strong><code>InvalidLocalPartCharacter</code></strong> / <strong><code>InvalidDomainCharacter</code></strong> — Prohibited characters detected.</li>
+<li><strong><code>InvalidDomain</code></strong> — Domain structure violates RFC naming standards.</li>
+<li><strong><code>ConsecutiveDots</code></strong> — Illegal sequence (<code>..</code>) in local part or domain.</li>
+<li><strong><code>MissingAtSymbol</code></strong> / <strong><code>MultipleAtSymbols</code></strong> — Missing or excessive <code>@</code> delimiters.</li>
+<li><strong><code>EmptyLocalPart</code></strong> / <strong><code>EmptyDomain</code></strong> — Missing local-part or domain segment.</li>
+<li><strong><code>LocalPartStartsWithDot</code></strong> / <strong><code>LocalPartEndsWithDot</code></strong> — Dot boundary violations.</li>
+<li><strong><code>DomainLabelStartsWithHyphen</code></strong> / <strong><code>DomainLabelEndsWithHyphen</code></strong> — Hyphen boundary violations.</li>
+<li><strong><code>QuotedLocalPartNotAllowed</code></strong> / <strong><code>PlusAddressingNotAllowed</code></strong> — Policy violations based on options.</li>
+<li><strong><code>InvalidIpDomain</code></strong> — IP literal validation failure.</li>
 </ul>
 <h3 id="parsing--inspection-apis">Parsing &amp; Inspection APIs</h3>
-<pre><code class="lang-csharp">EmailAddress address = EmailParser.Parse(&quot;john.doe@example.co.uk&quot;);
-Console.WriteLine($&quot;Local Part : {address.LocalPart}&quot;);
-Console.WriteLine($&quot;Domain     : {address.Domain}&quot;);
+<p>Extract structured email components with zero redundant parsing:</p>
+<pre><code class="lang-csharp">using Dixor.Validation.Email;
 
-</code></pre>
-<hr>
-<h2 id="intelligent-suggestion-engine">Intelligent Suggestion Engine</h2>
-<p>User registration flows frequently suffer from high drop-off rates due to domain typos. <code>Dixor.Validation</code> incorporates an algorithmic domain suggestion engine:</p>
-<pre><code class="lang-csharp">ValidationResult&lt;EmailValidationError&gt; typoResult = EmailValidator.Default.Validate(&quot;alice@gmai.com&quot;);
-if (!typoResult.IsValid &amp;&amp; typoResult.HasSuggestions)
-{
-    foreach (string suggestion in typoResult.Suggestions)
-    {
-        Console.WriteLine($&quot;Did you mean: {suggestion}?&quot;); // Output: gmail.com
-    }
-}
-
+EmailInfo info = EmailValidator.GetInfo(&quot;john.doe@sub.example.co.uk&quot;);
+Console.WriteLine($&quot;Local Part : {info.LocalPart}&quot;);
+Console.WriteLine($&quot;Domain     : {info.Domain}&quot;);
+Console.WriteLine($&quot;Subdomain  : {info.Subdomain}&quot;);
+Console.WriteLine($&quot;TLD        : {info.TopLevelDomain}&quot;);
+Console.WriteLine($&quot;Plus Tag   : {info.HasPlusAddressing}&quot;);
 </code></pre>
 <hr>
 <h2 id="dixorvalidation---quick-start">Dixor.Validation - Quick Start</h2>
 <pre><code class="lang-csharp">using System;
+using Dixor.Validation;
 using Dixor.Validation.Email;
 
 public class RegistrationService
 {
     public void ProcessRegistration(string userEmailInput)
     {
-        ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Default.Validate(
+        ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Validate(
             userEmailInput, 
             EmailValidationOptions.Default
         );
@@ -524,18 +508,13 @@ public class RegistrationService
         if (!result.IsValid)
         {
             Console.WriteLine($&quot;[Error] Rejected email: {result.Error}&quot;);
-            if (result.HasSuggestions)
-            {
-                Console.WriteLine($&quot;Suggestion: Try '{string.Join(&quot;, &quot;, result.Suggestions)}'&quot;);
-            }
             return;
         }
 
-        EmailAddress verifiedAddress = EmailParser.Parse(userEmailInput);
+        EmailInfo verifiedAddress = EmailValidator.GetInfo(userEmailInput);
         Console.WriteLine($&quot;[Success] Routing welcome packet to domain: {verifiedAddress.Domain}&quot;);
     }
 }
-
 </code></pre>
 <hr>
 <h1 id="documentation-structure">Documentation Structure</h1>
@@ -566,6 +545,16 @@ public class RegistrationService
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong><code>.NET 8</code></strong></td>
+<td>✅ Fully Supported (LTS)</td>
+<td><code>.NET 8.0+</code></td>
+</tr>
+<tr>
+<td><strong><code>.NET 9</code></strong></td>
+<td>✅ Fully Supported</td>
+<td><code>.NET 9.0+</code></td>
+</tr>
 <tr>
 <td><strong><code>.NET 10</code></strong></td>
 <td>✅ Fully Supported</td>
@@ -608,17 +597,17 @@ public class RegistrationService
 <hr>
 <h2 id="core-packages">Core Packages</h2>
 <p>Explore the dedicated documentation and guides for each library in the ecosystem:</p>
-<h3 id="-dixoridentity">🔐 <a href="packages/identity/overview.md">Dixor.Identity</a></h3>
+<h3 id="-dixoridentity">🔐 <a href="packages/identity/index.html">Dixor.Identity</a></h3>
 <p>Streamlined authentication, session handling, and security flows built for modern .NET applications.</p>
 <ul>
 <li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Identity</code></li>
-<li><a href="packages/identity/overview.md">View Identity Guides →</a></li>
+<li><a href="packages/identity/index.html">View Identity Guides →</a></li>
 </ul>
-<h3 id="-dixorvalidation">✔️ <a href="packages/validation/overview.md">Dixor.Validation</a></h3>
+<h3 id="-dixorvalidation">✔️ <a href="packages/validation/index.html">Dixor.Validation</a></h3>
 <p>Clean, extensible validation rules and structured error handling for high-performance APIs.</p>
 <ul>
 <li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Validation</code></li>
-<li><a href="packages/validation/overview.md">View Validation Guides →</a></li>
+<li><a href="packages/validation/index.html">View Validation Guides →</a></li>
 </ul>
 <hr>
 <h2 id="architecture--philosophy">Architecture &amp; Philosophy</h2>
@@ -631,7 +620,7 @@ public class RegistrationService
 <hr>
 <h2 id="explore-the-api-reference">Explore the API Reference</h2>
 <p>Looking for exact class definitions, method parameters, or return types? Dive directly into the auto-generated C# documentation:</p>
-<p>👉 <strong><a href="api/">Browse Full .NET API Reference</a></strong></p>
+<p>👉 <strong><a href="api/index.html">Browse Full .NET API Reference</a></strong></p>
 
 </article>
 

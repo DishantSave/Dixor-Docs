@@ -142,6 +142,12 @@
 <td style="text-align: left;">Permits <code>localhost</code> as a domain.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>AllowLocalDomains</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">Permits single-label/local domains without FQDN dot notation (e.g., <code>user@internal</code>).</td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>AllowIpDomain</code></td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;"><code>false</code></td>
@@ -151,19 +157,19 @@
 <td style="text-align: left;"><code>AllowDisposableDomains</code></td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;"><code>true</code></td>
-<td style="text-align: left;">Permits domains associated with temporary/disposable email services.</td>
+<td style="text-align: left;">Reserved policy flag for temporary/disposable email services.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>AllowPublicDomains</code></td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;"><code>true</code></td>
-<td style="text-align: left;">Permits public email providers (e.g., Gmail, Outlook).</td>
+<td style="text-align: left;">Reserved policy flag for public consumer email providers.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>AllowRoleBasedAddresses</code></td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;"><code>true</code></td>
-<td style="text-align: left;">Permits role-based accounts (e.g., <code>admin@</code>, <code>support@</code>).</td>
+<td style="text-align: left;">Reserved policy flag for role-based accounts (e.g., <code>admin@</code>, <code>support@</code>).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>TrimInput</code></td>
@@ -182,11 +188,12 @@
 <h2 id="usage-example">Usage Example</h2>
 <pre><code class="lang-csharp">var options = new EmailValidationOptions
 {
-    AllowDisposableDomains = false,
-    AllowPlusAddressing = false
+    AllowPlusAddressing = false,
+    AllowLocalhost = true
 };
 
-bool isValid = EmailValidator.IsValid(&quot;test@mailinator.com&quot;, options); // Returns false
+bool isValid = EmailValidator.IsValid(&quot;user+tag@example.com&quot;, options); // Returns false
+bool isLocalValid = EmailValidator.IsValid(&quot;admin@localhost&quot;, options); // Returns true
 </code></pre>
 
 </article>

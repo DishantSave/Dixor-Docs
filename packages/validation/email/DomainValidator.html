@@ -101,13 +101,28 @@
 <li>Added length validation for domain and domain labels.</li>
 <li>Added structural validation (dots, hyphens).</li>
 <li>Added character validation with internationalization support.</li>
+<li>Added support for localhost and local-domain validation options.</li>
+<li>Added RFC IP literal domain support when enabled.</li>
 </ol>
 </li>
 </ul>
 <hr>
 <h2 id="validation-logic">Validation Logic</h2>
-<p>The validator executes three primary checks:</p>
+<p>The validator executes the following checks:</p>
 <ol>
+<li><strong>IP Domain Literal Validation</strong>:
+<ul>
+<li>Detects <code>[address]</code> syntax (IPv4 and IPv6).</li>
+<li>Requires <code>AllowIpDomain = true</code> in options.</li>
+<li>Validates IP address syntax using system IP parser.</li>
+</ul>
+</li>
+<li><strong>Localhost &amp; Single-Label Domains</strong>:
+<ul>
+<li>Permits <code>localhost</code> when <code>AllowLocalhost = true</code> or <code>AllowLocalDomains = true</code>.</li>
+<li>Single-label domains without dot separators require <code>AllowLocalDomains = true</code>.</li>
+</ul>
+</li>
 <li><strong>Length Validation</strong>: Ensures the total domain string length does not exceed <code>EmailDomainMaxLength</code>.</li>
 <li><strong>Structural Validation (<code>ValidateLabels</code>)</strong>:
 <ul>
