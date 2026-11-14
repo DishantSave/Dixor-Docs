@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum PhoneValidationError | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum PhoneValidationError | Dixor Documentation ">
+      
+      <meta name="description" content="Represents the reason why phone number validation succeeded or failed.">
+      <link rel="icon" href="../images/icon-192.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/new/main/apiSpec/new?filename=Dixor_Validation_Phone_PhoneValidationError.md&amp;value=---%0Auid%3A%20Dixor.Validation.Phone.PhoneValidationError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dixor.Validation.Phone.PhoneValidationError">
+
+
+
+
+  <h1 id="Dixor_Validation_Phone_PhoneValidationError" data-uid="Dixor.Validation.Phone.PhoneValidationError" class="text-break">
+Enum PhoneValidationError  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationError.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">Dixor</span>.<a class="xref" href="Dixor.Validation.html">Validation</a>.<a class="xref" href="Dixor.Validation.Phone.html">Phone</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Dixor.Validation.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the reason why phone number validation succeeded or failed.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PhoneValidationError</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_CountryNotAllowed"><code>CountryNotAllowed = 8</code></dt>
+  
+  <dd><p>The country identified is not permitted by the validation options.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_Empty"><code>Empty = 2</code></dt>
+  
+  <dd><p>The supplied phone number is an empty string.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidAreaCode"><code>InvalidAreaCode = 12</code></dt>
+  
+  <dd><p>The national destination code or area code is invalid for the resolved country.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidCharacters"><code>InvalidCharacters = 4</code></dt>
+  
+  <dd><p>The phone number contains invalid characters (characters other than digits, +, -, ., (), and spaces).</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidCountryCode"><code>InvalidCountryCode = 7</code></dt>
+  
+  <dd><p>The country calling code identified in the phone number is invalid or unknown.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidFormat"><code>InvalidFormat = 5</code></dt>
+  
+  <dd><p>The phone number format is invalid or improperly formatted.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidLengthForCountry"><code>InvalidLengthForCountry = 11</code></dt>
+  
+  <dd><p>The national number length is invalid for the resolved country.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidNationalNumber"><code>InvalidNationalNumber = 13</code></dt>
+  
+  <dd><p>The national number portion contains invalid digits or formatting.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_InvalidTrunkPrefix"><code>InvalidTrunkPrefix = 14</code></dt>
+  
+  <dd><p>The national trunk prefix (e.g., '0') is invalid or improperly placed.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_MissingCountryCode"><code>MissingCountryCode = 6</code></dt>
+  
+  <dd><p>The phone number does not contain a country code and no default country was provided.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_None"><code>None = 0</code></dt>
+  
+  <dd><p>Indicates that no validation error occurred.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_Null"><code>Null = 1</code></dt>
+  
+  <dd><p>The supplied phone number is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_NumberTooLong"><code>NumberTooLong = 10</code></dt>
+  
+  <dd><p>The total number of digits exceeds the ITU-T E.164 standard maximum of 15 digits.</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_NumberTooShort"><code>NumberTooShort = 9</code></dt>
+  
+  <dd><p>The total number of digits is too short per ITU-T E.164 standards (minimum 3 digits).</p>
+</dd>
+    <dt id="Dixor_Validation_Phone_PhoneValidationError_WhiteSpace"><code>WhiteSpace = 3</code></dt>
+  
+  <dd><p>The supplied phone number contains only white-space characters.</p>
+</dd>
+  </dl>
+
+
+  <h2 id="Dixor_Validation_Phone_PhoneValidationError_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+<a class="xref" href="Dixor.Validation.Phone.PhoneValidationError.html">PhoneValidationError</a> provides a strongly typed set of error
+codes returned by the phone number validation pipeline. Each member represents a
+specific validation failure encountered while parsing or validating a phone number.
+</p>
+<p>
+When validation succeeds, <a class="xref" href="Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_None">None</a> is returned. Otherwise, one of
+the remaining members identifies the exact reason the phone number failed validation.
+</p>
+<p>
+These values are intended to be consumed by <a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult&lt;TError&gt;</a>
+to provide deterministic, allocation-free error reporting.
+</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationError.cs/#L31" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

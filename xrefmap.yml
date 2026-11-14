@@ -543,6 +543,162 @@ references:
   commentId: N:Dixor.Validation
   fullName: Dixor.Validation
   nameWithType: Dixor.Validation
+- uid: Dixor.Validation.Contact
+  name: Dixor.Validation.Contact
+  href: api/Dixor.Validation.Contact.html
+  commentId: N:Dixor.Validation.Contact
+  fullName: Dixor.Validation.Contact
+  nameWithType: Dixor.Validation.Contact
+- uid: Dixor.Validation.Contact.ContactValidator
+  name: ContactValidator
+  href: api/Dixor.Validation.Contact.ContactValidator.html
+  commentId: T:Dixor.Validation.Contact.ContactValidator
+  fullName: Dixor.Validation.Contact.ContactValidator
+  nameWithType: ContactValidator
+- uid: Dixor.Validation.Contact.ContactValidator.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: AreEqual(string?, string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_AreEqual_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: AreEqual(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.AreEqual(string?, string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.AreEqual(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.AreEqual(string?, string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.AreEqual(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.AreEqual
+  nameWithType: ContactValidator.AreEqual
+- uid: Dixor.Validation.Contact.ContactValidator.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Format(string?, PhoneFormat, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Format_System_String_Dixor_Validation_Phone_PhoneFormat_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Format(String, PhoneFormat, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.Format(string?, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.Format(String, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.Format(string?, PhoneFormat, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.Format(String, PhoneFormat, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.Format*
+  name: Format
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Format_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.Format
+  nameWithType: ContactValidator.Format
+- uid: Dixor.Validation.Contact.ContactValidator.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetInfo(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_GetInfo_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetInfo(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.GetInfo(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.GetInfo(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.GetInfo(string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.GetInfo(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.GetInfo
+  nameWithType: ContactValidator.GetInfo
+- uid: Dixor.Validation.Contact.ContactValidator.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: IsValid(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_IsValid_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: IsValid(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.IsValid(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.IsValid(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.IsValid(string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.IsValid(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_IsValid_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.IsValid
+  nameWithType: ContactValidator.IsValid
+- uid: Dixor.Validation.Contact.ContactValidator.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name: LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_LookupAsync_System_String_Dixor_Validation_Phone_PhoneValidationOptions_System_Threading_CancellationToken_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name.vb: LookupAsync(String, PhoneValidationOptions, CancellationToken)
+  fullName: Dixor.Validation.Contact.ContactValidator.LookupAsync(string?, Dixor.Validation.Phone.PhoneValidationOptions?, System.Threading.CancellationToken)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.LookupAsync(String, Dixor.Validation.Phone.PhoneValidationOptions, System.Threading.CancellationToken)
+  nameWithType: ContactValidator.LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  nameWithType.vb: ContactValidator.LookupAsync(String, PhoneValidationOptions, CancellationToken)
+- uid: Dixor.Validation.Contact.ContactValidator.LookupAsync*
+  name: LookupAsync
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_LookupAsync_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.LookupAsync
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.LookupAsync
+  nameWithType: ContactValidator.LookupAsync
+- uid: Dixor.Validation.Contact.ContactValidator.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Normalize(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Normalize_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Normalize(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.Normalize(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.Normalize(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.Normalize(string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.Normalize(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Normalize_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.Normalize
+  nameWithType: ContactValidator.Normalize
+- uid: Dixor.Validation.Contact.ContactValidator.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_TryGetInfo_System_String_Dixor_Validation_Phone_PhoneInfo__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.TryGetInfo(string?, out Dixor.Validation.Phone.PhoneInfo?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.TryGetInfo(String, Dixor.Validation.Phone.PhoneInfo, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.TryGetInfo
+  nameWithType: ContactValidator.TryGetInfo
+- uid: Dixor.Validation.Contact.ContactValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryNormalize(string?, out string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_TryNormalize_System_String_System_String__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryNormalize(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.TryNormalize(string?, out string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.TryNormalize(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.TryNormalize(string?, out string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.TryNormalize(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.TryNormalize
+  nameWithType: ContactValidator.TryNormalize
+- uid: Dixor.Validation.Contact.ContactValidator.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Validate(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Validate_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Contact.ContactValidator.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Validate(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Contact.ContactValidator.Validate(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Contact.ContactValidator.Validate(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: ContactValidator.Validate(string?, PhoneValidationOptions?)
+  nameWithType.vb: ContactValidator.Validate(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Contact.ContactValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Contact.ContactValidator.html#Dixor_Validation_Contact_ContactValidator_Validate_
+  commentId: Overload:Dixor.Validation.Contact.ContactValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Contact.ContactValidator.Validate
+  nameWithType: ContactValidator.Validate
 - uid: Dixor.Validation.Email
   name: Dixor.Validation.Email
   href: api/Dixor.Validation.Email.html
@@ -1389,6 +1545,1597 @@ references:
   isSpec: "True"
   fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Value
   nameWithType: IEmailInfo.Value
+- uid: Dixor.Validation.Phone
+  name: Dixor.Validation.Phone
+  href: api/Dixor.Validation.Phone.html
+  commentId: N:Dixor.Validation.Phone
+  fullName: Dixor.Validation.Phone
+  nameWithType: Dixor.Validation.Phone
+- uid: Dixor.Validation.Phone.ContactLookupResult
+  name: ContactLookupResult
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html
+  commentId: T:Dixor.Validation.Phone.ContactLookupResult
+  fullName: Dixor.Validation.Phone.ContactLookupResult
+  nameWithType: ContactLookupResult
+- uid: Dixor.Validation.Phone.ContactLookupResult.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.PhoneNumberType,System.String,System.Boolean,System.String)
+  name: ContactLookupResult(string, string, string, string, string?, string?, string?, string?, PhoneNumberType, string?, bool, string)
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_Phone_PhoneNumberType_System_String_System_Boolean_System_String_
+  commentId: M:Dixor.Validation.Phone.ContactLookupResult.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.PhoneNumberType,System.String,System.Boolean,System.String)
+  name.vb: New(String, String, String, String, String, String, String, String, PhoneNumberType, String, Boolean, String)
+  fullName: Dixor.Validation.Phone.ContactLookupResult.ContactLookupResult(string, string, string, string, string?, string?, string?, string?, Dixor.Validation.Phone.PhoneNumberType, string?, bool, string)
+  fullName.vb: Dixor.Validation.Phone.ContactLookupResult.New(String, String, String, String, String, String, String, String, Dixor.Validation.Phone.PhoneNumberType, String, Boolean, String)
+  nameWithType: ContactLookupResult.ContactLookupResult(string, string, string, string, string?, string?, string?, string?, PhoneNumberType, string?, bool, string)
+  nameWithType.vb: ContactLookupResult.New(String, String, String, String, String, String, String, String, PhoneNumberType, String, Boolean, String)
+- uid: Dixor.Validation.Phone.ContactLookupResult.#ctor*
+  name: ContactLookupResult
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult__ctor_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Phone.ContactLookupResult.ContactLookupResult
+  fullName.vb: Dixor.Validation.Phone.ContactLookupResult.New
+  nameWithType: ContactLookupResult.ContactLookupResult
+  nameWithType.vb: ContactLookupResult.New
+- uid: Dixor.Validation.Phone.ContactLookupResult.Carrier
+  name: Carrier
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Carrier
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.Carrier
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Carrier
+  nameWithType: ContactLookupResult.Carrier
+- uid: Dixor.Validation.Phone.ContactLookupResult.Carrier*
+  name: Carrier
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Carrier_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.Carrier
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Carrier
+  nameWithType: ContactLookupResult.Carrier
+- uid: Dixor.Validation.Phone.ContactLookupResult.City
+  name: City
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_City
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.City
+  fullName: Dixor.Validation.Phone.ContactLookupResult.City
+  nameWithType: ContactLookupResult.City
+- uid: Dixor.Validation.Phone.ContactLookupResult.City*
+  name: City
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_City_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.City
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.City
+  nameWithType: ContactLookupResult.City
+- uid: Dixor.Validation.Phone.ContactLookupResult.CountryName
+  name: CountryName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_CountryName
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.CountryName
+  fullName: Dixor.Validation.Phone.ContactLookupResult.CountryName
+  nameWithType: ContactLookupResult.CountryName
+- uid: Dixor.Validation.Phone.ContactLookupResult.CountryName*
+  name: CountryName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_CountryName_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.CountryName
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.CountryName
+  nameWithType: ContactLookupResult.CountryName
+- uid: Dixor.Validation.Phone.ContactLookupResult.FormattedE164
+  name: FormattedE164
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_FormattedE164
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.FormattedE164
+  fullName: Dixor.Validation.Phone.ContactLookupResult.FormattedE164
+  nameWithType: ContactLookupResult.FormattedE164
+- uid: Dixor.Validation.Phone.ContactLookupResult.FormattedE164*
+  name: FormattedE164
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_FormattedE164_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.FormattedE164
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.FormattedE164
+  nameWithType: ContactLookupResult.FormattedE164
+- uid: Dixor.Validation.Phone.ContactLookupResult.IsFound
+  name: IsFound
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_IsFound
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.IsFound
+  fullName: Dixor.Validation.Phone.ContactLookupResult.IsFound
+  nameWithType: ContactLookupResult.IsFound
+- uid: Dixor.Validation.Phone.ContactLookupResult.IsFound*
+  name: IsFound
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_IsFound_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.IsFound
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.IsFound
+  nameWithType: ContactLookupResult.IsFound
+- uid: Dixor.Validation.Phone.ContactLookupResult.Iso2
+  name: Iso2
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Iso2
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.Iso2
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Iso2
+  nameWithType: ContactLookupResult.Iso2
+- uid: Dixor.Validation.Phone.ContactLookupResult.Iso2*
+  name: Iso2
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Iso2_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.Iso2
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Iso2
+  nameWithType: ContactLookupResult.Iso2
+- uid: Dixor.Validation.Phone.ContactLookupResult.NumberType
+  name: NumberType
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_NumberType
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.NumberType
+  fullName: Dixor.Validation.Phone.ContactLookupResult.NumberType
+  nameWithType: ContactLookupResult.NumberType
+- uid: Dixor.Validation.Phone.ContactLookupResult.NumberType*
+  name: NumberType
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_NumberType_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.NumberType
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.NumberType
+  nameWithType: ContactLookupResult.NumberType
+- uid: Dixor.Validation.Phone.ContactLookupResult.ProviderName
+  name: ProviderName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_ProviderName
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.ProviderName
+  fullName: Dixor.Validation.Phone.ContactLookupResult.ProviderName
+  nameWithType: ContactLookupResult.ProviderName
+- uid: Dixor.Validation.Phone.ContactLookupResult.ProviderName*
+  name: ProviderName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_ProviderName_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.ProviderName
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.ProviderName
+  nameWithType: ContactLookupResult.ProviderName
+- uid: Dixor.Validation.Phone.ContactLookupResult.RawPhone
+  name: RawPhone
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_RawPhone
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.RawPhone
+  fullName: Dixor.Validation.Phone.ContactLookupResult.RawPhone
+  nameWithType: ContactLookupResult.RawPhone
+- uid: Dixor.Validation.Phone.ContactLookupResult.RawPhone*
+  name: RawPhone
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_RawPhone_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.RawPhone
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.RawPhone
+  nameWithType: ContactLookupResult.RawPhone
+- uid: Dixor.Validation.Phone.ContactLookupResult.RegisteredName
+  name: RegisteredName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_RegisteredName
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.RegisteredName
+  fullName: Dixor.Validation.Phone.ContactLookupResult.RegisteredName
+  nameWithType: ContactLookupResult.RegisteredName
+- uid: Dixor.Validation.Phone.ContactLookupResult.RegisteredName*
+  name: RegisteredName
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_RegisteredName_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.RegisteredName
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.RegisteredName
+  nameWithType: ContactLookupResult.RegisteredName
+- uid: Dixor.Validation.Phone.ContactLookupResult.StateOrRegion
+  name: StateOrRegion
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_StateOrRegion
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.StateOrRegion
+  fullName: Dixor.Validation.Phone.ContactLookupResult.StateOrRegion
+  nameWithType: ContactLookupResult.StateOrRegion
+- uid: Dixor.Validation.Phone.ContactLookupResult.StateOrRegion*
+  name: StateOrRegion
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_StateOrRegion_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.StateOrRegion
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.StateOrRegion
+  nameWithType: ContactLookupResult.StateOrRegion
+- uid: Dixor.Validation.Phone.ContactLookupResult.Timezone
+  name: Timezone
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Timezone
+  commentId: P:Dixor.Validation.Phone.ContactLookupResult.Timezone
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Timezone
+  nameWithType: ContactLookupResult.Timezone
+- uid: Dixor.Validation.Phone.ContactLookupResult.Timezone*
+  name: Timezone
+  href: api/Dixor.Validation.Phone.ContactLookupResult.html#Dixor_Validation_Phone_ContactLookupResult_Timezone_
+  commentId: Overload:Dixor.Validation.Phone.ContactLookupResult.Timezone
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.ContactLookupResult.Timezone
+  nameWithType: ContactLookupResult.Timezone
+- uid: Dixor.Validation.Phone.CountryInfo
+  name: CountryInfo
+  href: api/Dixor.Validation.Phone.CountryInfo.html
+  commentId: T:Dixor.Validation.Phone.CountryInfo
+  fullName: Dixor.Validation.Phone.CountryInfo
+  nameWithType: CountryInfo
+- uid: Dixor.Validation.Phone.CountryInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)
+  name: CountryInfo(string, string, string, string, string, int, int)
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo__ctor_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Dixor.Validation.Phone.CountryInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)
+  name.vb: New(String, String, String, String, String, Integer, Integer)
+  fullName: Dixor.Validation.Phone.CountryInfo.CountryInfo(string, string, string, string, string, int, int)
+  fullName.vb: Dixor.Validation.Phone.CountryInfo.New(String, String, String, String, String, Integer, Integer)
+  nameWithType: CountryInfo.CountryInfo(string, string, string, string, string, int, int)
+  nameWithType.vb: CountryInfo.New(String, String, String, String, String, Integer, Integer)
+- uid: Dixor.Validation.Phone.CountryInfo.#ctor*
+  name: CountryInfo
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo__ctor_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Phone.CountryInfo.CountryInfo
+  fullName.vb: Dixor.Validation.Phone.CountryInfo.New
+  nameWithType: CountryInfo.CountryInfo
+  nameWithType.vb: CountryInfo.New
+- uid: Dixor.Validation.Phone.CountryInfo.CallingCode
+  name: CallingCode
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_CallingCode
+  commentId: P:Dixor.Validation.Phone.CountryInfo.CallingCode
+  fullName: Dixor.Validation.Phone.CountryInfo.CallingCode
+  nameWithType: CountryInfo.CallingCode
+- uid: Dixor.Validation.Phone.CountryInfo.CallingCode*
+  name: CallingCode
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_CallingCode_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.CallingCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.CallingCode
+  nameWithType: CountryInfo.CallingCode
+- uid: Dixor.Validation.Phone.CountryInfo.CallingCodeDigits
+  name: CallingCodeDigits
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_CallingCodeDigits
+  commentId: P:Dixor.Validation.Phone.CountryInfo.CallingCodeDigits
+  fullName: Dixor.Validation.Phone.CountryInfo.CallingCodeDigits
+  nameWithType: CountryInfo.CallingCodeDigits
+- uid: Dixor.Validation.Phone.CountryInfo.CallingCodeDigits*
+  name: CallingCodeDigits
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_CallingCodeDigits_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.CallingCodeDigits
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.CallingCodeDigits
+  nameWithType: CountryInfo.CallingCodeDigits
+- uid: Dixor.Validation.Phone.CountryInfo.Iso2
+  name: Iso2
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Iso2
+  commentId: P:Dixor.Validation.Phone.CountryInfo.Iso2
+  fullName: Dixor.Validation.Phone.CountryInfo.Iso2
+  nameWithType: CountryInfo.Iso2
+- uid: Dixor.Validation.Phone.CountryInfo.Iso2*
+  name: Iso2
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Iso2_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.Iso2
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.Iso2
+  nameWithType: CountryInfo.Iso2
+- uid: Dixor.Validation.Phone.CountryInfo.Iso3
+  name: Iso3
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Iso3
+  commentId: P:Dixor.Validation.Phone.CountryInfo.Iso3
+  fullName: Dixor.Validation.Phone.CountryInfo.Iso3
+  nameWithType: CountryInfo.Iso3
+- uid: Dixor.Validation.Phone.CountryInfo.Iso3*
+  name: Iso3
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Iso3_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.Iso3
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.Iso3
+  nameWithType: CountryInfo.Iso3
+- uid: Dixor.Validation.Phone.CountryInfo.MaxLength
+  name: MaxLength
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_MaxLength
+  commentId: P:Dixor.Validation.Phone.CountryInfo.MaxLength
+  fullName: Dixor.Validation.Phone.CountryInfo.MaxLength
+  nameWithType: CountryInfo.MaxLength
+- uid: Dixor.Validation.Phone.CountryInfo.MaxLength*
+  name: MaxLength
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_MaxLength_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.MaxLength
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.MaxLength
+  nameWithType: CountryInfo.MaxLength
+- uid: Dixor.Validation.Phone.CountryInfo.MinLength
+  name: MinLength
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_MinLength
+  commentId: P:Dixor.Validation.Phone.CountryInfo.MinLength
+  fullName: Dixor.Validation.Phone.CountryInfo.MinLength
+  nameWithType: CountryInfo.MinLength
+- uid: Dixor.Validation.Phone.CountryInfo.MinLength*
+  name: MinLength
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_MinLength_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.MinLength
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.MinLength
+  nameWithType: CountryInfo.MinLength
+- uid: Dixor.Validation.Phone.CountryInfo.Name
+  name: Name
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Name
+  commentId: P:Dixor.Validation.Phone.CountryInfo.Name
+  fullName: Dixor.Validation.Phone.CountryInfo.Name
+  nameWithType: CountryInfo.Name
+- uid: Dixor.Validation.Phone.CountryInfo.Name*
+  name: Name
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_Name_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.Name
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.Name
+  nameWithType: CountryInfo.Name
+- uid: Dixor.Validation.Phone.CountryInfo.ToString
+  name: ToString()
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_ToString
+  commentId: M:Dixor.Validation.Phone.CountryInfo.ToString
+  fullName: Dixor.Validation.Phone.CountryInfo.ToString()
+  nameWithType: CountryInfo.ToString()
+- uid: Dixor.Validation.Phone.CountryInfo.ToString*
+  name: ToString
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_ToString_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.ToString
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.ToString
+  nameWithType: CountryInfo.ToString
+- uid: Dixor.Validation.Phone.CountryInfo.TrunkPrefix
+  name: TrunkPrefix
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_TrunkPrefix
+  commentId: P:Dixor.Validation.Phone.CountryInfo.TrunkPrefix
+  fullName: Dixor.Validation.Phone.CountryInfo.TrunkPrefix
+  nameWithType: CountryInfo.TrunkPrefix
+- uid: Dixor.Validation.Phone.CountryInfo.TrunkPrefix*
+  name: TrunkPrefix
+  href: api/Dixor.Validation.Phone.CountryInfo.html#Dixor_Validation_Phone_CountryInfo_TrunkPrefix_
+  commentId: Overload:Dixor.Validation.Phone.CountryInfo.TrunkPrefix
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.CountryInfo.TrunkPrefix
+  nameWithType: CountryInfo.TrunkPrefix
+- uid: Dixor.Validation.Phone.Interfaces
+  name: Dixor.Validation.Phone.Interfaces
+  href: api/Dixor.Validation.Phone.Interfaces.html
+  commentId: N:Dixor.Validation.Phone.Interfaces
+  fullName: Dixor.Validation.Phone.Interfaces
+  nameWithType: Dixor.Validation.Phone.Interfaces
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider
+  name: IPhoneCountryMetadataProvider
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider
+  nameWithType: IPhoneCountryMetadataProvider
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode(System.String,System.String)
+  name: FindByCallingCode(string, string?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_FindByCallingCode_System_String_System_String_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode(System.String,System.String)
+  name.vb: FindByCallingCode(String, String)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode(string, string?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode(String, String)
+  nameWithType: IPhoneCountryMetadataProvider.FindByCallingCode(string, string?)
+  nameWithType.vb: IPhoneCountryMetadataProvider.FindByCallingCode(String, String)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode*
+  name: FindByCallingCode
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_FindByCallingCode_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByCallingCode
+  nameWithType: IPhoneCountryMetadataProvider.FindByCallingCode
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso(System.String)
+  name: FindByIso(string)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_FindByIso_System_String_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso(System.String)
+  name.vb: FindByIso(String)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso(string)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso(String)
+  nameWithType: IPhoneCountryMetadataProvider.FindByIso(string)
+  nameWithType.vb: IPhoneCountryMetadataProvider.FindByIso(String)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso*
+  name: FindByIso
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_FindByIso_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.FindByIso
+  nameWithType: IPhoneCountryMetadataProvider.FindByIso
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries
+  name: GetAllCountries()
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_GetAllCountries
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries()
+  nameWithType: IPhoneCountryMetadataProvider.GetAllCountries()
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries*
+  name: GetAllCountries
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneCountryMetadataProvider_GetAllCountries_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.GetAllCountries
+  nameWithType: IPhoneCountryMetadataProvider.GetAllCountries
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider
+  name: IPhoneLookupProvider
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider
+  nameWithType: IPhoneLookupProvider
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync(Dixor.Validation.Phone.PhoneInfo,System.Threading.CancellationToken)
+  name: LookupAsync(PhoneInfo, CancellationToken)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneLookupProvider_LookupAsync_Dixor_Validation_Phone_PhoneInfo_System_Threading_CancellationToken_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync(Dixor.Validation.Phone.PhoneInfo,System.Threading.CancellationToken)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync(Dixor.Validation.Phone.PhoneInfo, System.Threading.CancellationToken)
+  nameWithType: IPhoneLookupProvider.LookupAsync(PhoneInfo, CancellationToken)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync*
+  name: LookupAsync
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneLookupProvider_LookupAsync_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.LookupAsync
+  nameWithType: IPhoneLookupProvider.LookupAsync
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName
+  name: ProviderName
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneLookupProvider_ProviderName
+  commentId: P:Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName
+  nameWithType: IPhoneLookupProvider.ProviderName
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName*
+  name: ProviderName
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html#Dixor_Validation_Phone_Interfaces_IPhoneLookupProvider_ProviderName_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.ProviderName
+  nameWithType: IPhoneLookupProvider.ProviderName
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer
+  name: IPhoneNormalizer
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneNormalizer
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer
+  nameWithType: IPhoneNormalizer
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format(Dixor.Validation.Phone.PhoneInfo,Dixor.Validation.Phone.PhoneFormat)
+  name: Format(PhoneInfo, PhoneFormat)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html#Dixor_Validation_Phone_Interfaces_IPhoneNormalizer_Format_Dixor_Validation_Phone_PhoneInfo_Dixor_Validation_Phone_PhoneFormat_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format(Dixor.Validation.Phone.PhoneInfo,Dixor.Validation.Phone.PhoneFormat)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format(Dixor.Validation.Phone.PhoneInfo, Dixor.Validation.Phone.PhoneFormat)
+  nameWithType: IPhoneNormalizer.Format(PhoneInfo, PhoneFormat)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format*
+  name: Format
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html#Dixor_Validation_Phone_Interfaces_IPhoneNormalizer_Format_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Format
+  nameWithType: IPhoneNormalizer.Format
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize(Dixor.Validation.Phone.PhoneInfo)
+  name: Normalize(PhoneInfo)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html#Dixor_Validation_Phone_Interfaces_IPhoneNormalizer_Normalize_Dixor_Validation_Phone_PhoneInfo_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize(Dixor.Validation.Phone.PhoneInfo)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize(Dixor.Validation.Phone.PhoneInfo)
+  nameWithType: IPhoneNormalizer.Normalize(PhoneInfo)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html#Dixor_Validation_Phone_Interfaces_IPhoneNormalizer_Normalize_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.Normalize
+  nameWithType: IPhoneNormalizer.Normalize
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneParser
+  name: IPhoneParser
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneParser.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneParser
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneParser
+  nameWithType: IPhoneParser
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse(System.String,Dixor.Validation.Phone.PhoneValidationOptions,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationError@)
+  name: TryParse(string?, PhoneValidationOptions?, out PhoneInfo?, out PhoneValidationError)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneParser.html#Dixor_Validation_Phone_Interfaces_IPhoneParser_TryParse_System_String_Dixor_Validation_Phone_PhoneValidationOptions_Dixor_Validation_Phone_PhoneInfo__Dixor_Validation_Phone_PhoneValidationError__
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse(System.String,Dixor.Validation.Phone.PhoneValidationOptions,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationError@)
+  name.vb: TryParse(String, PhoneValidationOptions, PhoneInfo, PhoneValidationError)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse(string?, Dixor.Validation.Phone.PhoneValidationOptions?, out Dixor.Validation.Phone.PhoneInfo?, out Dixor.Validation.Phone.PhoneValidationError)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse(String, Dixor.Validation.Phone.PhoneValidationOptions, Dixor.Validation.Phone.PhoneInfo, Dixor.Validation.Phone.PhoneValidationError)
+  nameWithType: IPhoneParser.TryParse(string?, PhoneValidationOptions?, out PhoneInfo?, out PhoneValidationError)
+  nameWithType.vb: IPhoneParser.TryParse(String, PhoneValidationOptions, PhoneInfo, PhoneValidationError)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse*
+  name: TryParse
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneParser.html#Dixor_Validation_Phone_Interfaces_IPhoneParser_TryParse_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneParser.TryParse
+  nameWithType: IPhoneParser.TryParse
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector
+  name: IPhoneRegionDetector
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector
+  nameWithType: IPhoneRegionDetector
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType(Dixor.Validation.Phone.CountryInfo,System.String)
+  name: DetectNumberType(CountryInfo, string)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_DetectNumberType_Dixor_Validation_Phone_CountryInfo_System_String_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType(Dixor.Validation.Phone.CountryInfo,System.String)
+  name.vb: DetectNumberType(CountryInfo, String)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType(Dixor.Validation.Phone.CountryInfo, string)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType(Dixor.Validation.Phone.CountryInfo, String)
+  nameWithType: IPhoneRegionDetector.DetectNumberType(CountryInfo, string)
+  nameWithType.vb: IPhoneRegionDetector.DetectNumberType(CountryInfo, String)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType*
+  name: DetectNumberType
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_DetectNumberType_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectNumberType
+  nameWithType: IPhoneRegionDetector.DetectNumberType
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion(Dixor.Validation.Phone.CountryInfo,System.String)
+  name: DetectRegion(CountryInfo, string)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_DetectRegion_Dixor_Validation_Phone_CountryInfo_System_String_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion(Dixor.Validation.Phone.CountryInfo,System.String)
+  name.vb: DetectRegion(CountryInfo, String)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion(Dixor.Validation.Phone.CountryInfo, string)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion(Dixor.Validation.Phone.CountryInfo, String)
+  nameWithType: IPhoneRegionDetector.DetectRegion(CountryInfo, string)
+  nameWithType.vb: IPhoneRegionDetector.DetectRegion(CountryInfo, String)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion*
+  name: DetectRegion
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_DetectRegion_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.DetectRegion
+  nameWithType: IPhoneRegionDetector.DetectRegion
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode(Dixor.Validation.Phone.CountryInfo,System.String)
+  name: ExtractAreaCode(CountryInfo, string)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_ExtractAreaCode_Dixor_Validation_Phone_CountryInfo_System_String_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode(Dixor.Validation.Phone.CountryInfo,System.String)
+  name.vb: ExtractAreaCode(CountryInfo, String)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode(Dixor.Validation.Phone.CountryInfo, string)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode(Dixor.Validation.Phone.CountryInfo, String)
+  nameWithType: IPhoneRegionDetector.ExtractAreaCode(CountryInfo, string)
+  nameWithType.vb: IPhoneRegionDetector.ExtractAreaCode(CountryInfo, String)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode*
+  name: ExtractAreaCode
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html#Dixor_Validation_Phone_Interfaces_IPhoneRegionDetector_ExtractAreaCode_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.ExtractAreaCode
+  nameWithType: IPhoneRegionDetector.ExtractAreaCode
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService
+  name: IPhoneValidatorService
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html
+  commentId: T:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService
+  nameWithType: IPhoneValidatorService
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: AreEqual(string?, string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_AreEqual_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: AreEqual(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual(string?, string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.AreEqual(string?, string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.AreEqual(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_AreEqual_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual
+  nameWithType: IPhoneValidatorService.AreEqual
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Format(string?, PhoneFormat, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Format_System_String_Dixor_Validation_Phone_PhoneFormat_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Format(String, PhoneFormat, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format(string?, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format(String, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.Format(string?, PhoneFormat, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.Format(String, PhoneFormat, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format*
+  name: Format
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Format_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format
+  nameWithType: IPhoneValidatorService.Format
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetCountry(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountry_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetCountry(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetCountry(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetCountry(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry*
+  name: GetCountry
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountry_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry
+  nameWithType: IPhoneValidatorService.GetCountry
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetCountryCode(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountryCode_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetCountryCode(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetCountryCode(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetCountryCode(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode*
+  name: GetCountryCode
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountryCode_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode
+  nameWithType: IPhoneValidatorService.GetCountryCode
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetInfo(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetInfo_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetInfo(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetInfo(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetInfo(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetInfo_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo
+  nameWithType: IPhoneValidatorService.GetInfo
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetNationalNumber(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNationalNumber_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetNationalNumber(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetNationalNumber(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetNationalNumber(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber*
+  name: GetNationalNumber
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNationalNumber_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber
+  nameWithType: IPhoneValidatorService.GetNationalNumber
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetNumberType(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNumberType_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetNumberType(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetNumberType(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetNumberType(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType*
+  name: GetNumberType
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNumberType_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType
+  nameWithType: IPhoneValidatorService.GetNumberType
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetRegion(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetRegion_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetRegion(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.GetRegion(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.GetRegion(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion*
+  name: GetRegion
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetRegion_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion
+  nameWithType: IPhoneValidatorService.GetRegion
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries
+  name: GetSupportedCountries()
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetSupportedCountries
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries()
+  nameWithType: IPhoneValidatorService.GetSupportedCountries()
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries*
+  name: GetSupportedCountries
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetSupportedCountries_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries
+  nameWithType: IPhoneValidatorService.GetSupportedCountries
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: IsValid(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValid_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: IsValid(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.IsValid(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.IsValid(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValid_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid
+  nameWithType: IPhoneValidatorService.IsValid
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: IsValidForCountry(string?, string, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValidForCountry_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: IsValidForCountry(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry(string?, string, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.IsValidForCountry(string?, string, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.IsValidForCountry(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry*
+  name: IsValidForCountry
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValidForCountry_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry
+  nameWithType: IPhoneValidatorService.IsValidForCountry
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name: LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_LookupAsync_System_String_Dixor_Validation_Phone_PhoneValidationOptions_System_Threading_CancellationToken_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name.vb: LookupAsync(String, PhoneValidationOptions, CancellationToken)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync(string?, Dixor.Validation.Phone.PhoneValidationOptions?, System.Threading.CancellationToken)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync(String, Dixor.Validation.Phone.PhoneValidationOptions, System.Threading.CancellationToken)
+  nameWithType: IPhoneValidatorService.LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  nameWithType.vb: IPhoneValidatorService.LookupAsync(String, PhoneValidationOptions, CancellationToken)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync*
+  name: LookupAsync
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_LookupAsync_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync
+  nameWithType: IPhoneValidatorService.LookupAsync
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Normalize(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Normalize_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Normalize(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.Normalize(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.Normalize(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Normalize_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize
+  nameWithType: IPhoneValidatorService.Normalize
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat(System.String,Dixor.Validation.Phone.PhoneFormat,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryFormat(string?, PhoneFormat, out string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryFormat_System_String_Dixor_Validation_Phone_PhoneFormat_System_String__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat(System.String,Dixor.Validation.Phone.PhoneFormat,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryFormat(String, PhoneFormat, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat(string?, Dixor.Validation.Phone.PhoneFormat, out string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat(String, Dixor.Validation.Phone.PhoneFormat, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.TryFormat(string?, PhoneFormat, out string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.TryFormat(String, PhoneFormat, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat*
+  name: TryFormat
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryFormat_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat
+  nameWithType: IPhoneValidatorService.TryFormat
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryGetInfo_System_String_Dixor_Validation_Phone_PhoneInfo__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo(string?, out Dixor.Validation.Phone.PhoneInfo?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo(String, Dixor.Validation.Phone.PhoneInfo, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo
+  nameWithType: IPhoneValidatorService.TryGetInfo
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryNormalize(string?, out string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryNormalize_System_String_System_String__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryNormalize(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize(string?, out string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.TryNormalize(string?, out string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.TryNormalize(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryNormalize_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize
+  nameWithType: IPhoneValidatorService.TryNormalize
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Validate(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Validate_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Validate(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: IPhoneValidatorService.Validate(string?, PhoneValidationOptions?)
+  nameWithType.vb: IPhoneValidatorService.Validate(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html#Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Validate_
+  commentId: Overload:Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate
+  nameWithType: IPhoneValidatorService.Validate
+- uid: Dixor.Validation.Phone.PhoneFormat
+  name: PhoneFormat
+  href: api/Dixor.Validation.Phone.PhoneFormat.html
+  commentId: T:Dixor.Validation.Phone.PhoneFormat
+  fullName: Dixor.Validation.Phone.PhoneFormat
+  nameWithType: PhoneFormat
+- uid: Dixor.Validation.Phone.PhoneFormat.E164
+  name: E164
+  href: api/Dixor.Validation.Phone.PhoneFormat.html#Dixor_Validation_Phone_PhoneFormat_E164
+  commentId: F:Dixor.Validation.Phone.PhoneFormat.E164
+  fullName: Dixor.Validation.Phone.PhoneFormat.E164
+  nameWithType: PhoneFormat.E164
+- uid: Dixor.Validation.Phone.PhoneFormat.International
+  name: International
+  href: api/Dixor.Validation.Phone.PhoneFormat.html#Dixor_Validation_Phone_PhoneFormat_International
+  commentId: F:Dixor.Validation.Phone.PhoneFormat.International
+  fullName: Dixor.Validation.Phone.PhoneFormat.International
+  nameWithType: PhoneFormat.International
+- uid: Dixor.Validation.Phone.PhoneFormat.National
+  name: National
+  href: api/Dixor.Validation.Phone.PhoneFormat.html#Dixor_Validation_Phone_PhoneFormat_National
+  commentId: F:Dixor.Validation.Phone.PhoneFormat.National
+  fullName: Dixor.Validation.Phone.PhoneFormat.National
+  nameWithType: PhoneFormat.National
+- uid: Dixor.Validation.Phone.PhoneFormat.Rfc3966
+  name: Rfc3966
+  href: api/Dixor.Validation.Phone.PhoneFormat.html#Dixor_Validation_Phone_PhoneFormat_Rfc3966
+  commentId: F:Dixor.Validation.Phone.PhoneFormat.Rfc3966
+  fullName: Dixor.Validation.Phone.PhoneFormat.Rfc3966
+  nameWithType: PhoneFormat.Rfc3966
+- uid: Dixor.Validation.Phone.PhoneInfo
+  name: PhoneInfo
+  href: api/Dixor.Validation.Phone.PhoneInfo.html
+  commentId: T:Dixor.Validation.Phone.PhoneInfo
+  fullName: Dixor.Validation.Phone.PhoneInfo
+  nameWithType: PhoneInfo
+- uid: Dixor.Validation.Phone.PhoneInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.CountryInfo,System.String,Dixor.Validation.Phone.PhoneNumberType,System.Boolean,System.String,System.String,System.String,System.String)
+  name: PhoneInfo(string, string, string, string, string?, CountryInfo, string?, PhoneNumberType, bool, string, string, string, string)
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo__ctor_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_Phone_CountryInfo_System_String_Dixor_Validation_Phone_PhoneNumberType_System_Boolean_System_String_System_String_System_String_System_String_
+  commentId: M:Dixor.Validation.Phone.PhoneInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.CountryInfo,System.String,Dixor.Validation.Phone.PhoneNumberType,System.Boolean,System.String,System.String,System.String,System.String)
+  name.vb: New(String, String, String, String, String, CountryInfo, String, PhoneNumberType, Boolean, String, String, String, String)
+  fullName: Dixor.Validation.Phone.PhoneInfo.PhoneInfo(string, string, string, string, string?, Dixor.Validation.Phone.CountryInfo, string?, Dixor.Validation.Phone.PhoneNumberType, bool, string, string, string, string)
+  fullName.vb: Dixor.Validation.Phone.PhoneInfo.New(String, String, String, String, String, Dixor.Validation.Phone.CountryInfo, String, Dixor.Validation.Phone.PhoneNumberType, Boolean, String, String, String, String)
+  nameWithType: PhoneInfo.PhoneInfo(string, string, string, string, string?, CountryInfo, string?, PhoneNumberType, bool, string, string, string, string)
+  nameWithType.vb: PhoneInfo.New(String, String, String, String, String, CountryInfo, String, PhoneNumberType, Boolean, String, String, String, String)
+- uid: Dixor.Validation.Phone.PhoneInfo.#ctor*
+  name: PhoneInfo
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo__ctor_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Phone.PhoneInfo.PhoneInfo
+  fullName.vb: Dixor.Validation.Phone.PhoneInfo.New
+  nameWithType: PhoneInfo.PhoneInfo
+  nameWithType.vb: PhoneInfo.New
+- uid: Dixor.Validation.Phone.PhoneInfo.AreaCode
+  name: AreaCode
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_AreaCode
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.AreaCode
+  fullName: Dixor.Validation.Phone.PhoneInfo.AreaCode
+  nameWithType: PhoneInfo.AreaCode
+- uid: Dixor.Validation.Phone.PhoneInfo.AreaCode*
+  name: AreaCode
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_AreaCode_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.AreaCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.AreaCode
+  nameWithType: PhoneInfo.AreaCode
+- uid: Dixor.Validation.Phone.PhoneInfo.Country
+  name: Country
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Country
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.Country
+  fullName: Dixor.Validation.Phone.PhoneInfo.Country
+  nameWithType: PhoneInfo.Country
+- uid: Dixor.Validation.Phone.PhoneInfo.Country*
+  name: Country
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Country_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.Country
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.Country
+  nameWithType: PhoneInfo.Country
+- uid: Dixor.Validation.Phone.PhoneInfo.CountryCallingCode
+  name: CountryCallingCode
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_CountryCallingCode
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.CountryCallingCode
+  fullName: Dixor.Validation.Phone.PhoneInfo.CountryCallingCode
+  nameWithType: PhoneInfo.CountryCallingCode
+- uid: Dixor.Validation.Phone.PhoneInfo.CountryCallingCode*
+  name: CountryCallingCode
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_CountryCallingCode_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.CountryCallingCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.CountryCallingCode
+  nameWithType: PhoneInfo.CountryCallingCode
+- uid: Dixor.Validation.Phone.PhoneInfo.Digits
+  name: Digits
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Digits
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.Digits
+  fullName: Dixor.Validation.Phone.PhoneInfo.Digits
+  nameWithType: PhoneInfo.Digits
+- uid: Dixor.Validation.Phone.PhoneInfo.Digits*
+  name: Digits
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Digits_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.Digits
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.Digits
+  nameWithType: PhoneInfo.Digits
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedE164
+  name: FormattedE164
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedE164
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.FormattedE164
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedE164
+  nameWithType: PhoneInfo.FormattedE164
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedE164*
+  name: FormattedE164
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedE164_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.FormattedE164
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedE164
+  nameWithType: PhoneInfo.FormattedE164
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedInternational
+  name: FormattedInternational
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedInternational
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.FormattedInternational
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedInternational
+  nameWithType: PhoneInfo.FormattedInternational
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedInternational*
+  name: FormattedInternational
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedInternational_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.FormattedInternational
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedInternational
+  nameWithType: PhoneInfo.FormattedInternational
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedNational
+  name: FormattedNational
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedNational
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.FormattedNational
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedNational
+  nameWithType: PhoneInfo.FormattedNational
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedNational*
+  name: FormattedNational
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedNational_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.FormattedNational
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedNational
+  nameWithType: PhoneInfo.FormattedNational
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966
+  name: FormattedRfc3966
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedRfc3966
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966
+  nameWithType: PhoneInfo.FormattedRfc3966
+- uid: Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966*
+  name: FormattedRfc3966
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_FormattedRfc3966_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.FormattedRfc3966
+  nameWithType: PhoneInfo.FormattedRfc3966
+- uid: Dixor.Validation.Phone.PhoneInfo.IsValid
+  name: IsValid
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_IsValid
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.IsValid
+  fullName: Dixor.Validation.Phone.PhoneInfo.IsValid
+  nameWithType: PhoneInfo.IsValid
+- uid: Dixor.Validation.Phone.PhoneInfo.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_IsValid_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.IsValid
+  nameWithType: PhoneInfo.IsValid
+- uid: Dixor.Validation.Phone.PhoneInfo.NationalNumber
+  name: NationalNumber
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_NationalNumber
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.NationalNumber
+  fullName: Dixor.Validation.Phone.PhoneInfo.NationalNumber
+  nameWithType: PhoneInfo.NationalNumber
+- uid: Dixor.Validation.Phone.PhoneInfo.NationalNumber*
+  name: NationalNumber
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_NationalNumber_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.NationalNumber
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.NationalNumber
+  nameWithType: PhoneInfo.NationalNumber
+- uid: Dixor.Validation.Phone.PhoneInfo.NumberType
+  name: NumberType
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_NumberType
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.NumberType
+  fullName: Dixor.Validation.Phone.PhoneInfo.NumberType
+  nameWithType: PhoneInfo.NumberType
+- uid: Dixor.Validation.Phone.PhoneInfo.NumberType*
+  name: NumberType
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_NumberType_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.NumberType
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.NumberType
+  nameWithType: PhoneInfo.NumberType
+- uid: Dixor.Validation.Phone.PhoneInfo.RawInput
+  name: RawInput
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_RawInput
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.RawInput
+  fullName: Dixor.Validation.Phone.PhoneInfo.RawInput
+  nameWithType: PhoneInfo.RawInput
+- uid: Dixor.Validation.Phone.PhoneInfo.RawInput*
+  name: RawInput
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_RawInput_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.RawInput
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.RawInput
+  nameWithType: PhoneInfo.RawInput
+- uid: Dixor.Validation.Phone.PhoneInfo.Region
+  name: Region
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Region
+  commentId: P:Dixor.Validation.Phone.PhoneInfo.Region
+  fullName: Dixor.Validation.Phone.PhoneInfo.Region
+  nameWithType: PhoneInfo.Region
+- uid: Dixor.Validation.Phone.PhoneInfo.Region*
+  name: Region
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_Region_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.Region
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.Region
+  nameWithType: PhoneInfo.Region
+- uid: Dixor.Validation.Phone.PhoneInfo.ToString
+  name: ToString()
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_ToString
+  commentId: M:Dixor.Validation.Phone.PhoneInfo.ToString
+  fullName: Dixor.Validation.Phone.PhoneInfo.ToString()
+  nameWithType: PhoneInfo.ToString()
+- uid: Dixor.Validation.Phone.PhoneInfo.ToString*
+  name: ToString
+  href: api/Dixor.Validation.Phone.PhoneInfo.html#Dixor_Validation_Phone_PhoneInfo_ToString_
+  commentId: Overload:Dixor.Validation.Phone.PhoneInfo.ToString
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneInfo.ToString
+  nameWithType: PhoneInfo.ToString
+- uid: Dixor.Validation.Phone.PhoneNumberType
+  name: PhoneNumberType
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html
+  commentId: T:Dixor.Validation.Phone.PhoneNumberType
+  fullName: Dixor.Validation.Phone.PhoneNumberType
+  nameWithType: PhoneNumberType
+- uid: Dixor.Validation.Phone.PhoneNumberType.Emergency
+  name: Emergency
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Emergency
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Emergency
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Emergency
+  nameWithType: PhoneNumberType.Emergency
+- uid: Dixor.Validation.Phone.PhoneNumberType.FixedLine
+  name: FixedLine
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_FixedLine
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.FixedLine
+  fullName: Dixor.Validation.Phone.PhoneNumberType.FixedLine
+  nameWithType: PhoneNumberType.FixedLine
+- uid: Dixor.Validation.Phone.PhoneNumberType.Mobile
+  name: Mobile
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Mobile
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Mobile
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Mobile
+  nameWithType: PhoneNumberType.Mobile
+- uid: Dixor.Validation.Phone.PhoneNumberType.Pager
+  name: Pager
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Pager
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Pager
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Pager
+  nameWithType: PhoneNumberType.Pager
+- uid: Dixor.Validation.Phone.PhoneNumberType.PersonalNumber
+  name: PersonalNumber
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_PersonalNumber
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.PersonalNumber
+  fullName: Dixor.Validation.Phone.PhoneNumberType.PersonalNumber
+  nameWithType: PhoneNumberType.PersonalNumber
+- uid: Dixor.Validation.Phone.PhoneNumberType.PremiumRate
+  name: PremiumRate
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_PremiumRate
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.PremiumRate
+  fullName: Dixor.Validation.Phone.PhoneNumberType.PremiumRate
+  nameWithType: PhoneNumberType.PremiumRate
+- uid: Dixor.Validation.Phone.PhoneNumberType.SharedCost
+  name: SharedCost
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_SharedCost
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.SharedCost
+  fullName: Dixor.Validation.Phone.PhoneNumberType.SharedCost
+  nameWithType: PhoneNumberType.SharedCost
+- uid: Dixor.Validation.Phone.PhoneNumberType.TollFree
+  name: TollFree
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_TollFree
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.TollFree
+  fullName: Dixor.Validation.Phone.PhoneNumberType.TollFree
+  nameWithType: PhoneNumberType.TollFree
+- uid: Dixor.Validation.Phone.PhoneNumberType.Uan
+  name: Uan
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Uan
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Uan
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Uan
+  nameWithType: PhoneNumberType.Uan
+- uid: Dixor.Validation.Phone.PhoneNumberType.Unknown
+  name: Unknown
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Unknown
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Unknown
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Unknown
+  nameWithType: PhoneNumberType.Unknown
+- uid: Dixor.Validation.Phone.PhoneNumberType.Voip
+  name: Voip
+  href: api/Dixor.Validation.Phone.PhoneNumberType.html#Dixor_Validation_Phone_PhoneNumberType_Voip
+  commentId: F:Dixor.Validation.Phone.PhoneNumberType.Voip
+  fullName: Dixor.Validation.Phone.PhoneNumberType.Voip
+  nameWithType: PhoneNumberType.Voip
+- uid: Dixor.Validation.Phone.PhoneValidationError
+  name: PhoneValidationError
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html
+  commentId: T:Dixor.Validation.Phone.PhoneValidationError
+  fullName: Dixor.Validation.Phone.PhoneValidationError
+  nameWithType: PhoneValidationError
+- uid: Dixor.Validation.Phone.PhoneValidationError.CountryNotAllowed
+  name: CountryNotAllowed
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_CountryNotAllowed
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.CountryNotAllowed
+  fullName: Dixor.Validation.Phone.PhoneValidationError.CountryNotAllowed
+  nameWithType: PhoneValidationError.CountryNotAllowed
+- uid: Dixor.Validation.Phone.PhoneValidationError.Empty
+  name: Empty
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_Empty
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.Empty
+  fullName: Dixor.Validation.Phone.PhoneValidationError.Empty
+  nameWithType: PhoneValidationError.Empty
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidAreaCode
+  name: InvalidAreaCode
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidAreaCode
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidAreaCode
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidAreaCode
+  nameWithType: PhoneValidationError.InvalidAreaCode
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidCharacters
+  name: InvalidCharacters
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidCharacters
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidCharacters
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidCharacters
+  nameWithType: PhoneValidationError.InvalidCharacters
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidCountryCode
+  name: InvalidCountryCode
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidCountryCode
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidCountryCode
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidCountryCode
+  nameWithType: PhoneValidationError.InvalidCountryCode
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidFormat
+  name: InvalidFormat
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidFormat
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidFormat
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidFormat
+  nameWithType: PhoneValidationError.InvalidFormat
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidLengthForCountry
+  name: InvalidLengthForCountry
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidLengthForCountry
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidLengthForCountry
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidLengthForCountry
+  nameWithType: PhoneValidationError.InvalidLengthForCountry
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidNationalNumber
+  name: InvalidNationalNumber
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidNationalNumber
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidNationalNumber
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidNationalNumber
+  nameWithType: PhoneValidationError.InvalidNationalNumber
+- uid: Dixor.Validation.Phone.PhoneValidationError.InvalidTrunkPrefix
+  name: InvalidTrunkPrefix
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_InvalidTrunkPrefix
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.InvalidTrunkPrefix
+  fullName: Dixor.Validation.Phone.PhoneValidationError.InvalidTrunkPrefix
+  nameWithType: PhoneValidationError.InvalidTrunkPrefix
+- uid: Dixor.Validation.Phone.PhoneValidationError.MissingCountryCode
+  name: MissingCountryCode
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_MissingCountryCode
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.MissingCountryCode
+  fullName: Dixor.Validation.Phone.PhoneValidationError.MissingCountryCode
+  nameWithType: PhoneValidationError.MissingCountryCode
+- uid: Dixor.Validation.Phone.PhoneValidationError.None
+  name: None
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_None
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.None
+  fullName: Dixor.Validation.Phone.PhoneValidationError.None
+  nameWithType: PhoneValidationError.None
+- uid: Dixor.Validation.Phone.PhoneValidationError.Null
+  name: "Null"
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_Null
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.Null
+  fullName: Dixor.Validation.Phone.PhoneValidationError.Null
+  nameWithType: PhoneValidationError.Null
+- uid: Dixor.Validation.Phone.PhoneValidationError.NumberTooLong
+  name: NumberTooLong
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_NumberTooLong
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.NumberTooLong
+  fullName: Dixor.Validation.Phone.PhoneValidationError.NumberTooLong
+  nameWithType: PhoneValidationError.NumberTooLong
+- uid: Dixor.Validation.Phone.PhoneValidationError.NumberTooShort
+  name: NumberTooShort
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_NumberTooShort
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.NumberTooShort
+  fullName: Dixor.Validation.Phone.PhoneValidationError.NumberTooShort
+  nameWithType: PhoneValidationError.NumberTooShort
+- uid: Dixor.Validation.Phone.PhoneValidationError.WhiteSpace
+  name: WhiteSpace
+  href: api/Dixor.Validation.Phone.PhoneValidationError.html#Dixor_Validation_Phone_PhoneValidationError_WhiteSpace
+  commentId: F:Dixor.Validation.Phone.PhoneValidationError.WhiteSpace
+  fullName: Dixor.Validation.Phone.PhoneValidationError.WhiteSpace
+  nameWithType: PhoneValidationError.WhiteSpace
+- uid: Dixor.Validation.Phone.PhoneValidationOptions
+  name: PhoneValidationOptions
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html
+  commentId: T:Dixor.Validation.Phone.PhoneValidationOptions
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions
+  nameWithType: PhoneValidationOptions
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters
+  name: AllowSpecialCharacters
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_AllowSpecialCharacters
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters
+  nameWithType: PhoneValidationOptions.AllowSpecialCharacters
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters*
+  name: AllowSpecialCharacters
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_AllowSpecialCharacters_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters
+  nameWithType: PhoneValidationOptions.AllowSpecialCharacters
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos
+  name: AllowedCountryIsos
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_AllowedCountryIsos
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos
+  nameWithType: PhoneValidationOptions.AllowedCountryIsos
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos*
+  name: AllowedCountryIsos
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_AllowedCountryIsos_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos
+  nameWithType: PhoneValidationOptions.AllowedCountryIsos
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos
+  name: BlockedCountryIsos
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_BlockedCountryIsos
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos
+  nameWithType: PhoneValidationOptions.BlockedCountryIsos
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos*
+  name: BlockedCountryIsos
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_BlockedCountryIsos_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos
+  nameWithType: PhoneValidationOptions.BlockedCountryIsos
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.Default
+  name: Default
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_Default
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.Default
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.Default
+  nameWithType: PhoneValidationOptions.Default
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.Default*
+  name: Default
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_Default_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.Default
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.Default
+  nameWithType: PhoneValidationOptions.Default
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso
+  name: DefaultCountryIso
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_DefaultCountryIso
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso
+  nameWithType: PhoneValidationOptions.DefaultCountryIso
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso*
+  name: DefaultCountryIso
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_DefaultCountryIso_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso
+  nameWithType: PhoneValidationOptions.DefaultCountryIso
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider
+  name: LookupProvider
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_LookupProvider
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider
+  nameWithType: PhoneValidationOptions.LookupProvider
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider*
+  name: LookupProvider
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_LookupProvider_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider
+  nameWithType: PhoneValidationOptions.LookupProvider
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode
+  name: RequireCountryCode
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_RequireCountryCode
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode
+  nameWithType: PhoneValidationOptions.RequireCountryCode
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode*
+  name: RequireCountryCode
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_RequireCountryCode_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode
+  nameWithType: PhoneValidationOptions.RequireCountryCode
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.StrictLength
+  name: StrictLength
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_StrictLength
+  commentId: P:Dixor.Validation.Phone.PhoneValidationOptions.StrictLength
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.StrictLength
+  nameWithType: PhoneValidationOptions.StrictLength
+- uid: Dixor.Validation.Phone.PhoneValidationOptions.StrictLength*
+  name: StrictLength
+  href: api/Dixor.Validation.Phone.PhoneValidationOptions.html#Dixor_Validation_Phone_PhoneValidationOptions_StrictLength_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidationOptions.StrictLength
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidationOptions.StrictLength
+  nameWithType: PhoneValidationOptions.StrictLength
+- uid: Dixor.Validation.Phone.PhoneValidator
+  name: PhoneValidator
+  href: api/Dixor.Validation.Phone.PhoneValidator.html
+  commentId: T:Dixor.Validation.Phone.PhoneValidator
+  fullName: Dixor.Validation.Phone.PhoneValidator
+  nameWithType: PhoneValidator
+- uid: Dixor.Validation.Phone.PhoneValidator.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: AreEqual(string?, string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_AreEqual_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: AreEqual(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.AreEqual(string?, string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.AreEqual(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.AreEqual(string?, string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.AreEqual(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.AreEqual
+  nameWithType: PhoneValidator.AreEqual
+- uid: Dixor.Validation.Phone.PhoneValidator.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Format(string?, PhoneFormat, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Format_System_String_Dixor_Validation_Phone_PhoneFormat_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Format(String, PhoneFormat, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.Format(string?, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.Format(String, Dixor.Validation.Phone.PhoneFormat, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.Format(string?, PhoneFormat, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.Format(String, PhoneFormat, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.Format*
+  name: Format
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Format_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.Format
+  nameWithType: PhoneValidator.Format
+- uid: Dixor.Validation.Phone.PhoneValidator.GetCountry(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetCountry(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetCountry_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetCountry(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetCountry(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetCountry(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetCountry(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetCountry(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetCountry(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetCountry*
+  name: GetCountry
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetCountry_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetCountry
+  nameWithType: PhoneValidator.GetCountry
+- uid: Dixor.Validation.Phone.PhoneValidator.GetCountryCode(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetCountryCode(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetCountryCode_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetCountryCode(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetCountryCode(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetCountryCode(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetCountryCode(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetCountryCode(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetCountryCode(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetCountryCode*
+  name: GetCountryCode
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetCountryCode_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetCountryCode
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetCountryCode
+  nameWithType: PhoneValidator.GetCountryCode
+- uid: Dixor.Validation.Phone.PhoneValidator.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetInfo(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetInfo_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetInfo(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetInfo(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetInfo(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetInfo(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetInfo(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetInfo
+  nameWithType: PhoneValidator.GetInfo
+- uid: Dixor.Validation.Phone.PhoneValidator.GetNationalNumber(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetNationalNumber(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetNationalNumber_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetNationalNumber(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetNationalNumber(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetNationalNumber(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetNationalNumber(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetNationalNumber(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetNationalNumber(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetNationalNumber*
+  name: GetNationalNumber
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetNationalNumber_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetNationalNumber
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetNationalNumber
+  nameWithType: PhoneValidator.GetNationalNumber
+- uid: Dixor.Validation.Phone.PhoneValidator.GetNumberType(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetNumberType(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetNumberType_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetNumberType(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetNumberType(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetNumberType(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetNumberType(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetNumberType(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetNumberType(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetNumberType*
+  name: GetNumberType
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetNumberType_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetNumberType
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetNumberType
+  nameWithType: PhoneValidator.GetNumberType
+- uid: Dixor.Validation.Phone.PhoneValidator.GetRegion(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: GetRegion(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetRegion_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetRegion(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: GetRegion(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetRegion(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.GetRegion(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.GetRegion(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.GetRegion(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.GetRegion*
+  name: GetRegion
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetRegion_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetRegion
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetRegion
+  nameWithType: PhoneValidator.GetRegion
+- uid: Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries
+  name: GetSupportedCountries()
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetSupportedCountries
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries()
+  nameWithType: PhoneValidator.GetSupportedCountries()
+- uid: Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries*
+  name: GetSupportedCountries
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_GetSupportedCountries_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.GetSupportedCountries
+  nameWithType: PhoneValidator.GetSupportedCountries
+- uid: Dixor.Validation.Phone.PhoneValidator.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: IsValid(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_IsValid_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: IsValid(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.IsValid(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.IsValid(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.IsValid(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.IsValid(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_IsValid_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.IsValid
+  nameWithType: PhoneValidator.IsValid
+- uid: Dixor.Validation.Phone.PhoneValidator.IsValidForCountry(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: IsValidForCountry(string?, string, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_IsValidForCountry_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.IsValidForCountry(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: IsValidForCountry(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.IsValidForCountry(string?, string, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.IsValidForCountry(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.IsValidForCountry(string?, string, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.IsValidForCountry(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.IsValidForCountry*
+  name: IsValidForCountry
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_IsValidForCountry_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.IsValidForCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.IsValidForCountry
+  nameWithType: PhoneValidator.IsValidForCountry
+- uid: Dixor.Validation.Phone.PhoneValidator.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name: LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_LookupAsync_System_String_Dixor_Validation_Phone_PhoneValidationOptions_System_Threading_CancellationToken_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)
+  name.vb: LookupAsync(String, PhoneValidationOptions, CancellationToken)
+  fullName: Dixor.Validation.Phone.PhoneValidator.LookupAsync(string?, Dixor.Validation.Phone.PhoneValidationOptions?, System.Threading.CancellationToken)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.LookupAsync(String, Dixor.Validation.Phone.PhoneValidationOptions, System.Threading.CancellationToken)
+  nameWithType: PhoneValidator.LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  nameWithType.vb: PhoneValidator.LookupAsync(String, PhoneValidationOptions, CancellationToken)
+- uid: Dixor.Validation.Phone.PhoneValidator.LookupAsync*
+  name: LookupAsync
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_LookupAsync_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.LookupAsync
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.LookupAsync
+  nameWithType: PhoneValidator.LookupAsync
+- uid: Dixor.Validation.Phone.PhoneValidator.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Normalize(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Normalize_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Normalize(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.Normalize(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.Normalize(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.Normalize(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.Normalize(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Normalize_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.Normalize
+  nameWithType: PhoneValidator.Normalize
+- uid: Dixor.Validation.Phone.PhoneValidator.TryFormat(System.String,Dixor.Validation.Phone.PhoneFormat,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryFormat(string?, PhoneFormat, out string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryFormat_System_String_Dixor_Validation_Phone_PhoneFormat_System_String__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.TryFormat(System.String,Dixor.Validation.Phone.PhoneFormat,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryFormat(String, PhoneFormat, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryFormat(string?, Dixor.Validation.Phone.PhoneFormat, out string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.TryFormat(String, Dixor.Validation.Phone.PhoneFormat, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.TryFormat(string?, PhoneFormat, out string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.TryFormat(String, PhoneFormat, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.TryFormat*
+  name: TryFormat
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryFormat_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.TryFormat
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryFormat
+  nameWithType: PhoneValidator.TryFormat
+- uid: Dixor.Validation.Phone.PhoneValidator.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryGetInfo_System_String_Dixor_Validation_Phone_PhoneInfo__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryGetInfo(string?, out Dixor.Validation.Phone.PhoneInfo?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.TryGetInfo(String, Dixor.Validation.Phone.PhoneInfo, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.TryGetInfo(String, PhoneInfo, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryGetInfo
+  nameWithType: PhoneValidator.TryGetInfo
+- uid: Dixor.Validation.Phone.PhoneValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: TryNormalize(string?, out string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryNormalize_System_String_System_String__Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: TryNormalize(String, String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryNormalize(string?, out string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.TryNormalize(String, String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.TryNormalize(string?, out string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.TryNormalize(String, String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.TryNormalize
+  nameWithType: PhoneValidator.TryNormalize
+- uid: Dixor.Validation.Phone.PhoneValidator.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name: Validate(string?, PhoneValidationOptions?)
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Validate_System_String_Dixor_Validation_Phone_PhoneValidationOptions_
+  commentId: M:Dixor.Validation.Phone.PhoneValidator.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)
+  name.vb: Validate(String, PhoneValidationOptions)
+  fullName: Dixor.Validation.Phone.PhoneValidator.Validate(string?, Dixor.Validation.Phone.PhoneValidationOptions?)
+  fullName.vb: Dixor.Validation.Phone.PhoneValidator.Validate(String, Dixor.Validation.Phone.PhoneValidationOptions)
+  nameWithType: PhoneValidator.Validate(string?, PhoneValidationOptions?)
+  nameWithType.vb: PhoneValidator.Validate(String, PhoneValidationOptions)
+- uid: Dixor.Validation.Phone.PhoneValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Phone.PhoneValidator.html#Dixor_Validation_Phone_PhoneValidator_Validate_
+  commentId: Overload:Dixor.Validation.Phone.PhoneValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Phone.PhoneValidator.Validate
+  nameWithType: PhoneValidator.Validate
 - uid: Dixor.Validation.ValidationResult`1
   name: ValidationResult<TError>
   href: api/Dixor.Validation.ValidationResult-1.html

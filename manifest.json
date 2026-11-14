@@ -229,6 +229,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Contact.ContactValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Contact.ContactValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Contact.ContactValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Contact.ContactValidator.yml\" sourcestartlinenumber=\"1\">Provides alias methods for contact and phone number validation, formatting, and intelligence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Contact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Contact.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Contact",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.Email.EmailInfo.yml",
       "output": {
         ".html": {
@@ -323,6 +351,230 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Dixor.Validation.Email",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.ContactLookupResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.ContactLookupResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.ContactLookupResult",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.ContactLookupResult.yml\" sourcestartlinenumber=\"1\">Represents the result of a contact intelligence lookup operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.CountryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.CountryInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.CountryInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.CountryInfo.yml\" sourcestartlinenumber=\"1\">Represents international country and dialing metadata per ITU-T E.164 and ISO 3166-1 standards.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneCountryMetadataProvider.yml\" sourcestartlinenumber=\"1\">Provides access to international dialing and country metadata per ITU-T E.164 and ISO 3166-1.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneLookupProvider.yml\" sourcestartlinenumber=\"1\">Defines an extensible provider for contact and phone intelligence lookups.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneNormalizer.yml\" sourcestartlinenumber=\"1\">Provides methods for formatting and canonically normalizing phone numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneParser.yml\" sourcestartlinenumber=\"1\">Provides methods for parsing and validating raw phone number strings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneRegionDetector.yml\" sourcestartlinenumber=\"1\">Detects geographic regions (states, provinces, circles) and telephone line classifications from national numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces.IPhoneValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.yml\" sourcestartlinenumber=\"1\">Defines the orchestrating service responsible for phone number validation, parsing, formatting, and intelligence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneFormat",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneFormat.yml\" sourcestartlinenumber=\"1\">Specifies the formatting style applied to a telephone number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneInfo.yml\" sourcestartlinenumber=\"1\">Represents structured metadata and breakdown for a parsed phone number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneNumberType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneNumberType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneNumberType",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneNumberType.yml\" sourcestartlinenumber=\"1\">Specifies the classification type of a phone number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneValidationError.yml\" sourcestartlinenumber=\"1\">Represents the reason why phone number validation succeeded or failed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures behavior for phone number validation, parsing, and formatting operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.PhoneValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.PhoneValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone.PhoneValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Phone.PhoneValidator.yml\" sourcestartlinenumber=\"1\">Provides methods for validating, parsing, formatting, and inspecting telephone numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Phone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Phone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Phone",
       "Summary": null
     },
     {
@@ -875,6 +1127,76 @@
       "output": {
         ".html": {
           "relative_path": "packages/validation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/ContactValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/ContactValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/IntelligenceLookup.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/IntelligenceLookup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/PhoneInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/PhoneInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/PhoneValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/PhoneValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/PhoneValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/PhoneValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/PhoneValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/PhoneValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/phone/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/phone/overview.html"
         }
       },
       "version": ""

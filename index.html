@@ -492,13 +492,14 @@ Console.WriteLine($&quot;Plus Tag   : {info.HasPlusAddressing}&quot;);
 </code></pre>
 <hr>
 <h2 id="dixorvalidation---quick-start">Dixor.Validation - Quick Start</h2>
+<h3 id="email-validation">Email Validation</h3>
 <pre><code class="lang-csharp">using System;
 using Dixor.Validation;
 using Dixor.Validation.Email;
 
 public class RegistrationService
 {
-    public void ProcessRegistration(string userEmailInput)
+    public void ProcessEmail(string userEmailInput)
     {
         ValidationResult&lt;EmailValidationError&gt; result = EmailValidator.Validate(
             userEmailInput, 
@@ -516,6 +517,38 @@ public class RegistrationService
     }
 }
 </code></pre>
+<h3 id="phone--contact-validation">Phone &amp; Contact Validation</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.Phone;
+using Dixor.Validation.Contact;
+
+public class ContactService
+{
+    public void ProcessPhone(string rawPhoneInput)
+    {
+        // Simple boolean check
+        if (!PhoneValidator.IsValid(rawPhoneInput))
+        {
+            Console.WriteLine(&quot;[Error] Invalid telephone number.&quot;);
+            return;
+        }
+
+        // Comprehensive parsed intelligence (ITU E.164, country, region, line type)
+        PhoneInfo info = PhoneValidator.GetInfo(rawPhoneInput);
+        Console.WriteLine($&quot;Country: {info.Country.Name} ({info.Country.Iso2})&quot;);
+        Console.WriteLine($&quot;Calling Code: {info.CountryCallingCode}&quot;);
+        Console.WriteLine($&quot;National Number: {info.NationalNumber}&quot;);
+        Console.WriteLine($&quot;Region / State: {info.Region}&quot;);
+        Console.WriteLine($&quot;Line Type: {info.NumberType}&quot;);
+        Console.WriteLine($&quot;Canonical E.164: {info.FormattedE164}&quot;);
+        Console.WriteLine($&quot;Domestic National: {info.FormattedNational}&quot;);
+
+        // Or use ContactValidator alias
+        string e164 = ContactValidator.Normalize(rawPhoneInput);
+    }
+}
+</code></pre>
 <hr>
 <h1 id="documentation-structure">Documentation Structure</h1>
 <p>When viewed on our dedicated DocFX web portal, ecosystem documentation is organized into clear domains:</p>
@@ -530,7 +563,8 @@ public class RegistrationService
 │   ├── analyzers/
 │   └── internals/
 └── validation/
-    └── email/
+    ├── email/
+    └── phone/
 
 </code></pre>
 <hr>

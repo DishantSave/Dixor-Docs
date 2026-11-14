@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IPhoneValidatorService | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IPhoneValidatorService | Dixor Documentation ">
+      
+      <meta name="description" content="Defines the orchestrating service responsible for phone number validation, parsing, formatting, and intelligence.">
+      <link rel="icon" href="../images/icon-192.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/new/main/apiSpec/new?filename=Dixor_Validation_Phone_Interfaces_IPhoneValidatorService.md&amp;value=---%0Auid%3A%20Dixor.Validation.Phone.Interfaces.IPhoneValidatorService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService">
+
+
+
+  <h1 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService" class="text-break">
+Interface IPhoneValidatorService  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">Dixor</span>.<a class="xref" href="Dixor.Validation.html">Validation</a>.<a class="xref" href="Dixor.Validation.Phone.html">Phone</a>.<a class="xref" href="Dixor.Validation.Phone.Interfaces.html">Interfaces</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Dixor.Validation.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines the orchestrating service responsible for phone number validation, parsing, formatting, and intelligence.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPhoneValidatorService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_AreEqual_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_AreEqual_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.AreEqual(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  AreEqual(string?, string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two phone numbers are equal after canonical normalization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AreEqual(string? first, string? second, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>first</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Format_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Format_System_String_Dixor_Validation_Phone_PhoneFormat_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Format(System.String,Dixor.Validation.Phone.PhoneFormat,Dixor.Validation.Phone.PhoneValidationOptions)">
+  Format(string?, PhoneFormat, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats the phone number according to the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Format(string? phone, PhoneFormat format, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="Dixor.Validation.Phone.PhoneFormat.html">PhoneFormat</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountry_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountry_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountry(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetCountry(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the resolved country metadata for the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CountryInfo GetCountry(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Phone.CountryInfo.html">CountryInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountryCode_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetCountryCode_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetCountryCode(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetCountryCode(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the calling code of the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCountryCode(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetInfo_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetInfo_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetInfo(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetInfo(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves comprehensive parsed information for the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PhoneInfo GetInfo(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Phone.PhoneInfo.html">PhoneInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the phone number fails validation.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNationalNumber_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNationalNumber_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNationalNumber(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetNationalNumber(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the national subscriber number (excluding country calling code and trunk prefix).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetNationalNumber(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNumberType_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetNumberType_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetNumberType(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetNumberType(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Classifies the line type (Mobile, FixedLine, TollFree, etc.) for the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PhoneNumberType GetNumberType(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Phone.PhoneNumberType.html">PhoneNumberType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetRegion_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetRegion_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetRegion(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  GetRegion(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the state, province, or telecom circle for the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? GetRegion(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetSupportedCountries_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_GetSupportedCountries" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.GetSupportedCountries">
+  GetSupportedCountries()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all supported country metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;CountryInfo&gt; GetSupportedCountries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Dixor.Validation.Phone.CountryInfo.html">CountryInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValid_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValid_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValid(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  IsValid(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified phone number is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValid(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValidForCountry_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_IsValidForCountry_System_String_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.IsValidForCountry(System.String,System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  IsValidForCountry(string?, string, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the phone number belongs to the specified country calling code or ISO code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValidForCountry(string? phone, string countryCodeOrIso, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCodeOrIso</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_LookupAsync_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_LookupAsync_System_String_Dixor_Validation_Phone_PhoneValidationOptions_System_Threading_CancellationToken_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.LookupAsync(System.String,Dixor.Validation.Phone.PhoneValidationOptions,System.Threading.CancellationToken)">
+  LookupAsync(string?, PhoneValidationOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an intelligence lookup (offline metadata or via custom provider).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ContactLookupResult&gt; LookupAsync(string? phone, PhoneValidationOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Dixor.Validation.Phone.ContactLookupResult.html">ContactLookupResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Normalize_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Normalize_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Normalize(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  Normalize(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes the phone number to canonical E.164 format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Normalize(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryFormat_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryFormat_System_String_Dixor_Validation_Phone_PhoneFormat_System_String__Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryFormat(System.String,Dixor.Validation.Phone.PhoneFormat,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)">
+  TryFormat(string?, PhoneFormat, out string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to format the phone number according to the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryFormat(string? phone, PhoneFormat format, out string? formatted, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="Dixor.Validation.Phone.PhoneFormat.html">PhoneFormat</a></dt>
+    <dd></dd>
+    <dt><code>formatted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryGetInfo_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryGetInfo_System_String_Dixor_Validation_Phone_PhoneInfo__Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryGetInfo(System.String,Dixor.Validation.Phone.PhoneInfo@,Dixor.Validation.Phone.PhoneValidationOptions)">
+  TryGetInfo(string?, out PhoneInfo?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to retrieve comprehensive parsed information for the specified phone number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetInfo(string? phone, out PhoneInfo? info, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.Phone.PhoneInfo.html">PhoneInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryNormalize_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_TryNormalize_System_String_System_String__Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.TryNormalize(System.String,System.String@,Dixor.Validation.Phone.PhoneValidationOptions)">
+  TryNormalize(string?, out string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to normalize the phone number to canonical E.164 format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryNormalize(string? phone, out string? normalized, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>normalized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Validate_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate*"></a>
+
+  <h3 id="Dixor_Validation_Phone_Interfaces_IPhoneValidatorService_Validate_System_String_Dixor_Validation_Phone_PhoneValidationOptions_" data-uid="Dixor.Validation.Phone.Interfaces.IPhoneValidatorService.Validate(System.String,Dixor.Validation.Phone.PhoneValidationOptions)">
+  Validate(string?, PhoneValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified phone number and returns detailed error information if invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValidationResult&lt;PhoneValidationError&gt; Validate(string? phone, PhoneValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Phone.PhoneValidationOptions.html">PhoneValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.Phone.PhoneValidationError.html">PhoneValidationError</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/Interfaces/IPhoneValidatorService.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
