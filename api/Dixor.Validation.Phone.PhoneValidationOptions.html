@@ -140,7 +140,7 @@ Class PhoneValidationOptions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_AllowSpecialCharacters" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.AllowSpecialCharacters">
   AllowSpecialCharacters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether standard formatting delimiters (spaces, hyphens, parentheses, and dots) are allowed in the raw input.
@@ -173,7 +173,7 @@ Defaults to <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_AllowedCountryIsos" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.AllowedCountryIsos">
   AllowedCountryIsos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets an optional whitelist of permitted two-letter ISO country codes (e.g., [&quot;US&quot;, &quot;CA&quot;]).
@@ -206,7 +206,7 @@ If non-empty, numbers belonging to other countries will fail validation with <a 
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_BlockedCountryIsos" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.BlockedCountryIsos">
   BlockedCountryIsos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets an optional blacklist of disallowed two-letter ISO country codes.
@@ -271,11 +271,12 @@ Numbers belonging to blocked countries will fail validation with <a class="xref"
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_DefaultCountryIso" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.DefaultCountryIso">
   DefaultCountryIso
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the fallback default two-letter ISO country code (e.g., &quot;US&quot;, &quot;IN&quot;, &quot;GB&quot;)
-used when parsing a local or domestic number that does not start with an international '+'.</p>
+used when parsing a local or domestic number that does not start with an international '+'.
+Defaults to the system's current regional ISO code (e.g. &quot;IN&quot; or &quot;US&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -304,7 +305,7 @@ used when parsing a local or domestic number that does not start with an interna
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_LookupProvider" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.LookupProvider">
   LookupProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets an optional custom lookup provider for resolving contact information via external services or directory APIs.
@@ -337,7 +338,7 @@ If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keyword
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_RequireCountryCode" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.RequireCountryCode">
   RequireCountryCode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether phone numbers must include an explicit international calling code (e.g. '+1', '+91').
@@ -371,7 +372,7 @@ Defaults to <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
 
   <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_StrictLength" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.StrictLength">
   StrictLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether strict country-specific national length rules should be enforced.
@@ -392,6 +393,42 @@ Defaults to <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Dixor_Validation_Phone_PhoneValidationOptions_GetDefaultSystemCountryIso_" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.GetDefaultSystemCountryIso*"></a>
+
+  <h3 id="Dixor_Validation_Phone_PhoneValidationOptions_GetDefaultSystemCountryIso" data-uid="Dixor.Validation.Phone.PhoneValidationOptions.GetDefaultSystemCountryIso">
+  GetDefaultSystemCountryIso()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneValidationOptions.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the two-letter ISO country code of the current system region (e.g. &quot;IN&quot;, &quot;US&quot;), or &quot;US&quot; as fallback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDefaultSystemCountryIso()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
 
 
 

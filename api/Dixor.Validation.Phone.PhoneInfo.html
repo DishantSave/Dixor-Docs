@@ -145,9 +145,9 @@ Instances of this type are immutable and thread-safe.
 
   <a id="Dixor_Validation_Phone_PhoneInfo__ctor_" data-uid="Dixor.Validation.Phone.PhoneInfo.#ctor*"></a>
 
-  <h3 id="Dixor_Validation_Phone_PhoneInfo__ctor_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_Phone_CountryInfo_System_String_Dixor_Validation_Phone_PhoneNumberType_System_Boolean_System_String_System_String_System_String_System_String_" data-uid="Dixor.Validation.Phone.PhoneInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.CountryInfo,System.String,Dixor.Validation.Phone.PhoneNumberType,System.Boolean,System.String,System.String,System.String,System.String)">
-  PhoneInfo(string, string, string, string, string?, CountryInfo, string?, PhoneNumberType, bool, string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dixor_Validation_Phone_PhoneInfo__ctor_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_Phone_CountryInfo_System_String_Dixor_Validation_Phone_PhoneNumberType_System_Boolean_System_String_System_String_System_String_System_String_System_Boolean_" data-uid="Dixor.Validation.Phone.PhoneInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Phone.CountryInfo,System.String,Dixor.Validation.Phone.PhoneNumberType,System.Boolean,System.String,System.String,System.String,System.String,System.Boolean)">
+  PhoneInfo(string, string, string, string, string?, CountryInfo, string?, PhoneNumberType, bool, string, string, string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dixor.Validation.Phone.PhoneInfo.html">PhoneInfo</a> class.</p>
@@ -155,7 +155,7 @@ Instances of this type are immutable and thread-safe.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhoneInfo(string rawInput, string digits, string countryCallingCode, string nationalNumber, string? areaCode, CountryInfo country, string? region, PhoneNumberType numberType, bool isValid, string formattedE164, string formattedInternational, string formattedNational, string formattedRfc3966)</code></pre>
+    <pre><code class="lang-csharp hljs">public PhoneInfo(string rawInput, string digits, string countryCallingCode, string nationalNumber, string? areaCode, CountryInfo country, string? region, PhoneNumberType numberType, bool isValid, string formattedE164, string formattedInternational, string formattedNational, string formattedRfc3966, bool hasCountryCode = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -185,6 +185,8 @@ Instances of this type are immutable and thread-safe.
     <dt><code>formattedNational</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>formattedRfc3966</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hasCountryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -459,6 +461,70 @@ Instances of this type are immutable and thread-safe.
 
 
 
+  <a id="Dixor_Validation_Phone_PhoneInfo_HasCountryCode_" data-uid="Dixor.Validation.Phone.PhoneInfo.HasCountryCode*"></a>
+
+  <h3 id="Dixor_Validation_Phone_PhoneInfo_HasCountryCode" data-uid="Dixor.Validation.Phone.PhoneInfo.HasCountryCode">
+  HasCountryCode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the input explicitly included an international country calling code (e.g., '+1', '+91', '00...').</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCountryCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Phone_PhoneInfo_IsDomestic_" data-uid="Dixor.Validation.Phone.PhoneInfo.IsDomestic*"></a>
+
+  <h3 id="Dixor_Validation_Phone_PhoneInfo_IsDomestic" data-uid="Dixor.Validation.Phone.PhoneInfo.IsDomestic">
+  IsDomestic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the number is in domestic/local representation without an international prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDomestic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Dixor_Validation_Phone_PhoneInfo_IsValid_" data-uid="Dixor.Validation.Phone.PhoneInfo.IsValid*"></a>
 
   <h3 id="Dixor_Validation_Phone_PhoneInfo_IsValid" data-uid="Dixor.Validation.Phone.PhoneInfo.IsValid">
@@ -627,7 +693,7 @@ Instances of this type are immutable and thread-safe.
 
   <h3 id="Dixor_Validation_Phone_PhoneInfo_ToString" data-uid="Dixor.Validation.Phone.PhoneInfo.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Phone/PhoneInfo.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
