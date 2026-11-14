@@ -355,6 +355,160 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.yml\" sourcestartlinenumber=\"1\">Provides access to country-specific passport rules and ICAO Doc 9303 standards.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.Interfaces.IPassportNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.yml\" sourcestartlinenumber=\"1\">Normalizes and formats passport numbers into standardized uppercase representations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.Interfaces.IPassportParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.Interfaces.IPassportParser.yml\" sourcestartlinenumber=\"1\">Parses raw passport numbers, validates character compositions, and maps country rules.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.Interfaces.IPassportValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.yml\" sourcestartlinenumber=\"1\">Defines the orchestrating service contract for passport validation, normalization, and country rule evaluation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.PassportCountryRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.PassportCountryRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.PassportCountryRule",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.PassportCountryRule.yml\" sourcestartlinenumber=\"1\">Represents country-specific passport number format rules and metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.PassportInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.PassportInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.PassportInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.PassportInfo.yml\" sourcestartlinenumber=\"1\">Represents structured metadata and breakdown for a parsed and validated passport number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.PassportValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.PassportValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.PassportValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.PassportValidationError.yml\" sourcestartlinenumber=\"1\">Specifies the distinct validation failure reasons for passport numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.PassportValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.PassportValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.PassportValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.PassportValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures validation rules, strictness, delimiter policies, and date constraints for passport numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.PassportValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.PassportValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport.PassportValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Passport.PassportValidator.yml\" sourcestartlinenumber=\"1\">Provides static methods for validating, parsing, normalizing, and inspecting international passport numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Passport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Passport.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Passport",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.Phone.ContactLookupResult.yml",
       "output": {
         ".html": {
@@ -1127,6 +1281,66 @@
       "output": {
         ".html": {
           "relative_path": "packages/validation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/CountryRules.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/CountryRules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/PassportInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/PassportInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/PassportValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/PassportValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/PassportValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/PassportValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/PassportValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/PassportValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/passport/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/passport/overview.html"
         }
       },
       "version": ""

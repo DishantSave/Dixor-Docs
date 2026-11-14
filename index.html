@@ -549,6 +549,40 @@ public class ContactService
     }
 }
 </code></pre>
+<h3 id="passport-number-validation">Passport Number Validation</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.Passport;
+
+public class TravelService
+{
+    public void ProcessPassport(string passportNumber, string countryIso, DateOnly? issueDate, DateOnly? expiryDate)
+    {
+        // 1. Simple validation (e.g. &quot;A1234567&quot; for India)
+        bool isValid = PassportValidator.IsValid(passportNumber, countryIso);
+
+        // 2. Validate with dates and 6-month international travel validity check
+        var result = PassportValidator.Validate(
+            passportNumber,
+            issueDate,
+            expiryDate,
+            countryIso);
+
+        if (!result.IsValid)
+        {
+            Console.WriteLine($&quot;[Error] Passport rejected: {result.Error}&quot;);
+            return;
+        }
+
+        // 3. Extract passport metadata
+        PassportInfo info = PassportValidator.GetInfo(passportNumber, issueDate, expiryDate, countryIso);
+        Console.WriteLine($&quot;Normalized: {info.NormalizedNumber}&quot;);
+        Console.WriteLine($&quot;Country: {info.CountryName} ({info.CountryIso2})&quot;);
+        Console.WriteLine($&quot;Standard ICAO 9303: {info.IsStandardIcao9303}&quot;);
+        Console.WriteLine($&quot;Remaining Validity: {info.MonthsUntilExpiry} months&quot;);
+    }
+}
+</code></pre>
 <hr>
 <h1 id="documentation-structure">Documentation Structure</h1>
 <p>When viewed on our dedicated DocFX web portal, ecosystem documentation is organized into clear domains:</p>
@@ -564,8 +598,8 @@ public class ContactService
 │   └── internals/
 └── validation/
     ├── email/
-    └── phone/
-
+    ├── phone/
+    └── passport/
 </code></pre>
 <hr>
 <h1 id="supported-frameworks">Supported Frameworks</h1>

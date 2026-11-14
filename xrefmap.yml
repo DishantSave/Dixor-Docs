@@ -1545,6 +1545,1044 @@ references:
   isSpec: "True"
   fullName: Dixor.Validation.Email.Interfaces.IEmailInfo.Value
   nameWithType: IEmailInfo.Value
+- uid: Dixor.Validation.Passport
+  name: Dixor.Validation.Passport
+  href: api/Dixor.Validation.Passport.html
+  commentId: N:Dixor.Validation.Passport
+  fullName: Dixor.Validation.Passport
+  nameWithType: Dixor.Validation.Passport
+- uid: Dixor.Validation.Passport.Interfaces
+  name: Dixor.Validation.Passport.Interfaces
+  href: api/Dixor.Validation.Passport.Interfaces.html
+  commentId: N:Dixor.Validation.Passport.Interfaces
+  fullName: Dixor.Validation.Passport.Interfaces
+  nameWithType: Dixor.Validation.Passport.Interfaces
+- uid: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider
+  name: IPassportCountryRuleProvider
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html
+  commentId: T:Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider
+  nameWithType: IPassportCountryRuleProvider
+- uid: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName(System.String)
+  name: FindByIsoOrName(string?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html#Dixor_Validation_Passport_Interfaces_IPassportCountryRuleProvider_FindByIsoOrName_System_String_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName(System.String)
+  name.vb: FindByIsoOrName(String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName(string?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName(String)
+  nameWithType: IPassportCountryRuleProvider.FindByIsoOrName(string?)
+  nameWithType.vb: IPassportCountryRuleProvider.FindByIsoOrName(String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName*
+  name: FindByIsoOrName
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html#Dixor_Validation_Passport_Interfaces_IPassportCountryRuleProvider_FindByIsoOrName_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.FindByIsoOrName
+  nameWithType: IPassportCountryRuleProvider.FindByIsoOrName
+- uid: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules
+  name: GetAllRules()
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html#Dixor_Validation_Passport_Interfaces_IPassportCountryRuleProvider_GetAllRules
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules()
+  nameWithType: IPassportCountryRuleProvider.GetAllRules()
+- uid: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules*
+  name: GetAllRules
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.html#Dixor_Validation_Passport_Interfaces_IPassportCountryRuleProvider_GetAllRules_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportCountryRuleProvider.GetAllRules
+  nameWithType: IPassportCountryRuleProvider.GetAllRules
+- uid: Dixor.Validation.Passport.Interfaces.IPassportNormalizer
+  name: IPassportNormalizer
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html
+  commentId: T:Dixor.Validation.Passport.Interfaces.IPassportNormalizer
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportNormalizer
+  nameWithType: IPassportNormalizer
+- uid: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html#Dixor_Validation_Passport_Interfaces_IPassportNormalizer_Normalize_System_String_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize(string)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize(String)
+  nameWithType: IPassportNormalizer.Normalize(string)
+  nameWithType.vb: IPassportNormalizer.Normalize(String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html#Dixor_Validation_Passport_Interfaces_IPassportNormalizer_Normalize_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.Normalize
+  nameWithType: IPassportNormalizer.Normalize
+- uid: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html#Dixor_Validation_Passport_Interfaces_IPassportNormalizer_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize(String, String)
+  nameWithType: IPassportNormalizer.TryNormalize(string?, out string?)
+  nameWithType.vb: IPassportNormalizer.TryNormalize(String, String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportNormalizer.html#Dixor_Validation_Passport_Interfaces_IPassportNormalizer_TryNormalize_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportNormalizer.TryNormalize
+  nameWithType: IPassportNormalizer.TryNormalize
+- uid: Dixor.Validation.Passport.Interfaces.IPassportParser
+  name: IPassportParser
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportParser.html
+  commentId: T:Dixor.Validation.Passport.Interfaces.IPassportParser
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportParser
+  nameWithType: IPassportParser
+- uid: Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse(System.String,System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportValidationOptions,Dixor.Validation.Passport.PassportInfo@,Dixor.Validation.Passport.PassportValidationError@)
+  name: TryParse(string?, string?, DateOnly?, DateOnly?, PassportValidationOptions?, out PassportInfo?, out PassportValidationError)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportParser.html#Dixor_Validation_Passport_Interfaces_IPassportParser_TryParse_System_String_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__Dixor_Validation_Passport_PassportValidationOptions_Dixor_Validation_Passport_PassportInfo__Dixor_Validation_Passport_PassportValidationError__
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse(System.String,System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportValidationOptions,Dixor.Validation.Passport.PassportInfo@,Dixor.Validation.Passport.PassportValidationError@)
+  name.vb: TryParse(String, String, DateOnly?, DateOnly?, PassportValidationOptions, PassportInfo, PassportValidationError)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse(string?, string?, System.DateOnly?, System.DateOnly?, Dixor.Validation.Passport.PassportValidationOptions?, out Dixor.Validation.Passport.PassportInfo?, out Dixor.Validation.Passport.PassportValidationError)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse(String, String, System.DateOnly?, System.DateOnly?, Dixor.Validation.Passport.PassportValidationOptions, Dixor.Validation.Passport.PassportInfo, Dixor.Validation.Passport.PassportValidationError)
+  nameWithType: IPassportParser.TryParse(string?, string?, DateOnly?, DateOnly?, PassportValidationOptions?, out PassportInfo?, out PassportValidationError)
+  nameWithType.vb: IPassportParser.TryParse(String, String, DateOnly?, DateOnly?, PassportValidationOptions, PassportInfo, PassportValidationError)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse*
+  name: TryParse
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportParser.html#Dixor_Validation_Passport_Interfaces_IPassportParser_TryParse_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportParser.TryParse
+  nameWithType: IPassportParser.TryParse
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService
+  name: IPassportValidatorService
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html
+  commentId: T:Dixor.Validation.Passport.Interfaces.IPassportValidatorService
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService
+  nameWithType: IPassportValidatorService
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual(String, String)
+  nameWithType: IPassportValidatorService.AreEqual(string?, string?)
+  nameWithType.vb: IPassportValidatorService.AreEqual(String, String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_AreEqual_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.AreEqual
+  nameWithType: IPassportValidatorService.AreEqual
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: GetInfo(string, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_GetInfo_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: GetInfo(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(string, System.DateOnly?, System.DateOnly?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(String, System.DateOnly?, System.DateOnly?, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.GetInfo(string, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.GetInfo(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: GetInfo(string, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_GetInfo_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: GetInfo(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(string, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.GetInfo(string, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.GetInfo(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_GetInfo_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetInfo
+  nameWithType: IPassportValidatorService.GetInfo
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries
+  name: GetSupportedCountries()
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_GetSupportedCountries
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries()
+  nameWithType: IPassportValidatorService.GetSupportedCountries()
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries*
+  name: GetSupportedCountries
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_GetSupportedCountries_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.GetSupportedCountries
+  nameWithType: IPassportValidatorService.GetSupportedCountries
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(System.String,System.DateOnly,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValid(string?, DateOnly, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_IsValid_System_String_System_DateOnly_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(System.String,System.DateOnly,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValid(String, DateOnly, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(string?, System.DateOnly, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(String, System.DateOnly, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.IsValid(string?, DateOnly, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.IsValid(String, DateOnly, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValid(string?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_IsValid_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValid(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(string?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.IsValid(string?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.IsValid(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_IsValid_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValid
+  nameWithType: IPassportValidatorService.IsValid
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValidForCountry(string?, string, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_IsValidForCountry_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValidForCountry(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry(string?, string, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.IsValidForCountry(string?, string, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.IsValidForCountry(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry*
+  name: IsValidForCountry
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_IsValidForCountry_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.IsValidForCountry
+  nameWithType: IPassportValidatorService.IsValidForCountry
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_Normalize_System_String_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize(string)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize(String)
+  nameWithType: IPassportValidatorService.Normalize(string)
+  nameWithType.vb: IPassportValidatorService.Normalize(String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_Normalize_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Normalize
+  nameWithType: IPassportValidatorService.Normalize
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(System.String,Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: TryGetInfo(string?, out PassportInfo?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_TryGetInfo_System_String_Dixor_Validation_Passport_PassportInfo__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(System.String,Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: TryGetInfo(String, PassportInfo, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(string?, out Dixor.Validation.Passport.PassportInfo?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(String, Dixor.Validation.Passport.PassportInfo, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.TryGetInfo(string?, out PassportInfo?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.TryGetInfo(String, PassportInfo, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: TryGetInfo(string?, DateOnly?, DateOnly?, out PassportInfo?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_TryGetInfo_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__Dixor_Validation_Passport_PassportInfo__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: TryGetInfo(String, DateOnly?, DateOnly?, PassportInfo, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(string?, System.DateOnly?, System.DateOnly?, out Dixor.Validation.Passport.PassportInfo?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo(String, System.DateOnly?, System.DateOnly?, Dixor.Validation.Passport.PassportInfo, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.TryGetInfo(string?, DateOnly?, DateOnly?, out PassportInfo?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.TryGetInfo(String, DateOnly?, DateOnly?, PassportInfo, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryGetInfo
+  nameWithType: IPassportValidatorService.TryGetInfo
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize(String, String)
+  nameWithType: IPassportValidatorService.TryNormalize(string?, out string?)
+  nameWithType.vb: IPassportValidatorService.TryNormalize(String, String)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_TryNormalize_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.TryNormalize
+  nameWithType: IPassportValidatorService.TryNormalize
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: Validate(string?, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_Validate_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: Validate(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(string?, System.DateOnly?, System.DateOnly?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(String, System.DateOnly?, System.DateOnly?, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.Validate(string?, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.Validate(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: Validate(string?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_Validate_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: Validate(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(string?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: IPassportValidatorService.Validate(string?, string?, PassportValidationOptions?)
+  nameWithType.vb: IPassportValidatorService.Validate(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Passport.Interfaces.IPassportValidatorService.html#Dixor_Validation_Passport_Interfaces_IPassportValidatorService_Validate_
+  commentId: Overload:Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.Interfaces.IPassportValidatorService.Validate
+  nameWithType: IPassportValidatorService.Validate
+- uid: Dixor.Validation.Passport.PassportCountryRule
+  name: PassportCountryRule
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html
+  commentId: T:Dixor.Validation.Passport.PassportCountryRule
+  fullName: Dixor.Validation.Passport.PassportCountryRule
+  nameWithType: PassportCountryRule
+- uid: Dixor.Validation.Passport.PassportCountryRule.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)
+  name: PassportCountryRule(string, string, string, string, int, int, string, string)
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule__ctor_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:Dixor.Validation.Passport.PassportCountryRule.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)
+  name.vb: New(String, String, String, String, Integer, Integer, String, String)
+  fullName: Dixor.Validation.Passport.PassportCountryRule.PassportCountryRule(string, string, string, string, int, int, string, string)
+  fullName.vb: Dixor.Validation.Passport.PassportCountryRule.New(String, String, String, String, Integer, Integer, String, String)
+  nameWithType: PassportCountryRule.PassportCountryRule(string, string, string, string, int, int, string, string)
+  nameWithType.vb: PassportCountryRule.New(String, String, String, String, Integer, Integer, String, String)
+- uid: Dixor.Validation.Passport.PassportCountryRule.#ctor*
+  name: PassportCountryRule
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule__ctor_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Passport.PassportCountryRule.PassportCountryRule
+  fullName.vb: Dixor.Validation.Passport.PassportCountryRule.New
+  nameWithType: PassportCountryRule.PassportCountryRule
+  nameWithType.vb: PassportCountryRule.New
+- uid: Dixor.Validation.Passport.PassportCountryRule.CountryName
+  name: CountryName
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_CountryName
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.CountryName
+  fullName: Dixor.Validation.Passport.PassportCountryRule.CountryName
+  nameWithType: PassportCountryRule.CountryName
+- uid: Dixor.Validation.Passport.PassportCountryRule.CountryName*
+  name: CountryName
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_CountryName_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.CountryName
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.CountryName
+  nameWithType: PassportCountryRule.CountryName
+- uid: Dixor.Validation.Passport.PassportCountryRule.Description
+  name: Description
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Description
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.Description
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Description
+  nameWithType: PassportCountryRule.Description
+- uid: Dixor.Validation.Passport.PassportCountryRule.Description*
+  name: Description
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Description_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.Description
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Description
+  nameWithType: PassportCountryRule.Description
+- uid: Dixor.Validation.Passport.PassportCountryRule.Iso2
+  name: Iso2
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Iso2
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.Iso2
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Iso2
+  nameWithType: PassportCountryRule.Iso2
+- uid: Dixor.Validation.Passport.PassportCountryRule.Iso2*
+  name: Iso2
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Iso2_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.Iso2
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Iso2
+  nameWithType: PassportCountryRule.Iso2
+- uid: Dixor.Validation.Passport.PassportCountryRule.Iso3
+  name: Iso3
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Iso3
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.Iso3
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Iso3
+  nameWithType: PassportCountryRule.Iso3
+- uid: Dixor.Validation.Passport.PassportCountryRule.Iso3*
+  name: Iso3
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Iso3_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.Iso3
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Iso3
+  nameWithType: PassportCountryRule.Iso3
+- uid: Dixor.Validation.Passport.PassportCountryRule.Matches(System.String)
+  name: Matches(string)
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Matches_System_String_
+  commentId: M:Dixor.Validation.Passport.PassportCountryRule.Matches(System.String)
+  name.vb: Matches(String)
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Matches(string)
+  fullName.vb: Dixor.Validation.Passport.PassportCountryRule.Matches(String)
+  nameWithType: PassportCountryRule.Matches(string)
+  nameWithType.vb: PassportCountryRule.Matches(String)
+- uid: Dixor.Validation.Passport.PassportCountryRule.Matches*
+  name: Matches
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_Matches_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.Matches
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.Matches
+  nameWithType: PassportCountryRule.Matches
+- uid: Dixor.Validation.Passport.PassportCountryRule.MaxLength
+  name: MaxLength
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_MaxLength
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.MaxLength
+  fullName: Dixor.Validation.Passport.PassportCountryRule.MaxLength
+  nameWithType: PassportCountryRule.MaxLength
+- uid: Dixor.Validation.Passport.PassportCountryRule.MaxLength*
+  name: MaxLength
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_MaxLength_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.MaxLength
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.MaxLength
+  nameWithType: PassportCountryRule.MaxLength
+- uid: Dixor.Validation.Passport.PassportCountryRule.MinLength
+  name: MinLength
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_MinLength
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.MinLength
+  fullName: Dixor.Validation.Passport.PassportCountryRule.MinLength
+  nameWithType: PassportCountryRule.MinLength
+- uid: Dixor.Validation.Passport.PassportCountryRule.MinLength*
+  name: MinLength
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_MinLength_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.MinLength
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.MinLength
+  nameWithType: PassportCountryRule.MinLength
+- uid: Dixor.Validation.Passport.PassportCountryRule.RegexPattern
+  name: RegexPattern
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_RegexPattern
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.RegexPattern
+  fullName: Dixor.Validation.Passport.PassportCountryRule.RegexPattern
+  nameWithType: PassportCountryRule.RegexPattern
+- uid: Dixor.Validation.Passport.PassportCountryRule.RegexPattern*
+  name: RegexPattern
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_RegexPattern_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.RegexPattern
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.RegexPattern
+  nameWithType: PassportCountryRule.RegexPattern
+- uid: Dixor.Validation.Passport.PassportCountryRule.SampleFormat
+  name: SampleFormat
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_SampleFormat
+  commentId: P:Dixor.Validation.Passport.PassportCountryRule.SampleFormat
+  fullName: Dixor.Validation.Passport.PassportCountryRule.SampleFormat
+  nameWithType: PassportCountryRule.SampleFormat
+- uid: Dixor.Validation.Passport.PassportCountryRule.SampleFormat*
+  name: SampleFormat
+  href: api/Dixor.Validation.Passport.PassportCountryRule.html#Dixor_Validation_Passport_PassportCountryRule_SampleFormat_
+  commentId: Overload:Dixor.Validation.Passport.PassportCountryRule.SampleFormat
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportCountryRule.SampleFormat
+  nameWithType: PassportCountryRule.SampleFormat
+- uid: Dixor.Validation.Passport.PassportInfo
+  name: PassportInfo
+  href: api/Dixor.Validation.Passport.PassportInfo.html
+  commentId: T:Dixor.Validation.Passport.PassportInfo
+  fullName: Dixor.Validation.Passport.PassportInfo
+  nameWithType: PassportInfo
+- uid: Dixor.Validation.Passport.PassportInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Passport.PassportCountryRule,System.Boolean,System.Boolean,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.Nullable{System.Double},System.Nullable{System.Boolean},System.Nullable{System.Boolean})
+  name: PassportInfo(string, string, string?, string?, string?, PassportCountryRule?, bool, bool, DateOnly?, DateOnly?, double?, bool?, bool?)
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo__ctor_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_Passport_PassportCountryRule_System_Boolean_System_Boolean_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__System_Nullable_System_Double__System_Nullable_System_Boolean__System_Nullable_System_Boolean__
+  commentId: M:Dixor.Validation.Passport.PassportInfo.#ctor(System.String,System.String,System.String,System.String,System.String,Dixor.Validation.Passport.PassportCountryRule,System.Boolean,System.Boolean,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.Nullable{System.Double},System.Nullable{System.Boolean},System.Nullable{System.Boolean})
+  name.vb: New(String, String, String, String, String, PassportCountryRule, Boolean, Boolean, DateOnly?, DateOnly?, Double?, Boolean?, Boolean?)
+  fullName: Dixor.Validation.Passport.PassportInfo.PassportInfo(string, string, string?, string?, string?, Dixor.Validation.Passport.PassportCountryRule?, bool, bool, System.DateOnly?, System.DateOnly?, double?, bool?, bool?)
+  fullName.vb: Dixor.Validation.Passport.PassportInfo.New(String, String, String, String, String, Dixor.Validation.Passport.PassportCountryRule, Boolean, Boolean, System.DateOnly?, System.DateOnly?, Double?, Boolean?, Boolean?)
+  nameWithType: PassportInfo.PassportInfo(string, string, string?, string?, string?, PassportCountryRule?, bool, bool, DateOnly?, DateOnly?, double?, bool?, bool?)
+  nameWithType.vb: PassportInfo.New(String, String, String, String, String, PassportCountryRule, Boolean, Boolean, DateOnly?, DateOnly?, Double?, Boolean?, Boolean?)
+- uid: Dixor.Validation.Passport.PassportInfo.#ctor*
+  name: PassportInfo
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo__ctor_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Passport.PassportInfo.PassportInfo
+  fullName.vb: Dixor.Validation.Passport.PassportInfo.New
+  nameWithType: PassportInfo.PassportInfo
+  nameWithType.vb: PassportInfo.New
+- uid: Dixor.Validation.Passport.PassportInfo.CountryIso2
+  name: CountryIso2
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryIso2
+  commentId: P:Dixor.Validation.Passport.PassportInfo.CountryIso2
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryIso2
+  nameWithType: PassportInfo.CountryIso2
+- uid: Dixor.Validation.Passport.PassportInfo.CountryIso2*
+  name: CountryIso2
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryIso2_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.CountryIso2
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryIso2
+  nameWithType: PassportInfo.CountryIso2
+- uid: Dixor.Validation.Passport.PassportInfo.CountryIso3
+  name: CountryIso3
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryIso3
+  commentId: P:Dixor.Validation.Passport.PassportInfo.CountryIso3
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryIso3
+  nameWithType: PassportInfo.CountryIso3
+- uid: Dixor.Validation.Passport.PassportInfo.CountryIso3*
+  name: CountryIso3
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryIso3_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.CountryIso3
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryIso3
+  nameWithType: PassportInfo.CountryIso3
+- uid: Dixor.Validation.Passport.PassportInfo.CountryName
+  name: CountryName
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryName
+  commentId: P:Dixor.Validation.Passport.PassportInfo.CountryName
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryName
+  nameWithType: PassportInfo.CountryName
+- uid: Dixor.Validation.Passport.PassportInfo.CountryName*
+  name: CountryName
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_CountryName_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.CountryName
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.CountryName
+  nameWithType: PassportInfo.CountryName
+- uid: Dixor.Validation.Passport.PassportInfo.ExpiryDate
+  name: ExpiryDate
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_ExpiryDate
+  commentId: P:Dixor.Validation.Passport.PassportInfo.ExpiryDate
+  fullName: Dixor.Validation.Passport.PassportInfo.ExpiryDate
+  nameWithType: PassportInfo.ExpiryDate
+- uid: Dixor.Validation.Passport.PassportInfo.ExpiryDate*
+  name: ExpiryDate
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_ExpiryDate_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.ExpiryDate
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.ExpiryDate
+  nameWithType: PassportInfo.ExpiryDate
+- uid: Dixor.Validation.Passport.PassportInfo.HasMinimumValidity
+  name: HasMinimumValidity
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_HasMinimumValidity
+  commentId: P:Dixor.Validation.Passport.PassportInfo.HasMinimumValidity
+  fullName: Dixor.Validation.Passport.PassportInfo.HasMinimumValidity
+  nameWithType: PassportInfo.HasMinimumValidity
+- uid: Dixor.Validation.Passport.PassportInfo.HasMinimumValidity*
+  name: HasMinimumValidity
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_HasMinimumValidity_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.HasMinimumValidity
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.HasMinimumValidity
+  nameWithType: PassportInfo.HasMinimumValidity
+- uid: Dixor.Validation.Passport.PassportInfo.IsExpired
+  name: IsExpired
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsExpired
+  commentId: P:Dixor.Validation.Passport.PassportInfo.IsExpired
+  fullName: Dixor.Validation.Passport.PassportInfo.IsExpired
+  nameWithType: PassportInfo.IsExpired
+- uid: Dixor.Validation.Passport.PassportInfo.IsExpired*
+  name: IsExpired
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsExpired_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.IsExpired
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.IsExpired
+  nameWithType: PassportInfo.IsExpired
+- uid: Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303
+  name: IsStandardIcao9303
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsStandardIcao9303
+  commentId: P:Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303
+  fullName: Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303
+  nameWithType: PassportInfo.IsStandardIcao9303
+- uid: Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303*
+  name: IsStandardIcao9303
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsStandardIcao9303_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.IsStandardIcao9303
+  nameWithType: PassportInfo.IsStandardIcao9303
+- uid: Dixor.Validation.Passport.PassportInfo.IsValid
+  name: IsValid
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsValid
+  commentId: P:Dixor.Validation.Passport.PassportInfo.IsValid
+  fullName: Dixor.Validation.Passport.PassportInfo.IsValid
+  nameWithType: PassportInfo.IsValid
+- uid: Dixor.Validation.Passport.PassportInfo.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IsValid_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.IsValid
+  nameWithType: PassportInfo.IsValid
+- uid: Dixor.Validation.Passport.PassportInfo.IssueDate
+  name: IssueDate
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IssueDate
+  commentId: P:Dixor.Validation.Passport.PassportInfo.IssueDate
+  fullName: Dixor.Validation.Passport.PassportInfo.IssueDate
+  nameWithType: PassportInfo.IssueDate
+- uid: Dixor.Validation.Passport.PassportInfo.IssueDate*
+  name: IssueDate
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_IssueDate_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.IssueDate
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.IssueDate
+  nameWithType: PassportInfo.IssueDate
+- uid: Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry
+  name: MonthsUntilExpiry
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_MonthsUntilExpiry
+  commentId: P:Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry
+  fullName: Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry
+  nameWithType: PassportInfo.MonthsUntilExpiry
+- uid: Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry*
+  name: MonthsUntilExpiry
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_MonthsUntilExpiry_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.MonthsUntilExpiry
+  nameWithType: PassportInfo.MonthsUntilExpiry
+- uid: Dixor.Validation.Passport.PassportInfo.NormalizedNumber
+  name: NormalizedNumber
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_NormalizedNumber
+  commentId: P:Dixor.Validation.Passport.PassportInfo.NormalizedNumber
+  fullName: Dixor.Validation.Passport.PassportInfo.NormalizedNumber
+  nameWithType: PassportInfo.NormalizedNumber
+- uid: Dixor.Validation.Passport.PassportInfo.NormalizedNumber*
+  name: NormalizedNumber
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_NormalizedNumber_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.NormalizedNumber
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.NormalizedNumber
+  nameWithType: PassportInfo.NormalizedNumber
+- uid: Dixor.Validation.Passport.PassportInfo.RawInput
+  name: RawInput
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_RawInput
+  commentId: P:Dixor.Validation.Passport.PassportInfo.RawInput
+  fullName: Dixor.Validation.Passport.PassportInfo.RawInput
+  nameWithType: PassportInfo.RawInput
+- uid: Dixor.Validation.Passport.PassportInfo.RawInput*
+  name: RawInput
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_RawInput_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.RawInput
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.RawInput
+  nameWithType: PassportInfo.RawInput
+- uid: Dixor.Validation.Passport.PassportInfo.Rule
+  name: Rule
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_Rule
+  commentId: P:Dixor.Validation.Passport.PassportInfo.Rule
+  fullName: Dixor.Validation.Passport.PassportInfo.Rule
+  nameWithType: PassportInfo.Rule
+- uid: Dixor.Validation.Passport.PassportInfo.Rule*
+  name: Rule
+  href: api/Dixor.Validation.Passport.PassportInfo.html#Dixor_Validation_Passport_PassportInfo_Rule_
+  commentId: Overload:Dixor.Validation.Passport.PassportInfo.Rule
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportInfo.Rule
+  nameWithType: PassportInfo.Rule
+- uid: Dixor.Validation.Passport.PassportValidationError
+  name: PassportValidationError
+  href: api/Dixor.Validation.Passport.PassportValidationError.html
+  commentId: T:Dixor.Validation.Passport.PassportValidationError
+  fullName: Dixor.Validation.Passport.PassportValidationError
+  nameWithType: PassportValidationError
+- uid: Dixor.Validation.Passport.PassportValidationError.CountryBlocked
+  name: CountryBlocked
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_CountryBlocked
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.CountryBlocked
+  fullName: Dixor.Validation.Passport.PassportValidationError.CountryBlocked
+  nameWithType: PassportValidationError.CountryBlocked
+- uid: Dixor.Validation.Passport.PassportValidationError.CountryNotAllowed
+  name: CountryNotAllowed
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_CountryNotAllowed
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.CountryNotAllowed
+  fullName: Dixor.Validation.Passport.PassportValidationError.CountryNotAllowed
+  nameWithType: PassportValidationError.CountryNotAllowed
+- uid: Dixor.Validation.Passport.PassportValidationError.CountryNotSupported
+  name: CountryNotSupported
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_CountryNotSupported
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.CountryNotSupported
+  fullName: Dixor.Validation.Passport.PassportValidationError.CountryNotSupported
+  nameWithType: PassportValidationError.CountryNotSupported
+- uid: Dixor.Validation.Passport.PassportValidationError.Empty
+  name: Empty
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_Empty
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.Empty
+  fullName: Dixor.Validation.Passport.PassportValidationError.Empty
+  nameWithType: PassportValidationError.Empty
+- uid: Dixor.Validation.Passport.PassportValidationError.Expired
+  name: Expired
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_Expired
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.Expired
+  fullName: Dixor.Validation.Passport.PassportValidationError.Expired
+  nameWithType: PassportValidationError.Expired
+- uid: Dixor.Validation.Passport.PassportValidationError.InsufficientValidity
+  name: InsufficientValidity
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_InsufficientValidity
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.InsufficientValidity
+  fullName: Dixor.Validation.Passport.PassportValidationError.InsufficientValidity
+  nameWithType: PassportValidationError.InsufficientValidity
+- uid: Dixor.Validation.Passport.PassportValidationError.InvalidCharacters
+  name: InvalidCharacters
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_InvalidCharacters
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.InvalidCharacters
+  fullName: Dixor.Validation.Passport.PassportValidationError.InvalidCharacters
+  nameWithType: PassportValidationError.InvalidCharacters
+- uid: Dixor.Validation.Passport.PassportValidationError.InvalidDateRange
+  name: InvalidDateRange
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_InvalidDateRange
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.InvalidDateRange
+  fullName: Dixor.Validation.Passport.PassportValidationError.InvalidDateRange
+  nameWithType: PassportValidationError.InvalidDateRange
+- uid: Dixor.Validation.Passport.PassportValidationError.InvalidFormat
+  name: InvalidFormat
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_InvalidFormat
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.InvalidFormat
+  fullName: Dixor.Validation.Passport.PassportValidationError.InvalidFormat
+  nameWithType: PassportValidationError.InvalidFormat
+- uid: Dixor.Validation.Passport.PassportValidationError.InvalidLength
+  name: InvalidLength
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_InvalidLength
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.InvalidLength
+  fullName: Dixor.Validation.Passport.PassportValidationError.InvalidLength
+  nameWithType: PassportValidationError.InvalidLength
+- uid: Dixor.Validation.Passport.PassportValidationError.None
+  name: None
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_None
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.None
+  fullName: Dixor.Validation.Passport.PassportValidationError.None
+  nameWithType: PassportValidationError.None
+- uid: Dixor.Validation.Passport.PassportValidationError.NotYetValid
+  name: NotYetValid
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_NotYetValid
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.NotYetValid
+  fullName: Dixor.Validation.Passport.PassportValidationError.NotYetValid
+  nameWithType: PassportValidationError.NotYetValid
+- uid: Dixor.Validation.Passport.PassportValidationError.Null
+  name: "Null"
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_Null
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.Null
+  fullName: Dixor.Validation.Passport.PassportValidationError.Null
+  nameWithType: PassportValidationError.Null
+- uid: Dixor.Validation.Passport.PassportValidationError.WhiteSpace
+  name: WhiteSpace
+  href: api/Dixor.Validation.Passport.PassportValidationError.html#Dixor_Validation_Passport_PassportValidationError_WhiteSpace
+  commentId: F:Dixor.Validation.Passport.PassportValidationError.WhiteSpace
+  fullName: Dixor.Validation.Passport.PassportValidationError.WhiteSpace
+  nameWithType: PassportValidationError.WhiteSpace
+- uid: Dixor.Validation.Passport.PassportValidationOptions
+  name: PassportValidationOptions
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html
+  commentId: T:Dixor.Validation.Passport.PassportValidationOptions
+  fullName: Dixor.Validation.Passport.PassportValidationOptions
+  nameWithType: PassportValidationOptions
+- uid: Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters
+  name: AllowSpecialCharacters
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_AllowSpecialCharacters
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters
+  nameWithType: PassportValidationOptions.AllowSpecialCharacters
+- uid: Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters*
+  name: AllowSpecialCharacters
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_AllowSpecialCharacters_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.AllowSpecialCharacters
+  nameWithType: PassportValidationOptions.AllowSpecialCharacters
+- uid: Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos
+  name: AllowedCountryIsos
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_AllowedCountryIsos
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos
+  nameWithType: PassportValidationOptions.AllowedCountryIsos
+- uid: Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos*
+  name: AllowedCountryIsos
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_AllowedCountryIsos_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.AllowedCountryIsos
+  nameWithType: PassportValidationOptions.AllowedCountryIsos
+- uid: Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos
+  name: BlockedCountryIsos
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_BlockedCountryIsos
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos
+  nameWithType: PassportValidationOptions.BlockedCountryIsos
+- uid: Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos*
+  name: BlockedCountryIsos
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_BlockedCountryIsos_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.BlockedCountryIsos
+  nameWithType: PassportValidationOptions.BlockedCountryIsos
+- uid: Dixor.Validation.Passport.PassportValidationOptions.Default
+  name: Default
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_Default
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.Default
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.Default
+  nameWithType: PassportValidationOptions.Default
+- uid: Dixor.Validation.Passport.PassportValidationOptions.Default*
+  name: Default
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_Default_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.Default
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.Default
+  nameWithType: PassportValidationOptions.Default
+- uid: Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso
+  name: DefaultCountryIso
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_DefaultCountryIso
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso
+  nameWithType: PassportValidationOptions.DefaultCountryIso
+- uid: Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso*
+  name: DefaultCountryIso
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_DefaultCountryIso_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.DefaultCountryIso
+  nameWithType: PassportValidationOptions.DefaultCountryIso
+- uid: Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso
+  name: GetDefaultSystemCountryIso()
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_GetDefaultSystemCountryIso
+  commentId: M:Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso()
+  nameWithType: PassportValidationOptions.GetDefaultSystemCountryIso()
+- uid: Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso*
+  name: GetDefaultSystemCountryIso
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_GetDefaultSystemCountryIso_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.GetDefaultSystemCountryIso
+  nameWithType: PassportValidationOptions.GetDefaultSystemCountryIso
+- uid: Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths
+  name: MinimumValidityMonths
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_MinimumValidityMonths
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths
+  nameWithType: PassportValidationOptions.MinimumValidityMonths
+- uid: Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths*
+  name: MinimumValidityMonths
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_MinimumValidityMonths_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.MinimumValidityMonths
+  nameWithType: PassportValidationOptions.MinimumValidityMonths
+- uid: Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate
+  name: ReferenceDate
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_ReferenceDate
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate
+  nameWithType: PassportValidationOptions.ReferenceDate
+- uid: Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate*
+  name: ReferenceDate
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_ReferenceDate_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.ReferenceDate
+  nameWithType: PassportValidationOptions.ReferenceDate
+- uid: Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity
+  name: RequireMinimumValidity
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_RequireMinimumValidity
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity
+  nameWithType: PassportValidationOptions.RequireMinimumValidity
+- uid: Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity*
+  name: RequireMinimumValidity
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_RequireMinimumValidity_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.RequireMinimumValidity
+  nameWithType: PassportValidationOptions.RequireMinimumValidity
+- uid: Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules
+  name: StrictCountryRules
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_StrictCountryRules
+  commentId: P:Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules
+  nameWithType: PassportValidationOptions.StrictCountryRules
+- uid: Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules*
+  name: StrictCountryRules
+  href: api/Dixor.Validation.Passport.PassportValidationOptions.html#Dixor_Validation_Passport_PassportValidationOptions_StrictCountryRules_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidationOptions.StrictCountryRules
+  nameWithType: PassportValidationOptions.StrictCountryRules
+- uid: Dixor.Validation.Passport.PassportValidator
+  name: PassportValidator
+  href: api/Dixor.Validation.Passport.PassportValidator.html
+  commentId: T:Dixor.Validation.Passport.PassportValidator
+  fullName: Dixor.Validation.Passport.PassportValidator
+  nameWithType: PassportValidator
+- uid: Dixor.Validation.Passport.PassportValidator.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.Passport.PassportValidator.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.AreEqual(String, String)
+  nameWithType: PassportValidator.AreEqual(string?, string?)
+  nameWithType.vb: PassportValidator.AreEqual(String, String)
+- uid: Dixor.Validation.Passport.PassportValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.AreEqual
+  nameWithType: PassportValidator.AreEqual
+- uid: Dixor.Validation.Passport.PassportValidator.GetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: GetInfo(string, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_GetInfo_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.GetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: GetInfo(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.GetInfo(string, System.DateOnly?, System.DateOnly?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.GetInfo(String, System.DateOnly?, System.DateOnly?, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.GetInfo(string, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.GetInfo(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.GetInfo(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: GetInfo(string, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_GetInfo_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.GetInfo(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: GetInfo(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.GetInfo(string, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.GetInfo(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.GetInfo(string, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.GetInfo(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.GetInfo
+  nameWithType: PassportValidator.GetInfo
+- uid: Dixor.Validation.Passport.PassportValidator.GetSupportedCountries
+  name: GetSupportedCountries()
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_GetSupportedCountries
+  commentId: M:Dixor.Validation.Passport.PassportValidator.GetSupportedCountries
+  fullName: Dixor.Validation.Passport.PassportValidator.GetSupportedCountries()
+  nameWithType: PassportValidator.GetSupportedCountries()
+- uid: Dixor.Validation.Passport.PassportValidator.GetSupportedCountries*
+  name: GetSupportedCountries
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_GetSupportedCountries_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.GetSupportedCountries
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.GetSupportedCountries
+  nameWithType: PassportValidator.GetSupportedCountries
+- uid: Dixor.Validation.Passport.PassportValidator.IsValid(System.String,System.DateOnly,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValid(string?, DateOnly, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_IsValid_System_String_System_DateOnly_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.IsValid(System.String,System.DateOnly,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValid(String, DateOnly, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.IsValid(string?, System.DateOnly, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.IsValid(String, System.DateOnly, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.IsValid(string?, DateOnly, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.IsValid(String, DateOnly, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.IsValid(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValid(string?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_IsValid_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.IsValid(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValid(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.IsValid(string?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.IsValid(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.IsValid(string?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.IsValid(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_IsValid_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.IsValid
+  nameWithType: PassportValidator.IsValid
+- uid: Dixor.Validation.Passport.PassportValidator.IsValidForCountry(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: IsValidForCountry(string?, string, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_IsValidForCountry_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.IsValidForCountry(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: IsValidForCountry(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.IsValidForCountry(string?, string, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.IsValidForCountry(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.IsValidForCountry(string?, string, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.IsValidForCountry(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.IsValidForCountry*
+  name: IsValidForCountry
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_IsValidForCountry_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.IsValidForCountry
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.IsValidForCountry
+  nameWithType: PassportValidator.IsValidForCountry
+- uid: Dixor.Validation.Passport.PassportValidator.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_Normalize_System_String_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Passport.PassportValidator.Normalize(string)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.Normalize(String)
+  nameWithType: PassportValidator.Normalize(string)
+  nameWithType.vb: PassportValidator.Normalize(String)
+- uid: Dixor.Validation.Passport.PassportValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_Normalize_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.Normalize
+  nameWithType: PassportValidator.Normalize
+- uid: Dixor.Validation.Passport.PassportValidator.TryGetInfo(System.String,Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: TryGetInfo(string?, out PassportInfo?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_TryGetInfo_System_String_Dixor_Validation_Passport_PassportInfo__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.TryGetInfo(System.String,Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: TryGetInfo(String, PassportInfo, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.TryGetInfo(string?, out Dixor.Validation.Passport.PassportInfo?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.TryGetInfo(String, Dixor.Validation.Passport.PassportInfo, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.TryGetInfo(string?, out PassportInfo?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.TryGetInfo(String, PassportInfo, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.TryGetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: TryGetInfo(string?, DateOnly?, DateOnly?, out PassportInfo?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_TryGetInfo_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__Dixor_Validation_Passport_PassportInfo__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.TryGetInfo(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},Dixor.Validation.Passport.PassportInfo@,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: TryGetInfo(String, DateOnly?, DateOnly?, PassportInfo, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.TryGetInfo(string?, System.DateOnly?, System.DateOnly?, out Dixor.Validation.Passport.PassportInfo?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.TryGetInfo(String, System.DateOnly?, System.DateOnly?, Dixor.Validation.Passport.PassportInfo, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.TryGetInfo(string?, DateOnly?, DateOnly?, out PassportInfo?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.TryGetInfo(String, DateOnly?, DateOnly?, PassportInfo, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.TryGetInfo
+  nameWithType: PassportValidator.TryGetInfo
+- uid: Dixor.Validation.Passport.PassportValidator.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Passport.PassportValidator.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Passport.PassportValidator.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.TryNormalize(String, String)
+  nameWithType: PassportValidator.TryNormalize(string?, out string?)
+  nameWithType.vb: PassportValidator.TryNormalize(String, String)
+- uid: Dixor.Validation.Passport.PassportValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.TryNormalize
+  nameWithType: PassportValidator.TryNormalize
+- uid: Dixor.Validation.Passport.PassportValidator.Validate(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: Validate(string?, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_Validate_System_String_System_Nullable_System_DateOnly__System_Nullable_System_DateOnly__System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.Validate(System.String,System.Nullable{System.DateOnly},System.Nullable{System.DateOnly},System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: Validate(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.Validate(string?, System.DateOnly?, System.DateOnly?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.Validate(String, System.DateOnly?, System.DateOnly?, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.Validate(string?, DateOnly?, DateOnly?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.Validate(String, DateOnly?, DateOnly?, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.Validate(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name: Validate(string?, string?, PassportValidationOptions?)
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_Validate_System_String_System_String_Dixor_Validation_Passport_PassportValidationOptions_
+  commentId: M:Dixor.Validation.Passport.PassportValidator.Validate(System.String,System.String,Dixor.Validation.Passport.PassportValidationOptions)
+  name.vb: Validate(String, String, PassportValidationOptions)
+  fullName: Dixor.Validation.Passport.PassportValidator.Validate(string?, string?, Dixor.Validation.Passport.PassportValidationOptions?)
+  fullName.vb: Dixor.Validation.Passport.PassportValidator.Validate(String, String, Dixor.Validation.Passport.PassportValidationOptions)
+  nameWithType: PassportValidator.Validate(string?, string?, PassportValidationOptions?)
+  nameWithType.vb: PassportValidator.Validate(String, String, PassportValidationOptions)
+- uid: Dixor.Validation.Passport.PassportValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Passport.PassportValidator.html#Dixor_Validation_Passport_PassportValidator_Validate_
+  commentId: Overload:Dixor.Validation.Passport.PassportValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Passport.PassportValidator.Validate
+  nameWithType: PassportValidator.Validate
 - uid: Dixor.Validation.Phone
   name: Dixor.Validation.Phone
   href: api/Dixor.Validation.Phone.html

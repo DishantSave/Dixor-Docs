@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PassportValidationError | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PassportValidationError | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/passport/PassportValidationError.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="passportvalidationerror">PassportValidationError</h1>
+
+<p><code>PassportValidationError</code> is an enumeration of all potential validation failure reasons for passport numbers.</p>
+<h2 id="error-values">Error Values</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>None</code></td>
+<td><code>0</code></td>
+<td>The passport number is valid and meets all constraints.</td>
+</tr>
+<tr>
+<td><code>Null</code></td>
+<td><code>1</code></td>
+<td>The input string is <code>null</code>.</td>
+</tr>
+<tr>
+<td><code>Empty</code></td>
+<td><code>2</code></td>
+<td>The input string is empty (<code>&quot;&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>WhiteSpace</code></td>
+<td><code>3</code></td>
+<td>The input contains only whitespace characters.</td>
+</tr>
+<tr>
+<td><code>InvalidCharacters</code></td>
+<td><code>4</code></td>
+<td>The passport contains non-alphanumeric or disallowed characters.</td>
+</tr>
+<tr>
+<td><code>InvalidLength</code></td>
+<td><code>5</code></td>
+<td>The passport length violates global ICAO bounds (6 to 12) or country limits.</td>
+</tr>
+<tr>
+<td><code>InvalidFormat</code></td>
+<td><code>6</code></td>
+<td>The passport does not match the national regex pattern.</td>
+</tr>
+<tr>
+<td><code>CountryNotSupported</code></td>
+<td><code>7</code></td>
+<td>The specified country ISO or name is not recognized.</td>
+</tr>
+<tr>
+<td><code>CountryNotAllowed</code></td>
+<td><code>8</code></td>
+<td>The issuing country is not in the allowed list.</td>
+</tr>
+<tr>
+<td><code>CountryBlocked</code></td>
+<td><code>9</code></td>
+<td>The issuing country is in the blocked list.</td>
+</tr>
+<tr>
+<td><code>Expired</code></td>
+<td><code>10</code></td>
+<td>The passport has expired based on the expiry date.</td>
+</tr>
+<tr>
+<td><code>NotYetValid</code></td>
+<td><code>11</code></td>
+<td>The issue date is in the future.</td>
+</tr>
+<tr>
+<td><code>InvalidDateRange</code></td>
+<td><code>12</code></td>
+<td>The issue date is chronologically after the expiry date.</td>
+</tr>
+<tr>
+<td><code>InsufficientValidity</code></td>
+<td><code>13</code></td>
+<td>The remaining validity is less than the required minimum (e.g. 6 months).</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/passport/PassportValidationError.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
