@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Address &amp; Geographic Validation Overview | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Address &amp; Geographic Validation Overview | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="address--geographic-validation-overview">Address &amp; Geographic Validation Overview</h1>
+
+<p><code>Dixor.Validation.Address</code> provides high-performance, offline validation and intelligence for international postal addresses, ISO 3166-1 country codes, ISO 3166-2 state/province subdivisions, and national postal/ZIP/PIN codes.</p>
+<hr>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>ISO 3166-1 Country Code Validation</strong>: Validates two-letter (alpha-2), three-letter (alpha-3), three-digit numeric-3 codes, and common English country names across 240+ countries and territories.</li>
+<li><strong>ISO 3166-2 State &amp; Subdivision Validation</strong>: Complete catalog of states, provinces, and union territories for major countries (India: all 28 states + 8 UTs, United States: all 50 states + DC + territories, Canada: 10 provinces + 3 territories, Australia, United Kingdom, Germany).</li>
+<li><strong>Cross-Field Consistency Enforcement</strong>: Automatically detects and rejects mismatched combinations (e.g., specifying California with India, or an Indian 6-digit PIN code with the United States).</li>
+<li><strong>Postal &amp; PIN Code Validation</strong>: Enforces national postal syntax rules for 100+ countries (India 6-digit PIN code, US 5-digit ZIP / ZIP+4, UK alphanumeric, Canada alternating A1A 1A1, etc.).</li>
+<li><strong>Composite Address Verification</strong>: Validates full postal address structures with standardized single-line formatting and equality comparison.</li>
+<li><strong>Zero Third-Party Dependencies</strong>: Self-contained in-memory database with microsecond validation speeds.</li>
+</ul>
+<hr>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="1-country-code-validation">1. Country Code Validation</h3>
+<pre><code class="lang-csharp">using Dixor.Validation.Address;
+
+// Validate by ISO-2, ISO-3, Numeric-3, or Country Name
+bool validIso2 = AddressValidator.IsValidCountryCode(&quot;IN&quot;);        // true
+bool validIso3 = AddressValidator.IsValidCountryCode(&quot;IND&quot;);       // true
+bool validNum  = AddressValidator.IsValidCountryCode(&quot;356&quot;);       // true
+bool validName = AddressValidator.IsValidCountryCode(&quot;India&quot;);     // true
+
+// Inspect country metadata
+if (AddressValidator.TryGetCountry(&quot;IND&quot;, out CountryCodeInfo? country))
+{
+    Console.WriteLine($&quot;Country: {country.Name} ({country.Iso2} / {country.Iso3})&quot;);
+    Console.WriteLine($&quot;Numeric: {country.NumericCode}&quot;);
+    Console.WriteLine($&quot;Official: {country.OfficialName}&quot;);
+}
+
+// Normalize country code
+string iso2 = AddressValidator.NormalizeCountryCode(&quot;india&quot;); // &quot;IN&quot;
+</code></pre>
+<h3 id="2-state--subdivision-code-validation">2. State &amp; Subdivision Code Validation</h3>
+<pre><code class="lang-csharp">// Validate state code within country context
+bool validState = AddressValidator.IsValidStateCode(&quot;MH&quot;, &quot;IN&quot;);         // true (Maharashtra)
+bool validFull  = AddressValidator.IsValidStateCode(&quot;IN-MH&quot;, &quot;IN&quot;);      // true
+bool validUS    = AddressValidator.IsValidStateCode(&quot;CA&quot;, &quot;US&quot;);         // true (California)
+
+// Detect cross-country mismatches!
+var mismatch = AddressValidator.ValidateStateCode(&quot;CA&quot;, &quot;IN&quot;); // California with India!
+Console.WriteLine(mismatch.Error); // StateCountryMismatch
+
+// Retrieve subdivision details
+StateCodeInfo state = AddressValidator.GetState(&quot;MH&quot;, &quot;IN&quot;);
+Console.WriteLine($&quot;Name: {state.Name}, Category: {state.Category}, Full ISO: {state.IsoSubdivisionCode}&quot;);
+</code></pre>
+<h3 id="3-postal-code-validation">3. Postal Code Validation</h3>
+<pre><code class="lang-csharp">// Validate Indian 6-digit PIN code
+bool validPin = AddressValidator.IsValidPostalCode(&quot;400001&quot;, &quot;IN&quot;); // true
+bool invalidPin = AddressValidator.IsValidPostalCode(&quot;012345&quot;, &quot;IN&quot;); // false (cannot start with 0)
+
+// Validate US ZIP code or ZIP+4
+bool validZip = AddressValidator.IsValidPostalCode(&quot;90210&quot;, &quot;US&quot;); // true
+bool validZip4 = AddressValidator.IsValidPostalCode(&quot;12345-6789&quot;, &quot;US&quot;); // true
+</code></pre>
+<h3 id="4-composite-address-validation">4. Composite Address Validation</h3>
+<pre><code class="lang-csharp">AddressData address = new()
+{
+    Street = &quot;123 Mahatma Gandhi Road&quot;,
+    City = &quot;Mumbai&quot;,
+    StateCode = &quot;MH&quot;,
+    PostalCode = &quot;400001&quot;,
+    CountryCode = &quot;IN&quot;
+};
+
+var result = AddressValidator.Validate(address);
+
+if (result.IsValid)
+{
+    AddressInfo info = AddressValidator.GetInfo(address);
+    Console.WriteLine(info.FormattedSingleLine);
+    // Output: 123 Mahatma Gandhi Road, Mumbai, MH 400001, India
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

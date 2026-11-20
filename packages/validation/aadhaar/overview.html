@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Aadhaar Card Validation Overview | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Aadhaar Card Validation Overview | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="aadhaar-card-validation-overview">Aadhaar Card Validation Overview</h1>
+
+<p><code>Dixor.Validation.Aadhaar</code> provides robust, high-performance offline validation, checksum calculation, normalization, and data privacy masking for Indian <strong>Aadhaar</strong> numbers issued by the <strong>Unique Identification Authority of India (UIDAI)</strong>.</p>
+<hr>
+<h2 id="what-is-aadhaar">What is Aadhaar?</h2>
+<p>Aadhaar is a 12-digit random identification number issued to residents of India by UIDAI. It is the world's largest biometric identity system.</p>
+<p>Key technical specifications of an Aadhaar number:</p>
+<ul>
+<li><strong>Format</strong>: Exactly 12 numeric digits (<code>dddd dddd dddd</code>).</li>
+<li><strong>Starting Digit</strong>: The first digit cannot be <code>0</code> or <code>1</code>. Valid Aadhaar numbers start with digits <code>2</code> through <code>9</code>.</li>
+<li><strong>Verhoeff Checksum</strong>: The 12th digit is an error-detecting check digit computed using the <strong>Verhoeff algorithm</strong> based on the non-commutative dihedral group <span class="math">\(D_5\)</span>.</li>
+<li><strong>No Personal Data Encoded</strong>: The number contains no demographic, regional, or personal classification indicators.</li>
+<li><strong>Privacy Masking</strong>: Regulatory mandates (UIDAI, RBI, IRDAI) require redacting the first 8 digits in documents and databases (e.g., <code>XXXX XXXX 1234</code>).</li>
+</ul>
+<hr>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Verhoeff Cryptographic Checksum</strong>: Verifies the 12th digit using the dihedral group <span class="math">\(D_5\)</span> permutation and multiplication tables. Detects 100% of single-digit errors and 100% of adjacent transposition errors.</li>
+<li><strong>Starting Digit Validation</strong>: Enforces UIDAI guidelines disallowing starting digits <code>0</code> and <code>1</code>.</li>
+<li><strong>Repetitive Digits Guard</strong>: Detects and rejects dummy/test inputs with repeated digits (e.g., <code>2222 2222 2222</code>).</li>
+<li><strong>Flexible Delimiters</strong>: Seamlessly parses clean digits, space-grouped (<code>1234 5678 9012</code>), or hyphenated (<code>1234-5678-9012</code>) strings.</li>
+<li><strong>RBI/UIDAI Privacy Masking</strong>: Standard masking utility converting <code>1234 5678 9012</code> into <code>XXXX XXXX 9012</code> with configurable masking characters.</li>
+<li><strong>Check Digit Calculator &amp; Generator</strong>: Compute the exact Verhoeff digit for an 11-digit prefix or generate complete valid Aadhaar numbers for testing.</li>
+<li><strong>Spelling Convenience</strong>: Exposes both <code>AadhaarValidator</code> and <code>AdhaarValidator</code> static facades.</li>
+</ul>
+<hr>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="1-basic-validity-check">1. Basic Validity Check</h3>
+<pre><code class="lang-csharp">using Dixor.Validation.Aadhaar;
+
+// Validate directly
+bool isValid = AadhaarValidator.IsValid(&quot;3675 9834 6015&quot;); // true
+bool isInvalid = AadhaarValidator.IsValid(&quot;0123 4567 8901&quot;); // false (starts with 0)
+
+// Spelling alias 'AdhaarValidator'
+bool validAlias = AdhaarValidator.IsValid(&quot;3675 9834 6015&quot;); // true
+</code></pre>
+<h3 id="2-comprehensive-validation-with-error-codes">2. Comprehensive Validation with Error Codes</h3>
+<pre><code class="lang-csharp">var result = AadhaarValidator.Validate(&quot;1234 5678 9012&quot;);
+
+if (!result.IsValid)
+{
+    Console.WriteLine($&quot;Failure Reason: {result.Error}&quot;);
+    // Outputs: InvalidStartingDigit
+}
+</code></pre>
+<h3 id="3-normalization-and-privacy-masking">3. Normalization and Privacy Masking</h3>
+<pre><code class="lang-csharp">string raw = &quot;  3675 - 9834 - 6015 &quot;;
+
+// Strip delimiters
+string clean = AadhaarValidator.Normalize(raw); // &quot;367598346015&quot;
+
+// Standard 4-digit grouping
+string formatted = AadhaarValidator.Format(clean); // &quot;3675 9834 6015&quot;
+
+// UIDAI/RBI privacy masking
+string masked = AadhaarValidator.Mask(clean); // &quot;XXXX XXXX 6015&quot;
+
+// Custom mask character and continuous format
+string custom = AadhaarValidator.Mask(clean, maskChar: '*', includeSpaces: false); // &quot;********6015&quot;
+</code></pre>
+<h3 id="4-structured-identity-metadata">4. Structured Identity Metadata</h3>
+<pre><code class="lang-csharp">if (AadhaarValidator.TryGetInfo(&quot;3675 9834 6015&quot;, out AadhaarInfo? info))
+{
+    Console.WriteLine($&quot;Clean:       {info.Digits}&quot;);         // &quot;367598346015&quot;
+    Console.WriteLine($&quot;Formatted:   {info.Formatted}&quot;);      // &quot;3675 9834 6015&quot;
+    Console.WriteLine($&quot;Masked:      {info.Masked}&quot;);         // &quot;XXXX XXXX 6015&quot;
+    Console.WriteLine($&quot;Last 4:      {info.LastFourDigits}&quot;); // &quot;6015&quot;
+    Console.WriteLine($&quot;Check Digit: {info.CheckDigit}&quot;);     // 5
+}
+</code></pre>
+<h3 id="5-check-digit-calculation--generator">5. Check Digit Calculation &amp; Generator</h3>
+<pre><code class="lang-csharp">// Calculate Verhoeff check digit for an 11-digit prefix
+int checkDigit = AadhaarValidator.CalculateCheckDigit(&quot;78291045638&quot;);
+
+// Generate complete 12-digit valid Aadhaar number
+string fullAadhaar = AadhaarValidator.Generate(&quot;78291045638&quot;);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

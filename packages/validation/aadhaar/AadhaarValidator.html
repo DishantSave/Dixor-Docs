@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AadhaarValidator API Reference | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AadhaarValidator API Reference | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/AadhaarValidator.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="aadhaarvalidator-api-reference">AadhaarValidator API Reference</h1>
+
+<p>The <code>AadhaarValidator</code> class (and its alias <code>AdhaarValidator</code>) provides static methods for validating, formatting, masking, parsing, and generating Indian UIDAI Aadhaar numbers.</p>
+<pre><code class="lang-csharp">namespace Dixor.Validation.Aadhaar;
+
+public static class AadhaarValidator
+public static class AdhaarValidator // Alias
+</code></pre>
+<hr>
+<h2 id="methods">Methods</h2>
+<h3 id="isvalid"><code>IsValid</code></h3>
+<p>Determines whether the specified string represents a valid 12-digit Aadhaar card number.</p>
+<pre><code class="lang-csharp">public static bool IsValid(string? aadhaar, AadhaarValidationOptions? options = null);
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+<ul>
+<li><code>aadhaar</code> (<code>string?</code>): The raw or formatted Aadhaar number.</li>
+<li><code>options</code> (<code>AadhaarValidationOptions?</code>): Optional validation options. Defaults to <code>AadhaarValidationOptions.Default</code>.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p><code>bool</code>: <code>true</code> if the input is non-null, valid length, valid starting digit, non-repetitive, and passes the Verhoeff checksum; otherwise, <code>false</code>.</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-csharp">bool valid = AadhaarValidator.IsValid(&quot;3675 9834 6015&quot;); // true
+bool invalid = AadhaarValidator.IsValid(&quot;0123 4567 8901&quot;); // false
+</code></pre>
+<hr>
+<h3 id="validate"><code>Validate</code></h3>
+<p>Validates an Aadhaar number and returns a structured <code>ValidationResult&lt;AadhaarValidationError&gt;</code> containing error diagnostics if invalid.</p>
+<pre><code class="lang-csharp">public static ValidationResult&lt;AadhaarValidationError&gt; Validate(
+    string? aadhaar,
+    AadhaarValidationOptions? options = null);
+</code></pre>
+<h4 id="example-1">Example</h4>
+<pre><code class="lang-csharp">var result = AadhaarValidator.Validate(&quot;2222 2222 2222&quot;);
+
+if (!result.IsValid)
+{
+    Console.WriteLine($&quot;Error: {result.Error}&quot;); // RepeatedDigits
+}
+</code></pre>
+<hr>
+<h3 id="trygetinfo"><code>TryGetInfo</code></h3>
+<p>Attempts to parse the specified string into a structured <code>AadhaarInfo</code> record.</p>
+<pre><code class="lang-csharp">public static bool TryGetInfo(
+    string? aadhaar,
+    out AadhaarInfo? info,
+    AadhaarValidationOptions? options = null);
+</code></pre>
+<h4 id="returns-1">Returns</h4>
+<p><code>bool</code>: <code>true</code> if valid and successfully parsed; otherwise, <code>false</code> with <code>info</code> set to <code>null</code>.</p>
+<h4 id="example-2">Example</h4>
+<pre><code class="lang-csharp">if (AadhaarValidator.TryGetInfo(&quot;3675 9834 6015&quot;, out var info))
+{
+    Console.WriteLine($&quot;Masked: {info.Masked}&quot;);
+}
+</code></pre>
+<hr>
+<h3 id="getinfo"><code>GetInfo</code></h3>
+<p>Retrieves structured metadata, throwing a <code>FormatException</code> if the number is invalid.</p>
+<pre><code class="lang-csharp">public static AadhaarInfo GetInfo(
+    string aadhaar,
+    AadhaarValidationOptions? options = null);
+</code></pre>
+<h4 id="exceptions">Exceptions</h4>
+<ul>
+<li><code>ArgumentNullException</code>: When <code>aadhaar</code> is <code>null</code>.</li>
+<li><code>FormatException</code>: When <code>aadhaar</code> fails format or checksum validation.</li>
+</ul>
+<hr>
+<h3 id="normalize-and-trynormalize"><code>Normalize</code> and <code>TryNormalize</code></h3>
+<p>Strips all whitespace, dashes, and delimiters to return the raw 12 digits.</p>
+<pre><code class="lang-csharp">public static string Normalize(string aadhaar);
+public static bool TryNormalize(string? aadhaar, out string? normalized);
+</code></pre>
+<h4 id="example-3">Example</h4>
+<pre><code class="lang-csharp">string clean = AadhaarValidator.Normalize(&quot;3675 - 9834 - 6015&quot;); // &quot;367598346015&quot;
+</code></pre>
+<hr>
+<h3 id="format"><code>Format</code></h3>
+<p>Formats the 12 numeric digits into standard 4-digit groups (<code>1234 5678 9012</code>).</p>
+<pre><code class="lang-csharp">public static string Format(string aadhaar);
+</code></pre>
+<hr>
+<h3 id="mask"><code>Mask</code></h3>
+<p>Redacts the first 8 digits for RBI and UIDAI data privacy compliance.</p>
+<pre><code class="lang-csharp">public static string Mask(
+    string aadhaar,
+    char maskChar = 'X',
+    bool includeSpaces = true);
+</code></pre>
+<h4 id="parameters-1">Parameters</h4>
+<ul>
+<li><code>aadhaar</code> (<code>string</code>): The raw or formatted Aadhaar number.</li>
+<li><code>maskChar</code> (<code>char</code>): Character to replace the first 8 digits (defaults to <code>'X'</code>).</li>
+<li><code>includeSpaces</code> (<code>bool</code>): Whether to include group spacing (defaults to <code>true</code>).</li>
+</ul>
+<h4 id="example-4">Example</h4>
+<pre><code class="lang-csharp">string masked1 = AadhaarValidator.Mask(&quot;367598346015&quot;); // &quot;XXXX XXXX 6015&quot;
+string masked2 = AadhaarValidator.Mask(&quot;367598346015&quot;, '*', false); // &quot;********6015&quot;
+</code></pre>
+<hr>
+<h3 id="areequal"><code>AreEqual</code></h3>
+<p>Compares two Aadhaar representations for semantic equality after normalization.</p>
+<pre><code class="lang-csharp">public static bool AreEqual(string? first, string? second);
+</code></pre>
+<h4 id="example-5">Example</h4>
+<pre><code class="lang-csharp">bool match = AadhaarValidator.AreEqual(&quot;3675 9834 6015&quot;, &quot;3675-9834-6015&quot;); // true
+</code></pre>
+<hr>
+<h3 id="calculatecheckdigit-and-generate"><code>CalculateCheckDigit</code> and <code>Generate</code></h3>
+<p>Computes the Verhoeff check digit or generates a complete valid Aadhaar number.</p>
+<pre><code class="lang-csharp">public static int CalculateCheckDigit(string elevenDigits);
+public static string Generate(string elevenDigitsPrefix);
+</code></pre>
+<h4 id="example-6">Example</h4>
+<pre><code class="lang-csharp">int check = AadhaarValidator.CalculateCheckDigit(&quot;78291045638&quot;); // 4
+string aadhaar = AadhaarValidator.Generate(&quot;78291045638&quot;);       // &quot;782910456384&quot;
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/AadhaarValidator.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>State &amp; Subdivision Code Validation (ISO 3166-2) | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="State &amp; Subdivision Code Validation (ISO 3166-2) | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/StateCodeValidation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="state--subdivision-code-validation-iso-3166-2">State &amp; Subdivision Code Validation (ISO 3166-2)</h1>
+
+<p>The state and province validation engine in <code>Dixor.Validation.Address</code> implements the international <strong>ISO 3166-2</strong> standard for national administrative subdivisions. It validates short administrative abbreviations, full ISO 3166-2 subdivision codes, and full state/province names while enforcing cross-country relationship constraints.</p>
+<hr>
+<h2 id="core-capabilities">Core Capabilities</h2>
+<ol>
+<li><strong>Short State Codes</strong>: Validates domestic state codes (e.g., <code>&quot;MH&quot;</code>, <code>&quot;CA&quot;</code>, <code>&quot;ON&quot;</code>, <code>&quot;NSW&quot;</code>).</li>
+<li><strong>Full ISO 3166-2 Codes</strong>: Validates combined prefix codes (e.g., <code>&quot;IN-MH&quot;</code>, <code>&quot;US-CA&quot;</code>, <code>&quot;CA-ON&quot;</code>, <code>&quot;AU-NSW&quot;</code>).</li>
+<li><strong>Full State Names</strong>: Recognizes common English names (e.g., <code>&quot;Maharashtra&quot;</code>, <code>&quot;California&quot;</code>, <code>&quot;Ontario&quot;</code>).</li>
+<li><strong>Cross-Country Verification</strong>: Guarantees that a state strictly belongs to the specified country, preventing invalid pairings such as California with India.</li>
+</ol>
+<hr>
+<h2 id="api-reference">API Reference</h2>
+<h3 id="addressvalidatorisvalidstatecode"><code>AddressValidator.IsValidStateCode</code></h3>
+<p>Determines whether a state code or name is valid for an optional country.</p>
+<pre><code class="lang-csharp">using Dixor.Validation.Address;
+
+// India states
+bool isMH = AddressValidator.IsValidStateCode(&quot;MH&quot;, &quot;IN&quot;);          // true
+bool isFullIN = AddressValidator.IsValidStateCode(&quot;IN-MH&quot;, &quot;IN&quot;);   // true
+bool isNameIN = AddressValidator.IsValidStateCode(&quot;Maharashtra&quot;, &quot;IN&quot;); // true
+
+// United States states
+bool isCA = AddressValidator.IsValidStateCode(&quot;CA&quot;, &quot;US&quot;);          // true
+bool isFullUS = AddressValidator.IsValidStateCode(&quot;US-CA&quot;, &quot;US&quot;);   // true
+bool isNameUS = AddressValidator.IsValidStateCode(&quot;California&quot;, &quot;US&quot;); // true
+</code></pre>
+<h3 id="detecting-cross-country-mismatches">Detecting Cross-Country Mismatches</h3>
+<p>When <code>EnforceStateBelongsToCountry</code> is enabled (the default), <code>AddressValidator</code> verifies that the state actually belongs to the given country:</p>
+<pre><code class="lang-csharp">// California does NOT belong to India!
+var result = AddressValidator.ValidateStateCode(&quot;CA&quot;, &quot;IN&quot;);
+
+if (!result.IsValid)
+{
+    Console.WriteLine(result.Error);
+    // Output: StateCountryMismatch
+}
+</code></pre>
+<h3 id="addressvalidatortrygetstate--getstate"><code>AddressValidator.TryGetState</code> &amp; <code>GetState</code></h3>
+<p>Retrieves structured <code>StateCodeInfo</code> containing the parent country, short code, ISO-2 subdivision code, full name, and administrative category.</p>
+<pre><code class="lang-csharp">if (AddressValidator.TryGetState(&quot;MH&quot;, &quot;IN&quot;, out StateCodeInfo? info))
+{
+    Console.WriteLine($&quot;Code: {info.Code}&quot;);                       // MH
+    Console.WriteLine($&quot;Full ISO-2: {info.IsoSubdivisionCode}&quot;);   // IN-MH
+    Console.WriteLine($&quot;Name: {info.Name}&quot;);                       // Maharashtra
+    Console.WriteLine($&quot;Category: {info.Category}&quot;);               // State
+    Console.WriteLine($&quot;Country: {info.CountryIso2}&quot;);             // IN
+}
+</code></pre>
+<h3 id="addressvalidatorgetstatesforcountry"><code>AddressValidator.GetStatesForCountry</code></h3>
+<p>Returns a list of all registered states and territories for a country:</p>
+<pre><code class="lang-csharp">var indiaSubdivisions = AddressValidator.GetStatesForCountry(&quot;IN&quot;);
+Console.WriteLine($&quot;Total Indian States &amp; UTs: {indiaSubdivisions.Count}&quot;); // 36
+
+var usSubdivisions = AddressValidator.GetStatesForCountry(&quot;US&quot;);
+Console.WriteLine($&quot;Total US States &amp; Territories: {usSubdivisions.Count}&quot;); // 56
+</code></pre>
+<hr>
+<h2 id="selected-subdivisions-reference">Selected Subdivisions Reference</h2>
+<h3 id="india-iso-3166-2in---28-states--8-union-territories">India (ISO 3166-2:IN) - 28 States &amp; 8 Union Territories</h3>
+<table>
+<thead>
+<tr>
+<th>State / UT Name</th>
+<th>Short Code</th>
+<th>Full ISO 3166-2</th>
+<th>Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Maharashtra</strong></td>
+<td><code>MH</code></td>
+<td><code>IN-MH</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Delhi</strong></td>
+<td><code>DL</code></td>
+<td><code>IN-DL</code></td>
+<td>Union Territory</td>
+</tr>
+<tr>
+<td><strong>Karnataka</strong></td>
+<td><code>KA</code></td>
+<td><code>IN-KA</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Tamil Nadu</strong></td>
+<td><code>TN</code></td>
+<td><code>IN-TN</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Gujarat</strong></td>
+<td><code>GJ</code></td>
+<td><code>IN-GJ</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Uttar Pradesh</strong></td>
+<td><code>UP</code></td>
+<td><code>IN-UP</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Telangana</strong></td>
+<td><code>TS</code> / <code>TG</code></td>
+<td><code>IN-TS</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>West Bengal</strong></td>
+<td><code>WB</code></td>
+<td><code>IN-WB</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Kerala</strong></td>
+<td><code>KL</code></td>
+<td><code>IN-KL</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Rajasthan</strong></td>
+<td><code>RJ</code></td>
+<td><code>IN-RJ</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Punjab</strong></td>
+<td><code>PB</code></td>
+<td><code>IN-PB</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Haryana</strong></td>
+<td><code>HR</code></td>
+<td><code>IN-HR</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Goa</strong></td>
+<td><code>GA</code></td>
+<td><code>IN-GA</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Jammu and Kashmir</strong></td>
+<td><code>JK</code></td>
+<td><code>IN-JK</code></td>
+<td>Union Territory</td>
+</tr>
+<tr>
+<td><strong>Chandigarh</strong></td>
+<td><code>CH</code></td>
+<td><code>IN-CH</code></td>
+<td>Union Territory</td>
+</tr>
+<tr>
+<td><strong>Ladakh</strong></td>
+<td><code>LA</code></td>
+<td><code>IN-LA</code></td>
+<td>Union Territory</td>
+</tr>
+</tbody>
+</table>
+<p><em>And all remaining 20 Indian states and territories.</em></p>
+<h3 id="united-states-iso-3166-2us">United States (ISO 3166-2:US)</h3>
+<table>
+<thead>
+<tr>
+<th>State Name</th>
+<th>Code</th>
+<th>Full ISO 3166-2</th>
+<th>State Name</th>
+<th>Code</th>
+<th>Full ISO 3166-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>California</strong></td>
+<td><code>CA</code></td>
+<td><code>US-CA</code></td>
+<td><strong>New York</strong></td>
+<td><code>NY</code></td>
+<td><code>US-NY</code></td>
+</tr>
+<tr>
+<td><strong>Texas</strong></td>
+<td><code>TX</code></td>
+<td><code>US-TX</code></td>
+<td><strong>Florida</strong></td>
+<td><code>FL</code></td>
+<td><code>US-FL</code></td>
+</tr>
+<tr>
+<td><strong>Illinois</strong></td>
+<td><code>IL</code></td>
+<td><code>US-IL</code></td>
+<td><strong>Washington</strong></td>
+<td><code>WA</code></td>
+<td><code>US-WA</code></td>
+</tr>
+<tr>
+<td><strong>Pennsylvania</strong></td>
+<td><code>PA</code></td>
+<td><code>US-PA</code></td>
+<td><strong>District of Columbia</strong></td>
+<td><code>DC</code></td>
+<td><code>US-DC</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Includes all 50 US States, DC, and territories (PR, VI, GU, AS, MP).</em></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/StateCodeValidation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

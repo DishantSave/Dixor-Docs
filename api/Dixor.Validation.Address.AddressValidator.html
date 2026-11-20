@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AddressValidator | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AddressValidator | Dixor Documentation ">
+      
+      <meta name="description" content="Provides static methods for validating, parsing, normalizing, and inspecting postal addresses, ISO 3166-1 country codes, ISO 3166-2 state codes, and national postal/ZIP codes.">
+      <link rel="icon" href="../images/icon-192.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/new/main/apiSpec/new?filename=Dixor_Validation_Address_AddressValidator.md&amp;value=---%0Auid%3A%20Dixor.Validation.Address.AddressValidator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dixor.Validation.Address.AddressValidator">
+
+
+
+  <h1 id="Dixor_Validation_Address_AddressValidator" data-uid="Dixor.Validation.Address.AddressValidator" class="text-break">
+Class AddressValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">Dixor</span>.<a class="xref" href="Dixor.Validation.html">Validation</a>.<a class="xref" href="Dixor.Validation.Address.html">Address</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Dixor.Validation.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides static methods for validating, parsing, normalizing, and inspecting postal addresses,
+ISO 3166-1 country codes, ISO 3166-2 state codes, and national postal/ZIP codes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AddressValidator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AddressValidator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Dixor_Validation_Address_AddressValidator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+<a class="xref" href="Dixor.Validation.Address.AddressValidator.html">AddressValidator</a> is the primary entry point for address-related validation in <code>Dixor.Validation</code>.
+It provides full catalog validation for 240+ international country codes (alpha-2, alpha-3, numeric-3),
+comprehensive state/province/territory subdivisions for major countries (India, US, Canada, Australia, UK, Germany),
+postal rules for 100+ countries, and composite address consistency checks.
+</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_AreEqual_" data-uid="Dixor.Validation.Address.AddressValidator.AreEqual*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_AreEqual_Dixor_Validation_Address_AddressData_Dixor_Validation_Address_AddressData_" data-uid="Dixor.Validation.Address.AddressValidator.AreEqual(Dixor.Validation.Address.AddressData,Dixor.Validation.Address.AddressData)">
+  AreEqual(AddressData?, AddressData?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two addresses represent the identical destination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AreEqual(AddressData? first, AddressData? second)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>first</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+    <dt><code>second</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_FormatAddress_" data-uid="Dixor.Validation.Address.AddressValidator.FormatAddress*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_FormatAddress_Dixor_Validation_Address_AddressData_" data-uid="Dixor.Validation.Address.AddressValidator.FormatAddress(Dixor.Validation.Address.AddressData)">
+  FormatAddress(AddressData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats the address into a standardized single-line representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatAddress(AddressData address)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetAllCountries_" data-uid="Dixor.Validation.Address.AddressValidator.GetAllCountries*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetAllCountries" data-uid="Dixor.Validation.Address.AddressValidator.GetAllCountries">
+  GetAllCountries()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all cataloged ISO 3166-1 countries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;CountryCodeInfo&gt; GetAllCountries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Dixor.Validation.Address.CountryCodeInfo.html">CountryCodeInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetAllStates_" data-uid="Dixor.Validation.Address.AddressValidator.GetAllStates*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetAllStates" data-uid="Dixor.Validation.Address.AddressValidator.GetAllStates">
+  GetAllStates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all registered states, provinces, or territories across all countries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;StateCodeInfo&gt; GetAllStates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Dixor.Validation.Address.StateCodeInfo.html">StateCodeInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetCountry_" data-uid="Dixor.Validation.Address.AddressValidator.GetCountry*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetCountry_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.GetCountry(System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  GetCountry(string, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves structured ISO 3166-1 country metadata, throwing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a> if invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CountryCodeInfo GetCountry(string countryCodeOrName, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCodeOrName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Address.CountryCodeInfo.html">CountryCodeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetInfo_" data-uid="Dixor.Validation.Address.AddressValidator.GetInfo*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetInfo_Dixor_Validation_Address_AddressData_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.GetInfo(Dixor.Validation.Address.AddressData,Dixor.Validation.Address.AddressValidationOptions)">
+  GetInfo(AddressData, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parses and validates composite address data, throwing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a> if invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AddressInfo GetInfo(AddressData address, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Address.AddressInfo.html">AddressInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetState_" data-uid="Dixor.Validation.Address.AddressValidator.GetState*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetState_System_String_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.GetState(System.String,System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  GetState(string, string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves structured ISO 3166-2 state or province metadata, throwing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a> if invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StateCodeInfo GetState(string stateCodeOrName, string? countryCode = null, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateCodeOrName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.Address.StateCodeInfo.html">StateCodeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_GetStatesForCountry_" data-uid="Dixor.Validation.Address.AddressValidator.GetStatesForCountry*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_GetStatesForCountry_System_String_" data-uid="Dixor.Validation.Address.AddressValidator.GetStatesForCountry(System.String)">
+  GetStatesForCountry(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all registered states, provinces, or territories for a specific country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;StateCodeInfo&gt; GetStatesForCountry(string countryCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Dixor.Validation.Address.StateCodeInfo.html">StateCodeInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_IsValid_" data-uid="Dixor.Validation.Address.AddressValidator.IsValid*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_IsValid_Dixor_Validation_Address_AddressData_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.IsValid(Dixor.Validation.Address.AddressData,Dixor.Validation.Address.AddressValidationOptions)">
+  IsValid(AddressData, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the composite address data satisfies all required fields and cross-field consistency constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValid(AddressData address, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_IsValidCountryCode_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidCountryCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_IsValidCountryCode_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidCountryCode(System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  IsValidCountryCode(string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified string represents a valid ISO 3166-1 country code (alpha-2, alpha-3, numeric-3) or recognized country name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidCountryCode(string? countryCode, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_IsValidPostalCode_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidPostalCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_IsValidPostalCode_System_String_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidPostalCode(System.String,System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  IsValidPostalCode(string?, string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified postal code, PIN code, or ZIP code is valid for an optional country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidPostalCode(string? postalCode, string? countryCode = null, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postalCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_IsValidStateCode_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidStateCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_IsValidStateCode_System_String_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.IsValidStateCode(System.String,System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  IsValidStateCode(string?, string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified state or province code or name is valid for an optional country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidStateCode(string? stateCode, string? countryCode = null, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_NormalizeCountryCode_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizeCountryCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_NormalizeCountryCode_System_String_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizeCountryCode(System.String)">
+  NormalizeCountryCode(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes the country code into standard uppercase ISO 3166-1 alpha-2 format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeCountryCode(string countryCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_NormalizePostalCode_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizePostalCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_NormalizePostalCode_System_String_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizePostalCode(System.String)">
+  NormalizePostalCode(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes the postal code into standard uppercase format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizePostalCode(string postalCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postalCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_NormalizeStateCode_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizeStateCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_NormalizeStateCode_System_String_" data-uid="Dixor.Validation.Address.AddressValidator.NormalizeStateCode(System.String)">
+  NormalizeStateCode(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes the state code into standard uppercase representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeStateCode(string stateCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_TryGetCountry_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetCountry*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_TryGetCountry_System_String_Dixor_Validation_Address_CountryCodeInfo__Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetCountry(System.String,Dixor.Validation.Address.CountryCodeInfo@,Dixor.Validation.Address.AddressValidationOptions)">
+  TryGetCountry(string?, out CountryCodeInfo?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to resolve structured ISO 3166-1 country metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetCountry(string? countryCodeOrName, out CountryCodeInfo? info, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCodeOrName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.Address.CountryCodeInfo.html">CountryCodeInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_TryGetInfo_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetInfo*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_TryGetInfo_Dixor_Validation_Address_AddressData_Dixor_Validation_Address_AddressInfo__Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetInfo(Dixor.Validation.Address.AddressData,Dixor.Validation.Address.AddressInfo@,Dixor.Validation.Address.AddressValidationOptions)">
+  TryGetInfo(AddressData, out AddressInfo?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to parse and validate composite address data into structured <a class="xref" href="Dixor.Validation.Address.AddressInfo.html">AddressInfo</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetInfo(AddressData address, out AddressInfo? info, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.Address.AddressInfo.html">AddressInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_TryGetPostalCodeInfo_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetPostalCodeInfo*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_TryGetPostalCodeInfo_System_String_System_String_Dixor_Validation_Address_PostalCodeInfo__Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetPostalCodeInfo(System.String,System.String,Dixor.Validation.Address.PostalCodeInfo@,Dixor.Validation.Address.AddressValidationOptions)">
+  TryGetPostalCodeInfo(string?, string?, out PostalCodeInfo?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to resolve structured postal code metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetPostalCodeInfo(string? postalCode, string? countryCode, out PostalCodeInfo? info, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postalCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.Address.PostalCodeInfo.html">PostalCodeInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_TryGetState_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetState*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_TryGetState_System_String_System_String_Dixor_Validation_Address_StateCodeInfo__Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.TryGetState(System.String,System.String,Dixor.Validation.Address.StateCodeInfo@,Dixor.Validation.Address.AddressValidationOptions)">
+  TryGetState(string?, string?, out StateCodeInfo?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to resolve structured ISO 3166-2 state or province metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetState(string? stateCodeOrName, string? countryCode, out StateCodeInfo? info, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateCodeOrName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.Address.StateCodeInfo.html">StateCodeInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_Validate_" data-uid="Dixor.Validation.Address.AddressValidator.Validate*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_Validate_Dixor_Validation_Address_AddressData_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.Validate(Dixor.Validation.Address.AddressData,Dixor.Validation.Address.AddressValidationOptions)">
+  Validate(AddressData, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the composite address data and returns a strongly-typed validation result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;AddressValidationError&gt; Validate(AddressData address, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="Dixor.Validation.Address.AddressData.html">AddressData</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.Address.AddressValidationError.html">AddressValidationError</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_ValidateCountryCode_" data-uid="Dixor.Validation.Address.AddressValidator.ValidateCountryCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_ValidateCountryCode_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.ValidateCountryCode(System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  ValidateCountryCode(string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified country code or name and returns a strongly-typed validation result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;AddressValidationError&gt; ValidateCountryCode(string? countryCode, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.Address.AddressValidationError.html">AddressValidationError</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_ValidatePostalCode_" data-uid="Dixor.Validation.Address.AddressValidator.ValidatePostalCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_ValidatePostalCode_System_String_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.ValidatePostalCode(System.String,System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  ValidatePostalCode(string?, string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified postal code and returns a strongly-typed validation result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;AddressValidationError&gt; ValidatePostalCode(string? postalCode, string? countryCode = null, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postalCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.Address.AddressValidationError.html">AddressValidationError</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_Address_AddressValidator_ValidateStateCode_" data-uid="Dixor.Validation.Address.AddressValidator.ValidateStateCode*"></a>
+
+  <h3 id="Dixor_Validation_Address_AddressValidator_ValidateStateCode_System_String_System_String_Dixor_Validation_Address_AddressValidationOptions_" data-uid="Dixor.Validation.Address.AddressValidator.ValidateStateCode(System.String,System.String,Dixor.Validation.Address.AddressValidationOptions)">
+  ValidateStateCode(string?, string?, AddressValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified state or province code or name and returns a strongly-typed validation result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;AddressValidationError&gt; ValidateStateCode(string? stateCode, string? countryCode = null, AddressValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>countryCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.Address.AddressValidationOptions.html">AddressValidationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.Address.AddressValidationError.html">AddressValidationError</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/Address/AddressValidator.cs/#L28" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -583,6 +583,74 @@ public class TravelService
     }
 }
 </code></pre>
+<h3 id="address--geographic-validation">Address &amp; Geographic Validation</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.Address;
+
+public class AddressService
+{
+    public void ProcessAddress()
+    {
+        // 1. Country code validation (ISO 3166-1 alpha-2, alpha-3, numeric-3, or name)
+        bool validCountry = AddressValidator.IsValidCountryCode(&quot;IND&quot;); // true
+        string iso2 = AddressValidator.NormalizeCountryCode(&quot;India&quot;);   // &quot;IN&quot;
+
+        // 2. State &amp; Subdivision validation (ISO 3166-2) with cross-country verification
+        bool validState = AddressValidator.IsValidStateCode(&quot;MH&quot;, &quot;IN&quot;); // true (Maharashtra)
+        var mismatch = AddressValidator.ValidateStateCode(&quot;CA&quot;, &quot;IN&quot;);   // StateCountryMismatch!
+
+        // 3. Postal code validation (India 6-digit PIN code, US ZIP, UK, Canada, etc.)
+        bool validPin = AddressValidator.IsValidPostalCode(&quot;400001&quot;, &quot;IN&quot;); // true
+
+        // 4. Composite address validation
+        AddressData address = new()
+        {
+            Street = &quot;123 Mahatma Gandhi Road&quot;,
+            City = &quot;Mumbai&quot;,
+            StateCode = &quot;MH&quot;,
+            PostalCode = &quot;400001&quot;,
+            CountryCode = &quot;IN&quot;
+        };
+
+        var result = AddressValidator.Validate(address);
+        if (result.IsValid)
+        {
+            AddressInfo info = AddressValidator.GetInfo(address);
+            Console.WriteLine($&quot;Single-Line: {info.FormattedSingleLine}&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="aadhaar-card-validation-india-uidai">Aadhaar Card Validation (India UIDAI)</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.Aadhaar;
+
+public class IdentityService
+{
+    public void VerifyResidentAadhaar()
+    {
+        // 1. Fast boolean check (accepts clean, spaced, or hyphenated)
+        bool isValid = AadhaarValidator.IsValid(&quot;3675 9834 6015&quot;); // true
+        bool isInvalid = AadhaarValidator.IsValid(&quot;0123 4567 8901&quot;); // false (starts with 0)
+
+        // 2. Comprehensive validation with diagnostic errors
+        var result = AadhaarValidator.Validate(&quot;2222 2222 2222&quot;);
+        if (!result.IsValid)
+        {
+            Console.WriteLine($&quot;Rejected: {result.Error}&quot;); // RepeatedDigits
+        }
+
+        // 3. Privacy-compliant masking (RBI / UIDAI regulations)
+        string masked = AadhaarValidator.Mask(&quot;367598346015&quot;); // &quot;XXXX XXXX 6015&quot;
+
+        // 4. Verhoeff checksum calculation &amp; generation
+        int checkDigit = AadhaarValidator.CalculateCheckDigit(&quot;78291045638&quot;); // 4
+        string fullAadhaar = AadhaarValidator.Generate(&quot;78291045638&quot;);       // &quot;782910456384&quot;
+    }
+}
+</code></pre>
 <hr>
 <h1 id="documentation-structure">Documentation Structure</h1>
 <p>When viewed on our dedicated DocFX web portal, ecosystem documentation is organized into clear domains:</p>
@@ -599,7 +667,9 @@ public class TravelService
 └── validation/
     ├── email/
     ├── phone/
-    └── passport/
+    ├── passport/
+    ├── address/
+    └── aadhaar/
 </code></pre>
 <hr>
 <h1 id="supported-frameworks">Supported Frameworks</h1>

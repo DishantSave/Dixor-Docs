@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Verhoeff Algorithm Implementation | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Verhoeff Algorithm Implementation | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/VerhoeffAlgorithm.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="verhoeff-algorithm-implementation">Verhoeff Algorithm Implementation</h1>
+
+<p>The <strong>Verhoeff algorithm</strong> is a checksum formula for error detection developed by Dutch mathematician Jacobus Verhoeff in 1969. It was mathematically designed to be the first decimal check-digit algorithm that detects all single-digit errors and all transposition errors between adjacent digits.</p>
+<hr>
+<h2 id="why-verhoeff-instead-of-luhn-mod-10">Why Verhoeff Instead of Luhn (Mod 10)?</h2>
+<p>The common Luhn algorithm (used in credit cards) is commutative in certain operations and suffers from known blind spots:</p>
+<ul>
+<li>Luhn fails to detect transpositions between adjacent digits whose difference is 9 (e.g., <code>09</code> <span class="math">\(\leftrightarrow\)</span> <code>90</code>).</li>
+<li>Luhn misses approximately 2% of twin errors (e.g., <code>11</code> <span class="math">\(\leftrightarrow\)</span> <code>44</code>).</li>
+</ul>
+<p>In contrast, the Verhoeff algorithm:</p>
+<ul>
+<li>Detects <strong>100% of single-digit substitution errors</strong> (<span class="math">\(a \rightarrow b\)</span>).</li>
+<li>Detects <strong>100% of transposition errors between adjacent digits</strong> (<span class="math">\(ab \rightarrow ba\)</span>).</li>
+<li>Detects <strong>over 95% of twin errors</strong> (<span class="math">\(aa \rightarrow bb\)</span>).</li>
+<li>Detects <strong>over 94% of jump-transposition errors</strong> (<span class="math">\(acb \rightarrow bca\)</span>).</li>
+</ul>
+<p>Because an Aadhaar number is a national unique identifier where transposition errors during data entry could misidentify citizens, UIDAI mandated the Verhoeff algorithm.</p>
+<hr>
+<h2 id="mathematical-foundations-the-dihedral-group-">Mathematical Foundations: The Dihedral Group <span class="math">\(D_5\)</span></h2>
+<p>The Verhoeff algorithm is constructed using the dihedral group <span class="math">\(D_5\)</span>, which represents the group of symmetries of a regular pentagon (rotations and reflections). <span class="math">\(D_5\)</span> has order 10 (consisting of 10 elements: 5 rotations and 5 reflections) and is <strong>non-commutative</strong> (<span class="math">\(a * b \neq b * a\)</span>).</p>
+<p>The algorithm utilizes three tables:</p>
+<h3 id="1-multiplication-table-">1. Multiplication Table (<span class="math">\(d\)</span>)</h3>
+<p>The multiplication table <span class="math">\(d(j, k)\)</span> represents group operation <span class="math">\(*\)</span> over the set <span class="math">\(\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\)</span>:</p>
+<pre><code class="lang-text">  * | 0 1 2 3 4 5 6 7 8 9
+----+--------------------
+  0 | 0 1 2 3 4 5 6 7 8 9
+  1 | 1 2 3 4 0 6 7 8 9 5
+  2 | 2 3 4 0 1 7 8 9 5 6
+  3 | 3 4 0 1 2 8 9 5 6 7
+  4 | 4 0 1 2 3 9 5 6 7 8
+  5 | 5 9 8 7 6 0 4 3 2 1
+  6 | 6 5 9 8 7 1 0 4 3 2
+  7 | 7 6 5 9 8 2 1 0 4 3
+  8 | 8 7 6 5 9 3 2 1 0 4
+  9 | 9 8 7 6 5 4 3 2 1 0
+</code></pre>
+<h3 id="2-permutation-table-">2. Permutation Table (<span class="math">\(p\)</span>)</h3>
+<p>The permutation function <span class="math">\(p(i, j)\)</span> applies a non-trivial permutation to digit <span class="math">\(j\)</span> based on its positional index <span class="math">\(i \pmod 8\)</span>:</p>
+<pre><code class="lang-text">  p | 0 1 2 3 4 5 6 7 8 9
+----+--------------------
+  0 | 0 1 2 3 4 5 6 7 8 9
+  1 | 1 5 7 6 2 8 3 0 9 4
+  2 | 5 8 0 3 7 9 6 1 4 2
+  3 | 8 9 1 6 0 4 3 5 2 7
+  4 | 9 4 5 3 1 2 6 8 7 0
+  5 | 4 2 8 6 5 7 3 9 0 1
+  6 | 2 7 9 3 8 0 6 4 1 5
+  7 | 7 0 4 6 9 1 3 2 5 8
+</code></pre>
+<h3 id="3-inverse-array-">3. Inverse Array (<span class="math">\(inv\)</span>)</h3>
+<p>The multiplicative inverse table <span class="math">\(inv(j)\)</span> gives the element <span class="math">\(x\)</span> such that <span class="math">\(d(j, x) = 0\)</span>:</p>
+<pre><code class="lang-text">j:    0  1  2  3  4  5  6  7  8  9
+inv:  0  4  3  2  1  5  6  7  8  9
+</code></pre>
+<hr>
+<h2 id="validation-algorithm">Validation Algorithm</h2>
+<p>To validate a 12-digit number <span class="math">\(a_{11} a_{10} \dots a_1 a_0\)</span> (where <span class="math">\(a_0\)</span> is the check digit):</p>
+<ol>
+<li>Reverse the digits: index <span class="math">\(i = 0\)</span> corresponds to the rightmost digit <span class="math">\(a_0\)</span>, up to <span class="math">\(i = 11\)</span> for the leftmost digit <span class="math">\(a_{11}\)</span>.</li>
+<li>Initialize checksum accumulator: <span class="math">\(c = 0\)</span>.</li>
+<li>For each index <span class="math">\(i\)</span> from 0 to 11:
+<span class="math">\(c = d(c, p(i \pmod 8, a_i))\)</span></li>
+<li>The number is valid if and only if <span class="math">\(c == 0\)</span>.</li>
+</ol>
+<hr>
+<h2 id="check-digit-generation">Check Digit Generation</h2>
+<p>To compute the check digit for an 11-digit prefix <span class="math">\(a_{10} a_9 \dots a_0\)</span>:</p>
+<ol>
+<li>Treat the position of the check digit as index 0 (so prefix digits occupy indices 1 through 11).</li>
+<li>Accumulate:
+<span class="math">\(c = 0\)</span>
+<span class="math">\(\text{For } i = 0 \text{ to } 10: \quad c = d(c, p((i + 1) \pmod 8, \text{digits}[i]))\)</span></li>
+<li>The check digit is the inverse:
+<span class="math">\(\text{check\_digit} = inv(c)\)</span></li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/aadhaar/VerhoeffAlgorithm.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

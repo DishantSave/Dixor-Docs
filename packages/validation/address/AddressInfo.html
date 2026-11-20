@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Address Information Models | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Address Information Models | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/AddressInfo.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="address-information-models">Address Information Models</h1>
+
+<p><code>Dixor.Validation.Address</code> provides strongly typed, immutable metadata models for validated addresses and individual components.</p>
+<hr>
+<h2 id="addressinfo"><code>AddressInfo</code></h2>
+<p>Encapsulates complete structured intelligence for a verified composite address:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RawData</code></td>
+<td><code>AddressData</code></td>
+<td>The original input address data.</td>
+</tr>
+<tr>
+<td><code>Country</code></td>
+<td><code>CountryCodeInfo?</code></td>
+<td>Resolved ISO 3166-1 country metadata.</td>
+</tr>
+<tr>
+<td><code>State</code></td>
+<td><code>StateCodeInfo?</code></td>
+<td>Resolved ISO 3166-2 state or subdivision metadata.</td>
+</tr>
+<tr>
+<td><code>PostalCode</code></td>
+<td><code>PostalCodeInfo?</code></td>
+<td>Resolved postal code metadata.</td>
+</tr>
+<tr>
+<td><code>City</code></td>
+<td><code>string</code></td>
+<td>Normalized city or municipality name.</td>
+</tr>
+<tr>
+<td><code>FormattedStreet</code></td>
+<td><code>string</code></td>
+<td>Normalized street address line(s).</td>
+</tr>
+<tr>
+<td><code>FormattedSingleLine</code></td>
+<td><code>string</code></td>
+<td>Standardized single-line formatted address string.</td>
+</tr>
+<tr>
+<td><code>IsValid</code></td>
+<td><code>bool</code></td>
+<td><code>true</code> if the address satisfies all validation constraints.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="countrycodeinfo"><code>CountryCodeInfo</code></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Iso2</code></td>
+<td><code>string</code></td>
+<td>Two-letter ISO 3166-1 alpha-2 code (e.g. <code>&quot;IN&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>Iso3</code></td>
+<td><code>string</code></td>
+<td>Three-letter ISO 3166-1 alpha-3 code (e.g. <code>&quot;IND&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>NumericCode</code></td>
+<td><code>string</code></td>
+<td>Three-digit ISO 3166-1 numeric-3 code (e.g. <code>&quot;356&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>Name</code></td>
+<td><code>string</code></td>
+<td>Common English country name (e.g. <code>&quot;India&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>OfficialName</code></td>
+<td><code>string</code></td>
+<td>Official diplomatic title (e.g. <code>&quot;Republic of India&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>HasSubdivisions</code></td>
+<td><code>bool</code></td>
+<td><code>true</code> if ISO 3166-2 states are registered.</td>
+</tr>
+<tr>
+<td><code>HasPostalCodes</code></td>
+<td><code>bool</code></td>
+<td><code>true</code> if postal codes are used in this country.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="statecodeinfo"><code>StateCodeInfo</code></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CountryIso2</code></td>
+<td><code>string</code></td>
+<td>Parent country two-letter code (e.g. <code>&quot;IN&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>Code</code></td>
+<td><code>string</code></td>
+<td>Primary short state code (e.g. <code>&quot;MH&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>IsoSubdivisionCode</code></td>
+<td><code>string</code></td>
+<td>Full ISO 3166-2 code (e.g. <code>&quot;IN-MH&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>Name</code></td>
+<td><code>string</code></td>
+<td>Common English state name (e.g. <code>&quot;Maharashtra&quot;</code>).</td>
+</tr>
+<tr>
+<td><code>Category</code></td>
+<td><code>string</code></td>
+<td>Administrative category (e.g. <code>&quot;State&quot;</code>, <code>&quot;Union Territory&quot;</code>, <code>&quot;Province&quot;</code>).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="postalcodeinfo"><code>PostalCodeInfo</code></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CountryIso2</code></td>
+<td><code>string</code></td>
+<td>Parent country code.</td>
+</tr>
+<tr>
+<td><code>RawInput</code></td>
+<td><code>string</code></td>
+<td>Raw input string.</td>
+</tr>
+<tr>
+<td><code>NormalizedPostalCode</code></td>
+<td><code>string</code></td>
+<td>Normalized uppercase postal code.</td>
+</tr>
+<tr>
+<td><code>FormatRegexPattern</code></td>
+<td><code>string</code></td>
+<td>Enforced regular expression pattern.</td>
+</tr>
+<tr>
+<td><code>SampleFormat</code></td>
+<td><code>string</code></td>
+<td>Sample valid format.</td>
+</tr>
+<tr>
+<td><code>Description</code></td>
+<td><code>string</code></td>
+<td>Pattern description.</td>
+</tr>
+<tr>
+<td><code>IsValid</code></td>
+<td><code>bool</code></td>
+<td>Validation status.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/AddressInfo.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

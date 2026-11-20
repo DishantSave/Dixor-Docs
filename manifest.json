@@ -229,6 +229,384 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.AadhaarInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.AadhaarInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.AadhaarInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.AadhaarInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates structured, parsed, and masked metadata for an Indian Aadhaar number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.AadhaarValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.AadhaarValidationError.yml\" sourcestartlinenumber=\"1\">Specifies the distinct validation failure reasons for Indian Aadhaar numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.AadhaarValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.AadhaarValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures validation strictness, formatting rules, and repetition constraints for Aadhaar card numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.AadhaarValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.AadhaarValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.AadhaarValidator.yml\" sourcestartlinenumber=\"1\">Provides static methods for validating, formatting, masking, and analyzing Indian Aadhaar card numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.AdhaarValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.AdhaarValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.AdhaarValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.AdhaarValidator.yml\" sourcestartlinenumber=\"1\">Alias for <xref href=\"Dixor.Validation.Aadhaar.AadhaarValidator\" data-throw-if-not-resolved=\"false\"></xref> providing spelling convenience for &quot;Adhaar&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.Interfaces.IAadhaarNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarNormalizer.yml\" sourcestartlinenumber=\"1\">Provides normalization, visual grouping, and privacy masking for Aadhaar card numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.Interfaces.IAadhaarParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarParser.yml\" sourcestartlinenumber=\"1\">Parses raw Aadhaar number inputs, validates character constraints, starting digits, and Verhoeff checksum.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.Interfaces.IAadhaarValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.Interfaces.IAadhaarValidatorService.yml\" sourcestartlinenumber=\"1\">Defines the orchestrating service contract for Aadhaar validation, Verhoeff checksums, normalization, and masking.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IVerhoeffAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.IVerhoeffAlgorithm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.Interfaces.IVerhoeffAlgorithm",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Aadhaar.Interfaces.IVerhoeffAlgorithm.yml\" sourcestartlinenumber=\"1\">Provides mathematical Verhoeff checksum validation and check digit generation based on the dihedral group D5.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Aadhaar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Aadhaar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Aadhaar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.AddressData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.AddressData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.AddressData",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.AddressData.yml\" sourcestartlinenumber=\"1\">Represents input data for a postal address.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.AddressInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.AddressInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.AddressInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.AddressInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates structured, parsed, and validated address intelligence and component models.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.AddressValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.AddressValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.AddressValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.AddressValidationError.yml\" sourcestartlinenumber=\"1\">Specifies the distinct validation failure reasons for postal addresses and address components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.AddressValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.AddressValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.AddressValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.AddressValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures validation rules, component requirements, and regional strictness for address validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.AddressValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.AddressValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.AddressValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.AddressValidator.yml\" sourcestartlinenumber=\"1\">Provides static methods for validating, parsing, normalizing, and inspecting postal addresses,\nISO 3166-1 country codes, ISO 3166-2 state codes, and national postal/ZIP codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.CountryCodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.CountryCodeInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.CountryCodeInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.CountryCodeInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates standardized international country metadata compliant with ISO 3166-1.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.IAddressNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.IAddressNormalizer.yml\" sourcestartlinenumber=\"1\">Normalizes address components and formats composite postal addresses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.IAddressParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.IAddressParser.yml\" sourcestartlinenumber=\"1\">Parses raw address inputs, validates cross-field constraints, and resolves ISO metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.IAddressValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.IAddressValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.IAddressValidatorService.yml\" sourcestartlinenumber=\"1\">Orchestrates address field validation, ISO catalog lookup, component verification, and formatting.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.ICountryCodeDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.ICountryCodeDatabase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.ICountryCodeDatabase",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.ICountryCodeDatabase.yml\" sourcestartlinenumber=\"1\">Provides access to ISO 3166-1 country codes and official country metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.IPostalCodeValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.IPostalCodeValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.IPostalCodeValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.IPostalCodeValidator.yml\" sourcestartlinenumber=\"1\">Validates and parses postal codes, ZIP codes, and PIN codes against national postal rules.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.IStateCodeDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.IStateCodeDatabase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces.IStateCodeDatabase",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.Interfaces.IStateCodeDatabase.yml\" sourcestartlinenumber=\"1\">Provides access to ISO 3166-2 state, province, and territory subdivisions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.PostalCodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.PostalCodeInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.PostalCodeInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.PostalCodeInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates parsed and validated national postal code or ZIP code metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.StateCodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.StateCodeInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address.StateCodeInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Address.StateCodeInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates standardized state, province, or territory metadata compliant with ISO 3166-2.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Address.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Address.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Address",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.Contact.ContactValidator.yml",
       "output": {
         ".html": {
@@ -1161,6 +1539,146 @@
       "output": {
         ".html": {
           "relative_path": "packages/validation/ValidationResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/AadhaarInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/AadhaarInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/AadhaarValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/AadhaarValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/AadhaarValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/AadhaarValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/AadhaarValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/AadhaarValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/VerhoeffAlgorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/VerhoeffAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/aadhaar/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/aadhaar/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/AddressInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/AddressInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/AddressValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/AddressValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/AddressValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/AddressValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/AddressValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/AddressValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/CountryCodeValidation.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/CountryCodeValidation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/PostalCodeValidation.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/PostalCodeValidation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/StateCodeValidation.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/StateCodeValidation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/address/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/address/overview.html"
         }
       },
       "version": ""

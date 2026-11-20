@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AddressValidator | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AddressValidator | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/AddressValidator.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="addressvalidator">AddressValidator</h1>
+
+<p>The <code>AddressValidator</code> static class is the primary entry point for address, country code, state code, and postal code validation in <code>Dixor.Validation</code>.</p>
+<h2 id="namespace">Namespace</h2>
+<pre><code class="lang-csharp">using Dixor.Validation.Address;
+</code></pre>
+<hr>
+<h2 id="static-methods">Static Methods</h2>
+<h3 id="country-code-endpoints">Country Code Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Return Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IsValidCountryCode(code, options)</code></td>
+<td><code>bool</code></td>
+<td>Returns <code>true</code> if the input is a valid ISO 3166-1 alpha-2, alpha-3, numeric-3, or common country name.</td>
+</tr>
+<tr>
+<td><code>ValidateCountryCode(code, options)</code></td>
+<td><code>ValidationResult&lt;AddressValidationError&gt;</code></td>
+<td>Validates the country code with detailed error reporting.</td>
+</tr>
+<tr>
+<td><code>TryGetCountry(codeOrName, out info, options)</code></td>
+<td><code>bool</code></td>
+<td>Resolves structured <code>CountryCodeInfo</code>.</td>
+</tr>
+<tr>
+<td><code>GetCountry(codeOrName, options)</code></td>
+<td><code>CountryCodeInfo</code></td>
+<td>Resolves <code>CountryCodeInfo</code>, throwing <code>FormatException</code> if invalid.</td>
+</tr>
+<tr>
+<td><code>NormalizeCountryCode(code)</code></td>
+<td><code>string</code></td>
+<td>Converts country code to standard uppercase ISO 3166-1 alpha-2 format.</td>
+</tr>
+<tr>
+<td><code>GetAllCountries()</code></td>
+<td><code>IReadOnlyList&lt;CountryCodeInfo&gt;</code></td>
+<td>Returns all cataloged ISO 3166-1 countries.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="state-code-endpoints">State Code Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Return Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IsValidStateCode(state, country, options)</code></td>
+<td><code>bool</code></td>
+<td>Returns <code>true</code> if the state code or name is valid for the specified country.</td>
+</tr>
+<tr>
+<td><code>ValidateStateCode(state, country, options)</code></td>
+<td><code>ValidationResult&lt;AddressValidationError&gt;</code></td>
+<td>Validates state code with cross-country verification.</td>
+</tr>
+<tr>
+<td><code>TryGetState(stateOrName, country, out info, options)</code></td>
+<td><code>bool</code></td>
+<td>Resolves structured <code>StateCodeInfo</code>.</td>
+</tr>
+<tr>
+<td><code>GetState(stateOrName, country, options)</code></td>
+<td><code>StateCodeInfo</code></td>
+<td>Resolves <code>StateCodeInfo</code>, throwing <code>FormatException</code> if invalid.</td>
+</tr>
+<tr>
+<td><code>NormalizeStateCode(code)</code></td>
+<td><code>string</code></td>
+<td>Converts state code into standard uppercase short representation.</td>
+</tr>
+<tr>
+<td><code>GetStatesForCountry(country)</code></td>
+<td><code>IReadOnlyList&lt;StateCodeInfo&gt;</code></td>
+<td>Returns all subdivisions for a country.</td>
+</tr>
+<tr>
+<td><code>GetAllStates()</code></td>
+<td><code>IReadOnlyList&lt;StateCodeInfo&gt;</code></td>
+<td>Returns all registered subdivisions across all countries.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="postal-code-endpoints">Postal Code Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Return Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IsValidPostalCode(postal, country, options)</code></td>
+<td><code>bool</code></td>
+<td>Returns <code>true</code> if the postal code matches the national pattern.</td>
+</tr>
+<tr>
+<td><code>ValidatePostalCode(postal, country, options)</code></td>
+<td><code>ValidationResult&lt;AddressValidationError&gt;</code></td>
+<td>Validates postal code with detailed error reporting.</td>
+</tr>
+<tr>
+<td><code>TryGetPostalCodeInfo(postal, country, out info, options)</code></td>
+<td><code>bool</code></td>
+<td>Resolves structured <code>PostalCodeInfo</code>.</td>
+</tr>
+<tr>
+<td><code>NormalizePostalCode(code)</code></td>
+<td><code>string</code></td>
+<td>Cleans extra whitespace and converts to uppercase.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="composite-address-endpoints">Composite Address Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Return Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IsValid(address, options)</code></td>
+<td><code>bool</code></td>
+<td>Determines whether all address fields and cross-field relationships are valid.</td>
+</tr>
+<tr>
+<td><code>Validate(address, options)</code></td>
+<td><code>ValidationResult&lt;AddressValidationError&gt;</code></td>
+<td>Performs full composite validation.</td>
+</tr>
+<tr>
+<td><code>TryGetInfo(address, out info, options)</code></td>
+<td><code>bool</code></td>
+<td>Resolves structured <code>AddressInfo</code>.</td>
+</tr>
+<tr>
+<td><code>GetInfo(address, options)</code></td>
+<td><code>AddressInfo</code></td>
+<td>Resolves <code>AddressInfo</code>, throwing <code>FormatException</code> if invalid.</td>
+</tr>
+<tr>
+<td><code>FormatAddress(address)</code></td>
+<td><code>string</code></td>
+<td>Formats address into a standardized single line.</td>
+</tr>
+<tr>
+<td><code>AreEqual(first, second)</code></td>
+<td><code>bool</code></td>
+<td>Determines whether two addresses represent the identical destination.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/address/AddressValidator.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
