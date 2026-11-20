@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CardNetwork Reference | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CardNetwork Reference | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/creditcard/CardNetwork.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cardnetwork-reference">CardNetwork Reference</h1>
+
+<p>The <code>CardNetwork</code> enum defines the recognized international payment card networks supported by <code>Dixor.Validation.CreditCard</code>.</p>
+<pre><code class="lang-csharp">namespace Dixor.Validation.CreditCard;
+
+public enum CardNetwork
+</code></pre>
+<hr>
+<h2 id="supported-networks--rules">Supported Networks &amp; Rules</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Network</th>
+<th style="text-align: left;">IIN / BIN Prefixes</th>
+<th style="text-align: left;">Valid Lengths</th>
+<th style="text-align: left;">Expected CVV</th>
+<th style="text-align: left;">Grouping Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Visa</strong></td>
+<td style="text-align: left;"><code>4</code></td>
+<td style="text-align: left;">13, 16, 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mastercard</strong></td>
+<td style="text-align: left;"><code>51-55</code>, <code>2221-2720</code></td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>American Express</strong></td>
+<td style="text-align: left;"><code>34</code>, <code>37</code></td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">4 digits</td>
+<td style="text-align: left;"><code>4-6-5</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Discover</strong></td>
+<td style="text-align: left;"><code>6011</code>, <code>622126-622925</code>, <code>644-649</code>, <code>65</code></td>
+<td style="text-align: left;">16, 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RuPay</strong></td>
+<td style="text-align: left;"><code>60</code>, <code>65</code>, <code>81</code>, <code>82</code>, <code>508</code>, <code>353</code>, <code>356</code></td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JCB</strong></td>
+<td style="text-align: left;"><code>3528-3589</code></td>
+<td style="text-align: left;">16, 17, 18, 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Diners Club</strong></td>
+<td style="text-align: left;"><code>300-305</code>, <code>36</code>, <code>38</code>, <code>39</code></td>
+<td style="text-align: left;">14, 16, 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-6-4</code> (or <code>4-4-4-4</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Maestro</strong></td>
+<td style="text-align: left;"><code>50</code>, <code>56-58</code>, <code>6xxx</code></td>
+<td style="text-align: left;">12 to 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>China UnionPay</strong></td>
+<td style="text-align: left;"><code>62</code></td>
+<td style="text-align: left;">16, 17, 18, 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mir</strong></td>
+<td style="text-align: left;"><code>2200-2204</code></td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Unknown</strong></td>
+<td style="text-align: left;">Other prefixes</td>
+<td style="text-align: left;">12 to 19</td>
+<td style="text-align: left;">3 digits</td>
+<td style="text-align: left;"><code>4-4-4-4</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="filtering-by-network">Filtering by Network</h2>
+<p>You can restrict validation to specific authorized card networks using <code>CreditCardValidationOptions.AllowedNetworks</code>:</p>
+<pre><code class="lang-csharp">var options = new CreditCardValidationOptions
+{
+    AllowedNetworks = new HashSet&lt;CardNetwork&gt;
+    {
+        CardNetwork.Visa,
+        CardNetwork.Mastercard,
+        CardNetwork.RuPay
+    }
+};
+
+bool isValid = CreditCardValidator.IsValid(amexNumber, options); // false (NetworkNotAllowed)
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/creditcard/CardNetwork.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

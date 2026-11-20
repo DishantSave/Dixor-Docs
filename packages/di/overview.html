@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dixor.DI Overview &amp; Architecture | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dixor.DI Overview &amp; Architecture | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dixordi-overview--architecture">Dixor.DI Overview &amp; Architecture</h1>
+
+<h2 id="philosophy">Philosophy</h2>
+<p>In enterprise software engineering, <code>Program.cs</code> and startup files frequently suffer from the &quot;Dependency Registration Dump&quot; anti-pattern:</p>
+<ul>
+<li>Every time a developer adds an interface and an implementation, they must navigate to <code>Program.cs</code> to add <code>services.AddScoped&lt;IFoo, Foo&gt;();</code>.</li>
+<li>Merge conflicts in <code>Program.cs</code> are rampant across distributed development teams.</li>
+<li>Inadvertent lifetime mismatches (e.g., injecting a Scoped service into a Singleton) cause runtime Captive Dependency bugs.</li>
+</ul>
+<p><code>Dixor.DI</code> shifts the responsibility of service lifetime declaration to the implementation class itself using clean, declarative C# attributes.</p>
+<hr>
+<h2 id="service-lifetime-mechanics">Service Lifetime Mechanics</h2>
+<p><code>Dixor.DI</code> integrates natively with Microsoft's <code>Microsoft.Extensions.DependencyInjection</code> container. It respects the three standard .NET service lifetimes:</p>
+<pre><code class="lang-mermaid">graph TD
+    A[Container Resolution Request] --&gt; B{Lifetime Attribute}
+    B --&gt;|Singleton| C[Single Instance for Entire Application Lifetime]
+    B --&gt;|Scoped| D[Single Instance Per HTTP Request / Resolution Scope]
+    B --&gt;|Transient| E[Brand New Instance on Every Single Resolution]
+</code></pre>
+<h3 id="1-singleton-singleton">1. Singleton (<code>[Singleton]</code>)</h3>
+<ul>
+<li><strong>Behavior:</strong> Created once on the initial resolution and reused throughout the entire lifespan of the process.</li>
+<li><strong>Best Used For:</strong> In-memory caches, configuration wrappers, stateful thread-safe sequence generators, and computational engines.</li>
+<li><strong>Example:</strong>
+<pre><code class="lang-csharp">[Singleton]
+public class InMemoryCache : ICacheService
+{
+    private readonly ConcurrentDictionary&lt;string, object&gt; _cache = new();
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="2-scoped-scoped">2. Scoped (<code>[Scoped]</code>)</h3>
+<ul>
+<li><strong>Behavior:</strong> A distinct instance is created per resolution scope (e.g., per incoming ASP.NET Core HTTP request). All dependencies resolved within the same scope receive the identical instance.</li>
+<li><strong>Best Used For:</strong> Entity Framework Core <code>DbContext</code> repositories, units of work, user context providers, and request audit trackers.</li>
+<li><strong>Example:</strong>
+<pre><code class="lang-csharp">[Scoped]
+public class OrderRepository : IOrderRepository
+{
+    private readonly ApplicationDbContext _db;
+    public OrderRepository(ApplicationDbContext db) =&gt; _db = db;
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="3-transient-transient">3. Transient (<code>[Transient]</code>)</h3>
+<ul>
+<li><strong>Behavior:</strong> Instantiated fresh every single time it is requested from the dependency injection container.</li>
+<li><strong>Best Used For:</strong> Lightweight, stateless services, message formatters, calculators, and short-lived algorithmic processors.</li>
+<li><strong>Example:</strong>
+<pre><code class="lang-csharp">[Transient]
+public class InvoicePdfGenerator : IInvoicePdfGenerator
+{
+    public byte[] Generate(Order order) { ... }
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="assembly-scanning-engine">Assembly Scanning Engine</h2>
+<p>When <code>services.AddDixorServices()</code> or <code>services.AddDixor()</code> is executed:</p>
+<ol>
+<li><code>DixorServiceScanner</code> inspects all public and internal concrete non-abstract classes in the specified assemblies.</li>
+<li>It detects classes decorated with <code>[ServiceAttribute]</code> (including derived <code>[Singleton]</code>, <code>[Scoped]</code>, and <code>[Transient]</code>).</li>
+<li>For each detected class:
+<ul>
+<li>If <code>As</code> is specified, it registers the service against that designated contract type.</li>
+<li>If <code>As</code> is omitted, it registers the service against all implemented interfaces (excluding system interfaces like <code>IDisposable</code> and <code>IAsyncDisposable</code>).</li>
+<li>If the class implements no interfaces, it self-registers against its own concrete type.</li>
+</ul>
+</li>
+<li>If <code>Key</code> is specified, it registers as a Keyed Service (<code>IServiceCollection.AddKeyed...</code>).</li>
+<li>If <code>TryAdd</code> is <code>true</code>, it uses <code>TryAdd</code> to avoid overriding previously registered implementations.</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

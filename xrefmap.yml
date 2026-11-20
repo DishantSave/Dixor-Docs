@@ -1,6 +1,432 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Dixor.DI
+  name: Dixor.DI
+  href: api/Dixor.DI.html
+  commentId: N:Dixor.DI
+  fullName: Dixor.DI
+  nameWithType: Dixor.DI
+- uid: Dixor.DI.DixorServiceCollectionExtensions
+  name: DixorServiceCollectionExtensions
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html
+  commentId: T:Dixor.DI.DixorServiceCollectionExtensions
+  fullName: Dixor.DI.DixorServiceCollectionExtensions
+  nameWithType: DixorServiceCollectionExtensions
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixor(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixor(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixor*
+  name: AddDixor
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixor_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixor
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixor
+  nameWithType: DixorServiceCollectionExtensions.AddDixor
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorIdentity(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorIdentity_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorIdentity(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity*
+  name: AddDixorIdentity
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorIdentity_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity
+  nameWithType: DixorServiceCollectionExtensions.AddDixorIdentity
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorModules(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModules_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorModules(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])
+  name: AddDixorModules(IServiceCollection, params Assembly[])
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModules_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Reflection_Assembly___
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])
+  name.vb: AddDixorModules(IServiceCollection, ParamArray Assembly())
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection, params System.Reflection.Assembly[])
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection, ParamArray System.Reflection.Assembly())
+  nameWithType: DixorServiceCollectionExtensions.AddDixorModules(IServiceCollection, params Assembly[])
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorModules(IServiceCollection, ParamArray Assembly())
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules*
+  name: AddDixorModules
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModules_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules
+  nameWithType: DixorServiceCollectionExtensions.AddDixorModules
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom*
+  name: AddDixorModulesFrom
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModulesFrom_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom
+  nameWithType: DixorServiceCollectionExtensions.AddDixorModulesFrom
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorModulesFrom<T>(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModulesFrom__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddDixorModulesFrom(Of T)(IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorModulesFrom<T>(IServiceCollection)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorModulesFrom(Of T)(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorServices(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorServices(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])
+  name: AddDixorServices(IServiceCollection, params Assembly[])
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Reflection_Assembly___
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])
+  name.vb: AddDixorServices(IServiceCollection, ParamArray Assembly())
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, params System.Reflection.Assembly[])
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, ParamArray System.Reflection.Assembly())
+  nameWithType: DixorServiceCollectionExtensions.AddDixorServices(IServiceCollection, params Assembly[])
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorServices(IServiceCollection, ParamArray Assembly())
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices*
+  name: AddDixorServices
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServices_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices
+  nameWithType: DixorServiceCollectionExtensions.AddDixorServices
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom*
+  name: AddDixorServicesFrom
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServicesFrom_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom
+  nameWithType: DixorServiceCollectionExtensions.AddDixorServicesFrom
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorServicesFrom<T>(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServicesFrom__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddDixorServicesFrom(Of T)(IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServicesFrom(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorServicesFrom<T>(IServiceCollection)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorServicesFrom(Of T)(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorValidation(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorValidation_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorValidation(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation*
+  name: AddDixorValidation
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorValidation_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation
+  nameWithType: DixorServiceCollectionExtensions.AddDixorValidation
+- uid: Dixor.DI.DixorServiceRegistrationInfo
+  name: DixorServiceRegistrationInfo
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html
+  commentId: T:Dixor.DI.DixorServiceRegistrationInfo
+  fullName: Dixor.DI.DixorServiceRegistrationInfo
+  nameWithType: DixorServiceRegistrationInfo
+- uid: Dixor.DI.DixorServiceRegistrationInfo.#ctor(System.Type,System.Type,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.Object,System.Reflection.Assembly)
+  name: DixorServiceRegistrationInfo(Type, Type, ServiceLifetime, object?, Assembly)
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo__ctor_System_Type_System_Type_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_Object_System_Reflection_Assembly_
+  commentId: M:Dixor.DI.DixorServiceRegistrationInfo.#ctor(System.Type,System.Type,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.Object,System.Reflection.Assembly)
+  name.vb: New(Type, Type, ServiceLifetime, Object, Assembly)
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.DixorServiceRegistrationInfo(System.Type, System.Type, Microsoft.Extensions.DependencyInjection.ServiceLifetime, object?, System.Reflection.Assembly)
+  fullName.vb: Dixor.DI.DixorServiceRegistrationInfo.New(System.Type, System.Type, Microsoft.Extensions.DependencyInjection.ServiceLifetime, Object, System.Reflection.Assembly)
+  nameWithType: DixorServiceRegistrationInfo.DixorServiceRegistrationInfo(Type, Type, ServiceLifetime, object?, Assembly)
+  nameWithType.vb: DixorServiceRegistrationInfo.New(Type, Type, ServiceLifetime, Object, Assembly)
+- uid: Dixor.DI.DixorServiceRegistrationInfo.#ctor*
+  name: DixorServiceRegistrationInfo
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo__ctor_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.DixorServiceRegistrationInfo
+  fullName.vb: Dixor.DI.DixorServiceRegistrationInfo.New
+  nameWithType: DixorServiceRegistrationInfo.DixorServiceRegistrationInfo
+  nameWithType.vb: DixorServiceRegistrationInfo.New
+- uid: Dixor.DI.DixorServiceRegistrationInfo.ImplementationType
+  name: ImplementationType
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_ImplementationType
+  commentId: P:Dixor.DI.DixorServiceRegistrationInfo.ImplementationType
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.ImplementationType
+  nameWithType: DixorServiceRegistrationInfo.ImplementationType
+- uid: Dixor.DI.DixorServiceRegistrationInfo.ImplementationType*
+  name: ImplementationType
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_ImplementationType_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.ImplementationType
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.ImplementationType
+  nameWithType: DixorServiceRegistrationInfo.ImplementationType
+- uid: Dixor.DI.DixorServiceRegistrationInfo.Key
+  name: Key
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_Key
+  commentId: P:Dixor.DI.DixorServiceRegistrationInfo.Key
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.Key
+  nameWithType: DixorServiceRegistrationInfo.Key
+- uid: Dixor.DI.DixorServiceRegistrationInfo.Key*
+  name: Key
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_Key_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.Key
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.Key
+  nameWithType: DixorServiceRegistrationInfo.Key
+- uid: Dixor.DI.DixorServiceRegistrationInfo.Lifetime
+  name: Lifetime
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_Lifetime
+  commentId: P:Dixor.DI.DixorServiceRegistrationInfo.Lifetime
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.Lifetime
+  nameWithType: DixorServiceRegistrationInfo.Lifetime
+- uid: Dixor.DI.DixorServiceRegistrationInfo.Lifetime*
+  name: Lifetime
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_Lifetime_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.Lifetime
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.Lifetime
+  nameWithType: DixorServiceRegistrationInfo.Lifetime
+- uid: Dixor.DI.DixorServiceRegistrationInfo.ServiceType
+  name: ServiceType
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_ServiceType
+  commentId: P:Dixor.DI.DixorServiceRegistrationInfo.ServiceType
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.ServiceType
+  nameWithType: DixorServiceRegistrationInfo.ServiceType
+- uid: Dixor.DI.DixorServiceRegistrationInfo.ServiceType*
+  name: ServiceType
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_ServiceType_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.ServiceType
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.ServiceType
+  nameWithType: DixorServiceRegistrationInfo.ServiceType
+- uid: Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly
+  name: SourceAssembly
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_SourceAssembly
+  commentId: P:Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly
+  nameWithType: DixorServiceRegistrationInfo.SourceAssembly
+- uid: Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly*
+  name: SourceAssembly
+  href: api/Dixor.DI.DixorServiceRegistrationInfo.html#Dixor_DI_DixorServiceRegistrationInfo_SourceAssembly_
+  commentId: Overload:Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceRegistrationInfo.SourceAssembly
+  nameWithType: DixorServiceRegistrationInfo.SourceAssembly
+- uid: Dixor.DI.DixorServiceScanner
+  name: DixorServiceScanner
+  href: api/Dixor.DI.DixorServiceScanner.html
+  commentId: T:Dixor.DI.DixorServiceScanner
+  fullName: Dixor.DI.DixorServiceScanner
+  nameWithType: DixorServiceScanner
+- uid: Dixor.DI.DixorServiceScanner.ScanAndExecuteModules(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})
+  name: ScanAndExecuteModules(IServiceCollection, IEnumerable<Assembly>)
+  href: api/Dixor.DI.DixorServiceScanner.html#Dixor_DI_DixorServiceScanner_ScanAndExecuteModules_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__
+  commentId: M:Dixor.DI.DixorServiceScanner.ScanAndExecuteModules(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})
+  name.vb: ScanAndExecuteModules(IServiceCollection, IEnumerable(Of Assembly))
+  fullName: Dixor.DI.DixorServiceScanner.ScanAndExecuteModules(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable<System.Reflection.Assembly>)
+  fullName.vb: Dixor.DI.DixorServiceScanner.ScanAndExecuteModules(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly))
+  nameWithType: DixorServiceScanner.ScanAndExecuteModules(IServiceCollection, IEnumerable<Assembly>)
+  nameWithType.vb: DixorServiceScanner.ScanAndExecuteModules(IServiceCollection, IEnumerable(Of Assembly))
+- uid: Dixor.DI.DixorServiceScanner.ScanAndExecuteModules*
+  name: ScanAndExecuteModules
+  href: api/Dixor.DI.DixorServiceScanner.html#Dixor_DI_DixorServiceScanner_ScanAndExecuteModules_
+  commentId: Overload:Dixor.DI.DixorServiceScanner.ScanAndExecuteModules
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceScanner.ScanAndExecuteModules
+  nameWithType: DixorServiceScanner.ScanAndExecuteModules
+- uid: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})
+  name: ScanAndRegisterServices(IServiceCollection, IEnumerable<Assembly>)
+  href: api/Dixor.DI.DixorServiceScanner.html#Dixor_DI_DixorServiceScanner_ScanAndRegisterServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__
+  commentId: M:Dixor.DI.DixorServiceScanner.ScanAndRegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})
+  name.vb: ScanAndRegisterServices(IServiceCollection, IEnumerable(Of Assembly))
+  fullName: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable<System.Reflection.Assembly>)
+  fullName.vb: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly))
+  nameWithType: DixorServiceScanner.ScanAndRegisterServices(IServiceCollection, IEnumerable<Assembly>)
+  nameWithType.vb: DixorServiceScanner.ScanAndRegisterServices(IServiceCollection, IEnumerable(Of Assembly))
+- uid: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices*
+  name: ScanAndRegisterServices
+  href: api/Dixor.DI.DixorServiceScanner.html#Dixor_DI_DixorServiceScanner_ScanAndRegisterServices_
+  commentId: Overload:Dixor.DI.DixorServiceScanner.ScanAndRegisterServices
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices
+  nameWithType: DixorServiceScanner.ScanAndRegisterServices
+- uid: Dixor.DI.IDixorModule
+  name: IDixorModule
+  href: api/Dixor.DI.IDixorModule.html
+  commentId: T:Dixor.DI.IDixorModule
+  fullName: Dixor.DI.IDixorModule
+  nameWithType: IDixorModule
+- uid: Dixor.DI.IDixorModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: ConfigureServices(IServiceCollection)
+  href: api/Dixor.DI.IDixorModule.html#Dixor_DI_IDixorModule_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.IDixorModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.IDixorModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: IDixorModule.ConfigureServices(IServiceCollection)
+- uid: Dixor.DI.IDixorModule.ConfigureServices*
+  name: ConfigureServices
+  href: api/Dixor.DI.IDixorModule.html#Dixor_DI_IDixorModule_ConfigureServices_
+  commentId: Overload:Dixor.DI.IDixorModule.ConfigureServices
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorModule.ConfigureServices
+  nameWithType: IDixorModule.ConfigureServices
+- uid: Dixor.DI.ScopedAttribute
+  name: ScopedAttribute
+  href: api/Dixor.DI.ScopedAttribute.html
+  commentId: T:Dixor.DI.ScopedAttribute
+  fullName: Dixor.DI.ScopedAttribute
+  nameWithType: ScopedAttribute
+- uid: Dixor.DI.ScopedAttribute.#ctor
+  name: ScopedAttribute()
+  href: api/Dixor.DI.ScopedAttribute.html#Dixor_DI_ScopedAttribute__ctor
+  commentId: M:Dixor.DI.ScopedAttribute.#ctor
+  name.vb: New()
+  fullName: Dixor.DI.ScopedAttribute.ScopedAttribute()
+  fullName.vb: Dixor.DI.ScopedAttribute.New()
+  nameWithType: ScopedAttribute.ScopedAttribute()
+  nameWithType.vb: ScopedAttribute.New()
+- uid: Dixor.DI.ScopedAttribute.#ctor*
+  name: ScopedAttribute
+  href: api/Dixor.DI.ScopedAttribute.html#Dixor_DI_ScopedAttribute__ctor_
+  commentId: Overload:Dixor.DI.ScopedAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.ScopedAttribute.ScopedAttribute
+  fullName.vb: Dixor.DI.ScopedAttribute.New
+  nameWithType: ScopedAttribute.ScopedAttribute
+  nameWithType.vb: ScopedAttribute.New
+- uid: Dixor.DI.ServiceAttribute
+  name: ServiceAttribute
+  href: api/Dixor.DI.ServiceAttribute.html
+  commentId: T:Dixor.DI.ServiceAttribute
+  fullName: Dixor.DI.ServiceAttribute
+  nameWithType: ServiceAttribute
+- uid: Dixor.DI.ServiceAttribute.#ctor(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: ServiceAttribute(ServiceLifetime)
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute__ctor_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:Dixor.DI.ServiceAttribute.#ctor(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: New(ServiceLifetime)
+  fullName: Dixor.DI.ServiceAttribute.ServiceAttribute(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName.vb: Dixor.DI.ServiceAttribute.New(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: ServiceAttribute.ServiceAttribute(ServiceLifetime)
+  nameWithType.vb: ServiceAttribute.New(ServiceLifetime)
+- uid: Dixor.DI.ServiceAttribute.#ctor*
+  name: ServiceAttribute
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute__ctor_
+  commentId: Overload:Dixor.DI.ServiceAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.ServiceAttribute.ServiceAttribute
+  fullName.vb: Dixor.DI.ServiceAttribute.New
+  nameWithType: ServiceAttribute.ServiceAttribute
+  nameWithType.vb: ServiceAttribute.New
+- uid: Dixor.DI.ServiceAttribute.As
+  name: As
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_As
+  commentId: P:Dixor.DI.ServiceAttribute.As
+  fullName: Dixor.DI.ServiceAttribute.As
+  nameWithType: ServiceAttribute.As
+- uid: Dixor.DI.ServiceAttribute.As*
+  name: As
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_As_
+  commentId: Overload:Dixor.DI.ServiceAttribute.As
+  isSpec: "True"
+  fullName: Dixor.DI.ServiceAttribute.As
+  nameWithType: ServiceAttribute.As
+- uid: Dixor.DI.ServiceAttribute.Key
+  name: Key
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_Key
+  commentId: P:Dixor.DI.ServiceAttribute.Key
+  fullName: Dixor.DI.ServiceAttribute.Key
+  nameWithType: ServiceAttribute.Key
+- uid: Dixor.DI.ServiceAttribute.Key*
+  name: Key
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_Key_
+  commentId: Overload:Dixor.DI.ServiceAttribute.Key
+  isSpec: "True"
+  fullName: Dixor.DI.ServiceAttribute.Key
+  nameWithType: ServiceAttribute.Key
+- uid: Dixor.DI.ServiceAttribute.Lifetime
+  name: Lifetime
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_Lifetime
+  commentId: P:Dixor.DI.ServiceAttribute.Lifetime
+  fullName: Dixor.DI.ServiceAttribute.Lifetime
+  nameWithType: ServiceAttribute.Lifetime
+- uid: Dixor.DI.ServiceAttribute.Lifetime*
+  name: Lifetime
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_Lifetime_
+  commentId: Overload:Dixor.DI.ServiceAttribute.Lifetime
+  isSpec: "True"
+  fullName: Dixor.DI.ServiceAttribute.Lifetime
+  nameWithType: ServiceAttribute.Lifetime
+- uid: Dixor.DI.ServiceAttribute.TryAdd
+  name: TryAdd
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_TryAdd
+  commentId: P:Dixor.DI.ServiceAttribute.TryAdd
+  fullName: Dixor.DI.ServiceAttribute.TryAdd
+  nameWithType: ServiceAttribute.TryAdd
+- uid: Dixor.DI.ServiceAttribute.TryAdd*
+  name: TryAdd
+  href: api/Dixor.DI.ServiceAttribute.html#Dixor_DI_ServiceAttribute_TryAdd_
+  commentId: Overload:Dixor.DI.ServiceAttribute.TryAdd
+  isSpec: "True"
+  fullName: Dixor.DI.ServiceAttribute.TryAdd
+  nameWithType: ServiceAttribute.TryAdd
+- uid: Dixor.DI.SingletonAttribute
+  name: SingletonAttribute
+  href: api/Dixor.DI.SingletonAttribute.html
+  commentId: T:Dixor.DI.SingletonAttribute
+  fullName: Dixor.DI.SingletonAttribute
+  nameWithType: SingletonAttribute
+- uid: Dixor.DI.SingletonAttribute.#ctor
+  name: SingletonAttribute()
+  href: api/Dixor.DI.SingletonAttribute.html#Dixor_DI_SingletonAttribute__ctor
+  commentId: M:Dixor.DI.SingletonAttribute.#ctor
+  name.vb: New()
+  fullName: Dixor.DI.SingletonAttribute.SingletonAttribute()
+  fullName.vb: Dixor.DI.SingletonAttribute.New()
+  nameWithType: SingletonAttribute.SingletonAttribute()
+  nameWithType.vb: SingletonAttribute.New()
+- uid: Dixor.DI.SingletonAttribute.#ctor*
+  name: SingletonAttribute
+  href: api/Dixor.DI.SingletonAttribute.html#Dixor_DI_SingletonAttribute__ctor_
+  commentId: Overload:Dixor.DI.SingletonAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.SingletonAttribute.SingletonAttribute
+  fullName.vb: Dixor.DI.SingletonAttribute.New
+  nameWithType: SingletonAttribute.SingletonAttribute
+  nameWithType.vb: SingletonAttribute.New
+- uid: Dixor.DI.TransientAttribute
+  name: TransientAttribute
+  href: api/Dixor.DI.TransientAttribute.html
+  commentId: T:Dixor.DI.TransientAttribute
+  fullName: Dixor.DI.TransientAttribute
+  nameWithType: TransientAttribute
+- uid: Dixor.DI.TransientAttribute.#ctor
+  name: TransientAttribute()
+  href: api/Dixor.DI.TransientAttribute.html#Dixor_DI_TransientAttribute__ctor
+  commentId: M:Dixor.DI.TransientAttribute.#ctor
+  name.vb: New()
+  fullName: Dixor.DI.TransientAttribute.TransientAttribute()
+  fullName.vb: Dixor.DI.TransientAttribute.New()
+  nameWithType: TransientAttribute.TransientAttribute()
+  nameWithType.vb: TransientAttribute.New()
+- uid: Dixor.DI.TransientAttribute.#ctor*
+  name: TransientAttribute
+  href: api/Dixor.DI.TransientAttribute.html#Dixor_DI_TransientAttribute__ctor_
+  commentId: Overload:Dixor.DI.TransientAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.TransientAttribute.TransientAttribute
+  fullName.vb: Dixor.DI.TransientAttribute.New
+  nameWithType: TransientAttribute.TransientAttribute
+  nameWithType.vb: TransientAttribute.New
 - uid: Dixor.Identity
   name: Dixor.Identity
   href: api/Dixor.Identity.html
@@ -3524,6 +3950,1129 @@ references:
   isSpec: "True"
   fullName: Dixor.Validation.Contact.ContactValidator.Validate
   nameWithType: ContactValidator.Validate
+- uid: Dixor.Validation.CreditCard
+  name: Dixor.Validation.CreditCard
+  href: api/Dixor.Validation.CreditCard.html
+  commentId: N:Dixor.Validation.CreditCard
+  fullName: Dixor.Validation.CreditCard
+  nameWithType: Dixor.Validation.CreditCard
+- uid: Dixor.Validation.CreditCard.CardNetwork
+  name: CardNetwork
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html
+  commentId: T:Dixor.Validation.CreditCard.CardNetwork
+  fullName: Dixor.Validation.CreditCard.CardNetwork
+  nameWithType: CardNetwork
+- uid: Dixor.Validation.CreditCard.CardNetwork.AmericanExpress
+  name: AmericanExpress
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_AmericanExpress
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.AmericanExpress
+  fullName: Dixor.Validation.CreditCard.CardNetwork.AmericanExpress
+  nameWithType: CardNetwork.AmericanExpress
+- uid: Dixor.Validation.CreditCard.CardNetwork.DinersClub
+  name: DinersClub
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_DinersClub
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.DinersClub
+  fullName: Dixor.Validation.CreditCard.CardNetwork.DinersClub
+  nameWithType: CardNetwork.DinersClub
+- uid: Dixor.Validation.CreditCard.CardNetwork.Discover
+  name: Discover
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Discover
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Discover
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Discover
+  nameWithType: CardNetwork.Discover
+- uid: Dixor.Validation.CreditCard.CardNetwork.JCB
+  name: JCB
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_JCB
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.JCB
+  fullName: Dixor.Validation.CreditCard.CardNetwork.JCB
+  nameWithType: CardNetwork.JCB
+- uid: Dixor.Validation.CreditCard.CardNetwork.Maestro
+  name: Maestro
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Maestro
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Maestro
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Maestro
+  nameWithType: CardNetwork.Maestro
+- uid: Dixor.Validation.CreditCard.CardNetwork.Mastercard
+  name: Mastercard
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Mastercard
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Mastercard
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Mastercard
+  nameWithType: CardNetwork.Mastercard
+- uid: Dixor.Validation.CreditCard.CardNetwork.Mir
+  name: Mir
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Mir
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Mir
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Mir
+  nameWithType: CardNetwork.Mir
+- uid: Dixor.Validation.CreditCard.CardNetwork.RuPay
+  name: RuPay
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_RuPay
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.RuPay
+  fullName: Dixor.Validation.CreditCard.CardNetwork.RuPay
+  nameWithType: CardNetwork.RuPay
+- uid: Dixor.Validation.CreditCard.CardNetwork.UnionPay
+  name: UnionPay
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_UnionPay
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.UnionPay
+  fullName: Dixor.Validation.CreditCard.CardNetwork.UnionPay
+  nameWithType: CardNetwork.UnionPay
+- uid: Dixor.Validation.CreditCard.CardNetwork.Unknown
+  name: Unknown
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Unknown
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Unknown
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Unknown
+  nameWithType: CardNetwork.Unknown
+- uid: Dixor.Validation.CreditCard.CardNetwork.Visa
+  name: Visa
+  href: api/Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Visa
+  commentId: F:Dixor.Validation.CreditCard.CardNetwork.Visa
+  fullName: Dixor.Validation.CreditCard.CardNetwork.Visa
+  nameWithType: CardNetwork.Visa
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo
+  name: CardNetworkInfo
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html
+  commentId: T:Dixor.Validation.CreditCard.CardNetworkInfo
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo
+  nameWithType: CardNetworkInfo
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.#ctor(Dixor.Validation.CreditCard.CardNetwork,System.String,System.Collections.Generic.IReadOnlyList{System.Int32},System.Int32,System.Collections.Generic.IReadOnlyList{System.Int32})
+  name: CardNetworkInfo(CardNetwork, string, IReadOnlyList<int>, int, IReadOnlyList<int>)
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo__ctor_Dixor_Validation_CreditCard_CardNetwork_System_String_System_Collections_Generic_IReadOnlyList_System_Int32__System_Int32_System_Collections_Generic_IReadOnlyList_System_Int32__
+  commentId: M:Dixor.Validation.CreditCard.CardNetworkInfo.#ctor(Dixor.Validation.CreditCard.CardNetwork,System.String,System.Collections.Generic.IReadOnlyList{System.Int32},System.Int32,System.Collections.Generic.IReadOnlyList{System.Int32})
+  name.vb: New(CardNetwork, String, IReadOnlyList(Of Integer), Integer, IReadOnlyList(Of Integer))
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.CardNetworkInfo(Dixor.Validation.CreditCard.CardNetwork, string, System.Collections.Generic.IReadOnlyList<int>, int, System.Collections.Generic.IReadOnlyList<int>)
+  fullName.vb: Dixor.Validation.CreditCard.CardNetworkInfo.New(Dixor.Validation.CreditCard.CardNetwork, String, System.Collections.Generic.IReadOnlyList(Of Integer), Integer, System.Collections.Generic.IReadOnlyList(Of Integer))
+  nameWithType: CardNetworkInfo.CardNetworkInfo(CardNetwork, string, IReadOnlyList<int>, int, IReadOnlyList<int>)
+  nameWithType.vb: CardNetworkInfo.New(CardNetwork, String, IReadOnlyList(Of Integer), Integer, IReadOnlyList(Of Integer))
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.#ctor*
+  name: CardNetworkInfo
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo__ctor_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.CardNetworkInfo
+  fullName.vb: Dixor.Validation.CreditCard.CardNetworkInfo.New
+  nameWithType: CardNetworkInfo.CardNetworkInfo
+  nameWithType.vb: CardNetworkInfo.New
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName
+  name: DisplayName
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_DisplayName
+  commentId: P:Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName
+  nameWithType: CardNetworkInfo.DisplayName
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName*
+  name: DisplayName
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_DisplayName_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.DisplayName
+  nameWithType: CardNetworkInfo.DisplayName
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength
+  name: ExpectedCvvLength
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_ExpectedCvvLength
+  commentId: P:Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength
+  nameWithType: CardNetworkInfo.ExpectedCvvLength
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength*
+  name: ExpectedCvvLength
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_ExpectedCvvLength_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.ExpectedCvvLength
+  nameWithType: CardNetworkInfo.ExpectedCvvLength
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat
+  name: GroupingFormat
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_GroupingFormat
+  commentId: P:Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat
+  nameWithType: CardNetworkInfo.GroupingFormat
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat*
+  name: GroupingFormat
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_GroupingFormat_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.GroupingFormat
+  nameWithType: CardNetworkInfo.GroupingFormat
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.Network
+  name: Network
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_Network
+  commentId: P:Dixor.Validation.CreditCard.CardNetworkInfo.Network
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.Network
+  nameWithType: CardNetworkInfo.Network
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.Network*
+  name: Network
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_Network_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.Network
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.Network
+  nameWithType: CardNetworkInfo.Network
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths
+  name: ValidLengths
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_ValidLengths
+  commentId: P:Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths
+  nameWithType: CardNetworkInfo.ValidLengths
+- uid: Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths*
+  name: ValidLengths
+  href: api/Dixor.Validation.CreditCard.CardNetworkInfo.html#Dixor_Validation_CreditCard_CardNetworkInfo_ValidLengths_
+  commentId: Overload:Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CardNetworkInfo.ValidLengths
+  nameWithType: CardNetworkInfo.ValidLengths
+- uid: Dixor.Validation.CreditCard.CreditCardInfo
+  name: CreditCardInfo
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html
+  commentId: T:Dixor.Validation.CreditCard.CreditCardInfo
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo
+  nameWithType: CreditCardInfo
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Dixor.Validation.CreditCard.CardNetwork,System.String,System.Int32,System.Boolean)
+  name: CreditCardInfo(string, string, string, string, string, string, CardNetwork, string, int, bool)
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo__ctor_System_String_System_String_System_String_System_String_System_String_System_String_Dixor_Validation_CreditCard_CardNetwork_System_String_System_Int32_System_Boolean_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Dixor.Validation.CreditCard.CardNetwork,System.String,System.Int32,System.Boolean)
+  name.vb: New(String, String, String, String, String, String, CardNetwork, String, Integer, Boolean)
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.CreditCardInfo(string, string, string, string, string, string, Dixor.Validation.CreditCard.CardNetwork, string, int, bool)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardInfo.New(String, String, String, String, String, String, Dixor.Validation.CreditCard.CardNetwork, String, Integer, Boolean)
+  nameWithType: CreditCardInfo.CreditCardInfo(string, string, string, string, string, string, CardNetwork, string, int, bool)
+  nameWithType.vb: CreditCardInfo.New(String, String, String, String, String, String, CardNetwork, String, Integer, Boolean)
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.#ctor*
+  name: CreditCardInfo
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo__ctor_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.CreditCardInfo
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardInfo.New
+  nameWithType: CreditCardInfo.CreditCardInfo
+  nameWithType.vb: CreditCardInfo.New
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Bin
+  name: Bin
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Bin
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.Bin
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Bin
+  nameWithType: CreditCardInfo.Bin
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Bin*
+  name: Bin
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Bin_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.Bin
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Bin
+  nameWithType: CreditCardInfo.Bin
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit
+  name: CheckDigit
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_CheckDigit
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit
+  nameWithType: CreditCardInfo.CheckDigit
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit*
+  name: CheckDigit
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_CheckDigit_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.CheckDigit
+  nameWithType: CreditCardInfo.CheckDigit
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Digits
+  name: Digits
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Digits
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.Digits
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Digits
+  nameWithType: CreditCardInfo.Digits
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Digits*
+  name: Digits
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Digits_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.Digits
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Digits
+  nameWithType: CreditCardInfo.Digits
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Formatted
+  name: Formatted
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Formatted
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.Formatted
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Formatted
+  nameWithType: CreditCardInfo.Formatted
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Formatted*
+  name: Formatted
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Formatted_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.Formatted
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Formatted
+  nameWithType: CreditCardInfo.Formatted
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.IsValid
+  name: IsValid
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_IsValid
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.IsValid
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.IsValid
+  nameWithType: CreditCardInfo.IsValid
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_IsValid_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.IsValid
+  nameWithType: CreditCardInfo.IsValid
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits
+  name: LastFourDigits
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_LastFourDigits
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits
+  nameWithType: CreditCardInfo.LastFourDigits
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits*
+  name: LastFourDigits
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_LastFourDigits_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.LastFourDigits
+  nameWithType: CreditCardInfo.LastFourDigits
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Masked
+  name: Masked
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Masked
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.Masked
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Masked
+  nameWithType: CreditCardInfo.Masked
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Masked*
+  name: Masked
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Masked_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.Masked
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Masked
+  nameWithType: CreditCardInfo.Masked
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Network
+  name: Network
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Network
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.Network
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Network
+  nameWithType: CreditCardInfo.Network
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.Network*
+  name: Network
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_Network_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.Network
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.Network
+  nameWithType: CreditCardInfo.Network
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.NetworkName
+  name: NetworkName
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_NetworkName
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.NetworkName
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.NetworkName
+  nameWithType: CreditCardInfo.NetworkName
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.NetworkName*
+  name: NetworkName
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_NetworkName_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.NetworkName
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.NetworkName
+  nameWithType: CreditCardInfo.NetworkName
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.RawInput
+  name: RawInput
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_RawInput
+  commentId: P:Dixor.Validation.CreditCard.CreditCardInfo.RawInput
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.RawInput
+  nameWithType: CreditCardInfo.RawInput
+- uid: Dixor.Validation.CreditCard.CreditCardInfo.RawInput*
+  name: RawInput
+  href: api/Dixor.Validation.CreditCard.CreditCardInfo.html#Dixor_Validation_CreditCard_CreditCardInfo_RawInput_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardInfo.RawInput
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardInfo.RawInput
+  nameWithType: CreditCardInfo.RawInput
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError
+  name: CreditCardValidationError
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html
+  commentId: T:Dixor.Validation.CreditCard.CreditCardValidationError
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError
+  nameWithType: CreditCardValidationError
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.Empty
+  name: Empty
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_Empty
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.Empty
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.Empty
+  nameWithType: CreditCardValidationError.Empty
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.Expired
+  name: Expired
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_Expired
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.Expired
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.Expired
+  nameWithType: CreditCardValidationError.Expired
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCharacters
+  name: InvalidCharacters
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_InvalidCharacters
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCharacters
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCharacters
+  nameWithType: CreditCardValidationError.InvalidCharacters
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidChecksum
+  name: InvalidChecksum
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_InvalidChecksum
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.InvalidChecksum
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidChecksum
+  nameWithType: CreditCardValidationError.InvalidChecksum
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCvv
+  name: InvalidCvv
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_InvalidCvv
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCvv
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidCvv
+  nameWithType: CreditCardValidationError.InvalidCvv
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidExpiryDate
+  name: InvalidExpiryDate
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_InvalidExpiryDate
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.InvalidExpiryDate
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidExpiryDate
+  nameWithType: CreditCardValidationError.InvalidExpiryDate
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidLength
+  name: InvalidLength
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_InvalidLength
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.InvalidLength
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.InvalidLength
+  nameWithType: CreditCardValidationError.InvalidLength
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.NetworkNotAllowed
+  name: NetworkNotAllowed
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_NetworkNotAllowed
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.NetworkNotAllowed
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.NetworkNotAllowed
+  nameWithType: CreditCardValidationError.NetworkNotAllowed
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.None
+  name: None
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_None
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.None
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.None
+  nameWithType: CreditCardValidationError.None
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.Null
+  name: "Null"
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_Null
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.Null
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.Null
+  nameWithType: CreditCardValidationError.Null
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.UnknownNetwork
+  name: UnknownNetwork
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_UnknownNetwork
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.UnknownNetwork
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.UnknownNetwork
+  nameWithType: CreditCardValidationError.UnknownNetwork
+- uid: Dixor.Validation.CreditCard.CreditCardValidationError.WhiteSpace
+  name: WhiteSpace
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationError.html#Dixor_Validation_CreditCard_CreditCardValidationError_WhiteSpace
+  commentId: F:Dixor.Validation.CreditCard.CreditCardValidationError.WhiteSpace
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationError.WhiteSpace
+  nameWithType: CreditCardValidationError.WhiteSpace
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions
+  name: CreditCardValidationOptions
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html
+  commentId: T:Dixor.Validation.CreditCard.CreditCardValidationOptions
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions
+  nameWithType: CreditCardValidationOptions
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters
+  name: AllowDelimiters
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_AllowDelimiters
+  commentId: P:Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters
+  nameWithType: CreditCardValidationOptions.AllowDelimiters
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters*
+  name: AllowDelimiters
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_AllowDelimiters_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowDelimiters
+  nameWithType: CreditCardValidationOptions.AllowDelimiters
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks
+  name: AllowedNetworks
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_AllowedNetworks
+  commentId: P:Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks
+  nameWithType: CreditCardValidationOptions.AllowedNetworks
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks*
+  name: AllowedNetworks
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_AllowedNetworks_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.AllowedNetworks
+  nameWithType: CreditCardValidationOptions.AllowedNetworks
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.Default
+  name: Default
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_Default
+  commentId: P:Dixor.Validation.CreditCard.CreditCardValidationOptions.Default
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.Default
+  nameWithType: CreditCardValidationOptions.Default
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.Default*
+  name: Default
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_Default_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidationOptions.Default
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.Default
+  nameWithType: CreditCardValidationOptions.Default
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum
+  name: EnforceLuhnChecksum
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_EnforceLuhnChecksum
+  commentId: P:Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum
+  nameWithType: CreditCardValidationOptions.EnforceLuhnChecksum
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum*
+  name: EnforceLuhnChecksum
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_EnforceLuhnChecksum_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.EnforceLuhnChecksum
+  nameWithType: CreditCardValidationOptions.EnforceLuhnChecksum
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork
+  name: RequireKnownNetwork
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_RequireKnownNetwork
+  commentId: P:Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork
+  nameWithType: CreditCardValidationOptions.RequireKnownNetwork
+- uid: Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork*
+  name: RequireKnownNetwork
+  href: api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html#Dixor_Validation_CreditCard_CreditCardValidationOptions_RequireKnownNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidationOptions.RequireKnownNetwork
+  nameWithType: CreditCardValidationOptions.RequireKnownNetwork
+- uid: Dixor.Validation.CreditCard.CreditCardValidator
+  name: CreditCardValidator
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html
+  commentId: T:Dixor.Validation.CreditCard.CreditCardValidator
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator
+  nameWithType: CreditCardValidator
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.AreEqual(String, String)
+  nameWithType: CreditCardValidator.AreEqual(string?, string?)
+  nameWithType.vb: CreditCardValidator.AreEqual(String, String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.AreEqual
+  nameWithType: CreditCardValidator.AreEqual
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit(System.String)
+  name: CalculateCheckDigit(string)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_CalculateCheckDigit_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit(System.String)
+  name.vb: CalculateCheckDigit(String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit(string)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit(String)
+  nameWithType: CreditCardValidator.CalculateCheckDigit(string)
+  nameWithType.vb: CreditCardValidator.CalculateCheckDigit(String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit*
+  name: CalculateCheckDigit
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_CalculateCheckDigit_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit
+  nameWithType: CreditCardValidator.CalculateCheckDigit
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork(System.String)
+  name: DetectNetwork(string?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_DetectNetwork_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork(System.String)
+  name.vb: DetectNetwork(String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork(string?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork(String)
+  nameWithType: CreditCardValidator.DetectNetwork(string?)
+  nameWithType.vb: CreditCardValidator.DetectNetwork(String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork*
+  name: DetectNetwork
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_DetectNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork
+  nameWithType: CreditCardValidator.DetectNetwork
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Format(System.String)
+  name: Format(string)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Format_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Format(System.String)
+  name.vb: Format(String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Format(string)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Format(String)
+  nameWithType: CreditCardValidator.Format(string)
+  nameWithType.vb: CreditCardValidator.Format(String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Format*
+  name: Format
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Format_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Format
+  nameWithType: CreditCardValidator.Format
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Generate(System.String)
+  name: Generate(string)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Generate_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Generate(System.String)
+  name.vb: Generate(String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Generate(string)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Generate(String)
+  nameWithType: CreditCardValidator.Generate(string)
+  nameWithType.vb: CreditCardValidator.Generate(String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Generate*
+  name: Generate
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Generate_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.Generate
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Generate
+  nameWithType: CreditCardValidator.Generate
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.GetInfo(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: GetInfo(string, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_GetInfo_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.GetInfo(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: GetInfo(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.GetInfo(string, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.GetInfo(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.GetInfo(string, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.GetInfo(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.GetInfo
+  nameWithType: CreditCardValidator.GetInfo
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: IsValid(string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_IsValid_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: IsValid(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.IsValid(string?, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.IsValid(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: IsValid(string?, int, int, string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_IsValid_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: IsValid(String, Integer, Integer, String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(string?, int, int, string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.IsValid(String, Integer, Integer, String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.IsValid(string?, int, int, string?, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.IsValid(String, Integer, Integer, String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_IsValid_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.IsValid
+  nameWithType: CreditCardValidator.IsValid
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Mask(System.String,System.Char,System.Boolean)
+  name: Mask(string, char, bool)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Mask_System_String_System_Char_System_Boolean_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Mask(System.String,System.Char,System.Boolean)
+  name.vb: Mask(String, Char, Boolean)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Mask(string, char, bool)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Mask(String, Char, Boolean)
+  nameWithType: CreditCardValidator.Mask(string, char, bool)
+  nameWithType.vb: CreditCardValidator.Mask(String, Char, Boolean)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Mask*
+  name: Mask
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Mask_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.Mask
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Mask
+  nameWithType: CreditCardValidator.Mask
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Normalize_System_String_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Normalize(string)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Normalize(String)
+  nameWithType: CreditCardValidator.Normalize(string)
+  nameWithType.vb: CreditCardValidator.Normalize(String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Normalize_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Normalize
+  nameWithType: CreditCardValidator.Normalize
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: TryGetInfo(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_TryGetInfo_System_String_Dixor_Validation_CreditCard_CreditCardInfo__Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: TryGetInfo(String, CreditCardInfo, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo(string?, out Dixor.Validation.CreditCard.CreditCardInfo?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo(String, Dixor.Validation.CreditCard.CreditCardInfo, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.TryGetInfo(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.TryGetInfo(String, CreditCardInfo, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_TryGetInfo_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo
+  nameWithType: CreditCardValidator.TryGetInfo
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize(String, String)
+  nameWithType: CreditCardValidator.TryNormalize(string?, out string?)
+  nameWithType.vb: CreditCardValidator.TryNormalize(String, String)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize
+  nameWithType: CreditCardValidator.TryNormalize
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: Validate(string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Validate_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: Validate(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Validate(string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Validate(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.Validate(string?, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.Validate(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: Validate(string?, int, int, string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Validate_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: Validate(String, Integer, Integer, String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Validate(string?, int, int, string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.CreditCardValidator.Validate(String, Integer, Integer, String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: CreditCardValidator.Validate(string?, int, int, string?, CreditCardValidationOptions?)
+  nameWithType.vb: CreditCardValidator.Validate(String, Integer, Integer, String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.CreditCardValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.CreditCard.CreditCardValidator.html#Dixor_Validation_CreditCard_CreditCardValidator_Validate_
+  commentId: Overload:Dixor.Validation.CreditCard.CreditCardValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.CreditCardValidator.Validate
+  nameWithType: CreditCardValidator.Validate
+- uid: Dixor.Validation.CreditCard.Interfaces
+  name: Dixor.Validation.CreditCard.Interfaces
+  href: api/Dixor.Validation.CreditCard.Interfaces.html
+  commentId: N:Dixor.Validation.CreditCard.Interfaces
+  fullName: Dixor.Validation.CreditCard.Interfaces
+  nameWithType: Dixor.Validation.CreditCard.Interfaces
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector
+  name: ICardNetworkDetector
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html
+  commentId: T:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector
+  nameWithType: ICardNetworkDetector
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork(System.ReadOnlySpan{System.Char})
+  name: DetectNetwork(ReadOnlySpan<char>)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_DetectNetwork_System_ReadOnlySpan_System_Char__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork(System.ReadOnlySpan{System.Char})
+  name.vb: DetectNetwork(ReadOnlySpan(Of Char))
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork(System.ReadOnlySpan<char>)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork(System.ReadOnlySpan(Of Char))
+  nameWithType: ICardNetworkDetector.DetectNetwork(ReadOnlySpan<char>)
+  nameWithType.vb: ICardNetworkDetector.DetectNetwork(ReadOnlySpan(Of Char))
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork*
+  name: DetectNetwork
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_DetectNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.DetectNetwork
+  nameWithType: ICardNetworkDetector.DetectNetwork
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo(Dixor.Validation.CreditCard.CardNetwork)
+  name: GetNetworkInfo(CardNetwork)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_GetNetworkInfo_Dixor_Validation_CreditCard_CardNetwork_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo(Dixor.Validation.CreditCard.CardNetwork)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo(Dixor.Validation.CreditCard.CardNetwork)
+  nameWithType: ICardNetworkDetector.GetNetworkInfo(CardNetwork)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo*
+  name: GetNetworkInfo
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_GetNetworkInfo_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.GetNetworkInfo
+  nameWithType: ICardNetworkDetector.GetNetworkInfo
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork(Dixor.Validation.CreditCard.CardNetwork,System.ReadOnlySpan{System.Char})
+  name: IsCvvValidForNetwork(CardNetwork, ReadOnlySpan<char>)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_IsCvvValidForNetwork_Dixor_Validation_CreditCard_CardNetwork_System_ReadOnlySpan_System_Char__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork(Dixor.Validation.CreditCard.CardNetwork,System.ReadOnlySpan{System.Char})
+  name.vb: IsCvvValidForNetwork(CardNetwork, ReadOnlySpan(Of Char))
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork(Dixor.Validation.CreditCard.CardNetwork, System.ReadOnlySpan<char>)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork(Dixor.Validation.CreditCard.CardNetwork, System.ReadOnlySpan(Of Char))
+  nameWithType: ICardNetworkDetector.IsCvvValidForNetwork(CardNetwork, ReadOnlySpan<char>)
+  nameWithType.vb: ICardNetworkDetector.IsCvvValidForNetwork(CardNetwork, ReadOnlySpan(Of Char))
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork*
+  name: IsCvvValidForNetwork
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_IsCvvValidForNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsCvvValidForNetwork
+  nameWithType: ICardNetworkDetector.IsCvvValidForNetwork
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork(Dixor.Validation.CreditCard.CardNetwork,System.Int32)
+  name: IsLengthValidForNetwork(CardNetwork, int)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_IsLengthValidForNetwork_Dixor_Validation_CreditCard_CardNetwork_System_Int32_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork(Dixor.Validation.CreditCard.CardNetwork,System.Int32)
+  name.vb: IsLengthValidForNetwork(CardNetwork, Integer)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork(Dixor.Validation.CreditCard.CardNetwork, int)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork(Dixor.Validation.CreditCard.CardNetwork, Integer)
+  nameWithType: ICardNetworkDetector.IsLengthValidForNetwork(CardNetwork, int)
+  nameWithType.vb: ICardNetworkDetector.IsLengthValidForNetwork(CardNetwork, Integer)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork*
+  name: IsLengthValidForNetwork
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html#Dixor_Validation_CreditCard_Interfaces_ICardNetworkDetector_IsLengthValidForNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.IsLengthValidForNetwork
+  nameWithType: ICardNetworkDetector.IsLengthValidForNetwork
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer
+  name: ICreditCardNormalizer
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html
+  commentId: T:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer
+  nameWithType: ICreditCardNormalizer
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format(System.String,System.Nullable{Dixor.Validation.CreditCard.CardNetwork})
+  name: Format(string, CardNetwork?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Format_System_String_System_Nullable_Dixor_Validation_CreditCard_CardNetwork__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format(System.String,System.Nullable{Dixor.Validation.CreditCard.CardNetwork})
+  name.vb: Format(String, CardNetwork?)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format(string, Dixor.Validation.CreditCard.CardNetwork?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format(String, Dixor.Validation.CreditCard.CardNetwork?)
+  nameWithType: ICreditCardNormalizer.Format(string, CardNetwork?)
+  nameWithType.vb: ICreditCardNormalizer.Format(String, CardNetwork?)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format*
+  name: Format
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Format_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Format
+  nameWithType: ICreditCardNormalizer.Format
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask(System.String,System.Char,System.Boolean,System.Nullable{Dixor.Validation.CreditCard.CardNetwork})
+  name: Mask(string, char, bool, CardNetwork?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Mask_System_String_System_Char_System_Boolean_System_Nullable_Dixor_Validation_CreditCard_CardNetwork__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask(System.String,System.Char,System.Boolean,System.Nullable{Dixor.Validation.CreditCard.CardNetwork})
+  name.vb: Mask(String, Char, Boolean, CardNetwork?)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask(string, char, bool, Dixor.Validation.CreditCard.CardNetwork?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask(String, Char, Boolean, Dixor.Validation.CreditCard.CardNetwork?)
+  nameWithType: ICreditCardNormalizer.Mask(string, char, bool, CardNetwork?)
+  nameWithType.vb: ICreditCardNormalizer.Mask(String, Char, Boolean, CardNetwork?)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask*
+  name: Mask
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Mask_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Mask
+  nameWithType: ICreditCardNormalizer.Mask
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Normalize_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize(string)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize(String)
+  nameWithType: ICreditCardNormalizer.Normalize(string)
+  nameWithType.vb: ICreditCardNormalizer.Normalize(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_Normalize_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.Normalize
+  nameWithType: ICreditCardNormalizer.Normalize
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize(String, String)
+  nameWithType: ICreditCardNormalizer.TryNormalize(string?, out string?)
+  nameWithType.vb: ICreditCardNormalizer.TryNormalize(String, String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardNormalizer_TryNormalize_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.TryNormalize
+  nameWithType: ICreditCardNormalizer.TryNormalize
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser
+  name: ICreditCardParser
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html
+  commentId: T:Dixor.Validation.CreditCard.Interfaces.ICreditCardParser
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser
+  nameWithType: ICreditCardParser
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: Parse(string, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardParser_Parse_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: Parse(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse(string, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardParser.Parse(string, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardParser.Parse(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse*
+  name: Parse
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardParser_Parse_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.Parse
+  nameWithType: ICreditCardParser.Parse
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: TryParse(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardParser_TryParse_System_String_Dixor_Validation_CreditCard_CreditCardInfo__Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: TryParse(String, CreditCardInfo, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse(string?, out Dixor.Validation.CreditCard.CreditCardInfo?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse(String, Dixor.Validation.CreditCard.CreditCardInfo, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardParser.TryParse(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardParser.TryParse(String, CreditCardInfo, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse*
+  name: TryParse
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardParser_TryParse_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.TryParse
+  nameWithType: ICreditCardParser.TryParse
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService
+  name: ICreditCardValidatorService
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html
+  commentId: T:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService
+  nameWithType: ICreditCardValidatorService
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual(String, String)
+  nameWithType: ICreditCardValidatorService.AreEqual(string?, string?)
+  nameWithType.vb: ICreditCardValidatorService.AreEqual(String, String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_AreEqual_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.AreEqual
+  nameWithType: ICreditCardValidatorService.AreEqual
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit(System.String)
+  name: CalculateCheckDigit(string)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_CalculateCheckDigit_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit(System.String)
+  name.vb: CalculateCheckDigit(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit(string)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit(String)
+  nameWithType: ICreditCardValidatorService.CalculateCheckDigit(string)
+  nameWithType.vb: ICreditCardValidatorService.CalculateCheckDigit(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit*
+  name: CalculateCheckDigit
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_CalculateCheckDigit_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.CalculateCheckDigit
+  nameWithType: ICreditCardValidatorService.CalculateCheckDigit
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork(System.String)
+  name: DetectNetwork(string?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_DetectNetwork_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork(System.String)
+  name.vb: DetectNetwork(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork(string?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork(String)
+  nameWithType: ICreditCardValidatorService.DetectNetwork(string?)
+  nameWithType.vb: ICreditCardValidatorService.DetectNetwork(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork*
+  name: DetectNetwork
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_DetectNetwork_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.DetectNetwork
+  nameWithType: ICreditCardValidatorService.DetectNetwork
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format(System.String)
+  name: Format(string)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Format_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format(System.String)
+  name.vb: Format(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format(string)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format(String)
+  nameWithType: ICreditCardValidatorService.Format(string)
+  nameWithType.vb: ICreditCardValidatorService.Format(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format*
+  name: Format
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Format_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Format
+  nameWithType: ICreditCardValidatorService.Format
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate(System.String)
+  name: Generate(string)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Generate_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate(System.String)
+  name.vb: Generate(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate(string)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate(String)
+  nameWithType: ICreditCardValidatorService.Generate(string)
+  nameWithType.vb: ICreditCardValidatorService.Generate(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate*
+  name: Generate
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Generate_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Generate
+  nameWithType: ICreditCardValidatorService.Generate
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: GetInfo(string, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_GetInfo_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: GetInfo(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo(string, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.GetInfo(string, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.GetInfo(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_GetInfo_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.GetInfo
+  nameWithType: ICreditCardValidatorService.GetInfo
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: IsValid(string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_IsValid_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: IsValid(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.IsValid(string?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.IsValid(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: IsValid(string?, int, int, string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_IsValid_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: IsValid(String, Integer, Integer, String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(string?, int, int, string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid(String, Integer, Integer, String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.IsValid(string?, int, int, string?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.IsValid(String, Integer, Integer, String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_IsValid_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.IsValid
+  nameWithType: ICreditCardValidatorService.IsValid
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask(System.String,System.Char,System.Boolean)
+  name: Mask(string, char, bool)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Mask_System_String_System_Char_System_Boolean_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask(System.String,System.Char,System.Boolean)
+  name.vb: Mask(String, Char, Boolean)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask(string, char, bool)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask(String, Char, Boolean)
+  nameWithType: ICreditCardValidatorService.Mask(string, char, bool)
+  nameWithType.vb: ICreditCardValidatorService.Mask(String, Char, Boolean)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask*
+  name: Mask
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Mask_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Mask
+  nameWithType: ICreditCardValidatorService.Mask
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Normalize_System_String_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize(string)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize(String)
+  nameWithType: ICreditCardValidatorService.Normalize(string)
+  nameWithType.vb: ICreditCardValidatorService.Normalize(String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Normalize_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Normalize
+  nameWithType: ICreditCardValidatorService.Normalize
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: TryGetInfo(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_TryGetInfo_System_String_Dixor_Validation_CreditCard_CreditCardInfo__Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: TryGetInfo(String, CreditCardInfo, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo(string?, out Dixor.Validation.CreditCard.CreditCardInfo?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo(String, Dixor.Validation.CreditCard.CreditCardInfo, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.TryGetInfo(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.TryGetInfo(String, CreditCardInfo, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_TryGetInfo_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryGetInfo
+  nameWithType: ICreditCardValidatorService.TryGetInfo
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize(String, String)
+  nameWithType: ICreditCardValidatorService.TryNormalize(string?, out string?)
+  nameWithType.vb: ICreditCardValidatorService.TryNormalize(String, String)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_TryNormalize_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.TryNormalize
+  nameWithType: ICreditCardValidatorService.TryNormalize
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: Validate(string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Validate_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: Validate(String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.Validate(string?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.Validate(String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name: Validate(string?, int, int, string?, CreditCardValidationOptions?)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Validate_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  name.vb: Validate(String, Integer, Integer, String, CreditCardValidationOptions)
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(string?, int, int, string?, Dixor.Validation.CreditCard.CreditCardValidationOptions?)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate(String, Integer, Integer, String, Dixor.Validation.CreditCard.CreditCardValidationOptions)
+  nameWithType: ICreditCardValidatorService.Validate(string?, int, int, string?, CreditCardValidationOptions?)
+  nameWithType.vb: ICreditCardValidatorService.Validate(String, Integer, Integer, String, CreditCardValidationOptions)
+- uid: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate*
+  name: Validate
+  href: api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html#Dixor_Validation_CreditCard_Interfaces_ICreditCardValidatorService_Validate_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.Validate
+  nameWithType: ICreditCardValidatorService.Validate
+- uid: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm
+  name: ILuhnAlgorithm
+  href: api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html
+  commentId: T:Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm
+  fullName: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm
+  nameWithType: ILuhnAlgorithm
+- uid: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit(System.ReadOnlySpan{System.Char})
+  name: CalculateCheckDigit(ReadOnlySpan<char>)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html#Dixor_Validation_CreditCard_Interfaces_ILuhnAlgorithm_CalculateCheckDigit_System_ReadOnlySpan_System_Char__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit(System.ReadOnlySpan{System.Char})
+  name.vb: CalculateCheckDigit(ReadOnlySpan(Of Char))
+  fullName: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit(System.ReadOnlySpan<char>)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit(System.ReadOnlySpan(Of Char))
+  nameWithType: ILuhnAlgorithm.CalculateCheckDigit(ReadOnlySpan<char>)
+  nameWithType.vb: ILuhnAlgorithm.CalculateCheckDigit(ReadOnlySpan(Of Char))
+- uid: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit*
+  name: CalculateCheckDigit
+  href: api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html#Dixor_Validation_CreditCard_Interfaces_ILuhnAlgorithm_CalculateCheckDigit_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.CalculateCheckDigit
+  nameWithType: ILuhnAlgorithm.CalculateCheckDigit
+- uid: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate(System.ReadOnlySpan{System.Char})
+  name: Validate(ReadOnlySpan<char>)
+  href: api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html#Dixor_Validation_CreditCard_Interfaces_ILuhnAlgorithm_Validate_System_ReadOnlySpan_System_Char__
+  commentId: M:Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate(System.ReadOnlySpan{System.Char})
+  name.vb: Validate(ReadOnlySpan(Of Char))
+  fullName: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate(System.ReadOnlySpan<char>)
+  fullName.vb: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate(System.ReadOnlySpan(Of Char))
+  nameWithType: ILuhnAlgorithm.Validate(ReadOnlySpan<char>)
+  nameWithType.vb: ILuhnAlgorithm.Validate(ReadOnlySpan(Of Char))
+- uid: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate*
+  name: Validate
+  href: api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html#Dixor_Validation_CreditCard_Interfaces_ILuhnAlgorithm_Validate_
+  commentId: Overload:Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.Validate
+  nameWithType: ILuhnAlgorithm.Validate
 - uid: Dixor.Validation.Email
   name: Dixor.Validation.Email
   href: api/Dixor.Validation.Email.html
@@ -7038,6 +8587,832 @@ references:
   isSpec: "True"
   fullName: Dixor.Validation.Phone.PhoneValidator.Validate
   nameWithType: PhoneValidator.Validate
+- uid: Dixor.Validation.Url
+  name: Dixor.Validation.Url
+  href: api/Dixor.Validation.Url.html
+  commentId: N:Dixor.Validation.Url
+  fullName: Dixor.Validation.Url
+  nameWithType: Dixor.Validation.Url
+- uid: Dixor.Validation.Url.Interfaces
+  name: Dixor.Validation.Url.Interfaces
+  href: api/Dixor.Validation.Url.Interfaces.html
+  commentId: N:Dixor.Validation.Url.Interfaces
+  fullName: Dixor.Validation.Url.Interfaces
+  nameWithType: Dixor.Validation.Url.Interfaces
+- uid: Dixor.Validation.Url.Interfaces.IUrlNormalizer
+  name: IUrlNormalizer
+  href: api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html
+  commentId: T:Dixor.Validation.Url.Interfaces.IUrlNormalizer
+  fullName: Dixor.Validation.Url.Interfaces.IUrlNormalizer
+  nameWithType: IUrlNormalizer
+- uid: Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html#Dixor_Validation_Url_Interfaces_IUrlNormalizer_Normalize_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize(string)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize(String)
+  nameWithType: IUrlNormalizer.Normalize(string)
+  nameWithType.vb: IUrlNormalizer.Normalize(String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html#Dixor_Validation_Url_Interfaces_IUrlNormalizer_Normalize_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlNormalizer.Normalize
+  nameWithType: IUrlNormalizer.Normalize
+- uid: Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html#Dixor_Validation_Url_Interfaces_IUrlNormalizer_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize(String, String)
+  nameWithType: IUrlNormalizer.TryNormalize(string?, out string?)
+  nameWithType.vb: IUrlNormalizer.TryNormalize(String, String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html#Dixor_Validation_Url_Interfaces_IUrlNormalizer_TryNormalize_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlNormalizer.TryNormalize
+  nameWithType: IUrlNormalizer.TryNormalize
+- uid: Dixor.Validation.Url.Interfaces.IUrlParser
+  name: IUrlParser
+  href: api/Dixor.Validation.Url.Interfaces.IUrlParser.html
+  commentId: T:Dixor.Validation.Url.Interfaces.IUrlParser
+  fullName: Dixor.Validation.Url.Interfaces.IUrlParser
+  nameWithType: IUrlParser
+- uid: Dixor.Validation.Url.Interfaces.IUrlParser.Parse(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: Parse(string, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlParser.html#Dixor_Validation_Url_Interfaces_IUrlParser_Parse_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlParser.Parse(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: Parse(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlParser.Parse(string, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlParser.Parse(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlParser.Parse(string, UrlValidationOptions?)
+  nameWithType.vb: IUrlParser.Parse(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlParser.Parse*
+  name: Parse
+  href: api/Dixor.Validation.Url.Interfaces.IUrlParser.html#Dixor_Validation_Url_Interfaces_IUrlParser_Parse_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlParser.Parse
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlParser.Parse
+  nameWithType: IUrlParser.Parse
+- uid: Dixor.Validation.Url.Interfaces.IUrlParser.TryParse(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name: TryParse(string?, out UrlInfo?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlParser.html#Dixor_Validation_Url_Interfaces_IUrlParser_TryParse_System_String_Dixor_Validation_Url_UrlInfo__Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlParser.TryParse(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: TryParse(String, UrlInfo, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlParser.TryParse(string?, out Dixor.Validation.Url.UrlInfo?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlParser.TryParse(String, Dixor.Validation.Url.UrlInfo, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlParser.TryParse(string?, out UrlInfo?, UrlValidationOptions?)
+  nameWithType.vb: IUrlParser.TryParse(String, UrlInfo, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlParser.TryParse*
+  name: TryParse
+  href: api/Dixor.Validation.Url.Interfaces.IUrlParser.html#Dixor_Validation_Url_Interfaces_IUrlParser_TryParse_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlParser.TryParse
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlParser.TryParse
+  nameWithType: IUrlParser.TryParse
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker
+  name: IUrlSecurityChecker
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html
+  commentId: T:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker
+  nameWithType: IUrlSecurityChecker
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld(System.String)
+  name: HasValidTld(string)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_HasValidTld_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld(System.String)
+  name.vb: HasValidTld(String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld(string)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld(String)
+  nameWithType: IUrlSecurityChecker.HasValidTld(string)
+  nameWithType.vb: IUrlSecurityChecker.HasValidTld(String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld*
+  name: HasValidTld
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_HasValidTld_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.HasValidTld
+  nameWithType: IUrlSecurityChecker.HasValidTld
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress(System.String,System.Net.IPAddress@)
+  name: IsIpAddress(string, out IPAddress?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsIpAddress_System_String_System_Net_IPAddress__
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress(System.String,System.Net.IPAddress@)
+  name.vb: IsIpAddress(String, IPAddress)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress(string, out System.Net.IPAddress?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress(String, System.Net.IPAddress)
+  nameWithType: IUrlSecurityChecker.IsIpAddress(string, out IPAddress?)
+  nameWithType.vb: IUrlSecurityChecker.IsIpAddress(String, IPAddress)
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress*
+  name: IsIpAddress
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsIpAddress_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsIpAddress
+  nameWithType: IUrlSecurityChecker.IsIpAddress
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost(System.String)
+  name: IsLocalhost(string)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsLocalhost_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost(System.String)
+  name.vb: IsLocalhost(String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost(string)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost(String)
+  nameWithType: IUrlSecurityChecker.IsLocalhost(string)
+  nameWithType.vb: IUrlSecurityChecker.IsLocalhost(String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost*
+  name: IsLocalhost
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsLocalhost_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsLocalhost
+  nameWithType: IUrlSecurityChecker.IsLocalhost
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(System.Net.IPAddress)
+  name: IsPrivateOrReservedIp(IPAddress)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsPrivateOrReservedIp_System_Net_IPAddress_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(System.Net.IPAddress)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(System.Net.IPAddress)
+  nameWithType: IUrlSecurityChecker.IsPrivateOrReservedIp(IPAddress)
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(System.String)
+  name: IsPrivateOrReservedIp(string)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsPrivateOrReservedIp_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(System.String)
+  name.vb: IsPrivateOrReservedIp(String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(string)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp(String)
+  nameWithType: IUrlSecurityChecker.IsPrivateOrReservedIp(string)
+  nameWithType.vb: IUrlSecurityChecker.IsPrivateOrReservedIp(String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp*
+  name: IsPrivateOrReservedIp
+  href: api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html#Dixor_Validation_Url_Interfaces_IUrlSecurityChecker_IsPrivateOrReservedIp_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.IsPrivateOrReservedIp
+  nameWithType: IUrlSecurityChecker.IsPrivateOrReservedIp
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService
+  name: IUrlValidatorService
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html
+  commentId: T:Dixor.Validation.Url.Interfaces.IUrlValidatorService
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService
+  nameWithType: IUrlValidatorService
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual(String, String)
+  nameWithType: IUrlValidatorService.AreEqual(string?, string?)
+  nameWithType.vb: IUrlValidatorService.AreEqual(String, String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_AreEqual_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.AreEqual
+  nameWithType: IUrlValidatorService.AreEqual
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: GetInfo(string, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_GetInfo_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: GetInfo(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo(string, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlValidatorService.GetInfo(string, UrlValidationOptions?)
+  nameWithType.vb: IUrlValidatorService.GetInfo(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_GetInfo_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.GetInfo
+  nameWithType: IUrlValidatorService.GetInfo
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: IsValid(string?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_IsValid_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: IsValid(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid(string?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlValidatorService.IsValid(string?, UrlValidationOptions?)
+  nameWithType.vb: IUrlValidatorService.IsValid(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_IsValid_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.IsValid
+  nameWithType: IUrlValidatorService.IsValid
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_Normalize_System_String_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize(string)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize(String)
+  nameWithType: IUrlValidatorService.Normalize(string)
+  nameWithType.vb: IUrlValidatorService.Normalize(String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_Normalize_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Normalize
+  nameWithType: IUrlValidatorService.Normalize
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name: TryGetInfo(string?, out UrlInfo?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_TryGetInfo_System_String_Dixor_Validation_Url_UrlInfo__Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: TryGetInfo(String, UrlInfo, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo(string?, out Dixor.Validation.Url.UrlInfo?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo(String, Dixor.Validation.Url.UrlInfo, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlValidatorService.TryGetInfo(string?, out UrlInfo?, UrlValidationOptions?)
+  nameWithType.vb: IUrlValidatorService.TryGetInfo(String, UrlInfo, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryGetInfo
+  nameWithType: IUrlValidatorService.TryGetInfo
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize(String, String)
+  nameWithType: IUrlValidatorService.TryNormalize(string?, out string?)
+  nameWithType.vb: IUrlValidatorService.TryNormalize(String, String)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_TryNormalize_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.TryNormalize
+  nameWithType: IUrlValidatorService.TryNormalize
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: Validate(string?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_Validate_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: Validate(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate(string?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: IUrlValidatorService.Validate(string?, UrlValidationOptions?)
+  nameWithType.vb: IUrlValidatorService.Validate(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html#Dixor_Validation_Url_Interfaces_IUrlValidatorService_Validate_
+  commentId: Overload:Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.Interfaces.IUrlValidatorService.Validate
+  nameWithType: IUrlValidatorService.Validate
+- uid: Dixor.Validation.Url.UrlInfo
+  name: UrlInfo
+  href: api/Dixor.Validation.Url.UrlInfo.html
+  commentId: T:Dixor.Validation.Url.UrlInfo
+  fullName: Dixor.Validation.Url.UrlInfo
+  nameWithType: UrlInfo
+- uid: Dixor.Validation.Url.UrlInfo.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: UrlInfo(string, string, string, string, int, string, string, string, bool, bool, bool, bool, bool, bool)
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo__ctor_System_String_System_String_System_String_System_String_System_Int32_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:Dixor.Validation.Url.UrlInfo.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: New(String, String, String, String, Integer, String, String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: Dixor.Validation.Url.UrlInfo.UrlInfo(string, string, string, string, int, string, string, string, bool, bool, bool, bool, bool, bool)
+  fullName.vb: Dixor.Validation.Url.UrlInfo.New(String, String, String, String, Integer, String, String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: UrlInfo.UrlInfo(string, string, string, string, int, string, string, string, bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: UrlInfo.New(String, String, String, String, Integer, String, String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: Dixor.Validation.Url.UrlInfo.#ctor*
+  name: UrlInfo
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo__ctor_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Validation.Url.UrlInfo.UrlInfo
+  fullName.vb: Dixor.Validation.Url.UrlInfo.New
+  nameWithType: UrlInfo.UrlInfo
+  nameWithType.vb: UrlInfo.New
+- uid: Dixor.Validation.Url.UrlInfo.Fragment
+  name: Fragment
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Fragment
+  commentId: P:Dixor.Validation.Url.UrlInfo.Fragment
+  fullName: Dixor.Validation.Url.UrlInfo.Fragment
+  nameWithType: UrlInfo.Fragment
+- uid: Dixor.Validation.Url.UrlInfo.Fragment*
+  name: Fragment
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Fragment_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Fragment
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Fragment
+  nameWithType: UrlInfo.Fragment
+- uid: Dixor.Validation.Url.UrlInfo.HasCredentials
+  name: HasCredentials
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_HasCredentials
+  commentId: P:Dixor.Validation.Url.UrlInfo.HasCredentials
+  fullName: Dixor.Validation.Url.UrlInfo.HasCredentials
+  nameWithType: UrlInfo.HasCredentials
+- uid: Dixor.Validation.Url.UrlInfo.HasCredentials*
+  name: HasCredentials
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_HasCredentials_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.HasCredentials
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.HasCredentials
+  nameWithType: UrlInfo.HasCredentials
+- uid: Dixor.Validation.Url.UrlInfo.Host
+  name: Host
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Host
+  commentId: P:Dixor.Validation.Url.UrlInfo.Host
+  fullName: Dixor.Validation.Url.UrlInfo.Host
+  nameWithType: UrlInfo.Host
+- uid: Dixor.Validation.Url.UrlInfo.Host*
+  name: Host
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Host_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Host
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Host
+  nameWithType: UrlInfo.Host
+- uid: Dixor.Validation.Url.UrlInfo.IsHttps
+  name: IsHttps
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsHttps
+  commentId: P:Dixor.Validation.Url.UrlInfo.IsHttps
+  fullName: Dixor.Validation.Url.UrlInfo.IsHttps
+  nameWithType: UrlInfo.IsHttps
+- uid: Dixor.Validation.Url.UrlInfo.IsHttps*
+  name: IsHttps
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsHttps_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.IsHttps
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.IsHttps
+  nameWithType: UrlInfo.IsHttps
+- uid: Dixor.Validation.Url.UrlInfo.IsIpAddress
+  name: IsIpAddress
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsIpAddress
+  commentId: P:Dixor.Validation.Url.UrlInfo.IsIpAddress
+  fullName: Dixor.Validation.Url.UrlInfo.IsIpAddress
+  nameWithType: UrlInfo.IsIpAddress
+- uid: Dixor.Validation.Url.UrlInfo.IsIpAddress*
+  name: IsIpAddress
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsIpAddress_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.IsIpAddress
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.IsIpAddress
+  nameWithType: UrlInfo.IsIpAddress
+- uid: Dixor.Validation.Url.UrlInfo.IsLocalhost
+  name: IsLocalhost
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsLocalhost
+  commentId: P:Dixor.Validation.Url.UrlInfo.IsLocalhost
+  fullName: Dixor.Validation.Url.UrlInfo.IsLocalhost
+  nameWithType: UrlInfo.IsLocalhost
+- uid: Dixor.Validation.Url.UrlInfo.IsLocalhost*
+  name: IsLocalhost
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsLocalhost_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.IsLocalhost
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.IsLocalhost
+  nameWithType: UrlInfo.IsLocalhost
+- uid: Dixor.Validation.Url.UrlInfo.IsPrivateIp
+  name: IsPrivateIp
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsPrivateIp
+  commentId: P:Dixor.Validation.Url.UrlInfo.IsPrivateIp
+  fullName: Dixor.Validation.Url.UrlInfo.IsPrivateIp
+  nameWithType: UrlInfo.IsPrivateIp
+- uid: Dixor.Validation.Url.UrlInfo.IsPrivateIp*
+  name: IsPrivateIp
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsPrivateIp_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.IsPrivateIp
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.IsPrivateIp
+  nameWithType: UrlInfo.IsPrivateIp
+- uid: Dixor.Validation.Url.UrlInfo.IsValid
+  name: IsValid
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsValid
+  commentId: P:Dixor.Validation.Url.UrlInfo.IsValid
+  fullName: Dixor.Validation.Url.UrlInfo.IsValid
+  nameWithType: UrlInfo.IsValid
+- uid: Dixor.Validation.Url.UrlInfo.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_IsValid_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.IsValid
+  nameWithType: UrlInfo.IsValid
+- uid: Dixor.Validation.Url.UrlInfo.NormalizedUrl
+  name: NormalizedUrl
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_NormalizedUrl
+  commentId: P:Dixor.Validation.Url.UrlInfo.NormalizedUrl
+  fullName: Dixor.Validation.Url.UrlInfo.NormalizedUrl
+  nameWithType: UrlInfo.NormalizedUrl
+- uid: Dixor.Validation.Url.UrlInfo.NormalizedUrl*
+  name: NormalizedUrl
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_NormalizedUrl_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.NormalizedUrl
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.NormalizedUrl
+  nameWithType: UrlInfo.NormalizedUrl
+- uid: Dixor.Validation.Url.UrlInfo.Path
+  name: Path
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Path
+  commentId: P:Dixor.Validation.Url.UrlInfo.Path
+  fullName: Dixor.Validation.Url.UrlInfo.Path
+  nameWithType: UrlInfo.Path
+- uid: Dixor.Validation.Url.UrlInfo.Path*
+  name: Path
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Path_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Path
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Path
+  nameWithType: UrlInfo.Path
+- uid: Dixor.Validation.Url.UrlInfo.Port
+  name: Port
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Port
+  commentId: P:Dixor.Validation.Url.UrlInfo.Port
+  fullName: Dixor.Validation.Url.UrlInfo.Port
+  nameWithType: UrlInfo.Port
+- uid: Dixor.Validation.Url.UrlInfo.Port*
+  name: Port
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Port_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Port
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Port
+  nameWithType: UrlInfo.Port
+- uid: Dixor.Validation.Url.UrlInfo.Query
+  name: Query
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Query
+  commentId: P:Dixor.Validation.Url.UrlInfo.Query
+  fullName: Dixor.Validation.Url.UrlInfo.Query
+  nameWithType: UrlInfo.Query
+- uid: Dixor.Validation.Url.UrlInfo.Query*
+  name: Query
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Query_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Query
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Query
+  nameWithType: UrlInfo.Query
+- uid: Dixor.Validation.Url.UrlInfo.RawInput
+  name: RawInput
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_RawInput
+  commentId: P:Dixor.Validation.Url.UrlInfo.RawInput
+  fullName: Dixor.Validation.Url.UrlInfo.RawInput
+  nameWithType: UrlInfo.RawInput
+- uid: Dixor.Validation.Url.UrlInfo.RawInput*
+  name: RawInput
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_RawInput_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.RawInput
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.RawInput
+  nameWithType: UrlInfo.RawInput
+- uid: Dixor.Validation.Url.UrlInfo.Scheme
+  name: Scheme
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Scheme
+  commentId: P:Dixor.Validation.Url.UrlInfo.Scheme
+  fullName: Dixor.Validation.Url.UrlInfo.Scheme
+  nameWithType: UrlInfo.Scheme
+- uid: Dixor.Validation.Url.UrlInfo.Scheme*
+  name: Scheme
+  href: api/Dixor.Validation.Url.UrlInfo.html#Dixor_Validation_Url_UrlInfo_Scheme_
+  commentId: Overload:Dixor.Validation.Url.UrlInfo.Scheme
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlInfo.Scheme
+  nameWithType: UrlInfo.Scheme
+- uid: Dixor.Validation.Url.UrlValidationError
+  name: UrlValidationError
+  href: api/Dixor.Validation.Url.UrlValidationError.html
+  commentId: T:Dixor.Validation.Url.UrlValidationError
+  fullName: Dixor.Validation.Url.UrlValidationError
+  nameWithType: UrlValidationError
+- uid: Dixor.Validation.Url.UrlValidationError.CredentialsNotAllowed
+  name: CredentialsNotAllowed
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_CredentialsNotAllowed
+  commentId: F:Dixor.Validation.Url.UrlValidationError.CredentialsNotAllowed
+  fullName: Dixor.Validation.Url.UrlValidationError.CredentialsNotAllowed
+  nameWithType: UrlValidationError.CredentialsNotAllowed
+- uid: Dixor.Validation.Url.UrlValidationError.DisallowedPort
+  name: DisallowedPort
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_DisallowedPort
+  commentId: F:Dixor.Validation.Url.UrlValidationError.DisallowedPort
+  fullName: Dixor.Validation.Url.UrlValidationError.DisallowedPort
+  nameWithType: UrlValidationError.DisallowedPort
+- uid: Dixor.Validation.Url.UrlValidationError.DisallowedScheme
+  name: DisallowedScheme
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_DisallowedScheme
+  commentId: F:Dixor.Validation.Url.UrlValidationError.DisallowedScheme
+  fullName: Dixor.Validation.Url.UrlValidationError.DisallowedScheme
+  nameWithType: UrlValidationError.DisallowedScheme
+- uid: Dixor.Validation.Url.UrlValidationError.Empty
+  name: Empty
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_Empty
+  commentId: F:Dixor.Validation.Url.UrlValidationError.Empty
+  fullName: Dixor.Validation.Url.UrlValidationError.Empty
+  nameWithType: UrlValidationError.Empty
+- uid: Dixor.Validation.Url.UrlValidationError.InvalidFormat
+  name: InvalidFormat
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_InvalidFormat
+  commentId: F:Dixor.Validation.Url.UrlValidationError.InvalidFormat
+  fullName: Dixor.Validation.Url.UrlValidationError.InvalidFormat
+  nameWithType: UrlValidationError.InvalidFormat
+- uid: Dixor.Validation.Url.UrlValidationError.IpAddressNotAllowed
+  name: IpAddressNotAllowed
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_IpAddressNotAllowed
+  commentId: F:Dixor.Validation.Url.UrlValidationError.IpAddressNotAllowed
+  fullName: Dixor.Validation.Url.UrlValidationError.IpAddressNotAllowed
+  nameWithType: UrlValidationError.IpAddressNotAllowed
+- uid: Dixor.Validation.Url.UrlValidationError.LocalhostNotAllowed
+  name: LocalhostNotAllowed
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_LocalhostNotAllowed
+  commentId: F:Dixor.Validation.Url.UrlValidationError.LocalhostNotAllowed
+  fullName: Dixor.Validation.Url.UrlValidationError.LocalhostNotAllowed
+  nameWithType: UrlValidationError.LocalhostNotAllowed
+- uid: Dixor.Validation.Url.UrlValidationError.MissingHost
+  name: MissingHost
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_MissingHost
+  commentId: F:Dixor.Validation.Url.UrlValidationError.MissingHost
+  fullName: Dixor.Validation.Url.UrlValidationError.MissingHost
+  nameWithType: UrlValidationError.MissingHost
+- uid: Dixor.Validation.Url.UrlValidationError.MissingScheme
+  name: MissingScheme
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_MissingScheme
+  commentId: F:Dixor.Validation.Url.UrlValidationError.MissingScheme
+  fullName: Dixor.Validation.Url.UrlValidationError.MissingScheme
+  nameWithType: UrlValidationError.MissingScheme
+- uid: Dixor.Validation.Url.UrlValidationError.MissingTld
+  name: MissingTld
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_MissingTld
+  commentId: F:Dixor.Validation.Url.UrlValidationError.MissingTld
+  fullName: Dixor.Validation.Url.UrlValidationError.MissingTld
+  nameWithType: UrlValidationError.MissingTld
+- uid: Dixor.Validation.Url.UrlValidationError.None
+  name: None
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_None
+  commentId: F:Dixor.Validation.Url.UrlValidationError.None
+  fullName: Dixor.Validation.Url.UrlValidationError.None
+  nameWithType: UrlValidationError.None
+- uid: Dixor.Validation.Url.UrlValidationError.Null
+  name: "Null"
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_Null
+  commentId: F:Dixor.Validation.Url.UrlValidationError.Null
+  fullName: Dixor.Validation.Url.UrlValidationError.Null
+  nameWithType: UrlValidationError.Null
+- uid: Dixor.Validation.Url.UrlValidationError.PrivateIpNotAllowed
+  name: PrivateIpNotAllowed
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_PrivateIpNotAllowed
+  commentId: F:Dixor.Validation.Url.UrlValidationError.PrivateIpNotAllowed
+  fullName: Dixor.Validation.Url.UrlValidationError.PrivateIpNotAllowed
+  nameWithType: UrlValidationError.PrivateIpNotAllowed
+- uid: Dixor.Validation.Url.UrlValidationError.RequiresHttps
+  name: RequiresHttps
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_RequiresHttps
+  commentId: F:Dixor.Validation.Url.UrlValidationError.RequiresHttps
+  fullName: Dixor.Validation.Url.UrlValidationError.RequiresHttps
+  nameWithType: UrlValidationError.RequiresHttps
+- uid: Dixor.Validation.Url.UrlValidationError.WhiteSpace
+  name: WhiteSpace
+  href: api/Dixor.Validation.Url.UrlValidationError.html#Dixor_Validation_Url_UrlValidationError_WhiteSpace
+  commentId: F:Dixor.Validation.Url.UrlValidationError.WhiteSpace
+  fullName: Dixor.Validation.Url.UrlValidationError.WhiteSpace
+  nameWithType: UrlValidationError.WhiteSpace
+- uid: Dixor.Validation.Url.UrlValidationOptions
+  name: UrlValidationOptions
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html
+  commentId: T:Dixor.Validation.Url.UrlValidationOptions
+  fullName: Dixor.Validation.Url.UrlValidationOptions
+  nameWithType: UrlValidationOptions
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowCredentials
+  name: AllowCredentials
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowCredentials
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowCredentials
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowCredentials
+  nameWithType: UrlValidationOptions.AllowCredentials
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowCredentials*
+  name: AllowCredentials
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowCredentials_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowCredentials
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowCredentials
+  nameWithType: UrlValidationOptions.AllowCredentials
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress
+  name: AllowIpAddress
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowIpAddress
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress
+  nameWithType: UrlValidationOptions.AllowIpAddress
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress*
+  name: AllowIpAddress
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowIpAddress_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowIpAddress
+  nameWithType: UrlValidationOptions.AllowIpAddress
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost
+  name: AllowLocalhost
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowLocalhost
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost
+  nameWithType: UrlValidationOptions.AllowLocalhost
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost*
+  name: AllowLocalhost
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowLocalhost_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowLocalhost
+  nameWithType: UrlValidationOptions.AllowLocalhost
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps
+  name: AllowPrivateIps
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowPrivateIps
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps
+  nameWithType: UrlValidationOptions.AllowPrivateIps
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps*
+  name: AllowPrivateIps
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowPrivateIps_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowPrivateIps
+  nameWithType: UrlValidationOptions.AllowPrivateIps
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowedPorts
+  name: AllowedPorts
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowedPorts
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowedPorts
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowedPorts
+  nameWithType: UrlValidationOptions.AllowedPorts
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowedPorts*
+  name: AllowedPorts
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowedPorts_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowedPorts
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowedPorts
+  nameWithType: UrlValidationOptions.AllowedPorts
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes
+  name: AllowedSchemes
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowedSchemes
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes
+  nameWithType: UrlValidationOptions.AllowedSchemes
+- uid: Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes*
+  name: AllowedSchemes
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_AllowedSchemes_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.AllowedSchemes
+  nameWithType: UrlValidationOptions.AllowedSchemes
+- uid: Dixor.Validation.Url.UrlValidationOptions.Default
+  name: Default
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_Default
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.Default
+  fullName: Dixor.Validation.Url.UrlValidationOptions.Default
+  nameWithType: UrlValidationOptions.Default
+- uid: Dixor.Validation.Url.UrlValidationOptions.Default*
+  name: Default
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_Default_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.Default
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.Default
+  nameWithType: UrlValidationOptions.Default
+- uid: Dixor.Validation.Url.UrlValidationOptions.RequireHttps
+  name: RequireHttps
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_RequireHttps
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.RequireHttps
+  fullName: Dixor.Validation.Url.UrlValidationOptions.RequireHttps
+  nameWithType: UrlValidationOptions.RequireHttps
+- uid: Dixor.Validation.Url.UrlValidationOptions.RequireHttps*
+  name: RequireHttps
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_RequireHttps_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.RequireHttps
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.RequireHttps
+  nameWithType: UrlValidationOptions.RequireHttps
+- uid: Dixor.Validation.Url.UrlValidationOptions.RequireTld
+  name: RequireTld
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_RequireTld
+  commentId: P:Dixor.Validation.Url.UrlValidationOptions.RequireTld
+  fullName: Dixor.Validation.Url.UrlValidationOptions.RequireTld
+  nameWithType: UrlValidationOptions.RequireTld
+- uid: Dixor.Validation.Url.UrlValidationOptions.RequireTld*
+  name: RequireTld
+  href: api/Dixor.Validation.Url.UrlValidationOptions.html#Dixor_Validation_Url_UrlValidationOptions_RequireTld_
+  commentId: Overload:Dixor.Validation.Url.UrlValidationOptions.RequireTld
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidationOptions.RequireTld
+  nameWithType: UrlValidationOptions.RequireTld
+- uid: Dixor.Validation.Url.UrlValidator
+  name: UrlValidator
+  href: api/Dixor.Validation.Url.UrlValidator.html
+  commentId: T:Dixor.Validation.Url.UrlValidator
+  fullName: Dixor.Validation.Url.UrlValidator
+  nameWithType: UrlValidator
+- uid: Dixor.Validation.Url.UrlValidator.AreEqual(System.String,System.String)
+  name: AreEqual(string?, string?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_AreEqual_System_String_System_String_
+  commentId: M:Dixor.Validation.Url.UrlValidator.AreEqual(System.String,System.String)
+  name.vb: AreEqual(String, String)
+  fullName: Dixor.Validation.Url.UrlValidator.AreEqual(string?, string?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.AreEqual(String, String)
+  nameWithType: UrlValidator.AreEqual(string?, string?)
+  nameWithType.vb: UrlValidator.AreEqual(String, String)
+- uid: Dixor.Validation.Url.UrlValidator.AreEqual*
+  name: AreEqual
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_AreEqual_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.AreEqual
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.AreEqual
+  nameWithType: UrlValidator.AreEqual
+- uid: Dixor.Validation.Url.UrlValidator.GetInfo(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: GetInfo(string, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_GetInfo_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.UrlValidator.GetInfo(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: GetInfo(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.UrlValidator.GetInfo(string, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.GetInfo(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: UrlValidator.GetInfo(string, UrlValidationOptions?)
+  nameWithType.vb: UrlValidator.GetInfo(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.UrlValidator.GetInfo*
+  name: GetInfo
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_GetInfo_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.GetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.GetInfo
+  nameWithType: UrlValidator.GetInfo
+- uid: Dixor.Validation.Url.UrlValidator.IsValid(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: IsValid(string?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_IsValid_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.UrlValidator.IsValid(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: IsValid(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.UrlValidator.IsValid(string?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.IsValid(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: UrlValidator.IsValid(string?, UrlValidationOptions?)
+  nameWithType.vb: UrlValidator.IsValid(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.UrlValidator.IsValid*
+  name: IsValid
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_IsValid_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.IsValid
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.IsValid
+  nameWithType: UrlValidator.IsValid
+- uid: Dixor.Validation.Url.UrlValidator.Normalize(System.String)
+  name: Normalize(string)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_Normalize_System_String_
+  commentId: M:Dixor.Validation.Url.UrlValidator.Normalize(System.String)
+  name.vb: Normalize(String)
+  fullName: Dixor.Validation.Url.UrlValidator.Normalize(string)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.Normalize(String)
+  nameWithType: UrlValidator.Normalize(string)
+  nameWithType.vb: UrlValidator.Normalize(String)
+- uid: Dixor.Validation.Url.UrlValidator.Normalize*
+  name: Normalize
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_Normalize_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.Normalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.Normalize
+  nameWithType: UrlValidator.Normalize
+- uid: Dixor.Validation.Url.UrlValidator.TryGetInfo(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name: TryGetInfo(string?, out UrlInfo?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_TryGetInfo_System_String_Dixor_Validation_Url_UrlInfo__Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.UrlValidator.TryGetInfo(System.String,Dixor.Validation.Url.UrlInfo@,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: TryGetInfo(String, UrlInfo, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.UrlValidator.TryGetInfo(string?, out Dixor.Validation.Url.UrlInfo?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.TryGetInfo(String, Dixor.Validation.Url.UrlInfo, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: UrlValidator.TryGetInfo(string?, out UrlInfo?, UrlValidationOptions?)
+  nameWithType.vb: UrlValidator.TryGetInfo(String, UrlInfo, UrlValidationOptions)
+- uid: Dixor.Validation.Url.UrlValidator.TryGetInfo*
+  name: TryGetInfo
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_TryGetInfo_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.TryGetInfo
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.TryGetInfo
+  nameWithType: UrlValidator.TryGetInfo
+- uid: Dixor.Validation.Url.UrlValidator.TryNormalize(System.String,System.String@)
+  name: TryNormalize(string?, out string?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_TryNormalize_System_String_System_String__
+  commentId: M:Dixor.Validation.Url.UrlValidator.TryNormalize(System.String,System.String@)
+  name.vb: TryNormalize(String, String)
+  fullName: Dixor.Validation.Url.UrlValidator.TryNormalize(string?, out string?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.TryNormalize(String, String)
+  nameWithType: UrlValidator.TryNormalize(string?, out string?)
+  nameWithType.vb: UrlValidator.TryNormalize(String, String)
+- uid: Dixor.Validation.Url.UrlValidator.TryNormalize*
+  name: TryNormalize
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_TryNormalize_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.TryNormalize
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.TryNormalize
+  nameWithType: UrlValidator.TryNormalize
+- uid: Dixor.Validation.Url.UrlValidator.Validate(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name: Validate(string?, UrlValidationOptions?)
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_Validate_System_String_Dixor_Validation_Url_UrlValidationOptions_
+  commentId: M:Dixor.Validation.Url.UrlValidator.Validate(System.String,Dixor.Validation.Url.UrlValidationOptions)
+  name.vb: Validate(String, UrlValidationOptions)
+  fullName: Dixor.Validation.Url.UrlValidator.Validate(string?, Dixor.Validation.Url.UrlValidationOptions?)
+  fullName.vb: Dixor.Validation.Url.UrlValidator.Validate(String, Dixor.Validation.Url.UrlValidationOptions)
+  nameWithType: UrlValidator.Validate(string?, UrlValidationOptions?)
+  nameWithType.vb: UrlValidator.Validate(String, UrlValidationOptions)
+- uid: Dixor.Validation.Url.UrlValidator.Validate*
+  name: Validate
+  href: api/Dixor.Validation.Url.UrlValidator.html#Dixor_Validation_Url_UrlValidator_Validate_
+  commentId: Overload:Dixor.Validation.Url.UrlValidator.Validate
+  isSpec: "True"
+  fullName: Dixor.Validation.Url.UrlValidator.Validate
+  nameWithType: UrlValidator.Validate
 - uid: Dixor.Validation.ValidationResult`1
   name: ValidationResult<TError>
   href: api/Dixor.Validation.ValidationResult-1.html

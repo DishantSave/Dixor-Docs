@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UrlValidationOptions | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UrlValidationOptions | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../../images/icon-192.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/url/UrlValidationOptions.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="urlvalidationoptions">UrlValidationOptions</h1>
+
+<p>The <code>UrlValidationOptions</code> class configures validation strictness, protocol scheme whitelisting, and SSRF security policies.</p>
+<pre><code class="lang-csharp">namespace Dixor.Validation.Url;
+
+public sealed class UrlValidationOptions
+</code></pre>
+<hr>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>AllowedSchemes</code></td>
+<td style="text-align: left;"><code>IReadOnlySet&lt;string&gt;</code></td>
+<td style="text-align: left;"><code>[&quot;http&quot;, &quot;https&quot;]</code></td>
+<td style="text-align: left;">Permitted URL schemes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RequireHttps</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">When <code>true</code>, URLs using plain <code>http://</code> or other insecure schemes are rejected.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AllowLocalhost</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">When <code>false</code>, requests to <code>localhost</code>, <code>127.0.0.1</code>, and <code>::1</code> are blocked (SSRF defense).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AllowPrivateIps</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">When <code>false</code>, requests to RFC 1918 private subnets and link-local ranges are blocked (SSRF defense).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AllowIpAddress</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Allows raw IP literals (e.g. <code>8.8.8.8</code>). When <code>false</code>, only named domains are allowed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AllowCredentials</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">When <code>false</code>, URLs containing embedded credentials (<code>user:pass@host</code>) are blocked.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RequireTld</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Mandates that named domains possess a valid Top-Level Domain suffix.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AllowedPorts</code></td>
+<td style="text-align: left;"><code>IReadOnlySet&lt;int&gt;?</code></td>
+<td style="text-align: left;"><code>null</code></td>
+<td style="text-align: left;">Optional whitelist of permitted destination port numbers.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="static-instances">Static Instances</h2>
+<h3 id="urlvalidationoptionsdefault"><code>UrlValidationOptions.Default</code></h3>
+<p>Provides a cached, thread-safe default instance with SSRF protections enabled.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/validation/url/UrlValidationOptions.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

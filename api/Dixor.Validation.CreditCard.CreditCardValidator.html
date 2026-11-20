@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CreditCardValidator | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CreditCardValidator | Dixor Documentation ">
+      
+      <meta name="description" content="Provides static methods for validating, formatting, masking, and analyzing international credit, debit, and payment card numbers.">
+      <link rel="icon" href="../images/icon-192.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/new/main/apiSpec/new?filename=Dixor_Validation_CreditCard_CreditCardValidator.md&amp;value=---%0Auid%3A%20Dixor.Validation.CreditCard.CreditCardValidator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dixor.Validation.CreditCard.CreditCardValidator">
+
+
+
+  <h1 id="Dixor_Validation_CreditCard_CreditCardValidator" data-uid="Dixor.Validation.CreditCard.CreditCardValidator" class="text-break">
+Class CreditCardValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">Dixor</span>.<a class="xref" href="Dixor.Validation.html">Validation</a>.<a class="xref" href="Dixor.Validation.CreditCard.html">CreditCard</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Dixor.Validation.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides static methods for validating, formatting, masking, and analyzing international credit, debit, and payment card numbers.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CreditCardValidator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CreditCardValidator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Dixor_Validation_CreditCard_CreditCardValidator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Features:
+</p>
+<ul><li>Hardware-accelerated Luhn (mod 10) checksum verification.</li><li>Comprehensive IIN/BIN card network identification (Visa, Mastercard, American Express, Discover, RuPay, JCB, Diners Club, Maestro, UnionPay, Mir).</li><li>Network-specific valid length constraints and digit grouping conventions.</li><li>Expiration date analysis (future validity, expired checks, month/year boundaries).</li><li>CVV/CVC length validation (3 digits, or 4 digits for American Express).</li><li>PCI-DSS privacy masking (e.g. <code>•••• •••• •••• 1234</code>).</li></ul>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_AreEqual_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.AreEqual*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_AreEqual_System_String_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.AreEqual(System.String,System.String)">
+  AreEqual(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two card strings represent the same card record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AreEqual(string? first, string? second)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>first</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>First card number.</p>
+</dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Second card number.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if normalized digits match; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_CalculateCheckDigit_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_CalculateCheckDigit_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.CalculateCheckDigit(System.String)">
+  CalculateCheckDigit(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Luhn (mod 10) check digit for a prefix of digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateCheckDigit(string prefixDigits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefixDigits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The digits preceding the check digit.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The computed single check digit (0-9).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_DetectNetwork_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_DetectNetwork_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.DetectNetwork(System.String)">
+  DetectNetwork(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Detects the payment card network from the leading IIN/BIN prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CardNetwork DetectNetwork(string? cardNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The card number string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.CreditCard.CardNetwork.html">CardNetwork</a></dt>
+    <dd><p>The detected <a class="xref" href="Dixor.Validation.CreditCard.CardNetwork.html">CardNetwork</a>, or <a class="xref" href="Dixor.Validation.CreditCard.CardNetwork.html#Dixor_Validation_CreditCard_CardNetwork_Unknown">Unknown</a> if unclassified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Format_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Format*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Format_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Format(System.String)">
+  Format(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats the card number according to network conventions (e.g. 4-4-4-4 for Visa, 4-6-5 for American Express).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Format(string cardNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The grouped card string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Generate_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Generate*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Generate_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Generate(System.String)">
+  Generate(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a valid card number from a prefix by calculating and appending the Luhn check digit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Generate(string prefixDigits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefixDigits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The card number prefix.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The complete card number with valid Luhn checksum.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_GetInfo_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.GetInfo*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_GetInfo_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.GetInfo(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  GetInfo(string, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves structured card metadata, throwing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a> if invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CreditCardInfo GetInfo(string cardNumber, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.CreditCard.CreditCardInfo.html">CreditCardInfo</a></dt>
+    <dd><p>The populated <a class="xref" href="Dixor.Validation.CreditCard.CreditCardInfo.html">CreditCardInfo</a> record.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">cardNumber</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></dt>
+    <dd><p>Thrown when <code class="paramref">cardNumber</code> fails validation.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_IsValid_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.IsValid*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_IsValid_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  IsValid(string?, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified credit or payment card number is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValid(string? cardNumber, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_IsValid_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.IsValid*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_IsValid_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.IsValid(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  IsValid(string?, int, int, string?, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified card number, expiration month, expiration year, and optional CVV code are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValid(string? cardNumber, int expiryMonth, int expiryYear, string? cvv = null, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>expiryMonth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The expiration month (1-12).</p>
+</dd>
+    <dt><code>expiryYear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The expiration year (2-digit or 4-digit).</p>
+</dd>
+    <dt><code>cvv</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional CVV/CVC code.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if valid and not expired; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Mask_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Mask*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Mask_System_String_System_Char_System_Boolean_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Mask(System.String,System.Char,System.Boolean)">
+  Mask(string, char, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Masks all but the last 4 digits for PCI-DSS compliance (e.g. <code>•••• •••• •••• 1234</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Mask(string cardNumber, char maskChar = &#39;•&#39;, bool includeSpaces = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The card number string.</p>
+</dd>
+    <dt><code>maskChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The masking character to use (defaults to '•').</p>
+</dd>
+    <dt><code>includeSpaces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to include group spacing (defaults to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The masked card string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Normalize_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Normalize*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Normalize_System_String_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Normalize(System.String)">
+  Normalize(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Strips spaces, hyphens, and delimiters to return clean numeric digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Normalize(string cardNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw card number string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The clean numeric string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">cardNumber</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_TryGetInfo_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_TryGetInfo_System_String_Dixor_Validation_CreditCard_CreditCardInfo__Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.TryGetInfo(System.String,Dixor.Validation.CreditCard.CreditCardInfo@,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  TryGetInfo(string?, out CreditCardInfo?, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to parse and retrieve structured card metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetInfo(string? cardNumber, out CreditCardInfo? info, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>info</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardInfo.html">CreditCardInfo</a></dt>
+    <dd><p>When this method returns, contains the parsed <a class="xref" href="Dixor.Validation.CreditCard.CreditCardInfo.html">CreditCardInfo</a> if valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if parsing succeeded; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_TryNormalize_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_TryNormalize_System_String_System_String__" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.TryNormalize(System.String,System.String@)">
+  TryNormalize(string?, out string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to normalize the specified raw card string into clean digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryNormalize(string? cardNumber, out string? normalized)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw card number string.</p>
+</dd>
+    <dt><code>normalized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>When this method returns, contains the clean digits if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if normalized; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Validate_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Validate*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Validate_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  Validate(string?, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified card number and returns a structured validation result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;CreditCardValidationError&gt; Validate(string? cardNumber, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationError.html">CreditCardValidationError</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult&lt;TError&gt;</a> with diagnostic error details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dixor_Validation_CreditCard_CreditCardValidator_Validate_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Validate*"></a>
+
+  <h3 id="Dixor_Validation_CreditCard_CreditCardValidator_Validate_System_String_System_Int32_System_Int32_System_String_Dixor_Validation_CreditCard_CreditCardValidationOptions_" data-uid="Dixor.Validation.CreditCard.CreditCardValidator.Validate(System.String,System.Int32,System.Int32,System.String,Dixor.Validation.CreditCard.CreditCardValidationOptions)">
+  Validate(string?, int, int, string?, CreditCardValidationOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the specified card number, expiration date, and CVV code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidationResult&lt;CreditCardValidationError&gt; Validate(string? cardNumber, int expiryMonth, int expiryYear, string? cvv = null, CreditCardValidationOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw or formatted card number string.</p>
+</dd>
+    <dt><code>expiryMonth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The expiration month (1-12).</p>
+</dd>
+    <dt><code>expiryYear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The expiration year (2-digit or 4-digit).</p>
+</dd>
+    <dt><code>cvv</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional CVV/CVC code.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationOptions.html">CreditCardValidationOptions</a></dt>
+    <dd><p>Optional card validation options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult</a>&lt;<a class="xref" href="Dixor.Validation.CreditCard.CreditCardValidationError.html">CreditCardValidationError</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="Dixor.Validation.ValidationResult-1.html">ValidationResult&lt;TError&gt;</a> with diagnostic error details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Validation/CreditCard/CreditCardValidator.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

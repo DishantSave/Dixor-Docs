@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Ecosystem 1-Line Bootstrapping | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Ecosystem 1-Line Bootstrapping | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/EcosystemRegistration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ecosystem-1-line-bootstrapping">Ecosystem 1-Line Bootstrapping</h1>
+
+<p><code>Dixor.DI</code> makes using the entire Dixor ecosystem (<code>Dixor.Identity</code> and <code>Dixor.Validation</code>) effortless.</p>
+<hr>
+<h2 id="1-line-full-ecosystem-registration">1-Line Full Ecosystem Registration</h2>
+<p>With a single method call in <code>Program.cs</code>, you register:</p>
+<ol>
+<li>All <strong>Dixor.Identity</strong> services.</li>
+<li>All <strong>Dixor.Validation</strong> services.</li>
+<li>All declarative <strong><code>[Service]</code></strong> classes in your application assembly.</li>
+</ol>
+<pre><code class="lang-csharp">// In Program.cs
+var builder = WebApplication.CreateBuilder(args);
+
+// Register everything in 1 line:
+builder.Services.AddDixor();
+
+var app = builder.Build();
+</code></pre>
+<hr>
+<h2 id="granular-registration-extensions">Granular Registration Extensions</h2>
+<p>If you prefer to register specific components independently:</p>
+<h3 id="1-servicesadddixorvalidation">1. <code>services.AddDixorValidation()</code></h3>
+<p>Exposes all internal validation engines directly into <code>IServiceCollection</code> as singletons:</p>
+<ul>
+<li><code>IEmailValidatorService</code></li>
+<li><code>IPhoneValidatorService</code></li>
+<li><code>IPassportValidatorService</code></li>
+<li><code>IAddressValidatorService</code></li>
+<li><code>IAadhaarValidatorService</code></li>
+<li><code>ICreditCardValidatorService</code></li>
+<li><code>IUrlValidatorService</code></li>
+</ul>
+<h3 id="2-servicesadddixoridentity">2. <code>services.AddDixorIdentity()</code></h3>
+<p>Exposes all internal identity generation engines directly into <code>IServiceCollection</code> as singletons:</p>
+<ul>
+<li><code>IUuid7Service</code></li>
+<li><code>IUlidService</code></li>
+<li><code>IShortIdService</code></li>
+<li><code>ISequenceFactory</code></li>
+<li><code>INumericCodeService</code></li>
+<li><code>INanoIdService</code></li>
+<li><code>IHexadecimalService</code></li>
+<li><code>IBase62Service</code></li>
+<li><code>IBase36Service</code></li>
+</ul>
+<h3 id="3-servicesadddixorservices">3. <code>services.AddDixorServices()</code></h3>
+<p>Scans the calling assembly (or specified assemblies) for declarative attributes:</p>
+<pre><code class="lang-csharp">builder.Services.AddDixorServices();
+// Or with marker:
+builder.Services.AddDixorServicesFrom&lt;UserService&gt;();
+</code></pre>
+<hr>
+<h2 id="constructor-injection-example">Constructor Injection Example</h2>
+<p>Once registered, inject any Dixor service directly into your controllers, endpoints, or services:</p>
+<pre><code class="lang-csharp">[ApiController]
+[Route(&quot;api/users&quot;)]
+public class UserController : ControllerBase
+{
+    private readonly IUuid7Service _uuid7;
+    private readonly IEmailValidatorService _emailValidator;
+    private readonly IPhoneValidatorService _phoneValidator;
+
+    public UserController(
+        IUuid7Service uuid7,
+        IEmailValidatorService emailValidator,
+        IPhoneValidatorService phoneValidator)
+    {
+        _uuid7 = uuid7;
+        _emailValidator = emailValidator;
+        _phoneValidator = phoneValidator;
+    }
+
+    [HttpPost(&quot;register&quot;)]
+    public IActionResult Register([FromBody] UserRegistrationRequest request)
+    {
+        if (!_emailValidator.Validate(request.Email).IsValid)
+            return BadRequest(&quot;Invalid email address.&quot;);
+
+        if (!_phoneValidator.Validate(request.Phone).IsValid)
+            return BadRequest(&quot;Invalid phone number.&quot;);
+
+        var userId = _uuid7.NewGuid();
+        return Ok(new { UserId = userId, Status = &quot;Created&quot; });
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/EcosystemRegistration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

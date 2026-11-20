@@ -33,6 +33,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.DixorServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.DixorServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.DixorServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.DixorServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods on <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref> for 1-line Program.cs container registrations,\ndeclarative attribute scanning, modular DI, and seamless Dixor ecosystem integration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.DixorServiceRegistrationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.DixorServiceRegistrationInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.DixorServiceRegistrationInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.DixorServiceRegistrationInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates metadata describing a service registered via Dixor.DI discovery.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.DixorServiceScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.DixorServiceScanner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.DixorServiceScanner",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.DixorServiceScanner.yml\" sourcestartlinenumber=\"1\">Scans assemblies for declarative DI attributes and modules, registering them into <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.IDixorModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.IDixorModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.IDixorModule",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.IDixorModule.yml\" sourcestartlinenumber=\"1\">Defines a modular contract for encapsulating and registering related services into an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.ScopedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.ScopedAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.ScopedAttribute",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.ScopedAttribute.yml\" sourcestartlinenumber=\"1\">Marks a class for automatic registration in the dependency injection container with <xref href=\"Microsoft.Extensions.DependencyInjection.ServiceLifetime.Scoped\" data-throw-if-not-resolved=\"false\"></xref> lifetime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.ServiceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.ServiceAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.ServiceAttribute",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.ServiceAttribute.yml\" sourcestartlinenumber=\"1\">Marks a class for automatic dependency injection discovery and container registration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.SingletonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.SingletonAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.SingletonAttribute",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.SingletonAttribute.yml\" sourcestartlinenumber=\"1\">Marks a class for automatic registration in the dependency injection container with <xref href=\"Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton\" data-throw-if-not-resolved=\"false\"></xref> lifetime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.TransientAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.TransientAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI.TransientAttribute",
+      "Summary": "<p sourcefile=\"api/Dixor.DI.TransientAttribute.yml\" sourcestartlinenumber=\"1\">Marks a class for automatic registration in the dependency injection container with <xref href=\"Microsoft.Extensions.DependencyInjection.ServiceLifetime.Transient\" data-throw-if-not-resolved=\"false\"></xref> lifetime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.DI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.DI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.DI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Identity.Base36.yml",
       "output": {
         ".html": {
@@ -635,6 +761,188 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CardNetwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CardNetwork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CardNetwork",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CardNetwork.yml\" sourcestartlinenumber=\"1\">Specifies the recognized international payment card networks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CardNetworkInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CardNetworkInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CardNetworkInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CardNetworkInfo.yml\" sourcestartlinenumber=\"1\">Contains metadata, permitted lengths, CVV lengths, and formatting rules for a specific card network.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CreditCardInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CreditCardInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CreditCardInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CreditCardInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates structured, parsed, masked metadata and network classifications for a payment card.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CreditCardValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CreditCardValidationError.yml\" sourcestartlinenumber=\"1\">Specifies the failure reasons when validating a credit, debit, or payment card.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CreditCardValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CreditCardValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures validation strictness, permitted card networks, delimiter allowances, and date checks for payment cards.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.CreditCardValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.CreditCardValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.CreditCardValidator.yml\" sourcestartlinenumber=\"1\">Provides static methods for validating, formatting, masking, and analyzing international credit, debit, and payment card numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.Interfaces.ICardNetworkDetector.yml\" sourcestartlinenumber=\"1\">Defines the contract for detecting payment card networks and retrieving their rules and metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.Interfaces.ICreditCardNormalizer.yml\" sourcestartlinenumber=\"1\">Defines the contract for normalizing, formatting, and masking payment card strings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces.ICreditCardParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.Interfaces.ICreditCardParser.yml\" sourcestartlinenumber=\"1\">Defines the contract for parsing payment card numbers into structured metadata models.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.Interfaces.ICreditCardValidatorService.yml\" sourcestartlinenumber=\"1\">Defines the orchestrating service contract for validating, formatting, masking, and analyzing payment card numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.CreditCard.Interfaces.ILuhnAlgorithm.yml\" sourcestartlinenumber=\"1\">Defines the contract for validating and computing Luhn (mod 10) checksum digits.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.CreditCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.CreditCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.CreditCard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.Email.EmailInfo.yml",
       "output": {
         ".html": {
@@ -1111,6 +1419,146 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.Interfaces.IUrlNormalizer",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.Interfaces.IUrlNormalizer.yml\" sourcestartlinenumber=\"1\">Defines the contract for canonicalizing, stripping default ports, and normalizing URLs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.Interfaces.IUrlParser",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.Interfaces.IUrlParser.yml\" sourcestartlinenumber=\"1\">Defines the contract for parsing URL strings into structured <xref href=\"Dixor.Validation.Url.UrlInfo\" data-throw-if-not-resolved=\"false\"></xref> models.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.Interfaces.IUrlSecurityChecker",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.Interfaces.IUrlSecurityChecker.yml\" sourcestartlinenumber=\"1\">Defines the contract for evaluating host security, loopback, private IP ranges, and SSRF threats.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.Interfaces.IUrlValidatorService",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.Interfaces.IUrlValidatorService.yml\" sourcestartlinenumber=\"1\">Defines the orchestrating service contract for validating, parsing, normalizing, and evaluating URL safety.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.UrlInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.UrlInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.UrlInfo",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.UrlInfo.yml\" sourcestartlinenumber=\"1\">Encapsulates structured, parsed URL components and security classifications.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.UrlValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.UrlValidationError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.UrlValidationError",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.UrlValidationError.yml\" sourcestartlinenumber=\"1\">Specifies the failure reasons when validating a Uniform Resource Locator (URL) or URI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.UrlValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.UrlValidationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.UrlValidationOptions",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.UrlValidationOptions.yml\" sourcestartlinenumber=\"1\">Configures validation rules, scheme whitelisting, and SSRF security constraints for URL validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.UrlValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.UrlValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url.UrlValidator",
+      "Summary": "<p sourcefile=\"api/Dixor.Validation.Url.UrlValidator.yml\" sourcestartlinenumber=\"1\">Provides static methods for validating, parsing, normalizing, and evaluating the security of URLs and URIs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Validation.Url.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Validation.Url.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Validation.Url",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.ValidationResult-1.yml",
       "output": {
         ".html": {
@@ -1236,6 +1684,69 @@
       "output": {
         ".html": {
           "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/di/Attributes.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/di/EcosystemRegistration.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/EcosystemRegistration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/di/Modules.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/Modules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/di/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/di/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "packages/di/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "packages/di/toc.json"
+        },
+        ".html": {
+          "relative_path": "packages/di/toc.html"
         }
       },
       "version": ""
@@ -1685,6 +2196,66 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/CardNetwork.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/CardNetwork.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/CreditCardInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/CreditCardInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/CreditCardValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/CreditCardValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/CreditCardValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/CreditCardValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/CreditCardValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/CreditCardValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/creditcard/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/creditcard/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "packages/validation/email/DomainValidator.md",
       "output": {
         ".html": {
@@ -1942,6 +2513,56 @@
         },
         ".html": {
           "relative_path": "packages/validation/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/url/UrlInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/url/UrlInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/url/UrlValidationError.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/url/UrlValidationError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/url/UrlValidationOptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/url/UrlValidationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/url/UrlValidator.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/url/UrlValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/url/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/url/overview.html"
         }
       },
       "version": ""

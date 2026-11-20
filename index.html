@@ -115,6 +115,14 @@
 <li><a href="#dixorvalidation---quick-start">Quick Start</a></li>
 </ul>
 </li>
+<li><a href="#dixordi">Dixor.DI</a>
+<ul>
+<li><a href="#core-philosophy-1-line-programcs-setup">Core Philosophy: 1-Line Program.cs Setup</a></li>
+<li><a href="#declarative-service-attributes">Declarative Service Attributes</a></li>
+<li><a href="#modular-configuration-idixormodule">Modular Configuration (IDixorModule)</a></li>
+<li><a href="#direct-constructor-injection-of-dixor-services">Direct Constructor Injection of Dixor Services</a></li>
+</ul>
+</li>
 <li><a href="#documentation-structure">Documentation Structure</a></li>
 <li><a href="#supported-frameworks">Supported Frameworks</a></li>
 <li><a href="#ecosystem-roadmap">Ecosystem Roadmap</a></li>
@@ -146,8 +154,15 @@
 <td><strong><code>Dixor.Validation</code></strong></td>
 <td><code>v0.1.0</code></td>
 <td></td>
-<td>High-performance validation engine starting with structured email validation.</td>
-<td>RFC-aware syntax parsing, strongly typed error diagnostics, domain typo suggestion engine.</td>
+<td>High-performance validation engine covering email, phone, passport, address, Aadhaar, cards, and URLs.</td>
+<td>RFC-aware syntax parsing, strongly typed error diagnostics, Luhn/Verhoeff checksums, SSRF protection.</td>
+</tr>
+<tr>
+<td><strong><code>Dixor.DI</code></strong></td>
+<td><code>v0.1.0</code></td>
+<td></td>
+<td>Declarative dependency injection, assembly scanning, modular architecture, and 1-line bootstrapping.</td>
+<td>One-word Program.cs setup (<code>AddDixor()</code>), declarative attributes (<code>[Singleton]</code>, <code>[Scoped]</code>, <code>[Transient]</code>), keyed services, <code>IDixorModule</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -157,16 +172,20 @@
 <h3 id="net-cli">.NET CLI</h3>
 <pre><code class="lang-bash">dotnet add package Dixor.Identity
 dotnet add package Dixor.Validation
-
+dotnet add package Dixor.DI
 </code></pre>
 <h3 id="visual-studio-package-manager-console">Visual Studio Package Manager Console</h3>
 <pre><code class="lang-powershell">Install-Package Dixor.Identity
 Install-Package Dixor.Validation
-
+Install-Package Dixor.DI
 </code></pre>
 <h3 id="packagereference-msbuild"><code>&lt;PackageReference&gt;</code> (MSBuild)</h3>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
-  &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.2.0&quot; /&gt;
+    &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.2.0&quot; /&gt;
+    &lt;PackageReference Include=&quot;Dixor.Validation&quot; Version=&quot;0.1.0&quot; /&gt;
+    &lt;PackageReference Include=&quot;Dixor.DI&quot; Version=&quot;0.1.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+```  &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.2.0&quot; /&gt;
   &lt;PackageReference Include=&quot;Dixor.Validation&quot; Version=&quot;0.1.0&quot; /&gt;
 &lt;/ItemGroup&gt;
 
@@ -651,6 +670,66 @@ public class IdentityService
     }
 }
 </code></pre>
+<h3 id="credit--debit-card-validation">Credit &amp; Debit Card Validation</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.CreditCard;
+
+public class PaymentService
+{
+    public void ProcessPayment()
+    {
+        // 1. Fast boolean check (accepts raw, spaced, or hyphenated)
+        bool isValid = CreditCardValidator.IsValid(&quot;4532 0151 1283 0366&quot;); // true
+
+        // 2. Comprehensive validation: Card number + Expiry Month/Year + CVV
+        var result = CreditCardValidator.Validate(
+            cardNumber: &quot;3782 822463 10005&quot;,
+            expiryMonth: 12,
+            expiryYear: 2028,
+            cvv: &quot;1234&quot;); // 4-digit CVV for American Express
+
+        // 3. Card intelligence &amp; network classification
+        if (CreditCardValidator.TryGetInfo(&quot;5500 0000 0000 0004&quot;, out CreditCardInfo? info))
+        {
+            Console.WriteLine($&quot;Network:    {info.NetworkName}&quot;);    // &quot;Mastercard&quot;
+            Console.WriteLine($&quot;PCI Masked: {info.Masked}&quot;);         // &quot;•••• •••• •••• 0004&quot;
+            Console.WriteLine($&quot;BIN:        {info.Bin}&quot;);            // &quot;550000&quot;
+        }
+    }
+}
+</code></pre>
+<h3 id="url--uri-validation">URL &amp; URI Validation</h3>
+<pre><code class="lang-csharp">using System;
+using Dixor.Validation;
+using Dixor.Validation.Url;
+
+public class WebService
+{
+    public void ProcessWebhook(string incomingUrl)
+    {
+        // 1. Validate with automatic SSRF defenses (blocks localhost, 169.254.x, 192.168.x)
+        var options = new UrlValidationOptions
+        {
+            RequireHttps = true,
+            AllowLocalhost = false,
+            AllowPrivateIps = false
+        };
+
+        var result = UrlValidator.Validate(incomingUrl, options);
+        if (!result.IsValid)
+        {
+            Console.WriteLine($&quot;Blocked URL: {result.Error}&quot;);
+            return;
+        }
+
+        // 2. Extract canonical normalized URL and components
+        string canonicalUrl = UrlValidator.Normalize(incomingUrl);
+        var info = UrlValidator.GetInfo(canonicalUrl, options);
+        Console.WriteLine($&quot;Target Host: {info.Host}:{info.Port}&quot;);
+    }
+}
+</code></pre>
 <hr>
 <h1 id="documentation-structure">Documentation Structure</h1>
 <p>When viewed on our dedicated DocFX web portal, ecosystem documentation is organized into clear domains:</p>
@@ -669,7 +748,70 @@ public class IdentityService
     ├── phone/
     ├── passport/
     ├── address/
-    └── aadhaar/
+    ├── aadhaar/
+    ├── creditcard/
+    └── url/
+</code></pre>
+<hr>
+<h1 id="dixordi">Dixor.DI</h1>
+<p><code>Dixor.DI</code> radically simplifies dependency injection container setup in modern .NET applications. It eliminates the repetitive boilerplate of configuring services across dozens of lines in <code>Program.cs</code> by providing declarative attributes, automatic assembly scanning, modular container architecture, and single-line ecosystem bootstrapping.</p>
+<h3 id="core-philosophy-1-line-programcs-setup">Core Philosophy: 1-Line Program.cs Setup</h3>
+<p>Traditional ASP.NET Core apps accumulate massive lists of manual service registrations. With <code>Dixor.DI</code>, your <code>Program.cs</code> stays clean and effortless:</p>
+<pre><code class="lang-csharp">// Program.cs - 1 line wires your entire application and Dixor ecosystem!
+builder.Services.AddDixor();
+</code></pre>
+<h3 id="declarative-service-attributes">Declarative Service Attributes</h3>
+<p>Declare service lifetimes directly where implementations are authored:</p>
+<pre><code class="lang-csharp">// Singleton: Shared across the application lifecycle
+[Singleton]
+public class AppCacheService : IAppCacheService { ... }
+
+// Scoped: Created once per HTTP request or resolution scope
+[Scoped]
+public class OrderRepository : IOrderRepository { ... }
+
+// Transient: Fresh instance created on every resolution
+[Transient]
+public class EmailDispatcher : IEmailDispatcher { ... }
+
+// Keyed Services (.NET 8+)
+[Service(ServiceLifetime.Singleton, As = typeof(IStorageService), Key = &quot;aws-s3&quot;)]
+public class S3StorageService : IStorageService { ... }
+</code></pre>
+<h3 id="modular-configuration-idixormodule">Modular Configuration (<code>IDixorModule</code>)</h3>
+<p>Cleanly isolate complex third-party configurations (such as <code>HttpClient</code>, EF Core, Redis, or messaging queues) into dedicated modules:</p>
+<pre><code class="lang-csharp">public class StripeBillingModule : IDixorModule
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddHttpClient&lt;StripeClient&gt;(client =&gt;
+        {
+            client.BaseAddress = new Uri(&quot;https://api.stripe.com/v1/&quot;);
+        });
+    }
+}
+</code></pre>
+<p>Discovered automatically with:</p>
+<pre><code class="lang-csharp">builder.Services.AddDixorModules();
+</code></pre>
+<h3 id="direct-constructor-injection-of-dixor-services">Direct Constructor Injection of Dixor Services</h3>
+<p>When <code>AddDixor()</code> is invoked, all Identity and Validation services are registered and immediately available for constructor injection:</p>
+<pre><code class="lang-csharp">public class CheckoutController : ControllerBase
+{
+    private readonly IUuid7Service _uuid7;
+    private readonly ICreditCardValidatorService _creditCardValidator;
+    private readonly IUrlValidatorService _urlValidator;
+
+    public CheckoutController(
+        IUuid7Service uuid7,
+        ICreditCardValidatorService creditCardValidator,
+        IUrlValidatorService urlValidator)
+    {
+        _uuid7 = uuid7;
+        _creditCardValidator = creditCardValidator;
+        _urlValidator = urlValidator;
+    }
+}
 </code></pre>
 <hr>
 <h1 id="supported-frameworks">Supported Frameworks</h1>
@@ -746,6 +888,12 @@ public class IdentityService
 <ul>
 <li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Validation</code></li>
 <li><a href="packages/validation/index.html">View Validation Guides →</a></li>
+</ul>
+<h3 id="-dixordi">⚡ <a href="packages/di/index.html">Dixor.DI</a></h3>
+<p>Declarative dependency injection, assembly scanning, modular architecture, and 1-line Program.cs ecosystem bootstrapping.</p>
+<ul>
+<li><strong>Quick Install:</strong> <code>dotnet add package Dixor.DI</code></li>
+<li><a href="packages/di/index.html">View Dependency Injection Guides →</a></li>
 </ul>
 <hr>
 <h2 id="architecture--philosophy">Architecture &amp; Philosophy</h2>
