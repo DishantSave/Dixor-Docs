@@ -95,7 +95,7 @@ builder.Services.AddScoped&lt;IOrderRepository, OrderRepository&gt;();
 builder.Services.AddTransient&lt;INotificationSender, NotificationSender&gt;();
 // ... dozens more
 </code></pre>
-<p><code>Dixor.DI</code> transforms this model through declarative annotations, automatic assembly scanning, modular architecture, and single-line ecosystem bootstrapping:</p>
+<p><code>Dixor.DI</code> transforms this model through declarative annotations, automatic assembly scanning, modular architecture, ambient context flow, external JSON/XML configuration, and single-line ecosystem bootstrapping:</p>
 <pre><code class="lang-csharp">// Program.cs - 1 line registers your entire application and Dixor ecosystem!
 builder.Services.AddDixor();
 </code></pre>
@@ -106,6 +106,10 @@ builder.Services.AddDixor();
 <li><strong>Auto-Discovery &amp; Interface Mapping</strong>: Automatically binds classes to all implemented interfaces or an explicitly designated contract (<code>As = typeof(...)</code>).</li>
 <li><strong>Keyed Services Support</strong>: First-class support for keyed dependencies in .NET 8+ (<code>[Service(Key = &quot;primary&quot;)]</code>).</li>
 <li><strong>Safe Conditional Registration (<code>TryAdd</code>)</strong>: Prevent accidental overrides of custom mocks or existing services with <code>TryAdd = true</code>.</li>
+<li><strong>Multiple Implementations &amp; Resolvers</strong>: Designate defaults with <code>[PrimaryService]</code>, resolve keyed implementations with <code>[FromKeyedServices]</code>, or dynamically select at runtime with <code>IDixorResolver&lt;TService&gt;</code>.</li>
+<li><strong>Ambient Context Flow</strong>: Pass cross-cutting request or tenant state down the call tree using <code>DixorContext</code> and <code>IDixorContextAccessor&lt;T&gt;</code> without polluting intermediate constructors.</li>
+<li><strong>Parameterized Activation (<code>IDixorFactory&lt;TService, TArg&gt;</code>)</strong>: Combine DI container services with dynamic runtime arguments effortlessly.</li>
+<li><strong>External JSON &amp; XML Bindings</strong>: Configure or swap service implementations from <code>services.json</code>, <code>services.xml</code>, or <code>appsettings.json</code> without recompiling code.</li>
 <li><strong>Modular Configuration (<code>IDixorModule</code>)</strong>: Cleanly partition enterprise registrations across isolated module classes with parameterless discovery.</li>
 <li><strong>Ecosystem Integration</strong>: Seamlessly expose internal services from <code>Dixor.Identity</code> (UUIDv7, ULID, ShortId, NanoId, Base62, etc.) and <code>Dixor.Validation</code> (Email, Phone, Passport, Address, Aadhaar, Credit Card, URL) for direct constructor injection.</li>
 </ul>
@@ -113,6 +117,10 @@ builder.Services.AddDixor();
 <ul>
 <li><a href="overview.html">Overview &amp; Architecture</a>: Core design philosophy, lifetime semantics, performance, and comparison.</li>
 <li><a href="Attributes.html">Declarative Attributes Guide</a>: Reference for <code>[Service]</code>, <code>[Scoped]</code>, <code>[Singleton]</code>, and <code>[Transient]</code>.</li>
+<li><a href="InjectionPatterns.html">Injection &amp; Consumption Patterns</a>: Constructor injection, C# 12 primary constructors, keyed injection, dynamic resolvers, and parameterized factories.</li>
+<li><a href="MultipleImplementations.html">Multiple Implementations &amp; Resolvers</a>: Working with multiple interface implementations, <code>[PrimaryService]</code>, and <code>IDixorResolver&lt;T&gt;</code>.</li>
+<li><a href="ContextFlow.html">Ambient Context Flow</a>: Eliminating constructor parameter pollution with <code>DixorContext</code> and <code>IDixorContextAccessor&lt;T&gt;</code>.</li>
+<li><a href="ExternalConfiguration.html">External JSON &amp; XML Bindings</a>: Zero-recompile service bindings and environment-driven provider switching.</li>
 <li><a href="Modules.html">Modular DI (<code>IDixorModule</code>)</a>: Creating and organizing feature modules across multiple assemblies.</li>
 <li><a href="EcosystemRegistration.html">Ecosystem 1-Line Bootstrapping</a>: <code>AddDixor()</code>, <code>AddDixorServices()</code>, <code>AddDixorValidation()</code>, and <code>AddDixorIdentity()</code>.</li>
 </ul>

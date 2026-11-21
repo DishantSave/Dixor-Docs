@@ -7,6 +7,573 @@ references:
   commentId: N:Dixor.DI
   fullName: Dixor.DI
   nameWithType: Dixor.DI
+- uid: Dixor.DI.DixorContext
+  name: DixorContext
+  href: api/Dixor.DI.DixorContext.html
+  commentId: T:Dixor.DI.DixorContext
+  fullName: Dixor.DI.DixorContext
+  nameWithType: DixorContext
+- uid: Dixor.DI.DixorContext.BeginScope*
+  name: BeginScope
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_BeginScope_
+  commentId: Overload:Dixor.DI.DixorContext.BeginScope
+  isSpec: "True"
+  fullName: Dixor.DI.DixorContext.BeginScope
+  nameWithType: DixorContext.BeginScope
+- uid: Dixor.DI.DixorContext.BeginScope``1(``0)
+  name: BeginScope<T>(T)
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_BeginScope__1___0_
+  commentId: M:Dixor.DI.DixorContext.BeginScope``1(``0)
+  name.vb: BeginScope(Of T)(T)
+  fullName: Dixor.DI.DixorContext.BeginScope<T>(T)
+  fullName.vb: Dixor.DI.DixorContext.BeginScope(Of T)(T)
+  nameWithType: DixorContext.BeginScope<T>(T)
+  nameWithType.vb: DixorContext.BeginScope(Of T)(T)
+- uid: Dixor.DI.DixorContext.Current*
+  name: Current
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_Current_
+  commentId: Overload:Dixor.DI.DixorContext.Current
+  isSpec: "True"
+  fullName: Dixor.DI.DixorContext.Current
+  nameWithType: DixorContext.Current
+- uid: Dixor.DI.DixorContext.Current``1
+  name: Current<T>()
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_Current__1
+  commentId: M:Dixor.DI.DixorContext.Current``1
+  name.vb: Current(Of T)()
+  fullName: Dixor.DI.DixorContext.Current<T>()
+  fullName.vb: Dixor.DI.DixorContext.Current(Of T)()
+  nameWithType: DixorContext.Current<T>()
+  nameWithType.vb: DixorContext.Current(Of T)()
+- uid: Dixor.DI.DixorContext.Set*
+  name: Set
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_Set_
+  commentId: Overload:Dixor.DI.DixorContext.Set
+  isSpec: "True"
+  fullName: Dixor.DI.DixorContext.Set
+  nameWithType: DixorContext.Set
+- uid: Dixor.DI.DixorContext.Set``1(``0)
+  name: Set<T>(T?)
+  href: api/Dixor.DI.DixorContext.html#Dixor_DI_DixorContext_Set__1___0_
+  commentId: M:Dixor.DI.DixorContext.Set``1(``0)
+  name.vb: Set(Of T)(T)
+  fullName: Dixor.DI.DixorContext.Set<T>(T?)
+  fullName.vb: Dixor.DI.DixorContext.Set(Of T)(T)
+  nameWithType: DixorContext.Set<T>(T?)
+  nameWithType.vb: DixorContext.Set(Of T)(T)
+- uid: Dixor.DI.DixorContextAccessor`1
+  name: DixorContextAccessor<TContext>
+  href: api/Dixor.DI.DixorContextAccessor-1.html
+  commentId: T:Dixor.DI.DixorContextAccessor`1
+  name.vb: DixorContextAccessor(Of TContext)
+  fullName: Dixor.DI.DixorContextAccessor<TContext>
+  fullName.vb: Dixor.DI.DixorContextAccessor(Of TContext)
+  nameWithType: DixorContextAccessor<TContext>
+  nameWithType.vb: DixorContextAccessor(Of TContext)
+- uid: Dixor.DI.DixorContextAccessor`1.Current
+  name: Current
+  href: api/Dixor.DI.DixorContextAccessor-1.html#Dixor_DI_DixorContextAccessor_1_Current
+  commentId: P:Dixor.DI.DixorContextAccessor`1.Current
+  fullName: Dixor.DI.DixorContextAccessor<TContext>.Current
+  fullName.vb: Dixor.DI.DixorContextAccessor(Of TContext).Current
+  nameWithType: DixorContextAccessor<TContext>.Current
+  nameWithType.vb: DixorContextAccessor(Of TContext).Current
+- uid: Dixor.DI.DixorContextAccessor`1.Current*
+  name: Current
+  href: api/Dixor.DI.DixorContextAccessor-1.html#Dixor_DI_DixorContextAccessor_1_Current_
+  commentId: Overload:Dixor.DI.DixorContextAccessor`1.Current
+  isSpec: "True"
+  fullName: Dixor.DI.DixorContextAccessor<TContext>.Current
+  fullName.vb: Dixor.DI.DixorContextAccessor(Of TContext).Current
+  nameWithType: DixorContextAccessor<TContext>.Current
+  nameWithType.vb: DixorContextAccessor(Of TContext).Current
+- uid: Dixor.DI.DixorFactory`2
+  name: DixorFactory<TService, TArg>
+  href: api/Dixor.DI.DixorFactory-2.html
+  commentId: T:Dixor.DI.DixorFactory`2
+  name.vb: DixorFactory(Of TService, TArg)
+  fullName: Dixor.DI.DixorFactory<TService, TArg>
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg)
+  nameWithType: DixorFactory<TService, TArg>
+  nameWithType.vb: DixorFactory(Of TService, TArg)
+- uid: Dixor.DI.DixorFactory`2.#ctor(System.IServiceProvider)
+  name: DixorFactory(IServiceProvider)
+  href: api/Dixor.DI.DixorFactory-2.html#Dixor_DI_DixorFactory_2__ctor_System_IServiceProvider_
+  commentId: M:Dixor.DI.DixorFactory`2.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Dixor.DI.DixorFactory<TService, TArg>.DixorFactory(System.IServiceProvider)
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg).New(System.IServiceProvider)
+  nameWithType: DixorFactory<TService, TArg>.DixorFactory(IServiceProvider)
+  nameWithType.vb: DixorFactory(Of TService, TArg).New(IServiceProvider)
+- uid: Dixor.DI.DixorFactory`2.#ctor*
+  name: DixorFactory
+  href: api/Dixor.DI.DixorFactory-2.html#Dixor_DI_DixorFactory_2__ctor_
+  commentId: Overload:Dixor.DI.DixorFactory`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.DixorFactory<TService, TArg>.DixorFactory
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg).New
+  nameWithType: DixorFactory<TService, TArg>.DixorFactory
+  nameWithType.vb: DixorFactory(Of TService, TArg).New
+- uid: Dixor.DI.DixorFactory`2.Create(`1)
+  name: Create(TArg)
+  href: api/Dixor.DI.DixorFactory-2.html#Dixor_DI_DixorFactory_2_Create__1_
+  commentId: M:Dixor.DI.DixorFactory`2.Create(`1)
+  fullName: Dixor.DI.DixorFactory<TService, TArg>.Create(TArg)
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg).Create(TArg)
+  nameWithType: DixorFactory<TService, TArg>.Create(TArg)
+  nameWithType.vb: DixorFactory(Of TService, TArg).Create(TArg)
+- uid: Dixor.DI.DixorFactory`2.Create*
+  name: Create
+  href: api/Dixor.DI.DixorFactory-2.html#Dixor_DI_DixorFactory_2_Create_
+  commentId: Overload:Dixor.DI.DixorFactory`2.Create
+  isSpec: "True"
+  fullName: Dixor.DI.DixorFactory<TService, TArg>.Create
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg).Create
+  nameWithType: DixorFactory<TService, TArg>.Create
+  nameWithType.vb: DixorFactory(Of TService, TArg).Create
+- uid: Dixor.DI.DixorFactory`3
+  name: DixorFactory<TService, TArg1, TArg2>
+  href: api/Dixor.DI.DixorFactory-3.html
+  commentId: T:Dixor.DI.DixorFactory`3
+  name.vb: DixorFactory(Of TService, TArg1, TArg2)
+  fullName: Dixor.DI.DixorFactory<TService, TArg1, TArg2>
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg1, TArg2)
+  nameWithType: DixorFactory<TService, TArg1, TArg2>
+  nameWithType.vb: DixorFactory(Of TService, TArg1, TArg2)
+- uid: Dixor.DI.DixorFactory`3.#ctor(System.IServiceProvider)
+  name: DixorFactory(IServiceProvider)
+  href: api/Dixor.DI.DixorFactory-3.html#Dixor_DI_DixorFactory_3__ctor_System_IServiceProvider_
+  commentId: M:Dixor.DI.DixorFactory`3.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Dixor.DI.DixorFactory<TService, TArg1, TArg2>.DixorFactory(System.IServiceProvider)
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg1, TArg2).New(System.IServiceProvider)
+  nameWithType: DixorFactory<TService, TArg1, TArg2>.DixorFactory(IServiceProvider)
+  nameWithType.vb: DixorFactory(Of TService, TArg1, TArg2).New(IServiceProvider)
+- uid: Dixor.DI.DixorFactory`3.#ctor*
+  name: DixorFactory
+  href: api/Dixor.DI.DixorFactory-3.html#Dixor_DI_DixorFactory_3__ctor_
+  commentId: Overload:Dixor.DI.DixorFactory`3.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.DixorFactory<TService, TArg1, TArg2>.DixorFactory
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg1, TArg2).New
+  nameWithType: DixorFactory<TService, TArg1, TArg2>.DixorFactory
+  nameWithType.vb: DixorFactory(Of TService, TArg1, TArg2).New
+- uid: Dixor.DI.DixorFactory`3.Create(`1,`2)
+  name: Create(TArg1, TArg2)
+  href: api/Dixor.DI.DixorFactory-3.html#Dixor_DI_DixorFactory_3_Create__1__2_
+  commentId: M:Dixor.DI.DixorFactory`3.Create(`1,`2)
+  fullName: Dixor.DI.DixorFactory<TService, TArg1, TArg2>.Create(TArg1, TArg2)
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg1, TArg2).Create(TArg1, TArg2)
+  nameWithType: DixorFactory<TService, TArg1, TArg2>.Create(TArg1, TArg2)
+  nameWithType.vb: DixorFactory(Of TService, TArg1, TArg2).Create(TArg1, TArg2)
+- uid: Dixor.DI.DixorFactory`3.Create*
+  name: Create
+  href: api/Dixor.DI.DixorFactory-3.html#Dixor_DI_DixorFactory_3_Create_
+  commentId: Overload:Dixor.DI.DixorFactory`3.Create
+  isSpec: "True"
+  fullName: Dixor.DI.DixorFactory<TService, TArg1, TArg2>.Create
+  fullName.vb: Dixor.DI.DixorFactory(Of TService, TArg1, TArg2).Create
+  nameWithType: DixorFactory<TService, TArg1, TArg2>.Create
+  nameWithType.vb: DixorFactory(Of TService, TArg1, TArg2).Create
+- uid: Dixor.DI.DixorJsonConfigRegistrar
+  name: DixorJsonConfigRegistrar
+  href: api/Dixor.DI.DixorJsonConfigRegistrar.html
+  commentId: T:Dixor.DI.DixorJsonConfigRegistrar
+  fullName: Dixor.DI.DixorJsonConfigRegistrar
+  nameWithType: DixorJsonConfigRegistrar
+- uid: Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name: RegisterFromJson(IServiceCollection, string)
+  href: api/Dixor.DI.DixorJsonConfigRegistrar.html#Dixor_DI_DixorJsonConfigRegistrar_RegisterFromJson_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_
+  commentId: M:Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name.vb: RegisterFromJson(IServiceCollection, String)
+  fullName: Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson(Microsoft.Extensions.DependencyInjection.IServiceCollection, string)
+  fullName.vb: Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  nameWithType: DixorJsonConfigRegistrar.RegisterFromJson(IServiceCollection, string)
+  nameWithType.vb: DixorJsonConfigRegistrar.RegisterFromJson(IServiceCollection, String)
+- uid: Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson*
+  name: RegisterFromJson
+  href: api/Dixor.DI.DixorJsonConfigRegistrar.html#Dixor_DI_DixorJsonConfigRegistrar_RegisterFromJson_
+  commentId: Overload:Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson
+  isSpec: "True"
+  fullName: Dixor.DI.DixorJsonConfigRegistrar.RegisterFromJson
+  nameWithType: DixorJsonConfigRegistrar.RegisterFromJson
+- uid: Dixor.DI.DixorOptions
+  name: DixorOptions
+  href: api/Dixor.DI.DixorOptions.html
+  commentId: T:Dixor.DI.DixorOptions
+  fullName: Dixor.DI.DixorOptions
+  nameWithType: DixorOptions
+- uid: Dixor.DI.DixorOptions.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: DixorOptions(IServiceCollection)
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorOptions.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: New(IServiceCollection)
+  fullName: Dixor.DI.DixorOptions.DixorOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorOptions.New(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorOptions.DixorOptions(IServiceCollection)
+  nameWithType.vb: DixorOptions.New(IServiceCollection)
+- uid: Dixor.DI.DixorOptions.#ctor*
+  name: DixorOptions
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions__ctor_
+  commentId: Overload:Dixor.DI.DixorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.DixorOptions.DixorOptions
+  fullName.vb: Dixor.DI.DixorOptions.New
+  nameWithType: DixorOptions.DixorOptions
+  nameWithType.vb: DixorOptions.New
+- uid: Dixor.DI.DixorOptions.AddJson(System.String)
+  name: AddJson(string)
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AddJson_System_String_
+  commentId: M:Dixor.DI.DixorOptions.AddJson(System.String)
+  name.vb: AddJson(String)
+  fullName: Dixor.DI.DixorOptions.AddJson(string)
+  fullName.vb: Dixor.DI.DixorOptions.AddJson(String)
+  nameWithType: DixorOptions.AddJson(string)
+  nameWithType.vb: DixorOptions.AddJson(String)
+- uid: Dixor.DI.DixorOptions.AddJson*
+  name: AddJson
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AddJson_
+  commentId: Overload:Dixor.DI.DixorOptions.AddJson
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.AddJson
+  nameWithType: DixorOptions.AddJson
+- uid: Dixor.DI.DixorOptions.AddXml(System.String)
+  name: AddXml(string)
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AddXml_System_String_
+  commentId: M:Dixor.DI.DixorOptions.AddXml(System.String)
+  name.vb: AddXml(String)
+  fullName: Dixor.DI.DixorOptions.AddXml(string)
+  fullName.vb: Dixor.DI.DixorOptions.AddXml(String)
+  nameWithType: DixorOptions.AddXml(string)
+  nameWithType.vb: DixorOptions.AddXml(String)
+- uid: Dixor.DI.DixorOptions.AddXml*
+  name: AddXml
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AddXml_
+  commentId: Overload:Dixor.DI.DixorOptions.AddXml
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.AddXml
+  nameWithType: DixorOptions.AddXml
+- uid: Dixor.DI.DixorOptions.AssembliesToScan
+  name: AssembliesToScan
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AssembliesToScan
+  commentId: P:Dixor.DI.DixorOptions.AssembliesToScan
+  fullName: Dixor.DI.DixorOptions.AssembliesToScan
+  nameWithType: DixorOptions.AssembliesToScan
+- uid: Dixor.DI.DixorOptions.AssembliesToScan*
+  name: AssembliesToScan
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_AssembliesToScan_
+  commentId: Overload:Dixor.DI.DixorOptions.AssembliesToScan
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.AssembliesToScan
+  nameWithType: DixorOptions.AssembliesToScan
+- uid: Dixor.DI.DixorOptions.EnableAmbientContext
+  name: EnableAmbientContext
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableAmbientContext
+  commentId: P:Dixor.DI.DixorOptions.EnableAmbientContext
+  fullName: Dixor.DI.DixorOptions.EnableAmbientContext
+  nameWithType: DixorOptions.EnableAmbientContext
+- uid: Dixor.DI.DixorOptions.EnableAmbientContext*
+  name: EnableAmbientContext
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableAmbientContext_
+  commentId: Overload:Dixor.DI.DixorOptions.EnableAmbientContext
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.EnableAmbientContext
+  nameWithType: DixorOptions.EnableAmbientContext
+- uid: Dixor.DI.DixorOptions.EnableEcosystemIdentity
+  name: EnableEcosystemIdentity
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemIdentity
+  commentId: P:Dixor.DI.DixorOptions.EnableEcosystemIdentity
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemIdentity
+  nameWithType: DixorOptions.EnableEcosystemIdentity
+- uid: Dixor.DI.DixorOptions.EnableEcosystemIdentity*
+  name: EnableEcosystemIdentity
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemIdentity_
+  commentId: Overload:Dixor.DI.DixorOptions.EnableEcosystemIdentity
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemIdentity
+  nameWithType: DixorOptions.EnableEcosystemIdentity
+- uid: Dixor.DI.DixorOptions.EnableEcosystemValidation
+  name: EnableEcosystemValidation
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemValidation
+  commentId: P:Dixor.DI.DixorOptions.EnableEcosystemValidation
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemValidation
+  nameWithType: DixorOptions.EnableEcosystemValidation
+- uid: Dixor.DI.DixorOptions.EnableEcosystemValidation*
+  name: EnableEcosystemValidation
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemValidation_
+  commentId: Overload:Dixor.DI.DixorOptions.EnableEcosystemValidation
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemValidation
+  nameWithType: DixorOptions.EnableEcosystemValidation
+- uid: Dixor.DI.DixorOptions.EnableResolvers
+  name: EnableResolvers
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableResolvers
+  commentId: P:Dixor.DI.DixorOptions.EnableResolvers
+  fullName: Dixor.DI.DixorOptions.EnableResolvers
+  nameWithType: DixorOptions.EnableResolvers
+- uid: Dixor.DI.DixorOptions.EnableResolvers*
+  name: EnableResolvers
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableResolvers_
+  commentId: Overload:Dixor.DI.DixorOptions.EnableResolvers
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.EnableResolvers
+  nameWithType: DixorOptions.EnableResolvers
+- uid: Dixor.DI.DixorOptions.JsonConfigurations
+  name: JsonConfigurations
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_JsonConfigurations
+  commentId: P:Dixor.DI.DixorOptions.JsonConfigurations
+  fullName: Dixor.DI.DixorOptions.JsonConfigurations
+  nameWithType: DixorOptions.JsonConfigurations
+- uid: Dixor.DI.DixorOptions.JsonConfigurations*
+  name: JsonConfigurations
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_JsonConfigurations_
+  commentId: Overload:Dixor.DI.DixorOptions.JsonConfigurations
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.JsonConfigurations
+  nameWithType: DixorOptions.JsonConfigurations
+- uid: Dixor.DI.DixorOptions.ScanAssemblies(System.Reflection.Assembly[])
+  name: ScanAssemblies(params Assembly[])
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_ScanAssemblies_System_Reflection_Assembly___
+  commentId: M:Dixor.DI.DixorOptions.ScanAssemblies(System.Reflection.Assembly[])
+  name.vb: ScanAssemblies(ParamArray Assembly())
+  fullName: Dixor.DI.DixorOptions.ScanAssemblies(params System.Reflection.Assembly[])
+  fullName.vb: Dixor.DI.DixorOptions.ScanAssemblies(ParamArray System.Reflection.Assembly())
+  nameWithType: DixorOptions.ScanAssemblies(params Assembly[])
+  nameWithType.vb: DixorOptions.ScanAssemblies(ParamArray Assembly())
+- uid: Dixor.DI.DixorOptions.ScanAssemblies*
+  name: ScanAssemblies
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_ScanAssemblies_
+  commentId: Overload:Dixor.DI.DixorOptions.ScanAssemblies
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.ScanAssemblies
+  nameWithType: DixorOptions.ScanAssemblies
+- uid: Dixor.DI.DixorOptions.ScanAssemblyFrom*
+  name: ScanAssemblyFrom
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_ScanAssemblyFrom_
+  commentId: Overload:Dixor.DI.DixorOptions.ScanAssemblyFrom
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.ScanAssemblyFrom
+  nameWithType: DixorOptions.ScanAssemblyFrom
+- uid: Dixor.DI.DixorOptions.ScanAssemblyFrom``1
+  name: ScanAssemblyFrom<T>()
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_ScanAssemblyFrom__1
+  commentId: M:Dixor.DI.DixorOptions.ScanAssemblyFrom``1
+  name.vb: ScanAssemblyFrom(Of T)()
+  fullName: Dixor.DI.DixorOptions.ScanAssemblyFrom<T>()
+  fullName.vb: Dixor.DI.DixorOptions.ScanAssemblyFrom(Of T)()
+  nameWithType: DixorOptions.ScanAssemblyFrom<T>()
+  nameWithType.vb: DixorOptions.ScanAssemblyFrom(Of T)()
+- uid: Dixor.DI.DixorOptions.Services
+  name: Services
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_Services
+  commentId: P:Dixor.DI.DixorOptions.Services
+  fullName: Dixor.DI.DixorOptions.Services
+  nameWithType: DixorOptions.Services
+- uid: Dixor.DI.DixorOptions.Services*
+  name: Services
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_Services_
+  commentId: Overload:Dixor.DI.DixorOptions.Services
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.Services
+  nameWithType: DixorOptions.Services
+- uid: Dixor.DI.DixorOptions.XmlConfigurations
+  name: XmlConfigurations
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_XmlConfigurations
+  commentId: P:Dixor.DI.DixorOptions.XmlConfigurations
+  fullName: Dixor.DI.DixorOptions.XmlConfigurations
+  nameWithType: DixorOptions.XmlConfigurations
+- uid: Dixor.DI.DixorOptions.XmlConfigurations*
+  name: XmlConfigurations
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_XmlConfigurations_
+  commentId: Overload:Dixor.DI.DixorOptions.XmlConfigurations
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.XmlConfigurations
+  nameWithType: DixorOptions.XmlConfigurations
+- uid: Dixor.DI.DixorResolver`1
+  name: DixorResolver<TService>
+  href: api/Dixor.DI.DixorResolver-1.html
+  commentId: T:Dixor.DI.DixorResolver`1
+  name.vb: DixorResolver(Of TService)
+  fullName: Dixor.DI.DixorResolver<TService>
+  fullName.vb: Dixor.DI.DixorResolver(Of TService)
+  nameWithType: DixorResolver<TService>
+  nameWithType.vb: DixorResolver(Of TService)
+- uid: Dixor.DI.DixorResolver`1.#ctor(System.IServiceProvider)
+  name: DixorResolver(IServiceProvider)
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1__ctor_System_IServiceProvider_
+  commentId: M:Dixor.DI.DixorResolver`1.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Dixor.DI.DixorResolver<TService>.DixorResolver(System.IServiceProvider)
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).New(System.IServiceProvider)
+  nameWithType: DixorResolver<TService>.DixorResolver(IServiceProvider)
+  nameWithType.vb: DixorResolver(Of TService).New(IServiceProvider)
+- uid: Dixor.DI.DixorResolver`1.#ctor*
+  name: DixorResolver
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1__ctor_
+  commentId: Overload:Dixor.DI.DixorResolver`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.DI.DixorResolver<TService>.DixorResolver
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).New
+  nameWithType: DixorResolver<TService>.DixorResolver
+  nameWithType.vb: DixorResolver(Of TService).New
+- uid: Dixor.DI.DixorResolver`1.All
+  name: All
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_All
+  commentId: P:Dixor.DI.DixorResolver`1.All
+  fullName: Dixor.DI.DixorResolver<TService>.All
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).All
+  nameWithType: DixorResolver<TService>.All
+  nameWithType.vb: DixorResolver(Of TService).All
+- uid: Dixor.DI.DixorResolver`1.All*
+  name: All
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_All_
+  commentId: Overload:Dixor.DI.DixorResolver`1.All
+  isSpec: "True"
+  fullName: Dixor.DI.DixorResolver<TService>.All
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).All
+  nameWithType: DixorResolver<TService>.All
+  nameWithType.vb: DixorResolver(Of TService).All
+- uid: Dixor.DI.DixorResolver`1.GetDefault
+  name: GetDefault()
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_GetDefault
+  commentId: M:Dixor.DI.DixorResolver`1.GetDefault
+  fullName: Dixor.DI.DixorResolver<TService>.GetDefault()
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).GetDefault()
+  nameWithType: DixorResolver<TService>.GetDefault()
+  nameWithType.vb: DixorResolver(Of TService).GetDefault()
+- uid: Dixor.DI.DixorResolver`1.GetDefault*
+  name: GetDefault
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_GetDefault_
+  commentId: Overload:Dixor.DI.DixorResolver`1.GetDefault
+  isSpec: "True"
+  fullName: Dixor.DI.DixorResolver<TService>.GetDefault
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).GetDefault
+  nameWithType: DixorResolver<TService>.GetDefault
+  nameWithType.vb: DixorResolver(Of TService).GetDefault
+- uid: Dixor.DI.DixorResolver`1.Resolve(System.Object)
+  name: Resolve(object)
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_Resolve_System_Object_
+  commentId: M:Dixor.DI.DixorResolver`1.Resolve(System.Object)
+  name.vb: Resolve(Object)
+  fullName: Dixor.DI.DixorResolver<TService>.Resolve(object)
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).Resolve(Object)
+  nameWithType: DixorResolver<TService>.Resolve(object)
+  nameWithType.vb: DixorResolver(Of TService).Resolve(Object)
+- uid: Dixor.DI.DixorResolver`1.Resolve*
+  name: Resolve
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_Resolve_
+  commentId: Overload:Dixor.DI.DixorResolver`1.Resolve
+  isSpec: "True"
+  fullName: Dixor.DI.DixorResolver<TService>.Resolve
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).Resolve
+  nameWithType: DixorResolver<TService>.Resolve
+  nameWithType.vb: DixorResolver(Of TService).Resolve
+- uid: Dixor.DI.DixorResolver`1.ResolveRequired(System.Object)
+  name: ResolveRequired(object)
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_ResolveRequired_System_Object_
+  commentId: M:Dixor.DI.DixorResolver`1.ResolveRequired(System.Object)
+  name.vb: ResolveRequired(Object)
+  fullName: Dixor.DI.DixorResolver<TService>.ResolveRequired(object)
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).ResolveRequired(Object)
+  nameWithType: DixorResolver<TService>.ResolveRequired(object)
+  nameWithType.vb: DixorResolver(Of TService).ResolveRequired(Object)
+- uid: Dixor.DI.DixorResolver`1.ResolveRequired*
+  name: ResolveRequired
+  href: api/Dixor.DI.DixorResolver-1.html#Dixor_DI_DixorResolver_1_ResolveRequired_
+  commentId: Overload:Dixor.DI.DixorResolver`1.ResolveRequired
+  isSpec: "True"
+  fullName: Dixor.DI.DixorResolver<TService>.ResolveRequired
+  fullName.vb: Dixor.DI.DixorResolver(Of TService).ResolveRequired
+  nameWithType: DixorResolver<TService>.ResolveRequired
+  nameWithType.vb: DixorResolver(Of TService).ResolveRequired
+- uid: Dixor.DI.DixorServiceBinding
+  name: DixorServiceBinding
+  href: api/Dixor.DI.DixorServiceBinding.html
+  commentId: T:Dixor.DI.DixorServiceBinding
+  fullName: Dixor.DI.DixorServiceBinding
+  nameWithType: DixorServiceBinding
+- uid: Dixor.DI.DixorServiceBinding.Implementation
+  name: Implementation
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Implementation
+  commentId: P:Dixor.DI.DixorServiceBinding.Implementation
+  fullName: Dixor.DI.DixorServiceBinding.Implementation
+  nameWithType: DixorServiceBinding.Implementation
+- uid: Dixor.DI.DixorServiceBinding.Implementation*
+  name: Implementation
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Implementation_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.Implementation
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.Implementation
+  nameWithType: DixorServiceBinding.Implementation
+- uid: Dixor.DI.DixorServiceBinding.Key
+  name: Key
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Key
+  commentId: P:Dixor.DI.DixorServiceBinding.Key
+  fullName: Dixor.DI.DixorServiceBinding.Key
+  nameWithType: DixorServiceBinding.Key
+- uid: Dixor.DI.DixorServiceBinding.Key*
+  name: Key
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Key_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.Key
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.Key
+  nameWithType: DixorServiceBinding.Key
+- uid: Dixor.DI.DixorServiceBinding.Lifetime
+  name: Lifetime
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Lifetime
+  commentId: P:Dixor.DI.DixorServiceBinding.Lifetime
+  fullName: Dixor.DI.DixorServiceBinding.Lifetime
+  nameWithType: DixorServiceBinding.Lifetime
+- uid: Dixor.DI.DixorServiceBinding.Lifetime*
+  name: Lifetime
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Lifetime_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.Lifetime
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.Lifetime
+  nameWithType: DixorServiceBinding.Lifetime
+- uid: Dixor.DI.DixorServiceBinding.ParseLifetime
+  name: ParseLifetime()
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_ParseLifetime
+  commentId: M:Dixor.DI.DixorServiceBinding.ParseLifetime
+  fullName: Dixor.DI.DixorServiceBinding.ParseLifetime()
+  nameWithType: DixorServiceBinding.ParseLifetime()
+- uid: Dixor.DI.DixorServiceBinding.ParseLifetime*
+  name: ParseLifetime
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_ParseLifetime_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.ParseLifetime
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.ParseLifetime
+  nameWithType: DixorServiceBinding.ParseLifetime
+- uid: Dixor.DI.DixorServiceBinding.Service
+  name: Service
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Service
+  commentId: P:Dixor.DI.DixorServiceBinding.Service
+  fullName: Dixor.DI.DixorServiceBinding.Service
+  nameWithType: DixorServiceBinding.Service
+- uid: Dixor.DI.DixorServiceBinding.Service*
+  name: Service
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_Service_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.Service
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.Service
+  nameWithType: DixorServiceBinding.Service
+- uid: Dixor.DI.DixorServiceBinding.TryAdd
+  name: TryAdd
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_TryAdd
+  commentId: P:Dixor.DI.DixorServiceBinding.TryAdd
+  fullName: Dixor.DI.DixorServiceBinding.TryAdd
+  nameWithType: DixorServiceBinding.TryAdd
+- uid: Dixor.DI.DixorServiceBinding.TryAdd*
+  name: TryAdd
+  href: api/Dixor.DI.DixorServiceBinding.html#Dixor_DI_DixorServiceBinding_TryAdd_
+  commentId: Overload:Dixor.DI.DixorServiceBinding.TryAdd
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceBinding.TryAdd
+  nameWithType: DixorServiceBinding.TryAdd
 - uid: Dixor.DI.DixorServiceCollectionExtensions
   name: DixorServiceCollectionExtensions
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html
@@ -19,6 +586,15 @@ references:
   commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   nameWithType: DixorServiceCollectionExtensions.AddDixor(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Dixor.DI.DixorOptions})
+  name: AddDixor(IServiceCollection, Action<DixorOptions>)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Dixor_DI_DixorOptions__
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Dixor.DI.DixorOptions})
+  name.vb: AddDixor(IServiceCollection, Action(Of DixorOptions))
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Dixor.DI.DixorOptions>)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Dixor.DI.DixorOptions))
+  nameWithType: DixorServiceCollectionExtensions.AddDixor(IServiceCollection, Action<DixorOptions>)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixor(IServiceCollection, Action(Of DixorOptions))
 - uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixor*
   name: AddDixor
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixor_
@@ -26,6 +602,48 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixor
   nameWithType: DixorServiceCollectionExtensions.AddDixor
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: AddDixorConfiguration(IServiceCollection, IConfiguration)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorConfiguration(IServiceCollection, IConfiguration)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration*
+  name: AddDixorConfiguration
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorConfiguration_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorConfiguration
+  nameWithType: DixorServiceCollectionExtensions.AddDixorConfiguration
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext*
+  name: AddDixorContext
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorContext_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext
+  nameWithType: DixorServiceCollectionExtensions.AddDixorContext
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorContextAccessor(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorContextAccessor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorContextAccessor(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor*
+  name: AddDixorContextAccessor
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorContextAccessor_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContextAccessor
+  nameWithType: DixorServiceCollectionExtensions.AddDixorContextAccessor
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorContext<TContext>(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorContext__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddDixorContext(Of TContext)(IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorContext(Of TContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorContext<TContext>(IServiceCollection)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorContext(Of TContext)(IServiceCollection)
 - uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   name: AddDixorIdentity(IServiceCollection)
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorIdentity_Microsoft_Extensions_DependencyInjection_IServiceCollection_
@@ -39,6 +657,22 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorIdentity
   nameWithType: DixorServiceCollectionExtensions.AddDixorIdentity
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name: AddDixorJson(IServiceCollection, string)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorJson_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name.vb: AddDixorJson(IServiceCollection, String)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson(Microsoft.Extensions.DependencyInjection.IServiceCollection, string)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorJson(IServiceCollection, string)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorJson(IServiceCollection, String)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson*
+  name: AddDixorJson
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorJson_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorJson
+  nameWithType: DixorServiceCollectionExtensions.AddDixorJson
 - uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModules(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   name: AddDixorModules(IServiceCollection)
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorModules_Microsoft_Extensions_DependencyInjection_IServiceCollection_
@@ -77,6 +711,51 @@ references:
   fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorModulesFrom(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   nameWithType: DixorServiceCollectionExtensions.AddDixorModulesFrom<T>(IServiceCollection)
   nameWithType.vb: DixorServiceCollectionExtensions.AddDixorModulesFrom(Of T)(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory*
+  name: AddDixorParameterizedFactory
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorParameterizedFactory_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory
+  nameWithType: DixorServiceCollectionExtensions.AddDixorParameterizedFactory
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorParameterizedFactory<TService, TArg>(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorParameterizedFactory__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddDixorParameterizedFactory(Of TService, TArg)(IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory<TService, TArg>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorParameterizedFactory(Of TService, TArg)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorParameterizedFactory<TService, TArg>(IServiceCollection)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorParameterizedFactory(Of TService, TArg)(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver*
+  name: AddDixorResolver
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorResolver_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver
+  nameWithType: DixorServiceCollectionExtensions.AddDixorResolver
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorResolver<TService>(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorResolver__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddDixorResolver(Of TService)(IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolver(Of TService)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorResolver<TService>(IServiceCollection)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorResolver(Of TService)(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorResolvers(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorResolvers_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorResolvers(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers*
+  name: AddDixorResolvers
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorResolvers_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers
+  nameWithType: DixorServiceCollectionExtensions.AddDixorResolvers
 - uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   name: AddDixorServices(IServiceCollection)
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
@@ -128,6 +807,22 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorValidation
   nameWithType: DixorServiceCollectionExtensions.AddDixorValidation
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name: AddDixorXml(IServiceCollection, string)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorXml_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name.vb: AddDixorXml(IServiceCollection, String)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml(Microsoft.Extensions.DependencyInjection.IServiceCollection, string)
+  fullName.vb: Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorXml(IServiceCollection, string)
+  nameWithType.vb: DixorServiceCollectionExtensions.AddDixorXml(IServiceCollection, String)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml*
+  name: AddDixorXml
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorXml_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorXml
+  nameWithType: DixorServiceCollectionExtensions.AddDixorXml
 - uid: Dixor.DI.DixorServiceRegistrationInfo
   name: DixorServiceRegistrationInfo
   href: api/Dixor.DI.DixorServiceRegistrationInfo.html
@@ -256,6 +951,123 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorServiceScanner.ScanAndRegisterServices
   nameWithType: DixorServiceScanner.ScanAndRegisterServices
+- uid: Dixor.DI.DixorXmlConfigRegistrar
+  name: DixorXmlConfigRegistrar
+  href: api/Dixor.DI.DixorXmlConfigRegistrar.html
+  commentId: T:Dixor.DI.DixorXmlConfigRegistrar
+  fullName: Dixor.DI.DixorXmlConfigRegistrar
+  nameWithType: DixorXmlConfigRegistrar
+- uid: Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name: RegisterFromXml(IServiceCollection, string)
+  href: api/Dixor.DI.DixorXmlConfigRegistrar.html#Dixor_DI_DixorXmlConfigRegistrar_RegisterFromXml_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_
+  commentId: M:Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  name.vb: RegisterFromXml(IServiceCollection, String)
+  fullName: Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml(Microsoft.Extensions.DependencyInjection.IServiceCollection, string)
+  fullName.vb: Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  nameWithType: DixorXmlConfigRegistrar.RegisterFromXml(IServiceCollection, string)
+  nameWithType.vb: DixorXmlConfigRegistrar.RegisterFromXml(IServiceCollection, String)
+- uid: Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml*
+  name: RegisterFromXml
+  href: api/Dixor.DI.DixorXmlConfigRegistrar.html#Dixor_DI_DixorXmlConfigRegistrar_RegisterFromXml_
+  commentId: Overload:Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml
+  isSpec: "True"
+  fullName: Dixor.DI.DixorXmlConfigRegistrar.RegisterFromXml
+  nameWithType: DixorXmlConfigRegistrar.RegisterFromXml
+- uid: Dixor.DI.IDixorContextAccessor`1
+  name: IDixorContextAccessor<TContext>
+  href: api/Dixor.DI.IDixorContextAccessor-1.html
+  commentId: T:Dixor.DI.IDixorContextAccessor`1
+  name.vb: IDixorContextAccessor(Of TContext)
+  fullName: Dixor.DI.IDixorContextAccessor<TContext>
+  fullName.vb: Dixor.DI.IDixorContextAccessor(Of TContext)
+  nameWithType: IDixorContextAccessor<TContext>
+  nameWithType.vb: IDixorContextAccessor(Of TContext)
+- uid: Dixor.DI.IDixorContextAccessor`1.Current
+  name: Current
+  href: api/Dixor.DI.IDixorContextAccessor-1.html#Dixor_DI_IDixorContextAccessor_1_Current
+  commentId: P:Dixor.DI.IDixorContextAccessor`1.Current
+  fullName: Dixor.DI.IDixorContextAccessor<TContext>.Current
+  fullName.vb: Dixor.DI.IDixorContextAccessor(Of TContext).Current
+  nameWithType: IDixorContextAccessor<TContext>.Current
+  nameWithType.vb: IDixorContextAccessor(Of TContext).Current
+- uid: Dixor.DI.IDixorContextAccessor`1.Current*
+  name: Current
+  href: api/Dixor.DI.IDixorContextAccessor-1.html#Dixor_DI_IDixorContextAccessor_1_Current_
+  commentId: Overload:Dixor.DI.IDixorContextAccessor`1.Current
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorContextAccessor<TContext>.Current
+  fullName.vb: Dixor.DI.IDixorContextAccessor(Of TContext).Current
+  nameWithType: IDixorContextAccessor<TContext>.Current
+  nameWithType.vb: IDixorContextAccessor(Of TContext).Current
+- uid: Dixor.DI.IDixorContextAccessor`1.HasContext
+  name: HasContext
+  href: api/Dixor.DI.IDixorContextAccessor-1.html#Dixor_DI_IDixorContextAccessor_1_HasContext
+  commentId: P:Dixor.DI.IDixorContextAccessor`1.HasContext
+  fullName: Dixor.DI.IDixorContextAccessor<TContext>.HasContext
+  fullName.vb: Dixor.DI.IDixorContextAccessor(Of TContext).HasContext
+  nameWithType: IDixorContextAccessor<TContext>.HasContext
+  nameWithType.vb: IDixorContextAccessor(Of TContext).HasContext
+- uid: Dixor.DI.IDixorContextAccessor`1.HasContext*
+  name: HasContext
+  href: api/Dixor.DI.IDixorContextAccessor-1.html#Dixor_DI_IDixorContextAccessor_1_HasContext_
+  commentId: Overload:Dixor.DI.IDixorContextAccessor`1.HasContext
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorContextAccessor<TContext>.HasContext
+  fullName.vb: Dixor.DI.IDixorContextAccessor(Of TContext).HasContext
+  nameWithType: IDixorContextAccessor<TContext>.HasContext
+  nameWithType.vb: IDixorContextAccessor(Of TContext).HasContext
+- uid: Dixor.DI.IDixorFactory`2
+  name: IDixorFactory<TService, TArg>
+  href: api/Dixor.DI.IDixorFactory-2.html
+  commentId: T:Dixor.DI.IDixorFactory`2
+  name.vb: IDixorFactory(Of TService, TArg)
+  fullName: Dixor.DI.IDixorFactory<TService, TArg>
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg)
+  nameWithType: IDixorFactory<TService, TArg>
+  nameWithType.vb: IDixorFactory(Of TService, TArg)
+- uid: Dixor.DI.IDixorFactory`2.Create(`1)
+  name: Create(TArg)
+  href: api/Dixor.DI.IDixorFactory-2.html#Dixor_DI_IDixorFactory_2_Create__1_
+  commentId: M:Dixor.DI.IDixorFactory`2.Create(`1)
+  fullName: Dixor.DI.IDixorFactory<TService, TArg>.Create(TArg)
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg).Create(TArg)
+  nameWithType: IDixorFactory<TService, TArg>.Create(TArg)
+  nameWithType.vb: IDixorFactory(Of TService, TArg).Create(TArg)
+- uid: Dixor.DI.IDixorFactory`2.Create*
+  name: Create
+  href: api/Dixor.DI.IDixorFactory-2.html#Dixor_DI_IDixorFactory_2_Create_
+  commentId: Overload:Dixor.DI.IDixorFactory`2.Create
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorFactory<TService, TArg>.Create
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg).Create
+  nameWithType: IDixorFactory<TService, TArg>.Create
+  nameWithType.vb: IDixorFactory(Of TService, TArg).Create
+- uid: Dixor.DI.IDixorFactory`3
+  name: IDixorFactory<TService, TArg1, TArg2>
+  href: api/Dixor.DI.IDixorFactory-3.html
+  commentId: T:Dixor.DI.IDixorFactory`3
+  name.vb: IDixorFactory(Of TService, TArg1, TArg2)
+  fullName: Dixor.DI.IDixorFactory<TService, TArg1, TArg2>
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg1, TArg2)
+  nameWithType: IDixorFactory<TService, TArg1, TArg2>
+  nameWithType.vb: IDixorFactory(Of TService, TArg1, TArg2)
+- uid: Dixor.DI.IDixorFactory`3.Create(`1,`2)
+  name: Create(TArg1, TArg2)
+  href: api/Dixor.DI.IDixorFactory-3.html#Dixor_DI_IDixorFactory_3_Create__1__2_
+  commentId: M:Dixor.DI.IDixorFactory`3.Create(`1,`2)
+  fullName: Dixor.DI.IDixorFactory<TService, TArg1, TArg2>.Create(TArg1, TArg2)
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg1, TArg2).Create(TArg1, TArg2)
+  nameWithType: IDixorFactory<TService, TArg1, TArg2>.Create(TArg1, TArg2)
+  nameWithType.vb: IDixorFactory(Of TService, TArg1, TArg2).Create(TArg1, TArg2)
+- uid: Dixor.DI.IDixorFactory`3.Create*
+  name: Create
+  href: api/Dixor.DI.IDixorFactory-3.html#Dixor_DI_IDixorFactory_3_Create_
+  commentId: Overload:Dixor.DI.IDixorFactory`3.Create
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorFactory<TService, TArg1, TArg2>.Create
+  fullName.vb: Dixor.DI.IDixorFactory(Of TService, TArg1, TArg2).Create
+  nameWithType: IDixorFactory<TService, TArg1, TArg2>.Create
+  nameWithType.vb: IDixorFactory(Of TService, TArg1, TArg2).Create
 - uid: Dixor.DI.IDixorModule
   name: IDixorModule
   href: api/Dixor.DI.IDixorModule.html
@@ -275,6 +1087,91 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.IDixorModule.ConfigureServices
   nameWithType: IDixorModule.ConfigureServices
+- uid: Dixor.DI.IDixorResolver`1
+  name: IDixorResolver<TService>
+  href: api/Dixor.DI.IDixorResolver-1.html
+  commentId: T:Dixor.DI.IDixorResolver`1
+  name.vb: IDixorResolver(Of TService)
+  fullName: Dixor.DI.IDixorResolver<TService>
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService)
+  nameWithType: IDixorResolver<TService>
+  nameWithType.vb: IDixorResolver(Of TService)
+- uid: Dixor.DI.IDixorResolver`1.All
+  name: All
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_All
+  commentId: P:Dixor.DI.IDixorResolver`1.All
+  fullName: Dixor.DI.IDixorResolver<TService>.All
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).All
+  nameWithType: IDixorResolver<TService>.All
+  nameWithType.vb: IDixorResolver(Of TService).All
+- uid: Dixor.DI.IDixorResolver`1.All*
+  name: All
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_All_
+  commentId: Overload:Dixor.DI.IDixorResolver`1.All
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorResolver<TService>.All
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).All
+  nameWithType: IDixorResolver<TService>.All
+  nameWithType.vb: IDixorResolver(Of TService).All
+- uid: Dixor.DI.IDixorResolver`1.GetDefault
+  name: GetDefault()
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_GetDefault
+  commentId: M:Dixor.DI.IDixorResolver`1.GetDefault
+  fullName: Dixor.DI.IDixorResolver<TService>.GetDefault()
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).GetDefault()
+  nameWithType: IDixorResolver<TService>.GetDefault()
+  nameWithType.vb: IDixorResolver(Of TService).GetDefault()
+- uid: Dixor.DI.IDixorResolver`1.GetDefault*
+  name: GetDefault
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_GetDefault_
+  commentId: Overload:Dixor.DI.IDixorResolver`1.GetDefault
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorResolver<TService>.GetDefault
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).GetDefault
+  nameWithType: IDixorResolver<TService>.GetDefault
+  nameWithType.vb: IDixorResolver(Of TService).GetDefault
+- uid: Dixor.DI.IDixorResolver`1.Resolve(System.Object)
+  name: Resolve(object)
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_Resolve_System_Object_
+  commentId: M:Dixor.DI.IDixorResolver`1.Resolve(System.Object)
+  name.vb: Resolve(Object)
+  fullName: Dixor.DI.IDixorResolver<TService>.Resolve(object)
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).Resolve(Object)
+  nameWithType: IDixorResolver<TService>.Resolve(object)
+  nameWithType.vb: IDixorResolver(Of TService).Resolve(Object)
+- uid: Dixor.DI.IDixorResolver`1.Resolve*
+  name: Resolve
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_Resolve_
+  commentId: Overload:Dixor.DI.IDixorResolver`1.Resolve
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorResolver<TService>.Resolve
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).Resolve
+  nameWithType: IDixorResolver<TService>.Resolve
+  nameWithType.vb: IDixorResolver(Of TService).Resolve
+- uid: Dixor.DI.IDixorResolver`1.ResolveRequired(System.Object)
+  name: ResolveRequired(object)
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_ResolveRequired_System_Object_
+  commentId: M:Dixor.DI.IDixorResolver`1.ResolveRequired(System.Object)
+  name.vb: ResolveRequired(Object)
+  fullName: Dixor.DI.IDixorResolver<TService>.ResolveRequired(object)
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).ResolveRequired(Object)
+  nameWithType: IDixorResolver<TService>.ResolveRequired(object)
+  nameWithType.vb: IDixorResolver(Of TService).ResolveRequired(Object)
+- uid: Dixor.DI.IDixorResolver`1.ResolveRequired*
+  name: ResolveRequired
+  href: api/Dixor.DI.IDixorResolver-1.html#Dixor_DI_IDixorResolver_1_ResolveRequired_
+  commentId: Overload:Dixor.DI.IDixorResolver`1.ResolveRequired
+  isSpec: "True"
+  fullName: Dixor.DI.IDixorResolver<TService>.ResolveRequired
+  fullName.vb: Dixor.DI.IDixorResolver(Of TService).ResolveRequired
+  nameWithType: IDixorResolver<TService>.ResolveRequired
+  nameWithType.vb: IDixorResolver(Of TService).ResolveRequired
+- uid: Dixor.DI.PrimaryServiceAttribute
+  name: PrimaryServiceAttribute
+  href: api/Dixor.DI.PrimaryServiceAttribute.html
+  commentId: T:Dixor.DI.PrimaryServiceAttribute
+  fullName: Dixor.DI.PrimaryServiceAttribute
+  nameWithType: PrimaryServiceAttribute
 - uid: Dixor.DI.ScopedAttribute
   name: ScopedAttribute
   href: api/Dixor.DI.ScopedAttribute.html

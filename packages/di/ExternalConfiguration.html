@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>External JSON and XML Dependency Bindings | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="External JSON and XML Dependency Bindings | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/ExternalConfiguration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="external-json-and-xml-dependency-bindings">External JSON and XML Dependency Bindings</h1>
+
+<p>In enterprise architectures, you often need to alter service registrations without recompiling application code:</p>
+<ul>
+<li><strong>Environment-Specific Providers:</strong> Swapping between <code>AwsS3StorageProvider</code> in production and <code>LocalStorageProvider</code> in local development.</li>
+<li><strong>Payment Gateways:</strong> Switching default payment processors (<code>StripePaymentGateway</code> vs <code>PayPalPaymentGateway</code>) based on region or regulatory requirements.</li>
+<li><strong>Test &amp; CI/CD Pipelines:</strong> Replacing real email, SMS, and database services with mock or sandbox implementations without modifying C# source files.</li>
+</ul>
+<p><code>Dixor.DI</code> includes native support for external configuration-driven registrations via <strong>JSON</strong>, <strong>XML</strong>, and standard <strong>ASP.NET Core <code>IConfiguration</code></strong>.</p>
+<hr>
+<h2 id="1-registering-via-json-file-adddixorjson">1. Registering via JSON File (<code>AddDixorJson</code>)</h2>
+<h3 id="step-1-create-servicesjson">Step 1: Create <code>services.json</code></h3>
+<p>Create a JSON file in your project:</p>
+<pre><code class="lang-json">{
+  &quot;Services&quot;: [
+    {
+      &quot;Service&quot;: &quot;MyApp.Services.IPaymentGateway, MyApp&quot;,
+      &quot;Implementation&quot;: &quot;MyApp.Services.StripePaymentGateway, MyApp&quot;,
+      &quot;Lifetime&quot;: &quot;Scoped&quot;,
+      &quot;Key&quot;: &quot;stripe&quot;
+    },
+    {
+      &quot;Service&quot;: &quot;MyApp.Services.IPaymentGateway, MyApp&quot;,
+      &quot;Implementation&quot;: &quot;MyApp.Services.PayPalPaymentGateway, MyApp&quot;,
+      &quot;Lifetime&quot;: &quot;Scoped&quot;,
+      &quot;Key&quot;: &quot;paypal&quot;
+    },
+    {
+      &quot;Service&quot;: &quot;MyApp.Services.INotificationService, MyApp&quot;,
+      &quot;Implementation&quot;: &quot;MyApp.Services.SendGridEmailNotificationService, MyApp&quot;,
+      &quot;Lifetime&quot;: &quot;Singleton&quot;,
+      &quot;TryAdd&quot;: true
+    }
+  ]
+}
+</code></pre>
+<p>Ensure the file is copied to the build output in your <code>.csproj</code>:</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+  &lt;None Update=&quot;services.json&quot;&gt;
+    &lt;CopyToOutputDirectory&gt;PreserveNewest&lt;/CopyToOutputDirectory&gt;
+  &lt;/None&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<h3 id="step-2-register-in-programcs">Step 2: Register in <code>Program.cs</code></h3>
+<pre><code class="lang-csharp">var builder = WebApplication.CreateBuilder(args);
+
+// Register base Dixor DI
+builder.Services.AddDixor();
+
+// Load external bindings from services.json
+builder.Services.AddDixorJson(&quot;services.json&quot;);
+
+var app = builder.Build();
+</code></pre>
+<hr>
+<h2 id="2-registering-via-xml-file-adddixorxml">2. Registering via XML File (<code>AddDixorXml</code>)</h2>
+<p>Many legacy systems and enterprise integration pipelines rely on XML descriptor files. <code>Dixor.DI</code> natively parses and applies XML bindings without third-party dependencies.</p>
+<h3 id="step-1-create-servicesxml">Step 1: Create <code>services.xml</code></h3>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;Services&gt;
+  &lt;Service Contract=&quot;MyApp.Services.IPaymentGateway, MyApp&quot;
+           Implementation=&quot;MyApp.Services.StripePaymentGateway, MyApp&quot;
+           Lifetime=&quot;Scoped&quot;
+           Key=&quot;stripe&quot; /&gt;
+
+  &lt;Service Contract=&quot;MyApp.Services.IPaymentGateway, MyApp&quot;
+           Implementation=&quot;MyApp.Services.PayPalPaymentGateway, MyApp&quot;
+           Lifetime=&quot;Scoped&quot;
+           Key=&quot;paypal&quot; /&gt;
+
+  &lt;Service Contract=&quot;MyApp.Services.IStorageProvider, MyApp&quot;
+           Implementation=&quot;MyApp.Services.AzureBlobStorageProvider, MyApp&quot;
+           Lifetime=&quot;Singleton&quot;
+           TryAdd=&quot;true&quot; /&gt;
+&lt;/Services&gt;
+</code></pre>
+<h3 id="step-2-register-in-programcs-1">Step 2: Register in <code>Program.cs</code></h3>
+<pre><code class="lang-csharp">// Load external bindings from services.xml
+builder.Services.AddDixorXml(&quot;services.xml&quot;);
+</code></pre>
+<hr>
+<h2 id="3-registering-via-iconfiguration--appsettingsjson">3. Registering via <code>IConfiguration</code> / <code>appsettings.json</code></h2>
+<p>You can embed service registrations directly inside your application's <code>appsettings.json</code> or <code>appsettings.{Environment}.json</code>:</p>
+<h3 id="in-appsettingsproductionjson">In <code>appsettings.Production.json</code>:</h3>
+<pre><code class="lang-json">{
+  &quot;Logging&quot;: {
+    &quot;LogLevel&quot;: { &quot;Default&quot;: &quot;Information&quot; }
+  },
+  &quot;Services&quot;: [
+    {
+      &quot;Service&quot;: &quot;MyApp.Services.IStorageProvider, MyApp&quot;,
+      &quot;Implementation&quot;: &quot;MyApp.Services.AwsS3StorageProvider, MyApp&quot;,
+      &quot;Lifetime&quot;: &quot;Singleton&quot;
+    }
+  ]
+}
+</code></pre>
+<h3 id="in-appsettingsdevelopmentjson">In <code>appsettings.Development.json</code>:</h3>
+<pre><code class="lang-json">{
+  &quot;Services&quot;: [
+    {
+      &quot;Service&quot;: &quot;MyApp.Services.IStorageProvider, MyApp&quot;,
+      &quot;Implementation&quot;: &quot;MyApp.Services.LocalStorageProvider, MyApp&quot;,
+      &quot;Lifetime&quot;: &quot;Singleton&quot;
+    }
+  ]
+}
+</code></pre>
+<h3 id="in-programcs">In <code>Program.cs</code>:</h3>
+<pre><code class="lang-csharp">// Automatically binds the &quot;Services&quot; section from the active environment's configuration:
+builder.Services.AddDixorConfiguration(builder.Configuration, sectionName: &quot;Services&quot;);
+</code></pre>
+<hr>
+<h2 id="binding-configuration-schema-reference">Binding Configuration Schema Reference</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field (JSON)</th>
+<th style="text-align: left;">Attribute (XML)</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Required</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Service</code> / <code>Contract</code></td>
+<td style="text-align: left;"><code>Contract</code> / <code>Service</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: left;">Fully qualified or assembly-qualified interface or base class name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Implementation</code></td>
+<td style="text-align: left;"><code>Implementation</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: left;">Concrete implementation class name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Lifetime</code></td>
+<td style="text-align: left;"><code>Lifetime</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Container lifetime: <code>Transient</code>, <code>Scoped</code>, or <code>Singleton</code> (default: <code>Scoped</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Key</code></td>
+<td style="text-align: left;"><code>Key</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Optional key string for keyed service registration in .NET 8+.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TryAdd</code></td>
+<td style="text-align: left;"><code>TryAdd</code></td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">If <code>true</code>, only registers the service if the contract has not already been registered.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="type-resolution-mechanics">Type Resolution Mechanics</h2>
+<p><code>Dixor.DI</code> resolves type strings using intelligent assembly scanning:</p>
+<ol>
+<li><strong>Assembly-Qualified Type Name (Recommended for external libraries):</strong>
+<pre><code>&quot;MyApp.Services.StripePaymentGateway, MyApp&quot;
+</code></pre>
+</li>
+<li><strong>Fully Qualified Namespace Name (Searches currently loaded assemblies):</strong>
+<pre><code>&quot;MyApp.Services.StripePaymentGateway&quot;
+</code></pre>
+</li>
+<li><strong>Simple Type Name (Searches loaded assemblies):</strong>
+<pre><code>&quot;StripePaymentGateway&quot;
+</code></pre>
+</li>
+</ol>
+<p>If a configured type cannot be resolved or does not implement the designated contract, <code>Dixor.DI</code> throws a descriptive <code>InvalidOperationException</code> at startup before the application begins accepting requests, ensuring configuration errors are caught immediately.</p>
+<hr>
+<h2 id="overriding-code-level-registrations">Overriding Code-Level Registrations</h2>
+<p>External configuration takes precedence when evaluated after code-level scanning:</p>
+<pre><code class="lang-csharp">// 1. Scans code attributes: registers DefaultPaymentGateway as IPaymentGateway
+builder.Services.AddDixor();
+
+// 2. Overrides default IPaymentGateway binding with PayPalPaymentGateway without code changes!
+builder.Services.AddDixorJson($&quot;services.{builder.Environment.EnvironmentName}.json&quot;);
+</code></pre>
+<p>This clean separation gives DevOps and platform engineers the flexibility to configure infrastructure dependencies dynamically per cluster or region.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/ExternalConfiguration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

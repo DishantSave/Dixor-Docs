@@ -119,6 +119,9 @@
 <ul>
 <li><a href="#core-philosophy-1-line-programcs-setup">Core Philosophy: 1-Line Program.cs Setup</a></li>
 <li><a href="#declarative-service-attributes">Declarative Service Attributes</a></li>
+<li><a href="#multiple-implementations--resolvers">Multiple Implementations &amp; Resolvers</a></li>
+<li><a href="#ambient-context-flow-no-constructor-pollution">Ambient Context Flow (No Constructor Pollution)</a></li>
+<li><a href="#external-json--xml-configuration">External JSON &amp; XML Configuration</a></li>
 <li><a href="#modular-configuration-idixormodule">Modular Configuration (IDixorModule)</a></li>
 <li><a href="#direct-constructor-injection-of-dixor-services">Direct Constructor Injection of Dixor Services</a></li>
 </ul>
@@ -777,6 +780,45 @@ public class EmailDispatcher : IEmailDispatcher { ... }
 // Keyed Services (.NET 8+)
 [Service(ServiceLifetime.Singleton, As = typeof(IStorageService), Key = &quot;aws-s3&quot;)]
 public class S3StorageService : IStorageService { ... }
+</code></pre>
+<h3 id="multiple-implementations--resolvers">Multiple Implementations &amp; Resolvers</h3>
+<p>Designate a default implementation with <code>[PrimaryService]</code>, resolve keyed services with <code>[FromKeyedServices]</code>, or dynamically resolve implementations at runtime:</p>
+<pre><code class="lang-csharp">[Service(ServiceLifetime.Scoped, Key = &quot;stripe&quot;), PrimaryService]
+public class StripeGateway : IPaymentGateway { ... }
+
+[Service(ServiceLifetime.Scoped, Key = &quot;paypal&quot;)]
+public class PayPalGateway : IPaymentGateway { ... }
+
+// Dynamic resolution in services:
+public class CheckoutService(IDixorResolver&lt;IPaymentGateway&gt; resolver)
+{
+    public void Pay(string provider, decimal amount)
+    {
+        var gateway = resolver.ResolveRequired(provider);
+        gateway.Charge(amount);
+    }
+}
+</code></pre>
+<h3 id="ambient-context-flow-no-constructor-pollution">Ambient Context Flow (No Constructor Pollution)</h3>
+<p>Eliminate passing <code>tenantId</code>, <code>userId</code>, or <code>correlationId</code> through intermediate services:</p>
+<pre><code class="lang-csharp">// 1. Begin ambient scope at entry point (e.g. middleware):
+using (DixorContext.BeginScope(new RequestContext { TenantId = &quot;tenant_1&quot;, CorrelationId = &quot;c-123&quot; }))
+{
+    await orderService.ProcessAsync(); // OrderService and PaymentService have clean constructors!
+}
+
+// 2. Read context directly in leaf service:
+public class AuditLogger(IDixorContextAccessor&lt;RequestContext&gt; accessor)
+{
+    public void Log(string msg) =&gt; Console.WriteLine($&quot;[{accessor.Current?.TenantId}] {msg}&quot;);
+}
+</code></pre>
+<h3 id="external-json--xml-configuration">External JSON &amp; XML Configuration</h3>
+<p>Switch dependencies across environments without recompiling code:</p>
+<pre><code class="lang-csharp">// Load bindings from external files:
+builder.Services.AddDixorJson(&quot;services.json&quot;);
+builder.Services.AddDixorXml(&quot;services.xml&quot;);
+builder.Services.AddDixorConfiguration(builder.Configuration, sectionName: &quot;Services&quot;);
 </code></pre>
 <h3 id="modular-configuration-idixormodule">Modular Configuration (<code>IDixorModule</code>)</h3>
 <p>Cleanly isolate complex third-party configurations (such as <code>HttpClient</code>, EF Core, Redis, or messaging queues) into dedicated modules:</p>

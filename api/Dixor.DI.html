@@ -81,9 +81,53 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorContext.html">DixorContext</a></dt>
+      <dd><p>Provides ambient runtime context storage that flows down asynchronous execution paths and dependency injection trees
+using high-performance <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.asynclocal-1">AsyncLocal&lt;T&gt;</a> storage.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorContextAccessor-1.html">DixorContextAccessor&lt;TContext&gt;</a></dt>
+      <dd><p>Default implementation of <a class="xref" href="Dixor.DI.IDixorContextAccessor-1.html">IDixorContextAccessor&lt;TContext&gt;</a> that retrieves ambient context values
+from <a class="xref" href="Dixor.DI.DixorContext.html">DixorContext</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorFactory-2.html">DixorFactory&lt;TService, TArg&gt;</a></dt>
+      <dd><p>Parameterized factory implementation utilizing <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.activatorutilities">ActivatorUtilities</a> to instantiate services
+with a blend of container dependencies and explicit runtime constructor arguments.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorFactory-3.html">DixorFactory&lt;TService, TArg1, TArg2&gt;</a></dt>
+      <dd><p>Parameterized factory implementation for two runtime constructor arguments.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorJsonConfigRegistrar.html">DixorJsonConfigRegistrar</a></dt>
+      <dd><p>Parses JSON-based dependency injection service bindings and registers them into an <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorOptions.html">DixorOptions</a></dt>
+      <dd><p>Configures dependency injection options when bootstrapping via <a class="xref" href="Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Dixor_DI_DixorOptions__">AddDixor(IServiceCollection, Action&lt;DixorOptions&gt;)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorResolver-1.html">DixorResolver&lt;TService&gt;</a></dt>
+      <dd><p>Default implementation of <a class="xref" href="Dixor.DI.IDixorResolver-1.html">IDixorResolver&lt;TService&gt;</a> coordinating keyed and collection resolutions
+via <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorServiceBinding.html">DixorServiceBinding</a></dt>
+      <dd><p>Represents a declarative service binding definition parsed from external JSON, XML, or configuration files.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Dixor.DI.DixorServiceCollectionExtensions.html">DixorServiceCollectionExtensions</a></dt>
       <dd><p>Provides extension methods on <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> for 1-line Program.cs container registrations,
-declarative attribute scanning, modular DI, and seamless Dixor ecosystem integration.</p>
+declarative attribute scanning, modular DI, ambient context flowing, external JSON/XML bindings, and seamless Dixor ecosystem integration.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -94,6 +138,16 @@ declarative attribute scanning, modular DI, and seamless Dixor ecosystem integra
     <dl class="jumplist">
       <dt><a class="xref" href="Dixor.DI.DixorServiceScanner.html">DixorServiceScanner</a></dt>
       <dd><p>Scans assemblies for declarative DI attributes and modules, registering them into <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.DixorXmlConfigRegistrar.html">DixorXmlConfigRegistrar</a></dt>
+      <dd><p>Parses XML-based dependency injection service bindings and registers them into an <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.PrimaryServiceAttribute.html">PrimaryServiceAttribute</a></dt>
+      <dd><p>Marks an implementation as the primary or default registration when multiple classes implement the same service contract.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -120,8 +174,31 @@ declarative attribute scanning, modular DI, and seamless Dixor ecosystem integra
 Interfaces
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.IDixorContextAccessor-1.html">IDixorContextAccessor&lt;TContext&gt;</a></dt>
+      <dd><p>Provides access to ambient runtime context flowed down asynchronous call chains and dependency injection trees
+without requiring explicit constructor argument passing through intermediate layers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.IDixorFactory-2.html">IDixorFactory&lt;TService, TArg&gt;</a></dt>
+      <dd><p>Defines a parameterized activation factory that instantiates <code class="typeparamref">TService</code>
+by resolving standard dependencies from the DI container while accepting a dynamic runtime constructor argument.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.IDixorFactory-3.html">IDixorFactory&lt;TService, TArg1, TArg2&gt;</a></dt>
+      <dd><p>Defines a parameterized activation factory accepting two dynamic runtime constructor arguments.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Dixor.DI.IDixorModule.html">IDixorModule</a></dt>
       <dd><p>Defines a modular contract for encapsulating and registering related services into an <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Dixor.DI.IDixorResolver-1.html">IDixorResolver&lt;TService&gt;</a></dt>
+      <dd><p>Provides a unified, type-safe mechanism to resolve specific implementations when multiple classes implement
+the same service contract, supporting keyed lookup, default resolution, and collection iteration.</p>
 </dd>
     </dl>
 

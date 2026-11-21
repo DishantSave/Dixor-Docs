@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dependency Injection &amp; Consumption Patterns | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dependency Injection &amp; Consumption Patterns | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/InjectionPatterns.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dependency-injection--consumption-patterns">Dependency Injection &amp; Consumption Patterns</h1>
+
+<p><code>Dixor.DI</code> provides flexible, ergonomic patterns for injecting and consuming services across your application.</p>
+<hr>
+<h2 id="1-standard-constructor-injection">1. Standard Constructor Injection</h2>
+<p>The standard way to consume dependencies in .NET classes:</p>
+<pre><code class="lang-csharp">public class OrderService : IOrderService
+{
+    private readonly IOrderRepository _repository;
+    private readonly IEmailValidatorService _emailValidator;
+
+    public OrderService(IOrderRepository repository, IEmailValidatorService emailValidator)
+    {
+        _repository = repository;
+        _emailValidator = emailValidator;
+    }
+
+    public async Task CreateOrderAsync(CreateOrderDto dto)
+    {
+        if (!_emailValidator.Validate(dto.CustomerEmail).IsValid)
+            throw new ArgumentException(&quot;Invalid customer email&quot;);
+
+        await _repository.SaveAsync(dto);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="2-modern-c-12-primary-constructors">2. Modern C# 12+ Primary Constructors</h2>
+<p>Clean, concise dependency injection without private field assignments:</p>
+<pre><code class="lang-csharp">[Scoped]
+public class CustomerService(
+    ICustomerRepository repository,
+    IUuid7Service uuid7,
+    IPhoneValidatorService phoneValidator) : ICustomerService
+{
+    public Customer Create(string name, string phone)
+    {
+        if (!phoneValidator.Validate(phone).IsValid)
+            throw new ArgumentException(&quot;Invalid phone number&quot;);
+
+        var customer = new Customer(uuid7.NewGuid(), name, phone);
+        return repository.Insert(customer);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="3-keyed-service-injection-fromkeyedservices">3. Keyed Service Injection (<code>[FromKeyedServices]</code>)</h2>
+<p>When multiple implementations of an interface are registered with unique keys (e.g., <code>&quot;stripe&quot;</code>, <code>&quot;paypal&quot;</code>), inject a specific one directly using the native .NET <code>[FromKeyedServices]</code> attribute:</p>
+<pre><code class="lang-csharp">public class CheckoutController : ControllerBase
+{
+    private readonly IPaymentGateway _stripeGateway;
+    private readonly IPaymentGateway _paypalGateway;
+
+    public CheckoutController(
+        [FromKeyedServices(&quot;stripe&quot;)] IPaymentGateway stripeGateway,
+        [FromKeyedServices(&quot;paypal&quot;)] IPaymentGateway paypalGateway)
+    {
+        _stripeGateway = stripeGateway;
+        _paypalGateway = paypalGateway;
+    }
+
+    [HttpPost(&quot;pay/card&quot;)]
+    public async Task&lt;IActionResult&gt; PayWithCard([FromBody] CardPaymentRequest req)
+    {
+        var result = await _stripeGateway.ProcessPaymentAsync(req.Amount);
+        return Ok(result);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="4-dynamic-selection-with-idixorresolvertservice">4. Dynamic Selection with <code>IDixorResolver&lt;TService&gt;</code></h2>
+<p>If the target implementation is chosen dynamically at runtime (for example, based on user input or tenant preference), inject <code>IDixorResolver&lt;TService&gt;</code>:</p>
+<pre><code class="lang-csharp">[Scoped]
+public class PaymentOrchestrator(IDixorResolver&lt;IPaymentGateway&gt; gatewayResolver)
+{
+    public async Task&lt;PaymentResult&gt; ProcessAsync(string providerKey, decimal amount)
+    {
+        // Dynamically resolve: &quot;stripe&quot;, &quot;paypal&quot;, &quot;razorpay&quot;
+        IPaymentGateway gateway = gatewayResolver.ResolveRequired(providerKey);
+
+        return await gateway.ProcessPaymentAsync(amount);
+    }
+
+    public IPaymentGateway GetDefaultGateway()
+    {
+        // Resolves the implementation marked with [PrimaryService]
+        return gatewayResolver.GetDefault() 
+            ?? throw new InvalidOperationException(&quot;No default payment gateway configured.&quot;);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="5-collection-injection-ienumerabletservice">5. Collection Injection (<code>IEnumerable&lt;TService&gt;</code>)</h2>
+<p>When you need to execute all registered implementations of a contract (e.g., running a suite of validation rules or notification channels):</p>
+<pre><code class="lang-csharp">[Scoped]
+public class NotificationBroadcaster(IEnumerable&lt;INotificationChannel&gt; channels)
+{
+    public async Task BroadcastAsync(string message)
+    {
+        foreach (var channel in channels)
+        {
+            await channel.SendAsync(message);
+        }
+    }
+}
+</code></pre>
+<hr>
+<h2 id="6-parameterized-activation-idixorfactorytservice-targ">6. Parameterized Activation (<code>IDixorFactory&lt;TService, TArg&gt;</code>)</h2>
+<p>When you have a service that requires both container dependencies (loggers, repositories) and dynamic runtime arguments (e.g. <code>orderId</code>, <code>sessionId</code>) passed by the caller:</p>
+<pre><code class="lang-csharp">// Definition:
+public class OrderWorker(ILogger&lt;OrderWorker&gt; logger, IOrderRepository repo, string orderId)
+{
+    public void Execute() =&gt; logger.LogInformation(&quot;Processing order {Id}&quot;, orderId);
+}
+
+// Registration in Program.cs:
+builder.Services.AddDixorParameterizedFactory&lt;OrderWorker, string&gt;();
+
+// Consumption:
+public class OrderDispatcher(IDixorFactory&lt;OrderWorker, string&gt; workerFactory)
+{
+    public void Dispatch(string orderId)
+    {
+        // DI container injects logger &amp; repo automatically; orderId is supplied dynamically!
+        OrderWorker worker = workerFactory.Create(orderId);
+        worker.Execute();
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/di/InjectionPatterns.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
