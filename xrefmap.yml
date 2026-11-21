@@ -2645,6 +2645,54 @@ references:
   isSpec: "True"
   fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomString
   nameWithType: CryptographicUtils.GenerateSecureRandomString
+- uid: Dixor.Security.CryptographicUtils.HmacSha1(System.Byte[],System.Byte[])
+  name: HmacSha1(byte[], byte[])
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha1_System_Byte___System_Byte___
+  commentId: M:Dixor.Security.CryptographicUtils.HmacSha1(System.Byte[],System.Byte[])
+  name.vb: HmacSha1(Byte(), Byte())
+  fullName: Dixor.Security.CryptographicUtils.HmacSha1(byte[], byte[])
+  fullName.vb: Dixor.Security.CryptographicUtils.HmacSha1(Byte(), Byte())
+  nameWithType: CryptographicUtils.HmacSha1(byte[], byte[])
+  nameWithType.vb: CryptographicUtils.HmacSha1(Byte(), Byte())
+- uid: Dixor.Security.CryptographicUtils.HmacSha1*
+  name: HmacSha1
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha1_
+  commentId: Overload:Dixor.Security.CryptographicUtils.HmacSha1
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.HmacSha1
+  nameWithType: CryptographicUtils.HmacSha1
+- uid: Dixor.Security.CryptographicUtils.HmacSha256(System.Byte[],System.Byte[])
+  name: HmacSha256(byte[], byte[])
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha256_System_Byte___System_Byte___
+  commentId: M:Dixor.Security.CryptographicUtils.HmacSha256(System.Byte[],System.Byte[])
+  name.vb: HmacSha256(Byte(), Byte())
+  fullName: Dixor.Security.CryptographicUtils.HmacSha256(byte[], byte[])
+  fullName.vb: Dixor.Security.CryptographicUtils.HmacSha256(Byte(), Byte())
+  nameWithType: CryptographicUtils.HmacSha256(byte[], byte[])
+  nameWithType.vb: CryptographicUtils.HmacSha256(Byte(), Byte())
+- uid: Dixor.Security.CryptographicUtils.HmacSha256*
+  name: HmacSha256
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha256_
+  commentId: Overload:Dixor.Security.CryptographicUtils.HmacSha256
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.HmacSha256
+  nameWithType: CryptographicUtils.HmacSha256
+- uid: Dixor.Security.CryptographicUtils.HmacSha512(System.Byte[],System.Byte[])
+  name: HmacSha512(byte[], byte[])
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha512_System_Byte___System_Byte___
+  commentId: M:Dixor.Security.CryptographicUtils.HmacSha512(System.Byte[],System.Byte[])
+  name.vb: HmacSha512(Byte(), Byte())
+  fullName: Dixor.Security.CryptographicUtils.HmacSha512(byte[], byte[])
+  fullName.vb: Dixor.Security.CryptographicUtils.HmacSha512(Byte(), Byte())
+  nameWithType: CryptographicUtils.HmacSha512(byte[], byte[])
+  nameWithType.vb: CryptographicUtils.HmacSha512(Byte(), Byte())
+- uid: Dixor.Security.CryptographicUtils.HmacSha512*
+  name: HmacSha512
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_HmacSha512_
+  commentId: Overload:Dixor.Security.CryptographicUtils.HmacSha512
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.HmacSha512
+  nameWithType: CryptographicUtils.HmacSha512
 - uid: Dixor.Security.DataEncryptor
   name: DataEncryptor
   href: api/Dixor.Security.DataEncryptor.html
