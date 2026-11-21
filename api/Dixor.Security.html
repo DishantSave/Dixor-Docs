@@ -129,7 +129,9 @@ secure random generation, key derivation, and URL-safe base64 encoding.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Dixor.Security.DataEncryptor.html">DataEncryptor</a></dt>
-      <dd><p>Implements authenticated symmetric encryption and decryption using NIST standard AES-256-GCM.</p>
+      <dd><p>Implements high-performance authenticated symmetric encryption and decryption.
+Uses NIST standard AES-256-GCM where hardware/OS supported, and seamlessly falls back to
+AES-256-CBC with HMAC-SHA256 Encrypt-then-MAC on platforms lacking AES-GCM (such as WebAssembly).</p>
 </dd>
     </dl>
     <dl class="jumplist">

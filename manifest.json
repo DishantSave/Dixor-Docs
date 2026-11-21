@@ -701,7 +701,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Dixor.Security.DataEncryptor",
-      "Summary": "<p sourcefile=\"api/Dixor.Security.DataEncryptor.yml\" sourcestartlinenumber=\"1\">Implements authenticated symmetric encryption and decryption using NIST standard AES-256-GCM.</p>\n"
+      "Summary": "<p sourcefile=\"api/Dixor.Security.DataEncryptor.yml\" sourcestartlinenumber=\"1\">Implements high-performance authenticated symmetric encryption and decryption.\nUses NIST standard AES-256-GCM where hardware/OS supported, and seamlessly falls back to\nAES-256-CBC with HMAC-SHA256 Encrypt-then-MAC on platforms lacking AES-GCM (such as WebAssembly).</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -2276,6 +2276,34 @@ references:
   commentId: T:Dixor.Security.AuthTokenService
   fullName: Dixor.Security.AuthTokenService
   nameWithType: AuthTokenService
+- uid: Dixor.Security.AuthTokenService.#ctor
+  name: AuthTokenService()
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService__ctor
+  commentId: M:Dixor.Security.AuthTokenService.#ctor
+  name.vb: New()
+  fullName: Dixor.Security.AuthTokenService.AuthTokenService()
+  fullName.vb: Dixor.Security.AuthTokenService.New()
+  nameWithType: AuthTokenService.AuthTokenService()
+  nameWithType.vb: AuthTokenService.New()
+- uid: Dixor.Security.AuthTokenService.#ctor(Dixor.Security.IDataEncryptor)
+  name: AuthTokenService(IDataEncryptor)
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService__ctor_Dixor_Security_IDataEncryptor_
+  commentId: M:Dixor.Security.AuthTokenService.#ctor(Dixor.Security.IDataEncryptor)
+  name.vb: New(IDataEncryptor)
+  fullName: Dixor.Security.AuthTokenService.AuthTokenService(Dixor.Security.IDataEncryptor)
+  fullName.vb: Dixor.Security.AuthTokenService.New(Dixor.Security.IDataEncryptor)
+  nameWithType: AuthTokenService.AuthTokenService(IDataEncryptor)
+  nameWithType.vb: AuthTokenService.New(IDataEncryptor)
+- uid: Dixor.Security.AuthTokenService.#ctor*
+  name: AuthTokenService
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService__ctor_
+  commentId: Overload:Dixor.Security.AuthTokenService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Dixor.Security.AuthTokenService.AuthTokenService
+  fullName.vb: Dixor.Security.AuthTokenService.New
+  nameWithType: AuthTokenService.AuthTokenService
+  nameWithType.vb: AuthTokenService.New
 - uid: Dixor.Security.AuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload,System.String)
   name: CreateToken(AuthTokenPayload, string)
   href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_CreateToken_Dixor_Security_AuthTokenPayload_System_String_

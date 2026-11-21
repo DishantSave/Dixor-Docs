@@ -76,8 +76,32 @@
 <p>All notable changes to the <strong>Dixor Ecosystem</strong> are documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>, and this project adheres strictly to <a href="https://semver.org/">Semantic Versioning</a>.</p>
 <hr>
-<h2 id="2026-07-23--dixoridentity-v020">[2026-07-23] — Dixor.Identity [v0.2.0]</h2>
+<h2 id="2026-11-22--dixorsecurity-v011--dixorstudio">[2026-11-22] — Dixor.Security [v0.1.1] &amp; Dixor.Studio</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>Universal Cross-Platform AEAD:</strong> Resolved <code>PlatformNotSupportedException: Cryptography_AlgorithmNotSupported, AesGcm</code> across Blazor WebAssembly and browser runtimes. Introduced automatic dual-mode fallback in <code>DataEncryptor</code> and <code>AuthTokenService</code>: uses NIST AES-256-GCM (<code>0x01</code>) on hardware-supported server/desktop platforms, and automatically switches to AES-256-CBC with HMAC-SHA256 Encrypt-then-MAC (<code>0x02</code>) on WebAssembly with constant-time pre-decryption tag verification.</li>
+<li><strong>Deterministic Hashing Contrast:</strong> Fixed low-contrast styling in <code>Dixor.Studio</code> Deterministic Hashing view where text blended into the background. Engineered a solid slate theme-proof container (<code>#0f172a</code> with <code>#38bdf8</code> bold text) guaranteeing &gt;10:1 AAA contrast in both light and dark modes.</li>
+</ul>
 <h3 id="added">Added</h3>
+<ul>
+<li><strong>Modular Security Studio:</strong> Refactored <code>Dixor.Security</code> within <code>Dixor.Studio</code> from a single monolithic tabbed page into individual dedicated feature pages matching the <code>Dixor.Identity</code> dropdown hierarchy:
+<ul>
+<li><code>/security/overview</code> — Suite directory &amp; architecture summary</li>
+<li><code>/security/auth-tokens</code> — Reversible AES-256 tokens with claims</li>
+<li><code>/security/client-credentials</code> — API credentials, RSA 2048/4096 &amp; ECDSA P-256 keys, and digital signing</li>
+<li><code>/security/oauth2</code> — RFC 6749 OAuth2 Bearer token issuance &amp; validation</li>
+<li><code>/security/data-encryption</code> — Authenticated AEAD symmetric encryption &amp; decryption</li>
+<li><code>/security/deterministic-hashing</code> — One-way keyed blind indexing with determinism verification</li>
+<li><code>/security/password-hashing</code> — PBKDF2-SHA256 salted password hashing</li>
+<li><code>/security/totp</code> — RFC 6238 2FA authenticator with countdown timer</li>
+<li><code>/security/api-keys</code> — CSPRNG API keys with SHA-256 hash digests</li>
+<li><code>/security/masking</code> — Sensitive data masking for PCI-DSS &amp; GDPR compliance</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2026-07-23--dixoridentity-v020">[2026-07-23] — Dixor.Identity [v0.2.0]</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li><strong>Base36 Identifier Generation (<code>Base36</code>):</strong> Introduced a cryptographically secure Base36 string generation API (<code>Base36.Generate()</code>) utilizing numeric characters (<code>0–9</code>) and uppercase alphabetic characters (<code>A–Z</code>). Features optimized stack allocation (<code>stackalloc</code>) for paths up to 256 characters to eliminate heap garbage collection pressure.</li>
 <li><strong>Base62 Identifier Generation (<code>Base62</code>):</strong> Added high-density, URL-safe, and case-sensitive identifier generation (<code>Base62.Generate()</code>) incorporating lowercase alphabetic characters (<code>a–z</code>) alongside numeric digits and uppercase letters for superior information packing density.</li>
@@ -108,26 +132,26 @@
 </ul>
 <hr>
 <h2 id="2026-06-28--dixoridentity-v013">[2026-06-28] — Dixor.Identity [v0.1.3]</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li><strong>Packaging:</strong> Resolved package installation failures by embedding Roslyn analyzers directly into the package structure rather than referencing an external analyzer dependency.</li>
 <li><strong>Build:</strong> Improved analyzer integration and package reliability across Visual Studio, Rider, and CLI builds.</li>
 </ul>
 <hr>
 <h2 id="2026-06-28--dixoridentity-v012">[2026-06-28] — Dixor.Identity [v0.1.2]</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li><strong>Multi-Targeting:</strong> Extended framework support beyond .NET 10 to fully support <strong>.NET 8.0</strong> and <strong>.NET 9.0</strong>.</li>
 <li><strong>Documentation:</strong> Introduced modular DocFX navigation, cross-referenced conceptual guides, and complete API references for the <code>Uuid7</code> facade.</li>
 </ul>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 <ul>
 <li><strong>Compatibility:</strong> Resolved runtime assembly resolution issues when consuming the library from .NET 8/9 applications.</li>
 <li><strong>Documentation:</strong> Fixed broken navigation hierarchies and NuGet package Readme link rendering.</li>
 </ul>
 <hr>
 <h2 id="2026-06-28--dixoridentity-v011">[2026-06-28] — Dixor.Identity [v0.1.1]</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li><strong>UUIDv7 Engine:</strong> Implemented RFC 9562 compliant UUID Version 7 generation (<code>Uuid7.New()</code>).</li>
 <li><strong>Monotonic Generation:</strong> Added lock-free sequential generation (<code>Uuid7.NewMonotonic()</code>) for high-throughput sub-millisecond workloads.</li>
@@ -137,7 +161,7 @@
 </ul>
 <hr>
 <h2 id="2026-06-03--dixoridentity-v010">[2026-06-03] — Dixor.Identity [v0.1.0]</h2>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li><strong>Project Foundation:</strong> Created initial repository structure, core <code>Dixor.Identity</code> project architecture, automated unit test suites, and initial repository metadata.</li>
 </ul>

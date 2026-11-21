@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DataEncryptor | Dixor Documentation ">
       
-      <meta name="description" content="Implements authenticated symmetric encryption and decryption using NIST standard AES-256-GCM.">
+      <meta name="description" content="Implements high-performance authenticated symmetric encryption and decryption. Uses NIST standard AES-256-GCM where hardware/OS supported, and seamlessly falls back to AES-256-CBC with HMAC-SHA256 Encrypt-then-MAC on platforms lacking AES-GCM (such as WebAssembly).">
       <link rel="icon" href="../images/icon-192.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -75,7 +75,7 @@
 
 
   <h1 id="Dixor_Security_DataEncryptor" data-uid="Dixor.Security.DataEncryptor" class="text-break">
-Class DataEncryptor  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class DataEncryptor  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -83,7 +83,9 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>Dixor.Security.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Implements authenticated symmetric encryption and decryption using NIST standard AES-256-GCM.</p>
+  <div class="markdown summary"><p>Implements high-performance authenticated symmetric encryption and decryption.
+Uses NIST standard AES-256-GCM where hardware/OS supported, and seamlessly falls back to
+AES-256-CBC with HMAC-SHA256 Encrypt-then-MAC on platforms lacking AES-GCM (such as WebAssembly).</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -146,7 +148,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Dixor_Security_DataEncryptor_Decrypt_System_String_System_String_System_String_" data-uid="Dixor.Security.DataEncryptor.Decrypt(System.String,System.String,System.String)">
   Decrypt(string, string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decrypts an authenticated ciphertext string using the specified secret key.</p>
@@ -191,7 +193,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Dixor_Security_DataEncryptor_DecryptBytes_System_Byte___System_Byte___System_Byte___" data-uid="Dixor.Security.DataEncryptor.DecryptBytes(System.Byte[],System.Byte[],System.Byte[])">
   DecryptBytes(byte[], byte[], byte[]?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decrypts a byte array previously encrypted by <a class="xref" href="Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_EncryptBytes_System_Byte___System_Byte___System_Byte___">EncryptBytes(byte[], byte[], byte[]?)</a>.</p>
@@ -236,7 +238,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Dixor_Security_DataEncryptor_Encrypt_System_String_System_String_System_String_" data-uid="Dixor.Security.DataEncryptor.Encrypt(System.String,System.String,System.String)">
   Encrypt(string, string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Encrypts a plaintext string using AES-256-GCM authenticated encryption with the specified secret key.</p>
@@ -281,7 +283,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Dixor_Security_DataEncryptor_EncryptBytes_System_Byte___System_Byte___System_Byte___" data-uid="Dixor.Security.DataEncryptor.EncryptBytes(System.Byte[],System.Byte[],System.Byte[])">
   EncryptBytes(byte[], byte[], byte[]?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Encrypts a byte array using AES-256-GCM.</p>
@@ -326,7 +328,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Dixor_Security_DataEncryptor_TryDecrypt_System_String_System_String_System_String__System_String__System_String_" data-uid="Dixor.Security.DataEncryptor.TryDecrypt(System.String,System.String,System.String@,System.String@,System.String)">
   TryDecrypt(string, string, out string?, out string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Attempts to decrypt an authenticated ciphertext string without throwing exceptions on validation failures.</p>
@@ -377,7 +379,7 @@ Class DataEncryptor  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.Security/Cryptography/DataEncryptor.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
 

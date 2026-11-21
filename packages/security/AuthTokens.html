@@ -94,7 +94,7 @@
 <p><code>Dixor.Security</code> solves both problems:</p>
 <ol>
 <li><strong>Self-Contained &amp; Reversible:</strong> Carries user identity, credentials, and custom metadata directly inside the token. No database lookup required.</li>
-<li><strong>Confidential &amp; Encrypted:</strong> Payloads are encrypted using <strong>AES-256-GCM</strong>, keeping embedded passwords and custom claims invisible to clients.</li>
+<li><strong>Confidential &amp; Encrypted:</strong> Payloads are encrypted using <strong>AES-256 authenticated encryption (AEAD)</strong> via <code>IDataEncryptor</code>, supporting hardware AES-GCM and WebAssembly runtimes.</li>
 <li><strong>Tamper-Proof Authenticity:</strong> Protected by a 128-bit cryptographic authentication tag. If the client modifies a single byte, decoding fails immediately.</li>
 </ol>
 <hr>

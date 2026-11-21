@@ -179,14 +179,49 @@ byte[] encryptedBytes = encryptor.EncryptBytes(fileBytes, raw32ByteKey);
 byte[] originalBytes = encryptor.DecryptBytes(encryptedBytes, raw32ByteKey);
 </code></pre>
 <hr>
+<h2 id="universal-cross-platform-aead-architecture">Universal Cross-Platform AEAD Architecture</h2>
+<p>In standard server and desktop environments, <code>DataEncryptor</code> uses NIST standard <strong>AES-256-GCM</strong> with hardware acceleration. However, on browser runtimes (such as <strong>Blazor WebAssembly</strong>), <code>AesGcm.IsSupported</code> is <code>false</code>.</p>
+<p>To ensure seamless execution everywhere without throwing <code>PlatformNotSupportedException</code>, <code>DataEncryptor</code> provides a dual-mode universal AEAD engine:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mode Marker</th>
+<th style="text-align: left;">Algorithm Engine</th>
+<th style="text-align: left;">Supported Environments</th>
+<th style="text-align: left;">Authentication Tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>0x01</code> (<code>ModeGcm</code>)</td>
+<td style="text-align: left;"><strong>AES-256-GCM</strong></td>
+<td style="text-align: left;">Server, Desktop, Linux, macOS, Cloud (.NET 8/9/10)</td>
+<td style="text-align: left;">128-bit GHASH tag</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>0x02</code> (<code>ModeCbcHmac</code>)</td>
+<td style="text-align: left;"><strong>AES-256-CBC + HMAC-SHA256</strong></td>
+<td style="text-align: left;">Browser WebAssembly, Mono, Fallback</td>
+<td style="text-align: left;">128-bit Encrypt-then-MAC tag</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cryptographic-security-properties-of-webassembly-fallback">Cryptographic Security Properties of WebAssembly Fallback</h3>
+<ul>
+<li><strong>Encrypt-then-MAC:</strong> Plaintext is encrypted via AES-256-CBC with a cryptographically derived encryption key and a fresh 16-byte IV.</li>
+<li><strong>Separate Key Derivation:</strong> Distinct 256-bit encryption and authentication keys are derived using <code>HMAC-SHA256</code> with domain-separated purposes.</li>
+<li><strong>Pre-Decryption Verification:</strong> The HMAC authentication tag is validated using constant-time comparison (<code>CryptographicOperations.FixedTimeEquals</code>) <em>before</em> any decryption occurs, preventing padding oracle attacks and timing leaks.</li>
+</ul>
+<hr>
 <h2 id="wire-format">Wire Format</h2>
 <p><code>IDataEncryptor</code> packages encrypted data into a compact, zero-overhead format:</p>
-<pre><code>[ dx_enc_ ] + Base64UrlEncode([ 12-byte Nonce ][ 16-byte Auth Tag ][ Ciphertext ])
+<pre><code>[ dx_enc_ ] + Base64UrlEncode([ 1-byte Mode ][ IV / Nonce ][ 16-byte Auth Tag ][ Ciphertext ])
 </code></pre>
 <ul>
-<li><strong>12-byte Nonce:</strong> Fresh random 96-bit initialization vector generated via <code>RandomNumberGenerator.Fill</code> on every call.</li>
-<li><strong>16-byte Auth Tag:</strong> GMAC tag computed across ciphertext and associated data.</li>
-<li><strong>Ciphertext:</strong> Encrypted payload bytes with identical length to the plaintext.</li>
+<li><strong>1-byte Mode:</strong> <code>0x01</code> for AES-GCM or <code>0x02</code> for AES-CBC-HMAC.</li>
+<li><strong>12 or 16-byte Nonce / IV:</strong> Fresh random initialization vector generated via <code>RandomNumberGenerator.Fill</code> on every call.</li>
+<li><strong>16-byte Auth Tag:</strong> 128-bit authentication tag computed across ciphertext and associated data.</li>
+<li><strong>Ciphertext:</strong> Encrypted payload bytes.</li>
 </ul>
 
 </article>
