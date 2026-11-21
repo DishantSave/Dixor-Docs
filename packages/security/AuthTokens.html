@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Reversible Authentication Tokens | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Reversible Authentication Tokens | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/AuthTokens.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="reversible-authentication-tokens">Reversible Authentication Tokens</h1>
+
+<p>The <code>IAuthTokenService</code> provides a secure, reversible authentication token engine. It encrypts and packages user credentials—including <strong>Name</strong>, <strong>Password</strong>, and arbitrary <strong>Custom Data</strong>—into a compact, tamper-proof token that can be reverse-decoded and extracted by authorized backend services holding the application secret key.</p>
+<hr>
+<h2 id="why-reversible-authenticated-tokens">Why Reversible Authenticated Tokens?</h2>
+<p>Traditional bearer tokens (like opaque tokens) require persistent session databases or Redis lookups for every API request. On the other hand, traditional signed tokens (like standard unencrypted JWTs) store payloads in readable Base64 format, exposing sensitive fields to anyone inspecting the token.</p>
+<p><code>Dixor.Security</code> solves both problems:</p>
+<ol>
+<li><strong>Self-Contained &amp; Reversible:</strong> Carries user identity, credentials, and custom metadata directly inside the token. No database lookup required.</li>
+<li><strong>Confidential &amp; Encrypted:</strong> Payloads are encrypted using <strong>AES-256-GCM</strong>, keeping embedded passwords and custom claims invisible to clients.</li>
+<li><strong>Tamper-Proof Authenticity:</strong> Protected by a 128-bit cryptographic authentication tag. If the client modifies a single byte, decoding fails immediately.</li>
+</ol>
+<hr>
+<h2 id="step-by-step-implementation-guide">Step-by-Step Implementation Guide</h2>
+<h3 id="step-1-register-in-programcs">Step 1: Register in <code>Program.cs</code></h3>
+<pre><code class="lang-csharp">var builder = WebApplication.CreateBuilder(args);
+
+// Registers IAuthTokenService and all security primitives
+builder.Services.AddDixorSecurity();
+
+// Or via 1-line ecosystem bootstrap:
+// builder.Services.AddDixor();
+
+var app = builder.Build();
+</code></pre>
+<hr>
+<h3 id="step-2-generate-an-authentication-token">Step 2: Generate an Authentication Token</h3>
+<p>Inject <code>IAuthTokenService</code> into your authentication endpoint or login controller:</p>
+<pre><code class="lang-csharp">[ApiController]
+[Route(&quot;api/auth&quot;)]
+public class AuthController(IAuthTokenService tokenService, IConfiguration config) : ControllerBase
+{
+    private readonly string _secretKey = config[&quot;Security:TokenSecret&quot;] 
+        ?? &quot;MyEnterpriseSuperSecretKey2026!#$&quot;;
+
+    [HttpPost(&quot;login&quot;)]
+    public IActionResult Login([FromBody] LoginRequest request)
+    {
+        // 1. Verify user credentials against your identity store...
+
+        // 2. Prepare custom data claims to embed into the token:
+        var customData = new Dictionary&lt;string, string&gt;
+        {
+            [&quot;TenantId&quot;] = &quot;tenant_enterprise_01&quot;,
+            [&quot;Role&quot;] = &quot;SystemAdministrator&quot;,
+            [&quot;Department&quot;] = &quot;Finance&quot;,
+            [&quot;Tier&quot;] = &quot;Enterprise&quot;
+        };
+
+        // 3. Generate the reversible token (valid for 24 hours):
+        string token = tokenService.CreateToken(
+            name: request.Username,
+            password: request.Password, // Safely encrypted via AES-256-GCM
+            customData: customData,
+            secretKey: _secretKey,
+            lifetime: TimeSpan.FromHours(24));
+
+        return Ok(new { AccessToken = token, TokenType = &quot;DixorAuth&quot; });
+    }
+}
+</code></pre>
+<p>The output is a URL-safe token with a <code>dx_tok_</code> prefix:</p>
+<pre><code>dx_tok_gW8A1m9a2...B7e4xQ
+</code></pre>
+<hr>
+<h3 id="step-3-reverse-decode-and-extract-data">Step 3: Reverse-Decode and Extract Data</h3>
+<p>When requests arrive at downstream APIs or background microservices, decode the token to extract the encapsulated credentials and metadata:</p>
+<pre><code class="lang-csharp">[ApiController]
+[Route(&quot;api/orders&quot;)]
+public class OrdersController(IAuthTokenService tokenService, IConfiguration config) : ControllerBase
+{
+    private readonly string _secretKey = config[&quot;Security:TokenSecret&quot;]!;
+
+    [HttpPost]
+    public IActionResult CreateOrder([FromHeader(Name = &quot;X-Auth-Token&quot;)] string token)
+    {
+        // 1. Decode and reverse-extract token info:
+        AuthTokenDecodeResult result = tokenService.DecodeToken(token, _secretKey);
+
+        if (!result.IsValid || result.Payload is null)
+        {
+            return Unauthorized(new { Error = result.Error ?? &quot;Invalid or tampered token.&quot; });
+        }
+
+        // 2. Access extracted credentials:
+        string username = result.Payload.Name!;
+        string password = result.Payload.Password!;
+        string tokenId = result.Payload.TokenId;
+        DateTimeOffset expiresAt = result.Payload.ExpiresAt;
+
+        // 3. Access extracted custom data:
+        string tenantId = result.Payload.CustomData[&quot;TenantId&quot;];
+        string role = result.Payload.CustomData[&quot;Role&quot;];
+
+        // Process business logic with extracted credentials and claims...
+        return Ok(new { Message = $&quot;Order processed for user {username} under tenant {tenantId}.&quot; });
+    }
+}
+</code></pre>
+<hr>
+<h3 id="step-4-safe-validation-with-trydecodetoken">Step 4: Safe Validation with <code>TryDecodeToken</code></h3>
+<p>For performance-critical middleware pipelines, use the non-throwing <code>TryDecodeToken</code> pattern:</p>
+<pre><code class="lang-csharp">if (tokenService.TryDecodeToken(rawToken, secretKey, out var payload, out var error))
+{
+    // Token is authentic, unexpired, and decrypted:
+    Console.WriteLine($&quot;Authenticated: {payload.Name}, Role: {payload.CustomData[&quot;Role&quot;]}&quot;);
+}
+else
+{
+    Console.WriteLine($&quot;Rejected: {error}&quot;);
+}
+</code></pre>
+<hr>
+<h2 id="token-structure--wire-format">Token Structure &amp; Wire Format</h2>
+<p>Under the hood, <code>IAuthTokenService</code> constructs a packed binary payload:</p>
+<pre><code>[ dx_tok_ ] + Base64UrlEncode([ 12-byte Nonce ][ 16-byte Auth Tag ][ Ciphertext ])
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Size</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>dx_tok_</code></td>
+<td style="text-align: left;">Prefix</td>
+<td style="text-align: left;">Identifies the token type for logging and telemetry.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nonce</strong></td>
+<td style="text-align: left;">12 bytes (96 bits)</td>
+<td style="text-align: left;">Cryptographically secure random initialization vector generated per token. Prevents duplicate ciphertexts.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tag</strong></td>
+<td style="text-align: left;">16 bytes (128 bits)</td>
+<td style="text-align: left;">AES-GCM GHASH authentication tag verifying that the token has not been tampered with.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ciphertext</strong></td>
+<td style="text-align: left;">Variable</td>
+<td style="text-align: left;">JSON payload of <code>AuthTokenPayload</code> encrypted with AES-256 counter mode.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="error-diagnostics">Error Diagnostics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Result Property</th>
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: left;">Recommended Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>IsValid == false</code>, <code>IsExpired == true</code></td>
+<td style="text-align: left;">Token exceeded its configured lifetime (<code>ExpiresAt &lt; UtcNow</code>).</td>
+<td style="text-align: left;">Prompt client to re-authenticate or refresh token.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IsValid == false</code>, <code>Error</code> contains &quot;tampered&quot;</td>
+<td style="text-align: left;">A single bit was modified or an incorrect secret key was provided.</td>
+<td style="text-align: left;">Reject request as unauthorized tampering attempt.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IsValid == false</code>, <code>Error</code> contains &quot;Base64Url&quot;</td>
+<td style="text-align: left;">Token string was truncated or corrupted during transit.</td>
+<td style="text-align: left;">Return HTTP 400 Bad Request.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/AuthTokens.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

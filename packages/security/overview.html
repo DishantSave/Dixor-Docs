@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Cryptographic Algorithms &amp; Architecture Deep Dive | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Cryptographic Algorithms &amp; Architecture Deep Dive | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cryptographic-algorithms--architecture-deep-dive">Cryptographic Algorithms &amp; Architecture Deep Dive</h1>
+
+<p><code>Dixor.Security</code> is built strictly on modern, NIST-approved, industry-standard cryptographic primitives. This document details each algorithm, its mathematical and operational foundation, its security properties, and how it is applied within the library.</p>
+<hr>
+<h2 id="1-symmetric-encryption-aes-256-gcm-aead">1. Symmetric Encryption: AES-256-GCM (AEAD)</h2>
+<h3 id="specification">Specification</h3>
+<ul>
+<li><strong>Standard:</strong> NIST SP 800-38D (Galois/Counter Mode) / FIPS PUB 197.</li>
+<li><strong>Key Length:</strong> 256 bits (32 bytes).</li>
+<li><strong>Nonce / IV Length:</strong> 96 bits (12 bytes) uniquely generated per encryption.</li>
+<li><strong>Authentication Tag:</strong> 128 bits (16 bytes).</li>
+</ul>
+<h3 id="how-it-works">How It Works</h3>
+<p>AES-GCM is an <strong>Authenticated Encryption with Associated Data (AEAD)</strong> cipher that provides both <strong>Confidentiality</strong> (data cannot be read) and <strong>Integrity / Authenticity</strong> (data cannot be modified or replayed):</p>
+<pre><code>Plaintext ───► [ AES Counter Mode (CTR) ] ─────────► Ciphertext
+                         │                                │
+                     GHASH Over GF(2^128) ◄───────────────┘
+                         │
+             [ 128-bit Authentication Tag ]
+</code></pre>
+<ol>
+<li><strong>Counter Mode (CTR):</strong> An incrementing counter combined with a random 96-bit nonce encrypts data into ciphertext blocks.</li>
+<li><strong>GHASH Authenticator:</strong> Computes a polynomial evaluation over the Galois field <span class="math">\(GF(2^{128})\)</span> covering the ciphertext and optional <strong>Additional Authenticated Data (AAD)</strong>.</li>
+<li><strong>Tamper Rejection:</strong> When decrypting, <code>Dixor.Security</code> computes and compares the tag. If a single bit of ciphertext or AAD has been altered, or if the key is incorrect, <code>AesGcm.Decrypt</code> immediately throws a <code>CryptographicException</code> before returning any plaintext, neutralizing padding oracle and chosen-ciphertext attacks.</li>
+</ol>
+<hr>
+<h2 id="2-password-hashing-pbkdf2-hmac-sha256">2. Password Hashing: PBKDF2-HMAC-SHA256</h2>
+<h3 id="specification-1">Specification</h3>
+<ul>
+<li><strong>Standard:</strong> RFC 2898 / RFC 8018 / NIST SP 800-132.</li>
+<li><strong>Pseudorandom Function (PRF):</strong> HMAC-SHA256.</li>
+<li><strong>Salt Length:</strong> 128 bits (16 bytes) generated via <code>RandomNumberGenerator</code>.</li>
+<li><strong>Default Iteration Count:</strong> 100,000 iterations.</li>
+<li><strong>Derived Key Length:</strong> 256 bits (32 bytes).</li>
+</ul>
+<h3 id="how-it-works-1">How It Works</h3>
+<p>Standard cryptographic hashes (like SHA-256 or MD5) execute in nanoseconds, making them vulnerable to massive brute-force attacks using GPUs or ASICs. PBKDF2 deliberately introduces computational work:</p>
+<p><span class="math">\(DK = \text{PBKDF2}(\text{HMAC-SHA256}, \text{Password}, \text{Salt}, c = 100000, 32)\)</span></p>
+<ol>
+<li><strong>Unique Salt:</strong> Every password hash receives a unique 128-bit random salt, rendering rainbow tables and precomputed hash dictionaries completely ineffective.</li>
+<li><strong>Work Factor (<span class="math">\(c\)</span>):</strong> The 100,000 iterations force an attacker to compute 100,000 SHA-256 operations for every single guess, raising the cost of offline attacks exponentially while remaining fast (~10ms) for individual user logins.</li>
+</ol>
+<hr>
+<h2 id="3-one-way-keyed-hashing-hmac-sha256--hmac-sha512">3. One-Way Keyed Hashing: HMAC-SHA256 &amp; HMAC-SHA512</h2>
+<h3 id="specification-2">Specification</h3>
+<ul>
+<li><strong>Standard:</strong> RFC 2104 / FIPS PUB 198-1.</li>
+<li><strong>Hash Functions:</strong> SHA-256 (64 hex characters) and SHA-512 (128 hex characters).</li>
+</ul>
+<h3 id="how-it-works-2">How It Works</h3>
+<p>HMAC applies a cryptographic hash function in a nested structure with an application secret key:</p>
+<p><span class="math">\(\text{HMAC}(K, m) = H((K' \oplus opad) \parallel H((K' \oplus ipad) \parallel m))\)</span></p>
+<p>Where <span class="math">\(ipad\)</span> and <span class="math">\(opad\)</span> are inner and outer padding constants.</p>
+<h3 id="the-problem-of-blind-indexing">The Problem of Blind Indexing</h3>
+<p>When encrypting sensitive database columns (e.g. <code>Email</code> or <code>SSN</code>) with AES-256-GCM, the 96-bit random nonce ensures that encrypting <code>&quot;user@dixor.io&quot;</code> twice produces two completely different ciphertexts. This makes SQL queries like <code>WHERE Email = @val</code> impossible.</p>
+<h3 id="the-solution-deterministic-keyed-hashing">The Solution: Deterministic Keyed Hashing</h3>
+<p><code>IDeterministicHasher</code> computes an HMAC over the plaintext using a secret pepper. Because HMAC is deterministic for a given key:</p>
+<ol>
+<li><code>&quot;user@dixor.io&quot;</code> + <code>SecretKey</code> <span class="math">\(\implies\)</span> <strong>always</strong> produces the exact same 64-character hash digest.</li>
+<li>Without <code>SecretKey</code>, an attacker obtaining database dumps cannot match hashes against rainbow tables.</li>
+<li>You can safely execute exact-match queries:
+<pre><code class="lang-sql">SELECT * FROM Users WHERE EmailHash = @computedHash;
+</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="4-asymmetric-authentication-rsa--ecdsa">4. Asymmetric Authentication: RSA &amp; ECDSA</h2>
+<h3 id="specification-3">Specification</h3>
+<ul>
+<li><strong>RSA:</strong> 2048-bit or 4096-bit keys with PKCS#1 v1.5 padding and SHA-256 (FIPS 186-4).</li>
+<li><strong>ECDSA:</strong> NIST P-256 curve (<code>secp256r1</code>) with SHA-256 (RFC 5480 / FIPS 186-4).</li>
+<li><strong>PEM Format:</strong> RFC 7468 (PKCS#8 Private Key, SubjectPublicKeyInfo Public Key).</li>
+</ul>
+<h3 id="how-it-works-3">How It Works</h3>
+<ul>
+<li><strong>RSA:</strong> Relies on the mathematical difficulty of factoring the product of two large prime numbers (<span class="math">\(n = p \times q\)</span>).</li>
+<li><strong>ECDSA:</strong> Relies on the elliptic curve discrete logarithm problem over the prime field <span class="math">\(y^2 = x^3 - 3x + b \pmod p\)</span>. Provides equivalent security to RSA-3072 with smaller key sizes (256 bits) and higher signing throughput.</li>
+<li><strong>Verification:</strong> The signer signs the SHA-256 hash of the payload using their Private Key; any verifying party verifies the signature using the Public Key without ever possessing the private signing key.</li>
+</ul>
+<hr>
+<h2 id="5-two-factor-authentication-totp-rfc-6238">5. Two-Factor Authentication: TOTP (RFC 6238)</h2>
+<h3 id="specification-4">Specification</h3>
+<ul>
+<li><strong>Standard:</strong> RFC 6238 (Time-Based One-Time Password Algorithm) &amp; RFC 4226 (HOTP).</li>
+<li><strong>Base32 Alphabet:</strong> RFC 4648 (<code>A-Z, 2-7</code>).</li>
+<li><strong>Time Step:</strong> 30 seconds.</li>
+<li><strong>HMAC Function:</strong> HMAC-SHA1 (universal standard for Google and Microsoft Authenticator).</li>
+</ul>
+<h3 id="how-it-works-4">How It Works</h3>
+<ol>
+<li><strong>Time Counter:</strong> Calculates <span class="math">\(T = \lfloor \frac{\text{unixTime}}{30} \rfloor\)</span>.</li>
+<li><strong>HMAC Computation:</strong> Computes <span class="math">\(\text{HMAC-SHA1}(Key_{Base32}, T_{8-byte})\)</span>.</li>
+<li><strong>Dynamic Truncation:</strong> Extracts a 4-byte dynamic binary code based on the offset stored in the lower 4 bits of the last hash byte:
+<span class="math">\(\text{offset} = \text{hash}[19] \ \&amp; \ 0x0F\)</span>
+<span class="math">\(\text{code} = (\text{binaryExtract} \pmod{10^6})\)</span></li>
+<li><strong>Clock Drift Tolerance:</strong> Validates passcodes at <span class="math">\(T\)</span>, <span class="math">\(T-1\)</span>, and <span class="math">\(T+1\)</span> to ensure user authentication succeeds even if the client's phone clock is up to 30 seconds out of sync with the server.</li>
+</ol>
+<hr>
+<h2 id="6-side-channel-defense-constant-time-comparisons">6. Side-Channel Defense: Constant-Time Comparisons</h2>
+<h3 id="the-timing-attack-vulnerability">The Timing Attack Vulnerability</h3>
+<p>Standard string and array equality operators (<code>==</code>, <code>string.Equals()</code>) compare characters sequentially and return <code>false</code> on the first non-matching byte:</p>
+<pre><code class="lang-csharp">// ❌ VULNERABLE TO TIMING ATTACKS:
+bool CheckToken(string supplied, string expected)
+{
+    // Returns immediately if first character fails (fast).
+    // Returns after 31 characters if 31st fails (slower).
+    // An attacker measuring network response latency in microseconds can deduce the secret character by character!
+    return supplied == expected; 
+}
+</code></pre>
+<h3 id="the-fix">The Fix</h3>
+<p><code>CryptographicUtils.FixedTimeEquals</code> and <code>Dixor.Security</code> services compare every single byte across the entire buffer regardless of where mismatches occur, ensuring constant execution time:</p>
+<pre><code class="lang-csharp">// ✅ SECURE:
+CryptographicOperations.FixedTimeEquals(suppliedBytes, expectedBytes);
+</code></pre>
+<p>All secret comparisons, password validations, API key verifications, and token signatures in <code>Dixor.Security</code> are strictly timing-safe.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

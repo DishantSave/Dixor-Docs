@@ -295,6 +295,19 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorOptions.EnableEcosystemIdentity
   nameWithType: DixorOptions.EnableEcosystemIdentity
+- uid: Dixor.DI.DixorOptions.EnableEcosystemSecurity
+  name: EnableEcosystemSecurity
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemSecurity
+  commentId: P:Dixor.DI.DixorOptions.EnableEcosystemSecurity
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemSecurity
+  nameWithType: DixorOptions.EnableEcosystemSecurity
+- uid: Dixor.DI.DixorOptions.EnableEcosystemSecurity*
+  name: EnableEcosystemSecurity
+  href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemSecurity_
+  commentId: Overload:Dixor.DI.DixorOptions.EnableEcosystemSecurity
+  isSpec: "True"
+  fullName: Dixor.DI.DixorOptions.EnableEcosystemSecurity
+  nameWithType: DixorOptions.EnableEcosystemSecurity
 - uid: Dixor.DI.DixorOptions.EnableEcosystemValidation
   name: EnableEcosystemValidation
   href: api/Dixor.DI.DixorOptions.html#Dixor_DI_DixorOptions_EnableEcosystemValidation
@@ -756,6 +769,19 @@ references:
   isSpec: "True"
   fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorResolvers
   nameWithType: DixorServiceCollectionExtensions.AddDixorResolvers
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorSecurity(IServiceCollection)
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorSecurity_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorServiceCollectionExtensions.AddDixorSecurity(IServiceCollection)
+- uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity*
+  name: AddDixorSecurity
+  href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorSecurity_
+  commentId: Overload:Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity
+  isSpec: "True"
+  fullName: Dixor.DI.DixorServiceCollectionExtensions.AddDixorSecurity
+  nameWithType: DixorServiceCollectionExtensions.AddDixorSecurity
 - uid: Dixor.DI.DixorServiceCollectionExtensions.AddDixorServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   name: AddDixorServices(IServiceCollection)
   href: api/Dixor.DI.DixorServiceCollectionExtensions.html#Dixor_DI_DixorServiceCollectionExtensions_AddDixorServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
@@ -1860,6 +1886,2122 @@ references:
   isSpec: "True"
   fullName: Dixor.Identity.UUID7.Uuid7.TryParse
   nameWithType: Uuid7.TryParse
+- uid: Dixor.Security
+  name: Dixor.Security
+  href: api/Dixor.Security.html
+  commentId: N:Dixor.Security
+  fullName: Dixor.Security
+  nameWithType: Dixor.Security
+- uid: Dixor.Security.ApiKeyResult
+  name: ApiKeyResult
+  href: api/Dixor.Security.ApiKeyResult.html
+  commentId: T:Dixor.Security.ApiKeyResult
+  fullName: Dixor.Security.ApiKeyResult
+  nameWithType: ApiKeyResult
+- uid: Dixor.Security.ApiKeyResult.CreatedAt
+  name: CreatedAt
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_CreatedAt
+  commentId: P:Dixor.Security.ApiKeyResult.CreatedAt
+  fullName: Dixor.Security.ApiKeyResult.CreatedAt
+  nameWithType: ApiKeyResult.CreatedAt
+- uid: Dixor.Security.ApiKeyResult.CreatedAt*
+  name: CreatedAt
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_CreatedAt_
+  commentId: Overload:Dixor.Security.ApiKeyResult.CreatedAt
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyResult.CreatedAt
+  nameWithType: ApiKeyResult.CreatedAt
+- uid: Dixor.Security.ApiKeyResult.HashedKey
+  name: HashedKey
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_HashedKey
+  commentId: P:Dixor.Security.ApiKeyResult.HashedKey
+  fullName: Dixor.Security.ApiKeyResult.HashedKey
+  nameWithType: ApiKeyResult.HashedKey
+- uid: Dixor.Security.ApiKeyResult.HashedKey*
+  name: HashedKey
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_HashedKey_
+  commentId: Overload:Dixor.Security.ApiKeyResult.HashedKey
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyResult.HashedKey
+  nameWithType: ApiKeyResult.HashedKey
+- uid: Dixor.Security.ApiKeyResult.KeyHint
+  name: KeyHint
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_KeyHint
+  commentId: P:Dixor.Security.ApiKeyResult.KeyHint
+  fullName: Dixor.Security.ApiKeyResult.KeyHint
+  nameWithType: ApiKeyResult.KeyHint
+- uid: Dixor.Security.ApiKeyResult.KeyHint*
+  name: KeyHint
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_KeyHint_
+  commentId: Overload:Dixor.Security.ApiKeyResult.KeyHint
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyResult.KeyHint
+  nameWithType: ApiKeyResult.KeyHint
+- uid: Dixor.Security.ApiKeyResult.PlaintextKey
+  name: PlaintextKey
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_PlaintextKey
+  commentId: P:Dixor.Security.ApiKeyResult.PlaintextKey
+  fullName: Dixor.Security.ApiKeyResult.PlaintextKey
+  nameWithType: ApiKeyResult.PlaintextKey
+- uid: Dixor.Security.ApiKeyResult.PlaintextKey*
+  name: PlaintextKey
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_PlaintextKey_
+  commentId: Overload:Dixor.Security.ApiKeyResult.PlaintextKey
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyResult.PlaintextKey
+  nameWithType: ApiKeyResult.PlaintextKey
+- uid: Dixor.Security.ApiKeyResult.Prefix
+  name: Prefix
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_Prefix
+  commentId: P:Dixor.Security.ApiKeyResult.Prefix
+  fullName: Dixor.Security.ApiKeyResult.Prefix
+  nameWithType: ApiKeyResult.Prefix
+- uid: Dixor.Security.ApiKeyResult.Prefix*
+  name: Prefix
+  href: api/Dixor.Security.ApiKeyResult.html#Dixor_Security_ApiKeyResult_Prefix_
+  commentId: Overload:Dixor.Security.ApiKeyResult.Prefix
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyResult.Prefix
+  nameWithType: ApiKeyResult.Prefix
+- uid: Dixor.Security.ApiKeyService
+  name: ApiKeyService
+  href: api/Dixor.Security.ApiKeyService.html
+  commentId: T:Dixor.Security.ApiKeyService
+  fullName: Dixor.Security.ApiKeyService
+  nameWithType: ApiKeyService
+- uid: Dixor.Security.ApiKeyService.GenerateApiKey(System.String,System.Int32)
+  name: GenerateApiKey(string, int)
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_GenerateApiKey_System_String_System_Int32_
+  commentId: M:Dixor.Security.ApiKeyService.GenerateApiKey(System.String,System.Int32)
+  name.vb: GenerateApiKey(String, Integer)
+  fullName: Dixor.Security.ApiKeyService.GenerateApiKey(string, int)
+  fullName.vb: Dixor.Security.ApiKeyService.GenerateApiKey(String, Integer)
+  nameWithType: ApiKeyService.GenerateApiKey(string, int)
+  nameWithType.vb: ApiKeyService.GenerateApiKey(String, Integer)
+- uid: Dixor.Security.ApiKeyService.GenerateApiKey*
+  name: GenerateApiKey
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_GenerateApiKey_
+  commentId: Overload:Dixor.Security.ApiKeyService.GenerateApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyService.GenerateApiKey
+  nameWithType: ApiKeyService.GenerateApiKey
+- uid: Dixor.Security.ApiKeyService.HashApiKey(System.String)
+  name: HashApiKey(string)
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_HashApiKey_System_String_
+  commentId: M:Dixor.Security.ApiKeyService.HashApiKey(System.String)
+  name.vb: HashApiKey(String)
+  fullName: Dixor.Security.ApiKeyService.HashApiKey(string)
+  fullName.vb: Dixor.Security.ApiKeyService.HashApiKey(String)
+  nameWithType: ApiKeyService.HashApiKey(string)
+  nameWithType.vb: ApiKeyService.HashApiKey(String)
+- uid: Dixor.Security.ApiKeyService.HashApiKey*
+  name: HashApiKey
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_HashApiKey_
+  commentId: Overload:Dixor.Security.ApiKeyService.HashApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyService.HashApiKey
+  nameWithType: ApiKeyService.HashApiKey
+- uid: Dixor.Security.ApiKeyService.ValidateApiKey(System.String,System.String)
+  name: ValidateApiKey(string, string)
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_ValidateApiKey_System_String_System_String_
+  commentId: M:Dixor.Security.ApiKeyService.ValidateApiKey(System.String,System.String)
+  name.vb: ValidateApiKey(String, String)
+  fullName: Dixor.Security.ApiKeyService.ValidateApiKey(string, string)
+  fullName.vb: Dixor.Security.ApiKeyService.ValidateApiKey(String, String)
+  nameWithType: ApiKeyService.ValidateApiKey(string, string)
+  nameWithType.vb: ApiKeyService.ValidateApiKey(String, String)
+- uid: Dixor.Security.ApiKeyService.ValidateApiKey*
+  name: ValidateApiKey
+  href: api/Dixor.Security.ApiKeyService.html#Dixor_Security_ApiKeyService_ValidateApiKey_
+  commentId: Overload:Dixor.Security.ApiKeyService.ValidateApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.ApiKeyService.ValidateApiKey
+  nameWithType: ApiKeyService.ValidateApiKey
+- uid: Dixor.Security.AsymmetricAlgorithmType
+  name: AsymmetricAlgorithmType
+  href: api/Dixor.Security.AsymmetricAlgorithmType.html
+  commentId: T:Dixor.Security.AsymmetricAlgorithmType
+  fullName: Dixor.Security.AsymmetricAlgorithmType
+  nameWithType: AsymmetricAlgorithmType
+- uid: Dixor.Security.AsymmetricAlgorithmType.EcdsaP256
+  name: EcdsaP256
+  href: api/Dixor.Security.AsymmetricAlgorithmType.html#Dixor_Security_AsymmetricAlgorithmType_EcdsaP256
+  commentId: F:Dixor.Security.AsymmetricAlgorithmType.EcdsaP256
+  fullName: Dixor.Security.AsymmetricAlgorithmType.EcdsaP256
+  nameWithType: AsymmetricAlgorithmType.EcdsaP256
+- uid: Dixor.Security.AsymmetricAlgorithmType.Rsa2048
+  name: Rsa2048
+  href: api/Dixor.Security.AsymmetricAlgorithmType.html#Dixor_Security_AsymmetricAlgorithmType_Rsa2048
+  commentId: F:Dixor.Security.AsymmetricAlgorithmType.Rsa2048
+  fullName: Dixor.Security.AsymmetricAlgorithmType.Rsa2048
+  nameWithType: AsymmetricAlgorithmType.Rsa2048
+- uid: Dixor.Security.AsymmetricAlgorithmType.Rsa4096
+  name: Rsa4096
+  href: api/Dixor.Security.AsymmetricAlgorithmType.html#Dixor_Security_AsymmetricAlgorithmType_Rsa4096
+  commentId: F:Dixor.Security.AsymmetricAlgorithmType.Rsa4096
+  fullName: Dixor.Security.AsymmetricAlgorithmType.Rsa4096
+  nameWithType: AsymmetricAlgorithmType.Rsa4096
+- uid: Dixor.Security.AsymmetricKeyPair
+  name: AsymmetricKeyPair
+  href: api/Dixor.Security.AsymmetricKeyPair.html
+  commentId: T:Dixor.Security.AsymmetricKeyPair
+  fullName: Dixor.Security.AsymmetricKeyPair
+  nameWithType: AsymmetricKeyPair
+- uid: Dixor.Security.AsymmetricKeyPair.Algorithm
+  name: Algorithm
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_Algorithm
+  commentId: P:Dixor.Security.AsymmetricKeyPair.Algorithm
+  fullName: Dixor.Security.AsymmetricKeyPair.Algorithm
+  nameWithType: AsymmetricKeyPair.Algorithm
+- uid: Dixor.Security.AsymmetricKeyPair.Algorithm*
+  name: Algorithm
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_Algorithm_
+  commentId: Overload:Dixor.Security.AsymmetricKeyPair.Algorithm
+  isSpec: "True"
+  fullName: Dixor.Security.AsymmetricKeyPair.Algorithm
+  nameWithType: AsymmetricKeyPair.Algorithm
+- uid: Dixor.Security.AsymmetricKeyPair.CreatedAt
+  name: CreatedAt
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_CreatedAt
+  commentId: P:Dixor.Security.AsymmetricKeyPair.CreatedAt
+  fullName: Dixor.Security.AsymmetricKeyPair.CreatedAt
+  nameWithType: AsymmetricKeyPair.CreatedAt
+- uid: Dixor.Security.AsymmetricKeyPair.CreatedAt*
+  name: CreatedAt
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_CreatedAt_
+  commentId: Overload:Dixor.Security.AsymmetricKeyPair.CreatedAt
+  isSpec: "True"
+  fullName: Dixor.Security.AsymmetricKeyPair.CreatedAt
+  nameWithType: AsymmetricKeyPair.CreatedAt
+- uid: Dixor.Security.AsymmetricKeyPair.PrivateKeyPem
+  name: PrivateKeyPem
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_PrivateKeyPem
+  commentId: P:Dixor.Security.AsymmetricKeyPair.PrivateKeyPem
+  fullName: Dixor.Security.AsymmetricKeyPair.PrivateKeyPem
+  nameWithType: AsymmetricKeyPair.PrivateKeyPem
+- uid: Dixor.Security.AsymmetricKeyPair.PrivateKeyPem*
+  name: PrivateKeyPem
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_PrivateKeyPem_
+  commentId: Overload:Dixor.Security.AsymmetricKeyPair.PrivateKeyPem
+  isSpec: "True"
+  fullName: Dixor.Security.AsymmetricKeyPair.PrivateKeyPem
+  nameWithType: AsymmetricKeyPair.PrivateKeyPem
+- uid: Dixor.Security.AsymmetricKeyPair.PublicKeyPem
+  name: PublicKeyPem
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_PublicKeyPem
+  commentId: P:Dixor.Security.AsymmetricKeyPair.PublicKeyPem
+  fullName: Dixor.Security.AsymmetricKeyPair.PublicKeyPem
+  nameWithType: AsymmetricKeyPair.PublicKeyPem
+- uid: Dixor.Security.AsymmetricKeyPair.PublicKeyPem*
+  name: PublicKeyPem
+  href: api/Dixor.Security.AsymmetricKeyPair.html#Dixor_Security_AsymmetricKeyPair_PublicKeyPem_
+  commentId: Overload:Dixor.Security.AsymmetricKeyPair.PublicKeyPem
+  isSpec: "True"
+  fullName: Dixor.Security.AsymmetricKeyPair.PublicKeyPem
+  nameWithType: AsymmetricKeyPair.PublicKeyPem
+- uid: Dixor.Security.AuthTokenDecodeResult
+  name: AuthTokenDecodeResult
+  href: api/Dixor.Security.AuthTokenDecodeResult.html
+  commentId: T:Dixor.Security.AuthTokenDecodeResult
+  fullName: Dixor.Security.AuthTokenDecodeResult
+  nameWithType: AuthTokenDecodeResult
+- uid: Dixor.Security.AuthTokenDecodeResult.Error
+  name: Error
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Error
+  commentId: P:Dixor.Security.AuthTokenDecodeResult.Error
+  fullName: Dixor.Security.AuthTokenDecodeResult.Error
+  nameWithType: AuthTokenDecodeResult.Error
+- uid: Dixor.Security.AuthTokenDecodeResult.Error*
+  name: Error
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Error_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.Error
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.Error
+  nameWithType: AuthTokenDecodeResult.Error
+- uid: Dixor.Security.AuthTokenDecodeResult.Failure(System.String,System.Boolean,Dixor.Security.AuthTokenPayload)
+  name: Failure(string, bool, AuthTokenPayload?)
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Failure_System_String_System_Boolean_Dixor_Security_AuthTokenPayload_
+  commentId: M:Dixor.Security.AuthTokenDecodeResult.Failure(System.String,System.Boolean,Dixor.Security.AuthTokenPayload)
+  name.vb: Failure(String, Boolean, AuthTokenPayload)
+  fullName: Dixor.Security.AuthTokenDecodeResult.Failure(string, bool, Dixor.Security.AuthTokenPayload?)
+  fullName.vb: Dixor.Security.AuthTokenDecodeResult.Failure(String, Boolean, Dixor.Security.AuthTokenPayload)
+  nameWithType: AuthTokenDecodeResult.Failure(string, bool, AuthTokenPayload?)
+  nameWithType.vb: AuthTokenDecodeResult.Failure(String, Boolean, AuthTokenPayload)
+- uid: Dixor.Security.AuthTokenDecodeResult.Failure*
+  name: Failure
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Failure_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.Failure
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.Failure
+  nameWithType: AuthTokenDecodeResult.Failure
+- uid: Dixor.Security.AuthTokenDecodeResult.IsExpired
+  name: IsExpired
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_IsExpired
+  commentId: P:Dixor.Security.AuthTokenDecodeResult.IsExpired
+  fullName: Dixor.Security.AuthTokenDecodeResult.IsExpired
+  nameWithType: AuthTokenDecodeResult.IsExpired
+- uid: Dixor.Security.AuthTokenDecodeResult.IsExpired*
+  name: IsExpired
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_IsExpired_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.IsExpired
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.IsExpired
+  nameWithType: AuthTokenDecodeResult.IsExpired
+- uid: Dixor.Security.AuthTokenDecodeResult.IsValid
+  name: IsValid
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_IsValid
+  commentId: P:Dixor.Security.AuthTokenDecodeResult.IsValid
+  fullName: Dixor.Security.AuthTokenDecodeResult.IsValid
+  nameWithType: AuthTokenDecodeResult.IsValid
+- uid: Dixor.Security.AuthTokenDecodeResult.IsValid*
+  name: IsValid
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_IsValid_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.IsValid
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.IsValid
+  nameWithType: AuthTokenDecodeResult.IsValid
+- uid: Dixor.Security.AuthTokenDecodeResult.Payload
+  name: Payload
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Payload
+  commentId: P:Dixor.Security.AuthTokenDecodeResult.Payload
+  fullName: Dixor.Security.AuthTokenDecodeResult.Payload
+  nameWithType: AuthTokenDecodeResult.Payload
+- uid: Dixor.Security.AuthTokenDecodeResult.Payload*
+  name: Payload
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Payload_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.Payload
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.Payload
+  nameWithType: AuthTokenDecodeResult.Payload
+- uid: Dixor.Security.AuthTokenDecodeResult.Success(Dixor.Security.AuthTokenPayload)
+  name: Success(AuthTokenPayload)
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Success_Dixor_Security_AuthTokenPayload_
+  commentId: M:Dixor.Security.AuthTokenDecodeResult.Success(Dixor.Security.AuthTokenPayload)
+  fullName: Dixor.Security.AuthTokenDecodeResult.Success(Dixor.Security.AuthTokenPayload)
+  nameWithType: AuthTokenDecodeResult.Success(AuthTokenPayload)
+- uid: Dixor.Security.AuthTokenDecodeResult.Success*
+  name: Success
+  href: api/Dixor.Security.AuthTokenDecodeResult.html#Dixor_Security_AuthTokenDecodeResult_Success_
+  commentId: Overload:Dixor.Security.AuthTokenDecodeResult.Success
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenDecodeResult.Success
+  nameWithType: AuthTokenDecodeResult.Success
+- uid: Dixor.Security.AuthTokenPayload
+  name: AuthTokenPayload
+  href: api/Dixor.Security.AuthTokenPayload.html
+  commentId: T:Dixor.Security.AuthTokenPayload
+  fullName: Dixor.Security.AuthTokenPayload
+  nameWithType: AuthTokenPayload
+- uid: Dixor.Security.AuthTokenPayload.CustomData
+  name: CustomData
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_CustomData
+  commentId: P:Dixor.Security.AuthTokenPayload.CustomData
+  fullName: Dixor.Security.AuthTokenPayload.CustomData
+  nameWithType: AuthTokenPayload.CustomData
+- uid: Dixor.Security.AuthTokenPayload.CustomData*
+  name: CustomData
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_CustomData_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.CustomData
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.CustomData
+  nameWithType: AuthTokenPayload.CustomData
+- uid: Dixor.Security.AuthTokenPayload.ExpiresAt
+  name: ExpiresAt
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_ExpiresAt
+  commentId: P:Dixor.Security.AuthTokenPayload.ExpiresAt
+  fullName: Dixor.Security.AuthTokenPayload.ExpiresAt
+  nameWithType: AuthTokenPayload.ExpiresAt
+- uid: Dixor.Security.AuthTokenPayload.ExpiresAt*
+  name: ExpiresAt
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_ExpiresAt_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.ExpiresAt
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.ExpiresAt
+  nameWithType: AuthTokenPayload.ExpiresAt
+- uid: Dixor.Security.AuthTokenPayload.IssuedAt
+  name: IssuedAt
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_IssuedAt
+  commentId: P:Dixor.Security.AuthTokenPayload.IssuedAt
+  fullName: Dixor.Security.AuthTokenPayload.IssuedAt
+  nameWithType: AuthTokenPayload.IssuedAt
+- uid: Dixor.Security.AuthTokenPayload.IssuedAt*
+  name: IssuedAt
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_IssuedAt_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.IssuedAt
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.IssuedAt
+  nameWithType: AuthTokenPayload.IssuedAt
+- uid: Dixor.Security.AuthTokenPayload.Name
+  name: Name
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_Name
+  commentId: P:Dixor.Security.AuthTokenPayload.Name
+  fullName: Dixor.Security.AuthTokenPayload.Name
+  nameWithType: AuthTokenPayload.Name
+- uid: Dixor.Security.AuthTokenPayload.Name*
+  name: Name
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_Name_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.Name
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.Name
+  nameWithType: AuthTokenPayload.Name
+- uid: Dixor.Security.AuthTokenPayload.Password
+  name: Password
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_Password
+  commentId: P:Dixor.Security.AuthTokenPayload.Password
+  fullName: Dixor.Security.AuthTokenPayload.Password
+  nameWithType: AuthTokenPayload.Password
+- uid: Dixor.Security.AuthTokenPayload.Password*
+  name: Password
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_Password_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.Password
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.Password
+  nameWithType: AuthTokenPayload.Password
+- uid: Dixor.Security.AuthTokenPayload.TokenId
+  name: TokenId
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_TokenId
+  commentId: P:Dixor.Security.AuthTokenPayload.TokenId
+  fullName: Dixor.Security.AuthTokenPayload.TokenId
+  nameWithType: AuthTokenPayload.TokenId
+- uid: Dixor.Security.AuthTokenPayload.TokenId*
+  name: TokenId
+  href: api/Dixor.Security.AuthTokenPayload.html#Dixor_Security_AuthTokenPayload_TokenId_
+  commentId: Overload:Dixor.Security.AuthTokenPayload.TokenId
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenPayload.TokenId
+  nameWithType: AuthTokenPayload.TokenId
+- uid: Dixor.Security.AuthTokenService
+  name: AuthTokenService
+  href: api/Dixor.Security.AuthTokenService.html
+  commentId: T:Dixor.Security.AuthTokenService
+  fullName: Dixor.Security.AuthTokenService
+  nameWithType: AuthTokenService
+- uid: Dixor.Security.AuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload,System.String)
+  name: CreateToken(AuthTokenPayload, string)
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_CreateToken_Dixor_Security_AuthTokenPayload_System_String_
+  commentId: M:Dixor.Security.AuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload,System.String)
+  name.vb: CreateToken(AuthTokenPayload, String)
+  fullName: Dixor.Security.AuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload, string)
+  fullName.vb: Dixor.Security.AuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload, String)
+  nameWithType: AuthTokenService.CreateToken(AuthTokenPayload, string)
+  nameWithType.vb: AuthTokenService.CreateToken(AuthTokenPayload, String)
+- uid: Dixor.Security.AuthTokenService.CreateToken(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.TimeSpan})
+  name: CreateToken(string, string?, IDictionary<string, string>?, string, TimeSpan?)
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_CreateToken_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_Nullable_System_TimeSpan__
+  commentId: M:Dixor.Security.AuthTokenService.CreateToken(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.TimeSpan})
+  name.vb: CreateToken(String, String, IDictionary(Of String, String), String, TimeSpan?)
+  fullName: Dixor.Security.AuthTokenService.CreateToken(string, string?, System.Collections.Generic.IDictionary<string, string>?, string, System.TimeSpan?)
+  fullName.vb: Dixor.Security.AuthTokenService.CreateToken(String, String, System.Collections.Generic.IDictionary(Of String, String), String, System.TimeSpan?)
+  nameWithType: AuthTokenService.CreateToken(string, string?, IDictionary<string, string>?, string, TimeSpan?)
+  nameWithType.vb: AuthTokenService.CreateToken(String, String, IDictionary(Of String, String), String, TimeSpan?)
+- uid: Dixor.Security.AuthTokenService.CreateToken*
+  name: CreateToken
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_CreateToken_
+  commentId: Overload:Dixor.Security.AuthTokenService.CreateToken
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenService.CreateToken
+  nameWithType: AuthTokenService.CreateToken
+- uid: Dixor.Security.AuthTokenService.DecodeToken(System.String,System.String)
+  name: DecodeToken(string, string)
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_DecodeToken_System_String_System_String_
+  commentId: M:Dixor.Security.AuthTokenService.DecodeToken(System.String,System.String)
+  name.vb: DecodeToken(String, String)
+  fullName: Dixor.Security.AuthTokenService.DecodeToken(string, string)
+  fullName.vb: Dixor.Security.AuthTokenService.DecodeToken(String, String)
+  nameWithType: AuthTokenService.DecodeToken(string, string)
+  nameWithType.vb: AuthTokenService.DecodeToken(String, String)
+- uid: Dixor.Security.AuthTokenService.DecodeToken*
+  name: DecodeToken
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_DecodeToken_
+  commentId: Overload:Dixor.Security.AuthTokenService.DecodeToken
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenService.DecodeToken
+  nameWithType: AuthTokenService.DecodeToken
+- uid: Dixor.Security.AuthTokenService.TryDecodeToken(System.String,System.String,Dixor.Security.AuthTokenPayload@,System.String@)
+  name: TryDecodeToken(string, string, out AuthTokenPayload?, out string?)
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_TryDecodeToken_System_String_System_String_Dixor_Security_AuthTokenPayload__System_String__
+  commentId: M:Dixor.Security.AuthTokenService.TryDecodeToken(System.String,System.String,Dixor.Security.AuthTokenPayload@,System.String@)
+  name.vb: TryDecodeToken(String, String, AuthTokenPayload, String)
+  fullName: Dixor.Security.AuthTokenService.TryDecodeToken(string, string, out Dixor.Security.AuthTokenPayload?, out string?)
+  fullName.vb: Dixor.Security.AuthTokenService.TryDecodeToken(String, String, Dixor.Security.AuthTokenPayload, String)
+  nameWithType: AuthTokenService.TryDecodeToken(string, string, out AuthTokenPayload?, out string?)
+  nameWithType.vb: AuthTokenService.TryDecodeToken(String, String, AuthTokenPayload, String)
+- uid: Dixor.Security.AuthTokenService.TryDecodeToken*
+  name: TryDecodeToken
+  href: api/Dixor.Security.AuthTokenService.html#Dixor_Security_AuthTokenService_TryDecodeToken_
+  commentId: Overload:Dixor.Security.AuthTokenService.TryDecodeToken
+  isSpec: "True"
+  fullName: Dixor.Security.AuthTokenService.TryDecodeToken
+  nameWithType: AuthTokenService.TryDecodeToken
+- uid: Dixor.Security.ClientCredentialService
+  name: ClientCredentialService
+  href: api/Dixor.Security.ClientCredentialService.html
+  commentId: T:Dixor.Security.ClientCredentialService
+  fullName: Dixor.Security.ClientCredentialService
+  nameWithType: ClientCredentialService
+- uid: Dixor.Security.ClientCredentialService.GenerateClientCredentials(System.String,System.String)
+  name: GenerateClientCredentials(string?, string?)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_GenerateClientCredentials_System_String_System_String_
+  commentId: M:Dixor.Security.ClientCredentialService.GenerateClientCredentials(System.String,System.String)
+  name.vb: GenerateClientCredentials(String, String)
+  fullName: Dixor.Security.ClientCredentialService.GenerateClientCredentials(string?, string?)
+  fullName.vb: Dixor.Security.ClientCredentialService.GenerateClientCredentials(String, String)
+  nameWithType: ClientCredentialService.GenerateClientCredentials(string?, string?)
+  nameWithType.vb: ClientCredentialService.GenerateClientCredentials(String, String)
+- uid: Dixor.Security.ClientCredentialService.GenerateClientCredentials*
+  name: GenerateClientCredentials
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_GenerateClientCredentials_
+  commentId: Overload:Dixor.Security.ClientCredentialService.GenerateClientCredentials
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.GenerateClientCredentials
+  nameWithType: ClientCredentialService.GenerateClientCredentials
+- uid: Dixor.Security.ClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  name: GenerateKeyPair(AsymmetricAlgorithmType)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_GenerateKeyPair_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.ClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  fullName: Dixor.Security.ClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: ClientCredentialService.GenerateKeyPair(AsymmetricAlgorithmType)
+- uid: Dixor.Security.ClientCredentialService.GenerateKeyPair*
+  name: GenerateKeyPair
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_GenerateKeyPair_
+  commentId: Overload:Dixor.Security.ClientCredentialService.GenerateKeyPair
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.GenerateKeyPair
+  nameWithType: ClientCredentialService.GenerateKeyPair
+- uid: Dixor.Security.ClientCredentialService.HashSecret(System.String)
+  name: HashSecret(string)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_HashSecret_System_String_
+  commentId: M:Dixor.Security.ClientCredentialService.HashSecret(System.String)
+  name.vb: HashSecret(String)
+  fullName: Dixor.Security.ClientCredentialService.HashSecret(string)
+  fullName.vb: Dixor.Security.ClientCredentialService.HashSecret(String)
+  nameWithType: ClientCredentialService.HashSecret(string)
+  nameWithType.vb: ClientCredentialService.HashSecret(String)
+- uid: Dixor.Security.ClientCredentialService.HashSecret*
+  name: HashSecret
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_HashSecret_
+  commentId: Overload:Dixor.Security.ClientCredentialService.HashSecret
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.HashSecret
+  nameWithType: ClientCredentialService.HashSecret
+- uid: Dixor.Security.ClientCredentialService.SignData(System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name: SignData(string, string, AsymmetricAlgorithmType)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_SignData_System_String_System_String_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.ClientCredentialService.SignData(System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name.vb: SignData(String, String, AsymmetricAlgorithmType)
+  fullName: Dixor.Security.ClientCredentialService.SignData(string, string, Dixor.Security.AsymmetricAlgorithmType)
+  fullName.vb: Dixor.Security.ClientCredentialService.SignData(String, String, Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: ClientCredentialService.SignData(string, string, AsymmetricAlgorithmType)
+  nameWithType.vb: ClientCredentialService.SignData(String, String, AsymmetricAlgorithmType)
+- uid: Dixor.Security.ClientCredentialService.SignData*
+  name: SignData
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_SignData_
+  commentId: Overload:Dixor.Security.ClientCredentialService.SignData
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.SignData
+  nameWithType: ClientCredentialService.SignData
+- uid: Dixor.Security.ClientCredentialService.ValidateSecret(System.String,System.String)
+  name: ValidateSecret(string, string)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_ValidateSecret_System_String_System_String_
+  commentId: M:Dixor.Security.ClientCredentialService.ValidateSecret(System.String,System.String)
+  name.vb: ValidateSecret(String, String)
+  fullName: Dixor.Security.ClientCredentialService.ValidateSecret(string, string)
+  fullName.vb: Dixor.Security.ClientCredentialService.ValidateSecret(String, String)
+  nameWithType: ClientCredentialService.ValidateSecret(string, string)
+  nameWithType.vb: ClientCredentialService.ValidateSecret(String, String)
+- uid: Dixor.Security.ClientCredentialService.ValidateSecret*
+  name: ValidateSecret
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_ValidateSecret_
+  commentId: Overload:Dixor.Security.ClientCredentialService.ValidateSecret
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.ValidateSecret
+  nameWithType: ClientCredentialService.ValidateSecret
+- uid: Dixor.Security.ClientCredentialService.VerifySignature(System.String,System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name: VerifySignature(string, string, string, AsymmetricAlgorithmType)
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_VerifySignature_System_String_System_String_System_String_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.ClientCredentialService.VerifySignature(System.String,System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name.vb: VerifySignature(String, String, String, AsymmetricAlgorithmType)
+  fullName: Dixor.Security.ClientCredentialService.VerifySignature(string, string, string, Dixor.Security.AsymmetricAlgorithmType)
+  fullName.vb: Dixor.Security.ClientCredentialService.VerifySignature(String, String, String, Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: ClientCredentialService.VerifySignature(string, string, string, AsymmetricAlgorithmType)
+  nameWithType.vb: ClientCredentialService.VerifySignature(String, String, String, AsymmetricAlgorithmType)
+- uid: Dixor.Security.ClientCredentialService.VerifySignature*
+  name: VerifySignature
+  href: api/Dixor.Security.ClientCredentialService.html#Dixor_Security_ClientCredentialService_VerifySignature_
+  commentId: Overload:Dixor.Security.ClientCredentialService.VerifySignature
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentialService.VerifySignature
+  nameWithType: ClientCredentialService.VerifySignature
+- uid: Dixor.Security.ClientCredentials
+  name: ClientCredentials
+  href: api/Dixor.Security.ClientCredentials.html
+  commentId: T:Dixor.Security.ClientCredentials
+  fullName: Dixor.Security.ClientCredentials
+  nameWithType: ClientCredentials
+- uid: Dixor.Security.ClientCredentials.ClientId
+  name: ClientId
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_ClientId
+  commentId: P:Dixor.Security.ClientCredentials.ClientId
+  fullName: Dixor.Security.ClientCredentials.ClientId
+  nameWithType: ClientCredentials.ClientId
+- uid: Dixor.Security.ClientCredentials.ClientId*
+  name: ClientId
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_ClientId_
+  commentId: Overload:Dixor.Security.ClientCredentials.ClientId
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentials.ClientId
+  nameWithType: ClientCredentials.ClientId
+- uid: Dixor.Security.ClientCredentials.CreatedAt
+  name: CreatedAt
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_CreatedAt
+  commentId: P:Dixor.Security.ClientCredentials.CreatedAt
+  fullName: Dixor.Security.ClientCredentials.CreatedAt
+  nameWithType: ClientCredentials.CreatedAt
+- uid: Dixor.Security.ClientCredentials.CreatedAt*
+  name: CreatedAt
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_CreatedAt_
+  commentId: Overload:Dixor.Security.ClientCredentials.CreatedAt
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentials.CreatedAt
+  nameWithType: ClientCredentials.CreatedAt
+- uid: Dixor.Security.ClientCredentials.HashedSecret
+  name: HashedSecret
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_HashedSecret
+  commentId: P:Dixor.Security.ClientCredentials.HashedSecret
+  fullName: Dixor.Security.ClientCredentials.HashedSecret
+  nameWithType: ClientCredentials.HashedSecret
+- uid: Dixor.Security.ClientCredentials.HashedSecret*
+  name: HashedSecret
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_HashedSecret_
+  commentId: Overload:Dixor.Security.ClientCredentials.HashedSecret
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentials.HashedSecret
+  nameWithType: ClientCredentials.HashedSecret
+- uid: Dixor.Security.ClientCredentials.PlaintextSecret
+  name: PlaintextSecret
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_PlaintextSecret
+  commentId: P:Dixor.Security.ClientCredentials.PlaintextSecret
+  fullName: Dixor.Security.ClientCredentials.PlaintextSecret
+  nameWithType: ClientCredentials.PlaintextSecret
+- uid: Dixor.Security.ClientCredentials.PlaintextSecret*
+  name: PlaintextSecret
+  href: api/Dixor.Security.ClientCredentials.html#Dixor_Security_ClientCredentials_PlaintextSecret_
+  commentId: Overload:Dixor.Security.ClientCredentials.PlaintextSecret
+  isSpec: "True"
+  fullName: Dixor.Security.ClientCredentials.PlaintextSecret
+  nameWithType: ClientCredentials.PlaintextSecret
+- uid: Dixor.Security.CryptographicUtils
+  name: CryptographicUtils
+  href: api/Dixor.Security.CryptographicUtils.html
+  commentId: T:Dixor.Security.CryptographicUtils
+  fullName: Dixor.Security.CryptographicUtils
+  nameWithType: CryptographicUtils
+- uid: Dixor.Security.CryptographicUtils.Base64UrlDecode(System.String)
+  name: Base64UrlDecode(string)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Base64UrlDecode_System_String_
+  commentId: M:Dixor.Security.CryptographicUtils.Base64UrlDecode(System.String)
+  name.vb: Base64UrlDecode(String)
+  fullName: Dixor.Security.CryptographicUtils.Base64UrlDecode(string)
+  fullName.vb: Dixor.Security.CryptographicUtils.Base64UrlDecode(String)
+  nameWithType: CryptographicUtils.Base64UrlDecode(string)
+  nameWithType.vb: CryptographicUtils.Base64UrlDecode(String)
+- uid: Dixor.Security.CryptographicUtils.Base64UrlDecode*
+  name: Base64UrlDecode
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Base64UrlDecode_
+  commentId: Overload:Dixor.Security.CryptographicUtils.Base64UrlDecode
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.Base64UrlDecode
+  nameWithType: CryptographicUtils.Base64UrlDecode
+- uid: Dixor.Security.CryptographicUtils.Base64UrlEncode(System.Byte[])
+  name: Base64UrlEncode(byte[])
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Base64UrlEncode_System_Byte___
+  commentId: M:Dixor.Security.CryptographicUtils.Base64UrlEncode(System.Byte[])
+  name.vb: Base64UrlEncode(Byte())
+  fullName: Dixor.Security.CryptographicUtils.Base64UrlEncode(byte[])
+  fullName.vb: Dixor.Security.CryptographicUtils.Base64UrlEncode(Byte())
+  nameWithType: CryptographicUtils.Base64UrlEncode(byte[])
+  nameWithType.vb: CryptographicUtils.Base64UrlEncode(Byte())
+- uid: Dixor.Security.CryptographicUtils.Base64UrlEncode*
+  name: Base64UrlEncode
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Base64UrlEncode_
+  commentId: Overload:Dixor.Security.CryptographicUtils.Base64UrlEncode
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.Base64UrlEncode
+  nameWithType: CryptographicUtils.Base64UrlEncode
+- uid: Dixor.Security.CryptographicUtils.Derive256BitKey(System.String)
+  name: Derive256BitKey(string)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Derive256BitKey_System_String_
+  commentId: M:Dixor.Security.CryptographicUtils.Derive256BitKey(System.String)
+  name.vb: Derive256BitKey(String)
+  fullName: Dixor.Security.CryptographicUtils.Derive256BitKey(string)
+  fullName.vb: Dixor.Security.CryptographicUtils.Derive256BitKey(String)
+  nameWithType: CryptographicUtils.Derive256BitKey(string)
+  nameWithType.vb: CryptographicUtils.Derive256BitKey(String)
+- uid: Dixor.Security.CryptographicUtils.Derive256BitKey*
+  name: Derive256BitKey
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_Derive256BitKey_
+  commentId: Overload:Dixor.Security.CryptographicUtils.Derive256BitKey
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.Derive256BitKey
+  nameWithType: CryptographicUtils.Derive256BitKey
+- uid: Dixor.Security.CryptographicUtils.FixedTimeEquals(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  name: FixedTimeEquals(ReadOnlySpan<byte>, ReadOnlySpan<byte>)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_FixedTimeEquals_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Byte__
+  commentId: M:Dixor.Security.CryptographicUtils.FixedTimeEquals(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  name.vb: FixedTimeEquals(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte))
+  fullName: Dixor.Security.CryptographicUtils.FixedTimeEquals(System.ReadOnlySpan<byte>, System.ReadOnlySpan<byte>)
+  fullName.vb: Dixor.Security.CryptographicUtils.FixedTimeEquals(System.ReadOnlySpan(Of Byte), System.ReadOnlySpan(Of Byte))
+  nameWithType: CryptographicUtils.FixedTimeEquals(ReadOnlySpan<byte>, ReadOnlySpan<byte>)
+  nameWithType.vb: CryptographicUtils.FixedTimeEquals(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte))
+- uid: Dixor.Security.CryptographicUtils.FixedTimeEquals(System.String,System.String)
+  name: FixedTimeEquals(string?, string?)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_FixedTimeEquals_System_String_System_String_
+  commentId: M:Dixor.Security.CryptographicUtils.FixedTimeEquals(System.String,System.String)
+  name.vb: FixedTimeEquals(String, String)
+  fullName: Dixor.Security.CryptographicUtils.FixedTimeEquals(string?, string?)
+  fullName.vb: Dixor.Security.CryptographicUtils.FixedTimeEquals(String, String)
+  nameWithType: CryptographicUtils.FixedTimeEquals(string?, string?)
+  nameWithType.vb: CryptographicUtils.FixedTimeEquals(String, String)
+- uid: Dixor.Security.CryptographicUtils.FixedTimeEquals*
+  name: FixedTimeEquals
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_FixedTimeEquals_
+  commentId: Overload:Dixor.Security.CryptographicUtils.FixedTimeEquals
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.FixedTimeEquals
+  nameWithType: CryptographicUtils.FixedTimeEquals
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes(System.Int32)
+  name: GenerateSecureRandomBytes(int)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomBytes_System_Int32_
+  commentId: M:Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes(System.Int32)
+  name.vb: GenerateSecureRandomBytes(Integer)
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes(int)
+  fullName.vb: Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes(Integer)
+  nameWithType: CryptographicUtils.GenerateSecureRandomBytes(int)
+  nameWithType.vb: CryptographicUtils.GenerateSecureRandomBytes(Integer)
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes*
+  name: GenerateSecureRandomBytes
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomBytes_
+  commentId: Overload:Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomBytes
+  nameWithType: CryptographicUtils.GenerateSecureRandomBytes
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomHex(System.Int32)
+  name: GenerateSecureRandomHex(int)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomHex_System_Int32_
+  commentId: M:Dixor.Security.CryptographicUtils.GenerateSecureRandomHex(System.Int32)
+  name.vb: GenerateSecureRandomHex(Integer)
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomHex(int)
+  fullName.vb: Dixor.Security.CryptographicUtils.GenerateSecureRandomHex(Integer)
+  nameWithType: CryptographicUtils.GenerateSecureRandomHex(int)
+  nameWithType.vb: CryptographicUtils.GenerateSecureRandomHex(Integer)
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomHex*
+  name: GenerateSecureRandomHex
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomHex_
+  commentId: Overload:Dixor.Security.CryptographicUtils.GenerateSecureRandomHex
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomHex
+  nameWithType: CryptographicUtils.GenerateSecureRandomHex
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomString(System.Int32)
+  name: GenerateSecureRandomString(int)
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomString_System_Int32_
+  commentId: M:Dixor.Security.CryptographicUtils.GenerateSecureRandomString(System.Int32)
+  name.vb: GenerateSecureRandomString(Integer)
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomString(int)
+  fullName.vb: Dixor.Security.CryptographicUtils.GenerateSecureRandomString(Integer)
+  nameWithType: CryptographicUtils.GenerateSecureRandomString(int)
+  nameWithType.vb: CryptographicUtils.GenerateSecureRandomString(Integer)
+- uid: Dixor.Security.CryptographicUtils.GenerateSecureRandomString*
+  name: GenerateSecureRandomString
+  href: api/Dixor.Security.CryptographicUtils.html#Dixor_Security_CryptographicUtils_GenerateSecureRandomString_
+  commentId: Overload:Dixor.Security.CryptographicUtils.GenerateSecureRandomString
+  isSpec: "True"
+  fullName: Dixor.Security.CryptographicUtils.GenerateSecureRandomString
+  nameWithType: CryptographicUtils.GenerateSecureRandomString
+- uid: Dixor.Security.DataEncryptor
+  name: DataEncryptor
+  href: api/Dixor.Security.DataEncryptor.html
+  commentId: T:Dixor.Security.DataEncryptor
+  fullName: Dixor.Security.DataEncryptor
+  nameWithType: DataEncryptor
+- uid: Dixor.Security.DataEncryptor.Decrypt(System.String,System.String,System.String)
+  name: Decrypt(string, string, string?)
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_Decrypt_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.DataEncryptor.Decrypt(System.String,System.String,System.String)
+  name.vb: Decrypt(String, String, String)
+  fullName: Dixor.Security.DataEncryptor.Decrypt(string, string, string?)
+  fullName.vb: Dixor.Security.DataEncryptor.Decrypt(String, String, String)
+  nameWithType: DataEncryptor.Decrypt(string, string, string?)
+  nameWithType.vb: DataEncryptor.Decrypt(String, String, String)
+- uid: Dixor.Security.DataEncryptor.Decrypt*
+  name: Decrypt
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_Decrypt_
+  commentId: Overload:Dixor.Security.DataEncryptor.Decrypt
+  isSpec: "True"
+  fullName: Dixor.Security.DataEncryptor.Decrypt
+  nameWithType: DataEncryptor.Decrypt
+- uid: Dixor.Security.DataEncryptor.DecryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name: DecryptBytes(byte[], byte[], byte[]?)
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_DecryptBytes_System_Byte___System_Byte___System_Byte___
+  commentId: M:Dixor.Security.DataEncryptor.DecryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name.vb: DecryptBytes(Byte(), Byte(), Byte())
+  fullName: Dixor.Security.DataEncryptor.DecryptBytes(byte[], byte[], byte[]?)
+  fullName.vb: Dixor.Security.DataEncryptor.DecryptBytes(Byte(), Byte(), Byte())
+  nameWithType: DataEncryptor.DecryptBytes(byte[], byte[], byte[]?)
+  nameWithType.vb: DataEncryptor.DecryptBytes(Byte(), Byte(), Byte())
+- uid: Dixor.Security.DataEncryptor.DecryptBytes*
+  name: DecryptBytes
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_DecryptBytes_
+  commentId: Overload:Dixor.Security.DataEncryptor.DecryptBytes
+  isSpec: "True"
+  fullName: Dixor.Security.DataEncryptor.DecryptBytes
+  nameWithType: DataEncryptor.DecryptBytes
+- uid: Dixor.Security.DataEncryptor.Encrypt(System.String,System.String,System.String)
+  name: Encrypt(string, string, string?)
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_Encrypt_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.DataEncryptor.Encrypt(System.String,System.String,System.String)
+  name.vb: Encrypt(String, String, String)
+  fullName: Dixor.Security.DataEncryptor.Encrypt(string, string, string?)
+  fullName.vb: Dixor.Security.DataEncryptor.Encrypt(String, String, String)
+  nameWithType: DataEncryptor.Encrypt(string, string, string?)
+  nameWithType.vb: DataEncryptor.Encrypt(String, String, String)
+- uid: Dixor.Security.DataEncryptor.Encrypt*
+  name: Encrypt
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_Encrypt_
+  commentId: Overload:Dixor.Security.DataEncryptor.Encrypt
+  isSpec: "True"
+  fullName: Dixor.Security.DataEncryptor.Encrypt
+  nameWithType: DataEncryptor.Encrypt
+- uid: Dixor.Security.DataEncryptor.EncryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name: EncryptBytes(byte[], byte[], byte[]?)
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_EncryptBytes_System_Byte___System_Byte___System_Byte___
+  commentId: M:Dixor.Security.DataEncryptor.EncryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name.vb: EncryptBytes(Byte(), Byte(), Byte())
+  fullName: Dixor.Security.DataEncryptor.EncryptBytes(byte[], byte[], byte[]?)
+  fullName.vb: Dixor.Security.DataEncryptor.EncryptBytes(Byte(), Byte(), Byte())
+  nameWithType: DataEncryptor.EncryptBytes(byte[], byte[], byte[]?)
+  nameWithType.vb: DataEncryptor.EncryptBytes(Byte(), Byte(), Byte())
+- uid: Dixor.Security.DataEncryptor.EncryptBytes*
+  name: EncryptBytes
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_EncryptBytes_
+  commentId: Overload:Dixor.Security.DataEncryptor.EncryptBytes
+  isSpec: "True"
+  fullName: Dixor.Security.DataEncryptor.EncryptBytes
+  nameWithType: DataEncryptor.EncryptBytes
+- uid: Dixor.Security.DataEncryptor.TryDecrypt(System.String,System.String,System.String@,System.String@,System.String)
+  name: TryDecrypt(string, string, out string?, out string?, string?)
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_TryDecrypt_System_String_System_String_System_String__System_String__System_String_
+  commentId: M:Dixor.Security.DataEncryptor.TryDecrypt(System.String,System.String,System.String@,System.String@,System.String)
+  name.vb: TryDecrypt(String, String, String, String, String)
+  fullName: Dixor.Security.DataEncryptor.TryDecrypt(string, string, out string?, out string?, string?)
+  fullName.vb: Dixor.Security.DataEncryptor.TryDecrypt(String, String, String, String, String)
+  nameWithType: DataEncryptor.TryDecrypt(string, string, out string?, out string?, string?)
+  nameWithType.vb: DataEncryptor.TryDecrypt(String, String, String, String, String)
+- uid: Dixor.Security.DataEncryptor.TryDecrypt*
+  name: TryDecrypt
+  href: api/Dixor.Security.DataEncryptor.html#Dixor_Security_DataEncryptor_TryDecrypt_
+  commentId: Overload:Dixor.Security.DataEncryptor.TryDecrypt
+  isSpec: "True"
+  fullName: Dixor.Security.DataEncryptor.TryDecrypt
+  nameWithType: DataEncryptor.TryDecrypt
+- uid: Dixor.Security.DeterministicHasher
+  name: DeterministicHasher
+  href: api/Dixor.Security.DeterministicHasher.html
+  commentId: T:Dixor.Security.DeterministicHasher
+  fullName: Dixor.Security.DeterministicHasher
+  nameWithType: DeterministicHasher
+- uid: Dixor.Security.DeterministicHasher.HashSha256(System.String,System.String)
+  name: HashSha256(string, string)
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_HashSha256_System_String_System_String_
+  commentId: M:Dixor.Security.DeterministicHasher.HashSha256(System.String,System.String)
+  name.vb: HashSha256(String, String)
+  fullName: Dixor.Security.DeterministicHasher.HashSha256(string, string)
+  fullName.vb: Dixor.Security.DeterministicHasher.HashSha256(String, String)
+  nameWithType: DeterministicHasher.HashSha256(string, string)
+  nameWithType.vb: DeterministicHasher.HashSha256(String, String)
+- uid: Dixor.Security.DeterministicHasher.HashSha256*
+  name: HashSha256
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_HashSha256_
+  commentId: Overload:Dixor.Security.DeterministicHasher.HashSha256
+  isSpec: "True"
+  fullName: Dixor.Security.DeterministicHasher.HashSha256
+  nameWithType: DeterministicHasher.HashSha256
+- uid: Dixor.Security.DeterministicHasher.HashSha512(System.String,System.String)
+  name: HashSha512(string, string)
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_HashSha512_System_String_System_String_
+  commentId: M:Dixor.Security.DeterministicHasher.HashSha512(System.String,System.String)
+  name.vb: HashSha512(String, String)
+  fullName: Dixor.Security.DeterministicHasher.HashSha512(string, string)
+  fullName.vb: Dixor.Security.DeterministicHasher.HashSha512(String, String)
+  nameWithType: DeterministicHasher.HashSha512(string, string)
+  nameWithType.vb: DeterministicHasher.HashSha512(String, String)
+- uid: Dixor.Security.DeterministicHasher.HashSha512*
+  name: HashSha512
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_HashSha512_
+  commentId: Overload:Dixor.Security.DeterministicHasher.HashSha512
+  isSpec: "True"
+  fullName: Dixor.Security.DeterministicHasher.HashSha512
+  nameWithType: DeterministicHasher.HashSha512
+- uid: Dixor.Security.DeterministicHasher.VerifySha256(System.String,System.String,System.String)
+  name: VerifySha256(string, string, string)
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_VerifySha256_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.DeterministicHasher.VerifySha256(System.String,System.String,System.String)
+  name.vb: VerifySha256(String, String, String)
+  fullName: Dixor.Security.DeterministicHasher.VerifySha256(string, string, string)
+  fullName.vb: Dixor.Security.DeterministicHasher.VerifySha256(String, String, String)
+  nameWithType: DeterministicHasher.VerifySha256(string, string, string)
+  nameWithType.vb: DeterministicHasher.VerifySha256(String, String, String)
+- uid: Dixor.Security.DeterministicHasher.VerifySha256*
+  name: VerifySha256
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_VerifySha256_
+  commentId: Overload:Dixor.Security.DeterministicHasher.VerifySha256
+  isSpec: "True"
+  fullName: Dixor.Security.DeterministicHasher.VerifySha256
+  nameWithType: DeterministicHasher.VerifySha256
+- uid: Dixor.Security.DeterministicHasher.VerifySha512(System.String,System.String,System.String)
+  name: VerifySha512(string, string, string)
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_VerifySha512_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.DeterministicHasher.VerifySha512(System.String,System.String,System.String)
+  name.vb: VerifySha512(String, String, String)
+  fullName: Dixor.Security.DeterministicHasher.VerifySha512(string, string, string)
+  fullName.vb: Dixor.Security.DeterministicHasher.VerifySha512(String, String, String)
+  nameWithType: DeterministicHasher.VerifySha512(string, string, string)
+  nameWithType.vb: DeterministicHasher.VerifySha512(String, String, String)
+- uid: Dixor.Security.DeterministicHasher.VerifySha512*
+  name: VerifySha512
+  href: api/Dixor.Security.DeterministicHasher.html#Dixor_Security_DeterministicHasher_VerifySha512_
+  commentId: Overload:Dixor.Security.DeterministicHasher.VerifySha512
+  isSpec: "True"
+  fullName: Dixor.Security.DeterministicHasher.VerifySha512
+  nameWithType: DeterministicHasher.VerifySha512
+- uid: Dixor.Security.DixorSecurityServiceCollectionExtensions
+  name: DixorSecurityServiceCollectionExtensions
+  href: api/Dixor.Security.DixorSecurityServiceCollectionExtensions.html
+  commentId: T:Dixor.Security.DixorSecurityServiceCollectionExtensions
+  fullName: Dixor.Security.DixorSecurityServiceCollectionExtensions
+  nameWithType: DixorSecurityServiceCollectionExtensions
+- uid: Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDixorSecurity(IServiceCollection)
+  href: api/Dixor.Security.DixorSecurityServiceCollectionExtensions.html#Dixor_Security_DixorSecurityServiceCollectionExtensions_AddDixorSecurity_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DixorSecurityServiceCollectionExtensions.AddDixorSecurity(IServiceCollection)
+- uid: Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity*
+  name: AddDixorSecurity
+  href: api/Dixor.Security.DixorSecurityServiceCollectionExtensions.html#Dixor_Security_DixorSecurityServiceCollectionExtensions_AddDixorSecurity_
+  commentId: Overload:Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity
+  isSpec: "True"
+  fullName: Dixor.Security.DixorSecurityServiceCollectionExtensions.AddDixorSecurity
+  nameWithType: DixorSecurityServiceCollectionExtensions.AddDixorSecurity
+- uid: Dixor.Security.IApiKeyService
+  name: IApiKeyService
+  href: api/Dixor.Security.IApiKeyService.html
+  commentId: T:Dixor.Security.IApiKeyService
+  fullName: Dixor.Security.IApiKeyService
+  nameWithType: IApiKeyService
+- uid: Dixor.Security.IApiKeyService.GenerateApiKey(System.String,System.Int32)
+  name: GenerateApiKey(string, int)
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_GenerateApiKey_System_String_System_Int32_
+  commentId: M:Dixor.Security.IApiKeyService.GenerateApiKey(System.String,System.Int32)
+  name.vb: GenerateApiKey(String, Integer)
+  fullName: Dixor.Security.IApiKeyService.GenerateApiKey(string, int)
+  fullName.vb: Dixor.Security.IApiKeyService.GenerateApiKey(String, Integer)
+  nameWithType: IApiKeyService.GenerateApiKey(string, int)
+  nameWithType.vb: IApiKeyService.GenerateApiKey(String, Integer)
+- uid: Dixor.Security.IApiKeyService.GenerateApiKey*
+  name: GenerateApiKey
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_GenerateApiKey_
+  commentId: Overload:Dixor.Security.IApiKeyService.GenerateApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.IApiKeyService.GenerateApiKey
+  nameWithType: IApiKeyService.GenerateApiKey
+- uid: Dixor.Security.IApiKeyService.HashApiKey(System.String)
+  name: HashApiKey(string)
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_HashApiKey_System_String_
+  commentId: M:Dixor.Security.IApiKeyService.HashApiKey(System.String)
+  name.vb: HashApiKey(String)
+  fullName: Dixor.Security.IApiKeyService.HashApiKey(string)
+  fullName.vb: Dixor.Security.IApiKeyService.HashApiKey(String)
+  nameWithType: IApiKeyService.HashApiKey(string)
+  nameWithType.vb: IApiKeyService.HashApiKey(String)
+- uid: Dixor.Security.IApiKeyService.HashApiKey*
+  name: HashApiKey
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_HashApiKey_
+  commentId: Overload:Dixor.Security.IApiKeyService.HashApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.IApiKeyService.HashApiKey
+  nameWithType: IApiKeyService.HashApiKey
+- uid: Dixor.Security.IApiKeyService.ValidateApiKey(System.String,System.String)
+  name: ValidateApiKey(string, string)
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_ValidateApiKey_System_String_System_String_
+  commentId: M:Dixor.Security.IApiKeyService.ValidateApiKey(System.String,System.String)
+  name.vb: ValidateApiKey(String, String)
+  fullName: Dixor.Security.IApiKeyService.ValidateApiKey(string, string)
+  fullName.vb: Dixor.Security.IApiKeyService.ValidateApiKey(String, String)
+  nameWithType: IApiKeyService.ValidateApiKey(string, string)
+  nameWithType.vb: IApiKeyService.ValidateApiKey(String, String)
+- uid: Dixor.Security.IApiKeyService.ValidateApiKey*
+  name: ValidateApiKey
+  href: api/Dixor.Security.IApiKeyService.html#Dixor_Security_IApiKeyService_ValidateApiKey_
+  commentId: Overload:Dixor.Security.IApiKeyService.ValidateApiKey
+  isSpec: "True"
+  fullName: Dixor.Security.IApiKeyService.ValidateApiKey
+  nameWithType: IApiKeyService.ValidateApiKey
+- uid: Dixor.Security.IAuthTokenService
+  name: IAuthTokenService
+  href: api/Dixor.Security.IAuthTokenService.html
+  commentId: T:Dixor.Security.IAuthTokenService
+  fullName: Dixor.Security.IAuthTokenService
+  nameWithType: IAuthTokenService
+- uid: Dixor.Security.IAuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload,System.String)
+  name: CreateToken(AuthTokenPayload, string)
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_CreateToken_Dixor_Security_AuthTokenPayload_System_String_
+  commentId: M:Dixor.Security.IAuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload,System.String)
+  name.vb: CreateToken(AuthTokenPayload, String)
+  fullName: Dixor.Security.IAuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload, string)
+  fullName.vb: Dixor.Security.IAuthTokenService.CreateToken(Dixor.Security.AuthTokenPayload, String)
+  nameWithType: IAuthTokenService.CreateToken(AuthTokenPayload, string)
+  nameWithType.vb: IAuthTokenService.CreateToken(AuthTokenPayload, String)
+- uid: Dixor.Security.IAuthTokenService.CreateToken(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.TimeSpan})
+  name: CreateToken(string, string?, IDictionary<string, string>?, string, TimeSpan?)
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_CreateToken_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_Nullable_System_TimeSpan__
+  commentId: M:Dixor.Security.IAuthTokenService.CreateToken(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.TimeSpan})
+  name.vb: CreateToken(String, String, IDictionary(Of String, String), String, TimeSpan?)
+  fullName: Dixor.Security.IAuthTokenService.CreateToken(string, string?, System.Collections.Generic.IDictionary<string, string>?, string, System.TimeSpan?)
+  fullName.vb: Dixor.Security.IAuthTokenService.CreateToken(String, String, System.Collections.Generic.IDictionary(Of String, String), String, System.TimeSpan?)
+  nameWithType: IAuthTokenService.CreateToken(string, string?, IDictionary<string, string>?, string, TimeSpan?)
+  nameWithType.vb: IAuthTokenService.CreateToken(String, String, IDictionary(Of String, String), String, TimeSpan?)
+- uid: Dixor.Security.IAuthTokenService.CreateToken*
+  name: CreateToken
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_CreateToken_
+  commentId: Overload:Dixor.Security.IAuthTokenService.CreateToken
+  isSpec: "True"
+  fullName: Dixor.Security.IAuthTokenService.CreateToken
+  nameWithType: IAuthTokenService.CreateToken
+- uid: Dixor.Security.IAuthTokenService.DecodeToken(System.String,System.String)
+  name: DecodeToken(string, string)
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_DecodeToken_System_String_System_String_
+  commentId: M:Dixor.Security.IAuthTokenService.DecodeToken(System.String,System.String)
+  name.vb: DecodeToken(String, String)
+  fullName: Dixor.Security.IAuthTokenService.DecodeToken(string, string)
+  fullName.vb: Dixor.Security.IAuthTokenService.DecodeToken(String, String)
+  nameWithType: IAuthTokenService.DecodeToken(string, string)
+  nameWithType.vb: IAuthTokenService.DecodeToken(String, String)
+- uid: Dixor.Security.IAuthTokenService.DecodeToken*
+  name: DecodeToken
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_DecodeToken_
+  commentId: Overload:Dixor.Security.IAuthTokenService.DecodeToken
+  isSpec: "True"
+  fullName: Dixor.Security.IAuthTokenService.DecodeToken
+  nameWithType: IAuthTokenService.DecodeToken
+- uid: Dixor.Security.IAuthTokenService.TryDecodeToken(System.String,System.String,Dixor.Security.AuthTokenPayload@,System.String@)
+  name: TryDecodeToken(string, string, out AuthTokenPayload?, out string?)
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_TryDecodeToken_System_String_System_String_Dixor_Security_AuthTokenPayload__System_String__
+  commentId: M:Dixor.Security.IAuthTokenService.TryDecodeToken(System.String,System.String,Dixor.Security.AuthTokenPayload@,System.String@)
+  name.vb: TryDecodeToken(String, String, AuthTokenPayload, String)
+  fullName: Dixor.Security.IAuthTokenService.TryDecodeToken(string, string, out Dixor.Security.AuthTokenPayload?, out string?)
+  fullName.vb: Dixor.Security.IAuthTokenService.TryDecodeToken(String, String, Dixor.Security.AuthTokenPayload, String)
+  nameWithType: IAuthTokenService.TryDecodeToken(string, string, out AuthTokenPayload?, out string?)
+  nameWithType.vb: IAuthTokenService.TryDecodeToken(String, String, AuthTokenPayload, String)
+- uid: Dixor.Security.IAuthTokenService.TryDecodeToken*
+  name: TryDecodeToken
+  href: api/Dixor.Security.IAuthTokenService.html#Dixor_Security_IAuthTokenService_TryDecodeToken_
+  commentId: Overload:Dixor.Security.IAuthTokenService.TryDecodeToken
+  isSpec: "True"
+  fullName: Dixor.Security.IAuthTokenService.TryDecodeToken
+  nameWithType: IAuthTokenService.TryDecodeToken
+- uid: Dixor.Security.IClientCredentialService
+  name: IClientCredentialService
+  href: api/Dixor.Security.IClientCredentialService.html
+  commentId: T:Dixor.Security.IClientCredentialService
+  fullName: Dixor.Security.IClientCredentialService
+  nameWithType: IClientCredentialService
+- uid: Dixor.Security.IClientCredentialService.GenerateClientCredentials(System.String,System.String)
+  name: GenerateClientCredentials(string?, string?)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_GenerateClientCredentials_System_String_System_String_
+  commentId: M:Dixor.Security.IClientCredentialService.GenerateClientCredentials(System.String,System.String)
+  name.vb: GenerateClientCredentials(String, String)
+  fullName: Dixor.Security.IClientCredentialService.GenerateClientCredentials(string?, string?)
+  fullName.vb: Dixor.Security.IClientCredentialService.GenerateClientCredentials(String, String)
+  nameWithType: IClientCredentialService.GenerateClientCredentials(string?, string?)
+  nameWithType.vb: IClientCredentialService.GenerateClientCredentials(String, String)
+- uid: Dixor.Security.IClientCredentialService.GenerateClientCredentials*
+  name: GenerateClientCredentials
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_GenerateClientCredentials_
+  commentId: Overload:Dixor.Security.IClientCredentialService.GenerateClientCredentials
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.GenerateClientCredentials
+  nameWithType: IClientCredentialService.GenerateClientCredentials
+- uid: Dixor.Security.IClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  name: GenerateKeyPair(AsymmetricAlgorithmType)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_GenerateKeyPair_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.IClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  fullName: Dixor.Security.IClientCredentialService.GenerateKeyPair(Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: IClientCredentialService.GenerateKeyPair(AsymmetricAlgorithmType)
+- uid: Dixor.Security.IClientCredentialService.GenerateKeyPair*
+  name: GenerateKeyPair
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_GenerateKeyPair_
+  commentId: Overload:Dixor.Security.IClientCredentialService.GenerateKeyPair
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.GenerateKeyPair
+  nameWithType: IClientCredentialService.GenerateKeyPair
+- uid: Dixor.Security.IClientCredentialService.HashSecret(System.String)
+  name: HashSecret(string)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_HashSecret_System_String_
+  commentId: M:Dixor.Security.IClientCredentialService.HashSecret(System.String)
+  name.vb: HashSecret(String)
+  fullName: Dixor.Security.IClientCredentialService.HashSecret(string)
+  fullName.vb: Dixor.Security.IClientCredentialService.HashSecret(String)
+  nameWithType: IClientCredentialService.HashSecret(string)
+  nameWithType.vb: IClientCredentialService.HashSecret(String)
+- uid: Dixor.Security.IClientCredentialService.HashSecret*
+  name: HashSecret
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_HashSecret_
+  commentId: Overload:Dixor.Security.IClientCredentialService.HashSecret
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.HashSecret
+  nameWithType: IClientCredentialService.HashSecret
+- uid: Dixor.Security.IClientCredentialService.SignData(System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name: SignData(string, string, AsymmetricAlgorithmType)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_SignData_System_String_System_String_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.IClientCredentialService.SignData(System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name.vb: SignData(String, String, AsymmetricAlgorithmType)
+  fullName: Dixor.Security.IClientCredentialService.SignData(string, string, Dixor.Security.AsymmetricAlgorithmType)
+  fullName.vb: Dixor.Security.IClientCredentialService.SignData(String, String, Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: IClientCredentialService.SignData(string, string, AsymmetricAlgorithmType)
+  nameWithType.vb: IClientCredentialService.SignData(String, String, AsymmetricAlgorithmType)
+- uid: Dixor.Security.IClientCredentialService.SignData*
+  name: SignData
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_SignData_
+  commentId: Overload:Dixor.Security.IClientCredentialService.SignData
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.SignData
+  nameWithType: IClientCredentialService.SignData
+- uid: Dixor.Security.IClientCredentialService.ValidateSecret(System.String,System.String)
+  name: ValidateSecret(string, string)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_ValidateSecret_System_String_System_String_
+  commentId: M:Dixor.Security.IClientCredentialService.ValidateSecret(System.String,System.String)
+  name.vb: ValidateSecret(String, String)
+  fullName: Dixor.Security.IClientCredentialService.ValidateSecret(string, string)
+  fullName.vb: Dixor.Security.IClientCredentialService.ValidateSecret(String, String)
+  nameWithType: IClientCredentialService.ValidateSecret(string, string)
+  nameWithType.vb: IClientCredentialService.ValidateSecret(String, String)
+- uid: Dixor.Security.IClientCredentialService.ValidateSecret*
+  name: ValidateSecret
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_ValidateSecret_
+  commentId: Overload:Dixor.Security.IClientCredentialService.ValidateSecret
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.ValidateSecret
+  nameWithType: IClientCredentialService.ValidateSecret
+- uid: Dixor.Security.IClientCredentialService.VerifySignature(System.String,System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name: VerifySignature(string, string, string, AsymmetricAlgorithmType)
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_VerifySignature_System_String_System_String_System_String_Dixor_Security_AsymmetricAlgorithmType_
+  commentId: M:Dixor.Security.IClientCredentialService.VerifySignature(System.String,System.String,System.String,Dixor.Security.AsymmetricAlgorithmType)
+  name.vb: VerifySignature(String, String, String, AsymmetricAlgorithmType)
+  fullName: Dixor.Security.IClientCredentialService.VerifySignature(string, string, string, Dixor.Security.AsymmetricAlgorithmType)
+  fullName.vb: Dixor.Security.IClientCredentialService.VerifySignature(String, String, String, Dixor.Security.AsymmetricAlgorithmType)
+  nameWithType: IClientCredentialService.VerifySignature(string, string, string, AsymmetricAlgorithmType)
+  nameWithType.vb: IClientCredentialService.VerifySignature(String, String, String, AsymmetricAlgorithmType)
+- uid: Dixor.Security.IClientCredentialService.VerifySignature*
+  name: VerifySignature
+  href: api/Dixor.Security.IClientCredentialService.html#Dixor_Security_IClientCredentialService_VerifySignature_
+  commentId: Overload:Dixor.Security.IClientCredentialService.VerifySignature
+  isSpec: "True"
+  fullName: Dixor.Security.IClientCredentialService.VerifySignature
+  nameWithType: IClientCredentialService.VerifySignature
+- uid: Dixor.Security.IDataEncryptor
+  name: IDataEncryptor
+  href: api/Dixor.Security.IDataEncryptor.html
+  commentId: T:Dixor.Security.IDataEncryptor
+  fullName: Dixor.Security.IDataEncryptor
+  nameWithType: IDataEncryptor
+- uid: Dixor.Security.IDataEncryptor.Decrypt(System.String,System.String,System.String)
+  name: Decrypt(string, string, string?)
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_Decrypt_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.IDataEncryptor.Decrypt(System.String,System.String,System.String)
+  name.vb: Decrypt(String, String, String)
+  fullName: Dixor.Security.IDataEncryptor.Decrypt(string, string, string?)
+  fullName.vb: Dixor.Security.IDataEncryptor.Decrypt(String, String, String)
+  nameWithType: IDataEncryptor.Decrypt(string, string, string?)
+  nameWithType.vb: IDataEncryptor.Decrypt(String, String, String)
+- uid: Dixor.Security.IDataEncryptor.Decrypt*
+  name: Decrypt
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_Decrypt_
+  commentId: Overload:Dixor.Security.IDataEncryptor.Decrypt
+  isSpec: "True"
+  fullName: Dixor.Security.IDataEncryptor.Decrypt
+  nameWithType: IDataEncryptor.Decrypt
+- uid: Dixor.Security.IDataEncryptor.DecryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name: DecryptBytes(byte[], byte[], byte[]?)
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_DecryptBytes_System_Byte___System_Byte___System_Byte___
+  commentId: M:Dixor.Security.IDataEncryptor.DecryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name.vb: DecryptBytes(Byte(), Byte(), Byte())
+  fullName: Dixor.Security.IDataEncryptor.DecryptBytes(byte[], byte[], byte[]?)
+  fullName.vb: Dixor.Security.IDataEncryptor.DecryptBytes(Byte(), Byte(), Byte())
+  nameWithType: IDataEncryptor.DecryptBytes(byte[], byte[], byte[]?)
+  nameWithType.vb: IDataEncryptor.DecryptBytes(Byte(), Byte(), Byte())
+- uid: Dixor.Security.IDataEncryptor.DecryptBytes*
+  name: DecryptBytes
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_DecryptBytes_
+  commentId: Overload:Dixor.Security.IDataEncryptor.DecryptBytes
+  isSpec: "True"
+  fullName: Dixor.Security.IDataEncryptor.DecryptBytes
+  nameWithType: IDataEncryptor.DecryptBytes
+- uid: Dixor.Security.IDataEncryptor.Encrypt(System.String,System.String,System.String)
+  name: Encrypt(string, string, string?)
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_Encrypt_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.IDataEncryptor.Encrypt(System.String,System.String,System.String)
+  name.vb: Encrypt(String, String, String)
+  fullName: Dixor.Security.IDataEncryptor.Encrypt(string, string, string?)
+  fullName.vb: Dixor.Security.IDataEncryptor.Encrypt(String, String, String)
+  nameWithType: IDataEncryptor.Encrypt(string, string, string?)
+  nameWithType.vb: IDataEncryptor.Encrypt(String, String, String)
+- uid: Dixor.Security.IDataEncryptor.Encrypt*
+  name: Encrypt
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_Encrypt_
+  commentId: Overload:Dixor.Security.IDataEncryptor.Encrypt
+  isSpec: "True"
+  fullName: Dixor.Security.IDataEncryptor.Encrypt
+  nameWithType: IDataEncryptor.Encrypt
+- uid: Dixor.Security.IDataEncryptor.EncryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name: EncryptBytes(byte[], byte[], byte[]?)
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_EncryptBytes_System_Byte___System_Byte___System_Byte___
+  commentId: M:Dixor.Security.IDataEncryptor.EncryptBytes(System.Byte[],System.Byte[],System.Byte[])
+  name.vb: EncryptBytes(Byte(), Byte(), Byte())
+  fullName: Dixor.Security.IDataEncryptor.EncryptBytes(byte[], byte[], byte[]?)
+  fullName.vb: Dixor.Security.IDataEncryptor.EncryptBytes(Byte(), Byte(), Byte())
+  nameWithType: IDataEncryptor.EncryptBytes(byte[], byte[], byte[]?)
+  nameWithType.vb: IDataEncryptor.EncryptBytes(Byte(), Byte(), Byte())
+- uid: Dixor.Security.IDataEncryptor.EncryptBytes*
+  name: EncryptBytes
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_EncryptBytes_
+  commentId: Overload:Dixor.Security.IDataEncryptor.EncryptBytes
+  isSpec: "True"
+  fullName: Dixor.Security.IDataEncryptor.EncryptBytes
+  nameWithType: IDataEncryptor.EncryptBytes
+- uid: Dixor.Security.IDataEncryptor.TryDecrypt(System.String,System.String,System.String@,System.String@,System.String)
+  name: TryDecrypt(string, string, out string?, out string?, string?)
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_TryDecrypt_System_String_System_String_System_String__System_String__System_String_
+  commentId: M:Dixor.Security.IDataEncryptor.TryDecrypt(System.String,System.String,System.String@,System.String@,System.String)
+  name.vb: TryDecrypt(String, String, String, String, String)
+  fullName: Dixor.Security.IDataEncryptor.TryDecrypt(string, string, out string?, out string?, string?)
+  fullName.vb: Dixor.Security.IDataEncryptor.TryDecrypt(String, String, String, String, String)
+  nameWithType: IDataEncryptor.TryDecrypt(string, string, out string?, out string?, string?)
+  nameWithType.vb: IDataEncryptor.TryDecrypt(String, String, String, String, String)
+- uid: Dixor.Security.IDataEncryptor.TryDecrypt*
+  name: TryDecrypt
+  href: api/Dixor.Security.IDataEncryptor.html#Dixor_Security_IDataEncryptor_TryDecrypt_
+  commentId: Overload:Dixor.Security.IDataEncryptor.TryDecrypt
+  isSpec: "True"
+  fullName: Dixor.Security.IDataEncryptor.TryDecrypt
+  nameWithType: IDataEncryptor.TryDecrypt
+- uid: Dixor.Security.IDeterministicHasher
+  name: IDeterministicHasher
+  href: api/Dixor.Security.IDeterministicHasher.html
+  commentId: T:Dixor.Security.IDeterministicHasher
+  fullName: Dixor.Security.IDeterministicHasher
+  nameWithType: IDeterministicHasher
+- uid: Dixor.Security.IDeterministicHasher.HashSha256(System.String,System.String)
+  name: HashSha256(string, string)
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_HashSha256_System_String_System_String_
+  commentId: M:Dixor.Security.IDeterministicHasher.HashSha256(System.String,System.String)
+  name.vb: HashSha256(String, String)
+  fullName: Dixor.Security.IDeterministicHasher.HashSha256(string, string)
+  fullName.vb: Dixor.Security.IDeterministicHasher.HashSha256(String, String)
+  nameWithType: IDeterministicHasher.HashSha256(string, string)
+  nameWithType.vb: IDeterministicHasher.HashSha256(String, String)
+- uid: Dixor.Security.IDeterministicHasher.HashSha256*
+  name: HashSha256
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_HashSha256_
+  commentId: Overload:Dixor.Security.IDeterministicHasher.HashSha256
+  isSpec: "True"
+  fullName: Dixor.Security.IDeterministicHasher.HashSha256
+  nameWithType: IDeterministicHasher.HashSha256
+- uid: Dixor.Security.IDeterministicHasher.HashSha512(System.String,System.String)
+  name: HashSha512(string, string)
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_HashSha512_System_String_System_String_
+  commentId: M:Dixor.Security.IDeterministicHasher.HashSha512(System.String,System.String)
+  name.vb: HashSha512(String, String)
+  fullName: Dixor.Security.IDeterministicHasher.HashSha512(string, string)
+  fullName.vb: Dixor.Security.IDeterministicHasher.HashSha512(String, String)
+  nameWithType: IDeterministicHasher.HashSha512(string, string)
+  nameWithType.vb: IDeterministicHasher.HashSha512(String, String)
+- uid: Dixor.Security.IDeterministicHasher.HashSha512*
+  name: HashSha512
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_HashSha512_
+  commentId: Overload:Dixor.Security.IDeterministicHasher.HashSha512
+  isSpec: "True"
+  fullName: Dixor.Security.IDeterministicHasher.HashSha512
+  nameWithType: IDeterministicHasher.HashSha512
+- uid: Dixor.Security.IDeterministicHasher.VerifySha256(System.String,System.String,System.String)
+  name: VerifySha256(string, string, string)
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_VerifySha256_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.IDeterministicHasher.VerifySha256(System.String,System.String,System.String)
+  name.vb: VerifySha256(String, String, String)
+  fullName: Dixor.Security.IDeterministicHasher.VerifySha256(string, string, string)
+  fullName.vb: Dixor.Security.IDeterministicHasher.VerifySha256(String, String, String)
+  nameWithType: IDeterministicHasher.VerifySha256(string, string, string)
+  nameWithType.vb: IDeterministicHasher.VerifySha256(String, String, String)
+- uid: Dixor.Security.IDeterministicHasher.VerifySha256*
+  name: VerifySha256
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_VerifySha256_
+  commentId: Overload:Dixor.Security.IDeterministicHasher.VerifySha256
+  isSpec: "True"
+  fullName: Dixor.Security.IDeterministicHasher.VerifySha256
+  nameWithType: IDeterministicHasher.VerifySha256
+- uid: Dixor.Security.IDeterministicHasher.VerifySha512(System.String,System.String,System.String)
+  name: VerifySha512(string, string, string)
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_VerifySha512_System_String_System_String_System_String_
+  commentId: M:Dixor.Security.IDeterministicHasher.VerifySha512(System.String,System.String,System.String)
+  name.vb: VerifySha512(String, String, String)
+  fullName: Dixor.Security.IDeterministicHasher.VerifySha512(string, string, string)
+  fullName.vb: Dixor.Security.IDeterministicHasher.VerifySha512(String, String, String)
+  nameWithType: IDeterministicHasher.VerifySha512(string, string, string)
+  nameWithType.vb: IDeterministicHasher.VerifySha512(String, String, String)
+- uid: Dixor.Security.IDeterministicHasher.VerifySha512*
+  name: VerifySha512
+  href: api/Dixor.Security.IDeterministicHasher.html#Dixor_Security_IDeterministicHasher_VerifySha512_
+  commentId: Overload:Dixor.Security.IDeterministicHasher.VerifySha512
+  isSpec: "True"
+  fullName: Dixor.Security.IDeterministicHasher.VerifySha512
+  nameWithType: IDeterministicHasher.VerifySha512
+- uid: Dixor.Security.IOAuth2TokenService
+  name: IOAuth2TokenService
+  href: api/Dixor.Security.IOAuth2TokenService.html
+  commentId: T:Dixor.Security.IOAuth2TokenService
+  fullName: Dixor.Security.IOAuth2TokenService
+  nameWithType: IOAuth2TokenService
+- uid: Dixor.Security.IOAuth2TokenService.GenerateRefreshToken(System.String)
+  name: GenerateRefreshToken(string)
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_GenerateRefreshToken_System_String_
+  commentId: M:Dixor.Security.IOAuth2TokenService.GenerateRefreshToken(System.String)
+  name.vb: GenerateRefreshToken(String)
+  fullName: Dixor.Security.IOAuth2TokenService.GenerateRefreshToken(string)
+  fullName.vb: Dixor.Security.IOAuth2TokenService.GenerateRefreshToken(String)
+  nameWithType: IOAuth2TokenService.GenerateRefreshToken(string)
+  nameWithType.vb: IOAuth2TokenService.GenerateRefreshToken(String)
+- uid: Dixor.Security.IOAuth2TokenService.GenerateRefreshToken*
+  name: GenerateRefreshToken
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_GenerateRefreshToken_
+  commentId: Overload:Dixor.Security.IOAuth2TokenService.GenerateRefreshToken
+  isSpec: "True"
+  fullName: Dixor.Security.IOAuth2TokenService.GenerateRefreshToken
+  nameWithType: IOAuth2TokenService.GenerateRefreshToken
+- uid: Dixor.Security.IOAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest,System.String)
+  name: GenerateToken(OAuth2TokenRequest, string)
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_GenerateToken_Dixor_Security_OAuth2TokenRequest_System_String_
+  commentId: M:Dixor.Security.IOAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest,System.String)
+  name.vb: GenerateToken(OAuth2TokenRequest, String)
+  fullName: Dixor.Security.IOAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest, string)
+  fullName.vb: Dixor.Security.IOAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest, String)
+  nameWithType: IOAuth2TokenService.GenerateToken(OAuth2TokenRequest, string)
+  nameWithType.vb: IOAuth2TokenService.GenerateToken(OAuth2TokenRequest, String)
+- uid: Dixor.Security.IOAuth2TokenService.GenerateToken*
+  name: GenerateToken
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_GenerateToken_
+  commentId: Overload:Dixor.Security.IOAuth2TokenService.GenerateToken
+  isSpec: "True"
+  fullName: Dixor.Security.IOAuth2TokenService.GenerateToken
+  nameWithType: IOAuth2TokenService.GenerateToken
+- uid: Dixor.Security.IOAuth2TokenService.ValidateAccessToken(System.String,System.String)
+  name: ValidateAccessToken(string, string)
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_ValidateAccessToken_System_String_System_String_
+  commentId: M:Dixor.Security.IOAuth2TokenService.ValidateAccessToken(System.String,System.String)
+  name.vb: ValidateAccessToken(String, String)
+  fullName: Dixor.Security.IOAuth2TokenService.ValidateAccessToken(string, string)
+  fullName.vb: Dixor.Security.IOAuth2TokenService.ValidateAccessToken(String, String)
+  nameWithType: IOAuth2TokenService.ValidateAccessToken(string, string)
+  nameWithType.vb: IOAuth2TokenService.ValidateAccessToken(String, String)
+- uid: Dixor.Security.IOAuth2TokenService.ValidateAccessToken*
+  name: ValidateAccessToken
+  href: api/Dixor.Security.IOAuth2TokenService.html#Dixor_Security_IOAuth2TokenService_ValidateAccessToken_
+  commentId: Overload:Dixor.Security.IOAuth2TokenService.ValidateAccessToken
+  isSpec: "True"
+  fullName: Dixor.Security.IOAuth2TokenService.ValidateAccessToken
+  nameWithType: IOAuth2TokenService.ValidateAccessToken
+- uid: Dixor.Security.IPasswordHasher
+  name: IPasswordHasher
+  href: api/Dixor.Security.IPasswordHasher.html
+  commentId: T:Dixor.Security.IPasswordHasher
+  fullName: Dixor.Security.IPasswordHasher
+  nameWithType: IPasswordHasher
+- uid: Dixor.Security.IPasswordHasher.HashPassword(System.String,System.Int32)
+  name: HashPassword(string, int)
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_HashPassword_System_String_System_Int32_
+  commentId: M:Dixor.Security.IPasswordHasher.HashPassword(System.String,System.Int32)
+  name.vb: HashPassword(String, Integer)
+  fullName: Dixor.Security.IPasswordHasher.HashPassword(string, int)
+  fullName.vb: Dixor.Security.IPasswordHasher.HashPassword(String, Integer)
+  nameWithType: IPasswordHasher.HashPassword(string, int)
+  nameWithType.vb: IPasswordHasher.HashPassword(String, Integer)
+- uid: Dixor.Security.IPasswordHasher.HashPassword*
+  name: HashPassword
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_HashPassword_
+  commentId: Overload:Dixor.Security.IPasswordHasher.HashPassword
+  isSpec: "True"
+  fullName: Dixor.Security.IPasswordHasher.HashPassword
+  nameWithType: IPasswordHasher.HashPassword
+- uid: Dixor.Security.IPasswordHasher.NeedsRehash(System.String,System.Int32)
+  name: NeedsRehash(string, int)
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_NeedsRehash_System_String_System_Int32_
+  commentId: M:Dixor.Security.IPasswordHasher.NeedsRehash(System.String,System.Int32)
+  name.vb: NeedsRehash(String, Integer)
+  fullName: Dixor.Security.IPasswordHasher.NeedsRehash(string, int)
+  fullName.vb: Dixor.Security.IPasswordHasher.NeedsRehash(String, Integer)
+  nameWithType: IPasswordHasher.NeedsRehash(string, int)
+  nameWithType.vb: IPasswordHasher.NeedsRehash(String, Integer)
+- uid: Dixor.Security.IPasswordHasher.NeedsRehash*
+  name: NeedsRehash
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_NeedsRehash_
+  commentId: Overload:Dixor.Security.IPasswordHasher.NeedsRehash
+  isSpec: "True"
+  fullName: Dixor.Security.IPasswordHasher.NeedsRehash
+  nameWithType: IPasswordHasher.NeedsRehash
+- uid: Dixor.Security.IPasswordHasher.VerifyPassword(System.String,System.String)
+  name: VerifyPassword(string, string)
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_VerifyPassword_System_String_System_String_
+  commentId: M:Dixor.Security.IPasswordHasher.VerifyPassword(System.String,System.String)
+  name.vb: VerifyPassword(String, String)
+  fullName: Dixor.Security.IPasswordHasher.VerifyPassword(string, string)
+  fullName.vb: Dixor.Security.IPasswordHasher.VerifyPassword(String, String)
+  nameWithType: IPasswordHasher.VerifyPassword(string, string)
+  nameWithType.vb: IPasswordHasher.VerifyPassword(String, String)
+- uid: Dixor.Security.IPasswordHasher.VerifyPassword*
+  name: VerifyPassword
+  href: api/Dixor.Security.IPasswordHasher.html#Dixor_Security_IPasswordHasher_VerifyPassword_
+  commentId: Overload:Dixor.Security.IPasswordHasher.VerifyPassword
+  isSpec: "True"
+  fullName: Dixor.Security.IPasswordHasher.VerifyPassword
+  nameWithType: IPasswordHasher.VerifyPassword
+- uid: Dixor.Security.ISensitiveDataMasker
+  name: ISensitiveDataMasker
+  href: api/Dixor.Security.ISensitiveDataMasker.html
+  commentId: T:Dixor.Security.ISensitiveDataMasker
+  fullName: Dixor.Security.ISensitiveDataMasker
+  nameWithType: ISensitiveDataMasker
+- uid: Dixor.Security.ISensitiveDataMasker.MaskCreditCard(System.String)
+  name: MaskCreditCard(string?)
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskCreditCard_System_String_
+  commentId: M:Dixor.Security.ISensitiveDataMasker.MaskCreditCard(System.String)
+  name.vb: MaskCreditCard(String)
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskCreditCard(string?)
+  fullName.vb: Dixor.Security.ISensitiveDataMasker.MaskCreditCard(String)
+  nameWithType: ISensitiveDataMasker.MaskCreditCard(string?)
+  nameWithType.vb: ISensitiveDataMasker.MaskCreditCard(String)
+- uid: Dixor.Security.ISensitiveDataMasker.MaskCreditCard*
+  name: MaskCreditCard
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskCreditCard_
+  commentId: Overload:Dixor.Security.ISensitiveDataMasker.MaskCreditCard
+  isSpec: "True"
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskCreditCard
+  nameWithType: ISensitiveDataMasker.MaskCreditCard
+- uid: Dixor.Security.ISensitiveDataMasker.MaskEmail(System.String)
+  name: MaskEmail(string?)
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskEmail_System_String_
+  commentId: M:Dixor.Security.ISensitiveDataMasker.MaskEmail(System.String)
+  name.vb: MaskEmail(String)
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskEmail(string?)
+  fullName.vb: Dixor.Security.ISensitiveDataMasker.MaskEmail(String)
+  nameWithType: ISensitiveDataMasker.MaskEmail(string?)
+  nameWithType.vb: ISensitiveDataMasker.MaskEmail(String)
+- uid: Dixor.Security.ISensitiveDataMasker.MaskEmail*
+  name: MaskEmail
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskEmail_
+  commentId: Overload:Dixor.Security.ISensitiveDataMasker.MaskEmail
+  isSpec: "True"
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskEmail
+  nameWithType: ISensitiveDataMasker.MaskEmail
+- uid: Dixor.Security.ISensitiveDataMasker.MaskGeneric(System.String,System.Int32,System.Int32,System.Char)
+  name: MaskGeneric(string?, int, int, char)
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskGeneric_System_String_System_Int32_System_Int32_System_Char_
+  commentId: M:Dixor.Security.ISensitiveDataMasker.MaskGeneric(System.String,System.Int32,System.Int32,System.Char)
+  name.vb: MaskGeneric(String, Integer, Integer, Char)
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskGeneric(string?, int, int, char)
+  fullName.vb: Dixor.Security.ISensitiveDataMasker.MaskGeneric(String, Integer, Integer, Char)
+  nameWithType: ISensitiveDataMasker.MaskGeneric(string?, int, int, char)
+  nameWithType.vb: ISensitiveDataMasker.MaskGeneric(String, Integer, Integer, Char)
+- uid: Dixor.Security.ISensitiveDataMasker.MaskGeneric*
+  name: MaskGeneric
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskGeneric_
+  commentId: Overload:Dixor.Security.ISensitiveDataMasker.MaskGeneric
+  isSpec: "True"
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskGeneric
+  nameWithType: ISensitiveDataMasker.MaskGeneric
+- uid: Dixor.Security.ISensitiveDataMasker.MaskSecret(System.String,System.Int32,System.Int32)
+  name: MaskSecret(string?, int, int)
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskSecret_System_String_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.ISensitiveDataMasker.MaskSecret(System.String,System.Int32,System.Int32)
+  name.vb: MaskSecret(String, Integer, Integer)
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskSecret(string?, int, int)
+  fullName.vb: Dixor.Security.ISensitiveDataMasker.MaskSecret(String, Integer, Integer)
+  nameWithType: ISensitiveDataMasker.MaskSecret(string?, int, int)
+  nameWithType.vb: ISensitiveDataMasker.MaskSecret(String, Integer, Integer)
+- uid: Dixor.Security.ISensitiveDataMasker.MaskSecret*
+  name: MaskSecret
+  href: api/Dixor.Security.ISensitiveDataMasker.html#Dixor_Security_ISensitiveDataMasker_MaskSecret_
+  commentId: Overload:Dixor.Security.ISensitiveDataMasker.MaskSecret
+  isSpec: "True"
+  fullName: Dixor.Security.ISensitiveDataMasker.MaskSecret
+  nameWithType: ISensitiveDataMasker.MaskSecret
+- uid: Dixor.Security.ITotpService
+  name: ITotpService
+  href: api/Dixor.Security.ITotpService.html
+  commentId: T:Dixor.Security.ITotpService
+  fullName: Dixor.Security.ITotpService
+  nameWithType: ITotpService
+- uid: Dixor.Security.ITotpService.GenerateCode(System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32)
+  name: GenerateCode(string, DateTimeOffset?, int, int)
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateCode_System_String_System_Nullable_System_DateTimeOffset__System_Int32_System_Int32_
+  commentId: M:Dixor.Security.ITotpService.GenerateCode(System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32)
+  name.vb: GenerateCode(String, DateTimeOffset?, Integer, Integer)
+  fullName: Dixor.Security.ITotpService.GenerateCode(string, System.DateTimeOffset?, int, int)
+  fullName.vb: Dixor.Security.ITotpService.GenerateCode(String, System.DateTimeOffset?, Integer, Integer)
+  nameWithType: ITotpService.GenerateCode(string, DateTimeOffset?, int, int)
+  nameWithType.vb: ITotpService.GenerateCode(String, DateTimeOffset?, Integer, Integer)
+- uid: Dixor.Security.ITotpService.GenerateCode*
+  name: GenerateCode
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateCode_
+  commentId: Overload:Dixor.Security.ITotpService.GenerateCode
+  isSpec: "True"
+  fullName: Dixor.Security.ITotpService.GenerateCode
+  nameWithType: ITotpService.GenerateCode
+- uid: Dixor.Security.ITotpService.GenerateQrCodeUri(System.String,System.String,System.String,System.Int32,System.Int32)
+  name: GenerateQrCodeUri(string, string, string, int, int)
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateQrCodeUri_System_String_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.ITotpService.GenerateQrCodeUri(System.String,System.String,System.String,System.Int32,System.Int32)
+  name.vb: GenerateQrCodeUri(String, String, String, Integer, Integer)
+  fullName: Dixor.Security.ITotpService.GenerateQrCodeUri(string, string, string, int, int)
+  fullName.vb: Dixor.Security.ITotpService.GenerateQrCodeUri(String, String, String, Integer, Integer)
+  nameWithType: ITotpService.GenerateQrCodeUri(string, string, string, int, int)
+  nameWithType.vb: ITotpService.GenerateQrCodeUri(String, String, String, Integer, Integer)
+- uid: Dixor.Security.ITotpService.GenerateQrCodeUri*
+  name: GenerateQrCodeUri
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateQrCodeUri_
+  commentId: Overload:Dixor.Security.ITotpService.GenerateQrCodeUri
+  isSpec: "True"
+  fullName: Dixor.Security.ITotpService.GenerateQrCodeUri
+  nameWithType: ITotpService.GenerateQrCodeUri
+- uid: Dixor.Security.ITotpService.GenerateSecretKey(System.Int32)
+  name: GenerateSecretKey(int)
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateSecretKey_System_Int32_
+  commentId: M:Dixor.Security.ITotpService.GenerateSecretKey(System.Int32)
+  name.vb: GenerateSecretKey(Integer)
+  fullName: Dixor.Security.ITotpService.GenerateSecretKey(int)
+  fullName.vb: Dixor.Security.ITotpService.GenerateSecretKey(Integer)
+  nameWithType: ITotpService.GenerateSecretKey(int)
+  nameWithType.vb: ITotpService.GenerateSecretKey(Integer)
+- uid: Dixor.Security.ITotpService.GenerateSecretKey*
+  name: GenerateSecretKey
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GenerateSecretKey_
+  commentId: Overload:Dixor.Security.ITotpService.GenerateSecretKey
+  isSpec: "True"
+  fullName: Dixor.Security.ITotpService.GenerateSecretKey
+  nameWithType: ITotpService.GenerateSecretKey
+- uid: Dixor.Security.ITotpService.GetRemainingSeconds(System.Nullable{System.DateTimeOffset},System.Int32)
+  name: GetRemainingSeconds(DateTimeOffset?, int)
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GetRemainingSeconds_System_Nullable_System_DateTimeOffset__System_Int32_
+  commentId: M:Dixor.Security.ITotpService.GetRemainingSeconds(System.Nullable{System.DateTimeOffset},System.Int32)
+  name.vb: GetRemainingSeconds(DateTimeOffset?, Integer)
+  fullName: Dixor.Security.ITotpService.GetRemainingSeconds(System.DateTimeOffset?, int)
+  fullName.vb: Dixor.Security.ITotpService.GetRemainingSeconds(System.DateTimeOffset?, Integer)
+  nameWithType: ITotpService.GetRemainingSeconds(DateTimeOffset?, int)
+  nameWithType.vb: ITotpService.GetRemainingSeconds(DateTimeOffset?, Integer)
+- uid: Dixor.Security.ITotpService.GetRemainingSeconds*
+  name: GetRemainingSeconds
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_GetRemainingSeconds_
+  commentId: Overload:Dixor.Security.ITotpService.GetRemainingSeconds
+  isSpec: "True"
+  fullName: Dixor.Security.ITotpService.GetRemainingSeconds
+  nameWithType: ITotpService.GetRemainingSeconds
+- uid: Dixor.Security.ITotpService.ValidateCode(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32,System.Int32)
+  name: ValidateCode(string, string, DateTimeOffset?, int, int, int)
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_ValidateCode_System_String_System_String_System_Nullable_System_DateTimeOffset__System_Int32_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.ITotpService.ValidateCode(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32,System.Int32)
+  name.vb: ValidateCode(String, String, DateTimeOffset?, Integer, Integer, Integer)
+  fullName: Dixor.Security.ITotpService.ValidateCode(string, string, System.DateTimeOffset?, int, int, int)
+  fullName.vb: Dixor.Security.ITotpService.ValidateCode(String, String, System.DateTimeOffset?, Integer, Integer, Integer)
+  nameWithType: ITotpService.ValidateCode(string, string, DateTimeOffset?, int, int, int)
+  nameWithType.vb: ITotpService.ValidateCode(String, String, DateTimeOffset?, Integer, Integer, Integer)
+- uid: Dixor.Security.ITotpService.ValidateCode*
+  name: ValidateCode
+  href: api/Dixor.Security.ITotpService.html#Dixor_Security_ITotpService_ValidateCode_
+  commentId: Overload:Dixor.Security.ITotpService.ValidateCode
+  isSpec: "True"
+  fullName: Dixor.Security.ITotpService.ValidateCode
+  nameWithType: ITotpService.ValidateCode
+- uid: Dixor.Security.OAuth2TokenRequest
+  name: OAuth2TokenRequest
+  href: api/Dixor.Security.OAuth2TokenRequest.html
+  commentId: T:Dixor.Security.OAuth2TokenRequest
+  fullName: Dixor.Security.OAuth2TokenRequest
+  nameWithType: OAuth2TokenRequest
+- uid: Dixor.Security.OAuth2TokenRequest.Audience
+  name: Audience
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Audience
+  commentId: P:Dixor.Security.OAuth2TokenRequest.Audience
+  fullName: Dixor.Security.OAuth2TokenRequest.Audience
+  nameWithType: OAuth2TokenRequest.Audience
+- uid: Dixor.Security.OAuth2TokenRequest.Audience*
+  name: Audience
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Audience_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.Audience
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.Audience
+  nameWithType: OAuth2TokenRequest.Audience
+- uid: Dixor.Security.OAuth2TokenRequest.Claims
+  name: Claims
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Claims
+  commentId: P:Dixor.Security.OAuth2TokenRequest.Claims
+  fullName: Dixor.Security.OAuth2TokenRequest.Claims
+  nameWithType: OAuth2TokenRequest.Claims
+- uid: Dixor.Security.OAuth2TokenRequest.Claims*
+  name: Claims
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Claims_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.Claims
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.Claims
+  nameWithType: OAuth2TokenRequest.Claims
+- uid: Dixor.Security.OAuth2TokenRequest.ClientId
+  name: ClientId
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_ClientId
+  commentId: P:Dixor.Security.OAuth2TokenRequest.ClientId
+  fullName: Dixor.Security.OAuth2TokenRequest.ClientId
+  nameWithType: OAuth2TokenRequest.ClientId
+- uid: Dixor.Security.OAuth2TokenRequest.ClientId*
+  name: ClientId
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_ClientId_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.ClientId
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.ClientId
+  nameWithType: OAuth2TokenRequest.ClientId
+- uid: Dixor.Security.OAuth2TokenRequest.IssueRefreshToken
+  name: IssueRefreshToken
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_IssueRefreshToken
+  commentId: P:Dixor.Security.OAuth2TokenRequest.IssueRefreshToken
+  fullName: Dixor.Security.OAuth2TokenRequest.IssueRefreshToken
+  nameWithType: OAuth2TokenRequest.IssueRefreshToken
+- uid: Dixor.Security.OAuth2TokenRequest.IssueRefreshToken*
+  name: IssueRefreshToken
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_IssueRefreshToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.IssueRefreshToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.IssueRefreshToken
+  nameWithType: OAuth2TokenRequest.IssueRefreshToken
+- uid: Dixor.Security.OAuth2TokenRequest.Lifetime
+  name: Lifetime
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Lifetime
+  commentId: P:Dixor.Security.OAuth2TokenRequest.Lifetime
+  fullName: Dixor.Security.OAuth2TokenRequest.Lifetime
+  nameWithType: OAuth2TokenRequest.Lifetime
+- uid: Dixor.Security.OAuth2TokenRequest.Lifetime*
+  name: Lifetime
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Lifetime_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.Lifetime
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.Lifetime
+  nameWithType: OAuth2TokenRequest.Lifetime
+- uid: Dixor.Security.OAuth2TokenRequest.Scopes
+  name: Scopes
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Scopes
+  commentId: P:Dixor.Security.OAuth2TokenRequest.Scopes
+  fullName: Dixor.Security.OAuth2TokenRequest.Scopes
+  nameWithType: OAuth2TokenRequest.Scopes
+- uid: Dixor.Security.OAuth2TokenRequest.Scopes*
+  name: Scopes
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Scopes_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.Scopes
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.Scopes
+  nameWithType: OAuth2TokenRequest.Scopes
+- uid: Dixor.Security.OAuth2TokenRequest.Subject
+  name: Subject
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Subject
+  commentId: P:Dixor.Security.OAuth2TokenRequest.Subject
+  fullName: Dixor.Security.OAuth2TokenRequest.Subject
+  nameWithType: OAuth2TokenRequest.Subject
+- uid: Dixor.Security.OAuth2TokenRequest.Subject*
+  name: Subject
+  href: api/Dixor.Security.OAuth2TokenRequest.html#Dixor_Security_OAuth2TokenRequest_Subject_
+  commentId: Overload:Dixor.Security.OAuth2TokenRequest.Subject
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenRequest.Subject
+  nameWithType: OAuth2TokenRequest.Subject
+- uid: Dixor.Security.OAuth2TokenResponse
+  name: OAuth2TokenResponse
+  href: api/Dixor.Security.OAuth2TokenResponse.html
+  commentId: T:Dixor.Security.OAuth2TokenResponse
+  fullName: Dixor.Security.OAuth2TokenResponse
+  nameWithType: OAuth2TokenResponse
+- uid: Dixor.Security.OAuth2TokenResponse.AccessToken
+  name: AccessToken
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_AccessToken
+  commentId: P:Dixor.Security.OAuth2TokenResponse.AccessToken
+  fullName: Dixor.Security.OAuth2TokenResponse.AccessToken
+  nameWithType: OAuth2TokenResponse.AccessToken
+- uid: Dixor.Security.OAuth2TokenResponse.AccessToken*
+  name: AccessToken
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_AccessToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.AccessToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.AccessToken
+  nameWithType: OAuth2TokenResponse.AccessToken
+- uid: Dixor.Security.OAuth2TokenResponse.ExpiresIn
+  name: ExpiresIn
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_ExpiresIn
+  commentId: P:Dixor.Security.OAuth2TokenResponse.ExpiresIn
+  fullName: Dixor.Security.OAuth2TokenResponse.ExpiresIn
+  nameWithType: OAuth2TokenResponse.ExpiresIn
+- uid: Dixor.Security.OAuth2TokenResponse.ExpiresIn*
+  name: ExpiresIn
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_ExpiresIn_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.ExpiresIn
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.ExpiresIn
+  nameWithType: OAuth2TokenResponse.ExpiresIn
+- uid: Dixor.Security.OAuth2TokenResponse.IssuedAt
+  name: IssuedAt
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_IssuedAt
+  commentId: P:Dixor.Security.OAuth2TokenResponse.IssuedAt
+  fullName: Dixor.Security.OAuth2TokenResponse.IssuedAt
+  nameWithType: OAuth2TokenResponse.IssuedAt
+- uid: Dixor.Security.OAuth2TokenResponse.IssuedAt*
+  name: IssuedAt
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_IssuedAt_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.IssuedAt
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.IssuedAt
+  nameWithType: OAuth2TokenResponse.IssuedAt
+- uid: Dixor.Security.OAuth2TokenResponse.RefreshToken
+  name: RefreshToken
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_RefreshToken
+  commentId: P:Dixor.Security.OAuth2TokenResponse.RefreshToken
+  fullName: Dixor.Security.OAuth2TokenResponse.RefreshToken
+  nameWithType: OAuth2TokenResponse.RefreshToken
+- uid: Dixor.Security.OAuth2TokenResponse.RefreshToken*
+  name: RefreshToken
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_RefreshToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.RefreshToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.RefreshToken
+  nameWithType: OAuth2TokenResponse.RefreshToken
+- uid: Dixor.Security.OAuth2TokenResponse.Scope
+  name: Scope
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_Scope
+  commentId: P:Dixor.Security.OAuth2TokenResponse.Scope
+  fullName: Dixor.Security.OAuth2TokenResponse.Scope
+  nameWithType: OAuth2TokenResponse.Scope
+- uid: Dixor.Security.OAuth2TokenResponse.Scope*
+  name: Scope
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_Scope_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.Scope
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.Scope
+  nameWithType: OAuth2TokenResponse.Scope
+- uid: Dixor.Security.OAuth2TokenResponse.TokenType
+  name: TokenType
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_TokenType
+  commentId: P:Dixor.Security.OAuth2TokenResponse.TokenType
+  fullName: Dixor.Security.OAuth2TokenResponse.TokenType
+  nameWithType: OAuth2TokenResponse.TokenType
+- uid: Dixor.Security.OAuth2TokenResponse.TokenType*
+  name: TokenType
+  href: api/Dixor.Security.OAuth2TokenResponse.html#Dixor_Security_OAuth2TokenResponse_TokenType_
+  commentId: Overload:Dixor.Security.OAuth2TokenResponse.TokenType
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenResponse.TokenType
+  nameWithType: OAuth2TokenResponse.TokenType
+- uid: Dixor.Security.OAuth2TokenService
+  name: OAuth2TokenService
+  href: api/Dixor.Security.OAuth2TokenService.html
+  commentId: T:Dixor.Security.OAuth2TokenService
+  fullName: Dixor.Security.OAuth2TokenService
+  nameWithType: OAuth2TokenService
+- uid: Dixor.Security.OAuth2TokenService.GenerateRefreshToken(System.String)
+  name: GenerateRefreshToken(string)
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_GenerateRefreshToken_System_String_
+  commentId: M:Dixor.Security.OAuth2TokenService.GenerateRefreshToken(System.String)
+  name.vb: GenerateRefreshToken(String)
+  fullName: Dixor.Security.OAuth2TokenService.GenerateRefreshToken(string)
+  fullName.vb: Dixor.Security.OAuth2TokenService.GenerateRefreshToken(String)
+  nameWithType: OAuth2TokenService.GenerateRefreshToken(string)
+  nameWithType.vb: OAuth2TokenService.GenerateRefreshToken(String)
+- uid: Dixor.Security.OAuth2TokenService.GenerateRefreshToken*
+  name: GenerateRefreshToken
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_GenerateRefreshToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenService.GenerateRefreshToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenService.GenerateRefreshToken
+  nameWithType: OAuth2TokenService.GenerateRefreshToken
+- uid: Dixor.Security.OAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest,System.String)
+  name: GenerateToken(OAuth2TokenRequest, string)
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_GenerateToken_Dixor_Security_OAuth2TokenRequest_System_String_
+  commentId: M:Dixor.Security.OAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest,System.String)
+  name.vb: GenerateToken(OAuth2TokenRequest, String)
+  fullName: Dixor.Security.OAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest, string)
+  fullName.vb: Dixor.Security.OAuth2TokenService.GenerateToken(Dixor.Security.OAuth2TokenRequest, String)
+  nameWithType: OAuth2TokenService.GenerateToken(OAuth2TokenRequest, string)
+  nameWithType.vb: OAuth2TokenService.GenerateToken(OAuth2TokenRequest, String)
+- uid: Dixor.Security.OAuth2TokenService.GenerateToken*
+  name: GenerateToken
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_GenerateToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenService.GenerateToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenService.GenerateToken
+  nameWithType: OAuth2TokenService.GenerateToken
+- uid: Dixor.Security.OAuth2TokenService.ValidateAccessToken(System.String,System.String)
+  name: ValidateAccessToken(string, string)
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_ValidateAccessToken_System_String_System_String_
+  commentId: M:Dixor.Security.OAuth2TokenService.ValidateAccessToken(System.String,System.String)
+  name.vb: ValidateAccessToken(String, String)
+  fullName: Dixor.Security.OAuth2TokenService.ValidateAccessToken(string, string)
+  fullName.vb: Dixor.Security.OAuth2TokenService.ValidateAccessToken(String, String)
+  nameWithType: OAuth2TokenService.ValidateAccessToken(string, string)
+  nameWithType.vb: OAuth2TokenService.ValidateAccessToken(String, String)
+- uid: Dixor.Security.OAuth2TokenService.ValidateAccessToken*
+  name: ValidateAccessToken
+  href: api/Dixor.Security.OAuth2TokenService.html#Dixor_Security_OAuth2TokenService_ValidateAccessToken_
+  commentId: Overload:Dixor.Security.OAuth2TokenService.ValidateAccessToken
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenService.ValidateAccessToken
+  nameWithType: OAuth2TokenService.ValidateAccessToken
+- uid: Dixor.Security.OAuth2TokenValidationResult
+  name: OAuth2TokenValidationResult
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html
+  commentId: T:Dixor.Security.OAuth2TokenValidationResult
+  fullName: Dixor.Security.OAuth2TokenValidationResult
+  nameWithType: OAuth2TokenValidationResult
+- uid: Dixor.Security.OAuth2TokenValidationResult.Claims
+  name: Claims
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Claims
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.Claims
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Claims
+  nameWithType: OAuth2TokenValidationResult.Claims
+- uid: Dixor.Security.OAuth2TokenValidationResult.Claims*
+  name: Claims
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Claims_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Claims
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Claims
+  nameWithType: OAuth2TokenValidationResult.Claims
+- uid: Dixor.Security.OAuth2TokenValidationResult.ClientId
+  name: ClientId
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_ClientId
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.ClientId
+  fullName: Dixor.Security.OAuth2TokenValidationResult.ClientId
+  nameWithType: OAuth2TokenValidationResult.ClientId
+- uid: Dixor.Security.OAuth2TokenValidationResult.ClientId*
+  name: ClientId
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_ClientId_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.ClientId
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.ClientId
+  nameWithType: OAuth2TokenValidationResult.ClientId
+- uid: Dixor.Security.OAuth2TokenValidationResult.Error
+  name: Error
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Error
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.Error
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Error
+  nameWithType: OAuth2TokenValidationResult.Error
+- uid: Dixor.Security.OAuth2TokenValidationResult.Error*
+  name: Error
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Error_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Error
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Error
+  nameWithType: OAuth2TokenValidationResult.Error
+- uid: Dixor.Security.OAuth2TokenValidationResult.ExpiresAt
+  name: ExpiresAt
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_ExpiresAt
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.ExpiresAt
+  fullName: Dixor.Security.OAuth2TokenValidationResult.ExpiresAt
+  nameWithType: OAuth2TokenValidationResult.ExpiresAt
+- uid: Dixor.Security.OAuth2TokenValidationResult.ExpiresAt*
+  name: ExpiresAt
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_ExpiresAt_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.ExpiresAt
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.ExpiresAt
+  nameWithType: OAuth2TokenValidationResult.ExpiresAt
+- uid: Dixor.Security.OAuth2TokenValidationResult.Failure(System.String)
+  name: Failure(string)
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Failure_System_String_
+  commentId: M:Dixor.Security.OAuth2TokenValidationResult.Failure(System.String)
+  name.vb: Failure(String)
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Failure(string)
+  fullName.vb: Dixor.Security.OAuth2TokenValidationResult.Failure(String)
+  nameWithType: OAuth2TokenValidationResult.Failure(string)
+  nameWithType.vb: OAuth2TokenValidationResult.Failure(String)
+- uid: Dixor.Security.OAuth2TokenValidationResult.Failure*
+  name: Failure
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Failure_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Failure
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Failure
+  nameWithType: OAuth2TokenValidationResult.Failure
+- uid: Dixor.Security.OAuth2TokenValidationResult.IsValid
+  name: IsValid
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_IsValid
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.IsValid
+  fullName: Dixor.Security.OAuth2TokenValidationResult.IsValid
+  nameWithType: OAuth2TokenValidationResult.IsValid
+- uid: Dixor.Security.OAuth2TokenValidationResult.IsValid*
+  name: IsValid
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_IsValid_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.IsValid
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.IsValid
+  nameWithType: OAuth2TokenValidationResult.IsValid
+- uid: Dixor.Security.OAuth2TokenValidationResult.Scopes
+  name: Scopes
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Scopes
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.Scopes
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Scopes
+  nameWithType: OAuth2TokenValidationResult.Scopes
+- uid: Dixor.Security.OAuth2TokenValidationResult.Scopes*
+  name: Scopes
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Scopes_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Scopes
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Scopes
+  nameWithType: OAuth2TokenValidationResult.Scopes
+- uid: Dixor.Security.OAuth2TokenValidationResult.Subject
+  name: Subject
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Subject
+  commentId: P:Dixor.Security.OAuth2TokenValidationResult.Subject
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Subject
+  nameWithType: OAuth2TokenValidationResult.Subject
+- uid: Dixor.Security.OAuth2TokenValidationResult.Subject*
+  name: Subject
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Subject_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Subject
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Subject
+  nameWithType: OAuth2TokenValidationResult.Subject
+- uid: Dixor.Security.OAuth2TokenValidationResult.Success(System.String,System.String,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.DateTimeOffset)
+  name: Success(string?, string?, IReadOnlyList<string>, IReadOnlyDictionary<string, string>, DateTimeOffset)
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Success_System_String_System_String_System_Collections_Generic_IReadOnlyList_System_String__System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_DateTimeOffset_
+  commentId: M:Dixor.Security.OAuth2TokenValidationResult.Success(System.String,System.String,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.DateTimeOffset)
+  name.vb: Success(String, String, IReadOnlyList(Of String), IReadOnlyDictionary(Of String, String), DateTimeOffset)
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Success(string?, string?, System.Collections.Generic.IReadOnlyList<string>, System.Collections.Generic.IReadOnlyDictionary<string, string>, System.DateTimeOffset)
+  fullName.vb: Dixor.Security.OAuth2TokenValidationResult.Success(String, String, System.Collections.Generic.IReadOnlyList(Of String), System.Collections.Generic.IReadOnlyDictionary(Of String, String), System.DateTimeOffset)
+  nameWithType: OAuth2TokenValidationResult.Success(string?, string?, IReadOnlyList<string>, IReadOnlyDictionary<string, string>, DateTimeOffset)
+  nameWithType.vb: OAuth2TokenValidationResult.Success(String, String, IReadOnlyList(Of String), IReadOnlyDictionary(Of String, String), DateTimeOffset)
+- uid: Dixor.Security.OAuth2TokenValidationResult.Success*
+  name: Success
+  href: api/Dixor.Security.OAuth2TokenValidationResult.html#Dixor_Security_OAuth2TokenValidationResult_Success_
+  commentId: Overload:Dixor.Security.OAuth2TokenValidationResult.Success
+  isSpec: "True"
+  fullName: Dixor.Security.OAuth2TokenValidationResult.Success
+  nameWithType: OAuth2TokenValidationResult.Success
+- uid: Dixor.Security.PasswordHasher
+  name: PasswordHasher
+  href: api/Dixor.Security.PasswordHasher.html
+  commentId: T:Dixor.Security.PasswordHasher
+  fullName: Dixor.Security.PasswordHasher
+  nameWithType: PasswordHasher
+- uid: Dixor.Security.PasswordHasher.HashPassword(System.String,System.Int32)
+  name: HashPassword(string, int)
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_HashPassword_System_String_System_Int32_
+  commentId: M:Dixor.Security.PasswordHasher.HashPassword(System.String,System.Int32)
+  name.vb: HashPassword(String, Integer)
+  fullName: Dixor.Security.PasswordHasher.HashPassword(string, int)
+  fullName.vb: Dixor.Security.PasswordHasher.HashPassword(String, Integer)
+  nameWithType: PasswordHasher.HashPassword(string, int)
+  nameWithType.vb: PasswordHasher.HashPassword(String, Integer)
+- uid: Dixor.Security.PasswordHasher.HashPassword*
+  name: HashPassword
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_HashPassword_
+  commentId: Overload:Dixor.Security.PasswordHasher.HashPassword
+  isSpec: "True"
+  fullName: Dixor.Security.PasswordHasher.HashPassword
+  nameWithType: PasswordHasher.HashPassword
+- uid: Dixor.Security.PasswordHasher.NeedsRehash(System.String,System.Int32)
+  name: NeedsRehash(string, int)
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_NeedsRehash_System_String_System_Int32_
+  commentId: M:Dixor.Security.PasswordHasher.NeedsRehash(System.String,System.Int32)
+  name.vb: NeedsRehash(String, Integer)
+  fullName: Dixor.Security.PasswordHasher.NeedsRehash(string, int)
+  fullName.vb: Dixor.Security.PasswordHasher.NeedsRehash(String, Integer)
+  nameWithType: PasswordHasher.NeedsRehash(string, int)
+  nameWithType.vb: PasswordHasher.NeedsRehash(String, Integer)
+- uid: Dixor.Security.PasswordHasher.NeedsRehash*
+  name: NeedsRehash
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_NeedsRehash_
+  commentId: Overload:Dixor.Security.PasswordHasher.NeedsRehash
+  isSpec: "True"
+  fullName: Dixor.Security.PasswordHasher.NeedsRehash
+  nameWithType: PasswordHasher.NeedsRehash
+- uid: Dixor.Security.PasswordHasher.VerifyPassword(System.String,System.String)
+  name: VerifyPassword(string, string)
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_VerifyPassword_System_String_System_String_
+  commentId: M:Dixor.Security.PasswordHasher.VerifyPassword(System.String,System.String)
+  name.vb: VerifyPassword(String, String)
+  fullName: Dixor.Security.PasswordHasher.VerifyPassword(string, string)
+  fullName.vb: Dixor.Security.PasswordHasher.VerifyPassword(String, String)
+  nameWithType: PasswordHasher.VerifyPassword(string, string)
+  nameWithType.vb: PasswordHasher.VerifyPassword(String, String)
+- uid: Dixor.Security.PasswordHasher.VerifyPassword*
+  name: VerifyPassword
+  href: api/Dixor.Security.PasswordHasher.html#Dixor_Security_PasswordHasher_VerifyPassword_
+  commentId: Overload:Dixor.Security.PasswordHasher.VerifyPassword
+  isSpec: "True"
+  fullName: Dixor.Security.PasswordHasher.VerifyPassword
+  nameWithType: PasswordHasher.VerifyPassword
+- uid: Dixor.Security.SensitiveDataMasker
+  name: SensitiveDataMasker
+  href: api/Dixor.Security.SensitiveDataMasker.html
+  commentId: T:Dixor.Security.SensitiveDataMasker
+  fullName: Dixor.Security.SensitiveDataMasker
+  nameWithType: SensitiveDataMasker
+- uid: Dixor.Security.SensitiveDataMasker.MaskCreditCard(System.String)
+  name: MaskCreditCard(string?)
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskCreditCard_System_String_
+  commentId: M:Dixor.Security.SensitiveDataMasker.MaskCreditCard(System.String)
+  name.vb: MaskCreditCard(String)
+  fullName: Dixor.Security.SensitiveDataMasker.MaskCreditCard(string?)
+  fullName.vb: Dixor.Security.SensitiveDataMasker.MaskCreditCard(String)
+  nameWithType: SensitiveDataMasker.MaskCreditCard(string?)
+  nameWithType.vb: SensitiveDataMasker.MaskCreditCard(String)
+- uid: Dixor.Security.SensitiveDataMasker.MaskCreditCard*
+  name: MaskCreditCard
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskCreditCard_
+  commentId: Overload:Dixor.Security.SensitiveDataMasker.MaskCreditCard
+  isSpec: "True"
+  fullName: Dixor.Security.SensitiveDataMasker.MaskCreditCard
+  nameWithType: SensitiveDataMasker.MaskCreditCard
+- uid: Dixor.Security.SensitiveDataMasker.MaskEmail(System.String)
+  name: MaskEmail(string?)
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskEmail_System_String_
+  commentId: M:Dixor.Security.SensitiveDataMasker.MaskEmail(System.String)
+  name.vb: MaskEmail(String)
+  fullName: Dixor.Security.SensitiveDataMasker.MaskEmail(string?)
+  fullName.vb: Dixor.Security.SensitiveDataMasker.MaskEmail(String)
+  nameWithType: SensitiveDataMasker.MaskEmail(string?)
+  nameWithType.vb: SensitiveDataMasker.MaskEmail(String)
+- uid: Dixor.Security.SensitiveDataMasker.MaskEmail*
+  name: MaskEmail
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskEmail_
+  commentId: Overload:Dixor.Security.SensitiveDataMasker.MaskEmail
+  isSpec: "True"
+  fullName: Dixor.Security.SensitiveDataMasker.MaskEmail
+  nameWithType: SensitiveDataMasker.MaskEmail
+- uid: Dixor.Security.SensitiveDataMasker.MaskGeneric(System.String,System.Int32,System.Int32,System.Char)
+  name: MaskGeneric(string?, int, int, char)
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskGeneric_System_String_System_Int32_System_Int32_System_Char_
+  commentId: M:Dixor.Security.SensitiveDataMasker.MaskGeneric(System.String,System.Int32,System.Int32,System.Char)
+  name.vb: MaskGeneric(String, Integer, Integer, Char)
+  fullName: Dixor.Security.SensitiveDataMasker.MaskGeneric(string?, int, int, char)
+  fullName.vb: Dixor.Security.SensitiveDataMasker.MaskGeneric(String, Integer, Integer, Char)
+  nameWithType: SensitiveDataMasker.MaskGeneric(string?, int, int, char)
+  nameWithType.vb: SensitiveDataMasker.MaskGeneric(String, Integer, Integer, Char)
+- uid: Dixor.Security.SensitiveDataMasker.MaskGeneric*
+  name: MaskGeneric
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskGeneric_
+  commentId: Overload:Dixor.Security.SensitiveDataMasker.MaskGeneric
+  isSpec: "True"
+  fullName: Dixor.Security.SensitiveDataMasker.MaskGeneric
+  nameWithType: SensitiveDataMasker.MaskGeneric
+- uid: Dixor.Security.SensitiveDataMasker.MaskSecret(System.String,System.Int32,System.Int32)
+  name: MaskSecret(string?, int, int)
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskSecret_System_String_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.SensitiveDataMasker.MaskSecret(System.String,System.Int32,System.Int32)
+  name.vb: MaskSecret(String, Integer, Integer)
+  fullName: Dixor.Security.SensitiveDataMasker.MaskSecret(string?, int, int)
+  fullName.vb: Dixor.Security.SensitiveDataMasker.MaskSecret(String, Integer, Integer)
+  nameWithType: SensitiveDataMasker.MaskSecret(string?, int, int)
+  nameWithType.vb: SensitiveDataMasker.MaskSecret(String, Integer, Integer)
+- uid: Dixor.Security.SensitiveDataMasker.MaskSecret*
+  name: MaskSecret
+  href: api/Dixor.Security.SensitiveDataMasker.html#Dixor_Security_SensitiveDataMasker_MaskSecret_
+  commentId: Overload:Dixor.Security.SensitiveDataMasker.MaskSecret
+  isSpec: "True"
+  fullName: Dixor.Security.SensitiveDataMasker.MaskSecret
+  nameWithType: SensitiveDataMasker.MaskSecret
+- uid: Dixor.Security.TotpService
+  name: TotpService
+  href: api/Dixor.Security.TotpService.html
+  commentId: T:Dixor.Security.TotpService
+  fullName: Dixor.Security.TotpService
+  nameWithType: TotpService
+- uid: Dixor.Security.TotpService.GenerateCode(System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32)
+  name: GenerateCode(string, DateTimeOffset?, int, int)
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateCode_System_String_System_Nullable_System_DateTimeOffset__System_Int32_System_Int32_
+  commentId: M:Dixor.Security.TotpService.GenerateCode(System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32)
+  name.vb: GenerateCode(String, DateTimeOffset?, Integer, Integer)
+  fullName: Dixor.Security.TotpService.GenerateCode(string, System.DateTimeOffset?, int, int)
+  fullName.vb: Dixor.Security.TotpService.GenerateCode(String, System.DateTimeOffset?, Integer, Integer)
+  nameWithType: TotpService.GenerateCode(string, DateTimeOffset?, int, int)
+  nameWithType.vb: TotpService.GenerateCode(String, DateTimeOffset?, Integer, Integer)
+- uid: Dixor.Security.TotpService.GenerateCode*
+  name: GenerateCode
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateCode_
+  commentId: Overload:Dixor.Security.TotpService.GenerateCode
+  isSpec: "True"
+  fullName: Dixor.Security.TotpService.GenerateCode
+  nameWithType: TotpService.GenerateCode
+- uid: Dixor.Security.TotpService.GenerateQrCodeUri(System.String,System.String,System.String,System.Int32,System.Int32)
+  name: GenerateQrCodeUri(string, string, string, int, int)
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateQrCodeUri_System_String_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.TotpService.GenerateQrCodeUri(System.String,System.String,System.String,System.Int32,System.Int32)
+  name.vb: GenerateQrCodeUri(String, String, String, Integer, Integer)
+  fullName: Dixor.Security.TotpService.GenerateQrCodeUri(string, string, string, int, int)
+  fullName.vb: Dixor.Security.TotpService.GenerateQrCodeUri(String, String, String, Integer, Integer)
+  nameWithType: TotpService.GenerateQrCodeUri(string, string, string, int, int)
+  nameWithType.vb: TotpService.GenerateQrCodeUri(String, String, String, Integer, Integer)
+- uid: Dixor.Security.TotpService.GenerateQrCodeUri*
+  name: GenerateQrCodeUri
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateQrCodeUri_
+  commentId: Overload:Dixor.Security.TotpService.GenerateQrCodeUri
+  isSpec: "True"
+  fullName: Dixor.Security.TotpService.GenerateQrCodeUri
+  nameWithType: TotpService.GenerateQrCodeUri
+- uid: Dixor.Security.TotpService.GenerateSecretKey(System.Int32)
+  name: GenerateSecretKey(int)
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateSecretKey_System_Int32_
+  commentId: M:Dixor.Security.TotpService.GenerateSecretKey(System.Int32)
+  name.vb: GenerateSecretKey(Integer)
+  fullName: Dixor.Security.TotpService.GenerateSecretKey(int)
+  fullName.vb: Dixor.Security.TotpService.GenerateSecretKey(Integer)
+  nameWithType: TotpService.GenerateSecretKey(int)
+  nameWithType.vb: TotpService.GenerateSecretKey(Integer)
+- uid: Dixor.Security.TotpService.GenerateSecretKey*
+  name: GenerateSecretKey
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GenerateSecretKey_
+  commentId: Overload:Dixor.Security.TotpService.GenerateSecretKey
+  isSpec: "True"
+  fullName: Dixor.Security.TotpService.GenerateSecretKey
+  nameWithType: TotpService.GenerateSecretKey
+- uid: Dixor.Security.TotpService.GetRemainingSeconds(System.Nullable{System.DateTimeOffset},System.Int32)
+  name: GetRemainingSeconds(DateTimeOffset?, int)
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GetRemainingSeconds_System_Nullable_System_DateTimeOffset__System_Int32_
+  commentId: M:Dixor.Security.TotpService.GetRemainingSeconds(System.Nullable{System.DateTimeOffset},System.Int32)
+  name.vb: GetRemainingSeconds(DateTimeOffset?, Integer)
+  fullName: Dixor.Security.TotpService.GetRemainingSeconds(System.DateTimeOffset?, int)
+  fullName.vb: Dixor.Security.TotpService.GetRemainingSeconds(System.DateTimeOffset?, Integer)
+  nameWithType: TotpService.GetRemainingSeconds(DateTimeOffset?, int)
+  nameWithType.vb: TotpService.GetRemainingSeconds(DateTimeOffset?, Integer)
+- uid: Dixor.Security.TotpService.GetRemainingSeconds*
+  name: GetRemainingSeconds
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_GetRemainingSeconds_
+  commentId: Overload:Dixor.Security.TotpService.GetRemainingSeconds
+  isSpec: "True"
+  fullName: Dixor.Security.TotpService.GetRemainingSeconds
+  nameWithType: TotpService.GetRemainingSeconds
+- uid: Dixor.Security.TotpService.ValidateCode(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32,System.Int32)
+  name: ValidateCode(string, string, DateTimeOffset?, int, int, int)
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_ValidateCode_System_String_System_String_System_Nullable_System_DateTimeOffset__System_Int32_System_Int32_System_Int32_
+  commentId: M:Dixor.Security.TotpService.ValidateCode(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Int32,System.Int32,System.Int32)
+  name.vb: ValidateCode(String, String, DateTimeOffset?, Integer, Integer, Integer)
+  fullName: Dixor.Security.TotpService.ValidateCode(string, string, System.DateTimeOffset?, int, int, int)
+  fullName.vb: Dixor.Security.TotpService.ValidateCode(String, String, System.DateTimeOffset?, Integer, Integer, Integer)
+  nameWithType: TotpService.ValidateCode(string, string, DateTimeOffset?, int, int, int)
+  nameWithType.vb: TotpService.ValidateCode(String, String, DateTimeOffset?, Integer, Integer, Integer)
+- uid: Dixor.Security.TotpService.ValidateCode*
+  name: ValidateCode
+  href: api/Dixor.Security.TotpService.html#Dixor_Security_TotpService_ValidateCode_
+  commentId: Overload:Dixor.Security.TotpService.ValidateCode
+  isSpec: "True"
+  fullName: Dixor.Security.TotpService.ValidateCode
+  nameWithType: TotpService.ValidateCode
 - uid: Dixor.Validation
   name: Dixor.Validation
   href: api/Dixor.Validation.html

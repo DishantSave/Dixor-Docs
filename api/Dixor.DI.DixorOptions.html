@@ -140,7 +140,7 @@ Class DixorOptions  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Dixor_DI_DixorOptions__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Dixor.DI.DixorOptions.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   DixorOptions(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dixor.DI.DixorOptions.html">DixorOptions</a> class.</p>
@@ -250,6 +250,38 @@ for ambient context flowing down the DI tree. Default is <a href="https://learn.
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool EnableEcosystemIdentity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dixor_DI_DixorOptions_EnableEcosystemSecurity_" data-uid="Dixor.DI.DixorOptions.EnableEcosystemSecurity*"></a>
+
+  <h3 id="Dixor_DI_DixorOptions_EnableEcosystemSecurity" data-uid="Dixor.DI.DixorOptions.EnableEcosystemSecurity">
+  EnableEcosystemSecurity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to register all Dixor.Security services into the container. Default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableEcosystemSecurity { get; set; }</code></pre>
   </div>
 
 
@@ -438,7 +470,7 @@ and <a class="xref" href="Dixor.DI.IDixorFactory-2.html">IDixorFactory&lt;TServi
 
   <h3 id="Dixor_DI_DixorOptions_AddJson_System_String_" data-uid="Dixor.DI.DixorOptions.AddJson(System.String)">
   AddJson(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers service bindings from an external JSON string or .json file path.</p>
@@ -475,7 +507,7 @@ and <a class="xref" href="Dixor.DI.IDixorFactory-2.html">IDixorFactory&lt;TServi
 
   <h3 id="Dixor_DI_DixorOptions_AddXml_System_String_" data-uid="Dixor.DI.DixorOptions.AddXml(System.String)">
   AddXml(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers service bindings from an external XML string or .xml file path.</p>
@@ -512,7 +544,7 @@ and <a class="xref" href="Dixor.DI.IDixorFactory-2.html">IDixorFactory&lt;TServi
 
   <h3 id="Dixor_DI_DixorOptions_ScanAssemblies_System_Reflection_Assembly___" data-uid="Dixor.DI.DixorOptions.ScanAssemblies(System.Reflection.Assembly[])">
   ScanAssemblies(params Assembly[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified assemblies to the scanner list.</p>
@@ -549,7 +581,7 @@ and <a class="xref" href="Dixor.DI.IDixorFactory-2.html">IDixorFactory&lt;TServi
 
   <h3 id="Dixor_DI_DixorOptions_ScanAssemblyFrom__1" data-uid="Dixor.DI.DixorOptions.ScanAssemblyFrom``1">
   ScanAssemblyFrom&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DishantSave/Dixor/blob/main/src/Dixor.DI/Options/DixorOptions.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the assembly containing <code class="typeparamref">T</code> to the scanner list.</p>

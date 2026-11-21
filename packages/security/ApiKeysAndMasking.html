@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Prefixed API Keys &amp; Sensitive Data Masking | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Prefixed API Keys &amp; Sensitive Data Masking | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/ApiKeysAndMasking.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="prefixed-api-keys--sensitive-data-masking">Prefixed API Keys &amp; Sensitive Data Masking</h1>
+
+<p>This guide covers two essential utilities in <code>Dixor.Security</code>:</p>
+<ol>
+<li><strong>Prefixed API Keys (<code>IApiKeyService</code>):</strong> Generating high-entropy API tokens formatted like modern cloud providers (<code>dx_live_...</code>, <code>dx_test_...</code>) with secure SHA-256 database hashing.</li>
+<li><strong>Sensitive Data Masking (<code>ISensitiveDataMasker</code>):</strong> Redacting credit cards, emails, tokens, and secrets before outputting to log streams, telemetry, or error messages for PCI-DSS, GDPR, and SOC 2 compliance.</li>
+</ol>
+<hr>
+<h2 id="1-prefixed-api-keys-iapikeyservice">1. Prefixed API Keys (<code>IApiKeyService</code>)</h2>
+<p>Modern API platforms (such as Stripe, GitHub, and OpenAI) prefix their API tokens so that developers and automated secret scanners (like GitHub Secret Scanning) can immediately detect leaked keys.</p>
+<h3 id="step-1-issuing-an-api-key">Step 1: Issuing an API Key</h3>
+<pre><code class="lang-csharp">[ApiController]
+[Route(&quot;api/keys&quot;)]
+public class ApiKeyController(IApiKeyService apiKeyService) : ControllerBase
+{
+    [HttpPost(&quot;generate&quot;)]
+    public IActionResult GenerateKey([FromQuery] string environment = &quot;live&quot;)
+    {
+        string prefix = environment == &quot;live&quot; ? &quot;dx_live&quot; : &quot;dx_test&quot;;
+
+        // Generates 256 bits of entropy:
+        ApiKeyResult result = apiKeyService.GenerateApiKey(prefix, entropyBytes: 32);
+
+        // 1. Save HashedKey to your database:
+        // db.ApiKeys.Add(new ApiKeyRecord {
+        //     KeyHint = result.KeyHint,
+        //     HashedKey = result.HashedKey,
+        //     CreatedAt = result.CreatedAt
+        // });
+        // await db.SaveChangesAsync();
+
+        // 2. Return PlaintextKey to user ONCE:
+        return Ok(new
+        {
+            Key = result.PlaintextKey,  // e.g. &quot;dx_live_8f3a9e2b1c4d...&quot;
+            Hint = result.KeyHint,      // e.g. &quot;dx_live_8f3a...&quot;
+            Warning = &quot;Store this API key safely. It will not be shown again.&quot;
+        });
+    }
+}
+</code></pre>
+<hr>
+<h3 id="step-2-validating-api-keys-in-middleware">Step 2: Validating API Keys in Middleware</h3>
+<pre><code class="lang-csharp">public class ApiKeyAuthMiddleware(RequestDelegate next, IApiKeyService apiKeyService)
+{
+    public async Task InvokeAsync(HttpContext context)
+    {
+        if (!context.Request.Headers.TryGetValue(&quot;X-API-Key&quot;, out var rawKey) || string.IsNullOrEmpty(rawKey))
+        {
+            context.Response.StatusCode = 401;
+            await context.Response.WriteAsync(&quot;Missing X-API-Key header.&quot;);
+            return;
+        }
+
+        // 1. Compute hash of incoming key:
+        string incomingHash = apiKeyService.HashApiKey(rawKey!);
+
+        // 2. Query database for matching hash:
+        // var keyRecord = await db.ApiKeys.FirstOrDefaultAsync(k =&gt; k.HashedKey == incomingHash);
+        // if (keyRecord == null) { context.Response.StatusCode = 401; return; }
+
+        await next(context);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="2-sensitive-data-masking-for-logs-isensitivedatamasker">2. Sensitive Data Masking for Logs (<code>ISensitiveDataMasker</code>)</h2>
+<p>Accidental exposure of PII, credit card numbers, or auth tokens in application log files is a major cause of security breaches and regulatory non-compliance. <code>ISensitiveDataMasker</code> guarantees safe redaction across all loggers.</p>
+<h3 id="masking-credit-cards-pci-dss">Masking Credit Cards (PCI-DSS)</h3>
+<p>Preserves only the final 4 digits, replacing all other digits with asterisks:</p>
+<pre><code class="lang-csharp">string masked = masker.MaskCreditCard(&quot;4532 7521 8934 1234&quot;);
+// Output: &quot;************1234&quot;
+</code></pre>
+<h3 id="masking-email-addresses-gdpr">Masking Email Addresses (GDPR)</h3>
+<p>Preserves the first 2 characters of the local part and the domain name, masking everything in between:</p>
+<pre><code class="lang-csharp">string masked = masker.MaskEmail(&quot;dishantsave@example.com&quot;);
+// Output: &quot;di****@example.com&quot;
+</code></pre>
+<h3 id="masking-api-keys-and-secrets">Masking API Keys and Secrets</h3>
+<p>Masks the middle of the secret, preserving a configurable prefix and suffix:</p>
+<pre><code class="lang-csharp">string masked = masker.MaskSecret(&quot;dx_sec_88f9e0a1b2c3d4e5f6a7b8c9d0e1&quot;, visiblePrefix: 4, visibleSuffix: 4);
+// Output: &quot;dx_s****...****d0e1&quot;
+</code></pre>
+<h3 id="generic-masking">Generic Masking</h3>
+<pre><code class="lang-csharp">string masked = masker.MaskGeneric(&quot;SensitiveAccountToken123&quot;, prefixLen: 3, suffixLen: 3);
+// Output: &quot;Sen****************123&quot;
+</code></pre>
+<hr>
+<h2 id="log-enrichment-example">Log Enrichment Example</h2>
+<p>Use masking in Serilog or standard ASP.NET Core loggers:</p>
+<pre><code class="lang-csharp">logger.LogInformation(
+    &quot;Processing payment for card {Card} and email {Email}&quot;,
+    masker.MaskCreditCard(order.CardNumber),
+    masker.MaskEmail(order.CustomerEmail));
+</code></pre>
+<p>Logs will safely read:</p>
+<pre><code>[12:00:00 INF] Processing payment for card ************1234 and email jo****@domain.com
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/ApiKeysAndMasking.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

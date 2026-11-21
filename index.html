@@ -126,6 +126,18 @@
 <li><a href="#direct-constructor-injection-of-dixor-services">Direct Constructor Injection of Dixor Services</a></li>
 </ul>
 </li>
+<li><a href="#dixorsecurity">Dixor.Security</a>
+<ul>
+<li><a href="#reversible-authentication-tokens">Reversible Authentication Tokens</a></li>
+<li><a href="#client-credentials--asymmetric-keys">Client Credentials &amp; Asymmetric Keys</a></li>
+<li><a href="#oauth2-bearer-tokens">OAuth2 Bearer Tokens</a></li>
+<li><a href="#aes-256-gcm-data-encryption">AES-256-GCM Data Encryption</a></li>
+<li><a href="#deterministic-one-way-keyed-hashing">Deterministic One-Way Keyed Hashing</a></li>
+<li><a href="#password-hashing-pbkdf2">Password Hashing (PBKDF2)</a></li>
+<li><a href="#two-factor-authentication-totp">Two-Factor Authentication (TOTP)</a></li>
+<li><a href="#prefixed-api-keys--data-masking">Prefixed API Keys &amp; Data Masking</a></li>
+</ul>
+</li>
 <li><a href="#documentation-structure">Documentation Structure</a></li>
 <li><a href="#supported-frameworks">Supported Frameworks</a></li>
 <li><a href="#ecosystem-roadmap">Ecosystem Roadmap</a></li>
@@ -167,6 +179,13 @@
 <td>Declarative dependency injection, assembly scanning, modular architecture, and 1-line bootstrapping.</td>
 <td>One-word Program.cs setup (<code>AddDixor()</code>), declarative attributes (<code>[Singleton]</code>, <code>[Scoped]</code>, <code>[Transient]</code>), keyed services, <code>IDixorModule</code>.</td>
 </tr>
+<tr>
+<td><strong><code>Dixor.Security</code></strong></td>
+<td><code>v0.1.0</code></td>
+<td></td>
+<td>Cryptography, authentication tokens, client credentials, AEAD encryption, and TOTP MFA.</td>
+<td>Reversible authenticated tokens, AES-256-GCM encryption, deterministic blind indexing, OAuth2 Bearer JWTs, RSA/ECDSA signatures, PBKDF2 password hashing.</td>
+</tr>
 </tbody>
 </table>
 <hr>
@@ -176,22 +195,21 @@
 <pre><code class="lang-bash">dotnet add package Dixor.Identity
 dotnet add package Dixor.Validation
 dotnet add package Dixor.DI
+dotnet add package Dixor.Security
 </code></pre>
 <h3 id="visual-studio-package-manager-console">Visual Studio Package Manager Console</h3>
 <pre><code class="lang-powershell">Install-Package Dixor.Identity
 Install-Package Dixor.Validation
 Install-Package Dixor.DI
+Install-Package Dixor.Security
 </code></pre>
 <h3 id="packagereference-msbuild"><code>&lt;PackageReference&gt;</code> (MSBuild)</h3>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
     &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.2.0&quot; /&gt;
     &lt;PackageReference Include=&quot;Dixor.Validation&quot; Version=&quot;0.1.0&quot; /&gt;
     &lt;PackageReference Include=&quot;Dixor.DI&quot; Version=&quot;0.1.0&quot; /&gt;
+    &lt;PackageReference Include=&quot;Dixor.Security&quot; Version=&quot;0.1.0&quot; /&gt;
 &lt;/ItemGroup&gt;
-```  &lt;PackageReference Include=&quot;Dixor.Identity&quot; Version=&quot;0.2.0&quot; /&gt;
-  &lt;PackageReference Include=&quot;Dixor.Validation&quot; Version=&quot;0.1.0&quot; /&gt;
-&lt;/ItemGroup&gt;
-
 </code></pre>
 <hr>
 <h1 id="dixoridentity">Dixor.Identity</h1>
@@ -843,17 +861,89 @@ builder.Services.AddDixorConfiguration(builder.Configuration, sectionName: &quot
     private readonly IUuid7Service _uuid7;
     private readonly ICreditCardValidatorService _creditCardValidator;
     private readonly IUrlValidatorService _urlValidator;
+    private readonly IDataEncryptor _encryptor;
 
     public CheckoutController(
         IUuid7Service uuid7,
         ICreditCardValidatorService creditCardValidator,
-        IUrlValidatorService urlValidator)
+        IUrlValidatorService urlValidator,
+        IDataEncryptor encryptor)
     {
         _uuid7 = uuid7;
         _creditCardValidator = creditCardValidator;
         _urlValidator = urlValidator;
+        _encryptor = encryptor;
     }
 }
+</code></pre>
+<hr>
+<h1 id="dixorsecurity">Dixor.Security</h1>
+<p><code>Dixor.Security</code> provides modern, production-grade cryptography, authentication token issuance, client credentials, and data protection for .NET applications.</p>
+<h3 id="reversible-authentication-tokens">Reversible Authentication Tokens</h3>
+<p>Encrypt Name, Password, and arbitrary Custom Data into a tamper-proof token using AES-256-GCM, and reverse-decode it safely on authorized backends:</p>
+<pre><code class="lang-csharp">// 1. Generate reversible authenticated token:
+string token = tokenService.CreateToken(
+    name: &quot;dishantsave&quot;,
+    password: &quot;UserP@ssw0rd#2026&quot;,
+    customData: new Dictionary&lt;string, string&gt; { [&quot;TenantId&quot;] = &quot;tenant_1&quot;, [&quot;Role&quot;] = &quot;Admin&quot; },
+    secretKey: &quot;MyMasterKey2026!&quot;,
+    lifetime: TimeSpan.FromHours(24));
+
+// 2. Reverse-decode and extract credentials &amp; claims:
+AuthTokenDecodeResult result = tokenService.DecodeToken(token, &quot;MyMasterKey2026!&quot;);
+string name = result.Payload.Name;
+string tenant = result.Payload.CustomData[&quot;TenantId&quot;];
+</code></pre>
+<h3 id="client-credentials--asymmetric-keys">Client Credentials &amp; Asymmetric Keys</h3>
+<p>Issue Client ID and Secret pairs with salted PBKDF2 hashing, and provision asymmetric RSA or ECDSA key pairs:</p>
+<pre><code class="lang-csharp">// Generate credentials:
+ClientCredentials creds = credentialService.GenerateClientCredentials(&quot;dx_client&quot;, &quot;dx_sec&quot;);
+
+// Generate RSA-2048 or ECDSA P-256 key pairs:
+AsymmetricKeyPair keyPair = credentialService.GenerateKeyPair(AsymmetricAlgorithmType.Rsa2048);
+string signature = credentialService.SignData(&quot;payload&quot;, keyPair.PrivateKeyPem);
+bool isValid = credentialService.VerifySignature(&quot;payload&quot;, signature, keyPair.PublicKeyPem);
+</code></pre>
+<h3 id="oauth2-bearer-tokens">OAuth2 Bearer Tokens</h3>
+<p>Issue and validate RFC 6749 / RFC 7519 JSON Web Tokens (JWT) signed with HMAC-SHA256:</p>
+<pre><code class="lang-csharp">var response = oauthService.GenerateToken(new OAuth2TokenRequest
+{
+    ClientId = &quot;client_app&quot;,
+    Subject = &quot;usr_1020&quot;,
+    Scopes = [&quot;read:profile&quot;, &quot;write:orders&quot;]
+}, signingKey: &quot;MySigningKey!&quot;);
+
+// Validating Bearer token:
+var validation = oauthService.ValidateAccessToken(response.AccessToken, &quot;MySigningKey!&quot;);
+</code></pre>
+<h3 id="aes-256-gcm-data-encryption">AES-256-GCM Data Encryption</h3>
+<p>NIST standard authenticated symmetric encryption with 96-bit nonces and 128-bit authentication tags:</p>
+<pre><code class="lang-csharp">string ciphertext = encryptor.Encrypt(&quot;sensitive PII&quot;, secretKey, associatedData: &quot;Tenant:123&quot;);
+string plaintext = encryptor.Decrypt(ciphertext, secretKey, associatedData: &quot;Tenant:123&quot;);
+</code></pre>
+<h3 id="deterministic-one-way-keyed-hashing">Deterministic One-Way Keyed Hashing</h3>
+<p>Compute deterministic hashes that <strong>always match identical inputs</strong> for database blind indexing:</p>
+<pre><code class="lang-csharp">// Guaranteed identical hash every time for exact-match database lookups:
+string emailHash = deterministicHasher.HashSha256(&quot;user@example.com&quot;, pepperKey);
+</code></pre>
+<h3 id="password-hashing-pbkdf2">Password Hashing (PBKDF2)</h3>
+<p>Salted password hashing with 100,000 iterations and constant-time verification:</p>
+<pre><code class="lang-csharp">string hash = passwordHasher.HashPassword(&quot;user_password&quot;);
+bool isValid = passwordHasher.VerifyPassword(&quot;user_password&quot;, hash);
+</code></pre>
+<h3 id="two-factor-authentication-totp">Two-Factor Authentication (TOTP)</h3>
+<p>RFC 6238 time-based passcodes compatible with Google Authenticator and Microsoft Authenticator:</p>
+<pre><code class="lang-csharp">string secret = totpService.GenerateSecretKey();
+string code = totpService.GenerateCode(secret);
+bool isValid = totpService.ValidateCode(secret, &quot;123456&quot;);
+</code></pre>
+<h3 id="prefixed-api-keys--data-masking">Prefixed API Keys &amp; Data Masking</h3>
+<pre><code class="lang-csharp">// Prefixed API keys:
+var apiKey = apiKeyService.GenerateApiKey(&quot;dx_live&quot;, 32);
+
+// Masking for logs:
+string maskedCard = masker.MaskCreditCard(&quot;4532 7521 8934 1234&quot;); // &quot;************1234&quot;
+string maskedEmail = masker.MaskEmail(&quot;dishant@example.com&quot;);       // &quot;di****@example.com&quot;
 </code></pre>
 <hr>
 <h1 id="supported-frameworks">Supported Frameworks</h1>
@@ -936,6 +1026,12 @@ builder.Services.AddDixorConfiguration(builder.Configuration, sectionName: &quot
 <ul>
 <li><strong>Quick Install:</strong> <code>dotnet add package Dixor.DI</code></li>
 <li><a href="packages/di/index.html">View Dependency Injection Guides →</a></li>
+</ul>
+<h3 id="-dixorsecurity">🛡️ <a href="packages/security/index.html">Dixor.Security</a></h3>
+<p>Production-grade cryptography, authenticated reversible tokens, client credentials, OAuth2 Bearer tokens, AES-256-GCM AEAD encryption, deterministic hashing, and TOTP 2FA.</p>
+<ul>
+<li><strong>Quick Install:</strong> <code>dotnet add package Dixor.Security</code></li>
+<li><a href="packages/security/index.html">View Security Guides →</a></li>
 </ul>
 <hr>
 <h2 id="architecture--philosophy">Architecture &amp; Philosophy</h2>

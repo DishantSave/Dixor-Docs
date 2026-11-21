@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dixor.Security Documentation | Dixor Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dixor.Security Documentation | Dixor Documentation ">
+      
+      
+      <link rel="icon" href="../../images/icon-192.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/favicon-64X64.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dixorsecurity-documentation">Dixor.Security Documentation</h1>
+
+<p><code>Dixor.Security</code> is a high-performance, production-grade cryptography, authentication, and data protection library built natively for modern .NET 8, .NET 9, and .NET 10.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Modern cloud systems and enterprise microservices face demanding security challenges:</p>
+<ul>
+<li><strong>Credential plumbing:</strong> Storing and transporting user session state securely.</li>
+<li><strong>Authentication:</strong> Issuing reversible authenticated tokens, API client secrets, and OAuth2 Bearer tokens.</li>
+<li><strong>Data protection:</strong> Encrypting sensitive database fields (PII, financial records) with authenticated AEAD ciphers.</li>
+<li><strong>Searchable encryption:</strong> Querying encrypted database records without decrypting them (blind indexing).</li>
+<li><strong>MFA &amp; Access:</strong> Generating Time-based One-Time Passwords (TOTP RFC 6238) for Google and Microsoft Authenticator.</li>
+<li><strong>Audit compliance:</strong> Preventing timing attacks and masking sensitive data in log streams.</li>
+</ul>
+<p><code>Dixor.Security</code> provides intuitive, developer-friendly abstractions with battle-tested NIST-approved cryptographic primitives, eliminating the footguns and complexities of manual cryptography.</p>
+<pre><code class="lang-csharp">// Program.cs - 1 line bootstrap via Dixor.DI
+builder.Services.AddDixor();
+
+// Or standalone registration
+builder.Services.AddDixorSecurity();
+</code></pre>
+<hr>
+<h2 id="core-capabilities">Core Capabilities</h2>
+<ul>
+<li><strong>Reversible Authenticated Tokens (<code>IAuthTokenService</code>)</strong>: Issue encrypted tokens carrying Name, Password, and Custom Data that can be safely reverse-decoded and extracted by authorized services using AES-256-GCM.</li>
+<li><strong>Client Secret &amp; Public Key Authentication (<code>IClientCredentialService</code>)</strong>: Generate secure Client ID and Client Secret pairs with PBKDF2 hashing, and provision asymmetric RSA (2048/4096) or ECDSA (NIST P-256) key pairs with PEM export and digital signature verification.</li>
+<li><strong>OAuth2 Bearer Tokens (<code>IOAuth2TokenService</code>)</strong>: Issue and validate RFC 6749 / RFC 7519 JSON Web Tokens (JWT) signed with HMAC-SHA256, supporting scopes, custom claims, and high-entropy refresh tokens.</li>
+<li><strong>Key-Based Data Encryption (<code>IDataEncryptor</code>)</strong>: NIST SP 800-38D AES-256-GCM authenticated encryption with 96-bit random nonces, 128-bit authentication tags, and optional Associated Data (AAD) binding.</li>
+<li><strong>Deterministic One-Way Keyed Hashing (<code>IDeterministicHasher</code>)</strong>: HMAC-SHA256 and HMAC-SHA512 hashing guaranteeing that identical input with the same key always produces the exact same hash for database blind indexing.</li>
+<li><strong>PBKDF2 Password Hashing (<code>IPasswordHasher</code>)</strong>: Cryptographically salted password hashing (100,000 iterations default) with constant-time equality checks and rehash detection.</li>
+<li><strong>Two-Factor Authentication (<code>ITotpService</code>)</strong>: RFC 6238 Time-based One-Time Password generator and validator compatible with Google Authenticator, Microsoft Authenticator, and 1Password.</li>
+<li><strong>Prefixed API Keys (<code>IApiKeyService</code>)</strong>: Generate high-entropy, environment-prefixed API keys (<code>dx_live_...</code>, <code>dx_test_...</code>) with SHA-256 database storage.</li>
+<li><strong>Sensitive Data Masking (<code>ISensitiveDataMasker</code>)</strong>: Cleanly mask credit cards, email addresses, and API secrets prior to writing to audit logs or telemetry.</li>
+<li><strong>Constant-Time Verification (<code>CryptographicUtils</code>)</strong>: Timing-safe equality operations (<code>FixedTimeEquals</code>) to neutralize side-channel timing attacks.</li>
+</ul>
+<hr>
+<h2 id="documentation-sections">Documentation Sections</h2>
+<ul>
+<li><a href="overview.html">Architecture &amp; Cryptographic Algorithms</a>: Threat models, cipher modes, key derivation, and algorithm specifications.</li>
+<li><a href="AuthTokens.html">Reversible Authentication Tokens</a>: Step-by-step guide on creating and reverse-decoding tokens with Name, Password, and Custom Data.</li>
+<li><a href="ClientCredentials.html">Client Secrets &amp; Asymmetric Keys</a>: Generating client credentials and signing data with RSA/ECDSA key pairs.</li>
+<li><a href="OAuth2Tokens.html">OAuth2 Bearer Token Issuance</a>: Generating, signing, and validating OAuth2 JWT access tokens and refresh tokens.</li>
+<li><a href="DataEncryption.html">AES-256-GCM Data Encryption</a>: Symmetrical authenticated encryption with Associated Data (AEAD).</li>
+<li><a href="DeterministicHashing.html">Deterministic Hashing &amp; Blind Indexing</a>: Querying encrypted databases with one-way deterministic hashes.</li>
+<li><a href="PasswordHashing.html">Password Hashing (PBKDF2)</a>: Salted password hashing, verification, and progressive rehash policies.</li>
+<li><a href="TwoFactorTotp.html">Two-Factor Authentication (TOTP)</a>: Provisioning Base32 secrets, QR codes, and validating 6-digit codes.</li>
+<li><a href="ApiKeysAndMasking.html">Prefixed API Keys &amp; Data Masking</a>: Environment-prefixed API keys and PII log masking.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DishantSave/Dixor/blob/main/docs/packages/security/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

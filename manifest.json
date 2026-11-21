@@ -551,6 +551,426 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ApiKeyResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ApiKeyResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ApiKeyResult",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ApiKeyResult.yml\" sourcestartlinenumber=\"1\">Represents a generated API key, including the one-time plaintext key and its one-way hash for persistence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ApiKeyService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ApiKeyService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ApiKeyService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ApiKeyService.yml\" sourcestartlinenumber=\"1\">Implements prefixed API key generation, SHA-256 hashing, and constant-time validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.AsymmetricAlgorithmType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.AsymmetricAlgorithmType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.AsymmetricAlgorithmType",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.AsymmetricAlgorithmType.yml\" sourcestartlinenumber=\"1\">Specifies the asymmetric cryptographic algorithm used for public/private key generation and digital signatures.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.AsymmetricKeyPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.AsymmetricKeyPair.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.AsymmetricKeyPair",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.AsymmetricKeyPair.yml\" sourcestartlinenumber=\"1\">Represents an asymmetric cryptographic key pair containing PEM-encoded public and private keys.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.AuthTokenDecodeResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.AuthTokenDecodeResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.AuthTokenDecodeResult",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.AuthTokenDecodeResult.yml\" sourcestartlinenumber=\"1\">Represents the result of decoding and validating an authentication token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.AuthTokenPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.AuthTokenPayload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.AuthTokenPayload",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.AuthTokenPayload.yml\" sourcestartlinenumber=\"1\">Represents the payload encapsulated within a reversible, encrypted authentication token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.AuthTokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.AuthTokenService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.AuthTokenService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.AuthTokenService.yml\" sourcestartlinenumber=\"1\">Provides secure, reversible authentication token generation and decoding using AES-256-GCM\nauthenticated encryption.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ClientCredentialService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ClientCredentialService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ClientCredentialService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ClientCredentialService.yml\" sourcestartlinenumber=\"1\">Implements API Client Credentials and asymmetric public/private key authentication workflows.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ClientCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ClientCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ClientCredentials",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ClientCredentials.yml\" sourcestartlinenumber=\"1\">Represents a generated pair of API Client ID and Client Secret, with a securely hashed representation for persistence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.CryptographicUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.CryptographicUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.CryptographicUtils",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.CryptographicUtils.yml\" sourcestartlinenumber=\"1\">Provides common cryptographic primitives and utilities for constant-time comparisons,\nsecure random generation, key derivation, and URL-safe base64 encoding.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.DataEncryptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.DataEncryptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.DataEncryptor",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.DataEncryptor.yml\" sourcestartlinenumber=\"1\">Implements authenticated symmetric encryption and decryption using NIST standard AES-256-GCM.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.DeterministicHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.DeterministicHasher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.DeterministicHasher",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.DeterministicHasher.yml\" sourcestartlinenumber=\"1\">Implements deterministic keyed one-way hashing using HMAC-SHA256 and HMAC-SHA512.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.DixorSecurityServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.DixorSecurityServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.DixorSecurityServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.DixorSecurityServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for registering Dixor.Security services into an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IApiKeyService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IApiKeyService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IApiKeyService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IApiKeyService.yml\" sourcestartlinenumber=\"1\">Defines contracts for generating high-entropy, environment-prefixed API keys and verifying them using constant-time hashing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IAuthTokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IAuthTokenService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IAuthTokenService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IAuthTokenService.yml\" sourcestartlinenumber=\"1\">Defines contracts for generating reversible, tamper-proof authentication tokens with embedded Name, Password, and Custom Data,\nand reverse-decoding them safely with a secret key.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IClientCredentialService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IClientCredentialService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IClientCredentialService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IClientCredentialService.yml\" sourcestartlinenumber=\"1\">Defines contracts for generating and validating API Client Credentials (Client ID and Secret)\nand managing asymmetric public/private key pairs for cryptographic signature authentication.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IDataEncryptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IDataEncryptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IDataEncryptor",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IDataEncryptor.yml\" sourcestartlinenumber=\"1\">Defines contracts for high-performance, authenticated symmetric encryption and decryption\nusing AES-256-GCM with Associated Data (AEAD).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IDeterministicHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IDeterministicHasher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IDeterministicHasher",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IDeterministicHasher.yml\" sourcestartlinenumber=\"1\">Defines contracts for deterministic, keyed one-way cryptographic hashing (HMAC-SHA256 and HMAC-SHA512).\nGuarantees that identical input text with the same secret key always produces the exact same hash digest,\nenabling safe exact-match database queries (blind indexing) without storing raw plaintext.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IOAuth2TokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IOAuth2TokenService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IOAuth2TokenService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IOAuth2TokenService.yml\" sourcestartlinenumber=\"1\">Defines contracts for issuing and validating OAuth2 Bearer access tokens and refresh tokens.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.IPasswordHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.IPasswordHasher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.IPasswordHasher",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.IPasswordHasher.yml\" sourcestartlinenumber=\"1\">Defines contracts for cryptographically salted password hashing using PBKDF2-SHA256 and constant-time verification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ISensitiveDataMasker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ISensitiveDataMasker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ISensitiveDataMasker",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ISensitiveDataMasker.yml\" sourcestartlinenumber=\"1\">Defines contracts for masking sensitive personal identifiable information (PII), credit cards, emails,\npasswords, and secrets prior to writing to application logs or audit trails.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.ITotpService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.ITotpService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.ITotpService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.ITotpService.yml\" sourcestartlinenumber=\"1\">Defines contracts for generating and verifying Time-based One-Time Passwords (TOTP / RFC 6238)\ncompatible with Google Authenticator, Microsoft Authenticator, 1Password, and Authy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.OAuth2TokenRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.OAuth2TokenRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.OAuth2TokenRequest",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.OAuth2TokenRequest.yml\" sourcestartlinenumber=\"1\">Represents the parameters for issuing an OAuth2 access and refresh token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.OAuth2TokenResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.OAuth2TokenResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.OAuth2TokenResponse",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.OAuth2TokenResponse.yml\" sourcestartlinenumber=\"1\">Represents a standard OAuth2 token endpoint response (RFC 6749) containing the access token, token type, expiry, and optional refresh token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.OAuth2TokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.OAuth2TokenService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.OAuth2TokenService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.OAuth2TokenService.yml\" sourcestartlinenumber=\"1\">Provides standards-compliant OAuth2 Bearer Access Token generation, signing, and verification using HMAC-SHA256.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.OAuth2TokenValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.OAuth2TokenValidationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.OAuth2TokenValidationResult",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.OAuth2TokenValidationResult.yml\" sourcestartlinenumber=\"1\">Represents the result of validating an OAuth2 access token.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.PasswordHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.PasswordHasher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.PasswordHasher",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.PasswordHasher.yml\" sourcestartlinenumber=\"1\">Implements salted password hashing and verification using PBKDF2-SHA256.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.SensitiveDataMasker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.SensitiveDataMasker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.SensitiveDataMasker",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.SensitiveDataMasker.yml\" sourcestartlinenumber=\"1\">Implements sensitive data masking algorithms for logs, traces, and audit logs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.TotpService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.TotpService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security.TotpService",
+      "Summary": "<p sourcefile=\"api/Dixor.Security.TotpService.yml\" sourcestartlinenumber=\"1\">Implements RFC 6238 Time-based One-Time Password (TOTP) and Base32 encoding/decoding.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dixor.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dixor.Security.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Dixor.Security",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dixor.Validation.Aadhaar.AadhaarInfo.yml",
       "output": {
         ".html": {
@@ -2276,6 +2696,119 @@
       "output": {
         ".html": {
           "relative_path": "packages/identity/uuid7/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/ApiKeysAndMasking.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/ApiKeysAndMasking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/AuthTokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/AuthTokens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/ClientCredentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/ClientCredentials.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/DataEncryption.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/DataEncryption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/DeterministicHashing.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/DeterministicHashing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/OAuth2Tokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/OAuth2Tokens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/PasswordHashing.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/PasswordHashing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/TwoFactorTotp.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/TwoFactorTotp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/security/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "packages/security/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/toc.html"
+        },
+        ".json": {
+          "relative_path": "packages/security/toc.json"
         }
       },
       "version": ""
