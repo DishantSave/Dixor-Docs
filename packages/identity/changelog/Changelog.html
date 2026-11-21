@@ -90,6 +90,14 @@
 <p>All notable changes to the <strong>Dixor.Identity</strong> package are documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>, and this project adheres strictly to <a href="https://semver.org/">Semantic Versioning</a>.</p>
 <hr>
+<h2 id="021--2026-11-22">[0.2.1] — 2026-11-22</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><strong>Dependency Injection Integration:</strong> Enhanced internal container instantiation and unified 1-line setup with <code>Dixor.DI</code> via <code>services.AddDixorIdentity()</code>.</li>
+<li><strong>Identifier Optimizations:</strong> Streamlined memory allocation and performance profiles for ULID, Base36, Base62, Hexadecimal, NanoId, NumericCode, Sequence, and ShortId.</li>
+<li><strong>Documentation &amp; Packaging:</strong> Enhanced XML documentation and NuGet packaging metadata across .NET 8, 9, and 10 multi-targeting.</li>
+</ul>
+<hr>
 <h2 id="020--2026-07-23">[0.2.0] — 2026-07-23</h2>
 <h3 id="added">Added</h3>
 <ul>
@@ -102,13 +110,13 @@
 <li><strong>Human-Friendly Short Identifiers (<code>ShortId</code>):</strong> Implemented human-readable short token generation (<code>ShortId.Generate()</code>) built with an alphabet engineered specifically to omit visually ambiguous characters (such as <code>I</code>, <code>l</code>, <code>1</code>, <code>O</code>, <code>0</code>) to reduce transcription and manual entry errors.</li>
 <li><strong>ULID Generation (<code>Ulid</code>):</strong> Added foundational Universally Unique Lexicographically Sortable Identifier (<code>ULID</code>) generation support combining 48-bit millisecond timestamps with 80 bits of cryptographically secure randomness.</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li><strong>Internal Dependency Injection:</strong> Integrated all new string and sequence generation services with the internal dependency injection container (<code>InternalContainer</code>), standardizing instantiation across facades.</li>
 </ul>
 <hr>
 <h2 id="014--2026-07-04">[0.1.4] — 2026-07-04</h2>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li><strong>Architecture:</strong> Decoupled embedded Roslyn compile-time analyzers from the main <code>Dixor.Identity</code> runtime package. Analyzers are now distributed as an independent package to eliminate compiler tooling dependencies from the core runtime library.</li>
 <li><strong>Packaging:</strong> Reduced overall NuGet payload size by excluding analyzer binaries and updated package dependency metadata.</li>

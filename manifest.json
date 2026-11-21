@@ -2376,6 +2376,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "packages/di/changelog/Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/di/changelog/Changelog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "packages/di/index.md",
       "output": {
         ".html": {
@@ -2782,6 +2792,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "packages/security/changelog/Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/security/changelog/Changelog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "packages/security/index.md",
       "output": {
         ".html": {
@@ -2959,6 +2979,16 @@
       "output": {
         ".html": {
           "relative_path": "packages/validation/address/overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/validation/changelog/Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/validation/changelog/Changelog.html"
         }
       },
       "version": ""
